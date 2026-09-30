@@ -3,7 +3,7 @@ import Foundation
 /// One unit of lesson content.
 ///
 /// Encoded as a single JSON object whose `type` field selects the payload shape.
-public enum LessonStep: Sendable, Hashable, Identifiable {
+public enum LessonStep: Codable, Sendable, Hashable, Identifiable {
     case theory(TheoryStep)
     case video(VideoStep)
     case audio(AudioStep)

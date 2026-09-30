@@ -56,7 +56,7 @@ public struct AudioClip: Codable, Sendable, Hashable, Identifiable {
 }
 
 /// Where a video's bytes come from.
-public enum VideoSource: Sendable, Hashable {
+public enum VideoSource: Codable, Sendable, Hashable {
     /// A remote URL.
     case remote(URL)
     /// A file name inside the app bundle.

@@ -96,4 +96,24 @@ public struct LearnerStats: Sendable, Codable, Equatable, Hashable {
         perfectLessonRuns = try container.decodeIfPresent(Int.self, forKey: .perfectLessonRuns) ?? 0
         dailyGoalStreak = try container.decodeIfPresent(Int.self, forKey: .dailyGoalStreak) ?? 0
     }
+
+    /// Writes every field, using the same keys the decoder tolerates as optional.
+    ///
+    /// Required because a hand-written `init(from:)` suppresses the compiler's
+    /// synthesised `Encodable`, which would otherwise leave this type declaring
+    /// `Codable` without providing half the conformance.
+    public func encode(to encoder: any Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(totalXP, forKey: .totalXP)
+        try container.encode(streak, forKey: .streak)
+        try container.encode(lessonsCompleted, forKey: .lessonsCompleted)
+        try container.encode(accuracy, forKey: .accuracy)
+        try container.encode(wordsMastered, forKey: .wordsMastered)
+        try container.encode(dictationsPassed, forKey: .dictationsPassed)
+        try container.encode(reviewsDone, forKey: .reviewsDone)
+        try container.encode(studyMinutes, forKey: .studyMinutes)
+        try container.encode(ieltsCompleted, forKey: .ieltsCompleted)
+        try container.encode(perfectLessonRuns, forKey: .perfectLessonRuns)
+        try container.encode(dailyGoalStreak, forKey: .dailyGoalStreak)
+    }
 }
