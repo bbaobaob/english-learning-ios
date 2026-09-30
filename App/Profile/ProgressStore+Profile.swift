@@ -131,7 +131,7 @@ extension ProgressStore {
         var guardCounter = 0
         while cursor <= end, guardCounter < 400 {
             days.append(StudyDay(day: cursor, minutes: minutesByDay[cursor] ?? 0))
-            guard let next = cursor.adding(days: 1) else { break }
+            guard let next = Calendar.current.date(byAdding: .day, value: 1, to: cursor) else { break }
             cursor = next
             guardCounter += 1
         }

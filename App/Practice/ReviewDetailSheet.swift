@@ -27,7 +27,7 @@ struct ReviewDetailSheet: View {
                     )
 
                     VStack(spacing: Spacing.sm) {
-                        ForEach(Self.previews, id: \.0) { preview in
+                        ForEach(Self.previews, id: \.title) { preview in
                             previewRow(preview)
                         }
                     }

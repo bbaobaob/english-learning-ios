@@ -103,11 +103,12 @@ struct RingSweep: View {
 
             // Arc. `-90°` puts the start at twelve o'clock, matching
             // `ProgressRing`, so the two are visually interchangeable.
-            let arc = Path(arcCenter: centre,
-                           radius: radius,
-                           startAngle: .degrees(-90),
-                           endAngle: .degrees(-90 + 360 * sweep),
-                           clockwise: false)
+            var arc = Path()
+            arc.addArc(center: centre,
+                       radius: radius,
+                       startAngle: .degrees(-90),
+                       endAngle: .degrees(-90 + 360 * sweep),
+                       clockwise: false)
             context.stroke(
                 arc,
                 with: .color(tint),

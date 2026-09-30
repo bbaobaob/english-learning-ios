@@ -132,7 +132,9 @@ final class RecordingService {
     init() {}
 
     deinit {
-        try? FileManager.default.removeItem(at: takeURL)
+        if let takeURL {
+            try? FileManager.default.removeItem(at: takeURL)
+        }
     }
 
 

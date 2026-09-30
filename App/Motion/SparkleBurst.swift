@@ -124,7 +124,7 @@ struct SparkleBurst: View {
                             size: edge, travel: travel * 0.74
                         ),
                         centre: centre,
-                        tint: tint
+                        in: canvas
                     )
                 }
 
@@ -139,7 +139,7 @@ struct SparkleBurst: View {
                             size: edge, travel: travel
                         ),
                         centre: centre,
-                        tint: tint
+                        in: canvas
                     )
                 }
             }

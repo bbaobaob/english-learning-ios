@@ -23,6 +23,9 @@ struct SkillView: View {
     @State private var showPractice = false
     @State private var showReview = false
 
+    /// This skill's topic, when the library has loaded it.
+    private var topic: Topic? { appState.library?.topic(topicID) }
+
     var body: some View {
         Group {
             if let topic {
