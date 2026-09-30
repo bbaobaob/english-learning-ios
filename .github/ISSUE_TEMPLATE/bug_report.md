@@ -33,7 +33,7 @@ body:
       label: How did you install the app
       options:
         - Xcode (make project + run)
-        - Signed IPA from CI
+        - Simulator
         - Unsigned IPA via Sideloadly / AltStore / TrollStore
         - Other
     validations:

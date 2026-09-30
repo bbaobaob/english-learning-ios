@@ -2,6 +2,9 @@ name: Unsigned IPA
 
 # Produces an installable-but-unsigned .ipa. Installs via Sideloadly / AltStore
 # / TrollStore, which re-sign it with your own Apple ID. See docs/BUILD.md.
+#
+# Dispatch-driven, not on every push: a macOS archive costs real minutes and
+# there is no value in rebuilding an identical artifact for each commit.
 on:
   workflow_dispatch:
     inputs:
@@ -12,7 +15,6 @@ on:
         options: [Release, Debug]
   push:
     tags: ["v*"]
-    branches: [main]
 
 concurrency:
   group: unsigned-ipa-${{ github.ref }}

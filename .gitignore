@@ -47,9 +47,10 @@ Package.resolved.bak
 *.xcconfig.local
 Secrets.xcconfig
 
-# ---- Secrets and signing material (must never enter git) -------------------
-# A committed signing identity or provisioning profile is a credential leak:
-# revoke it, do not delete the commit.
+# ---- Never commit a local identity or secret (must never enter git) ---------
+# Nothing in this repo needs a code signature, but a developer's own machine may
+# still have these files lying around. Committing one is a credential leak:
+# revoke it, do not just delete the commit.
 *.p12
 *.pfx
 *.cer

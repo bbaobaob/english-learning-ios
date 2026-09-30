@@ -52,7 +52,7 @@ Packages/EnglishCore/     Foundation only. Content models, engine, session,
 Packages/EnglishStore/    SwiftData. @Model schemas + ProgressStore facade.
 App/                      SwiftUI app target. No business logic.
 docs/ARCHITECTURE.md      Frozen contract: layout, content schema, API.
-docs/BUILD.md             Build, signing and IPA runbook.
+docs/BUILD.md             Build and unsigned-IPA runbook.
 project.yml               XcodeGen spec (the only project source of truth).
 ```
 
@@ -76,23 +76,38 @@ Content is validated too: `make validate-content` parses every JSON file under
 
 | Workflow | Trigger | What it does | Artifacts |
 | --- | --- | --- | --- |
-| `CI` | push, PR, manual | `test-core` (Linux), `test-store` (macOS), `lint-content` (JSON validation), `build-app` (generates the project and compiles the app for the simulator), `signed-ipa` (skipped unless signing secrets exist) | signed `.ipa` when secrets are configured |
-| `Unsigned IPA` | manual, tag `v*`, push to `main` | Archives without signing and zips the `.app` into an unsigned IPA | `EnglishLearning-unsigned-ipa`, `EnglishLearning-xcarchive`, GitHub Release on tags |
-| `Signed IPA` | manual only | Imports the `.p12` into a temporary keychain, archives, exports an App Store IPA | `EnglishLearning-signed-ipa` |
+| `CI` | push, PR, manual | `test-core` (Linux), `test-store` (macOS), `lint-content` (JSON validation), `build-app` (generates the project and compiles the app for the simulator) | none |
+| `Unsigned IPA` | manual, tag `v*`, push to `main` | Archives without a code signature and zips the `.app` into an unsigned IPA | `EnglishLearning-unsigned-ipa`, `EnglishLearning-xcarchive`, GitHub Release on tags |
 
 All jobs run with `contents: read` and are cancelled when superseded.
 
 ## IPA installation
 
-**Unsigned IPA** — from the `Unsigned IPA` workflow. Installs only through a re-signing tool
-(Sideloadly, AltStore, TrollStore) using your own Apple ID; iOS will not install it directly.
-Free accounts re-sign every 7 days.
+This project ships **unsigned** — no Apple Developer membership, no credentials, no code signature.
+That is a deliberate trade: anyone can build it, and anyone can run it, but **iOS cannot install an
+unsigned IPA on a stock device.** You need a re-signing tool that injects your own identity.
 
-**Signed IPA** — from the `Signed IPA` workflow, requires Apple Developer credentials stored as
-repository secrets. Installs directly, distribution depends on the profile type (Ad Hoc needs the
-UDID registered, TestFlight and the App Store do not).
+**Get the IPA**
 
-Full instructions, secret setup, provisioning and rotation: **[docs/BUILD.md](docs/BUILD.md)**.
+- Actions → `Unsigned IPA` → pick a run → download the `EnglishLearning-unsigned-ipa` artifact.
+- On a `v*` tag, the same file is attached to the GitHub Release.
+
+**Install it** — requirements: **iOS 17.0 or newer**, an iPhone or iPad, and one of:
+
+| Tool | Needs | Free Apple account limit |
+| --- | --- | --- |
+| **Sideloadly** | Windows/macOS, Apple ID + password | 3 apps, re-sign every 7 days |
+| **AltStore** | macOS, or on-device with AltStore | 3 apps, refreshed every 7 days |
+| **TrollStore** | A TrollStore-compatible iOS version | No expiry, no limit |
+
+With Sideloadly: connect by USB, drag the `.ipa` onto the window, enter the Apple ID, Start. If iOS
+shows an untrusted-developer prompt, go to Settings → General → VPN & Device Management and trust
+the profile. With a free Apple ID the profile expires after 7 days — re-run the sideload to refresh.
+
+**Prefer the simulator?** Build and run locally with no signing step at all: `make project`, then
+`open EnglishLearning.xcodeproj` and hit Run. That path needs no account and no IPA.
+
+Full instructions: **[docs/BUILD.md](docs/BUILD.md)**.
 
 ## Content authoring
 
