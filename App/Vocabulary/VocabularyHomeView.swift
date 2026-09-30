@@ -269,7 +269,7 @@ struct VocabularyHomeView: View {
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 HStack(spacing: Spacing.xs) {
                     Image(systemName: item.lapses > 0 ? "arrow.uturn.backward.circle.fill" : "exclamationmark.circle.fill")
-                        .foregroundStyle(item.lapses > 0 ? .warning : .danger).font(AppFont.body(.caption))
+                        .foregroundStyle(item.lapses > 0 ? Color.warning : Color.danger).font(AppFont.body(.caption))
                     Text(item.lapses > 0 ? "\(item.lapses) lapse\(item.lapses == 1 ? "" : "s")" : "Got wrong").font(AppFont.body(.caption2, weight: .semibold))
                         .foregroundStyle(.secondary)
                 }

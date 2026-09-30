@@ -145,7 +145,7 @@ struct AlphabetView: View {
                     Spacer(minLength: 0)
                     if isComplete {
                         Image(systemName: "checkmark.circle.fill")
-                            .foregroundStyle(.success)
+                            .foregroundStyle(Color.success)
                             .accessibilityHidden(true)
                     }
                 }

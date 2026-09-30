@@ -191,8 +191,9 @@ enum SpeechFileRenderer {
             bufferQueue.sync {
                 guard !settled else { return }
 
-                // Length lives on the PCM subclass; anything else ends the render.
-                if ((buffer as? AVAudioPCMBuffer)?.frameLength ?? 0) == 0 {
+                // Length lives on the PCM subclass, and write(from:) needs it too:
+                // a non-PCM or empty buffer ends the render.
+                guard let pcmBuffer = buffer as? AVAudioPCMBuffer, pcmBuffer.frameLength > 0 else {
                     // End of utterance. An utterance that produced no audio at
                     // all — a voice with nothing for this text, or a synthesis
                     // that failed silently — is a failure, not a zero-byte
@@ -221,10 +222,10 @@ enum SpeechFileRenderer {
                         // sentence to whatever the previous cache entry left.
                         audioFile = try AVAudioFile(
                             forWriting: destination,
-                            settings: buffer.format.settings
+                            settings: pcmBuffer.format.settings
                         )
                     }
-                    try audioFile?.write(from: buffer)
+                    try audioFile?.write(from: pcmBuffer)
                     wroteAnything = true
                 } catch {
                     // Settle *before* reporting, so the end-of-utterance signal

@@ -253,7 +253,7 @@ struct TopicDetailView: View {
 
                     if state.isStarted {
                         Label("Resume \(state.stepIndex + 1)/\(state.stepCount)", systemImage: "book").font(AppFont.body(.caption, weight: .semibold))
-                            .foregroundStyle(.brand)
+                            .foregroundStyle(Color.brand)
                     } else if !state.isComplete {
                         Text("\(state.stepCount) steps").font(AppFont.body(.caption))
                             .foregroundStyle(.tertiary)
