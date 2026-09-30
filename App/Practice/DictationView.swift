@@ -159,8 +159,15 @@ struct DictationView: View {
 
     @State private var session: LearnSession?
 
-    /// Slow replay rate. The content's own rate wins when it is already slower.
-    private let slowRate: Float = 0.3
+    /// Slow replay rate, as a multiplier of the system's normal rate.
+    ///
+    /// The content's own rate wins when it is already slower. Expressed as a
+    /// multiple rather than an absolute value because
+    /// `AVSpeechUtterance.defaultSpeakingRate` is not a documented constant —
+    /// a hardcoded `0.3` is too slow on a device whose normal rate is lower
+    /// than expected, and the synthesizer ignores out-of-range rates silently
+    /// rather than clamping them.
+    private let slowRate: Float = SpeechRate.scaled(0.6)
 
     private var slot: String { "dictation:\(topicID):\(items.map(\.id).joined(separator: "-"))" }
 

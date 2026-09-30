@@ -6,11 +6,13 @@ import SwiftUI
 /// in the dictation flow it sits above a text field, and the learner needs to
 /// hear the sentence again without scrolling away from what they are typing.
 ///
-/// Nothing here branches on `clip.kind`. A `speech` clip and a downloaded MP3
-/// present the same controls; the two things that differ — the scrubber, which
-/// needs a real timeline, and the speaking indicator — are driven by what the
-/// model reports, so adding `file` and `remote` content never touched this
-/// file.
+/// **Nothing here branches on `clip.kind`.** A `speech` clip and a downloaded
+/// MP3 present the same controls, including the scrubber: `AudioPlayerModel`
+/// renders a speech clip to a cached file before playing it, so by the time
+/// this view sees it there is a real timeline, a real position, and a real
+/// duration. That is the whole reason the render exists — `AVSpeechUtterance`
+/// alone could offer play and stop and nothing else, which would have forced
+/// this file to grow a speech-specific branch.
 struct AudioPlayerView: View {
     /// The clip being played.
     let clip: AudioClip
@@ -18,10 +20,16 @@ struct AudioPlayerView: View {
     @Environment(AudioPlayerModel.self) private var player
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
-    /// The rates offered in the speed menu. Deliberately excludes anything
-    /// below 1x as a *persistent* setting: slow listening is the slow-replay
-    /// button's job, and mixing the two makes both less useful.
-    private let speeds: [Float] = [0.5, 0.75, 1.0, 1.25, 1.5]
+    /// The rates offered in the speed menu, as multiples of normal speed.
+    ///
+    /// Declared as multiples rather than absolute rates so the presets keep
+    /// their meaning on any device: the underlying `AVSpeechUtterance` range is
+    /// not a documented constant and differs by OS version and voice.
+    ///
+    /// Deliberately excludes anything below 1x as a *persistent* setting: slow
+    /// listening is the slow-replay button's job, and mixing the two makes both
+    /// less useful.
+    private let speeds: [Float] = SpeechRate.speedMultiples.map(Float.init)
 
     var body: some View {
         VStack(spacing: Spacing.md) {
@@ -30,8 +38,9 @@ struct AudioPlayerView: View {
             if canScrub {
                 scrubber
             } else {
-                // A speech clip has no timeline, so the position is shown as a
-                // static line rather than a control that would do nothing.
+                // No timeline yet — the clip is still being fetched or rendered.
+                // The static line is shown instead of a control that would do
+                // nothing, and it disappears the moment the duration is real.
                 elapsedLine
             }
             options
@@ -173,8 +182,13 @@ struct AudioPlayerView: View {
     // MARK: - Scrubber
 
     /// `true` only when there is a real timeline to drag.
+    ///
+    /// No longer excludes `speech` clips: a speech clip is rendered to a file
+    /// before it plays, so it has a genuine duration and a genuine position.
+    /// The only thing that can still block the scrubber is a render that has not
+    /// finished, which is exactly what `duration == 0` means.
     private var canScrub: Bool {
-        player.duration > 0 && clip.kind != .speech
+        player.duration > 0 && !player.isLoading
     }
 
     @State private var scrubPosition: Double = 0
@@ -214,7 +228,10 @@ struct AudioPlayerView: View {
         HStack {
             Text(Format.time(isScrubbing ? scrubPosition : player.elapsed))
             Spacer()
-            Text(canScrub ? Format.time(player.duration) : "Speech")
+            // "Preparing…" rather than a kind name: during a render the clip is
+            // a speech clip, and telling the learner so invites them to wonder
+            // why it cannot be scrubbed yet. Say what is happening instead.
+            Text(canScrub ? Format.time(player.duration) : "Preparing…")
         }
         .font(AppFont.mono(.caption))
         .foregroundStyle(Palette.textSecondary)
@@ -246,23 +263,24 @@ struct AudioPlayerView: View {
                 } label: {
                     // The checkmark is what communicates "this is the current
                     // speed"; the label alone would not.
+                    let label = SpeechRate.label(forMultiple: speed)
                     if player.playbackRate == speed {
-                        Label("\(speed.formatted(.number.precision(.fractionLength(0...2))))×", systemImage: "checkmark")
+                        Label(label, systemImage: "checkmark")
                     } else {
-                        Text("\(speed.formatted(.number.precision(.fractionLength(0...2))))×")
+                        Text(label)
                     }
                 }
             }
         } label: {
             Label(
-                "\(player.playbackRate.formatted(.number.precision(.fractionLength(0...2))))×",
+                SpeechRate.label(forMultiple: player.playbackRate),
                 systemImage: "speedometer"
             )
             .font(AppFont.body(.caption, weight: .semibold))
             .foregroundStyle(Palette.textSecondary)
             .frame(minHeight: Metric.controlHeight)
         }
-        .accessibilityLabel(Text(verbatim: "Playback speed, \(player.playbackRate.formatted(.number.precision(.fractionLength(0...2)))) times"))
+        .accessibilityLabel(Text(verbatim: "Playback speed, \(SpeechRate.label(forMultiple: player.playbackRate))"))
         .accessibilityHint(Text(verbatim: "Double tap to choose from half speed to one and a half times."))
     }
 

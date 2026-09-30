@@ -262,7 +262,9 @@ private struct SpeakHintButton: View {
     var body: some View {
         Button {
             Haptics.selection()
-            audio.speak(text, rate: 0.45, completion: nil)
+            // A multiple of normal speed, not a literal rate — see `SpeechRate`.
+            // Slow enough to pick out a word the learner missed the first time.
+            audio.speak(text, rate: SpeechRate.scaled(0.75), completion: nil)
         } label: {
             Label("Hear it", systemImage: "speaker.wave.2.fill")
                 .font(AppFont.body(.caption, weight: .semibold))

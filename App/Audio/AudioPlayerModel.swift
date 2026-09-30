@@ -11,6 +11,18 @@ import Observation
 /// never branches on `kind` — it asks the model to `play(clip:)` and then
 /// renders whatever the model says is happening. That is the whole point.
 ///
+/// **A `speech` clip is rendered to a file before it plays.**
+/// `AVSpeechUtterance` cannot be paused, scrubbed, or reliably kept alive in
+/// the background, so a speech clip played straight through the synthesizer
+/// would quietly fail the scrubber, slow replay, and lock-screen transport —
+/// while looking like it worked. Every speech clip therefore goes through
+/// ``SpeechFileRenderer`` and plays as an ordinary `AVAudioPlayer`, and the
+/// three transport paths become one.
+///
+/// The direct synthesizer survives for ``SpeechPlaying``: tapping a single
+/// word or example sentence should be instant, and a one-shot utterance has no
+/// scrubber to justify a render.
+///
 /// This type also implements ``SpeechPlaying``, so a screen that only needs a
 /// word spoken (an example sentence, a vocabulary entry) can use the same
 /// object it already has instead of holding a second synthesizer.
@@ -99,11 +111,40 @@ public final class AudioPlayerModel {
     /// How many of the `repeatCount` plays have finished.
     private(set) var completedPlays: Int = 0
 
-    /// The rate the *slow replay* button uses, as a fraction of the clip's own
-    /// rate. Deliberately below the slowest selectable speed: slow replay is
-    /// for hearing a single phoneme or a half-finished word, not for working
-    /// through a whole sentence.
-    let slowRate: Float = 0.45
+    /// The rate the *slow replay* button uses, as a fraction of normal speed.
+    ///
+    /// Slower than any speed-menu preset: slow replay is for hearing a single
+    /// phoneme or a half-finished word, not for working through a sentence.
+    ///
+    /// This is a *player* rate applied to the rendered file, not a synthesizer
+    /// rate. That distinction is not about how slow it can go —
+    /// `AVSpeechUtteranceMinimumSpeechRate` is 0.0 on real devices, so speech
+    /// can go slower than this too. It is that the file can be paused,
+    /// scrubbed, and backgrounded, which an utterance cannot.
+    static let slowRate: Float = SpeechRate.slowestFraction
+
+    /// The cache's on-disk size, for a diagnostics row.
+    var speechCacheSize: Int64 { SpeechFileRenderer.cacheSizeInBytes() }
+
+    /// Runs the audio contract checks and returns their results.
+    ///
+    /// Surfaced on the type rather than only in a test target so a debug menu
+    /// can call it on a real device, where `AVSpeechUtterance`'s actual bounds
+    /// are the ones that matter — a simulator's voice set and rate range differ
+    /// enough that passing there proves little.
+    static func runSelfCheck() -> [SpeechAudioSelfCheck.Result] {
+        SpeechAudioSelfCheck.run()
+    }
+
+    /// Empties the rendered-speech cache.
+    ///
+    /// ponytail: a whole-cache delete rather than an LRU. The cache is a few
+    /// megabytes for a normal session and the system purges `Caches` under
+    /// pressure anyway; a real eviction policy is only worth building if long
+    /// offline audio lessons ever ship.
+    func clearSpeechCache() {
+        SpeechFileRenderer.clearCache()
+    }
 
     // MARK: - Collaborators
 
@@ -134,8 +175,14 @@ public final class AudioPlayerModel {
 
     // MARK: - SpeechPlaying
 
-    /// `true` while the shared synthesizer has an utterance in flight.
-    public var isSpeaking: Bool { speech.isSpeaking }
+    /// `true` while audio is in flight by *either* route: a clip playing from
+    /// its rendered file, or a one-shot utterance going straight through the
+    /// synthesizer.
+    ///
+    /// Both matter because the UI shows a speaking indicator for either, and a
+    /// learner who taps an example mid-lesson must see the indicator appear
+    /// even though no `AVPlayer` is running.
+    public var isSpeaking: Bool { speech.isSpeaking || isPlaying }
 
     public init(speech: SpeechService) {
         self.speech = speech
@@ -206,6 +253,14 @@ public final class AudioPlayerModel {
         }
         applyAudioSession()
 
+        // Two kinds are not playable the moment `load` returns: a `speech` clip
+        // is still being rendered, and a `remote` one is still being
+        // downloaded. Both hand the autoplay intent to their own completion
+        // rather than having it acted on here, where `resume` would find no
+        // player and silently do nothing.
+        let isAsynchronous = clip.kind == .speech || clip.kind == .remote
+        pendingAutoplay = autoplay && isAsynchronous
+
         switch clip.kind {
         case .speech:
             loadSpeech(clip)
@@ -214,7 +269,7 @@ public final class AudioPlayerModel {
         case .remote:
             loadRemote(clip)
         }
-        if autoplay { resume() }
+        if autoplay, !isAsynchronous { resume() }
     }
 
     /// Stops everything and releases the loaded clip.
@@ -226,6 +281,8 @@ public final class AudioPlayerModel {
         isLoading = false
         elapsed = 0
         duration = 0
+        // Cleared so a stale render cannot start playing after a stop.
+        pendingAutoplay = false
         // Bumped on every stop so a render that was in flight when the learner
         // moved on cannot install its player over the new clip.
         renderToken &+= 1
@@ -260,20 +317,15 @@ public final class AudioPlayerModel {
         updateNowPlaying()
     }
 
-    /// Pauses. A paused utterance is stopped, not resumed: `AVSpeechSynthesizer`
-    /// cannot resume mid-sentence, so pretending otherwise would silently
-    /// restart it.
+    /// Pauses.
+    ///
+    /// Uniform across all three kinds because a speech clip is a rendered file
+    /// by the time it is playing. There is no "stop and remember where I was"
+    /// path any more, and there did not need to be one.
     func pause() {
-        switch clip?.kind {
-        case .speech:
-            speech.stop()
-            isPlaying = false
-        case .file, .remote:
-            player?.pause()
-            isPlaying = false
-        case nil:
-            return
-        }
+        guard clip != nil else { return }
+        player?.pause()
+        isPlaying = false
         clearTicker()
         updateNowPlaying()
     }
@@ -284,24 +336,28 @@ public final class AudioPlayerModel {
     }
 
     /// Restarts the clip from zero, keeping the current settings.
+    ///
+    /// Restores normal speed first: "replay" after a slow replay means "say it
+    /// again", not "say it again at a crawl".
+    ///
+    /// While a speech clip is still rendering there is no file to rewind, so
+    /// the intent is recorded and honoured by the render's completion — the
+    /// same mechanism `pendingAutoplay` uses, which is why a learner who taps
+    /// replay three times during a render hears the sentence once, from the
+    /// start, rather than nothing.
     func replay() {
         guard clip != nil else { return }
-        elapsed = 0
-        switch clip?.kind {
-        case .speech:
-            speech.stop()
-            isPlaying = true
-            speech.speak(
-                clip?.text ?? "",
-                rate: scaledSpeechRate,
-                completion: { [weak self] in self?.clipDidFinishPlaying() }
-            )
-        case .file, .remote:
-            player?.currentTime = 0
-            isPlaying = true
-            player?.play()
-            startTicker()
+        guard let player else {
+            pendingAutoplay = true
+            return
         }
+        elapsed = 0
+        player.currentTime = 0
+        player.enableRate = true
+        player.rate = playbackRate
+        player.play()
+        isPlaying = true
+        startTicker()
         updateNowPlaying()
     }
 
@@ -312,47 +368,43 @@ public final class AudioPlayerModel {
     /// learner sets once; slow replay is a momentary action that always plays
     /// slowly and always from the start, because the words being listened for
     /// are at the beginning of the sentence.
+    ///
+    /// Slow replay is momentary, not sticky: the next ``replay()`` or a touch
+    /// of the speed control returns the clip to normal speed, so a learner who
+    /// taps it to hear one word does not then find the whole clip stuck at a
+    /// crawl.
     func slowReplay() {
-        guard let clip else { return }
-        stop()
-        self.clip = clip
-        applyAudioSession()
-        switch clip.kind {
-        case .speech:
-            isPlaying = true
-            elapsed = 0
-            speech.speak(
-                clip.text ?? "",
-                rate: clip.speakingRate * slowRate,
-                completion: { [weak self] in self?.clipDidFinishPlaying() }
-            )
-        case .file, .remote:
-            guard let player else { return }
-            player.currentTime = 0
-            player.enableRate = true
-            player.rate = slowRate
-            isPlaying = true
-            startTicker()
+        guard clip != nil else { return }
+        guard let player else {
+            // Still rendering. The rate is recorded so the completion starts it
+            // slowly rather than at normal speed.
+            pendingAutoplay = true
+            pendingSlowRate = Self.slowRate
+            return
         }
+        elapsed = 0
+        player.currentTime = 0
+        player.enableRate = true
+        // A player rate on the rendered file, deliberately below every
+        // speed-menu preset. See `slowRate`.
+        player.rate = Self.slowRate
+        isPlaying = true
+        startTicker()
         updateNowPlaying()
     }
 
     /// Seeks to `seconds`, clamped to the clip.
+    ///
+    /// Uniform across all three clip kinds, because a speech clip is played
+    /// from a rendered file and therefore has a real timeline. Before that
+    /// change this had to special-case `.speech` and restart the utterance,
+    /// which is why the scrubber used to be hidden for speech clips at all.
     func seek(to seconds: TimeInterval) {
-        guard let clip else { return }
-        let target = min(max(seconds, 0), max(duration, 0))
-        switch clip.kind {
-        case .speech:
-            // A speech clip has no timeline to scrub, so seeking restarts the
-            // utterance. The scrubber is hidden in this case, so this only
-            // happens from a keyboard or VoiceOver action.
-            elapsed = target
-            if isPlaying { replay() }
-        case .file, .remote:
-            player?.currentTime = target
-            elapsed = target
-            updateNowPlaying()
-        }
+        guard let player else { return }
+        let target = min(max(seconds, 0), max(player.duration, 0))
+        player.currentTime = target
+        elapsed = target
+        updateNowPlaying()
     }
 
     /// Nudges the position by `seconds`, used by the 10-second skip controls.
@@ -399,18 +451,101 @@ public final class AudioPlayerModel {
 
     // MARK: - Loading
 
+    /// Loads a `speech` clip by **rendering it to a file first**.
+    ///
+    /// This is the whole point of routing speech through the file cache. The
+    /// live synthesizer cannot be paused, cannot be scrubbed, and cannot be
+    /// relied on to continue in the background — so a speech clip played
+    /// directly would silently fail the scrubber, real slow replay, and
+    /// lock-screen transport while appearing to work.
+    ///
+    /// It is *not* about going slower than the synthesizer allows. That is
+    /// already 0.0 on real devices. It is that a file can be paused, scrubbed,
+    /// and backgrounded at all, which an utterance cannot.
+    ///
+    /// Once rendered, the clip is an ordinary `AVAudioPlayer`, and every
+    /// transport control below works on it identically to a `file` clip.
+    ///
+    /// The render is asynchronous, so `isLoading` is `true` until it lands. A
+    /// cache hit skips the render entirely, so a second visit to a lesson costs
+    /// one `AVAudioPlayer` open and no synthesis at all.
+    ///
+    /// The completion is always hopped onto the main actor, even when the
+    /// renderer answers synchronously on a cache hit. That is not incidental:
+    /// calling `loadPlayer` inline from a cache hit would install a player and
+    /// then re-enter this method's caller before `load` had finished, and the
+    /// deferred hop makes both paths identical.
     private func loadSpeech(_ clip: AudioClip) {
-        guard let text = clip.text, !text.isEmpty else {
+        guard let text = clip.text, !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             errorMessage = "This clip has no text to speak."
             return
         }
-        // `AVSpeechUtterance` has no duration before it is spoken, so the
-        // estimate is what the scrubber and the "total" label show. It is an
-        // estimate on purpose: a wrong total is better than a spinner.
+
+        let key = SpeechFileRenderer.Key(
+            text: text,
+            rate: scaledSpeechRate,
+            voiceID: clip.voiceID
+        )
+        // Identifies this render. A render that finishes after the learner has
+        // moved to another clip installs nothing, which is the whole reason the
+        // token exists — otherwise a slow render of lesson 1 lands on top of
+        // lesson 2's player.
+        renderToken &+= 1
+        let token = renderToken
+
+        // Show the estimated length immediately so the transport bar is not
+        // empty while the render runs. The real duration replaces it the moment
+        // the file opens.
         duration = estimatedSpeechDuration(text: text, rate: scaledSpeechRate)
         elapsed = 0
-        player = nil
+        isLoading = true
+
+        SpeechFileRenderer.render(key: key) { [weak self] result in
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                // Stale: the learner stopped or switched clips mid-render.
+                guard token == self.renderToken else { return }
+                isLoading = false
+
+                switch result {
+                case .success(let url):
+                    loadPlayer(url: url, clip: clip)
+                    // Read both intents *before* clearing them: they are what the
+                    // learner asked for while the render was running, and a
+                    // slow-replay tap implies "play" too.
+                    let shouldPlay = pendingAutoplay || isPlaying
+                    let slow = pendingSlowRate
+                    pendingAutoplay = false
+                    pendingSlowRate = nil
+                    if let slow, let player {
+                        player.rate = slow
+                    }
+                    if shouldPlay {
+                        resume()
+                    }
+                case .failure(let error):
+                    pendingAutoplay = false
+                    pendingSlowRate = nil
+                    errorMessage = (error as? LocalizedError)?.errorDescription
+                        ?? "This sentence could not be prepared for playback."
+                }
+            }
+        }
     }
+
+    /// Bumped on every load and every stop; see ``renderToken``.
+    @ObservationIgnored
+    private var renderToken: Int = 0
+
+    /// Set when a render started with `autoplay` so the file starts as soon as
+    /// it is ready rather than sitting silent until a second tap.
+    @ObservationIgnored
+    private var pendingAutoplay: Bool = false
+
+    /// The rate to start a pending render at, when `slowReplay` was pressed
+    /// before the file existed. `nil` means normal speed.
+    @ObservationIgnored
+    private var pendingSlowRate: Float?
 
     private func loadFile(_ clip: AudioClip) {
         guard let fileName = clip.fileName,
@@ -427,10 +562,20 @@ public final class AudioPlayerModel {
             return
         }
         isLoading = true
+        // Same token as the speech render: a download that lands after the
+        // learner has moved on must not install a player over the new clip.
+        renderToken &+= 1
+        let token = renderToken
+
         URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             Task { @MainActor [weak self] in
                 guard let self else { return }
+                guard token == self.renderToken else { return }
                 isLoading = false
+
+                let shouldPlay = pendingAutoplay
+                pendingAutoplay = false
+
                 if let error {
                     errorMessage = "Audio could not be downloaded: \(error.localizedDescription)"
                     return
@@ -440,6 +585,7 @@ public final class AudioPlayerModel {
                     return
                 }
                 loadPlayerData(data, clip: clip)
+                if shouldPlay { resume() }
             }
         }.resume()
     }
@@ -519,9 +665,6 @@ public final class AudioPlayerModel {
         ) { [weak self] _ in
             Task { @MainActor [weak self] in self?.handleRouteChange() }
         })
-
-        // A speech clip that ends is not reported by the synthesizer's delegate
-        // through this model, so the completion closure above handles it.
     }
 
     private func handleInterruption(_ note: Notification) {
@@ -565,6 +708,11 @@ public final class AudioPlayerModel {
     /// continues, but the learner cannot see what is playing or pause it from
     /// the lock screen. A dictation set is exactly the situation where the
     /// phone is face-down and the lock screen is the only UI available.
+    ///
+    /// A `speech` clip reaches this point as a rendered file, so the lock screen
+    /// gets a real duration and a real scrub position for a sentence too — the
+    /// metadata is not second-class for TTS the way it would be if the
+    /// synthesizer were driving playback.
     private func updateNowPlaying() {
         guard let clip else {
             MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
@@ -574,7 +722,10 @@ public final class AudioPlayerModel {
         var info: [String: Any] = [
             MPMediaItemPropertyTitle: clip.title ?? clip.text ?? "Audio",
             MPMediaItemPropertyArtist: "English Learning",
-            MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? (Double(playbackRate)) : 0.0,
+            // The player's actual rate, not the speed control's value: after a
+            // slow replay the two differ, and the lock screen has to show what
+            // the learner is hearing.
+            MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? Double(player?.rate ?? playbackRate) : 0.0,
             MPNowPlayingInfoPropertyElapsedPlaybackTime: elapsed,
         ]
         if duration > 0 {
@@ -710,27 +861,51 @@ public final class AudioPlayerModel {
         queue.shuffle()
     }
 
+    /// Applies the speed control to the running player.
+    ///
+    /// Only while playing: setting `AVAudioPlayer.rate` on a stopped player is
+    /// accepted but is overwritten by the next `play()`, so writing it here
+    /// would make the speed control look broken when the learner paused, changed
+    /// speed, and pressed play.
     private func applyRate() {
         guard let player, isPlaying else { return }
         player.rate = playbackRate
         updateNowPlaying()
     }
 
-    /// The clip's own rate scaled by the speed control, for speech only.
+    /// The rate a speech clip is **rendered** at: the clip's authored rate,
+    /// scaled by the speed control, clamped to the bounds the synthesizer
+    /// actually reports.
+    ///
+    /// This is the rate baked into the cache file, so it is only consulted when
+    /// a render is requested. Once a speech clip is playing it is a plain audio
+    /// file and the speed control acts on `AVAudioPlayer.rate` instead — which
+    /// means the speed menu works on speech clips *without* re-rendering, and
+    /// that the menu can offer rates the synthesizer would never honour.
     private var scaledSpeechRate: Float {
-        let base = clip?.speakingRate ?? AVSpeechUtterance.defaultSpeakingRate
-        return max(AVSpeechUtteranceMinimumSpeechRate, min(base * playbackRate, AVSpeechUtteranceMaximumSpeechRate))
+        // `AudioClip.rate` is authored in the content as an absolute
+        // `AVSpeechUtterance` rate, defaulting to the system's normal rate. The
+        // speed control is a multiplier on top of it, then clamped — an
+        // out-of-range rate is silently ignored, not clamped for us.
+        let base = clip?.speakingRate ?? SpeechRate.normal
+        return min(max(base * playbackRate, SpeechRate.minimum), SpeechRate.maximum)
     }
 
-    /// A rough spoken duration, in seconds.
+    /// A rough spoken duration, in seconds, shown while a render is in flight.
     ///
-    /// Roughly 14 characters per second at the default rate, scaled linearly.
-    /// It is an estimate, and it is marked as one, because `AVSpeechUtterance`
-    /// will not tell us the real length until it has been spoken.
+    /// Roughly 14 characters per second at normal speed, scaled linearly. It is
+    /// an estimate by necessity — `AVSpeechUtterance` will not report a length
+    /// before it is spoken, and the file does not exist yet — but the real
+    /// duration replaces it the moment the render lands, so nothing depends on
+    /// this being accurate.
     private func estimatedSpeechDuration(text: String, rate: Float) -> TimeInterval {
-        let base = Double(text.count) / 14.0
-        let defaultRate = Double(AVSpeechUtterance.defaultSpeakingRate)
-        return max(0.5, base * (defaultRate / Double(max(rate, 0.1))))
+        let charactersPerSecond = 14.0
+        let base = Double(text.count) / charactersPerSecond
+        // `max(rate, minimum)` rather than a literal floor: dividing by a rate of
+        // zero would be an infinity, and the point is to express the ratio
+        // against the system's own normal rate.
+        let relativeToNormal = Double(SpeechRate.normal) / Double(max(rate, SpeechRate.minimum))
+        return max(0.5, base * relativeToNormal)
     }
 }
 
@@ -772,30 +947,56 @@ private final class PlayerDelegateProxy: NSObject, AVAudioPlayerDelegate {
 // MARK: - SpeechPlaying conformance
 
 extension AudioPlayerModel: SpeechPlaying {
-    /// Speaks arbitrary text through the same synthesizer the player uses, so
-    /// an example-sentence tap and a clip play can never talk over each other.
+    /// Speaks arbitrary text through the shared synthesizer.
+    ///
+    /// This is the **direct** path, and it is deliberately separate from clip
+    /// playback. A `SpeechPlaying` caller is tapping one word or one example
+    /// sentence and wants it now; rendering a file first would add a perceptible
+    /// delay to every tap, and the caller has no scrubber and no lock-screen
+    /// controls to justify it. Clips loaded into the player take the rendered
+    /// path instead — see ``loadSpeech(_:)``.
+    ///
+    /// Any clip currently playing is stopped first, so a one-shot utterance can
+    /// never talk over a lesson's audio.
     public func speak(_ text: String, rate: Float, completion: (() -> Void)?) {
-        speech.stop()
+        player?.stop()
+        isPlaying = false
+        clearTicker()
+
         speech.speak(text, rate: rate) { [weak self] in
             completion?()
-            self?.isPlaying = false
         }
     }
 
+    /// Speaks `text` at the system's normal rate.
+    ///
+    /// Exists so a caller with no reason to pick a speed does not write one.
+    /// Every hardcoded rate literal in the app is a guess about
+    /// `AVSpeechUtterance.defaultSpeakingRate`, which is not a documented
+    /// constant; making the normal-speed path the shortest one is what stops
+    /// those guesses from accumulating.
+    func speak(_ text: String, completion: (() -> Void)? = nil) {
+        speak(text, rate: SpeechRate.normal, completion: completion)
+    }
+
     public func stop() {
-        speech.stop()
+        player?.stop()
         isPlaying = false
+        clearTicker()
+        speech.stop()
     }
 }
 
 extension AudioPlayerModel {
-    /// Speaks `text` with no completion handler.
+    /// Speaks `text` as slowly as the synthesizer allows.
     ///
-    /// A separate method rather than a default argument on the protocol
-    /// conformance: the protocol fixes the three-argument shape, and a screen
-    /// that only wants a word spoken should not have to write `{}`.
-    func speak(_ text: String, rate: Float) {
-        speak(text, rate: rate, completion: nil)
+    /// The slowest *direct* speech, for a one-shot tap where there is no player
+    /// to render through. Below this the answer is a rendered file, not a
+    /// quieter request — the synthesizer silently ignores an out-of-range rate
+    /// rather than clamping it, so asking for less than it supports produces
+    /// normal speed with no indication anything went wrong.
+    func speakSlowly(_ text: String, completion: (() -> Void)? = nil) {
+        speak(text, rate: SpeechRate.slowest, completion: completion)
     }
 
     /// Loads and plays a clip, with the transport's own defaults.

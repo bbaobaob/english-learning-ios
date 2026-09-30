@@ -30,7 +30,30 @@ public final class SpeechService {
         synthesizer.delegate = self
     }
 
-    /// Speaks `text`.
+    /// Speaks `text` at the system's normal rate.
+    ///
+    /// The **preferred** entry point. A caller with no reason to choose a rate
+    /// should never write one: `AVSpeechUtterance.defaultSpeakingRate` is not a
+    /// documented constant, it varies by OS version, locale, and installed
+    /// voice, and a hardcoded value is a guess that sounds plausible on the
+    /// developer's device while being wrong on everyone else's.
+    ///
+    /// - Parameters:
+    ///   - text: What to say. Empty text is a no-op, not a silent crash.
+    ///   - voiceID: Optional voice override. Ignored when the identifier does
+    ///     not match an installed voice — a content file naming a voice the
+    ///     device does not have must degrade to the default, not fail.
+    ///   - completion: Run on the main actor when the utterance ends or is cut
+    ///     short, so callers do not need to reason about which happened.
+    public func speak(
+        _ text: String,
+        voiceID: String? = nil,
+        completion: (() -> Void)? = nil
+    ) {
+        speak(text, rate: SpeechRate.normal, voiceID: voiceID, completion: completion)
+    }
+
+    /// Speaks `text` at a rate chosen by the caller.
     ///
     /// This is the **direct** path: no file, no scrubber, no background
     /// survival. It is correct for the case it exists for — a one-shot tap on an
@@ -43,16 +66,16 @@ public final class SpeechService {
     /// replaces the first rather than queueing behind it.
     ///
     /// - Parameters:
-    ///   - text: What to say. Empty text is a no-op, not a silent crash.
-    ///   - rate: A rate already resolved through ``SpeechRate``. Values outside
-    ///     the system's range are clamped by ``SpeechRate/scaled(_:)``, because
-    ///     an out-of-range rate is *silently ignored* rather than clamped by the
-    ///     framework.
-    ///   - voiceID: Optional voice override. Ignored when the identifier does
-    ///     not match an installed voice — a content file naming a voice the
-    ///     device does not have must degrade to the default, not fail.
+    ///   - text: What to say.
+    ///   - rate: An absolute rate, which must come from ``SpeechRate`` —
+    ///     either `SpeechRate.normal`, `SpeechRate.scaled(_:)`, or a clip's own
+    ///     `speakingRate`. Values outside the system's range are clamped here,
+    ///     because the framework *silently ignores* an out-of-range rate rather
+    ///     than clamping it, and a speaker that appears not to work is worse
+    ///     than a slow one.
+    ///   - voiceID: Optional voice override.
     ///   - completion: Run on the main actor when the utterance ends or is cut
-    ///     short, so callers do not need to reason about which happened.
+    ///     short.
     public func speak(
         _ text: String,
         rate: Float,

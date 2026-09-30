@@ -624,7 +624,11 @@ struct AudioStepPlayer: View {
     @State private var isLooping: Bool = false
     @State private var hasPlayed: Bool = false
 
-    private let speeds: [Float] = [0.5, 0.4, 0.3]
+    /// Speed presets as multiples of the system's normal rate, not absolute
+    /// values — see `SpeechRate`. The lowest of these is still well above the
+    /// synthesizer's floor; for slower-than-this, the clip is played from a
+    /// rendered file via `AudioPlayerModel.slowReplay()`.
+    private let speeds: [Double] = [1.0, 0.75, 0.5]
 
     private var speedLabel: String {
         switch speedIndex {
@@ -660,7 +664,7 @@ struct AudioStepPlayer: View {
 
             HStack(spacing: Spacing.md) {
                 Button {
-                    play(rate: speeds[speedIndex])
+                    play(absoluteRate: SpeechRate.scaled(speeds[speedIndex]))
                 } label: {
                     Label(hasPlayed ? "Replay" : "Play", systemImage: "play.fill")
                         .font(.headline)
@@ -691,7 +695,7 @@ struct AudioStepPlayer: View {
 
             if spokenText != nil {
                 Button {
-                    play(rate: SpeakGate.slowRate)
+                    play(absoluteRate: SpeakGate.slowRate)
                 } label: {
                     Label("Play slowly", systemImage: "tortoise")
                         .font(.subheadline.weight(.semibold))
@@ -704,10 +708,10 @@ struct AudioStepPlayer: View {
         .cardStyle()
     }
 
-    private func play(rate: Float) {
+    private func play(absoluteRate: Float) {
         hasPlayed = true
         if let text = spokenText {
-            SpeakGate.say(text, using: app, rate: rate)
+            SpeakGate.say(text, using: app, absoluteRate: absoluteRate)
         } else {
             app.audio.play(clip)
         }

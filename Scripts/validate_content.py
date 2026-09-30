@@ -43,16 +43,18 @@ EXERCISE_KINDS = (
     "reading", "listeningComprehension", "grammarCorrection",
 )
 ANSWER_TYPES = ("text", "choice", "pairs", "order", "boolean", "none")
-IELTS_KINDS = {
-    "multipleChoice", "matching", "formCompletion", "noteCompletion",
-    "sentenceCompletion", "mapLabeling", "diagramLabeling", "dictation",
-    "trueFalseNotGiven", "yesNoNotGiven", "matchingHeadings",
-    "matchingInformation", "summaryCompletion",
-}
+# IELTSQuestion is `typealias Exercise`, so an IELTS question's kind is an
+# ExerciseKind case -- the same table as the rest of the course. The old
+# 13-case IELTSQuestion.Kind enum was deleted (IELTS.swift:22): no shipped
+# question used it and its presence made every IELTS module fail to decode.
 IELTS_SKILLS = ("listening", "reading", "writing", "speaking")
 
 # docs/ARCHITECTURE.md section 1, "answer.type and items shape per exercise kind".
 # trueFalse accepts either boolean or choice -- that is intentional.
+# `listening` has no row in the s1 table, but it is an ExerciseKind case
+# (Exercise.swift:9) and the shipped corpus uses it with both text and choice
+# answers, so it is accepted here on the decoder's authority rather than warned
+# about on the doc's.
 EXPECTED_ANSWER_TYPE = {
     "multipleChoice": "choice",
     "multiSelect": "choice",
@@ -60,6 +62,7 @@ EXPECTED_ANSWER_TYPE = {
     "fillInTheBlank": "text",
     "typeTheAnswer": "text",
     "dictation": "text",
+    "listening": ("text", "choice"),
     "matching": "pairs",
     "rearrangeWords": "order",
     "sentenceCompletion": "text",
@@ -70,24 +73,40 @@ EXPECTED_ANSWER_TYPE = {
     "listeningComprehension": "choice",
     "grammarCorrection": "text",
 }
-# Not in the section 1 table at all. `listening` is an ExerciseKind case in the
-# decoder and is used by shipped content with both text and choice answers.
-UNDOCUMENTED_KINDS = {"listening": ("text", "choice")}
 
 # Kinds that must carry their own audio stimulus (keeps the app asset-free).
 AUDIO_REQUIRED_KINDS = ("listening", "listeningComprehension", "dictation")
 
-# section 3: theory -> video -> examples -> listening -> dictation -> practice -> quiz -> summary
+# Section 3's documented sequence: theory -> video -> examples -> listening ->
+# dictation -> practice -> quiz -> summary.
+#
+# DOC_DECISION: the doc puts `dictation` before `practice`, and never names
+# `exercises` at all (the s1 table has both `practice` and `exercises`; the
+# corpus ships `exercises` 160 times and `practice` 0). All 160 lessons in the
+# corpus agree on the order below, unanimously, and the decoder has no ordering
+# requirement. So the content is coherent and the doc is the stale side: the
+# check follows the corpus convention and reports the divergence once, as a
+# DOC_DECISION note, instead of flagging every lesson in every file.
+# ARCHITECTURE.md s3 should read:
+#   theory -> video -> audio -> examples -> listening -> exercises -> dictation
+#         -> practice -> quiz -> summary
 STEP_ORDER = (
+    "theory", "video", "audio", "examples", "listening",
+    "exercises", "dictation", "practice", "quiz", "summary",
+)
+# The doc's sequence, kept so the note can name the exact divergence.
+DOC_STEP_ORDER = (
     "theory", "video", "audio", "examples", "listening",
     "dictation", "practice", "exercises", "quiz", "summary",
 )
+LEVEL_INDEX = {name: n for n, name in enumerate(LEVELS)}
 PRACTICE_CONTENT = ("exercises", "dictation", "listening", "practice")
 
 KEBAB = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 IPA = re.compile(r"^/.+/$", re.S)
 BAND = re.compile(r"^\d+(\.\d+)?$")
 QUESTION_RANGE = re.compile(r"[Qq]uestions?\s*(\d+)\s*[-–—]\s*(\d+)")
+QUESTION_SINGLE = re.compile(r"[Qq]uestion\s+(\d+)")
 
 # Placeholders that must never appear in a committed URL.
 URL_PLACEHOLDER = re.compile(
@@ -111,6 +130,15 @@ class Report:
     def warn(self, kind: str, where: str, message: str) -> None:
         self.warnings.append(f"{where} — [{kind}] {message}")
         self._counts[kind] += 1
+
+    def note(self, message: str) -> None:
+        """A doc/decoder disagreement or a rule-change verdict.
+
+        Not a finding against the content and not a finding against the doc: a
+        recorded decision, printed so a stale rule can never quietly become a
+        silent one again.
+        """
+        self.notes.append(message)
 
     def count(self, kind: str) -> int:
         return self._counts[kind]
@@ -292,6 +320,7 @@ class Corpus:
     def __init__(self) -> None:
         self.exercise_ids: dict[str, list[str]] = defaultdict(list)
         self.lesson_ids: dict[str, list[str]] = defaultdict(list)
+        self.module_ids: dict[str, list[str]] = defaultdict(list)
         self.kinds: Counter = Counter()
         self.dictation_items = 0
         self.quiz_questions = 0
@@ -299,9 +328,11 @@ class Corpus:
         self.video_sources: Counter = Counter()
         self.audio_required_with_speech = 0
         self.audio_required_total = 0
-        # lesson id -> Counter(difficulty -> count) for exercises whose difficulty
-        # differs from the lesson level; reported once per lesson.
-        self.drift: dict[str, Counter] = defaultdict(Counter)
+        # lesson id -> Counter(delta -> count) for exercises whose difficulty is
+        # two or more levels away from the lesson level; reported once per lesson.
+        self.jump: dict[str, Counter] = defaultdict(Counter)
+        # Corpus-wide Counter(delta -> count), for the totals block.
+        self.difficulty_delta: Counter = Counter()
         # rel path -> Counter("<stepA> before <stepB>") for s3 order violations.
         self.step_order: dict[str, Counter] = defaultdict(Counter)
         self.topics = 0
@@ -319,7 +350,12 @@ def check_exercise(
         return
     ex_id = ex.get("id")
     where = index.at(ex_id if isinstance(ex_id, str) else None)
-    corpus.exercises += 1
+    # IELTS questions are Exercises too, but they are counted on their own line
+    # so the topic-corpus totals stay comparable with the pre-IELTS numbers.
+    if origin.startswith("IELTS"):
+        corpus.ielts_questions += 1
+    else:
+        corpus.exercises += 1
     corpus.exercise_ids[ex_id].append("%s (%s)" % (rel, origin))
     corpus.kinds[ex.get("kind")] += 1
 
@@ -349,10 +385,17 @@ def check_exercise(
     difficulty = ex.get("difficulty")
     if difficulty not in LEVELS:
         report.error("difficulty", where, "difficulty %r is not beginner|intermediate|advanced" % difficulty)
-    elif lesson_level is not None and difficulty != lesson_level:
-        # Aggregated per lesson, not per exercise: 300-odd lines of this drowns
-        # the report without telling anyone anything new.
-        corpus.drift[lesson_id][difficulty] += 1
+    elif lesson_level in LEVELS:
+        # Verdict on the old `difficulty-drift` rule: `difficulty` is a per-exercise
+        # field precisely so one lesson can mix tiers, so a one-level step is
+        # legitimate authoring (a distractor in a beginner lesson, a consolidation
+        # item in an advanced one) and ARCHITECTURE.md never required equality --
+        # s3 constrains the lesson *level* progression, not this field. Only a
+        # two-level jump is an authoring inconsistency worth naming.
+        delta = LEVEL_INDEX[difficulty] - LEVEL_INDEX[lesson_level]
+        if abs(delta) >= 2:
+            corpus.jump[lesson_id][delta] += 1
+        corpus.difficulty_delta[delta] += 1
 
     prompt = ex.get("prompt")
     if not is_nonempty_str(prompt):
@@ -397,6 +440,12 @@ def check_exercise(
                 "audio-required", where,
                 "kind %s must carry a speech clip; this one points at a remote asset" % kind,
             )
+        else:
+            report.error(
+                "audio-required", where,
+                "kind %s has no speech clip; the app ships zero media assets, so without "
+                "audio.kind == \"speech\" with text this question is silent" % kind,
+            )
 
     answer = ex.get("answer")
     if not isinstance(answer, dict):
@@ -409,13 +458,6 @@ def check_exercise(
         return
 
     expected = EXPECTED_ANSWER_TYPE.get(kind)
-    if expected is None and kind in UNDOCUMENTED_KINDS:
-        expected = UNDOCUMENTED_KINDS[kind]
-        report.warn(
-            "undocumented-kind", where,
-            "kind %r is an ExerciseKind case but has no row in ARCHITECTURE.md s1; "
-            "accepting answer.type %s" % (kind, "/".join(expected)),
-        )
     if expected is not None:
         allowed = (expected,) if isinstance(expected, str) else expected
         if atype not in allowed:
@@ -426,33 +468,61 @@ def check_exercise(
             )
 
     # Decoder truth: the payload shape must be decodable as the type claims.
-    # DOC_DECISION -- ARCHITECTURE.md never says what happens to a mismatched
-    # payload; Answer.init(from:) uses decodeIfPresent, so a wrong type throws
-    # and takes the whole file with it, or silently defaults.
-    if atype == "boolean" and "value" in answer and "values" not in answer:
-        report.error(
-            "answer-key", where,
-            "answer uses key \"value\"; the decoder reads \"values\" and will silently "
-            "grade every response as false (intended %r)" % (answer.get("value"),),
-        )
+    # Answer.init(from:) (Exercise.swift:130) uses decodeIfPresent, so a payload
+    # of the wrong type THROWS and takes the whole topic file -- and therefore the
+    # whole topic -- out of the library with no visible error.
+    #
+    # `boolean` is the one case with a deliberate tolerance: Answer.decodeBoolean
+    # (Exercise.swift:159) also accepts `value`, a bare string, and a
+    # single-element array. Those forms decode, so they are a warning about
+    # authoring style, not an error -- but they stay visible, because the reason
+    # that tolerance exists is that the strict form once graded every True/False
+    # question as false with nothing on screen to say so.
+    if atype == "boolean":
+        if not isinstance(values, bool):
+            report.warn(
+                "boolean-shape", where,
+                "answer.type \"boolean\" but values is %s; Answer.decodeBoolean tolerates "
+                "this and will read it as %r, but the canonical shape is a real JSON "
+                "boolean under \"values\""
+                % (type(values).__name__ if values is not None else "missing",
+                   values if not isinstance(values, (list, dict)) else (values[0] if isinstance(values, list) and values else None)),
+            )
+        if "values" not in answer and "value" in answer:
+            report.warn(
+                "boolean-shape", where,
+                "answer uses key \"value\"; Answer.decodeBoolean reads it as an alias, "
+                "but the canonical key is \"values\"",
+            )
     if atype in ("text", "choice", "order"):
         if values is None:
             report.error("answer-values", where, "answer.values missing for type %r" % atype)
         elif not isinstance(values, list) or not all(isinstance(v, str) for v in values):
+            # This is the shape that killed 25 rearrangeWords answers: `values`
+            # nested one level deeper than [String]. AnswerValue.order holds ONE
+            # order, so a nested list is not a "second accepted ordering" -- it is
+            # a decode failure.
+            nested = isinstance(values, list) and any(isinstance(v, list) for v in values)
             report.error(
                 "answer-decode", where,
-                "answer.type %r but values is %s; Answer.init(from:) decodes [String] and "
+                "answer.type %r but values is %s%s; Answer.init(from:) decodes [String] and "
                 "this THROWS, dropping the whole topic file"
-                % (atype, type(values).__name__),
+                % (atype, type(values).__name__, " (nested one level too deep)" if nested else ""),
             )
     elif atype == "pairs" and values is not None and not isinstance(values, dict):
         report.error("answer-decode", where, "answer.type \"pairs\" but values is not an object")
-    elif atype == "boolean" and values is not None and not isinstance(values, bool):
-        report.error(
-            "answer-decode", where,
-            "answer.type \"boolean\" but values is %s; Answer.init(from:) decodes Bool and "
-            "this THROWS, dropping the whole topic file" % type(values).__name__,
-        )
+
+    # An answer the exercise's own items cannot produce can never be graded
+    # correct, however well it decodes.
+    if atype == "choice" and isinstance(values, list) and items:
+        known = {i.get("id") for i in items if isinstance(i, dict)}
+        stray = sorted(v for v in values if v not in known)
+        if stray:
+            report.error(
+                "answer-unsatisfiable", where,
+                "answer.values %s name(s) no item id in this exercise (items are %s), so no "
+                "learner response can match" % (stray, sorted(k for k in known if k)),
+            )
 
     if kind == "multipleChoice":
         correct = [i["id"] for i in (items or [])
@@ -486,29 +556,20 @@ def check_exercise(
             )
     elif kind == "rearrangeWords":
         tokens = [i.get("text") for i in (items or []) if isinstance(i, dict)]
+        # AnswerValue.order holds exactly one [String]. A nested list is a decode
+        # failure, not "several accepted orderings" -- that tolerance was what let
+        # 25 broken answers sit in the corpus unnoticed. answer-decode above has
+        # already errored on it; only the flat case is graded here.
         candidates = values if isinstance(values, list) else []
-        flat = [v for c in candidates for v in c] if candidates and isinstance(candidates[0], list) else candidates
-        if candidates and isinstance(candidates[0], list):
-            # Multiple accepted orderings: each candidate must be a permutation.
-            bad = [c for c in candidates if multiset(c) != multiset(tokens)]
-            if bad:
+        if candidates and all(isinstance(v, str) for v in candidates):
+            if multiset(candidates) != multiset(tokens):
                 report.error(
                     "rearrange-tokens", where,
-                    "%d accepted orderings are not a permutation of items[].text %s"
-                    % (len(bad), bad[:1]),
+                    "items[].text multiset %s != answer.values token multiset %s"
+                    % (sorted(multiset(tokens).elements()), sorted(multiset(candidates).elements())),
                 )
-            if len(candidates) > 1:
-                report.warn(
-                    "rearrange-multi", where,
-                    "%d accepted orderings; AnswerValue.order holds ONE order, so only the "
-                    "first can ever be graded correct" % len(candidates),
-                )
-        elif multiset(flat) != multiset(tokens):
-            report.error(
-                "rearrange-tokens", where,
-                "items[].text multiset %s != answer.values token multiset %s"
-                % (sorted(multiset(tokens).elements()), sorted(multiset(flat).elements())),
-            )
+        elif not candidates:
+            report.error("rearrange-tokens", where, "rearrangeWords needs an answer.values token order")
         for item in items or []:
             if isinstance(item, dict) and item.get("isCorrect") is not None:
                 report.warn("rearrange-flag", where, "items[].isCorrect should be null for rearrangeWords")
@@ -521,11 +582,10 @@ def check_exercise(
                 report.warn("tf-options", where, "trueFalse has %d items; expected one option" % len(items))
         elif atype == "choice" and not isinstance(values, list):
             report.error("tf-choice", where, "trueFalse with answer.type \"choice\" needs values as an array")
-    elif kind == "dictation":
-        report.warn(
-            "dictation-as-exercise", where,
-            "kind \"dictation\" is also a step type; a DictationStep item is the documented carrier",
-        )
+    # `kind == "dictation"` needs no rule: it is a documented ExerciseKind
+    # (ARCHITECTURE.md s1 "dictation | — | text") and the 5 exercises that use it
+    # all carry a speech clip and a text answer. A DictationStep is the other
+    # carrier, not the only one.
 
     if atype == "text":
         if not isinstance(values, list) or not values:
@@ -555,26 +615,44 @@ def check_matching(items, values, where: str, report: Report) -> None:
         )
         return
     match_keys = [i["matchKey"] for i in items]
-    repeated = sorted(k for k, n in Counter(match_keys).items() if n > 1)
-    if repeated:
-        # DOC_DECISION: ARCHITECTURE.md s1 "Matching answers" says "every matchKey
-        # group is used exactly once", but AnswerValue.pairs is graded by exact map
-        # equality, so several items pointing at one matchKey grade correctly.
-        # Warning, not error: the decoder accepts this and the shipped content relies
-        # on it. The architecture owner must either fix the wording or fix the content.
-        report.warn(
-            "matching-reuse", where,
-            "%d item(s) share a matchKey %s. ARCHITECTURE.md s1 says every matchKey is used "
-            "exactly once; AnswerValue.pairs compares maps, so this grades correctly. "
-            "Doc/decoder disagreement -- needs an owner decision"
-            % (sum(match_keys.count(k) for k in repeated), repeated),
-        )
-    expected = {i["id"]: i["matchKey"] for i in items}
-    if values != expected:
+    # The answer's KEY set is load-bearing: UserResponse.pairs has the same
+    # orientation and grading is exact map equality (ARCHITECTURE.md s1), so a
+    # missing or extra key is an unsatisfiable answer. Error.
+    keyed_ids = [i["id"] for i in items]
+    if set(values) != set(keyed_ids):
         report.error(
-            "matching-answer", where,
-            "answer maps %s but items require item.id -> item.matchKey = %s"
-            % (dict(sorted(values.items())), dict(sorted(expected.items()))),
+            "matching-keys", where,
+            "answer key set %s != the item id set %s (missing %s, unknown %s); grading "
+            "compares maps key for key, so this answer can never be satisfied"
+            % (sorted(values), sorted(keyed_ids),
+               sorted(set(keyed_ids) - set(values)), sorted(set(values) - set(keyed_ids))),
+        )
+    # The answer's VALUE is a free-form label -- "1", "ii", "A", a category name
+    # -- and is not required to be the item's matchKey (ARCHITECTURE.md s1). So a
+    # value set that differs from the matchKey set is a warning, not an error:
+    # that is how IELTS map labelling and matching-information are authored.
+    values_used = list(values.values())
+    if set(values_used) != set(match_keys):
+        report.warn(
+            "matching-label", where,
+            "answer values %s are labels rather than the items' matchKeys %s; this is how "
+            "map labelling and matching-information are authored, and ExerciseEngine resolves "
+            "both orientations, but the authored answer no longer mirrors items[].matchKey"
+            % (sorted(set(values_used)), sorted(set(match_keys))),
+        )
+    # One-to-one is only implied when the items themselves offer a bijection: as
+    # many distinct matchKeys as items. Six nouns matched to {countable,
+    # uncountable} is a category exercise and reuse is the whole point; four items
+    # that each have their own group, where the answer puts two of them on one
+    # value, is a defect.
+    repeated = sorted(k for k, n in Counter(values_used).items() if n > 1)
+    if repeated and len(set(match_keys)) == len(items):
+        report.error(
+            "matching-one-to-one", where,
+            "%d item(s) share the answer value %s while every one of the %d items has its "
+            "own matchKey %s -- a one-to-one match, so one value is used twice and another "
+            "is unreachable" % (sum(values_used.count(k) for k in repeated), repeated,
+                                len(items), sorted(set(match_keys))),
         )
 
 
@@ -790,17 +868,21 @@ def check_topic(topic, rel: str, report: Report, corpus: Corpus, index: LineInde
         for step in steps:
             check_step(step, topic_id, lesson_id, resolved, index, rel, report, corpus, seen)
 
-        if lesson_id and corpus.drift.get(lesson_id):
+        if lesson_id and corpus.jump.get(lesson_id):
+            jumps = corpus.jump.pop(lesson_id)
             report.warn(
-                "difficulty-drift", lw,
-                "%d of this lesson's exercises carry a difficulty other than the lesson "
-                "level %r: %s"
+                "difficulty-jump", lw,
+                "%d of this lesson's exercises sit two or more levels away from the lesson "
+                "level %r: %s. A one-level difference is legitimate (an exercise's own "
+                "difficulty is what the field is for); a two-level jump is a mis-tag"
                 % (
-                    sum(corpus.drift[lesson_id].values()), resolved,
-                    ", ".join("%s x%d" % (d, n) for d, n in sorted(corpus.drift[lesson_id].items())),
+                    sum(jumps.values()), resolved,
+                    ", ".join(
+                        "%s x%d" % (LEVELS[max(0, min(len(LEVELS) - 1, LEVEL_INDEX[resolved] + d))], n)
+                        for d, n in sorted(jumps.items())
+                    ),
                 ),
             )
-            corpus.drift.pop(lesson_id, None)
 
         order = [STEP_ORDER.index(t) for t in types if t in STEP_ORDER]
         if order != sorted(order):
@@ -892,9 +974,16 @@ def check_ielts(path: str, rel: str, report: Report, corpus: Corpus) -> None:
         report.error("module-shape", "%s:1" % rel, "top-level value is not an object")
         return
     index = loaded.index
-    if not is_nonempty_str(module.get("id")):
+    mid = module.get("id")
+    if not is_nonempty_str(mid):
         report.error("module-id", "%s:1" % rel, "module has no id")
-    if module.get("skill") not in IELTS_SKILLS:
+    elif not KEBAB.match(mid):
+        report.error("module-id", "%s:1" % rel, "module id %r is not stable kebab-case" % mid)
+    corpus.module_ids[mid].append(rel)
+    # IELTSModule.skill is optional and is only the module's headline label: one
+    # module ships two papers (ielts-listening-reading.json), so nothing may be
+    # inferred from it. The lesson is authoritative (IELTS.swift:29).
+    if module.get("skill") is not None and module.get("skill") not in IELTS_SKILLS:
         report.error("module-skill", "%s:1" % rel, "skill %r is not an IELTSSkill case" % module.get("skill"))
     if not is_nonempty_str(module.get("title")):
         report.error("module-title", "%s:1" % rel, "module has no title")
@@ -918,74 +1007,216 @@ def check_ielts(path: str, rel: str, report: Report, corpus: Corpus) -> None:
             seen.add(lid)
         if not is_nonempty_str(lesson.get("title")):
             report.error("ielts-lesson-title", where, "IELTS lesson has no title")
+        skill = lesson.get("skill")
+        if skill is not None and skill not in IELTS_SKILLS:
+            report.error("ielts-skill", where, "skill %r is not an IELTSSkill case" % skill)
+        elif skill is None and module.get("skill") is None:
+            report.error(
+                "ielts-skill", where,
+                "lesson has no skill and its module has none either, so IELTSModule.skills "
+                "cannot resolve this lesson to a paper",
+            )
         band = lesson.get("band")
         if band is not None and not BAND.match(str(band)):
             report.error("ielts-band", where, "band %r does not parse as a number" % band)
-        transcript = lesson.get("transcript")
-        if not isinstance(transcript, list):
-            report.error("ielts-transcript", where, "transcript is missing or not an array")
+        # IELTSLesson.transcript defaults to [] (IELTS.swift:45): a reading lesson
+        # has no audio and correctly carries no transcript, so its absence is not
+        # a defect. Only a listening lesson needs one, or there is nothing to
+        # reveal after the attempt.
+        is_listening = skill == "listening" or (skill is None and module.get("skill") == "listening")
+        if is_listening:
+            if not lesson.get("transcript"):
+                report.warn(
+                    "ielts-transcript", where,
+                    "listening lesson has no transcript lines; nothing is shown after the attempt",
+                )
+            if not isinstance(lesson.get("audio"), dict):
+                report.error(
+                    "ielts-audio", where,
+                    "listening lesson has no audio clip; the app ships zero media assets, so "
+                    "this lesson is silent",
+                )
         check_audio_clip(lesson.get("audio"), where, index, report)
 
         items = lesson.get("items")
         if not isinstance(items, list) or not items:
             report.error("ielts-items", where, "IELTS lesson needs a non-empty items array")
             continue
-        instruction_text = " ".join(
-            [str(lesson.get("title") or "")] + [str(i.get("instruction") or "") for i in items if isinstance(i, dict)]
-        )
-        qids: set = set()
+        # An IELTS question IS an Exercise (IELTS.swift:22), so it gets the same
+        # checks as the rest of the corpus rather than a second, weaker set:
+        # ExerciseKind case, answer.type consistent with the kind, answer
+        # satisfiable by its own items, matching key set, speech audio where the
+        # kind requires it. `ielts` is the topic these questions belong to.
         for item in items:
             if not isinstance(item, dict):
                 report.error("ielts-item-shape", where, "question is not an object")
                 continue
-            qid = item.get("id")
-            qw = index.at(qid if isinstance(qid, str) else None)
-            corpus.ielts_questions += 1
-            if not is_nonempty_str(qid):
-                report.error("ielts-item-id", qw, "question has no id")
-            elif qid in qids:
-                report.error("ielts-item-dupe", qw, "question id %r repeats in lesson %r" % (qid, lid))
-            else:
-                qids.add(qid)
-            kind = item.get("kind")
-            if kind not in IELTS_KINDS:
-                report.error(
-                    "ielts-kind", qw,
-                    "kind %r is not an IELTSQuestion.Kind case%s"
-                    % (kind, " (it is an ExerciseKind — IELTSQuestion will not decode)" if kind in EXERCISE_KINDS else ""),
-                )
-            if not is_nonempty_str(item.get("prompt")):
-                report.error("ielts-prompt", qw, "prompt missing or empty")
-            if item.get("lessonID") not in (None, lid):
-                report.error("ielts-lesson-id", qw, "lessonID %r != containing lesson %r" % (item.get("lessonID"), lid))
-            answer = item.get("answer")
-            if not isinstance(answer, dict) or answer.get("type") not in ANSWER_TYPES:
-                report.error("ielts-answer", qw, "answer missing or has an unknown type")
-            explanation = item.get("explanation")
-            if not is_nonempty_str(explanation) or len(explanation.strip()) < 20:
-                report.error("ielts-explanation", qw, "explanation missing, empty, or under 20 characters")
-            if kind == "multipleChoice":
-                opts = [o for o in (item.get("items") or []) if isinstance(o, dict)]
-                correct = [o.get("id") for o in opts if o.get("isCorrect") is True]
-                if len(opts) != 4:
-                    report.error("ielts-mc-options", qw, "multipleChoice has %d options; IELTS requires exactly 4" % len(opts))
-                if len(correct) != 1:
-                    report.error("ielts-mc-correct", qw, "multipleChoice has %d correct options; exactly 1 required" % len(correct))
-                values = (answer or {}).get("values")
-                if isinstance(values, list) and sorted(values) != sorted(str(c) for c in correct):
-                    report.error("ielts-mc-answer", qw, "answer.values %s != isCorrect ids %s" % (sorted(values), sorted(str(c) for c in correct)))
-            if kind in ("mapLabeling", "diagramLabeling", "matching"):
-                check_matching([o for o in (item.get("items") or []) if isinstance(o, dict)],
-                                (answer or {}).get("values"), qw, report)
+            check_exercise(
+                item, "ielts", lid, None, index, rel, report, corpus,
+                "IELTS %s lesson" % (skill or module.get("skill") or "untagged"),
+            )
 
-        if module.get("skill") == "listening":
-            for a, b in QUESTION_RANGE.findall(instruction_text):
-                if int(b) - int(a) + 1 != len(items):
-                    report.warn(
-                        "ielts-range", where,
-                        "instruction says Questions %s-%s (%d) but the lesson has %d questions"
-                        % (a, b, int(b) - int(a) + 1, len(items)),
-                    )
+        # Question numbering. Instructions quote the paper's own numbering and a
+        # lesson may hold only part of it ("Questions 1-4: match each place on the
+        # map...", with questions 5-7 elsewhere in the same lesson), so a range
+        # whose span differs from the item count is NOT a defect -- the old rule
+        # fired 26 times on correct content. What cannot be right is an
+        # instruction numbering a question the lesson does not contain.
+        over = [
+            i.get("id") for i in items
+            if isinstance(i, dict) and max(stated_numbers(str(i.get("instruction") or "")), default=0) > len(items)
+        ]
+        highest = max((n for i in items if isinstance(i, dict)
+                       for n in stated_numbers(str(i.get("instruction") or ""))), default=0)
+        if over:
+            report.warn(
+                "ielts-range", where,
+                "%s number questions up to %d but the lesson ships %d, so the learner is told "
+                "to answer a question that does not exist"
+                % (", ".join(str(o) for o in over), highest, len(items)),
+            )
+
+
+def stated_numbers(instruction: str) -> list[int]:
+    """Every question number an instruction refers to, ranges and singletons."""
+    out = [int(n) for pair in QUESTION_RANGE.findall(instruction) for n in pair]
+    out += [int(n) for n in QUESTION_SINGLE.findall(instruction)]
+    return out
+
+
+# --- Self-test ---------------------------------------------------------------
+
+
+def selftest() -> int:
+    """Asserts every rule added here still fires on the defect it stands for.
+
+    A validator that reports nothing is indistinguishable from a validator that
+    checks nothing, and this corpus is currently clean -- so the only evidence
+    that these rules work is a fixture each one is aimed at. Each case is the
+    smallest payload that must fail.
+
+        python3 Scripts/validate_content.py --selftest
+    """
+    topic_id, lesson_id = "t-selftest", "l-selftest"
+    explain = "Long enough explanation to clear the twenty character floor."
+
+    def exercise(**over) -> dict:
+        ex = {
+            "id": "ex-1", "kind": "fillInTheBlank", "topicID": topic_id,
+            "lessonID": lesson_id, "difficulty": "beginner", "prompt": "He ___ (go).",
+            "answer": {"type": "text", "values": ["goes"]}, "explanation": explain,
+        }
+        ex.update(over)
+        return ex
+
+    def run(ex: dict, lesson_level: str = "beginner"):
+        topic = {
+            "id": topic_id, "title": "T", "kind": "grammar", "level": "beginner",
+            "summary": "s", "icon": "clock",
+            "lessons": [{
+                "id": lesson_id, "title": "L", "summary": "s", "level": lesson_level,
+                "steps": [{"id": "s-1", "type": "exercises", "exercises": [ex]}],
+            }],
+        }
+        report, corpus = Report(), Corpus()
+        raw = json.dumps(topic, indent=1)
+        check_topic(topic, "topics/t-selftest.json", report, corpus, LineIndex(raw, "topics/t-selftest.json"))
+        return report, corpus
+
+    def kinds(bucket: list[str]) -> set:
+        return {m.group(1) for line in bucket if (m := re.search(r"—\s*\[([^\]]+)\]", line))}
+
+    cases = [
+        ("answer-decode: rearrangeWords values nested one level deep",
+         exercise(kind="rearrangeWords", prompt="Reorder.",
+                  items=[{"id": "a", "text": "in"}, {"id": "b", "text": "morning"}],
+                  answer={"type": "order", "values": [["in", "morning"]]}),
+         {"answer-decode"}, set()),
+        ("answer-decode: boolean answer carries a string",
+         exercise(kind="trueFalse", prompt="It rained.", answer={"type": "boolean", "values": "true"}),
+         set(), {"boolean-shape"}),
+        ("answer-unsatisfiable: choice names an item that does not exist",
+         exercise(kind="multipleChoice", prompt="Pick one.",
+                  items=[{"id": "a", "text": "A", "isCorrect": True},
+                         {"id": "b", "text": "B", "isCorrect": False}],
+                  answer={"type": "choice", "values": ["z"]}),
+         {"answer-unsatisfiable"}, set()),
+        ("matching-keys: pairs keys are not the item ids",
+         exercise(kind="matching", prompt="Match.",
+                  items=[{"id": "a", "text": "verb", "matchKey": "g1"},
+                         {"id": "b", "text": "noun", "matchKey": "g2"}],
+                  answer={"type": "pairs", "values": {"g1": "g1", "g2": "g2"}}),
+         {"matching-keys"}, set()),
+        ("matching-one-to-one: a value reused where a bijection was available",
+         exercise(kind="matching", prompt="Match.",
+                  items=[{"id": "a", "text": "v", "matchKey": "g1"},
+                         {"id": "b", "text": "n", "matchKey": "g2"}],
+                  answer={"type": "pairs", "values": {"a": "x", "b": "x"}}),
+         {"matching-one-to-one"}, set()),
+        ("matching-label: answer values are labels, not matchKeys (warn only)",
+         exercise(kind="matching", prompt="Match.",
+                  items=[{"id": "a", "text": "verb", "matchKey": "g1"},
+                         {"id": "b", "text": "noun", "matchKey": "g2"}],
+                  answer={"type": "pairs", "values": {"a": "1", "b": "2"}}),
+         set(), {"matching-label"}),
+        ("exercise-kind: an IELTS question with a kind outside ExerciseKind",
+         exercise(kind="mapLabeling", prompt="Label the map."), {"exercise-kind"}, set()),
+        ("audio-required: a listening exercise with no clip at all",
+         exercise(kind="listeningComprehension", prompt="Listen."), {"audio-required"}, set()),
+        ("difficulty-jump: two levels away from the lesson is reported",
+         exercise(difficulty="advanced"), set(), {"difficulty-jump"}),
+    ]
+    failures = 0
+    for name, ex, want_errors, want_warnings in cases:
+        report, _corpus = run(ex)
+        got_e, got_w = kinds(report.errors), kinds(report.warnings)
+        if want_errors <= got_e and want_warnings <= got_w:
+            print("  ok    %s" % name)
+        else:
+            failures += 1
+            print("  FAIL  %s\n          expected errors %s warnings %s; got errors %s warnings %s"
+                  % (name, sorted(want_errors) or "none", sorted(want_warnings) or "none",
+                     sorted(got_e) or "none", sorted(got_w) or "none"))
+
+    # Structural cases that do not go through an exercise step.
+    def run_topic(topic: dict):
+        report, corpus = Report(), Corpus()
+        raw = json.dumps(topic, indent=1)
+        check_topic(topic, "topics/t-selftest.json", report, corpus, LineIndex(raw, "topics/t-selftest.json"))
+        return report
+
+    base = {
+        "id": topic_id, "title": "T", "kind": "grammar", "level": "beginner",
+        "summary": "s", "icon": "clock",
+        "lessons": [{"id": lesson_id, "title": "L", "summary": "s",
+                     "steps": [{"id": "s-1", "type": "dictation", "items": []}]}],
+    }
+    structural = [
+        ("topic-level: a Topic with no top-level level",
+         {k: v for k, v in base.items() if k != "level"}, {"topic-level"}),
+        ("step-payload: a dictation step with no items",
+         base, {"step-payload"}),
+    ]
+    for name, topic, want in structural:
+        got = kinds(run_topic(topic).errors)
+        if want <= got:
+            print("  ok    %s" % name)
+        else:
+            failures += 1
+            print("  FAIL  %s\n          expected errors %s; got %s"
+                  % (name, sorted(want), sorted(got) or "none"))
+
+    # A ±1 difficulty difference must stay silent: it is legitimate authoring.
+    report, _corpus = run(exercise(difficulty="intermediate"))
+    if report.errors or report.warnings:
+        failures += 1
+        print("  FAIL  difficulty ±1 from the lesson level is silent\n          got %s"
+              % (report.errors + report.warnings))
+    else:
+        print("  ok    difficulty ±1 from the lesson level is silent (legitimate authoring)")
+
+    print("\nselftest: %d case(s), %d failure(s)" % (len(cases) + len(structural) + 1, failures))
+    return 1 if failures else 0
 
 
 # --- Driver -----------------------------------------------------------------
@@ -993,6 +1224,10 @@ def check_ielts(path: str, rel: str, report: Report, corpus: Corpus) -> None:
 
 def main(argv: list[str]) -> int:
     quiet = "--quiet" in argv
+    if "--selftest" in argv:
+        print("validate_content.py self-test — one fixture per rule added")
+        print("=" * 72)
+        return selftest()
     repo = os.getcwd()
     root = os.path.join(repo, ROOT)
     report = Report()
@@ -1089,14 +1324,42 @@ def main(argv: list[str]) -> int:
                 "lesson-id-dupe", "content",
                 "lesson id %r appears in %d files: %s" % (lesson_id, len(places), "; ".join(places)),
             )
+    for mid, places in sorted(corpus.module_ids.items()):
+        if mid is not None and len(places) > 1:
+            report.error(
+                "module-id-dupe", "content",
+                "IELTS module id %r appears in %d files: %s" % (mid, len(places), "; ".join(places)),
+            )
 
     for rel, pairs in sorted(corpus.step_order.items()):
         report.warn(
             "step-order", "%s:1" % rel,
-            "%d lesson(s) break the s3 step sequence (theory -> video -> examples -> listening "
-            "-> dictation -> practice -> quiz -> summary): %s"
+            "%d lesson(s) break the step sequence the whole corpus otherwise uses "
+            "(theory -> video -> audio -> examples -> listening -> exercises -> dictation "
+            "-> practice -> quiz -> summary): %s"
             % (sum(pairs.values()), "; ".join("%s x%d" % (p, n) for p, n in pairs.most_common())),
         )
+
+    if corpus.lessons:
+        report.note(
+            "step order: every one of the %d lessons in the corpus uses the sequence above, "
+            "which places `exercises` before `dictation`. ARCHITECTURE.md s3 states %s, which "
+            "puts `dictation` before `practice` and never names `exercises` at all. The decoder "
+            "has no ordering requirement, so the doc is the stale side: s3 should be updated. "
+            "Until it is, this check follows the corpus convention so that 160 conforming "
+            "lessons are not reported as 160 defects -- and it still catches the one thing "
+            "that matters, a lesson that deviates from its peers."
+            % (corpus.lessons, " -> ".join(DOC_STEP_ORDER)),
+        )
+    report.note(
+        "matching answers: ARCHITECTURE.md s1 says \"each matchKey group is used once\", which "
+        "20 shipped matching exercises contradict by design (six nouns matched to "
+        "{countable, uncountable}). Grading is exact map equality, so those grade correctly and "
+        "are no longer flagged. What is checked now is the part that is load-bearing: the "
+        "answer's key set must be the item-id set (error), a value may not be reused where a "
+        "one-to-one match was available (error), and an answer value that is a label rather "
+        "than the item's matchKey (warn).",
+    )
 
     unused = [k for k in EXERCISE_KINDS if k not in corpus.kinds]
     unknown_used = [k for k in corpus.kinds if k not in EXERCISE_KINDS]
@@ -1129,6 +1392,14 @@ def main(argv: list[str]) -> int:
             print("\nWARNINGS: none")
     elif report.warnings:
         print("\nWARNINGS: %d (hidden by --quiet)" % len(report.warnings))
+
+    if report.notes and not quiet:
+        print("\nDOC DECISIONS (%d) — recorded, not counted as findings" % len(report.notes))
+        print("-" * 72)
+        for n, line in enumerate(report.notes, 1):
+            print("  %d. %s" % (n, line))
+    elif report.notes:
+        print("\nDOC DECISIONS: %d (hidden by --quiet)" % len(report.notes))
 
     print("\nTOTALS")
     print("-" * 72)
@@ -1163,6 +1434,15 @@ def main(argv: list[str]) -> int:
         print("\n  UNUSED ExerciseKinds: none — every case in ExerciseKind is used")
     if unknown_used:
         print("  kinds outside ExerciseKind: %s" % ", ".join(sorted(unknown_used)))
+
+    print("\n  exercise difficulty vs its lesson's level:")
+    for delta in sorted(corpus.difficulty_delta):
+        label = "%+d" % delta if delta else " 0 (same level)"
+        print("    %-22s %d%s" % (label, corpus.difficulty_delta[delta],
+                                   "   legitimate authoring" if abs(delta) == 1 else
+                                   ("   reported as difficulty-jump" if abs(delta) >= 2 else "")))
+    total_d = sum(corpus.difficulty_delta.values())
+    print("    %-22s %d" % ("exercises compared", total_d))
 
     print("\n  audio (the app ships zero media assets):")
     print("    audio-requiring exercises with speech text  %d / %d"

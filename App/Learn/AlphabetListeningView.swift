@@ -405,7 +405,7 @@ struct AlphabetListeningView: View {
 
             Button {
                 session.markPlayed()
-                SpeakGate.say(item.speechText, using: app, rate: SpeakGate.slowRate)
+                SpeakGate.say(item.speechText, using: app, absoluteRate: SpeakGate.slowRate)
                 Haptics.selection()
             } label: {
                 VStack(spacing: Spacing.xs) {

@@ -83,17 +83,35 @@ enum SpeechFileRenderer {
     /// contains spaces, slashes, and apostrophes, and truncating the text to
     /// build a filename produces collisions between sentences that share a
     /// prefix — which is most of them in a lesson on one grammar point.
-    private static func fileName(for key: Key) -> String {
+    static func fileName(for key: Key) -> String {
         let payload = "\(key.rate)|\(key.voiceID ?? "")|\(key.text)"
         let digest = SHA256.hash(data: Data(payload.utf8))
         return digest.map { String(format: "%02x", $0) }.joined()
     }
 
+    /// The same naming, exposed for ``SpeechAudioSelfCheck``.
+    ///
+    /// Exists so the check exercises the real function rather than a
+    /// reimplementation of it — a test that copies the logic under test proves
+    /// nothing about the logic.
+    static func fileNameForTesting(_ key: Key) -> String {
+        fileName(for: key)
+    }
+
     /// The cached file for `key`, if it has already been rendered.
+    ///
+    /// A zero-byte file counts as *not* rendered. That state should be
+    /// unreachable — the render deletes the file on both failure paths — but
+    /// checking here means a file left behind by a crash mid-write, or by a
+    /// future change to the cleanup, cannot be handed out as a clip that opens
+    /// successfully and plays silence.
     static func cachedURL(for key: Key) -> URL? {
-        guard let url = url(for: key), FileManager.default.fileExists(atPath: url.path) else {
-            return nil
-        }
+        guard let url = url(for: key) else { return nil }
+        guard
+            let attributes = try? FileManager.default.attributesOfItem(atPath: url.path),
+            let size = attributes[.size] as? NSNumber,
+            size.intValue > 0
+        else { return nil }
         return url
     }
 
@@ -103,8 +121,14 @@ enum SpeechFileRenderer {
     ///
     /// - Parameters:
     ///   - key: The text, rate, and voice to render.
-    ///   - completion: Receives the file URL, or a failure. Called on the main
-    ///     actor.
+    ///   - completion: Receives the file URL, or a failure.
+    ///
+    /// - Important: `completion` is called on **whichever queue produced the
+    ///   result** — the calling thread for an error or a cache hit, and
+    ///   ``bufferQueue`` for a rendered buffer. It is not main-actor isolated.
+    ///   Callers must hop themselves; ``AudioPlayerModel`` does so with
+    ///   `Task { @MainActor in … }`, which also means a cache hit takes the same
+    ///   path as a slow render and cannot re-enter its caller.
     static func render(
         key: Key,
         completion: @escaping (Result<URL, Error>) -> Void
@@ -148,27 +172,44 @@ enum SpeechFileRenderer {
         utterance.preUtteranceDelay = 0
         utterance.postUtteranceDelay = 0
 
-        // `write` hands back a buffer at a time and signals the end with an
-        // empty one. The file is opened lazily on the first buffer, because
-        // there is no buffer to take a sample rate from before then.
+        // `write` hands back a buffer at a time and signals the end of the
+        // utterance with an empty one. The file is opened lazily on the first
+        // non-empty buffer, because there is no buffer to take a sample rate
+        // from before then.
         var audioFile: AVAudioFile?
         var wroteAnything = false
-        var failed = false
+        // Latches on the first terminal event. Without it an error mid-render
+        // would report a failure and then the end-of-utterance signal would
+        // report a *second*, contradictory result — and the caller would
+        // install whichever landed last.
+        var settled = false
 
         synthesizer.write(utterance) { buffer in
-            // The callback arrives on an arbitrary queue. Everything below
-            // touches `audioFile` and the two flags, so it is confined to one
-            // serial queue rather than racing between buffers.
+            // The callback arrives on an arbitrary queue, and everything below
+            // touches `audioFile` and the flags, so it is confined to one serial
+            // queue rather than racing between buffers.
             bufferQueue.sync {
-                guard !failed else { return }
+                guard !settled else { return }
 
                 if buffer.frameLength == 0 {
-                    // End of utterance.
-                    if !wroteAnything {
-                        failed = true
-                        completion(.failure(RenderError.noAudioData))
-                    } else {
+                    // End of utterance. An utterance that produced no audio at
+                    // all — a voice with nothing for this text, or a synthesis
+                    // that failed silently — is a failure, not a zero-byte
+                    // success: `AVAudioPlayer` would open it and never play.
+                    settled = true
+                    if wroteAnything {
+                        // Close before reporting: `AVAudioFile` finalises its
+                        // header on deinit, so a caller that opened the file
+                        // while this reference was still alive could read a
+                        // truncated header.
+                        audioFile = nil
                         completion(.success(destination))
+                    } else {
+                        // No audio means a zero-byte file may still exist. Left
+                        // behind, the *next* lookup would find it via
+                        // `cachedURL` and hand out a clip that plays nothing.
+                        try? FileManager.default.removeItem(at: destination)
+                        completion(.failure(RenderError.noAudioData))
                     }
                     return
                 }
@@ -185,7 +226,13 @@ enum SpeechFileRenderer {
                     try audioFile?.write(from: buffer)
                     wroteAnything = true
                 } catch {
-                    failed = true
+                    // Settle *before* reporting, so the end-of-utterance signal
+                    // that follows is ignored.
+                    settled = true
+                    // A partially written file is worse than none: a later
+                    // cache hit would open a truncated sentence and play it as
+                    // if it were complete.
+                    try? FileManager.default.removeItem(at: destination)
                     completion(.failure(error))
                 }
             }

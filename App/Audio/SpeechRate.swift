@@ -43,28 +43,46 @@ enum SpeechRate {
         return min(max(target, minimum), maximum)
     }
 
-    /// The slowest rate the app will ask for.
+    /// The slowest rate a *synthesizer* will honour.
     ///
-    /// Half of `minimum` is a third of normal speed, which is slow enough to
-    /// pick out individual phonemes — the whole point of the slow-replay button
-    /// in the alphabet and dictation flows.
+    /// Use this for a `SpeechPlaying` utterance that should be slow. On real
+    /// devices this is `0.0`, which is why it is a weak floor and why a clip
+    /// that needs to be scrubbed or backgrounded is rendered to a file instead
+    /// — see ``SpeechFileRenderer``.
     static var slowest: Float { minimum }
 
-    /// The fastest rate the app will ask for.
+    /// The fastest rate the app will ask for, as a *multiple* of normal.
     ///
-    /// Capped at double rather than at `maximum`: the upper bound is fast
-    /// enough to be unintelligible, and a speed control nobody can use is not a
-    /// control.
-    static var fastest: Float { min(normal * 2, maximum) }
+    /// Capped at double rather than pushed to ``maximum``: the upper bound is
+    /// fast enough to be unintelligible, and a speed control nobody can follow
+    /// is not a control. Exposed as a multiple so the ceiling is stated once.
+    static let fastestMultiple: Double = 2.0
 
     /// The persistent speed-control presets, as multiples of normal.
     ///
     /// Symmetric around 1.0 so "one notch slower" and "one notch faster" sound
     /// like the same distance apart, which is what makes the menu learnable.
+    /// Stays under ``fastestMultiple`` deliberately, so the menu is never
+    /// faster than the app says it will ever be.
     static let speedMultiples: [Double] = [0.5, 0.75, 1.0, 1.25, 1.5]
 
     /// The label for a speed preset, e.g. `"0.75×"`.
     static func label(forMultiple multiple: Double) -> String {
         "\(multiple.formatted(.number.precision(.fractionLength(0...2))))×"
     }
+
+    /// The rate slow replay plays a rendered file at, as a fraction of normal.
+    ///
+    /// This is a **player** rate, not a synthesizer rate, so it is not clamped
+    /// to ``minimum``/``maximum`` — those bound what the *synthesizer* honours,
+    /// and `minimum` is 0.0 on real devices, so they say nothing useful here.
+    /// `AVAudioPlayer` with `enableRate` set accepts roughly `0.25`–`3.0`.
+    ///
+    /// `0.3` sits just inside that floor: slow enough to resolve individual
+    /// phonemes, and still recognisably speech rather than a pitch-shifted
+    /// artefact. Below the floor the rate is *ignored* and the learner hears
+    /// normal speed from a button labelled "slow" — the same silent-failure
+    /// shape as an out-of-range `AVSpeechUtterance.rate`, which is why the
+    /// value is stated against `AVAudioPlayer`'s range and not the speech one.
+    static let slowestFraction: Float = 0.3
 }
