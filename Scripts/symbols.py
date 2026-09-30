@@ -536,3 +536,28 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# --- duplicate file basenames -------------------------------------------------
+# Two Swift files with the same basename inside one target produce
+# "Multiple commands produce '.../<Name>.stringsdata'". A type-declaration scan
+# misses this when the two files declare *different* types, so check names too.
+def duplicate_basenames(root="App"):
+    import collections
+    seen = collections.defaultdict(list)
+    for dirpath, _dirs, names in os.walk(root):
+        for name in names:
+            if name.endswith(".swift"):
+                seen[name].append(os.path.join(dirpath, name))
+    dupes = {n: ps for n, ps in seen.items() if len(ps) > 1}
+    if not dupes:
+        print("duplicate file basenames: none")
+        return 0
+    print("duplicate file basenames: %d" % len(dupes))
+    for name, paths in sorted(dupes.items()):
+        print("  ERROR %s -> %s" % (name, ", ".join(sorted(paths))))
+    return len(dupes)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "--basenames":
+        raise SystemExit(1 if duplicate_basenames() else 0)
