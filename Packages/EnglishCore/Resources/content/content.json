@@ -1,7 +1,7 @@
 {
   "id": "english-core",
   "title": "English Learning",
-  "description": "A complete English course: alphabet and phonics, eighteen grammar topics from beginner to advanced, core vocabulary, dictation and listening practice, and four IELTS modules.",
+  "description": "A complete English course: alphabet and phonics, eighteen grammar topics from beginner to advanced, ten study methods, the four core skills, 180 core words, dictation everywhere, and two IELTS-style papers. Content is self-authored; the IELTS material is practice written for this app and is not affiliated with IELTS Partners.",
   "topicIDs": [
     "alphabet",
     "tenses",
@@ -21,13 +21,16 @@
     "word-formation",
     "collocations",
     "clauses",
-    "types-of-condition"
+    "types-of-condition",
+    "methods",
+    "listening-skill",
+    "speaking-skill",
+    "reading-skill",
+    "writing-skill"
   ],
   "vocabularyDeckID": "vocab-core",
   "ieltsModuleIDs": [
-    "ielts-listening",
-    "ielts-reading",
-    "ielts-writing",
-    "ielts-speaking"
+    "ielts-listening-reading",
+    "ielts-writing-speaking"
   ]
 }

@@ -21,9 +21,6 @@ concurrency:
 permissions:
   contents: write
 
-env:
-  XCODE_VERSION: "16.x"
-
 jobs:
   build:
     name: unsigned-ipa
@@ -32,10 +29,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode ${{ env.XCODE_VERSION }}
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: ${{ env.XCODE_VERSION }}
+      - name: Select Xcode
+        run: |
+          set -euo pipefail
+          XCODE="$(ls -d /Applications/Xcode_16*.app 2>/dev/null | sort -V | tail -1 || true)"
+          if [ -z "$XCODE" ]; then
+            XCODE="$(ls -d /Applications/Xcode*.app | sort -V | tail -1)"
+          fi
+          echo "Using $XCODE"
+          sudo xcode-select --switch "$XCODE"
+          xcodebuild -version
 
       - name: Install XcodeGen
         run: brew install xcodegen

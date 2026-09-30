@@ -75,70 +75,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validate content JSON
-        run: |
-          python3 - <<'PY'
-          import json, os, sys
+      - name: Validate content
+        run: python3 Scripts/validate_content.py
 
-          ROOT = "Packages/EnglishCore/Resources/content"
-          TOPICS_DIR = os.path.join(ROOT, "topics")
-          EXPECTED_TOPIC_COUNT = 19
-          errors = []
+      - name: Validator self-test
+        run: python3 Scripts/validate_content.py --selftest
 
-          if not os.path.isdir(ROOT):
-              sys.exit("content root not found: %s" % ROOT)
-
-          json_files = []
-          for dirpath, _dirs, names in os.walk(ROOT):
-              for name in sorted(names):
-                  if name.endswith(".json"):
-                      json_files.append(os.path.join(dirpath, name))
-          if not json_files:
-              sys.exit("no .json files found under %s" % ROOT)
-
-          for path in json_files:
-              raw = open(path, encoding="utf-8").read()
-              if not raw.strip():
-                  errors.append("%s: file is empty" % path)
-                  continue
-              try:
-                  json.loads(raw)
-              except ValueError as exc:
-                  errors.append("%s: invalid JSON: %s" % (path, exc))
-
-          index_path = os.path.join(ROOT, "content.json")
-          ids = []
-          if not os.path.isfile(index_path):
-              errors.append("content.json: missing index file")
-          else:
-              index = json.load(open(index_path, encoding="utf-8"))
-              listed = index.get("topics", index.get("topicIDs", []))
-              for entry in listed:
-                  ids.append(entry["id"] if isinstance(entry, dict) else entry)
-              if len(ids) != EXPECTED_TOPIC_COUNT:
-                  errors.append("content.json: expected %d topic ids, found %d"
-                                % (EXPECTED_TOPIC_COUNT, len(ids)))
-              if len(set(ids)) != len(ids):
-                  errors.append("content.json: duplicate topic ids")
-
-          if not os.path.isdir(TOPICS_DIR):
-              errors.append("topics/: directory not found")
-          else:
-              for topic_id in ids:
-                  if not os.path.isfile(os.path.join(TOPICS_DIR, topic_id + ".json")):
-                      errors.append("topics/%s.json: listed in content.json but missing"
-                                    % topic_id)
-
-          if errors:
-              for err in errors:
-                  print("ERROR: " + err, file=sys.stderr)
-              sys.exit("%d content error(s)" % len(errors))
-
-          print("content ok: %d json files, %d topics" % (len(json_files), len(ids)))
-          PY
-
-  # End-to-end compile of the app target with the real project generated from
-  # project.yml. No signing: the simulator destination does not need it.
   build-app:
     name: build-app (simulator)
     runs-on: macos-latest
