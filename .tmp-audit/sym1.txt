@@ -1,0 +1,391 @@
+==============================================================================
+SWIFT SYMBOL INDEX  (heuristic — NOT a compiler)
+==============================================================================
+files scanned      : 120
+lines scanned      : 30902
+distinct type names: 364
+
+------------------------------------------------------------------------------
+1. REDECLARATIONS (same module, same type name — cannot compile)
+------------------------------------------------------------------------------
+     AudioPlayerModel [App] 1 decl + 3 extension(s):
+       decl  App/Audio/AudioPlayerModel.swift:36
+       ext   App/Audio/AudioPlayerModel.swift:949
+       ext   App/Audio/AudioPlayerModel.swift:990
+       ext   App/Audio/AudioPlayerModel.swift:1014
+     BreathingRecorder [App] 1 decl + 1 extension(s):
+       decl  App/Motion/BreathingRecorder.swift:26
+       ext   App/Motion/BreathingRecorder.swift:179
+     CheckmarkShape [App] 1 decl + 1 extension(s):
+       decl  App/Motion/StrokeCheckmark.swift:109
+       ext   App/Motion/StrokeCheckmark.swift:153
+  !! CodingKeys declared 3x in module App:
+       App/IELTS/Services/IELTSCatalog.swift:382  (enum)
+       App/IELTS/Services/IELTSCatalog.swift:411  (enum)
+       App/IELTS/Services/IELTSCatalog.swift:437  (enum)
+  !! CodingKeys declared 3x in module EnglishCore:
+       Packages/EnglishCore/Sources/EnglishCore/Content/Exercise.swift:123  (enum)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:76  (enum)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Media.swift:92  (enum)
+     CountUpNumber [App] 1 decl + 1 extension(s):
+       decl  App/Motion/CountUpNumber.swift:25
+       ext   App/Motion/CountUpNumber.swift:174
+     ErrorShake [App] 1 decl + 1 extension(s):
+       decl  App/Motion/ErrorShake.swift:24
+       ext   App/Motion/ErrorShake.swift:221
+     ExerciseView [App] 1 decl + 1 extension(s):
+       decl  App/Exercise/ExerciseView.swift:26
+       ext   App/Exercise/ExerciseView.swift:390
+     IELTSPaper [App] 1 decl + 1 extension(s):
+       decl  App/IELTS/Services/IELTSCatalog.swift:87
+       ext   App/IELTS/Services/IELTSCatalog.swift:335
+     IELTSPaperLesson [App] 1 decl + 4 extension(s):
+       decl  App/IELTS/Services/IELTSCatalog.swift:32
+       ext   App/IELTS/IELTSHomeView.swift:436
+       ext   App/IELTS/Services/IELTSCatalog.swift:94
+       ext   App/IELTS/Services/IELTSCatalog.swift:126
+       ext   App/IELTS/Services/IELTSCatalog.swift:346
+  !! Kind declared 2x in module App:
+       App/Learn/AlphabetListeningView.swift:11  (enum)
+       App/Vocabulary/WordDetailView.swift:481  (enum)
+  !! Kind declared 3x in module EnglishCore:
+       Packages/EnglishCore/Sources/EnglishCore/Content/Exercise.swift:64  (enum)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Media.swift:68  (enum)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/TokenDiff.swift:8  (enum)
+     LiveWaveform [App] 1 decl + 1 extension(s):
+       decl  App/Motion/LiveWaveform.swift:36
+       ext   App/Motion/LiveWaveform.swift:293
+     Motion [App] 1 decl + 2 extension(s):
+       decl  App/DesignSystem/Tokens.swift:172
+       ext   App/Motion/MotionTokens.swift:16
+       ext   App/Motion/MotionTokens.swift:187
+     ParticlePoint [App] 1 decl + 1 extension(s):
+       decl  App/Motion/ParticleBurst.swift:76
+       ext   App/Motion/ParticleBurst.swift:86
+     ParticleSeed [App] 1 decl + 1 extension(s):
+       decl  App/Motion/ParticleBurst.swift:28
+       ext   App/Motion/ParticleBurst.swift:43
+  !! Phase declared 2x in module App:
+       App/IELTS/ListeningSectionView.swift:57  (enum)
+       App/IELTS/ReadingPassageView.swift:18  (enum)
+     ProgressStore [EnglishStore] 1 decl + 2 extension(s):
+       decl  Packages/EnglishStore/Sources/EnglishStore/ProgressStore.swift:16
+       ext   Packages/EnglishStore/Sources/EnglishStore/ProgressStore+Collections.swift:10
+       ext   Packages/EnglishStore/Sources/EnglishStore/ProgressStore.swift:302
+  !! RecordingService declared 2x in module App:
+       App/IELTS/Services/RecordingService.swift:12  (class)
+       App/Practice/Services/RecordingService.swift:18  (class)
+     ReviewState [EnglishStore] 1 decl + 1 extension(s):
+       decl  Packages/EnglishStore/Sources/EnglishStore/Models/ReviewModels.swift:11
+       ext   Packages/EnglishStore/Sources/EnglishStore/Models/ReviewModels.swift:120
+     RingSweep [App] 1 decl + 1 extension(s):
+       decl  App/Motion/RingSweep.swift:23
+       ext   App/Motion/RingSweep.swift:181
+     SparkleBurst [App] 1 decl + 1 extension(s):
+       decl  App/Motion/SparkleBurst.swift:30
+       ext   App/Motion/SparkleBurst.swift:242
+  !! SpeakingPracticeView declared 2x in module App:
+       App/IELTS/SpeakingPracticeView.swift:10  (struct)
+       App/Practice/SpeakingPracticeView.swift:13  (struct)
+     SpeechService [App] 1 decl + 1 extension(s):
+       decl  App/Audio/SpeechService.swift:13
+       ext   App/Audio/SpeechService.swift:131
+  !! State declared 2x in module App:
+       App/IELTS/Services/RecordingService.swift:13  (enum)
+       App/Motion/BreathingRecorder.swift:29  (enum)
+     StreakEmber [App] 1 decl + 2 extension(s):
+       decl  App/Motion/StreakEmber.swift:27
+       ext   App/Motion/StreakEmber+Canvas.swift:9
+       ext   App/Motion/StreakEmber+Canvas.swift:135
+  !! Style declared 2x in module App:
+       App/IELTS/WritingTaskView.swift:523  (enum)
+       App/Motion/AmbientBackdrop.swift:48  (enum)
+     Topic [App] 1 decl + 1 extension(s):
+       decl  App/Profile/ProgressExport.swift:10
+       ext   App/Practice/PracticeSupport.swift:91
+     UserResponse [EnglishCore] 1 decl + 1 extension(s):
+       decl  Packages/EnglishCore/Sources/EnglishCore/Engine/ExerciseEngine.swift:4
+       ext   Packages/EnglishCore/Sources/EnglishCore/Engine/ExerciseEngine.swift:372
+  !! WeakTopic declared 2x in module App:
+       App/Home/HomeModel.swift:86  (struct)
+       App/Learn/TopicDetailView.swift:169  (struct)
+     XPProgressBar [App] 1 decl + 1 extension(s):
+       decl  App/Motion/XPProgressBar.swift:24
+       ext   App/Motion/XPProgressBar.swift:260
+
+------------------------------------------------------------------------------
+2. IMPORTED MODULES
+------------------------------------------------------------------------------
+  App: AVFoundation, AVKit, CryptoKit, EnglishCore, EnglishStore, Foundation, MediaPlayer, Observation, SwiftData, SwiftUI, UIKit, UserNotifications
+  EnglishCore: Foundation, Observation
+  EnglishStore: EnglishCore, Foundation, SwiftData
+
+------------------------------------------------------------------------------
+3. UNRESOLVED TYPE REFERENCES
+   (identifier used in type position, not declared here, not known, not local)
+------------------------------------------------------------------------------
+  ?? AVAudioApplication  (2 site(s))
+       App/IELTS/Services/RecordingService.swift:33
+       App/Practice/Services/RecordingService.swift:55
+  ?? AVAudioFile  (1 site(s))
+       App/Audio/SpeechFileRenderer.swift:179
+  ?? AVAudioQuality  (2 site(s))
+       App/IELTS/Services/RecordingService.swift:87
+       App/Practice/Services/RecordingService.swift:100
+  ?? AVAudioSessionInterruptionOptionKey  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:683
+  ?? AVAudioSessionInterruptionTypeKey  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:673
+  ?? AVSpeechSynthesizer  (1 site(s))
+       App/Audio/SpeechService.swift:24
+  ?? AVSpeechSynthesizerDelegate  (1 site(s))
+       App/Audio/SpeechService.swift:131
+  ?? AVSpeechUtterance  (2 site(s))
+       App/Audio/SpeechRate.swift:26
+       App/Audio/SpeechService.swift:108
+  ?? Accessory  (1 site(s))
+       App/Profile/ProfileView.swift:389
+  ?? ButtonStyle  (2 site(s))
+       App/Components/Buttons.swift:49
+       App/Components/Containers.swift:141
+  ?? CGFloat  (20 site(s))
+       App/Audio/AudioPlayerView.swift:345
+       App/Components/Stats.swift:64
+       App/DesignSystem/Surfaces.swift:20
+       App/DesignSystem/Tokens.swift:9
+       App/IELTS/IELTSTheme.swift:41
+       App/IELTS/LessonReviewView.swift:390
+       ... +14 more
+  ?? CGPoint  (8 site(s))
+       App/IELTS/IELTSTheme.swift:109
+       App/IELTS/LessonReviewView.swift:421
+       App/Motion/AmbientBackdrop.swift:57
+       App/Motion/RingSweep.swift:87
+       App/Motion/SparkleBurst.swift:97
+       App/Motion/StreakEmber+Canvas.swift:16
+       ... +2 more
+  ?? CGRect  (6 site(s))
+       App/IELTS/LessonReviewView.swift:410
+       App/Motion/RingSweep.swift:92
+       App/Motion/SparkleBurst.swift:107
+       App/Motion/StreakEmber+Canvas.swift:121
+       App/Motion/StrokeCheckmark.swift:119
+       App/Motion/SuccessBurst.swift:198
+  ?? CGSize  (1 site(s))
+       App/IELTS/LessonReviewView.swift:392
+  ?? CMTime  (1 site(s))
+       App/Video/VideoPlaybackModel.swift:125
+  ?? ColorScheme  (2 site(s))
+       App/DesignSystem/Surfaces.swift:44
+       App/Profile/ProfileView.swift:542
+  ?? Configuration  (2 site(s))
+       App/Components/Buttons.swift:52
+       App/Components/Containers.swift:144
+  ?? Content  (8 site(s))
+       App/DesignSystem/Surfaces.swift:22
+       App/IELTS/QuestionNavigatorView.swift:265
+       App/Motion/ErrorShake.swift:24
+       App/Motion/MotionTokens.swift:171
+       App/Motion/ShimmerModifier.swift:44
+       App/Practice/PracticeSupport.swift:181
+       ... +2 more
+  ?? Context  (1 site(s))
+       App/Profile/ProfileComponents.swift:421
+  ?? EnvironmentKey  (2 site(s))
+       App/IELTS/IELTSTheme.swift:161
+       App/Motion/MotionSettings.swift:123
+  ?? Gesture  (1 site(s))
+       App/Vocabulary/FlashcardView.swift:336
+  ?? Layout  (1 site(s))
+       App/IELTS/LessonReviewView.swift:389
+  ?? LocalizedError  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:529
+  ?? MPChangePlaybackPositionCommandEvent  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:786
+  ?? MPMediaItemPropertyPlaybackDuration  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:732
+  ?? MPNowPlayingInfoCenter  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:290
+  ?? MPRemoteCommandCenter  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:742
+  ?? NSObjectProtocol  (3 site(s))
+       App/Audio/AudioPlayerModel.swift:164
+       App/Motion/MotionSettings.swift:60
+       App/Video/VideoPlaybackModel.swift:60
+  ?? NotificationCenter  (3 site(s))
+       App/Audio/AudioPlayerModel.swift:198
+       App/Motion/MotionSettings.swift:83
+       App/Video/VideoPlaybackModel.swift:93
+  ?? ProposedViewSize  (1 site(s))
+       App/IELTS/LessonReviewView.swift:392
+  ?? RunLoop  (2 site(s))
+       App/Audio/AudioPlayerModel.swift:803
+       App/Practice/Services/RecordingService.swift:186
+  ?? SHA256  (1 site(s))
+       App/Audio/SpeechFileRenderer.swift:88
+  ?? SIMD3  (1 site(s))
+       App/Motion/AmbientBackdrop.swift:187
+  ?? StrokeStyle  (1 site(s))
+       App/Components/Stats.swift:77
+  ?? Subviews  (1 site(s))
+       App/IELTS/LessonReviewView.swift:392
+  ?? Timer  (2 site(s))
+       App/Audio/AudioPlayerModel.swift:161
+       App/Practice/Services/RecordingService.swift:50
+  ?? ToolbarContent  (1 site(s))
+       App/Vocabulary/VocabularyHomeView.swift:453
+  ?? UIActivityViewController  (1 site(s))
+       App/Profile/ProfileComponents.swift:421
+  ?? UNAuthorizationStatus  (1 site(s))
+       App/Services/NotificationService.swift:53
+  ?? UNUserNotificationCenter  (1 site(s))
+       App/Services/NotificationService.swift:54
+  ?? URLSession  (1 site(s))
+       App/Audio/AudioPlayerModel.swift:570
+  ?? Unicode  (1 site(s))
+       Packages/EnglishCore/Sources/EnglishCore/Engine/AnswerNormalizer.swift:11
+  ?? ViewModifier  (6 site(s))
+       App/DesignSystem/Surfaces.swift:11
+       App/IELTS/QuestionNavigatorView.swift:262
+       App/Motion/MotionTokens.swift:163
+       App/Motion/ShimmerModifier.swift:25
+       App/Practice/PracticeSupport.swift:177
+       App/Root/RootView.swift:92
+
+------------------------------------------------------------------------------
+4. CAPITALISED MEMBERS (may mask a typo'd type as an enum case)
+------------------------------------------------------------------------------
+  IELTSQuestion: IELTSQuestion
+
+------------------------------------------------------------------------------
+5. INITIALISERS DECLARED PER TYPE
+------------------------------------------------------------------------------
+  AchievementState  (1)
+       Packages/EnglishStore/Sources/EnglishStore/Models/SessionModels.swift:146  public init(achievementID: String, unlockedAt: Date, progress: Double = 1)
+  AnswerNormalizer  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/AnswerNormalizer.swift:16  public init()
+  AppState  (1)
+       App/Root/AppState.swift:107  init(store: ProgressStore)
+  AudioPlayerModel  (1)
+       App/Audio/AudioPlayerModel.swift:187  public init(speech: SpeechService)
+  AudioStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:195  public init(id: String, audio: AudioClip, title: String? = nil)
+  CodingKeys  (6)
+       App/IELTS/Services/IELTSCatalog.swift:386  init(from decoder: any Decoder)
+       App/IELTS/Services/IELTSCatalog.swift:415  init(from decoder: any Decoder)
+       App/IELTS/Services/IELTSCatalog.swift:442  init(from decoder: any Decoder)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Exercise.swift:130  public init(from decoder: any Decoder)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:80  public init(from decoder: any Decoder)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Media.swift:98  public init(from decoder: any Decoder)
+  ContentLibrary  (2)
+       Packages/EnglishCore/Sources/EnglishCore/Content/ContentLibrary.swift:53  public init(bundle: Bundle)
+       Packages/EnglishCore/Sources/EnglishCore/Content/ContentLibrary.swift:121  public init(topics: [Topic], vocabulary: [VocabWord], ielts: [IELTSModule])
+  DictationEngine  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/DictationEngine.swift:42  public init(normalizer: AnswerNormalizer = AnswerNormalizer()
+  DictationStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:253  public init(id: String, title: String? = nil, items: [DictationItem])
+  Draft  (2)
+       App/IELTS/Services/WritingDraftStore.swift:28  init(lessonID: String, text: String = "", secondsSpent: Int = 0)
+       App/IELTS/Services/WritingDraftStore.swift:43  init()
+  EnglishLearningApp  (1)
+       App/EnglishLearningApp.swift:27  init()
+  ExamTimer  (1)
+       App/IELTS/Services/ExamTimer.swift:22  init(seconds: Int, label: String)
+  Example  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:146  public init(id: String, en: String, vi: String, note: String? = nil)
+  ExamplesStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:209  public init(id: String, examples: [Example])
+  ExerciseEngine  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/ExerciseEngine.swift:84  public init(normalizer: AnswerNormalizer = AnswerNormalizer()
+  ExerciseItem  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Exercise.swift:34  public init(id: String, text: String? = nil, isCorrect: Bool? = nil, matchKey: String? = nil)
+  ExerciseView  (1)
+       App/Exercise/ExerciseView.swift:63  init(session: LearnSession)
+  ExercisesStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:238  public init(id: String, exercises: [Exercise])
+  FlashcardSession  (1)
+       App/Vocabulary/VocabSessions.swift:61  init(words: [VocabWord], store: ProgressStore)
+  FlashcardView  (1)
+       App/Vocabulary/FlashcardView.swift:26  init(focusWordIDs: [String] = [])
+  FormRow  (1)
+       App/Vocabulary/WordDetailView.swift:501  init?(part: String, form: String?)
+  Grade  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Review/SpacedRepetition.swift:42  public init(now: @escaping @Sendable ()
+  GrammarRule  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:127  public init(title: String, statement: String, formula: String? = nil, examples: [Example] = [])
+  HearTypeSession  (1)
+       App/Vocabulary/VocabSessions.swift:176  init(words: [VocabWord], usesExample: Bool)
+  HearTypeView  (1)
+       App/Vocabulary/HearTypeView.swift:29  init(words: [VocabWord], title: String)
+  IELTSModule  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/IELTS.swift:95  public init(id: String, skill: IELTSSkill? = nil, title: String, lessons: [IELTSLesson] = [])
+  IELTSSectionModel  (1)
+       App/IELTS/Services/IELTSSectionModel.swift:14  init()
+  Key  (1)
+       App/Audio/SpeechFileRenderer.swift:49  init(text: String, rate: Float, voiceID: String?)
+  Kind  (2)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Exercise.swift:88  public init(type: Kind, values: AnswerValue)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/TokenDiff.swift:28  public init(id: Int, kind: Kind, index: Int = 0, user: String? = nil, expected: String? = nil)
+  LearnSession  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Session/LearnSession.swift:88  public init(items: [SessionItem], onComplete: ((SessionOutcome)
+  LearnerStats  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Progress/LearnerStats.swift:85  public init(from decoder: any Decoder)
+  LessonState  (1)
+       App/Practice/SkillView.swift:424  init(row: LessonProgress?, lesson: Lesson)
+  ListeningSession  (1)
+       App/Learn/AlphabetListeningView.swift:141  init(items: [ListeningItem])
+  ListeningStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:271  public init(id: String, title: String? = nil, audio: AudioClip? = nil, exercises: [Exercise])
+  MediaBookmark  (1)
+       Packages/EnglishStore/Sources/EnglishStore/Models/SessionModels.swift:172  public init(clipID: String, positionSeconds: Double, updatedAt: Date)
+  MeteredPlayerLevels  (1)
+       App/Motion/AudioLevelProviding.swift:73  init(player: AVAudioPlayer, interval: Double = 0.05)
+  NotificationPref  (1)
+       Packages/EnglishStore/Sources/EnglishStore/Models/SessionModels.swift:202  public init(kind: String, enabled: Bool = false, hour: Int = 9, minute: Int = 0)
+  PracticeStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:224  public init(id: String, title: String? = nil, exerciseIDs: [String] = [])
+  QuizResult  (1)
+       App/Learn/LessonView.swift:961  init(outcome: SessionOutcome, total: Int)
+  QuizStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:290  public init(id: String, title: String? = nil, questions: [Exercise], passPercent: Double = 70)
+  ReviewQueue  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Review/ReviewQueue.swift:24  public init(_ items: [ReviewItem] = [])
+  SessionOutcome  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Session/LearnSession.swift:12  public init(accuracy: Double, xpEarned: Int, wrongIDs: [String])
+  SpeechService  (1)
+       App/Audio/SpeechService.swift:29  public init()
+  State  (1)
+       App/IELTS/Services/RecordingService.swift:35  init()
+  StoreError  (2)
+       Packages/EnglishStore/Sources/EnglishStore/ProgressStore.swift:99  public convenience init(container: ModelContainer)
+       Packages/EnglishStore/Sources/EnglishStore/ProgressStore.swift:111  public convenience init(inMemory: Bool)
+  StreakCalculator  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Progress/StreakCalculator.swift:17  public init(calendar: Calendar = .current, now: @escaping @Sendable ()
+  SubtitleCue  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Media.swift:132  public init(start: Double, end: Double, text: String)
+  SummaryStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:307  public init(id: String, takeaways: [String], nextLessonID: String? = nil)
+  TheoryStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:165  public init(id: String, heading: String = "", body: String = "", rules: [GrammarRule] = [])
+  UIColor  (1)
+       App/DesignSystem/Tokens.swift:126  fileprivate convenience init(rgb: UInt32)
+  UserProfile  (1)
+       Packages/EnglishStore/Sources/EnglishStore/Models/ProgressModels.swift:35  public init(name: String, createdAt: Date, dailyGoalXP: Int = 50, onboardedAt: Date? = nil)
+  VideoPlaybackModel  (1)
+       App/Video/VideoPlaybackModel.swift:67  init(clip: VideoClip)
+  VideoStep  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/LessonStep.swift:180  public init(id: String, video: VideoClip)
+  VocabDeck  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Vocabulary.swift:97  public init(id: String, title: String, words: [VocabWord] = [], subtitle: String? = nil)
+  WordFormation  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Content/Vocabulary.swift:18  public init(noun: String? = nil, verb: String? = nil, adjective: String? = nil, adverb: String? = nil)
+  WrongPair  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Engine/ExerciseEngine.swift:70  public init(key: String, user: String? = nil, expected: String)
+  XPEngine  (1)
+       Packages/EnglishCore/Sources/EnglishCore/Progress/XPEngine.swift:24  public init(dailyGoal: Int = 50)
+
+==============================================================================
+A CLEAN RUN IS NOT PROOF OF COMPILATION. This script does not check
+overload resolution, generic constraints, conformance, isolation,
+access control, or any expression-level type checking.
+==============================================================================
