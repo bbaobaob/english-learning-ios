@@ -1,0 +1,1018 @@
+{
+  "id": "reading-skill",
+  "title": "Reading Skill",
+  "kind": "reading",
+  "icon": "text.book.closed",
+  "summary": "Read with a purpose: skim for gist, scan to locate a fact by paraphrase, and read closely when the writer's stance and the unstated assumption are the actual exam content.",
+  "estimatedMinutes": 45,
+  "lessons": [
+    {
+      "id": "reading-skill-beginner",
+      "title": "Skim, Scan and Slow Down",
+      "summary": "Learn the three reading speeds and find the answer when the text does not use your words.",
+      "level": "beginner",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "rd-beg-theory",
+          "type": "theory",
+          "heading": "Three speeds, and knowing which one you need",
+          "body": "Most reading failures at beginner level are not comprehension failures; they are speed-selection failures. A reader who does everything at the same rate either wastes minutes on easy questions or drowns in a hard paragraph. Three speeds fix this. Skimming is roughly 300 to 500 words per minute: eyes move in a zig-zag down the page, you read the first sentence of a paragraph, you stop at the title, the first line after a heading, and any line containing numbers or names, and you take the topic as a whole without trying to resolve every word. Skimming answers exactly one question: what is this about? Scanning is roughly 100 to 200 words per minute with the eyes searching for a specific string: a name, a number, a spelling. It fails the moment the text paraphrases instead of repeating, which is why scanning alone is a trap. Close reading is roughly 100 to 150 words per minute, used for exactly two jobs: working out the writer's stance, and justifying an answer that requires inference. Most beginner reading questions are answerable with skimming plus one careful re-read of the relevant sentence, and the whole skill is learning to know which mode you are in before you start. The specific beginner problem is the paraphrase gap. Questions are written in the question-writer's words, and texts use the writer's words, and the two rarely match. 'How did the writer feel about the scheme?' appears in a paragraph that says 'few residents were convinced it would last'. What to notice: title, headings, first and last sentence of each paragraph, and any number. What to ignore: individual unknown words during the skim, and the questions until you have read once.",
+          "rules": [
+            {
+              "title": "Skim for topic, not for detail",
+              "statement": "A skim takes one pass at three to four times your normal speed and gives you the shape of the text. If you can say what each paragraph is about, the skim worked. If you can only answer the title, it was too slow.",
+              "examples": [
+                {
+                  "id": "rd-beg-r1-e1",
+                  "en": "Cities are replacing car parks with trees and seating. Residents say the change is welcome. The council plans twelve sites this year.",
+                  "vi": "Các thành phố đang thay bãi đỗ xe bằng cây xanh và ghế ngồi. Người dân nói thay đổi này được hoan nghênh. Hội đồng dự kiến mười hai địa điểm trong năm nay.",
+                  "note": "Skimmed in five seconds: parks become green space, residents approve, twelve sites this year. You did not need to resolve 'seating' to get that."
+                },
+                {
+                  "id": "rd-beg-r1-e2",
+                  "en": "The report was published last spring. Its recommendations have been largely ignored. Officials say funding is the reason.",
+                  "vi": "Báo cáo được xuất bản vào mùa xuân năm ngoái. Các khuyến nghị của nó bị phần lớn bỏ qua. Quan chức nói lý do là thiếu kinh phí.",
+                  "note": "The title, the first sentence and the first line after 'largely ignored' carry the whole story."
+                }
+              ]
+            },
+            {
+              "title": "Match the paraphrase, not the word",
+              "statement": "When the question's words are not in the text, translate the question into the text's words before you look for it. Most questions are answered by a sentence that says something else entirely.",
+              "examples": [
+                {
+                  "id": "rd-beg-r2-e1",
+                  "en": "Question: Did people support the plan? Text: 'Few residents were convinced it would survive the winter.'",
+                  "vi": "Câu hỏi: Người ta có ủng hộ kế hoạch không? Văn bản: 'Ít người dân tin rằng nó sẽ sống sót qua mùa đông.'",
+                  "note": "'Few were convinced' is a polite way of saying no. Search for the sentiment, not the word 'support'."
+                },
+                {
+                  "id": "rd-beg-r2-e2",
+                  "en": "Question: Why was the project delayed? Text: 'The engineer retired in March and nobody replaced him.'",
+                  "vi": "Câu hỏi: Vì sao dự án bị hoãn? Văn bản: 'Kỹ sư nghỉ việc vào tháng Ba và không ai thay thế.'",
+                  "note": "The answer is a consequence, not a stated reason. Ask 'what would make this happen?' and then find it in the text."
+                }
+              ]
+            },
+            {
+              "title": "Let the paragraph answer, not the keyword",
+              "statement": "A correct answer is always supported by something in the text. A word shared with the question is not support. Check the sentence and its neighbour before you commit.",
+              "examples": [
+                {
+                  "id": "rd-beg-r3-e1",
+                  "en": "Question: How much did the repair cost? Text: 'The repair was paid for out of the maintenance fund, not the capital budget.'",
+                  "vi": "Câu hỏi: Việc sửa chữa tốn bao nhiêu? Văn bản: 'Việc sửa chữa được chi từ quỹ bảo trì, không phải từ ngân sách vốn.'",
+                  "note": "Two budget names appear and no figure. If an option quotes a number, it is invented — the answer is 'the text does not say'."
+                },
+                {
+                  "id": "rd-beg-r3-e2",
+                  "en": "Text: 'The trial failed twice, largely because the sample was too small.' Question: What was the main lesson?",
+                  "vi": "Văn bản: 'Thử nghiệm thất bại hai lần, chủ yếu vì mẫu quá nhỏ.' Câu hỏi: Bài học chính là gì?",
+                  "note": "'Largely' tells you the text itself ranks the causes, so sample size beats the two failures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rd-beg-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rd-beg-ex1",
+              "en": "Residents say the change is welcome.",
+              "vi": "Người dân nói thay đổi này được hoan nghênh.",
+              "note": "A reported opinion. In a true or false item, 'residents say' is not the same as 'all residents agree'."
+            },
+            {
+              "id": "rd-beg-ex2",
+              "en": "The council plans twelve sites this year.",
+              "vi": "Hội đồng dự kiến mười hai địa điểm trong năm nay.",
+              "note": "'Plans' is a future intention, not a completed fact. Numbers are the lines you never skip in a skim."
+            },
+            {
+              "id": "rd-beg-ex3",
+              "en": "Few residents were convinced it would survive the winter.",
+              "vi": "Ít người dân tin rằng nó sẽ sống sót qua mùa đông.",
+              "note": "'Few' is a disguised negative. Learn to read hedges as answers."
+            },
+            {
+              "id": "rd-beg-ex4",
+              "en": "Costs rose, but attendance rose faster.",
+              "vi": "Chi phí tăng, nhưng số người tham dự tăng nhanh hơn.",
+              "note": "'But' flips the apparent meaning. In a scan, jump straight to the conjunction."
+            },
+            {
+              "id": "rd-beg-ex5",
+              "en": "The report was published last spring.",
+              "vi": "Báo cáo được xuất bản vào mùa xuân năm ngoái.",
+              "note": "'Last spring' means the spring of the previous year, never this one. Relative time is a favourite trap."
+            }
+          ]
+        },
+        {
+          "id": "rd-beg-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rd-beg-1",
+              "kind": "reading",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Park Street Green. For twenty years the space behind the market was a car park used by delivery vans every morning. Last spring the council closed it to traffic and planted forty trees, six benches and a rain garden. Local shopkeepers first worried about losing customers, but footfall has since increased, and two new cafés have opened on the corner. The only complaint now comes from residents who want evening lighting, which was in the original plan but has not been installed.",
+              "instruction": "Read the passage, then choose the answer that the passage supports.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Shopkeepers were worried at first but business improved later.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The car park was closed because it was too small.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "All residents wanted evening lighting installed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "Locate the second sentence of the third paragraph: shopkeepers 'first worried about losing customers, but footfall has since increased'. The two halves of that sentence map exactly onto the two halves of option (a), which is the signature of a correct paraphrase answer. Option (b) invents a reason that appears nowhere. Option (c) is a quantifier trap: the text says 'the only complaint now comes from residents who want evening lighting', which describes a group with a request, not 'all residents' wanting it.",
+              "xp": 10
+            },
+            {
+              "id": "rd-beg-2",
+              "kind": "trueFalse",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Park Street Green. For twenty years the space behind the market was a car park used by delivery vans every morning. Last spring the council closed it to traffic and planted forty trees, six benches and a rain garden. Local shopkeepers first worried about losing customers, but footfall has since increased, and two new cafés have opened on the corner. The only complaint now comes from residents who want evening lighting, which was in the original plan but has not been installed. Statement: The car park had been used by delivery vans for two decades.",
+              "instruction": "Decide whether the statement matches the passage. Check the time expression before you decide.",
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "'For twenty years' and 'two decades' are the same period written differently, which is exactly the substitution a reading question expects. The tempting error is to read 'last spring' as the start of the car park's use rather than the start of the closure, and then to think the statement conflicts. A reliable method is to convert both the text and the statement into the same unit before comparing: twenty years and two decades match; the dates do not.",
+              "xp": 10
+            },
+            {
+              "id": "rd-beg-3",
+              "kind": "matching",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Match each place in the text to what it was used for.",
+              "instruction": "Use the text: Park Street Green. For twenty years the space behind the market was a car park used by delivery vans every morning. Last spring the council closed it to traffic and planted forty trees, six benches and a rain garden. Local shopkeepers first worried about losing customers, but footfall has since increased, and two new cafés have opened on the corner. The only complaint now comes from residents who want evening lighting, which was in the original plan but has not been installed.",
+              "items": [
+                {
+                  "id": "m1",
+                  "text": "delivery vans",
+                  "isCorrect": null,
+                  "matchKey": "before"
+                },
+                {
+                  "id": "m2",
+                  "text": "the market",
+                  "isCorrect": null,
+                  "matchKey": "location"
+                },
+                {
+                  "id": "m3",
+                  "text": "the space behind the market",
+                  "isCorrect": null,
+                  "matchKey": "changed"
+                },
+                {
+                  "id": "m4",
+                  "text": "two new cafés",
+                  "isCorrect": null,
+                  "matchKey": "after"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "before",
+                  "m2": "location",
+                  "m3": "changed",
+                  "m4": "after"
+                }
+              },
+              "explanation": "Build a timeline from the passage before matching: before (twenty years of vans), the change (closure, trees, benches, rain garden), after (more footfall, two cafés). Two of the four items are spatial rather than temporal, so the trap is treating every item as part of the same sequence. Read the question as 'what role does this play in the text', then place each one. 'Behind the market' answers a location question about the site, not a stage in its history.",
+              "xp": 10
+            },
+            {
+              "id": "rd-beg-4",
+              "kind": "typeTheAnswer",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Park Street Green. For twenty years the space behind the market was a car park used by delivery vans every morning. Last spring the council closed it to traffic and planted forty trees, six benches and a rain garden. Local shopkeepers first worried about losing customers, but footfall has since increased, and two new cafés have opened on the corner. The only complaint now comes from residents who want evening lighting, which was in the original plan but has not been installed. Question: How many trees were planted in the new green space?",
+              "instruction": "Type only the number. Do not write a full sentence.",
+              "answer": {
+                "type": "text",
+                "values": ["40", "forty", "40 trees", "forty trees"]
+              },
+              "explanation": "This is a scanning question: find the line about planting and take the first number. The passage lists three figures in one sentence — forty trees, six benches, one rain garden — so reading to the end of the list risks carrying the wrong number into your answer. Type the number on its own; extra words such as 'trees were planted' are counted as extra words when your response is checked.",
+              "xp": 10
+            },
+            {
+              "id": "rd-beg-5",
+              "kind": "sentenceCompletion",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Paragraph: The council said the scheme would cut traffic by a fifth, which supporters repeated for years. Complete the summary sentence.",
+              "instruction": "Add the concessive connector so the summary shows the writer's stance.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "although traffic fell far less than promised",
+                  "though traffic fell far less than promised",
+                  "but traffic actually fell much less than promised",
+                  "however traffic actually fell much less than promised"
+                ]
+              },
+              "explanation": "The paragraph sets up a claim about promised cuts and then implies a gap, so the writer's stance is a contrast, not an endorsement. 'Although' plus the second clause and 'but' plus a contrasting clause both express it; choose one and make sure the clause after it states the reality, not the promise. The test is whether your summary keeps the writer's doubt. A summary that reads 'the scheme cut traffic by a fifth and it was fine' has deleted the stance, which is the one thing a reading question is usually testing.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rd-beg-dictation",
+          "type": "dictation",
+          "title": "Sentences from short texts",
+          "items": [
+            {
+              "id": "rd-beg-d1",
+              "audio": {
+                "id": "rd-beg-d1-audio",
+                "kind": "speech",
+                "text": "Costs rose, but attendance rose faster.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "The costs rose, but the attendance rose faster."
+              ],
+              "hint": "the conjunction flips the meaning; do not drop it",
+              "translation": "Chi phí tăng, nhưng số người tham dự tăng nhanh hơn.",
+              "xp": 15
+            },
+            {
+              "id": "rd-beg-d2",
+              "audio": {
+                "id": "rd-beg-d2-audio",
+                "kind": "speech",
+                "text": "Few residents were convinced it would survive the winter.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "Few of the residents were convinced that it would survive the winter."
+              ],
+              "hint": "'few' is a disguised negative — keep it",
+              "translation": "Ít người dân tin rằng nó sẽ sống sót qua mùa đông.",
+              "xp": 15
+            },
+            {
+              "id": "rd-beg-d3",
+              "audio": {
+                "id": "rd-beg-d3-audio",
+                "kind": "speech",
+                "text": "The council plans twelve sites this year.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "The council planned twelve sites this year."
+              ],
+              "hint": "a plan is not a completed fact — keep the verb tense",
+              "translation": "Hội đồng dự kiến mười hai địa điểm trong năm nay.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rd-beg-summary",
+          "type": "summary",
+          "takeaways": [
+            "Pick a speed before you start: skim for topic at 300 to 500 words per minute, scan to locate a fact at 100 to 200, read closely only for stance and inference.",
+            "Skim by stopping at the title, the first line after a heading, any line with numbers, and the first and last sentence of each paragraph.",
+            "Never search for a keyword. Translate the question into the text's own words and then look for that.",
+            "A correct answer is supported by a sentence, not by a shared word. If an option quotes a figure the text never gives, it is invented.",
+            "Hedges are answers: 'few', 'plans', 'reported', 'mostly' and 'last spring' are where the real information usually lives.",
+            "One passage, one read for gist, then targeted re-reads. Re-reading everything is what makes reading feel slow."
+          ],
+          "nextLessonID": "reading-skill-intermediate"
+        }
+      ]
+    },
+    {
+      "id": "reading-skill-intermediate",
+      "title": "Paraphrase, Inference and Unknown Words",
+      "summary": "Find facts when the text never uses your words, separate what is stated from what is implied, and keep reading when a word stops you.",
+      "level": "intermediate",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "rd-int-theory",
+          "type": "theory",
+          "heading": "The three moves that make intermediate reading work",
+          "body": "Intermediate reading is defined by three moves. The first is paraphrase handling. At this level questions are written so that no useful word is shared with the answer sentence. The technique is substitution: rewrite the question using the text's vocabulary, not your own. 'What had an unexpected effect on the trial?' becomes 'what made the trial go wrong / what surprised the researchers', and then you look for a sentence about the trial not working as expected. Do the substitution in your own head or on a corner of the page; doing it silently wastes the opportunity. The second is the distinction between explicit and implicit. Explicit means the sentence says it. Implicit means you can reach it by combining two sentences or by noticing what the sentence assumes. 'The engineer retired in March and nobody replaced him' is explicit for 'the engineer retired' and implicit for 'the project was delayed'. The dangerous move is the reverse: assuming a text states something merely because it is a reasonable conclusion. Always name the sentence your inference rests on. The third is handling unknown words, and the rule is simple: a word that blocks you in a fast read is almost never the word that carries the meaning. Look at the word's part of speech, look at what it links to, and read the rest of the sentence. If the unknown word turns out to be central, use the four-part attack: prefix and root, grammar inside the word, context around it, and finally an online dictionary lookup — in that order, and only the last one if the first three fail. What to notice: the connector that introduces a contrast, the verb that carries the claim, and the quantifier. What to ignore: unknown adjectives, and any word in a sentence that has already given you its information.",
+          "rules": [
+            {
+              "title": "Substitute the question into the text's words",
+              "statement": "Before searching, rewrite the question using words the text is likely to use. Then search for your rewrite, not for the original question.",
+              "examples": [
+                {
+                  "id": "rd-int-r1-e1",
+                  "en": "Question: What made the scheme unpopular? Text search: 'few residents ... convinced', 'complaint', 'not installed'.",
+                  "vi": "Câu hỏi: Điều gì làm kế hoạch mất lòng dân? Tìm trong văn bản: 'ít người dân tin', 'khiếu nại', 'chưa lắp đặt'.",
+                  "note": "The question asks about a cause. The text gives complaints and one unmet expectation. That is the answer, worded differently."
+                },
+                {
+                  "id": "rd-int-r1-e2",
+                  "en": "Question: Why did the trial fail? Text: 'the sample was too small', 'failed twice'.",
+                  "vi": "Câu hỏi: Vì sao thử nghiệm thất bại? Văn bản: 'mẫu quá nhỏ', 'thất bại hai lần'.",
+                  "note": "The cause is a noun phrase in the text ('a sample that was too small'), not a sentence with 'because'."
+                }
+              ]
+            },
+            {
+              "title": "Name the sentence behind every inference",
+              "statement": "An implicit answer is still answerable, but it is assembled, not retrieved. Build it from two specific sentences and you are safe; build it from atmosphere and you will guess wrong.",
+              "examples": [
+                {
+                  "id": "rd-int-r2-e1",
+                  "en": "Explicit: 'Sales rose in every region.' Implicit: 'The change was not limited to one market.'",
+                  "vi": "Tường minh: 'Doanh số tăng ở mọi khu vực.' Ngầm: 'Thay đổi không chỉ giới hạn ở một thị trường.'",
+                  "note": "The inference needs only one sentence here, because 'every' carries the generalisation."
+                },
+                {
+                  "id": "rd-int-r2-e2",
+                  "en": "Sentence A: 'The council approved the plan.' Sentence B: 'Funding ends in March.' Implicit: 'The project cannot continue past March.'",
+                  "vi": "Câu A: 'Hội đồng đã phê duyệt kế hoạch.' Câu B: 'Ngân sách kết thúc vào tháng Ba.' Ngầm: 'Dự án không thể tiếp tục sau tháng Ba.'",
+                  "note": "Two sentences, one link, one conclusion. Write down which two; that is your justification."
+                }
+              ]
+            },
+            {
+              "title": "Read around a word, not through it",
+              "statement": "When one word stops you, identify its part of speech, find the sentence's verb, and read the sentence without the word. Most of the time the meaning is already complete.",
+              "examples": [
+                {
+                  "id": "rd-int-r3-e1",
+                  "en": "The proposal was met with considerable ambivalence by the committee.",
+                  "vi": "Đề xuất được ủy ban đáp lại với sự do dự khá lớn.",
+                  "note": "ambivalence = a noun after 'with'. Knowing it is a noun after met with gives you 'a mixed reaction'."
+                },
+                {
+                  "id": "rd-int-r3-e2",
+                  "en": "Revenue outpaced costs, though headcount did not grow.",
+                  "vi": "Doanh thu vượt chi phí, dù số nhân sự không tăng.",
+                  "note": "outpaced = a verb after revenue. The rest of the sentence already told you it means 'grew faster than'."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rd-int-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rd-int-ex1",
+              "en": "Revenue outpaced costs, though headcount did not grow.",
+              "vi": "Doanh thu vượt chi phí, dù số nhân sự không tăng.",
+              "note": "The clause after 'though' is the writer's actual emphasis, not the first clause."
+            },
+            {
+              "id": "rd-int-ex2",
+              "en": "The measure was welcomed in principle and questioned in practice.",
+              "vi": "Biện pháp được hoan nghênh trên lý thuyết và bị nghi ngờ trên thực tế.",
+              "note": "A parallel structure. Two clauses, opposite meanings, no conjunction needed."
+            },
+            {
+              "id": "rd-int-ex3",
+              "en": "It is often assumed that cost savings are the goal, which the figures do not support.",
+              "vi": "Người ta thường cho rằng mục tiêu là tiết kiệm chi phí, điều mà các con số không ủng hộ.",
+              "note": "The writer's stance is in the relative clause, not in the first part of the sentence."
+            },
+            {
+              "id": "rd-int-ex4",
+              "en": "The engineer retired in March and nobody replaced him.",
+              "vi": "Kỹ sư nghỉ việc vào tháng Ba và không ai thay thế.",
+              "note": "Two explicit facts, one implicit consequence. Say the consequence to yourself before you answer."
+            },
+            {
+              "id": "rd-int-ex5",
+              "en": "Fewer complaints were recorded, which the operator attributes to clearer signage.",
+              "vi": "Ít khiếu nại hơn được ghi nhận, điều mà đơn vị vận hành quy cho bảng chỉ dẫn rõ ràng hơn.",
+              "note": "'Which the operator attributes to' reports a claim, not a proven cause. Test for a hedge."
+            }
+          ]
+        },
+        {
+          "id": "rd-int-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rd-int-1",
+              "kind": "reading",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Volunteer Numbers. Museums have long relied on unpaid guides, and visitor numbers were steady but flat. A pilot programme introduced by the city paid a small stipend to volunteers who completed a two-day training course. The result surprised the programme's own authors: attendance rose by forty per cent, but the increase was concentrated almost entirely among visitors under thirty. Older visitors, who make up the largest share of the audience, barely moved. The city has now postponed a decision on whether to extend the programme, citing questions about cost and about whether the figure will hold outside the pilot sites.",
+              "instruction": "Read the passage, then choose the option the passage supports.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The increase in attendance mainly came from younger visitors.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Older visitors stopped coming because of the new signage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The city will extend the programme next year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The supporting sentence says the increase 'was concentrated almost entirely among visitors under thirty', and 'concentrated among' is a direct paraphrase of 'mainly came from younger visitors'. Option (b) invents a cause that appears nowhere in the passage. Option (c) reverses the last sentence: the city 'has postponed a decision', which is a refusal to decide yet, not a promise to extend. Note that the question can be answered without reading the middle of the passage, so skim first, then read closely only around the phrase 'concentrated'.",
+              "xp": 10
+            },
+            {
+              "id": "rd-int-2",
+              "kind": "reading",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "The Cost of Fresh Produce. A supermarket chain that cut its prices on fruit and vegetables reported a sharp rise in sales, and shoppers welcomed the change. The chain has since been fined for mislabelling several products, and two stores have closed. The company says both events were unrelated to the pricing, a claim that the regional regulator has described as unsubstantiated. Shareholders, who had backed the policy for its effect on customer loyalty, have not commented.",
+              "instruction": "Read the passage, then choose the option the passage supports.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The company and the regulator disagree about whether the problems are related.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Sales fell after the stores closed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Shareholders blamed the pricing policy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "Two sentences carry this: the company 'says both events were unrelated to the pricing' and the regulator 'has described' that claim as unsubstantiated. 'Disagree about whether the problems are related' is exactly what a company asserting no link and a regulator calling the assertion unsupported amounts to. Option (b) reverses the sequence in the text, where sales rose before the closures. Option (c) turns a stated absence of comment into an accusation, which is a common trap in texts that end on a hedge.",
+              "xp": 10
+            },
+            {
+              "id": "rd-int-3",
+              "kind": "trueFalse",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "The Cost of Fresh Produce. A supermarket chain that cut its prices on fruit and vegetables reported a sharp rise in sales, and shoppers welcomed the change. The chain has since been fined for mislabelling several products, and two stores have closed. The company says both events were unrelated to the pricing, a claim that the regional regulator has described as unsubstantiated. Shareholders, who had backed the policy for its effect on customer loyalty, have not commented. Statement: The text states that the company admitted the two events were linked.",
+              "instruction": "Decide whether the statement matches the passage. Be precise about who claims what.",
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "The company said the events were 'unrelated' and the regulator called that claim unsubstantiated, so nobody admits a link. The statement uses 'admits', which would require the company to accept a connection; asserting one is not admitting one. When a question turns on a reporting verb, find the sentence that names the speaker and read only that clause — the rest of the paragraph tells you the writer's opinion, not the company's position.",
+              "xp": 10
+            },
+            {
+              "id": "rd-int-4",
+              "kind": "typeTheAnswer",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Volunteer Numbers. Museums have long relied on unpaid guides, and visitor numbers were steady but flat. A pilot programme introduced by the city paid a small stipend to volunteers who completed a two-day training course. The result surprised the programme's own authors: attendance rose by forty per cent, but the increase was concentrated almost entirely among visitors under thirty. Older visitors, who make up the largest share of the audience, barely moved. The city has now postponed a decision on whether to extend the programme, citing questions about cost and about whether the figure will hold outside the pilot sites. Question: Why is the city unsure about extending the programme?",
+              "instruction": "Type a short noun phrase. The text gives two reasons; give them both.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "cost and whether the figure will hold elsewhere",
+                  "cost and whether the figure will hold outside the pilot sites",
+                  "cost, and whether the result will hold elsewhere",
+                  "the cost and whether the figure will hold outside the pilot sites",
+                  "cost and whether the increase will hold elsewhere"
+                ]
+              },
+              "explanation": "The final sentence lists both reasons in one 'citing' phrase: questions about cost and about whether the figure will hold outside the pilot sites. Scanning for the reporting verb 'citing' takes you straight to the list, and questions with 'why' at the end of a text are almost always answered by the final sentence. When the text gives two reasons, give both; one reason is a half answer and will be marked as incomplete.",
+              "xp": 10
+            },
+            {
+              "id": "rd-int-5",
+              "kind": "sentenceCompletion",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Paragraph: The committee welcomed the plan in principle and asked for further evidence before deciding. Complete the summary sentence with the writer's stance.",
+              "instruction": "Add a concessive structure that shows the committee stopped short of approval.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "although it did not approve the plan",
+                  "though it did not approve the plan",
+                  "but it did not approve the plan",
+                  "however it did not approve the plan"
+                ]
+              },
+              "explanation": "'Welcomed in principle' plus 'asked for further evidence before deciding' is support with a condition attached, and a summary that says only 'the committee welcomed the plan' overstates it. The stance lives in the contrast, so your summary clause has to carry the limit: a concessive or contrastive connector plus the clause about not approving. Check your version by asking whether a reader would expect approval to follow; if it would, the hedge is still in the summary and it is safe.",
+              "xp": 10
+            },
+            {
+              "id": "rd-int-6",
+              "kind": "matching",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Match each phrase to what it signals in a text.",
+              "instruction": "One answer per phrase. These are all markers, and they tell you how to read the sentence around them.",
+              "items": [
+                {
+                  "id": "m1",
+                  "text": "however",
+                  "isCorrect": null,
+                  "matchKey": "contrast"
+                },
+                {
+                  "id": "m2",
+                  "text": "for example",
+                  "isCorrect": null,
+                  "matchKey": "illustration"
+                },
+                {
+                  "id": "m3",
+                  "text": "it is often assumed",
+                  "isCorrect": null,
+                  "matchKey": "hedge"
+                },
+                {
+                  "id": "m4",
+                  "text": "the reason",
+                  "isCorrect": null,
+                  "matchKey": "explanation"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "contrast",
+                  "m2": "illustration",
+                  "m3": "hedge",
+                  "m4": "explanation"
+                }
+              },
+              "explanation": "Learning the markers is what lets you read a dense paragraph without stopping. 'However' tells you to expect the opposite of the previous clause, so the last thing you heard is probably wrong. 'For example' tells you the rest is supporting detail and can be skimmed. 'It is often assumed' signals that the claim is the writer's, not the reader's, which is exactly the phrase to look for in a stance question. 'The reason' introduces a cause, so the following clause is an answer to why.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rd-int-dictation",
+          "type": "dictation",
+          "title": "Sentences from reported passages",
+          "items": [
+            {
+              "id": "rd-int-d1",
+              "audio": {
+                "id": "rd-int-d1-audio",
+                "kind": "speech",
+                "text": "It is often assumed that cost savings are the goal, which the figures do not support.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "It is often assumed that cost savings are the goal, which the figures do not support."
+              ],
+              "hint": "the writer's stance is in the relative clause at the end",
+              "translation": "Người ta thường cho rằng mục tiêu là tiết kiệm chi phí, điều mà các con số không ủng hộ.",
+              "xp": 15
+            },
+            {
+              "id": "rd-int-d2",
+              "audio": {
+                "id": "rd-int-d2-audio",
+                "kind": "speech",
+                "text": "The measure was welcomed in principle and questioned in practice.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "The measure was welcomed in principle and was questioned in practice."
+              ],
+              "hint": "a parallel structure: welcomed in X and questioned in Y",
+              "translation": "Biện pháp được hoan nghênh trên lý thuyết và bị nghi ngờ trên thực tế.",
+              "xp": 15
+            },
+            {
+              "id": "rd-int-d3",
+              "audio": {
+                "id": "rd-int-d3-audio",
+                "kind": "speech",
+                "text": "Fewer complaints were recorded, which the operator attributes to clearer signage.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "Fewer complaints were recorded, which the operator attributes to clearer signs."
+              ],
+              "hint": "attributes to = a claim, not a proven cause",
+              "translation": "Ít khiếu nại hơn được ghi nhận, điều mà đơn vị vận hành quy cho bảng chỉ dẫn rõ ràng hơn.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rd-int-summary",
+          "type": "summary",
+          "takeaways": [
+            "Substitute the question into the text's vocabulary before you search; a useful answer sentence often shares no word with the question.",
+            "Separate explicit from implicit: every inference must rest on a sentence you can point to, and combining two sentences is a legitimate way to build one.",
+            "Watch reporting verbs: 'says', 'attributes to', 'claims' and 'describes as' tell you whose opinion you are reading, not what is true.",
+            "A word that blocks you is rarely the word carrying the meaning. Find the part of speech and the sentence verb, and read around the word.",
+            "Target about 100 to 200 words per minute for close reading tasks; scanning for a specific string is faster but fails the moment the text paraphrases.",
+            "Questions that ask 'why' are usually answered by the last sentence, where the text puts its reasons."
+          ],
+          "nextLessonID": "reading-skill-advanced"
+        }
+      ]
+    },
+    {
+      "id": "reading-skill-advanced",
+      "title": "Stance, Structure and Dense Texts",
+      "summary": "Read an argument at speed and hold the writer's position in mind across a whole text, including where the writer marks their own hedging.",
+      "level": "advanced",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "rd-adv-theory",
+          "type": "theory",
+          "heading": "Reading an argument rather than a set of sentences",
+          "body": "Advanced reading is not faster word recognition; it is holding a structure in mind while the text revises it. A dense academic or journalistic text is built as an argument with a shape: a claim, evidence, a concession, a qualification, and sometimes a retraction. The reader who processes sentences one at a time will get every sentence right and still be unable to say what the writer thinks, because the position is carried by the connectives rather than by any single sentence. Three techniques carry most of the weight. First, claim identification: write a one-sentence version of the writer's position after each section, and if you cannot, you have lost the thread at the last link rather than at the first. Second, concession tracking: 'admittedly', 'to be fair' and 'having said that' introduce a point the writer is about to limit. The material after them is the real position, and a summary that reports the concession has reported the opposite of the argument. Third, hedge audit: at this level the difference between an assertion and a hedged claim is the whole question. 'The data suggest a modest effect' is not 'the data show an effect', and an answer that drops the hedge has changed the writer's degree of commitment. Speed at this level is about 300 words per minute for argument mapping and about 100 to 150 for a genuinely close analysis; if you are doing the latter on a long text, you should be able to sustain it for only a few minutes at a time. What to notice: the connectives, the reporting verbs, the quantifiers, and the paragraph's first and last sentence — the argument is almost always signposted at those two points. What to ignore: the illustrative example, which is evidence for the claim and never the claim itself, and any citation, which supports rather than asserts.",
+          "rules": [
+            {
+              "title": "The concession is not the argument",
+              "statement": "A writer who concedes a point marks it and then limits it. The clause after the concession signal carries the position; a summary built from the concession states the opposite of what the text argues.",
+              "examples": [
+                {
+                  "id": "rd-adv-r1-e1",
+                  "en": "The scheme is expensive, admittedly; what it buys, however, is not visible in the first two years.",
+                  "vi": "Kế hoạch đắt, phải công nhận; nhưng những gì nó mang lại thì chưa thấy trong hai năm đầu.",
+                  "note": "The cost is conceded and immediately reframed. The argument lives after 'however'."
+                },
+                {
+                  "id": "rd-adv-r1-e2",
+                  "en": "Having said that, I would not rest the case on a single study.",
+                  "vi": "Nói như vậy, tôi sẽ không dựa lập luận vào chỉ một nghiên cứu.",
+                  "note": "'Having said that' concedes. The new position is the clause that follows it."
+                }
+              ]
+            },
+            {
+              "title": "Keep the hedge or lose the argument",
+              "statement": "Compare the degree of commitment in the writer's words and in yours. 'Suggest', 'may', 'tend to', 'at best' and 'in principle' are not decoration; removing them changes the claim.",
+              "examples": [
+                {
+                  "id": "rd-adv-r2-e1",
+                  "en": "The findings suggest a modest effect on early literacy.",
+                  "vi": "Các phát hiện cho thấy một tác động nhỏ đến việc đọc viết sớm.",
+                  "note": "'Suggest' plus 'modest' is weaker than 'prove' plus 'large'. Keep both when you summarise."
+                },
+                {
+                  "id": "rd-adv-r2-e2",
+                  "en": "The policy is effective at best, and only in larger schools.",
+                  "vi": "Chính sách tốt nhất, và chỉ ở các trường lớn.",
+                  "note": "'At best' caps the claim and 'only' narrows it. Two limits in one short clause."
+                }
+              ]
+            },
+            {
+              "title": "Examples are evidence, never the claim",
+              "statement": "A study, a case or an anecdote illustrates a point. If you find yourself able to quote an example as though it were the argument, you have stopped reading the structure.",
+              "examples": [
+                {
+                  "id": "rd-adv-r3-e1",
+                  "en": "One school, which cut its reading hour by a third, saw results improve within a year.",
+                  "vi": "Một trường học, sau khi cắt giờ đọc đi một phần ba, thấy kết quả cải thiện trong vòng một năm.",
+                  "note": "A vivid example. The claim it supports is general; the example itself is not the argument."
+                },
+                {
+                  "id": "rd-adv-r3-e2",
+                  "en": "As the authors note, the sample was small and drawn from one region.",
+                  "vi": "Như các tác giả lưu ý, mẫu nhỏ và lấy từ một khu vực.",
+                  "note": "A citation flag. Two limitations in one sentence, and the claim is now narrower than the headline."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rd-adv-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rd-adv-ex1",
+              "en": "The results are promising, though the sample remains small.",
+              "vi": "Kết quả đáng khích lưng, dù mẫu vẫn nhỏ.",
+              "note": "'Though' keeps the limitation in view. A summary stating only 'promising' is incomplete."
+            },
+            {
+              "id": "rd-adv-ex2",
+              "en": "On balance, the evidence favours the simpler explanation.",
+              "vi": "Nhìn tổng thể, bằng chứng nghiêng về giải thích đơn giản hơn.",
+              "note": "'On balance' tells you the writer is weighing several considerations. Expect a qualified verdict."
+            },
+            {
+              "id": "rd-adv-ex3",
+              "en": "This does not, of course, settle the matter.",
+              "vi": "Điều này, đương nhiên, không giải quyết triệt để vấn đề.",
+              "note": "A disclaimer. It limits the reach of everything before it, so place it mentally before the whole paragraph."
+            },
+            {
+              "id": "rd-adv-ex4",
+              "en": "Taken together, the three studies point the same way.",
+              "vi": "Nhìn chung, ba nghiên cứu này chỉ cùng một hướng.",
+              "note": "A synthesis marker. When you see it, the writer is moving from evidence to conclusion."
+            },
+            {
+              "id": "rd-adv-ex5",
+              "en": "The strongest objection is that the effect may be temporary.",
+              "vi": "Phản đối mạnh nhất là tác động có thể chỉ tạm thời.",
+              "note": "The writer names an objection and does not yet dismiss it. Do not report the objection as the argument."
+            }
+          ]
+        },
+        {
+          "id": "rd-adv-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rd-adv-1",
+              "kind": "reading",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Unequal Hours. Managers who keep a written log of interruptions report, on average, forty per cent fewer deep-work blocks than those who do not. The finding is suggestive rather than conclusive, since managers who log interruptions may simply be more conscientious to begin with. Even so, the pattern held across four sectors and two countries, and a small intervention in one firm — a ninety-minute no-meeting window each morning — reproduced a version of the effect within six weeks. Whether the same window would work outside large firms remains untested, and the authors are careful not to claim it does.",
+              "instruction": "Read the passage, then choose the option the passage supports.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The authors do not claim the result applies to smaller organisations.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The effect was tested and confirmed in four countries.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Logging interruptions makes managers more conscientious.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The final clause states the limit twice: the result 'remains untested' outside large firms and the authors 'are careful not to claim it does', which paraphrases directly to option (a). Option (b) shifts 'two countries' into four and turns a pattern that held into a confirmed test. Option (c) inverts the passage: the conscientiousness is a possible alternative explanation offered by the authors, not a finding. The hedge 'is suggestive rather than conclusive' applies to the whole paragraph, so read the options against a text that is deliberately careful.",
+              "xp": 10
+            },
+            {
+              "id": "rd-adv-2",
+              "kind": "reading",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Unequal Hours. Managers who keep a written log of interruptions report, on average, forty per cent fewer deep-work blocks than those who do not. The finding is suggestive rather than conclusive, since managers who log interruptions may simply be more conscientious to begin with. Even so, the pattern held across four sectors and two countries, and a small intervention in one firm — a ninety-minute no-meeting window each morning — reproduced a version of the effect within six weeks. Whether the same window would work outside large firms remains untested, and the authors are careful not to claim it does. Question: What is the writer's main reservation about the finding?",
+              "instruction": "Choose the option that states the reservation, not the surrounding detail.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The result rests on a self-selected group, so cause and effect are hard to separate.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The ninety-minute window was tested in only one firm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Four sectors is too few to draw a general conclusion.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The reservation is stated in the second sentence: managers who log interruptions 'may simply be more conscientious to begin with', which is an alternative explanation, i.e. self-selection rather than a measured cause. Option (a) is the same point in a more analytical register, which is what a correct paraphrase looks like at this level. Option (b) describes the study's design, not the writer's doubt, and the text explicitly uses the intervention as support, not as a weakness. Option (c) invents a criticism the author never makes — the author treats four sectors and two countries as a strength, introduced by 'Even so'.",
+              "xp": 10
+            },
+            {
+              "id": "rd-adv-3",
+              "kind": "trueFalse",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Unequal Hours. Managers who keep a written log of interruptions report, on average, forty per cent fewer deep-work blocks than those who do not. The finding is suggestive rather than conclusive, since managers who log interruptions may simply be more conscientious to begin with. Even so, the pattern held across four sectors and two countries, and a small intervention in one firm — a ninety-minute no-meeting window each morning — reproduced a version of the effect within six weeks. Whether the same window would work outside large firms remains untested, and the authors are careful not to claim it does. Statement: The passage argues that the finding is weak and should be discarded.",
+              "instruction": "Decide whether the statement matches the passage's position. Look at the concession signals before you decide.",
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "The passage qualifies the finding but supports it: 'suggestive rather than conclusive' is a hedge, and 'Even so' introduces evidence for it rather than against it, with a further limit at the end. A hedge is not a rejection, and reading a qualified finding as a dismissal is the most common advanced-level error. When a passage has one reservation and four supporting sentences, the writer's position is 'qualified support', and your statement must match that, not the loudest-sounding clause.",
+              "xp": 10
+            },
+            {
+              "id": "rd-adv-4",
+              "kind": "typeTheAnswer",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Unequal Hours. Managers who keep a written log of interruptions report, on average, forty per cent fewer deep-work blocks than those who do not. The finding is suggestive rather than conclusive, since managers who log interruptions may simply be more conscientious to begin with. Even so, the pattern held across four sectors and two countries, and a small intervention in one firm — a ninety-minute no-meeting window each morning — reproduced a version of the effect within six weeks. Whether the same window would work outside large firms remains untested, and the authors are careful not to claim it does. Question: In what sense does the writer say the evidence is not conclusive?",
+              "instruction": "Type the reason the writer gives. Use your own words, not the passage's.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "the managers who log interruptions may be more conscientious to start with",
+                  "the people who logged interruptions may already have been more conscientious",
+                  "the sample may be self-selected",
+                  "the managers who logged may simply have been more conscientious to begin with",
+                  "it is possible that conscientious managers are simply more likely to log"
+                ]
+              },
+              "explanation": "The writer gives the reason in the 'since' clause: the group is self-selected because conscientious managers are likelier to keep a log. An answer that says only 'the sample was small' would be borrowing from a different passage — the size problem is not raised here. Note what this question requires: the word 'since' signals a reason rather than a concession, so jumping to the next sentence for a caveat would be a misread. Answer with the alternative-explanation idea in any wording you can defend.",
+              "xp": 10
+            },
+            {
+              "id": "rd-adv-5",
+              "kind": "matching",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Match each phrase from the passage to the function it performs in the argument.",
+              "instruction": "One function per phrase. Read the whole passage before matching.",
+              "items": [
+                {
+                  "id": "m1",
+                  "text": "The finding is suggestive rather than conclusive",
+                  "isCorrect": null,
+                  "matchKey": "hedge"
+                },
+                {
+                  "id": "m2",
+                  "text": "Even so",
+                  "isCorrect": null,
+                  "matchKey": "contrast"
+                },
+                {
+                  "id": "m3",
+                  "text": "a small intervention in one firm",
+                  "isCorrect": null,
+                  "matchKey": "illustration"
+                },
+                {
+                  "id": "m4",
+                  "text": "remains untested",
+                  "isCorrect": null,
+                  "matchKey": "limit"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "hedge",
+                  "m2": "contrast",
+                  "m3": "illustration",
+                  "m4": "limit"
+                }
+              },
+              "explanation": "Map each phrase to its job in the argument rather than to its surface meaning. 'Suggestive rather than conclusive' is a hedge that weakens the claim without abandoning it. 'Even so' is a contrast marker that turns the passage from reservation to support. The one-firm intervention is an illustration, i.e. a single case offered as evidence. 'Remains untested' is a limit, and it is narrower than the general hedge because it names a specific untested group. Distinguishing hedge from limit matters: a hedge is vagueness about confidence, a limit is a stated boundary of the claim.",
+              "xp": 10
+            },
+            {
+              "id": "rd-adv-6",
+              "kind": "sentenceCompletion",
+              "topicID": "reading-skill",
+              "lessonID": "reading-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Paragraph: The technique is effective in large firms, where a single shared calendar can be enforced. Smaller organisations have no equivalent mechanism. Complete the summary sentence.",
+              "instruction": "Add the concessive structure that keeps the summary faithful to the passage.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "although it may not transfer to smaller organisations",
+                  "though it may not transfer to smaller organisations",
+                  "but it may not transfer to smaller organisations",
+                  "however it may not transfer to smaller organisations"
+                ]
+              },
+              "explanation": "The passage supports the technique in one context and withholds support in another, so the summary needs a concession rather than a flat addition. Two things have to survive into your version: the restriction of the claim to large firms, and the reason it is withheld, which is the absence of a shared calendar to enforce. Also keep the modality — 'may not' rather than 'does not', because the passage states a mechanism is missing, not that the technique would fail. Overstating the limitation is as wrong as dropping the limitation.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rd-adv-dictation",
+          "type": "dictation",
+          "title": "Sentences from academic and journalistic prose",
+          "items": [
+            {
+              "id": "rd-adv-d1",
+              "audio": {
+                "id": "rd-adv-d1-audio",
+                "kind": "speech",
+                "text": "The results are promising, though the sample remains small.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "The results are promising, but the sample remains small."
+              ],
+              "hint": "the limitation must stay in the sentence",
+              "translation": "Kết quả đáng khích lưng, dù mẫu vẫn nhỏ.",
+              "xp": 15
+            },
+            {
+              "id": "rd-adv-d2",
+              "audio": {
+                "id": "rd-adv-d2-audio",
+                "kind": "speech",
+                "text": "Taken together, the three studies point the same way.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "Taken together, the three studies point in the same direction."
+              ],
+              "hint": "'taken together' is a synthesis marker, not decoration",
+              "translation": "Nhìn chung, ba nghiên cứu này chỉ cùng một hướng.",
+              "xp": 15
+            },
+            {
+              "id": "rd-adv-d3",
+              "audio": {
+                "id": "rd-adv-d3-audio",
+                "kind": "speech",
+                "text": "Whether the same window would work outside large firms remains untested.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "Whether the same window would work outside of large firms remains untested."
+              ],
+              "hint": "'whether' introduces a clause that is the subject of the sentence",
+              "translation": "Liệu cùng khung giờ đó có hiệu quả ngoài các công ty lớn hay không thì chưa được kiểm chứng.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rd-adv-summary",
+          "type": "summary",
+          "takeaways": [
+            "Read the connectives, not only the sentences: the position of a dense text is carried by 'however', 'even so', 'admittedly' and 'having said that'.",
+            "A concession is not the argument. The clause after the concession signal is the writer's real position.",
+            "Keep the hedge. 'Suggest', 'at best', 'may', 'in principle' set the degree of commitment, and dropping them changes the claim.",
+            "Distinguish a hedge from a limit: a hedge is uncertainty about confidence, a limit is a stated boundary of where the claim holds.",
+            "Examples and citations are evidence for a claim, never the claim itself; if you can only quote an example, you have stopped reading the structure.",
+            "Aim for about 300 words per minute to map an argument, and about 100 to 150 for a close analysis you intend to defend."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1279 @@
+{
+  "id": "modal-verbs",
+  "title": "Modal Verbs",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Ability, permission, obligation, advice and deduction — and the perfect modals for looking back.",
+  "icon": "exclamationmark.bubble",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "mv-forms",
+      "title": "The Form of Modals",
+      "summary": "One word, no to, no -s, base verb after.",
+      "level": "beginner",
+      "xp": 30,
+      "steps": [
+        {
+          "id": "mvf-theory",
+          "type": "theory",
+          "heading": "How Modals Work",
+          "body": "Modal verbs are always a single word and they never change form. There is no to after them, no -s in the third person singular, and no do in questions and negatives. The verb that follows a modal is always the base form, which is one of the most reliable facts in English and the first thing to check when a sentence with a modal sounds wrong.",
+          "rules": [
+            {
+              "title": "The four fixed features",
+              "statement": "A modal has no infinitive marker, no third person ending, and it forms questions and negatives on its own with no auxiliary.",
+              "formula": "modal + base verb",
+              "examples": [
+                { "id": "mvf-r1e1", "en": "She can swim very well.", "vi": "Cô ấy bơi rất giỏi.", "note": "no -s on can, even with she" },
+                { "id": "mvf-r1e2", "en": "Can she swim very well?", "vi": "Cô ấy bơi giỏi không?", "note": "no do in the question" }
+              ]
+            },
+            {
+              "title": "Negatives and questions",
+              "statement": "To make a negative or a question, add not or invert the modal with the subject. There is no need for do or does at any point.",
+              "formula": "modal + not + base verb | Modal + subject + base verb?",
+              "examples": [
+                { "id": "mvf-r2e1", "en": "I can't find my keys.", "vi": "Tôi không tìm thấy chìa khóa.", "note": "cannot = can't" },
+                { "id": "mvf-r2e2", "en": "Where will you be tomorrow?", "vi": "Ngày mai bạn sẽ ở đâu?", "note": "invert will with the subject" }
+              ]
+            },
+            {
+              "title": "The full set",
+              "statement": "English has nine core modals plus shall and ought to, which behave in the same grammatical way.",
+              "formula": "can, could, may, might, must, shall, should, will, would, ought to",
+              "examples": [
+                { "id": "mvf-r3e1", "en": "You ought to see a doctor.", "vi": "Bạn nên đi khám bác sĩ.", "note": "ought to is a modal even though it looks like two words" }
+              ]
+            },
+            {
+              "title": "No past form",
+              "statement": "Modals have no past tense. To talk about the past, either use another verb or use the perfect form modal + have + past participle.",
+              "formula": "can swim / could swim | must have swum",
+              "examples": [
+                { "id": "mvf-r4e1", "en": "I could read faster when I was a student.", "vi": "Hồi sinh viên tôi đọc nhanh hơn.", "note": "could is the past of can" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mvf-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mvf-ex1", "en": "He must be at home now.", "vi": "Bây giờ anh ấy chắc chắn ở nhà rồi.", "note": "modal + base verb with no to" },
+            { "id": "mvf-ex2", "en": "We should leave before it gets dark.", "vi": "Chúng ta nên rời đi trước khi trời tối.", "note": "should plus base verb, never should to" },
+            { "id": "mvf-ex3", "en": "Might I ask you a question?", "vi": "Tôi có thể hỏi bạn một câu được không?", "note": "polite question form with might" },
+            { "id": "mvf-ex4", "en": "You don't have to come early.", "vi": "Bạn không cần phải đến sớm.", "note": "have to carries the meaning, not a modal" },
+            { "id": "mvf-ex5", "en": "I would like some water, please.", "vi": "Tôi muốn một ly nước.", "note": "would like is a polite request, not a past form here" }
+          ]
+        },
+        {
+          "id": "mvf-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-frm-1",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "beginner",
+              "prompt": "She can speaks three languages.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["She can speak three languages."] },
+              "explanation": "After a modal the verb is always the base form, so it is speak, not speaks. Modals do not take the -s ending, which is the marker that would normally tell you the subject is she.",
+              "xp": 10
+            },
+            {
+              "id": "m-frm-2",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "beginner",
+              "prompt": "___ you help me with this box?",
+              "instruction": "Write one modal verb.",
+              "answer": { "type": "text", "values": ["Can", "Could", "Would", "Will", "May", "Might", "Should"] },
+              "explanation": "Any of these modals works grammatically in the question, and the choice depends on the meaning: Can for ability, Could for a polite request, Would for an offer, Will for a spontaneous offer to help. The point of the exercise is that all of them are modals and none of them needs do.",
+              "xp": 10
+            },
+            {
+              "id": "m-frm-3",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "Does he can help us?", "isCorrect": false },
+                { "id": "b", "text": "Can he help us?", "isCorrect": true },
+                { "id": "c", "text": "Can he to help us?", "isCorrect": false },
+                { "id": "d", "text": "Can he helps us?", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Can already makes the question on its own, so no does is needed, and the verb after it is the base form help. Options c and d add the two things a modal never takes: a to and an -s ending.",
+              "xp": 10
+            },
+            {
+              "id": "m-frm-4",
+              "kind": "typeTheAnswer",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "beginner",
+              "prompt": "Write the full form (two words) of the negative of 'can'.",
+              "instruction": "Type both words.",
+              "answer": { "type": "text", "values": ["cannot", "can not"] },
+              "explanation": "The full form is cannot, written as one word, or can not written as two. The contraction can't is the form you hear and write in informal English.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mvf-dictation",
+          "type": "dictation",
+          "title": "Modal Forms Dictation",
+          "items": [
+            {
+              "id": "mvf-d1",
+              "audio": { "kind": "speech", "text": "You must not forget to bring your umbrella." },
+              "acceptedAnswers": ["You must not forget to bring your umbrella."],
+              "hint": "must not + base verb",
+              "translation": "Bạn không được quên mang theo dù.",
+              "xp": 15
+            },
+            {
+              "id": "mvf-d2",
+              "audio": { "kind": "speech", "text": "They should arrive before the meeting starts." },
+              "acceptedAnswers": ["They should arrive before the meeting starts."],
+              "hint": "should + base verb",
+              "translation": "Họ nên đến trước khi cuộc họp bắt đầu.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mvf-quiz",
+          "type": "quiz",
+          "title": "Modal Forms Quiz",
+          "questions": [
+            {
+              "id": "m-frm-q1",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "beginner",
+              "prompt": "He must to go to the office tomorrow.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["He must go to the office tomorrow."] },
+              "explanation": "A modal is never followed by to, so the sentence is must go. A learner who writes must to go is usually translating the Vietnamese phải pattern, where the idea of obligation comes with a separate marker.",
+              "xp": 10
+            },
+            {
+              "id": "m-frm-q2",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "Would you like some tea?", "isCorrect": true },
+                { "id": "b", "text": "Would you to like some tea?", "isCorrect": false },
+                { "id": "c", "text": "Do you would like some tea?", "isCorrect": false },
+                { "id": "d", "text": "Would you likes some tea?", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Would like is a fixed polite expression: no to, no auxiliary do, and the verb stays as like. Every other option adds one of the two things that are impossible after a modal.",
+              "xp": 10
+            },
+            {
+              "id": "m-frm-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-forms",
+              "difficulty": "intermediate",
+              "prompt": "The bag is heavy. — 'I ___ carry it for you.'",
+              "instruction": "Write the modal only.",
+              "answer": { "type": "text", "values": ["will", "'ll", "I'll"] },
+              "explanation": "The offer is made spontaneously at the moment of speaking, which is the job of will. Going to would suggest the speaker had already decided to carry the bag before the sentence began.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mvf-summary",
+          "type": "summary",
+          "takeaways": [
+            "Modals are single words with no to, no -s and no do in questions or negatives.",
+            "The verb after a modal is always the base form.",
+            "The core set is can, could, may, might, must, shall, should, will, would and ought to.",
+            "Modals have no past form; use another verb or modal + have + past participle."
+          ],
+          "nextLessonID": "mv-ability-permission"
+        }
+      ]
+    },
+    {
+      "id": "mv-ability-permission",
+      "title": "Ability, Permission and Possibility",
+      "summary": "can, could, may, might on a strength scale.",
+      "level": "beginner",
+      "xp": 30,
+      "steps": [
+        {
+          "id": "mva-theory",
+          "type": "theory",
+          "heading": "Ability, Permission, Possibility",
+          "body": "Can, could, may and might overlap in meaning, and the difference between them is mostly a matter of strength and politeness. On a scale from the most certain to the least, the order runs can, could, may, might. The same scale is reused throughout the topic for obligation and for deduction, so learning it once pays off everywhere.",
+          "rules": [
+            {
+              "title": "The strength scale",
+              "statement": "Stronger forms come first. In questions the forms soften as they weaken, so a weak form is also the politer one.",
+              "formula": "can (strong) > could > may > might (weak)",
+              "examples": [
+                { "id": "mva-r1e1", "en": "Can I borrow your pen?", "vi": "Tôi có thể mượn cây bút của bạn không?", "note": "informal and direct" },
+                { "id": "mva-r1e2", "en": "Might I borrow your pen?", "vi": "Tôi có thể mượn cây bút của bạn không ạ?", "note": "the most polite form" }
+              ]
+            },
+            {
+              "title": "Ability and change",
+              "statement": "Can describes present ability; could describes a past ability or a general ability that has weakened, and is also the polite request form.",
+              "formula": "can swim now / could swim as a child",
+              "examples": [
+                { "id": "mva-r2e1", "en": "He can drive now, but he couldn't last year.", "vi": "Giờ anh ấy lái xe được, nhưng năm ngoái chưa.", "note": "could for the past ability" }
+              ]
+            },
+            {
+              "title": "Possibility",
+              "statement": "May and might express possibility, with may the more certain. In negative sentences may is often used to refuse permission, where must not forbids and need not simply removes the requirement.",
+              "formula": "It may rain. / It might rain. / She may not come. (permission refused)",
+              "examples": [
+                { "id": "mva-r3e1", "en": "It may rain later this afternoon.", "vi": "Chiều nay có thể sẽ mưa.", "note": "a real possibility" },
+                { "id": "mva-r3e2", "en": "It might rain later this afternoon.", "vi": "Chiều nay có khi sẽ mưa.", "note": "a smaller possibility" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mva-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mva-ex1", "en": "Could you pass me the salt?", "vi": "Bạn đưa tôi lọ muối được không?", "note": "polite request with could" },
+            { "id": "mva-ex2", "en": "My little brother can already read.", "vi": "Em tôi đã biết đọc rồi.", "note": "ability in the present" },
+            { "id": "mva-ex3", "en": "You may park here, but you may not park there.", "vi": "Bạn có thể đậu xe ở đây, nhưng không được đậu ở kia.", "note": "may for permission, may not for a refusal" },
+            { "id": "mva-ex4", "en": "We might need more time for the experiment.", "vi": "Có khi chúng ta cần thêm thời gian cho thí nghiệm.", "note": "might for a low-probability possibility" },
+            { "id": "mva-ex5", "en": "She couldn't swim when she was five.", "vi": "Năm lần cô ấy năm tuổi, cô ấy không biết bơi.", "note": "could for a past inability" }
+          ]
+        },
+        {
+          "id": "mva-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-ab-1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "beginner",
+              "prompt": "You are speaking to a manager and want to ask for time off. Which is the best choice?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "Can I have a day off?", "isCorrect": false },
+                { "id": "b", "text": "Might I have a day off?", "isCorrect": true },
+                { "id": "c", "text": "I can have a day off.", "isCorrect": false },
+                { "id": "d", "text": "May I having a day off?", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Might is the weakest and therefore the most polite form of the scale can, could, may, might, so it suits a request to someone senior. Option a is grammatical but too direct for the situation, and option d puts a gerund after a modal, which is never possible.",
+              "xp": 10
+            },
+            {
+              "id": "m-ab-2",
+              "kind": "trueFalse",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "beginner",
+              "prompt": "'Could' can describe an ability you had in the past.",
+              "instruction": "Decide whether the statement is true or false.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "The statement is true. Could is the past form of can for abilities, as in I could not read when I was four, and the form also survives as the polite present request, so one word does both jobs.",
+              "xp": 10
+            },
+            {
+              "id": "m-ab-3",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "intermediate",
+              "prompt": "It ___ (may / might) rain tomorrow, so take an umbrella just in case.",
+              "instruction": "Write one modal.",
+              "answer": { "type": "text", "values": ["may", "might"] },
+              "explanation": "Both forms are grammatical because the sentence is a real forecast about a future event. Just in case signals a genuine risk, and may is slightly stronger; might is fine too if you want to sound less certain.",
+              "xp": 10
+            },
+            {
+              "id": "m-ab-4",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "intermediate",
+              "prompt": "May I to use your dictionary?",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["May I use your dictionary?"] },
+              "explanation": "A modal takes the base form with no to, so the sentence is May I use. The same rule removes the to in Could I to borrow, which is the single most frequent modal error.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mva-dictation",
+          "type": "dictation",
+          "title": "Ability and Permission Dictation",
+          "items": [
+            {
+              "id": "mva-d1",
+              "audio": { "kind": "speech", "text": "Could you send me the file before Friday?" },
+              "acceptedAnswers": ["Could you send me the file before Friday?"],
+              "hint": "polite request with could",
+              "translation": "Bạn có thể gửi cho tôi tệp tin trước thứ Sáu không?",
+              "xp": 15
+            },
+            {
+              "id": "mva-d2",
+              "audio": { "kind": "speech", "text": "You may wait in the lounge while the doctor is free." },
+              "acceptedAnswers": ["You may wait in the lounge while the doctor is free."],
+              "hint": "may for permission",
+              "translation": "Bạn có thể chờ ở phòng chờ trong khi bác sĩ rảnh.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mva-quiz",
+          "type": "quiz",
+          "title": "Ability and Permission Quiz",
+          "questions": [
+            {
+              "id": "m-ab-q1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence correctly asks for permission politely?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "You allow me to leave now?", "isCorrect": false },
+                { "id": "b", "text": "Do you allow me leaving now?", "isCorrect": false },
+                { "id": "c", "text": "Might I leave now?", "isCorrect": true },
+                { "id": "d", "text": "I might leave now.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["c"] },
+              "explanation": "Might I is a fixed polite question form, so option c is correct. Option d is a statement about the speaker's own future, not a request, and options a and b are not grammatical ways to ask.",
+              "xp": 10
+            },
+            {
+              "id": "m-ab-q2",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "intermediate",
+              "prompt": "He can to play the guitar very well.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["He can play the guitar very well."] },
+              "explanation": "After can the base form is required: play. The third person singular ending is not added either, so cans or cant are both impossible, for two separate reasons.",
+              "xp": 10
+            },
+            {
+              "id": "m-ab-q3",
+              "kind": "sentenceCompletion",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-ability-permission",
+              "difficulty": "intermediate",
+              "prompt": "Complete with a modal: 'When I was a child I ___ not ride a bicycle.'",
+              "instruction": "Write one modal.",
+              "answer": { "type": "text", "values": ["could", "couldn't", "could not"] },
+              "explanation": "Could is the past form of can for abilities, so the sentence is could not or couldn't. Writing can not would claim the speaker still cannot ride, which is a different statement about the present.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mva-summary",
+          "type": "summary",
+          "takeaways": [
+            "The strength scale runs can, could, may, might from strongest to weakest.",
+            "Weak forms are the polite ones, so Might I ask is more courteous than Can I ask.",
+            "Can for present ability, could for past ability or a polite present request.",
+            "May not is often a refusal of permission, where must not is a prohibition."
+          ],
+          "nextLessonID": "mv-obligation"
+        }
+      ]
+    },
+    {
+      "id": "mv-obligation",
+      "title": "Obligation and Advice",
+      "summary": "must, have to, mustn't, needn't and should.",
+      "level": "intermediate",
+      "xp": 35,
+      "steps": [
+        {
+          "id": "mvo-theory",
+          "type": "theory",
+          "heading": "Obligation and Advice",
+          "body": "English has two different ways of saying that something is compulsory, and the difference is about where the rule comes from. Must expresses the speaker's own view or an instruction; have to reports a rule imposed from outside. The negative forms are the real trap, because must not forbids and need not merely removes the requirement.",
+          "rules": [
+            {
+              "title": "Must and have to",
+              "statement": "Both mean compulsory. Must is the speaker's judgement or an instruction; have to is a rule coming from outside, such as the law, a school or a workplace.",
+              "formula": "must + base verb | have to + base verb",
+              "examples": [
+                { "id": "mvo-r1e1", "en": "You must wear a helmet when you ride a motorbike.", "vi": "Bạn phải đội mũ bảo hiểm khi lái xe máy.", "note": "an instruction or the law as stated by the speaker" },
+                { "id": "mvo-r1e2", "en": "You have to wear a helmet — it is the law.", "vi": "Bạn phải đội mũ bảo hiểm, đó là quy định của pháp luật.", "note": "have to for a rule from outside" }
+              ]
+            },
+            {
+              "title": "Must not and need not",
+              "statement": "Must not says an action is forbidden. Need not says the action is optional. Mixing these up reverses the meaning, so they are worth learning as a pair.",
+              "formula": "must not = forbidden | need not = not necessary",
+              "examples": [
+                { "id": "mvo-r2e1", "en": "You must not use your phone in the exam room.", "vi": "Bạn không được dùng điện thoại trong phòng thi.", "note": "a prohibition" },
+                { "id": "mvo-r2e2", "en": "You need not bring a pen; the school provides them.", "vi": "Bạn không cần mang bút, trường sẽ cung cấp.", "note": "an option, not a rule" }
+              ]
+            },
+            {
+              "title": "Should and ought to",
+              "statement": "Both give advice, a recommendation rather than a rule. Should is far more common in everyday English, and ought to sounds formal.",
+              "formula": "should + base verb | ought to + base verb",
+              "examples": [
+                { "id": "mvo-r3e1", "en": "You should see a doctor if the pain continues.", "vi": "Nếu cơn đau vẫn tiếp diễn, bạn nên đi khám bác sĩ.", "note": "advice, not an order" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mvo-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mvo-ex1", "en": "We have to submit the form before Friday.", "vi": "Chúng ta phải nộp đơn trước thứ Sáu.", "note": "have to: a requirement from the office" },
+            { "id": "mvo-ex2", "en": "Students must not use calculators in this test.", "vi": "Học sinh không được dùng máy tính trong bài kiểm tra này.", "note": "must not: forbidden" },
+            { "id": "mvo-ex3", "en": "You don't have to come if you're tired.", "vi": "Bạn không cần đến nếu bạn mệt.", "note": "no obligation, with no prohibition implied" },
+            { "id": "mvo-ex4", "en": "You should revise a little every day.", "vi": "Bạn nên ôn bài một chút mỗi ngày.", "note": "advice" },
+            { "id": "mvo-ex5", "en": "You ought to apologise for the noise.", "vi": "Bạn nên xin lỗi về tiếng ồn.", "note": "ought to is more formal than should" }
+          ]
+        },
+        {
+          "id": "mvo-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-ob-1",
+              "kind": "multiSelect",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "Which sentences express a prohibition? Select all that apply.",
+              "instruction": "Select every correct option.",
+              "items": [
+                { "id": "a", "text": "You must not park here.", "isCorrect": true },
+                { "id": "b", "text": "You need not park here.", "isCorrect": false },
+                { "id": "c", "text": "You can't park here.", "isCorrect": true },
+                { "id": "d", "text": "You don't have to park here.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a", "c"] },
+              "explanation": "Must not and cannot both forbid an action. Need not and don't have to only say the action is not necessary, so parking there might still be perfectly allowed, which is a completely different message.",
+              "xp": 10
+            },
+            {
+              "id": "m-ob-2",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "You don't have to smoke in the library, it is forbidden.",
+              "instruction": "Rewrite the sentence so that it means smoking is not allowed.",
+              "answer": { "type": "text", "values": ["You must not smoke in the library; it is forbidden."] },
+              "explanation": "Don't have to says smoking is optional, which is not what a ban means. A prohibition needs must not or cannot; here the clause it is forbidden confirms that a ban is intended.",
+              "xp": 10
+            },
+            {
+              "id": "m-ob-3",
+              "kind": "matching",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "Match each phrase to what it means.",
+              "instruction": "Pair every phrase with the correct meaning.",
+              "items": [
+                { "id": "p1", "text": "must not", "matchKey": "forbidden" },
+                { "id": "p2", "text": "need not", "matchKey": "optional" },
+                { "id": "p3", "text": "should", "matchKey": "advice" },
+                { "id": "p4", "text": "have to", "matchKey": "external rule" }
+              ],
+              "answer": { "type": "pairs", "values": { "p1": "forbidden", "p2": "optional", "p3": "advice", "p4": "external rule" } },
+              "explanation": "The four phrases sit at different points on the obligation scale: an outright ban, a removed requirement, a recommendation, and a rule imposed from outside. Confusing the first two reverses the meaning of the sentence.",
+              "xp": 10
+            },
+            {
+              "id": "m-ob-4",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "beginner",
+              "prompt": "All employees ___ (must) wear an identity card at the entrance.",
+              "instruction": "Write one modal.",
+              "answer": { "type": "text", "values": ["must", "have to"] },
+              "explanation": "Both forms fit because a company rule is a real obligation. Must presents it as an instruction and have to as a requirement coming from the organisation, and the two are interchangeable in meaning in most cases.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mvo-dictation",
+          "type": "dictation",
+          "title": "Obligation Dictation",
+          "items": [
+            {
+              "id": "mvo-d1",
+              "audio": { "kind": "speech", "text": "You must not open the window in the lab." },
+              "acceptedAnswers": ["You must not open the window in the lab."],
+              "hint": "must not = forbidden",
+              "translation": "Bạn không được mở cửa sổ trong phòng thí nghiệm.",
+              "xp": 15
+            },
+            {
+              "id": "mvo-d2",
+              "audio": { "kind": "speech", "text": "You need not worry about the fee, it is waived this year." },
+              "acceptedAnswers": ["You need not worry about the fee, it is waived this year."],
+              "hint": "need not = not necessary",
+              "translation": "Bạn không cần lo về khoản phí, năm nay miễn phí.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mvo-quiz",
+          "type": "quiz",
+          "title": "Obligation Quiz",
+          "questions": [
+            {
+              "id": "m-ob-q1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence means 'it is not necessary to bring a map'?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "You must not bring a map.", "isCorrect": false },
+                { "id": "b", "text": "You don't have to bring a map.", "isCorrect": true },
+                { "id": "c", "text": "You must bring a map.", "isCorrect": false },
+                { "id": "d", "text": "You can't bring a map.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Not necessary is expressed by don't have to, which removes the requirement without forbidding anything. Option a and option d both say the opposite, that bringing a map is prohibited.",
+              "xp": 10
+            },
+            {
+              "id": "m-ob-q2",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "You should not to be late for the interview.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["You should not be late for the interview."] },
+              "explanation": "After should not the verb is the base form, so there is no to: should not be. This is the same rule as the one behind must not, and it is the error learners repeat most often with should.",
+              "xp": 10
+            },
+            {
+              "id": "m-ob-q3",
+              "kind": "trueFalse",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-obligation",
+              "difficulty": "intermediate",
+              "prompt": "A speaker can say 'must not' when telling someone not to do something that is not allowed.",
+              "instruction": "Decide whether the statement is true or false.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "The statement is true. Must not is the standard way to give a prohibition, and contrast it with need not, which only removes the requirement and says nothing about whether the action is allowed.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mvo-summary",
+          "type": "summary",
+          "takeaways": [
+            "Must is the speaker's own rule; have to is a rule imposed from outside.",
+            "Must not forbids an action; need not says an action is optional.",
+            "Should and ought to give advice, which is stronger than a suggestion and weaker than a rule.",
+            "Never add to after a modal, including in the negative: should not be."
+          ],
+          "nextLessonID": "mv-deduction"
+        }
+      ]
+    },
+    {
+      "id": "mv-deduction",
+      "title": "Deduction and Certainty",
+      "summary": "Guessing from evidence: must, might and can't.",
+      "level": "intermediate",
+      "xp": 35,
+      "steps": [
+        {
+          "id": "mvd-theory",
+          "type": "theory",
+          "heading": "Drawing Conclusions",
+          "body": "When a speaker draws a conclusion from evidence in front of them, the same strength scale is used in reverse. If you are sure, you use must; if you are guessing, you use may or might; if the evidence rules the idea out, you use cannot. Should sits between must and might, and this is the pattern that carries over directly into the perfect modals.",
+          "rules": [
+            {
+              "title": "Certainty",
+              "statement": "Use must when the evidence makes the conclusion almost certain, and could almost never, since it is a past possibility.",
+              "formula": "must be / must have done (certain) | could be / could have done (past possibility)",
+              "examples": [
+                { "id": "mvd-r1e1", "en": "The lights are on, so she must be home.", "vi": "Đèn đang sáng, nên chắc chắn cô ấy ở nhà.", "note": "the evidence makes this certain" },
+                { "id": "mvd-r1e2", "en": "It could be a mistake, but I don't think so.", "vi": "Đó có thể là nhầm lẫn, nhưng tôi không nghĩ vậy.", "note": "a possibility the speaker rejects" }
+              ]
+            },
+            {
+              "title": "Possibility and impossibility",
+              "statement": "May and might express a reasonable but unproven conclusion; cannot says the evidence makes it impossible.",
+              "formula": "might be / may be (possible) | cannot be (impossible)",
+              "examples": [
+                { "id": "mvd-r2e1", "en": "He might be waiting for us at the station.", "vi": "Có thể anh ấy đang đợi chúng ta ở nhà ga.", "note": "one explanation among several" },
+                { "id": "mvd-r2e2", "en": "That's not his bag, so it cannot be his.", "vi": "Đó không phải túi của anh ấy, nên không thể là của anh ấy.", "note": "the evidence rules it out" }
+              ]
+            },
+            {
+              "title": "The negative point",
+              "statement": "The negative of must in a deduction is cannot, not must not. Must not is reserved for prohibition, so the two are never interchangeable.",
+              "formula": "He must not be at home. = he is forbidden to be at home (very rare) | He cannot be at home. = that is impossible",
+              "examples": [
+                { "id": "mvd-r3e1", "en": "She cannot be in London; she just flew back this morning.", "vi": "Cô ấy không thể ở London, cô ấy vừa bay về sáng nay.", "note": "cannot carries the meaning 'impossible'" },
+                { "id": "mvd-r3e2", "en": "You must not park here; it is a no-parking zone.", "vi": "Bạn không được đậu xe ở đây, đây là khu cấm đậu.", "note": "must not carries the meaning 'forbidden'" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mvd-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mvd-ex1", "en": "Nobody answered, so he must be asleep.", "vi": "Không ai trả lời, nên chắc chắn anh ấy đang ngủ.", "note": "must for a strong conclusion" },
+            { "id": "mvd-ex2", "en": "Her eyes are red — she might have been crying.", "vi": "Mắt cô ấy đỏ — có thể cô ấy đã khóc.", "note": "might have for a guess about the past" },
+            { "id": "mvd-ex3", "en": "The ground is dry, so it must not have rained.", "vi": "Mặt đất khô, nên chắc chắn đã không mưa.", "note": "must not have, the negative of a deduction" },
+            { "id": "mvd-ex4", "en": "That can't be right; the numbers don't add up.", "vi": "Điều đó không thể đúng, các con số không khớp.", "note": "can't is the negative of must" },
+            { "id": "mvd-ex5", "en": "She should be arriving soon; her train is due at nine.", "vi": "Cô ấy chắc sắp tới, tàu của cô ấy đến lúc chín giờ.", "note": "should sits between must and might" }
+          ]
+        },
+        {
+          "id": "mvd-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-ded-1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "intermediate",
+              "prompt": "You are sure someone is in the room. Which modal fits?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "must be", "isCorrect": true },
+                { "id": "b", "text": "must not be", "isCorrect": false },
+                { "id": "c", "text": "cannot be", "isCorrect": false },
+                { "id": "d", "text": "need not be", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Must expresses certainty based on evidence. Must not is about prohibition and cannot is about impossibility, so neither fits a conclusion the speaker is confident about.",
+              "xp": 10
+            },
+            {
+              "id": "m-ded-2",
+              "kind": "grammarCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "intermediate",
+              "prompt": "The shop is still open, so she must not have finished her shopping.",
+              "instruction": "Rewrite the sentence so that it means you are sure she has finished.",
+              "answer": { "type": "text", "values": ["The shop is still open, so she must have finished her shopping."] },
+              "explanation": "In a deduction the negative of must is cannot or must not, but the sentence here needs a positive conclusion, so the modal is must have without not. The correction is the removal of the not, not a change of tense.",
+              "xp": 10
+            },
+            {
+              "id": "m-ded-3",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "intermediate",
+              "prompt": "He looks exhausted. He ___ (may / might) have worked all night.",
+              "instruction": "Write one modal.",
+              "answer": { "type": "text", "values": ["might", "may"] },
+              "explanation": "The evidence supports a guess but not a certainty, so may or might are both available, with might the weaker. Must would overstate the case, because looking exhausted is not proof of a whole night's work.",
+              "xp": 10
+            },
+            {
+              "id": "m-ded-4",
+              "kind": "multiSelect",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "advanced",
+              "prompt": "Which modals can express a conclusion that you are sure about? Select all that apply.",
+              "instruction": "Select every correct option.",
+              "items": [
+                { "id": "a", "text": "must", "isCorrect": true },
+                { "id": "b", "text": "should", "isCorrect": true },
+                { "id": "c", "text": "must not", "isCorrect": false },
+                { "id": "d", "text": "will", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a", "b"] },
+              "explanation": "Must is certainty and should is a confident but slightly weaker conclusion. Must not is a prohibition rather than a conclusion, and will makes a prediction instead of deducting from evidence.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mvd-dictation",
+          "type": "dictation",
+          "title": "Deduction Dictation",
+          "items": [
+            {
+              "id": "mvd-d1",
+              "audio": { "kind": "speech", "text": "The street is wet, so it must have rained earlier." },
+              "acceptedAnswers": ["The street is wet, so it must have rained earlier."],
+              "hint": "must have done for a certain conclusion about the past",
+              "translation": "Đường ướt, nên chắc chắn đã mưa rồi.",
+              "xp": 15
+            },
+            {
+              "id": "mvd-d2",
+              "audio": { "kind": "speech", "text": "She cannot have taken the train, because the platform is empty." },
+              "acceptedAnswers": ["She cannot have taken the train, because the platform is empty."],
+              "hint": "cannot have done = impossible",
+              "translation": "Cô ấy không thể nào đi tàu, vì sân ga vắng tanh.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mvd-quiz",
+          "type": "quiz",
+          "title": "Deduction Quiz",
+          "questions": [
+            {
+              "id": "m-ded-q1",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "advanced",
+              "prompt": "That cannot be true — he must not tell a lie.",
+              "instruction": "Rewrite both sentences so that each uses the correct modal.",
+              "answer": { "type": "text", "values": ["That cannot be true — he must tell a lie."] },
+              "explanation": "The first modal is already right, since cannot is the negative of must in a deduction. The second must not is a prohibition about behaviour, so the conclusion about the present needs plain must tell.",
+              "xp": 10
+            },
+            {
+              "id": "m-ded-q2",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "intermediate",
+              "prompt": "Her car is in the driveway and her shoes are by the door. Which sentence is most likely?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "She must be at home.", "isCorrect": true },
+                { "id": "b", "text": "She must not be at home.", "isCorrect": false },
+                { "id": "c", "text": "She need not be at home.", "isCorrect": false },
+                { "id": "d", "text": "She could not be at home.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The evidence points strongly to one conclusion, which is exactly what must is for. Option b is a prohibition, option c removes any requirement, and option d would claim the evidence is impossible.",
+              "xp": 10
+            },
+            {
+              "id": "m-ded-q3",
+              "kind": "trueFalse",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-deduction",
+              "difficulty": "intermediate",
+              "prompt": "In a deduction, 'should' suggests a fairly strong but not absolute conclusion.",
+              "instruction": "Decide whether the statement is true or false.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "The statement is true. Should sits between must and might on the scale, so She should be at home tells the listener that the evidence points that way without ruling out other explanations.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mvd-summary",
+          "type": "summary",
+          "takeaways": [
+            "Modals express certainty in deductions: must for certain, should for strong, may or might for possible, cannot for impossible.",
+            "The negative of must in a deduction is cannot, not must not.",
+            "Must not always means prohibition and never a conclusion.",
+            "The same scale reappears in the perfect modals for the past."
+          ],
+          "nextLessonID": "mv-perfect-modals"
+        }
+      ]
+    },
+    {
+      "id": "mv-perfect-modals",
+      "title": "Modal + have + Past Participle",
+      "summary": "must have, should have, needn't have, could have and might have.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "mvpm-theory",
+          "type": "theory",
+          "heading": "Perfect Modals",
+          "body": "A modal plus have plus the past participle looks back at the past and adds an attitude to it. Must have is a confident conclusion, should have is often regret or criticism, needn't have is relief about something that did not happen, and could have and might have are unrealised possibilities. The structure never changes: have is always the base form and the main verb is always the participle.",
+          "rules": [
+            {
+              "title": "The structure",
+              "statement": "Modal, then have in its base form, then the past participle of the main verb. No form of have is ever used, not even has or had.",
+              "formula": "modal + have + past participle",
+              "examples": [
+                { "id": "mvpm-r1e1", "en": "She must have forgotten our appointment.", "vi": "Cô ấy chắc đã quên cuộc hẹn của chúng ta.", "note": "a confident conclusion about the past" },
+                { "id": "mvpm-r1e2", "en": "They should have left earlier.", "vi": "Họ lẽ ra nên đi sớm hơn.", "note": "criticism or regret" }
+              ]
+            },
+            {
+              "title": "Regret and relief",
+              "statement": "Should have describes an action someone did not take, and needn't have describes an action that was unnecessary but did happen. Neither is used for a completed action you are simply pleased about.",
+              "formula": "should have + participle (regret) | needn't have + participle (unnecessary)",
+              "examples": [
+                { "id": "mvpm-r2e1", "en": "You should have warned me about the change.", "vi": "Bạn lẽ ra nên báo tôi về thay đổi đó.", "note": "you did not warn me, and that was a mistake" },
+                { "id": "mvpm-r2e2", "en": "You needn't have waited; I would have called you.", "vi": "Bạn không cần phải đợi, tôi đã gọi cho bạn rồi.", "note": "the waiting was unnecessary" }
+              ]
+            },
+            {
+              "title": "Unrealised possibility and prohibition",
+              "statement": "Could have and might have describe an option that was never taken, which is why they are so common in regret. Cannot have states that something definitely did not happen, and must not have states that something definitely did not happen as a matter of rule.",
+              "formula": "could / might have + participle | cannot have + participle | must not have + participle",
+              "examples": [
+                { "id": "mvpm-r3e1", "en": "We could have taken the earlier train.", "vi": "Chúng tôi có thể đã đi chuyến tàu sớm hơn.", "note": "an option that was not taken" },
+                { "id": "mvpm-r3e2", "en": "He must not have received the email, or he would have replied.", "vi": "Anh ấy chắc chắn đã không nhận được email, nếu không anh ấy đã trả lời rồi.", "note": "a certain negative conclusion" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mvpm-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mvpm-ex1", "en": "You've finished the whole pie. You must have been very hungry.", "vi": "Bạn ăn hết cả cái bánh. Chắc bạn rất đói.", "note": "a deduction about a past state" },
+            { "id": "mvpm-ex2", "en": "I should have taken your advice.", "vi": "Lẽ ra tôi nên nghe lời khuyên của bạn.", "note": "regret about one's own past action" },
+            { "id": "mvpm-ex3", "en": "The lights are off, so they can't have come home.", "vi": "Đèn đã tắt, nên chắc chắn họ chưa về nhà.", "note": "cannot have for a negative conclusion" },
+            { "id": "mvpm-ex4", "en": "You might have told me earlier, and I would have helped.", "vi": "Có thể bạn đã nói sớm hơn, tôi đã giúp được rồi.", "note": "might have for an unrealised offer" },
+            { "id": "mvpm-ex5", "en": "She needn't have paid for the tickets; they were free.", "vi": "Cô ấy không cần phải trả tiền vé, vé miễn phí mà.", "note": "needn't have for something unnecessary" }
+          ]
+        },
+        {
+          "id": "mvpm-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-pm-1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "The exam was yesterday and you did not revise at all. Your friend is disappointed. Which sentence fits?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "You should have revised.", "isCorrect": true },
+                { "id": "b", "text": "You must have revised.", "isCorrect": false },
+                { "id": "c", "text": "You needn't have revised.", "isCorrect": false },
+                { "id": "d", "text": "You should have revising.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Should have criticises an action that was not taken, which is exactly the situation. Option b would claim the opposite about what happened, option c says revising was unnecessary, and option d replaces the participle with a gerund.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-2",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "She must has forgotten the keys again.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["She must have forgotten the keys again."] },
+              "explanation": "After a modal, have is always the base form, so it is have, never has. The participle of forget is forgotten, which is already correct in the sentence, so only the auxiliary needs fixing.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-3",
+              "kind": "multiSelect",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "Which sentences express regret or criticism about something not done? Select all that apply.",
+              "instruction": "Select every correct option.",
+              "items": [
+                { "id": "a", "text": "You should have told me.", "isCorrect": true },
+                { "id": "b", "text": "You could have told me.", "isCorrect": true },
+                { "id": "c", "text": "You needn't have told me.", "isCorrect": false },
+                { "id": "d", "text": "You must have told me.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a", "b"] },
+              "explanation": "Should have and could have both look at an action that was not taken, which is what regret does. Needn't have says the opposite, that telling was unnecessary, and must have is a deduction about what happened.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-4",
+              "kind": "fillInTheBlank",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "Don't worry about the broken cup — you ___ (needn't) ___ (buy) a new one.",
+              "instruction": "Write the two missing words.",
+              "answer": { "type": "text", "values": ["needn't have", "need not have"] },
+              "explanation": "Needn't have plus the participle says an action was unnecessary, which fits a situation where the damage is not serious. The structure is modal, then have, then the participle buy.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-5",
+              "kind": "sentenceCompletion",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "Complete the deduction: 'She has a new laptop. She ___ have saved up for months.'",
+              "instruction": "Write the modal only.",
+              "answer": { "type": "text", "values": ["must", "could", "might", "may"] },
+              "explanation": "All four modals work with a meaning difference: must is a confident conclusion, could and might are possibilities, and may is a formal possibility. The evidence of a new laptop makes must the most natural choice.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mvpm-dictation",
+          "type": "dictation",
+          "title": "Perfect Modals Dictation",
+          "items": [
+            {
+              "id": "mvpm-d1",
+              "audio": { "kind": "speech", "text": "You should have told me about the delay earlier." },
+              "acceptedAnswers": ["You should have told me about the delay earlier."],
+              "hint": "should have + past participle",
+              "translation": "Lẽ ra bạn nên nói với tôi về chuyện chậm trễ sớm hơn.",
+              "xp": 15
+            },
+            {
+              "id": "mvpm-d2",
+              "audio": { "kind": "speech", "text": "The flour is on the floor, so somebody must have dropped the bag." },
+              "acceptedAnswers": ["The flour is on the floor, so somebody must have dropped the bag."],
+              "hint": "must have done = a certain conclusion about the past",
+              "translation": "Bột mì rơi trên sàn, vậy chắc chắn ai đó đã làm rơi túi.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mvpm-quiz",
+          "type": "quiz",
+          "title": "Perfect Modals Quiz",
+          "questions": [
+            {
+              "id": "m-pm-q1",
+              "kind": "grammarCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "He could have came to the party, but he was busy.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["He could have come to the party, but he was busy."] },
+              "explanation": "After have the main verb must be the past participle, and the participle of come is come, which happens to look like the base form. The error is using the past simple came, which belongs after a normal past auxiliary.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-q2",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "Which sentence means 'it was not necessary for you to buy that book'?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "You needn't have bought that book.", "isCorrect": true },
+                { "id": "b", "text": "You should not have bought that book.", "isCorrect": false },
+                { "id": "c", "text": "You must not have bought that book.", "isCorrect": false },
+                { "id": "d", "text": "You couldn't have bought that book.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Needn't have says the action was unnecessary, which is the only option that matches. Should not have criticises the purchase, must not have claims it definitely did not happen, and couldn't have says it was impossible.",
+              "xp": 10
+            },
+            {
+              "id": "m-pm-q3",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-perfect-modals",
+              "difficulty": "advanced",
+              "prompt": "The bag is still here, so he can't have taken it.",
+              "instruction": "Rewrite the sentence so that it means 'he definitely did not take it'.",
+              "answer": { "type": "text", "values": ["The bag is still here, so he must not have taken it."] },
+              "explanation": "Can't have is weaker, a reasonable guess, while must not have states it as certain. Both are grammatical English, so the change is a change of strength, and the surrounding evidence makes the strong version the intended one.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mvpm-summary",
+          "type": "summary",
+          "takeaways": [
+            "The structure is modal + have + past participle, and have is always the base form.",
+            "Must have is a certain conclusion; cannot have is a certain impossibility.",
+            "Should have and could have express regret or an unrealised option.",
+            "Needn't have says an action was unnecessary; must not have is a certain negative conclusion."
+          ],
+          "nextLessonID": "mv-mixed-modals"
+        }
+      ]
+    },
+    {
+      "id": "mv-mixed-modals",
+      "title": "Choosing the Right Modal",
+      "summary": "Mixing meanings: offers, warnings, hedges and modal perfects in one context.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "mvm-theory",
+          "type": "theory",
+          "heading": "Choosing Between Modals",
+          "body": "At an advanced level the difficulty is no longer the form but the choice, because several modals describe the same situation with different tones. Shall and will contrast for offers, should and ought to for advice, and may and might for hedging. Learning the pairs as contrasts, rather than as single words, is what makes the choice automatic under pressure.",
+          "rules": [
+            {
+              "title": "Shall and will",
+              "statement": "Shall is used in questions to make a suggestion, especially with I and we, while will offers to do something for someone.",
+              "formula": "Shall I open the window? | I'll open the window.",
+              "examples": [
+                { "id": "mvm-r1e1", "en": "Shall we take a taxi?", "vi": "Chúng ta đi taxi nhé?", "note": "shall we suggests a joint plan" },
+                { "id": "mvm-r1e2", "en": "I'll carry the bags for you.", "vi": "Tôi sẽ xách hộ bạn.", "note": "will offers help" }
+              ]
+            },
+            {
+              "title": "Advice pairs",
+              "statement": "Should and ought to both advise, with ought to more formal. Would rather expresses a preference about the present, and would rather have expresses regret about the past.",
+              "formula": "You should leave. / You ought to leave. | I would rather stay. | I would rather have stayed.",
+              "examples": [
+                { "id": "mvm-r2e1", "en": "I would rather not talk about it now.", "vi": "Tôi không muốn nói chuyện đó lúc này.", "note": "a present preference" },
+                { "id": "mvm-r2e2", "en": "I would rather have stayed at home last night.", "vi": "Đêm qua tôi đã ở nhà thì tốt hơn.", "note": "regret about the past" }
+              ]
+            },
+            {
+              "title": "Warnings and hedges",
+              "statement": "Must and must not with a present clause give a strong warning. May and might soften a prediction, and one of them is enough unless you want a second, weaker guess.",
+              "formula": "If you don't leave now, you will miss the train.",
+              "examples": [
+                { "id": "mvm-r3e1", "en": "You must be careful with that glass.", "vi": "Bạn phải cẩn thận với cái kính đó.", "note": "a strong warning built on deduction" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mvm-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "mvm-ex1", "en": "Shall I turn off the light?", "vi": "Tôi tắt đèn nhé?", "note": "a suggestion with shall" },
+            { "id": "mvm-ex2", "en": "I'd rather you didn't smoke in here.", "vi": "Tôi thà bạn không hút thuốc ở đây.", "note": "would rather plus a clause in the negative" },
+            { "id": "mvm-ex3", "en": "You may want to check the times again.", "vi": "Bạn có thể nên kiểm tra lại giờ giấc.", "note": "a hedged suggestion" },
+            { "id": "mvm-ex4", "en": "If you touch that wire, you may get an electric shock.", "vi": "Nếu bạn chạm vào dây đó, bạn có thể bị điện giật.", "note": "may in a warning about a possible outcome" },
+            { "id": "mvm-ex5", "en": "We could have taken an earlier flight and had more time.", "vi": "Chúng ta có thể đã chọn chuyến bay sớm hơn và có nhiều thời gian hơn.", "note": "could have for an unrealised past option" }
+          ]
+        },
+        {
+          "id": "mvm-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "m-mix-1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "A friend is carrying heavy boxes and you want to offer help. Which sentence is best?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "Shall I help you with those boxes?", "isCorrect": true },
+                { "id": "b", "text": "Will I help you with those boxes?", "isCorrect": false },
+                { "id": "c", "text": "Should I help you with those boxes?", "isCorrect": false },
+                { "id": "d", "text": "Could I help you with those boxes?", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Shall I is a natural way to make an offer of help to someone you know, often with we. Will I asks about the future and is not idiomatic, and could I sounds like a request for permission rather than an offer.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-2",
+              "kind": "grammarCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "I would rather stayed at home last night, but I went to the cinema.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["I would rather have stayed at home last night, but I went to the cinema."] },
+              "explanation": "Would rather have is the past form of the preference, so it needs have before the participle: would rather have stayed. Without have, the sentence looks like a mix of two patterns, because would rather stayed is not a form English produces.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-2b",
+              "kind": "sentenceCompletion",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "Complete the sentence: 'I would rather ___ told you, but I kept it quiet.'",
+              "instruction": "Write the verb phrase only.",
+              "answer": { "type": "text", "values": ["have not told", "haven't told"] },
+              "explanation": "To express regret about a past action that did not happen, would rather takes have not plus the participle. The form would rather not told leaves the sentence without the have that the past pattern requires.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-3",
+              "kind": "rearrangeWords",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "Put the words in the correct order.",
+              "instruction": "Build the sentence.",
+              "items": [
+                { "id": "w1", "text": "might" },
+                { "id": "w2", "text": "have" },
+                { "id": "w3", "text": "left" },
+                { "id": "w4", "text": "We" },
+                { "id": "w5", "text": "sooner" },
+                { "id": "w6", "text": "was" },
+                { "id": "w7", "text": "we" },
+                { "id": "w8", "text": "told" },
+                { "id": "w9", "text": "than" }
+              ],
+              "answer": { "type": "order", "values": ["We", "might", "have", "left", "sooner", "than", "we", "was", "told"] },
+              "explanation": "The sentence is We might have left sooner than we was told. The modal comes first, then have, then the participle left, and than we was told closes the comparison; the key point is that the perfect modal pattern is not broken up by any other word.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-4",
+              "kind": "trueFalse",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "'Shall' can be used to make a suggestion, as in 'Shall we leave now?'",
+              "instruction": "Decide whether the statement is true or false.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "The statement is true. Shall we and Shall I are fixed suggestion forms, mainly in British English, while will I and will we are not used to offer help in English.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "mvm-dictation",
+          "type": "dictation",
+          "title": "Choosing Modals Dictation",
+          "items": [
+            {
+              "id": "mvm-d1",
+              "audio": { "kind": "speech", "text": "Shall we take the earlier bus to avoid the traffic?" },
+              "acceptedAnswers": ["Shall we take the earlier bus to avoid the traffic?"],
+              "hint": "shall we = a suggestion",
+              "translation": "Chúng ta đi xe buýt sớm hơn để tránh kẹt xe nhé?",
+              "xp": 15
+            },
+            {
+              "id": "mvm-d2",
+              "audio": { "kind": "speech", "text": "You should have told me sooner, but I understand why you didn't." },
+              "acceptedAnswers": ["You should have told me sooner, but I understand why you didn't."],
+              "hint": "should have done = regret",
+              "translation": "Lẽ ra bạn nên nói với tôi sớm hơn, nhưng tôi hiểu vì sao bạn không nói.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "mvm-quiz",
+          "type": "quiz",
+          "title": "Choosing Modals Quiz",
+          "questions": [
+            {
+              "id": "m-mix-q1",
+              "kind": "multipleChoice",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick one option.",
+              "items": [
+                { "id": "a", "text": "Shall I carry that for you?", "isCorrect": true },
+                { "id": "b", "text": "Will I carry that for you?", "isCorrect": false },
+                { "id": "c", "text": "Do I shall carry that for you?", "isCorrect": false },
+                { "id": "d", "text": "I shall carrying that for you.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Shall I is the idiomatic offer in English. Will I asks about the future and is wrong here, do I shall mixes an auxiliary with a modal, and shall carrying puts a gerund after the modal.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-q2",
+              "kind": "errorCorrection",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "I would rather have told you about the problem.",
+              "instruction": "Rewrite the sentence if the speaker did in fact tell you.",
+              "answer": { "type": "text", "values": ["I would rather have not told you about the problem."] },
+              "explanation": "If the speaker did tell you and regrets it, the negative of the past preference is needed: would rather have not told. As written, the sentence would only make sense if the speaker did not tell you, which is not the situation described.",
+              "xp": 10
+            },
+            {
+              "id": "m-mix-q3",
+              "kind": "multiSelect",
+              "topicID": "modal-verbs",
+              "lessonID": "mv-mixed-modals",
+              "difficulty": "advanced",
+              "prompt": "Which pairs are grammatical and idiomatic? Select all that apply.",
+              "instruction": "Select every correct option.",
+              "items": [
+                { "id": "a", "text": "Shall we begin?", "isCorrect": true },
+                { "id": "b", "text": "Will we begin?", "isCorrect": false },
+                { "id": "c", "text": "I'd rather not go now.", "isCorrect": true },
+                { "id": "d", "text": "I'd rather not to go now.", "isCorrect": false }
+              ],
+              "answer": { "type": "choice", "values": ["a", "c"] },
+              "explanation": "Shall we is a fixed suggestion form, and I'd rather not go is the standard way to decline. Will we is not an English form for this purpose, and rather is never followed by a to-infinitive.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "mvm-summary",
+          "type": "summary",
+          "takeaways": [
+            "Shall I and Shall we make suggestions; I'll is the offer of help.",
+            "Should and ought to advise, with ought to more formal.",
+            "Would rather is a present preference; would rather have is regret about the past.",
+            "May and might hedge a prediction or a warning, so the advice sounds less absolute."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1490 @@
+{
+  "id": "noun",
+  "title": "Nouns",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Nouns name people, places, things and ideas. Learn what you can count, how plurals are built, when to use a/an/the, and how to show possession.",
+  "icon": "cube.box",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "noun-what-is-a-noun",
+      "title": "What Is a Noun?",
+      "summary": "Nouns name people, places, things, qualities and feelings.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l1-theory",
+          "type": "theory",
+          "heading": "What Is a Noun?",
+          "body": "A noun is a word that names a person, place, thing, animal, quality, feeling or idea. Verbs tell us what happens, but nouns tell us what it happens to and what it happens with, so almost no sentence can do without one. Nouns come in two useful pairs. Common nouns name every member of a class (city, river, teacher); proper nouns name one particular member and always begin with a capital letter (Hanoi, the Red River, Mrs Linh). Nouns are also either concrete, meaning you can point at them (bread, bicycle), or abstract, meaning you can only think about them (honesty, progress). In a sentence a noun usually works as the subject, the thing that does the action, or as the object, the thing that receives it. A word can be a noun in one sentence and something else in another, so always test it by the job it does.",
+          "rules": [
+            {
+              "title": "Nouns name",
+              "statement": "A noun names a person, place, thing, quality, feeling or idea.",
+              "examples": [
+                { "id": "noun-l1-r1-e1", "en": "My sister is a nurse in Da Nang.", "vi": "Chị tôi là y tá ở Đà Nẵng.", "note": "sister, nurse, Da Nang are all noun names" },
+                { "id": "noun-l1-r1-e2", "en": "Her happiness surprised everyone.", "vi": "Niềm hạnh phúc của cô ấy khiến mọi người ngạc nhiên.", "note": "happiness names a feeling, so it is an abstract noun" }
+              ]
+            },
+            {
+              "title": "Proper nouns take a capital letter",
+              "statement": "A proper noun names one particular person, place or thing, and it always starts with a capital letter. A common noun naming any member of a class starts with a lowercase letter.",
+              "examples": [
+                { "id": "noun-l1-r2-e1", "en": "We visited three cities last summer.", "vi": "Chúng tôi đã ghé ba thành phố vào mùa hè năm ngoái.", "note": "cities is a common noun, so it stays lowercase" },
+                { "id": "noun-l1-r2-e2", "en": "We visited Hue, Da Nang and Hanoi last summer.", "vi": "Chúng tôi đã ghé Huế, Đà Nẵng và Hà Nội vào mùa hè năm ngoái.", "note": "proper nouns for cities always begin with a capital letter" }
+              ]
+            },
+            {
+              "title": "Subject or object",
+              "statement": "A noun is the subject when it comes before the verb and does the action, and the object when it follows the verb or a preposition and receives the action.",
+              "examples": [
+                { "id": "noun-l1-r3-e1", "en": "The dog chased the cat across the garden.", "vi": "Con chó đuổi con mèo khắp vườn.", "note": "dog is the subject, cat and garden are objects" },
+                { "id": "noun-l1-r3-e2", "en": "The cat slept under the table.", "vi": "Con mèo ngủ dưới gầm bàn.", "note": "table follows the preposition under, so it is the object of the preposition" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l1-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l1-ex1", "en": "Bread is the cheapest thing in the shop.", "vi": "Bánh mì là thứ rẻ nhất trong cửa hàng.", "note": "bread names a thing" },
+            { "id": "noun-l1-ex2", "en": "Kindness costs nothing but means everything.", "vi": "Lòng tốt không tốn gì mà lại quan trọng vạn phần.", "note": "kindness is an abstract noun" },
+            { "id": "noun-l1-ex3", "en": "Mr Tran repaired the roof of my house.", "vi": "Ông Trần đã sửa mái nhà của tôi.", "note": "Tran is a proper noun, roof and house are common nouns" },
+            { "id": "noun-l1-ex4", "en": "The noise from the airport kept us awake all night.", "vi": "Tiếng ồn từ sân bay khiến chúng tôi thức suốt đêm.", "note": "noise is a concrete noun you can hear" },
+            { "id": "noun-l1-ex5", "en": "Curiosity led her to study chemistry for four years.", "vi": "Lòng tò mò khiến cô ấy học hóa học suốt bốn năm.", "note": "curiosity and chemistry are abstract or field nouns" }
+          ]
+        },
+        {
+          "id": "noun-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l1-ex1",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "beginner",
+              "prompt": "Which word in this sentence is the noun that does the action?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "quickly", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "student", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "answered", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "the", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "In The student answered the question, student is the subject: it names who does the answering. quickly is an adverb, answered is a verb and the is a determiner, so none of them can be the noun doing the action.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-ex2",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "beginner",
+              "prompt": "Proper nouns in English always begin with a capital letter.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. Proper nouns name one specific person, place or thing, and English capitalises them without exception: Hanoi, Unilever, Easter, English. Common nouns stay lowercase unless they begin a sentence.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "beginner",
+              "prompt": "The ___ (silence) of the library was complete.",
+              "instruction": "Write the correct word form in the blank.",
+              "items": [],
+              "answer": { "type": "text", "values": ["silence"] },
+              "explanation": "The noun silence names a quality, so it fits after the article. Do not add an -s: the word is singular, and the is the article that carries the number.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-ex4",
+              "kind": "sentenceCompletion",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "intermediate",
+              "prompt": "Complete the sentence with one noun: Her ___ during the interview impressed the managers.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "w1", "text": "confidence", "isCorrect": false, "matchKey": null },
+                { "id": "w2", "text": "carefully", "isCorrect": false, "matchKey": null },
+                { "id": "w3", "text": "interviewed", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["confidence"] },
+              "explanation": "The blank needs a noun naming a quality, so confidence works. carefully is an adverb and interviewed is a past verb, and neither can fill a slot that requires a name.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l1-d1",
+              "audio": { "kind": "speech", "text": "Honesty is a quality that every employer values." },
+              "hint": "abstract noun after is",
+              "translation": "Sự trung thực là một phẩm chất mà mọi nhà tuyển dụng đều trân trọng.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l1-d2",
+              "audio": { "kind": "speech", "text": "The children played in the garden after school." },
+              "hint": "plural noun + prepositional phrase",
+              "translation": "Lũ trẻ chơi trong vườn sau giờ học.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l1-d3",
+              "audio": { "kind": "speech", "text": "My grandmother lives in a small village near the sea." },
+              "hint": "three nouns, one of them a proper noun",
+              "translation": "Bà tôi sống ở một ngôi làng nhỏ gần biển.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l1-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "beginner",
+              "prompt": "Which of these is a common noun?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "Paris", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "river", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "Monday", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "Toyota", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "river names any river, so it is a common noun. Paris, Monday and Toyota each name one specific member and are therefore proper nouns, which also means they are written with a capital letter.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-q2",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "intermediate",
+              "prompt": "Which noun is abstract?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "bicycle", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "freedom", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "window", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "sandwich", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Abstract nouns name ideas, feelings or qualities that you cannot touch, see or weigh. freedom is an idea; bicycle, window and sandwich are all concrete objects.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-q3",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "beginner",
+              "prompt": "In the sentence The children read stories, stories is the subject and children is the object.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. The subject comes before the verb and does the action, so children is the subject, and stories, which receives the action, is the object. The statement has the two switched around.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l1-q4",
+              "kind": "sentenceCompletion",
+              "topicID": "noun",
+              "lessonID": "noun-what-is-a-noun",
+              "difficulty": "intermediate",
+              "prompt": "Complete the sentence with one noun: We climbed to the top of the ___ and photographed the whole city.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "w1", "text": "slowly", "isCorrect": false, "matchKey": null },
+                { "id": "w2", "text": "mountain", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["mountain"] },
+              "explanation": "The blank follows the noun top and is modified by the, so it must be a place noun. mountain fits; slowly is an adverb describing how we climbed, not a thing we climbed.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "A noun names a person, place, thing, animal, quality, feeling or idea.",
+            "Common nouns name a whole class, proper nouns name one specific member and take a capital letter.",
+            "A noun is the subject when it does the action and the object when it receives it.",
+            "Concrete nouns you can point at; abstract nouns you can only think about."
+          ],
+          "nextLessonID": "noun-countable-and-uncountable"
+        }
+      ]
+    },
+    {
+      "id": "noun-countable-and-uncountable",
+      "title": "Countable and Uncountable Nouns",
+      "summary": "Why you say three books but some water, and how to count the second kind.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l2-theory",
+          "type": "theory",
+          "heading": "Countable and Uncountable Nouns",
+          "body": "Countable nouns are things you can count as separate units: a chair, two chairs, three chairs. They have both a singular and a plural form. Uncountable nouns are things you cannot count as separate units because they have no shape or fixed size: water, rice, money, information, furniture, advice. You cannot say two rices or three furnitures in standard English, because each of them is a mass with no visible units. Uncountable nouns have only one form, and they are measured with words such as a piece of, a glass of, a bowl of or an amount of. Many nouns change category depending on meaning: chicken is uncountable for the meat and countable for the animal, a coffee is one cup of the drink but coffee is the substance. A small number of words that end in -s, like scissors and trousers, are plural in form but behave like singular nouns when you count them: one pair of scissors, not one scissors.",
+          "rules": [
+            {
+              "title": "Countable nouns take a plural",
+              "statement": "Countable nouns have a singular and a plural, so they work with numbers and with many, few, a few and several.",
+              "examples": [
+                { "id": "noun-l2-r1-e1", "en": "I have two brothers and three sisters.", "vi": "Tôi có hai anh em trai và ba chị em gái.", "note": "brothers and sisters are countable" },
+                { "id": "noun-l2-r1-e2", "en": "We need a few more chairs for the meeting.", "vi": "Chúng ta cần thêm vài chiếc ghế cho cuộc họp.", "note": "a few only works with countable nouns" }
+              ]
+            },
+            {
+              "title": "Uncountable nouns have no plural -s",
+              "statement": "Uncountable nouns never take a plural -s. Measure them instead, and use much, little, some, any and no article when you need one.",
+              "examples": [
+                { "id": "noun-l2-r2-e1", "en": "How much sugar do you take in your coffee?", "vi": "Bạn cho bao nhiêu đường vào cà phê?", "note": "sugar is uncountable, so we ask how much and never how many" },
+                { "id": "noun-l2-r2-e2", "en": "She gave me some good advice about the job.", "vi": "Cô ấy cho tôi một lời khuyên tốt về công việc.", "note": "advice never becomes advices" }
+              ]
+            },
+            {
+              "title": "Count the mass with a unit",
+              "statement": "To make an uncountable noun countable, put a unit noun in front of it: a piece of information, two cups of tea, an amount of furniture.",
+              "examples": [
+                { "id": "noun-l2-r3-e1", "en": "I have a piece of good news for you.", "vi": "Tôi có một tin tốt cho bạn đây.", "note": "a piece of makes news countable" },
+                { "id": "noun-l2-r3-e2", "en": "We bought three pieces of furniture for the flat.", "vi": "Chúng tôi đã mua ba món đồ nội thất cho căn hộ.", "note": "furniture takes a unit, never furnitures" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l2-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l2-ex1", "en": "There is very little traffic on this road at seven in the morning.", "vi": "Sáng bảy giờ con đường này rất ít xe.", "note": "traffic is uncountable, so we use little, not few" },
+            { "id": "noun-l2-ex2", "en": "I bought three pieces of luggage at the airport.", "vi": "Tôi đã mua ba món hành lý ở sân bay.", "note": "luggage is uncountable, so it needs a unit" },
+            { "id": "noun-l2-ex3", "en": "The news was not good, but the staff kept working.", "vi": "Tin không tốt, nhưng nhân viên vẫn làm việc.", "note": "news is singular even though it ends in -s" },
+            { "id": "noun-l2-ex4", "en": "We ordered two coffees and a piece of cake.", "vi": "Chúng tôi gọi hai ly cà phê và một miếng bánh.", "note": "two coffees means two cups, while coffee alone is the substance" },
+            { "id": "noun-l2-ex5", "en": "Her research produced a great deal of useful information.", "vi": "Nghiên cứu của cô ấy tạo ra rất nhiều thông tin hữu ích.", "note": "a great deal of and much go with uncountable nouns" }
+          ]
+        },
+        {
+          "id": "noun-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l2-ex1",
+              "kind": "matching",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "beginner",
+              "prompt": "Match each noun to Countable or Uncountable.",
+              "instruction": "Drag each noun onto the right label.",
+              "items": [
+                { "id": "m1", "text": "apple", "isCorrect": true, "matchKey": "countable" },
+                { "id": "m2", "text": "rice", "isCorrect": true, "matchKey": "uncountable" },
+                { "id": "m3", "text": "chair", "isCorrect": true, "matchKey": "countable" },
+                { "id": "m4", "text": "information", "isCorrect": true, "matchKey": "uncountable" },
+                { "id": "m5", "text": "idea", "isCorrect": true, "matchKey": "countable" },
+                { "id": "m6", "text": "weather", "isCorrect": true, "matchKey": "uncountable" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "countable", "m2": "uncountable", "m3": "countable", "m4": "uncountable", "m5": "countable", "m6": "uncountable" } },
+              "explanation": "apple, chair and idea are separate objects you can point at, so they take a plural: apples, chairs, ideas. rice, information and weather are masses with no separate units, so you measure them instead: a bowl of rice, a piece of information, a lot of weather. The trap is words like advice and furniture, which look plural but are uncountable.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-ex2",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "beginner",
+              "prompt": "How ___ money do you need for the trip?",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "many / much", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["much"] },
+              "explanation": "money is uncountable, and uncountable nouns take much, not many. If the noun were countable, for example books, the question would be How many books do you need?",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-ex3",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "intermediate",
+              "prompt": "She gave me two very good advices about my studies.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She gave me two very good pieces of advice about my studies."] },
+              "explanation": "advice is uncountable, so it can never take the -s of two advices. When you need two of them, add a unit: two pieces of advice. The same rule covers information, furniture, luggage and equipment.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-ex4",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "There are many furnitures in this room.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "There is much furniture in this room.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "There are many piece of furniture in this room.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "There is a many furniture in this room.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "furniture is one uncountable noun treated as a single thing, so it takes is and much, never are and many. To count it you need a unit: There are three pieces of furniture in this room.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-ex5",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "beginner",
+              "prompt": "How many informations do you have about the course?",
+              "instruction": "Rewrite the question correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["How much information do you have about the course?"] },
+              "explanation": "information is uncountable, so the -s of informations is wrong and the question needs much, not many. A countable version is How many pieces of information do you have?",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l2-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l2-d1",
+              "audio": { "kind": "speech", "text": "Could you give me a piece of advice about my English?" },
+              "hint": "unit noun before an uncountable noun",
+              "translation": "Bạn có thể cho tôi một lời khuyên về tiếng Anh của tôi không?",
+              "xp": 15
+            },
+            {
+              "id": "noun-l2-d2",
+              "audio": { "kind": "speech", "text": "We did not have much time, but we did the work carefully." },
+              "hint": "much + uncountable noun, but + past tense",
+              "translation": "Chúng tôi không có nhiều thời gian, nhưng chúng tôi đã làm việc cẩn thận.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l2-d3",
+              "audio": { "kind": "speech", "text": "The shop sells bread, milk and other groceries." },
+              "hint": "list of three uncountable nouns",
+              "translation": "Cửa hàng bán bánh mì, sữa và các nhu yếu phẩm khác.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l2-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "beginner",
+              "prompt": "Which noun is uncountable?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "ticket", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "bag", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "equipment", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "letter", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["c"] },
+              "explanation": "equipment is a mass noun: you say a piece of equipment or some equipment, never equipments. ticket, bag and letter are separate objects you can count one by one.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "intermediate",
+              "prompt": "There isn't ___ water left in the bottle.",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "many / much / a few", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["much"] },
+              "explanation": "Water is uncountable, and with a negative we use much: not much water. a few would be wrong because a few only works with countable plural nouns.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-q3",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "intermediate",
+              "prompt": "The noun news can be treated as plural in standard English.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. news looks plural but is treated as singular, so you say The news is good and a piece of news. The same is true of information, advice, furniture, luggage and progress.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l2-q4",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-countable-and-uncountable",
+              "difficulty": "intermediate",
+              "prompt": "I need a few informations about the visa before Friday.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "a few informations", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["I need a few pieces of information about the visa before Friday."] },
+              "explanation": "a few needs a countable plural, and information is uncountable, so a few informations is impossible. Adding the unit pieces of gives a countable phrase: a few pieces of information.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "Countable nouns have a plural and work with many, a few, numbers and every.",
+            "Uncountable nouns never take -s; use much, little, some and a lot of instead.",
+            "To count a mass, add a unit: a piece of information, two cups of tea, a pair of scissors.",
+            "Words ending in -s such as news, advice and furniture are still uncountable or singular."
+          ],
+          "nextLessonID": "noun-plurals-regular"
+        }
+      ]
+    },
+    {
+      "id": "noun-plurals-regular",
+      "title": "Regular Plurals",
+      "summary": "The endings that turn one noun into many.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l3-theory",
+          "type": "theory",
+          "heading": "Making Regular Plurals",
+          "body": "Most English plurals are regular: you add an ending to the singular form. The ending depends on the letters at the end of the word. Add -s to most words, as in book to books. Add -es after s, sh, ch, x and z, where an extra syllable keeps the plural clear: bus to buses, watch to watches, box to boxes. Words ending in a consonant plus y change the y into i and add -es: city to cities, baby to babies. Words ending in a vowel plus y simply take -s: boy to boys, day to days. Words ending in -f or -fe often change to -ves: leaf to leaves, knife to knives, wife to wives. A few f words are exceptions: roof to roofs, chief to chiefs, safe to safes. A small group never changes at all: sheep, deer, fish, series and aircraft keep the same form in both numbers. Plurals with two nouns are common too: a bookshop becomes bookshops, but a pair of shoes keeps the singular head noun and only marks the pair.",
+          "rules": [
+            {
+              "title": "Add -s or -es",
+              "statement": "Add -s to most nouns. Add -es after a word ending in s, sh, ch, x or z, and after a consonant plus y.",
+              "formula": "book + s = books; box + es = boxes; city -> cities",
+              "examples": [
+                { "id": "noun-l3-r1-e1", "en": "Two boxes and three watches are on the table.", "vi": "Trên bàn có hai hộp và ba chiếc đồng hồ.", "note": "-es keeps the plural easy to pronounce" },
+                { "id": "noun-l3-r1-e2", "en": "The baby and the boy are my cousins.", "vi": "Đứa trẻ sơ sinh và cậu bé là các em họ của tôi.", "note": "baby takes -ies, boy takes -s because y follows a vowel" }
+              ]
+            },
+            {
+              "title": "Change -f and -fe to -ves",
+              "statement": "Many nouns ending in -f or -fe drop the f and take -ves. A few keep the f and simply add -s.",
+              "formula": "knife -> knives, but roof -> roofs",
+              "examples": [
+                { "id": "noun-l3-r2-e1", "en": "We need two knives and three leaves for the salad.", "vi": "Chúng ta cần hai con dao và ba chiếc lá cho món salad.", "note": "both -fe and -f change to -ves" },
+                { "id": "noun-l3-r2-e2", "en": "The chiefs of two companies met yesterday.", "vi": "Các giám đốc của hai công ty đã gặp nhau hôm qua.", "note": "chief is an exception and takes only -s" }
+              ]
+            },
+            {
+              "title": "Words that do not change",
+              "statement": "Some nouns have the same form in the singular and the plural. The context tells you which number is meant.",
+              "examples": [
+                { "id": "noun-l3-r3-e1", "en": "Three sheep were sleeping near the fence.", "vi": "Ba con cừu đang ngủ gần hàng rào.", "note": "sheep has no plural form" },
+                { "id": "noun-l3-r3-e2", "en": "Two series of films were shown last night.", "vi": "Hai loạt phim đã được chiếu tối qua.", "note": "series keeps the same form and takes were" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l3-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l3-ex1", "en": "The classes finish at five o'clock on Fridays.", "vi": "Các lớp kết thúc lúc năm giờ vào thứ Sáu.", "note": "class ends in -ss, so the plural is classes" },
+            { "id": "noun-l3-ex2", "en": "My cousins live in three different countries.", "vi": "Các em họ của tôi sống ở ba nước khác nhau.", "note": "consonant plus y becomes ies" },
+            { "id": "noun-l3-ex3", "en": "Please put the dishes and the glasses on the shelf.", "vi": "Xin hãy đặt bát đĩa và ly lên kệ.", "note": "sh and ss both take -es" },
+            { "id": "noun-l3-ex4", "en": "The shelves in the kitchen are full of pots.", "vi": "Kệ bếp đầy nồi niu đáu.", "note": "shelf takes -ves" },
+            { "id": "noun-l3-ex5", "en": "Two dictionaries and a thesaurus are on the desk.", "vi": "Trên bàn có hai cuốn từ điển và một cuốn từ thuyết.", "note": "consonant plus y becomes ies" }
+          ]
+        },
+        {
+          "id": "noun-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l3-ex1",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "beginner",
+              "prompt": "Two ___(knife) are on the table.",
+              "instruction": "Write the plural form.",
+              "items": [
+                { "id": "h1", "text": "knives / knifes", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["knives"] },
+              "explanation": "knife ends in -fe, so drop the f and add -ves: knives. The knifes spelling is only correct for the singular object, a knif, which is not used.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-ex2",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "beginner",
+              "prompt": "The ___(city) in the north are very quiet.",
+              "instruction": "Write the plural form.",
+              "items": [
+                { "id": "h1", "text": "citys / cities", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["cities"] },
+              "explanation": "city ends in a consonant plus y, so change the y to i and add -es. The same pattern gives baby to babies and lady to ladies.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-ex3",
+              "kind": "matching",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "beginner",
+              "prompt": "Match each singular noun to its plural form.",
+              "instruction": "Drag each noun onto the correct plural.",
+              "items": [
+                { "id": "m1", "text": "watch", "isCorrect": true, "matchKey": "watches" },
+                { "id": "m2", "text": "photo", "isCorrect": true, "matchKey": "photos" },
+                { "id": "m3", "text": "church", "isCorrect": true, "matchKey": "churches" },
+                { "id": "m4", "text": "boy", "isCorrect": true, "matchKey": "boys" },
+                { "id": "m5", "text": "leaf", "isCorrect": true, "matchKey": "leaves" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "watches", "m2": "photos", "m3": "churches", "m4": "boys", "m5": "leaves" } },
+              "explanation": "watch and church end in -ch, so they take -es; photo and boy only take -s, and in boy the y follows a vowel so it stays. leaf changes -f to -ves. The trap is choosing -es for every noun, which gives the wrong photoes and boyes.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-ex4",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "intermediate",
+              "prompt": "Many womans joined the meeting yesterday afternoon.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["Many women joined the meeting yesterday afternoon."] },
+              "explanation": "woman is irregular and takes -men in the plural: women. The trap is treating it like a regular noun and writing womans, which is not a word. A few man words are irregular too: men, men, children, people, feet, teeth.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-ex5",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "beginner",
+              "prompt": "The plural of sheep is sheep.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. sheep has the same form in both numbers, so you rely on the number word: three sheep, one sheep. Other nouns like deer, fish and series behave the same way.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l3-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l3-d1",
+              "audio": { "kind": "speech", "text": "The boxes of apples are under the shelves." },
+              "hint": "two plurals in one sentence",
+              "translation": "Các thùng táo nằm dưới những kệ.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l3-d2",
+              "audio": { "kind": "speech", "text": "My two cousins are studying medicine in the city." },
+              "hint": "consonant plus y plural",
+              "translation": "Hai em họ của tôi đang học y khoa ở thành phố.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l3-d3",
+              "audio": { "kind": "speech", "text": "The library bought three new dictionaries this week." },
+              "hint": "a plural ending in ies",
+              "translation": "Thư viện đã mua ba cuốn từ điển mới trong tuần này.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l3-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l3-q1",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "beginner",
+              "prompt": "The plural of story is ___.",
+              "instruction": "Write the plural form.",
+              "items": [
+                { "id": "h1", "text": "storys / stories", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["stories"] },
+              "explanation": "story ends in a consonant plus y, so the y becomes i before -es. Compare boy, where the y follows a vowel and stays: boys.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-q2",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "intermediate",
+              "prompt": "Which plural is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "sandwiches", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "sandwichs", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "sandwiches's", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "sandwich", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A noun ending in -ch takes -es, so the plural is sandwiches. sandwichs is missing the extra syllable, and leaving the word unchanged only works for words like sheep and series.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-q3",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "intermediate",
+              "prompt": "I need two new loafs and a packet of butters.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["I need two new loaves and a packet of butter."] },
+              "explanation": "loaf takes -ves, so loafs is wrong; and butter is uncountable, so a packet of butters is not possible. Each of the two errors is independent, so both must be fixed.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l3-q4",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-regular",
+              "difficulty": "intermediate",
+              "prompt": "Nouns ending in -f always change to -ves in the plural.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. Many -f words do change to -ves (leaf to leaves, wolf to wolves), but a group keep the f and add only -s: roof to roofs, chief to chiefs, safe to safes, belief to beliefs.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Add -s to most nouns and -es after s, sh, ch, x, z or a consonant plus y.",
+            "Many nouns in -f or -fe change to -ves, but a few keep the f: roofs, chiefs, safes.",
+            "sheep, deer, fish and series keep the same form in both numbers.",
+            "When a noun is made of two words, only the second, the head noun, takes the plural: a bookshop to bookshops, a pair of shoes."
+          ],
+          "nextLessonID": "noun-plurals-irregular"
+        }
+      ]
+    },
+    {
+      "id": "noun-plurals-irregular",
+      "title": "Irregular Plurals",
+      "summary": "The plurals that refuse to take -s.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l4-theory",
+          "type": "theory",
+          "heading": "Irregular Plurals",
+          "body": "Some nouns have a plural that no ending rule can predict. You have to learn them as vocabulary, and there are four main groups to remember. The first group changes the vowel: man to men, woman to women, child to children, foot to feet, tooth to teeth, mouse to mice. The second group adds or changes a final letter: ox to oxen, goose to geese, mouse to mice, person to people. The third group is Latin and Greek, where a singular ends in -us or -um and a plural in -a or -i: cactus to cacti, fungus to fungi, medium to media, criterion to criteria, phenomenon to phenomena. The fourth group simply ends in -en: child to children, ox to oxen, brother to brethren in formal English. Some nouns exist in both forms, and the plural changes the meaning: glass to glasses, paper to papers, light to lights, work to works. Because these forms are learned, not generated, a good dictionary always shows the irregular plural first, and careful speakers store these words as single units: man-men, foot-feet, child-children.",
+          "rules": [
+            {
+              "title": "Vowel-changing plurals",
+              "statement": "These nouns change their vowel, and most of them also change the ending, so they must be learned in pairs.",
+              "formula": "man -> men, woman -> women, child -> children, foot -> feet, tooth -> teeth",
+              "examples": [
+                { "id": "noun-l4-r1-e1", "en": "The children were playing with their new toys.", "vi": "Lũ trẻ đang chơi với đồ chơi mới của chúng.", "note": "child becomes children" },
+                { "id": "noun-l4-r1-e2", "en": "Two men and one woman were waiting outside.", "vi": "Hai người đàn ông và một phụ nữ đang đứng ngoài trời.", "note": "men and women double the whole pair, not just the -an" }
+              ]
+            },
+            {
+              "title": "Latin and Greek plurals",
+              "statement": "Nouns ending in -us or -um usually take -i or -a. In everyday English the -us form is often kept instead.",
+              "formula": "cactus -> cacti (or cactuses), medium -> media (or mediums)",
+              "examples": [
+                { "id": "noun-l4-r2-e1", "en": "The criteria for the prize are published online.", "vi": "Tiêu chí giải thưởng được đăng trực tuyến.", "note": "criterion becomes criteria and takes are" },
+                { "id": "noun-l4-r2-e2", "en": "Social media has changed the way we read news.", "vi": "Mạng xã hội đã thay đổi cách chúng ta đọc tin tức.", "note": "medium becomes media, but here it takes the singular has" }
+              ]
+            },
+            {
+              "title": "A different plural can change the meaning",
+              "statement": "For a few nouns the plural form is a different word with a different meaning, so the number is not optional information.",
+              "examples": [
+                { "id": "noun-l4-r3-e1", "en": "His works include three novels and a play.", "vi": "Các tác phẩm của ông gồm ba tiểu thuyết và một vở kịch.", "note": "works means his creative output, work is a single job" },
+                { "id": "noun-l4-r3-e2", "en": "I drank two glasses of water and took three vitamins.", "vi": "Tôi uống hai ly nước và uống ba viên vitamin.", "note": "glass becomes glasses for the container, not the material" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l4-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l4-ex1", "en": "The police are looking for two witnesses to the accident.", "vi": "Cảnh sát đang tìm hai nhân chứng cho vụ tai nạn.", "note": "police is a collective noun and takes a plural verb" },
+            { "id": "noun-l4-ex2", "en": "Every tooth in my mouth has been checked by the dentist.", "vi": "Nhiếu sĩ đã kiểm tra từng chiếc răng trong miệng tôi.", "note": "tooth becomes teeth" },
+            { "id": "noun-l4-ex3", "en": "These two phenomena appear in plants as well as animals.", "vi": "Hai hiện tượng này xuất hiện ở cả thực vật lẫn động vật.", "note": "phenomenon becomes phenomena" },
+            { "id": "noun-l4-ex4", "en": "Three geese were walking across the road when we arrived.", "vi": "Ba con ngỗng đang đi qua đường khi chúng tôi tới nơi.", "note": "goose becomes geese" },
+            { "id": "noun-l4-ex5", "en": "The media reported the story before the police spoke.", "vi": "Báo chí đưa tin trước khi cảnh sát lên tiếng.", "note": "medium becomes media" }
+          ]
+        },
+        {
+          "id": "noun-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l4-ex1",
+              "kind": "matching",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "Match each singular noun to its irregular plural.",
+              "instruction": "Drag each noun onto the correct plural.",
+              "items": [
+                { "id": "m1", "text": "child", "isCorrect": true, "matchKey": "children" },
+                { "id": "m2", "text": "tooth", "isCorrect": true, "matchKey": "teeth" },
+                { "id": "m3", "text": "goose", "isCorrect": true, "matchKey": "geese" },
+                { "id": "m4", "text": "cactus", "isCorrect": true, "matchKey": "cacti" },
+                { "id": "m5", "text": "person", "isCorrect": true, "matchKey": "people" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "children", "m2": "teeth", "m3": "geese", "m4": "cacti", "m5": "people" } },
+              "explanation": "Each of these five changes the vowel or the ending instead of taking -s: children, teeth, geese, cacti, people. Cactuses is also accepted in modern English, but cacti is the classical form. The trap is adding -s, which gives childs and gooses, neither of which is a word.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-ex2",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "My two ___ (foot) are cold after the long walk.",
+              "instruction": "Write the plural form.",
+              "items": [
+                { "id": "h1", "text": "foots / feet", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["feet"] },
+              "explanation": "foot takes an irregular plural, feet, and the oo changes to ee. The form foots is used only in specialised contexts such as football players' feet in a table, never in normal speech.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-ex3",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence uses the plural form correctly?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The datas are stored on the hard drive.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "The data are stored on the hard drive.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "The datas is stored on the hard drive.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The data are store on the hard drive.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "datum, the singular of data, is a Latin noun, so the plural is data. In formal and technical English data is treated as plural, while in everyday English many speakers treat it as singular. The other options fail on the plural and on the verb form.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-ex4",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "Two womans and three childs were waiting at the gate.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["Two women and three children were waiting at the gate."] },
+              "explanation": "Both nouns are irregular: woman becomes women and child becomes children. The trap is treating them as regular nouns, which gives womans and childs. A useful memory hook is that the whole word changes, not just the ending.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-ex5",
+              "kind": "typeTheAnswer",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "advanced",
+              "prompt": "Type the plural of criterion.",
+              "instruction": "Write the plural form only.",
+              "items": [],
+              "answer": { "type": "text", "values": ["criteria"] },
+              "explanation": "criterion comes from Greek and takes the Greek plural criteria. Because the word begins with a consonant, criteria takes a plural verb: The criteria were met.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l4-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l4-d1",
+              "audio": { "kind": "speech", "text": "The children brushed their teeth before they went to bed." },
+              "hint": "two irregular plurals in one sentence",
+              "translation": "Lũ trẻ đánh răng trước khi đi ngủ.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l4-d2",
+              "audio": { "kind": "speech", "text": "Three geese were waiting for us at the gate." },
+              "hint": "irregular plural of goose",
+              "translation": "Ba con ngỗng đang đợi chúng tôi ở cổng.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l4-d3",
+              "audio": { "kind": "speech", "text": "Many people joined the debate about climate change." },
+              "hint": "irregular plural of person",
+              "translation": "Nhiều người đã tham gia cuộc tranh luận về biến đổi khí hậu.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l4-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l4-q1",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "Four ___ (mouse) ran across the kitchen floor.",
+              "instruction": "Write the plural form.",
+              "items": [
+                { "id": "h1", "text": "mouses / mice", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["mice"] },
+              "explanation": "mouse changes ou to i and takes -ce, so the plural is mice. mouses is only used for the house-shaped storage containers, never for the animal.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-q2",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "advanced",
+              "prompt": "In careful written English, the plural of phenomenon is phenomena.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. phenomenon follows the Greek pattern -on to -a, so the plural is phenomena, and because it starts with a consonant it takes a plural verb: These phenomena are rare.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-q3",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "intermediate",
+              "prompt": "Which plural completes the sentence? The company employs two thousand ___.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "personnels", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "persones", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "people", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "peoples", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["c"] },
+              "explanation": "person takes the plural people, with no extra -s. personnels and peoples are not standard plurals, and a people in the sense of a nation would be a different meaning entirely.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l4-q4",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-plurals-irregular",
+              "difficulty": "advanced",
+              "prompt": "The informations given by the two womens were very useful.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The information given by the two women was very useful."] },
+              "explanation": "Two independent errors. information is uncountable, so no -s and it takes was. woman is irregular and becomes women. Keeping the plural informations and the -s on womens gives two wrong forms in one sentence.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Many irregular plurals change the vowel: man to men, child to children, foot to feet.",
+            "Greek and Latin nouns take -i or -a: cactus to cacti, phenomenon to phenomena.",
+            "Learn irregular nouns as single units, because no rule will tell you the form.",
+            "A few plurals change the meaning: works is not work, and glasses is not glass."
+          ],
+          "nextLessonID": "noun-articles"
+        }
+      ]
+    },
+    {
+      "id": "noun-articles",
+      "title": "Articles: a, an and the",
+      "summary": "When to use a, an, the or no article at all.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l5-theory",
+          "type": "theory",
+          "heading": "Articles: a, an and the",
+          "body": "English has only two articles, a and an, plus the definite article the. A and an introduce something the listener does not already know, which means one particular example of a larger class. Use a before a consonant sound and an before a vowel sound, and remember that the rule is about sound, not spelling: an hour, because h is silent, and a university, because y sounds like a consonant. The is used when both speakers know exactly which one is meant, either because it was mentioned before, because there is only one, or because a phrase limits it: the book on the table, the tallest building in Hanoi. Some nouns never take an article in the ordinary sense. Proper nouns usually stand alone (Hanoi, my sister Mai, English), and uncountable nouns used in a general sense take no article: Life is short, Water boils at 100 degrees, but The water in this glass is warm. Place and group nouns behave in fixed ways too: at school, at home, in bed, by car, on foot, go to work, but at the school, in the car when it is a specific one. When you are not sure, say the specific noun again and choose the article that makes the reference clear.",
+          "rules": [
+            {
+              "title": "a versus an depends on the sound",
+              "statement": "Use a before a consonant sound and an before a vowel sound. Silent letters decide the case.",
+              "formula": "a book, an orange, an hour, a university",
+              "examples": [
+                { "id": "noun-l5-r1-e1", "en": "I waited for an hour before the bus arrived.", "vi": "Tôi đã chờ một tiếng trước khi xe buýt tới.", "note": "an hour, because the h is silent" },
+                { "id": "noun-l5-r1-e2", "en": "She is a university lecturer.", "vi": "Cô ấy là giảng viên đại học.", "note": "a university, because y sounds like a consonant" }
+              ]
+            },
+            {
+              "title": "The definite article",
+              "statement": "Use the when the listener can tell which one you mean: only one exists, it was mentioned already, or a phrase limits it.",
+              "examples": [
+                { "id": "noun-l5-r2-e1", "en": "I bought a book. The book is about the history of Hanoi.", "vi": "Tôi đã mua một cuốn sách. Cuốn sách đó nói về lịch sử Hà Nội.", "note": "the second mention points back to a known book" },
+                { "id": "noun-l5-r2-e2", "en": "The sun was behind the clouds all morning.", "vi": "Mặt trời bị mây che suốt buổi sáng.", "note": "there is only one sun, so the is unavoidable" }
+              ]
+            },
+            {
+              "title": "No article at all",
+              "statement": "General uncountable nouns, most proper nouns and fixed phrases take no article.",
+              "examples": [
+                { "id": "noun-l5-r3-e1", "en": "Music brings people together.", "vi": "Âm nhạc kết nối mọi người lại.", "note": "music in the general sense takes no article" },
+                { "id": "noun-l5-r3-e2", "en": "We go to school by bike and walk home.", "vi": "Chúng tôi đi học bằng xe đạp và đi bộ về nhà.", "note": "school and home are used in their fixed general sense here" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l5-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l5-ex1", "en": "A dog was barking, and the dog was enormous.", "vi": "Có một con chó đang sủa, và con chó đó to lắm.", "note": "a introduces it, the points back to the same dog" },
+            { "id": "noun-l5-ex2", "en": "He waited for an hour and twenty minutes at the airport.", "vi": "Anh ấy đã chờ một tiếng hai mươi phút ở sân bay.", "note": "an hour and the airport" },
+            { "id": "noun-l5-ex3", "en": "The water in the glass is cold, but water freezes at zero degrees.", "vi": "Nước trong ly lạnh, nhưng nước đóng đông ở 0 độ.", "note": "the water is specific; water in general has no article" },
+            { "id": "noun-l5-ex4", "en": "She is an honest engineer from Hanoi.", "vi": "Cô ấy là một kỹ sư trung thực đến từ Hà Nội.", "note": "an honest, because h is silent; a proper noun takes no article" },
+            { "id": "noun-l5-ex5", "en": "The cat sat under the table and looked at the fish on the plate.", "vi": "Con mèo ngồi dưới gầm bàn và nhìn con cá trên đĩa.", "note": "both phrases with the limit which one is meant" }
+          ]
+        },
+        {
+          "id": "noun-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l5-ex1",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "beginner",
+              "prompt": "I bought a book yesterday. Book was very expensive.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["I bought a book yesterday. The book was very expensive."] },
+              "explanation": "The second mention refers to a book the listener already knows, so it needs the definite article: The book. A noun that has been mentioned once is normally the on its second mention.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-ex2",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "beginner",
+              "prompt": "We had to wait for ___ hour before the doctor called us in.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "a", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "an", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "the", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "no article", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "an hour is correct because the h in hour is silent, so the word begins with a vowel sound. The spelling of the word never decides this, only the sound does.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-ex3",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "She is a honest person and she works in a university in the Hai Phong.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She is an honest person and she works in a university in Hai Phong."] },
+              "explanation": "Two fixes. Honest begins with a silent h, so it takes an, not a. And a proper noun used as a name, Hai Phong, normally takes no article in English.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-ex4",
+              "kind": "multiSelect",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "Which nouns need the definite article in these sentences?",
+              "instruction": "Select all the correct options.",
+              "items": [
+                { "id": "a", "text": "Please close ___ door.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "He goes to ___ school on foot.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "We waited at ___ airport for three hours.", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "___ water boils at one hundred degrees.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a", "c"] },
+              "explanation": "door and airport take the because each speaker knows which one is meant. go to school and go to work are fixed phrases with no article, and water in a general statement about all water takes no article.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-ex5",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "___ life is short, so we should travel while we are young.",
+              "instruction": "Write the correct article, or leave the space empty if none is needed.",
+              "items": [
+                { "id": "h1", "text": "a / an / the / no article", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["no article", "no article."] },
+              "explanation": "Life here means life in general, and general uncountable nouns take no article: Life is short. Add the only when you mean one specific life, as in She has a hard life.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l5-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l5-d1",
+              "audio": { "kind": "speech", "text": "I bought a jacket, and the jacket was on sale." },
+              "hint": "a for the first mention, the for the second",
+              "translation": "Tôi đã mua một chiếc áo khoác, và chiếc áo đó đang được giảm giá.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l5-d2",
+              "audio": { "kind": "speech", "text": "The train to Hue leaves at seven in the morning." },
+              "hint": "the before a specific train plus a proper noun",
+              "translation": "Tàu đi Huế khởi hành lúc bảy giờ sáng.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l5-d3",
+              "audio": { "kind": "speech", "text": "He waited for an hour in the rain outside the office." },
+              "hint": "an before a silent h",
+              "translation": "Anh ấy đã chờ một tiếng dưới mưa bên ngoài văn phòng.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l5-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct article: She has been waiting for ___ hour.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "a", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "an", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "the", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "zero", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "an hour again: the first sound is a vowel because the h is silent. This is the classic trap, since the spelling starts with a consonant letter.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-q2",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "The teacher asked a student to read the article in front of the class.",
+              "instruction": "Rewrite the sentence with the most natural articles.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The teacher asked a student to read an article in front of the class."] },
+              "explanation": "read the article suggests one particular text already agreed on, and a student keeps its indefinite article. If no particular text was agreed, the general phrase is read an article. Both readings are possible in real life, so the point is that the two articles send different messages.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-q3",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "beginner",
+              "prompt": "General statements about an uncountable noun, such as Rice is expensive, normally use an article.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. General uncountable nouns take no article: Rice is expensive, Life is short, Water freezes at zero degrees. An article appears only when you mean a particular amount, as in The rice in this bowl is cold.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l5-q4",
+              "kind": "fillInTheBlank",
+              "topicID": "noun",
+              "lessonID": "noun-articles",
+              "difficulty": "intermediate",
+              "prompt": "Could you pass me ___ salt? I cannot find it anywhere.",
+              "instruction": "Write the correct article.",
+              "items": [
+                { "id": "h1", "text": "a / an / the", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["the"] },
+              "explanation": "The speaker and the listener both know which salt is meant, the salt in the room, so the definite article is required. Because salt is uncountable, the plural is not used and it takes some, not a.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Choose a or an by sound, not spelling: an hour, a university.",
+            "Use the when the listener knows which one you mean, or when a phrase limits the noun.",
+            "General uncountable nouns, proper nouns and fixed phrases such as go to school take no article.",
+            "A noun mentioned once normally takes the on its next mention."
+          ],
+          "nextLessonID": "noun-possessives"
+        }
+      ]
+    },
+    {
+      "id": "noun-possessives",
+      "title": "Possessives and Abstract Nouns",
+      "summary": "Showing who owns what, and naming the things you cannot touch.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "noun-l6-theory",
+          "type": "theory",
+          "heading": "Possessives and Abstract Nouns",
+          "body": "English has two ways to show that one noun belongs to another. The apostrophe form, used for people and for many animals, adds an apostrophe and an s: Mai's bag, the doctor's prescription, my brother-in-law's car. When the owner already ends in s you usually write only the apostrophe: students' books, James' car. For regular plurals, place the apostrophe after the s; for names ending in s that are singular, such as James or Thomas, modern usage prefers the 's form, so Thomas's car. For things, groups, places and abstract ideas, English prefers the of form: the leg of the table, the roof of the house, the history of Hanoi, the meaning of the word. The of form is also safer for things that can literally be owned, such as the door of the room, and it avoids the strange idea of a river having a river's bank. Abstract nouns name feelings, states and ideas, and most are formed with a suffix: -ness (kindness), -ment (government), -tion (education), -ity (ability), -ship (friendship), -ance and -ence (importance). Two nouns sometimes have different abstract meanings: light, the bright thing, and lightness, low weight.",
+          "rules": [
+            {
+              "title": "The apostrophe form for people and animals",
+              "statement": "Add 's to show possession of a person or animal. If the owner already ends in s, add only the apostrophe.",
+              "formula": "the dog's tail, Mai's phone, the students' books",
+              "examples": [
+                { "id": "noun-l6-r1-e1", "en": "My sister's car is parked outside the school.", "vi": "Xe của chị tôi đang đậu ngoài trường.", "note": "'s attaches to the person, the owner" },
+                { "id": "noun-l6-r1-e2", "en": "The teachers' lounge is next to the office.", "vi": "Phòng giáo viên nằm cạnh văn phòng.", "note": "plural owner, so the apostrophe follows the s" }
+              ]
+            },
+            {
+              "title": "The of form for things and ideas",
+              "statement": "Use of + the + thing for objects, places and abstract ideas. It is the normal English form for anything that is not a person.",
+              "formula": "the roof of the house, the meaning of the word, the history of Vietnam",
+              "examples": [
+                { "id": "noun-l6-r1-e3", "en": "The meaning of the word changed in the last century.", "vi": "Nghĩa của từ này đã thay đổi trong thế kỷ trước.", "note": "abstract possession always takes of" },
+                { "id": "noun-l6-r1-e4", "en": "The roof of the old house needs repairing.", "vi": "Mái nhà cũ cần được sửa.", "note": "the roof's colour would sound strange, so of is used" }
+              ]
+            },
+            {
+              "title": "Abstract nouns and their suffixes",
+              "statement": "Abstract nouns are usually built from a stem with a suffix such as -ness, -ment, -tion, -ity, -ship or -ance, and many can also be adjectives ending in -ful or -ous.",
+              "formula": "kind -> kindness, able -> ability, friend -> friendship, important -> importance",
+              "examples": [
+                { "id": "noun-l6-r1-e5", "en": "Her ability to explain difficult ideas is remarkable.", "vi": "Khả năng giải thích những ý tưởng khó của cô ấy thật đáng chú ý.", "note": "ability is the noun of the adjective able" },
+                { "id": "noun-l6-r1-e6", "en": "Governments must act on climate change with real responsibility.", "vi": "Chính phủng phải hành động về biến đổi khí hậu với tinh thần trách nhiệm thật sự.", "note": "government from govern, responsibility from responsible" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "noun-l6-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "noun-l6-ex1", "en": "The engine of the car made a strange noise.", "vi": "Động cơ của chiếc xe kêu lên tiếng lạ.", "note": "of for a mechanical part" },
+            { "id": "noun-l6-ex2", "en": "My parents' advice changed my decision.", "vi": "Lời khuyên của bố mẹ tôi đã thay đổi quyết định của tôi.", "note": "plural owner, so only the apostrophe" },
+            { "id": "noun-l6-ex3", "en": "The importance of sleep for students is often ignored.", "vi": "Tầm quan trọng của việc ngủ đối với học sinh thường bị bỏ qua.", "note": "abstract possession" },
+            { "id": "noun-l6-ex4", "en": "Thomas's laptop is on the desk.", "vi": "Máy tính của Thomas nằm trên bàn.", "note": "a singular name ending in s still takes 's in modern usage" },
+            { "id": "noun-l6-ex5", "en": "The friendship between the two schools lasted forty years.", "vi": "Tình bạn giữa hai trường kéo dài bốn mươi năm.", "note": "friendship is an abstract noun with the suffix -ship" }
+          ]
+        },
+        {
+          "id": "noun-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "noun-l6-ex1",
+              "kind": "wordFormation",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "Form the abstract noun from the adjective: possible.",
+              "instruction": "Write the noun form only.",
+              "items": [],
+              "answer": { "type": "text", "values": ["possibility"] },
+              "explanation": "The adjective possible becomes the abstract noun possibility with the suffix -ity. Note that the stem changes from -s to -sibil, a spelling change you have to know separately, just as able gives ability.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-ex2",
+              "kind": "wordFormation",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "Form the abstract noun from the adjective: free.",
+              "instruction": "Write the noun form only.",
+              "items": [],
+              "answer": { "type": "text", "values": ["freedom"] },
+              "explanation": "free takes the suffix -dom to make freedom. The trap is to add -ness and write freeness, which is not a standard word; the suffix you need has to match the word.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-ex3",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "The roof's of the house is red, and the doctors' clinic is next to it.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The roof of the house is red, and the doctors' clinic is next to it."] },
+              "explanation": "You cannot mix the two systems. A thing takes of, so the roof's of is impossible; a person takes the apostrophe, so the doctors' clinic is already correct. Use one system per owner.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-ex4",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "The student's bags are all on the tables of the room.",
+              "instruction": "Rewrite the sentence so both possessives are natural.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The students' bags are all on the tables in the room."] },
+              "explanation": "When several students own the bags, the plural owner needs the apostrophe after the s: the students' bags. And a place takes in, not of, when you mean a location inside it: on the tables in the room.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-ex5",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The purpose of the building's is unclear.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "The purpose of the building is unclear.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "The building's of purpose is unclear.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The purpose building's of is unclear.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "purpose is abstract, so it takes of, and the building is a thing, so it does not need an apostrophe at all. Stacking of and 's in the same phrase is the classic error this question targets.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-ex6",
+              "kind": "sentenceCompletion",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "advanced",
+              "prompt": "Complete with the missing possessive: We admired the ___ (sailors) faces in the painting.",
+              "instruction": "Write the correct possessive noun.",
+              "items": [],
+              "answer": { "type": "text", "values": ["sailors'"] },
+              "explanation": "sailors is already a plural owner, so English puts the apostrophe after the s: the sailors' faces. Writing the sailors' face would mean the face of a single owner called The Sailor, which is not the meaning here.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "noun-l6-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "noun-l6-d1",
+              "audio": { "kind": "speech", "text": "The entrance of the museum closes at five o'clock." },
+              "hint": "of with a concrete thing",
+              "translation": "Cổng vào của bảo tàng đóng lúc năm giờ.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l6-d2",
+              "audio": { "kind": "speech", "text": "My colleagues' support helped me finish the project." },
+              "hint": "plural owner with only an apostrophe",
+              "translation": "Sự ủng hộ của đồng nghiệp đã giúp tôi hoàn thành dự án.",
+              "xp": 15
+            },
+            {
+              "id": "noun-l6-d3",
+              "audio": { "kind": "speech", "text": "Freedom means the ability to choose your own life." },
+              "hint": "abstract noun plus the noun of able",
+              "translation": "Tự do có nghĩa là khả năng lựa chọn cuộc sống của chính mình.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "noun-l6-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "noun-l6-q1",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "advanced",
+              "prompt": "I read the teacher's of book about the growth of the city.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["I read the teacher's book about the growth of the city."] },
+              "explanation": "The teacher is a person, so the book belongs to her and takes the apostrophe form: the teacher's book. Adding of on top of 's is the double marking that this exercise is testing.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-q2",
+              "kind": "multipleChoice",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "Which noun is the abstract form of the adjective happy?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "happily", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "happiness", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "happy", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "unhappy", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "happiness is the abstract noun built with -ness. happily is the adverb, happy is the adjective, and unhappy is the opposite adjective, so all three are the wrong part of speech.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-q3",
+              "kind": "wordFormation",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "advanced",
+              "prompt": "Form the abstract noun from the adjective: strong.",
+              "instruction": "Write the noun form only.",
+              "items": [],
+              "answer": { "type": "text", "values": ["strength"] },
+              "explanation": "strong becomes strength here, because the suffix is -th, not -ness or -ity. Abstracts formed with -th are common with short adjectives: width, length, depth, warmth, growth.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-q4",
+              "kind": "trueFalse",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "intermediate",
+              "prompt": "For a group of owners, English puts the apostrophe after the s: the students' books.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. A regular plural owner takes the apostrophe after the s, as in the students' books and the players' locker room. A single owner already ending in s also takes 's in modern usage: Thomas's car.",
+              "xp": 10
+            },
+            {
+              "id": "noun-l6-q5",
+              "kind": "errorCorrection",
+              "topicID": "noun",
+              "lessonID": "noun-possessives",
+              "difficulty": "advanced",
+              "prompt": "The end's of the story was sad, but the children's smiles were cheerful.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The end of the story was sad, but the children's smiles were cheerful."] },
+              "explanation": "The end is a thing, so it takes of: the end of the story. The children's smiles is already correct, because a plural owner of people takes the apostrophe after the s. Each part of the sentence follows a different rule on purpose.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "noun-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "People and many animals take the apostrophe: my sister's bag, the students' books.",
+            "Things, places and abstract ideas take of: the roof of the house, the meaning of the word.",
+            "Never combine the two systems: the teacher's book, not the teacher's of book.",
+            "Abstract nouns often show their family: -ness, -ment, -tion, -ity, -ship, -th, -dom."
+          ]
+        }
+      ]
+    }
+  ]
+}

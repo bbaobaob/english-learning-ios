@@ -1,0 +1,2853 @@
+{
+  "id": "passive-voice",
+  "title": "Passive Voice",
+  "kind": "grammar",
+  "level": "intermediate",
+  "summary": "Build the passive with be + past participle, change it across every tense, and learn when the doer should stay or disappear behind by.",
+  "icon": "arrow.left.arrow.right",
+  "estimatedMinutes": 35,
+  "lessons": [
+    {
+      "id": "pv-l1",
+      "title": "The Passive Frame",
+      "summary": "be + past participle, and why the receiver becomes the subject.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "pv-l1-theory",
+          "type": "theory",
+          "heading": "The passive is a be-verb plus a past participle",
+          "body": "In an active sentence the subject does the action. In a passive sentence the subject is the thing that receives the action, so the verb is built from a form of the verb be followed by the past participle of the main verb. Nothing else changes: the tense is carried by the be-verb, and the main verb always stays in its participle form.",
+          "rules": [
+            {
+              "title": "Form the passive with be + past participle",
+              "statement": "Every passive verb phrase is a conjugated form of be followed by the past participle of the lexical verb.",
+              "formula": "Subject + be (conjugated) + past participle (+ by + agent)",
+              "examples": [
+                {
+                  "id": "pv-l1-r1-e1",
+                  "en": "My bike was stolen last night.",
+                  "vi": "Xe đạp của tôi đã bị lấy cắp đêm qua.",
+                  "note": "was + stolen: the tense lives in the be-verb, the main verb never changes form."
+                },
+                {
+                  "id": "pv-l1-r1-e2",
+                  "en": "The results are being announced right now.",
+                  "vi": "Kết quả đang được công bố ngay lúc này.",
+                  "note": "are being + announced: present continuous passive."
+                },
+                {
+                  "id": "pv-l1-r1-e3",
+                  "en": "The bridge must be repaired before the rains.",
+                  "vi": "Cây cầu phải được sửa trước mùa mưa.",
+                  "note": "must be + repaired: modal passive keeps must before be."
+                }
+              ]
+            },
+            {
+              "title": "The object of the active becomes the subject of the passive",
+              "statement": "Transformation means swapping roles: whatever received the action in the active sentence becomes the grammatical subject, so the sentence keeps the same meaning.",
+              "formula": "Active: S + verb + O  →  Passive: O + be + past participle",
+              "examples": [
+                {
+                  "id": "pv-l1-r2-e1",
+                  "en": "Someone stole my bike.  →  My bike was stolen.",
+                  "vi": "Có ai đó đã lấy cắp xe đạp của tôi. → Xe đạp của tôi đã bị lấy cắp.",
+                  "note": "my bike moves from the object slot to the subject slot."
+                },
+                {
+                  "id": "pv-l1-r2-e2",
+                  "en": "The chef is preparing dinner.  →  Dinner is being prepared.",
+                  "vi": "Đầu bếp đang chuẩn bị bữa tối. → Bữa tối đang được chuẩn bị.",
+                  "note": "No by-phrase is needed because the chef is not the point of the sentence."
+                }
+              ]
+            },
+            {
+              "title": "Transitive verbs only",
+              "statement": "Only verbs that take an object can be made passive. Verbs such as happen, arrive, occur and belong have no object, so they have no passive form.",
+              "examples": [
+                {
+                  "id": "pv-l1-r3-e1",
+                  "en": "The meeting was happened last Friday.",
+                  "vi": "Cuộc họp đã xảy ra hôm thứ Sáu tuần trước.",
+                  "note": "Wrong: happen is intransitive. Say 'The meeting happened last Friday.'"
+                },
+                {
+                  "id": "pv-l1-r3-e2",
+                  "en": "The accident was occurred on the ring road.",
+                  "vi": "Tai nạn đã xảy ra trên đường vành đai.",
+                  "note": "Occur is intransitive too, so it cannot carry a passive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l1-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l1-ex1",
+              "en": "This song was written by a young composer from Huế.",
+              "vi": "Bài hát này được sáng tác bởi một nhạc sĩ trẻ ở Huế.",
+              "note": "was + written is the whole passive frame; by adds the doer."
+            },
+            {
+              "id": "pv-l1-ex2",
+              "en": "The window is broken.",
+              "vi": "Cửa sổ bị vỡ rồi.",
+              "note": "Here broken describes a state, not an action: the window stays broken until someone repairs it."
+            },
+            {
+              "id": "pv-l1-ex3",
+              "en": "English is spoken all over the world.",
+              "vi": "Tiếng Anh được nói khắp thế giới.",
+              "note": "Generic passive. The speaker is unknown or irrelevant, so by is left out."
+            },
+            {
+              "id": "pv-l1-ex4",
+              "en": "The exam will be held next Monday.",
+              "vi": "Kỳ thi sẽ được tổ chức vào thứ Hai tuần sau.",
+              "note": "will be + held: the future passive."
+            },
+            {
+              "id": "pv-l1-ex5",
+              "en": "The letter has been signed by the director.",
+              "vi": "Bức thư đã được giám đốc ký.",
+              "note": "has been + signed: present perfect passive, used when the result matters now."
+            }
+          ]
+        },
+        {
+          "id": "pv-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l1-e1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct passive form of: 'Someone stole my bike.'",
+              "instruction": "Pick the grammatical passive sentence.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "My bike was stolen.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "My bike was steal.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "My bike is stole.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "My bike stole.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The past simple passive is was or were plus the past participle: steal takes stole as its past form and stolen as its participle. 'Was steal' and 'is stole' use a bare past form after the be-verb, which English does not allow, and 'My bike stole' is still active, so the bike would be doing the stealing.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "The old bridge ___ (build) in 1890 and is still in use.",
+              "instruction": "Write the full passive verb phrase in the past simple.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was built"
+                ]
+              },
+              "explanation": "Build is transitive, so it can be passive. The subject 'the old bridge' is the thing built, and the date 1890 puts the sentence in the past simple, which requires was or were plus the participle built.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-e3",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Complete the sentence: English is spoken __________ .",
+              "instruction": "Type the two missing words.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "all",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "over",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "world",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "all over the world"
+                ]
+              },
+              "explanation": "The fixed phrase is all over the world. The sentence has no by-phrase because nobody in particular speaks English, which is exactly the situation the passive is designed for.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-e4",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "The letter was wrote by my uncle.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The letter was written by my uncle."
+                ]
+              },
+              "explanation": "Write has three forms: write, wrote, written. The passive needs the third form, so 'was wrote' must become 'was written'. This is the single most common passive mistake for learners, because the past form feels more natural after was than the participle.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "The office ___ (break) into last night.",
+              "instruction": "Type only the missing verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was broken into"
+                ]
+              },
+              "explanation": "Break is transitive, and the last night adverbial makes the sentence past simple, so the passive is was broken. The particle into belongs after the participle: 'was broken into', not 'was broken' with into dropped.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-e6",
+              "kind": "rearrangeWords",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Put the words in order to make a passive sentence.",
+              "instruction": "Drag the words into the correct order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "room",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "is",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "cleaned",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "every",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "day",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "the",
+                    "room",
+                    "is",
+                    "cleaned",
+                    "every",
+                    "day"
+                  ]
+                ]
+              },
+              "explanation": "A passive sentence opens with its subject, then the be-verb, then the participle: the room is cleaned. The time phrase every day closes the sentence. 'The room cleans every day' would be wrong, because a room cannot clean itself.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and type the passive",
+          "items": [
+            {
+              "id": "pv-l1-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The cake was baked by my grandmother."
+              },
+              "hint": "was + past participle",
+              "translation": "Chiếc bánh được bà nội nướng.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l1-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The results will be announced tomorrow morning."
+              },
+              "hint": "will be + past participle",
+              "translation": "Kết quả sẽ được công bố vào sáng mai.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l1-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "These houses were built in the nineteenth century."
+              },
+              "hint": "were + past participle",
+              "translation": "Những ngôi nhà này được xây dựng vào thế kỷ 19.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l1-quiz",
+          "type": "quiz",
+          "title": "Check the passive frame",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is in the passive voice?",
+              "instruction": "Pick the passive sentence.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The concert was cancelled because of the storm.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The storm cancelled the concert.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The concert cancelled because of the storm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The concert is cancel by the storm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Only 'a' has be plus a past participle, which is the passive frame. 'b' is the active original. 'c' has no passive at all and the concert cannot cancel itself. 'd' uses the bare form cancel, which can never follow a be-verb in the passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-q2",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct passive: 'They built the new school in 2021.'",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The new school was built in 2021.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The new school was build in 2021.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The new school is built in 2021.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The new school built in 2021.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "In 2021 is a finished past time, so the past simple passive was built is required. Option c would mean the school is still being built, and options b and d break the be + participle rule.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-q3",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "The verb arrive can be used in the passive voice, as in 'The guests were arrived at the hotel.'",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "Arrive is intransitive: it cannot take a direct object, so there is nothing to move into the subject slot and no passive is possible. The correct sentence is 'The guests arrived at the hotel.'",
+              "xp": 10
+            },
+            {
+              "id": "pv-l1-q4",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l1",
+              "difficulty": "beginner",
+              "prompt": "Type the past participle of the verb 'choose'.",
+              "instruction": "Type the participle only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "chosen"
+                ]
+              },
+              "explanation": "Choose is irregular: choose, chose, chosen. The passive always uses the third form, so 'The winner was chosen' is right and 'was chose' is wrong.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "The passive is a conjugated form of be plus the past participle of the main verb; the main verb itself never inflects.",
+            "The object of the active sentence becomes the subject of the passive sentence.",
+            "Only transitive verbs can be passive; happen, occur, arrive and belong have no passive form.",
+            "The past participle is the third verb form: steal, stole, stolen."
+          ],
+          "nextLessonID": "pv-l2"
+        }
+      ]
+    },
+    {
+      "id": "pv-l2",
+      "title": "Present and Past Passives",
+      "summary": "am/is/are and was/were plus the participle, and the difference between a passive action and an -ed adjective.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "pv-l2-theory",
+          "type": "theory",
+          "heading": "Two tenses, one frame",
+          "body": "The be-verb carries the tense and the number of the subject. In the present simple the passive uses am, is or are; in the past simple it uses was or were. Once you have picked the right form of be, the participle in the following position never changes.",
+          "rules": [
+            {
+              "title": "Present simple passive",
+              "statement": "am/is/are plus past participle, used for facts, routines and permanent situations.",
+              "formula": "Subject + am/is/are + past participle",
+              "examples": [
+                {
+                  "id": "pv-l2-r1-e1",
+                  "en": "The shop is closed at nine every evening.",
+                  "vi": "Cửa hàng đóng cửa lúc chín giờ tối mỗi ngày.",
+                  "note": "is + closed: a regular fact, so the present simple passive."
+                },
+                {
+                  "id": "pv-l2-r1-e2",
+                  "en": "Milk is sold in half-litre bottles.",
+                  "vi": "Sữa được bán trong các hộp nửa lít.",
+                  "note": "General truth in the passive, with no agent."
+                }
+              ]
+            },
+            {
+              "title": "Past simple passive",
+              "statement": "was or were plus past participle, used for a completed action at a finished past time.",
+              "formula": "Subject + was/were + past participle (+ by + agent)",
+              "examples": [
+                {
+                  "id": "pv-l2-r2-e1",
+                  "en": "The letter was posted on Friday.",
+                  "vi": "Bức thư đã được gửi vào thứ Sáu.",
+                  "note": "was + posted for a finished action."
+                },
+                {
+                  "id": "pv-l2-r2-e2",
+                  "en": "Two windows were broken during the storm.",
+                  "vi": "Hai cửa sổ đã bị vỡ trong cơn bão.",
+                  "note": "were + broken agrees with the plural subject 'two windows'."
+                }
+              ]
+            },
+            {
+              "title": "Passive action versus -ed adjective",
+              "statement": "Some -ed forms describe a resulting state rather than an action. The state meaning usually follows a form of be, with no by-agent and no time reference, and the -ed word can be replaced by a verb such as repair.",
+              "formula": "The door is broken. (state)  /  The door is being repaired. (action)",
+              "examples": [
+                {
+                  "id": "pv-l2-r3-e1",
+                  "en": "The road was closed because of the flood.",
+                  "vi": "Con đường đã bị đóng vì lũ lụt.",
+                  "note": "Could equally be 'was closed' by the authorities; both readings are possible here."
+                },
+                {
+                  "id": "pv-l2-r3-e2",
+                  "en": "I am tired.",
+                  "vi": "Tôi mệt rồi.",
+                  "note": "Tired never describes an action here; it is an adjective describing a state."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l2-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l2-ex1",
+              "en": "The children are fed at seven o'clock every day.",
+              "vi": "Bọn trẻ được cho ăn lúc bảy giờ mỗi ngày.",
+              "note": "Routine in the present simple passive."
+            },
+            {
+              "id": "pv-l2-ex2",
+              "en": "Coffee is grown in Brazil and exported to more than forty countries.",
+              "vi": "Cà phê được trồng ở Brazil và xuất khẩu tới hơn bốn mươi nước.",
+              "note": "Two passives in one sentence; the process matters more than the farmer."
+            },
+            {
+              "id": "pv-l2-ex3",
+              "en": "The meeting was put off until next Tuesday.",
+              "vi": "Cuộc họp đã được hoãn lại đến thứ Ba tuần sau.",
+              "note": "Phrasal verb passivised: the particle stays after the participle."
+            },
+            {
+              "id": "pv-l2-ex4",
+              "en": "The roof was repaired last year and is now watertight.",
+              "vi": "Mái nhà đã được sửa năm ngoái và giờ không còn dột nữa.",
+              "note": "was repaired reports the past action; the second clause shows the result now."
+            }
+          ]
+        },
+        {
+          "id": "pv-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l2-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "The museum ___ (open) from nine to five, and it is closed on Mondays.",
+              "instruction": "Write the present simple passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is opened"
+                ]
+              },
+              "explanation": "The opening hours are a regular arrangement, so the present simple applies and the singular subject 'the museum' needs is. The participle of open is opened.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "The tickets ___ (sell) out before noon yesterday.",
+              "instruction": "Write the past simple passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were sold"
+                ]
+              },
+              "explanation": "Before noon yesterday is a finished past time, and the plural subject 'the tickets' requires were plus the participle sold.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-e3",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct passive: 'Someone has cleaned the kitchen.'",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The kitchen has been cleaned.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The kitchen has cleaned.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The kitchen is cleaned now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The kitchen were cleaned.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                  "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The present perfect passive is has/have been plus the participle. The present simple passive in option c would suggest a habit, not a result that is relevant right now, and option d uses the plural were with a singular subject.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "The car ___ (steal) from the car park on Saturday night.",
+              "instruction": "Type only the missing verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was stolen"
+                ]
+              },
+              "explanation": "Steal takes the object 'the car', so it can be passivised, and Saturday night puts the action in the past simple: was plus the participle stolen.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-e5",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "The homework were not finished before the lesson ended.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The homework was not finished before the lesson ended."
+                ]
+              },
+              "explanation": "Homework is one uncountable idea, so it takes a singular subject and a singular be-verb: was, not were. Homework is never treated as plural in standard English.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-e6",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "Complete: The kitchen needs cleaning. Or: The kitchen needs __________ .",
+              "instruction": "Type the passive verb phrase that matches the given sentence.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "to be cleaned"
+                ]
+              },
+              "explanation": "Need takes a passive infinitive, to be plus the participle, because the kitchen is the receiver, not the doer. 'To clean' would make the kitchen the doer.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l2-dictation",
+          "type": "dictation",
+          "title": "Present and past passives",
+          "items": [
+            {
+              "id": "pv-l2-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The children are fed at seven o'clock every morning."
+              },
+              "hint": "present simple passive",
+              "translation": "Bọn trẻ được cho ăn lúc bảy giờ sáng mỗi ngày.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l2-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The letter was posted on Friday morning."
+              },
+              "hint": "was + past participle",
+              "translation": "Bức thư đã được gửi vào sáng thứ Sáu.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l2-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Coffee is grown in the highlands of Vietnam."
+              },
+              "hint": "generic fact in the passive",
+              "translation": "Cà phê được trồng ở vùng cao nguyên Việt Nam.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l2-quiz",
+          "type": "quiz",
+          "title": "Present and past passives",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct sentence.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The results were announced yesterday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The results were announce yesterday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The results are announce yesterday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The results have announce yesterday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Only announced is the past participle, and yesterday forces the past simple passive were announced. The bare form announce can never stand after a be-verb.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-q2",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "beginner",
+              "prompt": "In 'The road was paved in 1998', the past participle is paved.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Pave is a regular verb: pave, paved, paved. The third form is identical to the second, so was paved is the correct passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "intermediate",
+              "prompt": "The old factory ___ (convert) into a public library last year.",
+              "instruction": "Write the past simple passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was converted"
+                ]
+              },
+              "explanation": "Last year puts the sentence in the past simple, so the passive is was plus the participle converted. A phrasal or prepositional complement, 'into a public library', follows the participle unchanged.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l2-q4",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence uses the -ed word as a passive action, not as a description of a state?",
+              "instruction": "Pick the action meaning.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The window was broken by the thief.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The window is broken.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The broken window lets in the rain.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "A broken window was left open.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Option a names an event and even names the agent, so it is a passive action. Options b, c and d describe the result: the window is simply in a broken state, and nobody is being described as breaking it.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "The present simple passive is am/is/are plus participle; the past simple passive is was/were plus participle.",
+            "The be-verb agrees with the subject, not with the original object of the active sentence.",
+            "Phrasal verbs keep their particle in the passive: was put off, was taken over.",
+            "Some -ed words describe a state (the door is broken) rather than an action (the door was broken by someone)."
+          ],
+          "nextLessonID": "pv-l3"
+        }
+      ]
+    },
+    {
+      "id": "pv-l3",
+      "title": "Future, Perfect and Modal Passives",
+      "summary": "will be, has been and modal + be, all followed by the past participle.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "pv-l3-theory",
+          "type": "theory",
+          "heading": "The same frame, a different time",
+          "body": "Because the tense and the modality live entirely in the part before the participle, every passive in English is built the same way. What changes is the helper: will be for the future, has/have been for the present perfect, had been for the past perfect, and a modal plus be for possibility, obligation, permission and advice.",
+          "rules": [
+            {
+              "title": "Future passive",
+              "statement": "will be plus participle for predictions and arrangements; going to be plus participle for plans already made.",
+              "formula": "Subject + will be + past participle",
+              "examples": [
+                {
+                  "id": "pv-l3-r1-e1",
+                  "en": "The new library will be opened by the mayor next month.",
+                  "vi": "Thư viện mới sẽ được thị trưởng khai trương vào tháng sau.",
+                  "note": "will be + opened: the future simple passive."
+                },
+                {
+                  "id": "pv-l3-r1-e2",
+                  "en": "A new sports centre is going to be built in our district.",
+                  "vi": "Một trung tâm thể thao mới sẽ được xây dựng ở quận chúng ta.",
+                  "note": "going to be + built: a decided plan, seen as a future fact."
+                }
+              ]
+            },
+            {
+              "title": "Perfect passives",
+              "statement": "The present perfect passive highlights a past action whose result still matters now; the past perfect passive shows that the action was finished before another past event.",
+              "formula": "Subject + has/have been + participle  |  Subject + had been + participle",
+              "examples": [
+                {
+                  "id": "pv-l3-r2-e1",
+                  "en": "The parcel has been delivered to the wrong address.",
+                  "vi": "Kiện hàng đã được giao đến sai địa chỉ.",
+                  "note": "has been + delivered: the problem is still in front of us."
+                },
+                {
+                  "id": "pv-l3-r2-e2",
+                  "en": "By the time we arrived, the room had been cleaned.",
+                  "vi": "Khi chúng tôi đến nơi, căn phòng đã được dọn dẹp xong.",
+                  "note": "had been + cleaned: the action finished before another past action."
+                }
+              ]
+            },
+            {
+              "title": "Modal passives",
+              "statement": "Modal plus be plus participle. The modal keeps its own form, including the negative not, which always comes before the modal.",
+              "formula": "Subject + (can, could, may, might, must, should, shall, would) + be + participle",
+              "examples": [
+                {
+                  "id": "pv-l3-r3-e1",
+                  "en": "The waste must be collected twice a week.",
+                  "vi": "Rác phải được thu gom hai lần mỗi tuần.",
+                  "note": "must be + collected: strong obligation."
+                },
+                {
+                  "id": "pv-l3-r3-e2",
+                  "en": "The documents cannot be signed without your presence.",
+                  "vi": "Các giấy tờ không thể được ký nếu không có mặt của bạn.",
+                  "note": "cannot be + signed: modal plus be keeps word order."
+                },
+                {
+                  "id": "pv-l3-r3-e3",
+                  "en": "The cliff should be closed to visitors this winter.",
+                  "vi": "Vịnh kia nên được đóng cửa cho khách tham quan vào mùa đông này.",
+                  "note": "should be + closed: advice, here about safety."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l3-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l3-ex1",
+              "en": "The results will be published in the journal in June.",
+              "vi": "Kết quả sẽ được công bố trên tạp chí vào tháng Sáu.",
+              "note": "will be + published, with no agent needed."
+            },
+            {
+              "id": "pv-l3-ex2",
+              "en": "The bridge has already been widened twice.",
+              "vi": "Cây cầu đã được mở rộng hai lần rồi.",
+              "note": "has been + widened: the present situation is the result of past work."
+            },
+            {
+              "id": "pv-l3-ex3",
+              "en": "When the repairs were finished, the whole street had been dug up.",
+              "vi": "Khi việc sửa chữa hoàn tất, cả con đường đã bị đào lên.",
+              "note": "had been + dug up: a chain of past-passive events."
+            },
+            {
+              "id": "pv-l3-ex4",
+              "en": "Old batteries may be returned to any collection point.",
+              "vi": "Pin cũ có thể được trả lại ở bất kỳ điểm thu gom nào.",
+              "note": "may be + returned: permission, not obligation."
+            }
+          ]
+        },
+        {
+          "id": "pv-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l3-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "The road ___ (close) for repairs tomorrow morning.",
+              "instruction": "Write the future passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "will be closed"
+                ]
+              },
+              "explanation": "Tomorrow morning is a future time reference, so the future simple passive will be plus the participle closed is required.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "The report ___ (translate) into twelve languages already.",
+              "instruction": "Write the present perfect passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "has been translated"
+                ]
+              },
+              "explanation": "Already points to a completed action with a present result, which is exactly the present perfect passive: has been plus the participle translated.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-e3",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct modal passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "This medicine must be taken after meals.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "This medicine must taken after meals.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "This medicine must be take after meals.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "This medicine is must be taken after meals.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The modal passive is modal plus be plus participle, so 'must be taken' is complete. Option b drops the be-verb, option c uses the bare infinitive, and option d puts an extra is before the modal.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-e4",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "The stolen paintings must be took to the police station immediately.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The stolen paintings must be taken to the police station immediately."
+                ]
+              },
+              "explanation": "After modal plus be, the verb must be a past participle. Take has the participle taken, not took, so the passive is must be taken.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "advanced",
+              "prompt": "By the time the police arrived, the thief ___ (arrest).",
+              "instruction": "Type the past perfect passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had been arrested"
+                ]
+              },
+              "explanation": "The second past event is the police arriving, so the arrest had already been completed: had been plus the participle arrested. Arrest itself is transitive, so the passive is available.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-e6",
+              "kind": "wordFormation",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Use the noun 'decision': 'The decision was taken yesterday.' Write the past participle of 'take' in the passive.",
+              "instruction": "Type the past participle of 'take'.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "taken"
+                ]
+              },
+              "explanation": "Take is irregular: take, took, taken. Both the past simple passive ('was taken') and the modal passive ('must be taken') need the third form, taken.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l3-dictation",
+          "type": "dictation",
+          "title": "Future, perfect and modal passives",
+          "items": [
+            {
+              "id": "pv-l3-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "All applications must be submitted before Friday."
+              },
+              "hint": "modal + be + past participle",
+              "translation": "Tất cả hồ sơ phải được nộp trước thứ Sáu.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l3-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The new railway line will be finished by the end of 2027."
+              },
+              "hint": "will be + past participle",
+              "translation": "Tuyến đường sắt mới sẽ được hoàn thành trước cuối năm 2027.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l3-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The ancient manuscript has already been authenticated by three experts."
+              },
+              "hint": "has been + past participle + by + agent",
+              "translation": "Bản thảo cổ đã được ba chuyên gia xác thực.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l3-quiz",
+          "type": "quiz",
+          "title": "Future, perfect and modal passives",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct one.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The hall should be rented before the wedding.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The hall should rented before the wedding.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The hall should is rented before the wedding.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The hall is should rented before the wedding.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Modal plus be plus participle gives 'should be rented'. The other options either omit the be-verb or insert an unwanted is before or after the modal.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "The park ___ (close) to vehicles until the path is repaired.",
+              "instruction": "Write the modal passive verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "must be closed"
+                ]
+              },
+              "explanation": "Until the path is repaired is an imposed restriction, so must plus be plus the participle closed expresses the obligation.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-q3",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "intermediate",
+              "prompt": "In the modal passive, the word not goes after the modal: 'The form must not be signed by anyone else.'",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "The negative sits directly after the modal and before be: must not be signed. English does not allow 'must be not signed'.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l3-q4",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l3",
+              "difficulty": "advanced",
+              "prompt": "Which sentence uses the past perfect passive correctly?",
+              "instruction": "Pick the past perfect passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The site had been cleared before the new team arrived.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The site has been cleared before the new team arrived.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The site had cleared before the new team arrived.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The site was cleared before the new team has arrived.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The past perfect passive is had been plus the participle, used when the clearing finished before another past action. Option b mixes the present perfect with a past time clause, and option d mixes two past forms that cannot share one clause.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Future passive: will be / going to be + participle.",
+            "Present perfect passive: has/have been + participle, for past actions whose result still counts now.",
+            "Past perfect passive: had been + participle, for actions finished before another past action.",
+            "Modal passive: modal + not + be + participle, and the participle is mandatory."
+          ],
+          "nextLessonID": "pv-l4"
+        }
+      ]
+    },
+    {
+      "id": "pv-l4",
+      "title": "The by-Agent and Its Omission",
+      "summary": "When to name the doer with by, and when the doer should simply stay out.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "pv-l4-theory",
+          "type": "theory",
+          "heading": "The doer is optional",
+          "body": "In a passive sentence the doer is not the subject, so it needs a by-phrase if it is mentioned at all. The decision is purely about information: include the agent when the reader wants to know who did it, and leave it out when the action, the result or the generality is the point. Many passives never take a by-phrase at all, because their verbs are intransitive or the agent is unknown or simply unimportant.",
+          "rules": [
+            {
+              "title": "Use by when the agent carries the information",
+              "statement": "Add by plus a person or an organisation when the question who matters: for responsibility, credit, blame, or identifying the source.",
+              "formula": "Subject + was/were + participle + by + agent",
+              "examples": [
+                {
+                  "id": "pv-l4-r1-e1",
+                  "en": "The window was broken by my younger brother.",
+                  "vi": "Cửa sổ đã bị em tôi phá vỡ.",
+                  "note": "The agent matters here: someone is being blamed."
+                },
+                {
+                  "id": "pv-l4-r1-e2",
+                  "en": "The song was written by a young composer from Huế.",
+                  "vi": "Bài hát được sáng tác bởi một nhạc sĩ trẻ ở Huế.",
+                  "note": "Identifying the creator is the point of the sentence."
+                }
+              ]
+            },
+            {
+              "title": "Omit by when the agent is unknown, unimportant or obvious",
+              "statement": "Most passives in real English have no by-phrase. Scientific facts, procedures, historical events and general routine all omit it, because the reader either does not know or does not need the doer.",
+              "formula": "Subject + was/were + participle  (no by)",
+              "examples": [
+                {
+                  "id": "pv-l4-r2-e1",
+                  "en": "The bridge was built in the eighteenth century.",
+                  "vi": "Cây cầu được xây dựng vào thế kỷ 18.",
+                  "note": "Nobody knows or cares which builder did it."
+                },
+                {
+                  "id": "pv-l4-r2-e2",
+                  "en": "Your application will be processed within ten working days.",
+                  "vi": "Hồ sơ của bạn sẽ được xử lý trong mười ngày làm việc.",
+                  "note": "Routine office procedure; the agent would be noise."
+                }
+              ]
+            },
+            {
+              "title": "Verbs that never take a by-agent",
+              "statement": "A group of common verbs, most of them intransitive, look passive but cannot be followed by by.",
+              "formula": "occur, happen, appear, disappear, belong, arrive, consist, result",
+              "examples": [
+                {
+                  "id": "pv-l4-r3-e1",
+                  "en": "A serious accident happened by the port.",
+                  "vi": "Một tai nạn nghiêm trọng đã xảy ra gần cảng.",
+                  "note": "Happen is intransitive, so 'happened by the port' is fine but 'was happened by the port' is not."
+                },
+                {
+                  "id": "pv-l4-r3-e2",
+                  "en": "The meeting consisted of two parts.",
+                  "vi": "Cuộc họp gồm hai phần.",
+                  "note": "Consist always takes of, never by, and has no passive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l4-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l4-ex1",
+              "en": "The manuscript was discovered by a local farmer in 1974.",
+              "vi": "Bản thảo được phát hiện bởi một nông dân địa phương vào năm 1974.",
+              "note": "by-phrase identifies the discoverer, which is the newsworthy part."
+            },
+            {
+              "id": "pv-l4-ex2",
+              "en": "The river was polluted for many years before the new plant opened.",
+              "vi": "Dòng sông đã bị ô nhiễm nhiều năm trước khi nhà máy mới mở ra.",
+              "note": "No by-phrase: the polluter is not named in this summary."
+            },
+            {
+              "id": "pv-l4-ex3",
+              "en": "The decision was made by the board of directors.",
+              "vi": "Quyết định đã được ban giám đốc đưa ra.",
+              "note": "Responsibility is being assigned, so the agent is essential."
+            },
+            {
+              "id": "pv-l4-ex4",
+              "en": "A power cut was caused by the storm.",
+              "vi": "Sự cắt điện là do bão gây ra.",
+              "note": "Caused by takes an agent, and cause is transitive, so by works here."
+            }
+          ]
+        },
+        {
+          "id": "pv-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l4-e1",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Add the agent: 'The theory was first put forward (____________) in 1953.'",
+              "instruction": "Type the full by-phrase plus the agent.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "by two researchers at Cambridge"
+                ]
+              },
+              "explanation": "The passive moves the object into the subject slot, so the original subject has to be reintroduced explicitly with by. Naming the researchers is what makes the sentence informative; the verb put forward is a phrasal verb and keeps its particle after the participle.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-e2",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct one.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The new law was approved by the senate last week.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The new law was approved by last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The new law was approved by senate last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The new law was approved the senate last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "A by-phrase must contain a noun: by the senate, never a time or a place on its own. Last week is the time adverbial, and a definite article is needed before the singular noun senate when it means a particular body.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-e3",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "The accident was happened on the motorway because of heavy rain.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The accident happened on the motorway because of heavy rain."
+                ]
+              },
+              "explanation": "Happen is intransitive and cannot be passivised at all, so the passive frame has to be removed entirely. The by-phrase is not the problem; the passive is.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "The whole problem ___ (cause) by a single careless email.",
+              "instruction": "Write the passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was caused"
+                ]
+              },
+              "explanation": "Cause is transitive and takes the agent through by, so 'was caused by a single careless email' is the natural passive here.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-e5",
+              "kind": "matching",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Match each passive opening with the ending that gives it a sensible, idiomatic by-phrase.",
+              "instruction": "Join each left half with the right half that completes it correctly.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The case was solved",
+                  "isCorrect": null,
+                  "matchKey": "x"
+                },
+                {
+                  "id": "b",
+                  "text": "The wheat is grown",
+                  "isCorrect": null,
+                  "matchKey": "w"
+                },
+                {
+                  "id": "c",
+                  "text": "The song was recorded",
+                  "isCorrect": null,
+                  "matchKey": "r"
+                },
+                {
+                  "id": "d",
+                  "text": "The prize was awarded",
+                  "isCorrect": null,
+                  "matchKey": "p"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "x",
+                  "b": "w",
+                  "c": "r",
+                  "d": "p"
+                }
+              },
+              "explanation": "Each verb attracts the kind of agent that naturally performs it: a detective or the police solve a case, farmers grow wheat, a singer or a studio records a song, and a jury or a committee awards a prize. Picking an agent that cannot do the action is what makes a by-phrase sound wrong.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-e6",
+              "kind": "translation",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "advanced",
+              "prompt": "Cây cầu bị phá hủy trong chiến tranh.",
+              "translation": "The bridge was destroyed in the war.",
+              "instruction": "Write the passive English sentence.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The bridge was destroyed in the war."
+                ]
+              },
+              "explanation": "Vietnamese uses the passive particle bị, which maps neatly onto English be plus participle. 'Bị phá hủy' needs no by-agent here, because the war is already named as the context and the specific destroyer is not part of the information.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l4-dictation",
+          "type": "dictation",
+          "title": "Listen for the by-agent",
+          "items": [
+            {
+              "id": "pv-l4-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The painting was restored by a specialist in Milan."
+              },
+              "hint": "by + agent",
+              "translation": "Bức tranh đã được một chuyên gia ở Milan phục hồi.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l4-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The medal was awarded to two young volunteers."
+              },
+              "hint": "recipient with to, agent with by",
+              "translation": "Huy chương đã được trao cho hai tình nguyện viên trẻ.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l4-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Rice is harvested twice a year in the Mekong Delta."
+              },
+              "hint": "no by-agent",
+              "translation": "Lúa được thu hoạch hai lần mỗi năm ở Đồng bằng sông Cửu Long.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l4-quiz",
+          "type": "quiz",
+          "title": "The by-agent",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l4-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct sentence.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The photographs were taken by a street photographer.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The photographs were taken by a street.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The photographs were taken by the street photographer yesterday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The photographs were taken a street photographer.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "A by-phrase needs a person or an organisation that actually performs the action, and it must be a noun phrase. 'By a street' names a place, not a doer, and option d leaves out by entirely.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-q2",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Adding a by-phrase always improves a passive sentence.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "A by-phrase is only useful when the agent adds information. In routine and scientific passives it adds noise, and with intransitive verbs such as happen or occur it is impossible: 'The meeting was happened by' is never correct.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-q3",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "advanced",
+              "prompt": "The fire was started by a faulty wire, and the building was evacuated by the firefighters quickly.",
+              "instruction": "Rewrite the sentence with natural, correct word order.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "quickly",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The fire was started by a faulty wire, and the building was quickly evacuated by the firefighters."
+                ]
+              },
+              "explanation": "The sentence is not ungrammatical, but an adverb of manner placed between the participle and its agent splits the verb phrase awkwardly. English prefers to put the adverb before the participle, keeping the by-phrase attached to the verb.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l4-q4",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l4",
+              "difficulty": "advanced",
+              "prompt": "In 'The book was praised ____ the manager', which ending is natural?",
+              "instruction": "Pick the best completion.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "by the manager for its clear explanations.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "by the manager for clear explanation.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "the manager for its clear explanations.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "by manager for its clear explanations.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The pronoun its refers back to the book, which is the subject, and explanations is plural, so the verb is. Option b has two agreement slips, option c loses the by-agent, and option d has no article before a common noun.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "A by-phrase is optional; it names the agent only when who did it adds information.",
+            "The by-phrase must contain a person or an organisation, never a time or a place on its own.",
+            "Intransitive verbs such as happen, occur, arise and belong have no passive at all.",
+            "Most real-world passives in news and science omit by entirely; that is normal, not lazy."
+          ],
+          "nextLessonID": "pv-l5"
+        }
+      ]
+    },
+    {
+      "id": "pv-l5",
+      "title": "Active to Passive Transformation",
+      "summary": "A repeatable five-step method, and the cases where transformation simply fails.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "pv-l5-theory",
+          "type": "theory",
+          "heading": "Transforming step by step",
+          "body": "Changing a sentence from active to passive is a mechanical procedure once you know the slots. The main risk is not the verb; it is deciding which part of the sentence can become the new subject. Work through the steps in order and check each one before moving on.",
+          "rules": [
+            {
+              "title": "The five-step method",
+              "statement": "Find the verb, move the object to the subject slot, build the passive verb with be plus participle, demote the old subject into a by-phrase, and leave every other element where it is.",
+              "formula": "S + V + O + adverbial  →  O + be + participle + by + S + adverbial",
+              "examples": [
+                {
+                  "id": "pv-l5-r1-e1",
+                  "en": "The chef cooked a large fish for the guests.",
+                  "vi": "Đầu bếp đã nấu một con cá lớn cho khách.",
+                  "note": "A large fish becomes the subject; the chef is demoted to a by-phrase."
+                },
+                {
+                  "id": "pv-l5-r1-e2",
+                  "en": "The board rejected the proposal yesterday.",
+                  "vi": "Ban giám đốc đã bác đề xuất hôm qua.",
+                  "note": "Yesterday is a time adverbial and stays exactly where it was."
+                }
+              ]
+            },
+            {
+              "title": "Never add new information",
+              "statement": "Transformation preserves meaning. The passive says the same thing with a different focus; it must not supply an agent, an object or a preposition that the active sentence did not have.",
+              "formula": "Passive = same words, new roles",
+              "examples": [
+                {
+                  "id": "pv-l5-r2-e1",
+                  "en": "Someone destroyed the documents.",
+                  "vi": "Có ai đó đã phá hủy các tài liệu.",
+                  "note": "Passive: 'The documents were destroyed.' A by-phrase must not be invented, because the active names no agent."
+                },
+                {
+                  "id": "pv-l5-r2-e2",
+                  "en": "The storm damaged the roof.",
+                  "vi": "Cơn bão đã làm hưng mái nhà.",
+                  "note": "Passive: 'The roof was damaged by the storm.' Here the agent is known, so by may stay."
+                }
+              ]
+            },
+            {
+              "title": "When transformation fails",
+              "statement": "Transformation is impossible when the sentence has no direct object, and it needs care when there are two objects or a prepositional object.",
+              "formula": "No object: no passive.  Two objects: A is given B  →  A is given to B.",
+              "examples": [
+                {
+                  "id": "pv-l5-r3-e1",
+                  "en": "He slept.",
+                  "vi": "Anh ấy đã ngủ.",
+                  "note": "No object, so there is nothing to make passive. 'He was slept' is impossible."
+                },
+                {
+                  "id": "pv-l5-r3-e2",
+                  "en": "She gave me the key.",
+                  "vi": "Cô ấy đã đưa cho tôi chìa khóa.",
+                  "note": "Two objects: 'I was given the key' or 'The key was given to me.'"
+                },
+                {
+                  "id": "pv-l5-r3-e3",
+                  "en": "They looked at the picture.",
+                  "vi": "Họ đã nhìn bức tranh.",
+                  "note": "The prepositional phrase looked at is a fixed verb phrase: 'The picture was looked at', never 'was looked'."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l5-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l5-ex1",
+              "en": "A young engineer designed the bridge. → The bridge was designed by a young engineer.",
+              "vi": "Một kỹ sư trẻ đã thiết kế cây cầu. → Cây cầu được thiết kế bởi một kỹ sư trẻ.",
+              "note": "A one-clause sentence transforms cleanly."
+            },
+            {
+              "id": "pv-l5-ex2",
+              "en": "The committee has not yet approved the plan. → The plan has not yet been approved.",
+              "vi": "Ủy ban chưa phê duyệt kế hoạch. → Kế hoạch chưa được phê duyệt.",
+              "note": "not yet belongs between has been and the participle."
+            },
+            {
+              "id": "pv-l5-ex3",
+              "en": "They are building a new road along the coast. → A new road along the coast is being built.",
+              "vi": "Họ đang xây một con đường mới dọc bờ biển. → Một con đường mới dọc bờ biển đang được xây dựng.",
+              "note": "The prepositional phrase travels with the object when it modifies it."
+            },
+            {
+              "id": "pv-l5-ex4",
+              "en": "Nobody understood the instructions. → The instructions were not understood.",
+              "vi": "Không ai hiểu các chỉ dẫn. → Các chỉ dẫn đã không được hiểu.",
+              "note": "The negative moves with the auxiliary: were not, not were."
+            }
+          ]
+        },
+        {
+          "id": "pv-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l5-e1",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Rewrite in the passive: 'A German company built the new terminal in 2015.'",
+              "instruction": "Type the passive sentence.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The new terminal was built by a German company in 2015."
+                ]
+              },
+              "explanation": "The object 'the new terminal' becomes the subject, the object verb built becomes the participle built, the old subject moves into by, and 2015 stays as the time adverbial. Nothing is added and nothing is dropped.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-e2",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Which passive correctly transforms 'They showed me the photographs at the exhibition.'?",
+              "instruction": "Pick the correct transformation.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I was shown the photographs at the exhibition.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The photographs were showed me at the exhibition.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I was showed the photographs at the exhibition.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The photographs were shown at the exhibition.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Show is a two-object verb. Keeping the first object as the subject gives 'I was shown the photographs'; the other option is 'The photographs were shown to me'. Option d silently drops the person, changing the meaning, and options b and c use the wrong verb form.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-e3",
+              "kind": "rearrangeWords",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Arrange the words into the passive form of: 'The council banned the film last year.'",
+              "instruction": "Drag the words into the correct order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "film",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "banned",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "by",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "council",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "last",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t9",
+                  "text": "year",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "the",
+                    "film",
+                    "was",
+                    "banned",
+                    "by",
+                    "the",
+                    "council",
+                    "last",
+                    "year"
+                  ],
+                  [
+                    "the",
+                    "film",
+                    "was",
+                    "banned",
+                    "last",
+                    "year",
+                    "by",
+                    "the",
+                    "council"
+                  ]
+                ]
+              },
+              "explanation": "The film becomes the subject, was + banned is the passive verb, and the council follows by. The time adverbial last year may sit either right after the verb phrase or after the by-phrase; both orders are grammatical, which is why two answers are accepted.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-e4",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "A new hospital was being built in the district when the plans were announced by the mayor.",
+              "instruction": "Rewrite with correct, natural word order.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "A new hospital was being built in the district when the mayor announced the plans."
+                ]
+              },
+              "explanation": "Two changes are needed. The by-phrase cannot dangle at the end of a subordinate when-clause, so the passive must be 'the plans were announced by the mayor', or the clause must be rewritten in the active. Only the second option is acceptable here because 'was announced' is a complete passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "The two main suspects ______ (arrest) on Friday evening and released again the next morning.",
+              "instruction": "Type the passive verb phrase for the first action.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were arrested"
+                ]
+              },
+              "explanation": "A plural subject takes were, and on Friday evening puts the action in the past. Notice that released in the second clause is not passive: a bare participle after and would have no auxiliary to attach to, and the suspects did not release themselves.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-e6",
+              "kind": "matching",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Match each active clause with the passive that keeps the meaning exactly the same.",
+              "instruction": "Join each active sentence with its correct passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The students organised the conference.",
+                  "isCorrect": null,
+                  "matchKey": "p1"
+                },
+                {
+                  "id": "b",
+                  "text": "The police arrested two suspects.",
+                  "isCorrect": null,
+                  "matchKey": "p2"
+                },
+                {
+                  "id": "c",
+                  "text": "Nobody expected such a result.",
+                  "isCorrect": null,
+                  "matchKey": "p3"
+                },
+                {
+                  "id": "d",
+                  "text": "The heat cracked the mirror.",
+                  "isCorrect": null,
+                  "matchKey": "p4"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "p1",
+                  "b": "p2",
+                  "c": "p3",
+                  "d": "p4"
+                }
+              },
+              "explanation": "Each transformation moves exactly one element into the subject slot: the conference, two suspects, such a result, the mirror. The by-agents that the originals name are the students, the police, nobody and the heat, and the negations in c and d must travel with the auxiliary.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l5-dictation",
+          "type": "dictation",
+          "title": "Transformed sentences",
+          "items": [
+            {
+              "id": "pv-l5-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The entire collection was catalogued by two volunteers last spring."
+              },
+              "hint": "by + agent at the end",
+              "translation": "Toàn bộ bộ sưu tập đã được hai tình nguyện viên lập danh mục vào mùa xuân năm ngoái.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l5-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "A new pedestrian bridge is being built over the railway."
+              },
+              "hint": "present continuous passive",
+              "translation": "Một cây cầu đi bộ mới đang được xây dựng trên đường sắt.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l5-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The instructions were not clear enough for beginners."
+              },
+              "hint": "not belongs before were",
+              "translation": "Hướng dẫn không đủ rõ ràng cho người mới bắt đầu.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l5-quiz",
+          "type": "quiz",
+          "title": "Active to passive transformation",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is the correct passive of 'The storm damaged the roof'?",
+              "instruction": "Pick the correct transformation.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The roof was damaged by the storm.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The roof was damage by the storm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The roof is damaged by the storm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The roof has been damage by the storm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The active verb is simple past, so the passive must be was damaged. The participle damaged is required in every option; only the tense of the be-verb is being tested here.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-q2",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Which active sentence can NOT be transformed into the passive?",
+              "instruction": "Pick the sentence that has no passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The train arrived at six o'clock.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The team won the championship.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She wrote three short stories.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "They painted the wall pale green.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Arrive is intransitive and takes no direct object, so there is nothing to promote to subject position. The other three all have a direct object, which is exactly the slot the passive needs.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-q3",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "Rewrite in the passive: 'They are painting the hall this week.'",
+              "instruction": "Type only the passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are being painted"
+                ]
+              },
+              "explanation": "The present continuous is formed with be plus -ing, so its passive is be plus being plus the participle: are being painted. The trap is stopping at are painted, which is the present simple passive and loses the idea of the action in progress right now.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l5-q4",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l5",
+              "difficulty": "advanced",
+              "prompt": "In a correct transformation the passive must mention the agent, even if the active sentence did not name one.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "Transformation is meaning-preserving. If the active subject is nobody, nobody or an unnamed someone, the passive simply omits the by-phrase; inventing an agent would change what the sentence claims.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "The method: find the object, promote it to subject, build be + participle, demote the old subject to a by-phrase, leave everything else alone.",
+            "Transformation never adds or removes information.",
+            "Two-object verbs give either A was given B or B was given to A.",
+            "Verbs with a preposition keep it: was looked at, was dealt with, was taken over."
+          ],
+          "nextLessonID": "pv-l6"
+        }
+      ]
+    },
+    {
+      "id": "pv-l6",
+      "title": "The Passive in the Real World",
+      "summary": "Formal reports, two-object passives, passives inside larger structures, and how the passive sounds in news and academic English.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "pv-l6-theory",
+          "type": "theory",
+          "heading": "Where the passive actually turns up",
+          "body": "The passive is not a curiosity. It is the default voice of academic writing, news reporting, technical instructions, legal language and institutional announcements, because it keeps the focus on the action, the result and the process rather than on a particular person. It also appears inside structures that beginners rarely meet: reporting verbs, infinitives, and the by + noun + doing form.",
+          "rules": [
+            {
+              "title": "The reporting passive",
+              "statement": "Reporting verbs that take a that-clause have a passive that leaves the original speaker out: it is believed that, it is reported that, he is said to.",
+              "formula": "It is + past participle + that + clause  |  He is said to + infinitive",
+              "examples": [
+                {
+                  "id": "pv-l6-r1-e1",
+                  "en": "It is widely believed that the temple is older than the records suggest.",
+                  "vi": "Người ta tin rằng ngôi đền cổ hơn nhiều so với những ghi chép gợi ý.",
+                  "note": "A formal alternative to 'People believe that...'."
+                },
+                {
+                  "id": "pv-l6-r1-e2",
+                  "en": "The mineral is said to have been discovered in 1911.",
+                  "vi": "Người ta nói loại khoáng sản này được phát hiện vào năm 1911.",
+                  "note": "Note the stack: is said to + have been + participle."
+                }
+              ]
+            },
+            {
+              "title": "Two-object passives",
+              "statement": "With verbs like give, send, offer, tell and show, the direct object becomes the subject and the indirect object follows with to or for.",
+              "formula": "A gives B something  →  B is given something by A  |  Something is given to B",
+              "examples": [
+                {
+                  "id": "pv-l6-r2-e1",
+                  "en": "They gave the refugees shelter.",
+                  "vi": "Họ đã cung cấp chỗ ở cho người tị nạn.",
+                  "note": "Passive: 'The refugees were given shelter.'"
+                },
+                {
+                  "id": "pv-l6-r2-e2",
+                  "en": "The company sent us a copy of the contract.",
+                  "vi": "Công ty đã gửi cho chúng tôi một bản hợp đồng.",
+                  "note": "Passive: 'We were sent a copy of the contract', or 'A copy of the contract was sent to us.'"
+                }
+              ]
+            },
+            {
+              "title": "The by + doing form",
+              "statement": "By plus a gerund replaces the by-phrase in formal descriptions, especially of processes and technologies.",
+              "formula": "Subject + passive + by + verb-ing",
+              "examples": [
+                {
+                  "id": "pv-l6-r3-e1",
+                  "en": "The water is purified by passing it through several filters.",
+                  "vi": "Nước được tinh khiết bằng cách cho đi qua nhiều bộ lọc.",
+                  "note": "Elegant in technical writing: the process is described as a method."
+                },
+                {
+                  "id": "pv-l6-r3-e2",
+                  "en": "Waste can be reduced by cutting down on packaging.",
+                  "vi": "Rác thải có thể được giảm bằng cách giảm thiểu bao bì.",
+                  "note": "Very common in argumentative writing about the environment."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "pv-l6-ex1",
+              "en": "The manuscript is thought to be the oldest surviving copy.",
+              "vi": "Bản thảo được cho là bản sao cổ nhất còn tồn tại.",
+              "note": "Reporting passive, with a perfect infinitive optional after thought to be."
+            },
+            {
+              "id": "pv-l6-ex2",
+              "en": "Visitors were admitted free of charge until six o'clock.",
+              "vi": "Du khách được miễn phí cho đến sáu giờ.",
+              "note": "Be admitted is a formal equivalent of enter."
+            },
+            {
+              "id": "pv-l6-ex3",
+              "en": "The damage was caused by years of neglect rather than by one incident.",
+              "vi": "Thiệt hại là do nhiều năm lơ là chứ không phải do một sự cố.",
+              "note": "Repeat by when contrasting agents in formal prose."
+            },
+            {
+              "id": "pv-l6-ex4",
+              "en": "The subject must be revised before the article is submitted.",
+              "vi": "Đề tài phải được sửa trước khi bài viết được gửi đi.",
+              "note": "Two passives joined by before; the second one is active in meaning but written passively for focus."
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l6-e1",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "It is believed that the population has been reduced by nearly half in the last ten years.",
+              "instruction": "Rewrite with correct word order.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It is believed that the population has been reduced by nearly half in the last ten years."
+                ]
+              },
+              "explanation": "This sentence is already correct, and that is the point of the item: it forces you to check the two-part frame. A passive clause cannot follow a reporting passive directly, so the reduction is reported in a separate that-clause, with the population as the subject of the inner passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e2",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Complete: The old factory ______ (demolish) last month after thirty years of disuse.",
+              "instruction": "Type the passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was demolished"
+                ]
+              },
+              "explanation": "Last month forces the past simple, so the passive is was demolished. News reports prefer the passive here because the demolition is the event and the owner is not the story.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e3",
+              "kind": "listening",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Listen to the announcement, then answer the question.",
+              "instruction": "Play the audio and choose the correct answer.",
+              "audio": {
+                "kind": "speech",
+                "text": "Attention passengers: the flight to Da Nang has been delayed by two hours because of heavy rain. The new departure time is 4:45 in the afternoon. Passengers who have already checked in are asked to go to gate 12. Meal vouchers will be issued at the check-in desk."
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The flight has been delayed by two hours.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The flight has been cancelled because of the weather.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The flight is going to leave four hours earlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The flight has been moved to gate 12 permanently.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The announcement says the flight has been delayed by two hours and gives a new departure time of 4:45, which is later, not earlier. Gate 12 is where passengers should go, not a new permanent gate, and the flight is not cancelled.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e4",
+              "kind": "multiSelect",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Which sentences use the passive correctly?",
+              "instruction": "Select every correct sentence.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The results will be announced on the website.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "It is reported that the artefact dates from the Bronze Age.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The problem needs to be solved immediately.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The committee was suggested to postpone the vote.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b",
+                  "c"
+                ]
+              },
+              "explanation": "a, b and c all use a correct passive frame: will be plus participle, it is reported that plus clause, and the passive infinitive. In d the verb is wrong for the subject: committees suggest, they are not suggested. It would be 'The committee suggested postponing the vote.'",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Rewrite in the passive: 'They offered the workers free medical care.'",
+              "instruction": "Type the passive sentence with the workers as the subject.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The workers were offered free medical care."
+                ]
+              },
+              "explanation": "Offer takes an indirect object and a direct object. With the workers as the subject, free medical care stays as the direct object, and were offered is the past simple passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e6",
+              "kind": "grammarCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "The stolen data was being copied to an external server when the system detected the unusual activity and the connection was cut by the administrator immediately.",
+              "instruction": "Rewrite so that the by-agent and the adverbs sit in natural positions.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The stolen data was being copied to an external server when the system detected the unusual activity and the administrator immediately cut the connection."
+                ]
+              },
+              "explanation": "The original is grammatical but clumsy: the by-phrase and the adverb both dangle at the end of the main clause, and the second passive is not needed. Moving 'immediately' before the participle and rewriting the last clause in the active keeps the emphasis on the system and on the urgency.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-dictation",
+          "type": "dictation",
+          "title": "The passive in reports and announcements",
+          "items": [
+            {
+              "id": "pv-l6-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The two men were detained for questioning on Saturday evening."
+              },
+              "hint": "formal news passive",
+              "translation": "Hai người đàn ông đã bị giữ để thẩm vấn vào tối thứ Bảy.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l6-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "It is estimated that the repairs will take about six months."
+              },
+              "hint": "reporting passive plus future passive",
+              "translation": "Người ta ước tính việc sửa chữa sẽ mất khoảng sáu tháng.",
+              "xp": 15
+            },
+            {
+              "id": "pv-l6-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Applications must be submitted online before the closing date."
+              },
+              "hint": "modal passive in an announcement",
+              "translation": "Đơn ứng tuyển phải được nộp trực tuyến trước hạn chót.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-quiz",
+          "type": "quiz",
+          "title": "The passive in the real world",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "pv-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is the correct passive of 'They sent her the documents last week'?",
+              "instruction": "Pick the correct passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She was sent the documents last week.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She was sent the documents by them last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The documents was sent to she last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The documents were sent her last week.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "With the person as the subject, the thing received stays as the bare direct object: 'She was sent the documents'. Option b is also grammatical, since adding a by-agent preserves the original meaning, but it is redundant. Options c and d misuse pronouns, prepositions and number.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "The noise ___ (reduce) by fitting better insulation in the walls.",
+              "instruction": "Write the passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "can be reduced"
+                ]
+              },
+              "explanation": "By plus gerund describes a method, and can expresses possibility, so the whole passive is can be reduced. The trap is putting the participle straight after can, which gives the active 'can reduce'.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-q3",
+              "kind": "trueFalse",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "The sentence 'The letter is written by him' is a correct passive.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "A present simple fact with a known agent is exactly what the present simple passive is for: is + written + by him. Note that the pronoun after by takes the objective form him, not he.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-q4",
+              "kind": "multipleChoice",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Which sentence uses the reporting passive correctly?",
+              "instruction": "Pick the correct reporting passive.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "He is said to be honest.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "He is said honest.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He is say to be honest.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "He is said that honest.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The pattern is is said to plus infinitive, or is said that plus a full clause. Option b drops the to, option c uses the bare form say, and option d cannot put a bare adjective after that.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "The passive dominates academic, legal, news and technical English because it keeps the focus on the event or the result.",
+            "Two-object verbs become either B is given A or A is given to B.",
+            "By plus gerund expresses a method: The noise can be reduced by fitting better insulation.",
+            "The reporting passive (it is believed that, he is said to) hides the source of the claim."
+          ]
+        }
+      ]
+    }
+  ]
+}

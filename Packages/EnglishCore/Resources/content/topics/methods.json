@@ -1,0 +1,1749 @@
+{
+  "id": "methods",
+  "title": "English Study Methods",
+  "kind": "methods",
+  "level": "beginner",
+  "summary": "Ten practical study methods for learning English: what each one is, how to run it, and the rule that makes it work. Active recall, spaced repetition, shadowing, dictation, reading aloud, sentence mining, immersion, listening repetition, vocabulary in context and the Pomodoro technique.",
+  "icon": "lightbulb",
+  "estimatedMinutes": 20,
+  "lessons": [
+    {
+      "id": "method-active-recall",
+      "title": "Active Recall",
+      "summary": "Test yourself instead of re-reading. Close the page, ask the question, answer out loud, then check. It feels harder than reading and works far better, because the difficulty is the part that builds memory.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-active-recall-step-theory",
+          "type": "theory",
+          "heading": "Active Recall",
+          "body": "Re-reading feels productive because the material is already in front of you, so the brain only recognises it. Active recall removes the answer and asks you to produce it, which is the thing memory actually strengthens.\n\nThe method is always the same three moves: close the source, ask yourself a specific question, say or write the answer from memory, then open the source and correct yourself. The gap between your answer and the correct one is where learning happens, so never skip the correction step.\n\nFor English, this means covering the word, saying the word, checking the spelling, and reading one sentence that uses it. Sixty seconds of honest effort is worth an hour of re-reading.",
+          "rules": [
+            {
+              "id": "method-active-recall-rule-1",
+              "title": "Always produce before you check",
+              "statement": "A recalled answer, even a wrong one, creates a stronger memory trace than reading the answer. Correct the mistake immediately afterwards, and say the right version out loud.",
+              "examples": [
+                {
+                  "id": "method-active-recall-rule-1-ex-1",
+                  "en": "Cover the word on the card, say it, then look: recall first, check second.",
+                  "vi": "Che chữ trên thẻ, nói ra, rồi mới mở ra xem: nhớ trước, kiểm tra sau.",
+                  "note": "This is the only order that counts. If you read first, the answer is no longer being recalled."
+                },
+                {
+                  "id": "method-active-recall-rule-1-ex-2",
+                  "en": "I said \"comfretable\", but the word is comfortable.",
+                  "vi": "Tôi nói \"comfretable\", nhưng từ đúng là comfortable.",
+                  "note": "The moment of noticing the mistake is the moment the spelling locks in."
+                }
+              ]
+            },
+            {
+              "id": "method-active-recall-rule-2",
+              "title": "Ask one specific question",
+              "statement": "Vague review is useless. Ask something with a short, exact answer: not 'do I know this word?' but 'what does reluctant mean, and what is one word for it?'",
+              "examples": [
+                {
+                  "id": "method-active-recall-rule-2-ex-1",
+                  "en": "What does reluctant mean?",
+                  "vi": "Từ reluctant nghĩa là gì?",
+                  "note": "One word answer, easy to grade as right or wrong."
+                },
+                {
+                  "id": "method-active-recall-rule-2-ex-2",
+                  "en": "Write the third person singular of go.",
+                  "vi": "Viết dạng ngôi thứ ba số ít của go.",
+                  "note": "Questions about form are as important as questions about meaning."
+                }
+              ]
+            },
+            {
+              "id": "method-active-recall-rule-3",
+              "title": "Say it out loud",
+              "statement": "Retrieving an answer silently feels fluent and is weak. Speaking the answer aloud forces the pronunciation, which is the part learners most often get wrong.",
+              "examples": [
+                {
+                  "id": "method-active-recall-rule-3-ex-1",
+                  "en": "She is reluctant to speak.",
+                  "vi": "Cô ấy miễn cưỡng không muốn nói.",
+                  "note": "Say it three times before you check the dictionary."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-active-recall-step-audio",
+          "type": "audio",
+          "title": "How to run active recall",
+          "audio": {
+            "kind": "speech",
+            "text": "Close the page. Ask one question. Answer out loud. Then check and correct yourself. Repeat."
+          }
+        },
+        {
+          "id": "method-active-recall-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-active-recall-ex-1",
+              "en": "Look at a page of notes, then close the notebook and write down everything you remember.",
+              "vi": "Nhìn một trang ghi chú, rồi đóng sổ lại và viết ra mọi thứ bạn còn nhớ.",
+              "note": "The missing words are the ones you actually need to study."
+            },
+            {
+              "id": "method-active-recall-ex-2",
+              "en": "Cover the right-hand column of a vocabulary list and say each translation from memory.",
+              "vi": "Che cột bên phải của danh sách từ vựng và nói nghĩa từng từ từ trí nhớ.",
+              "note": "Doing the hard 80% first is more efficient than easy re-reading."
+            },
+            {
+              "id": "method-active-recall-ex-3",
+              "en": "Answer, then open the book: her work is excellent, I remembered excellent but said excelent.",
+              "vi": "Trả lời xong rồi mới mở sách: her work is excellent, tôi nhớ được từ excellent nhưng lại nói thành excelent.",
+              "note": "A written mistake caught in time is a mistake that never becomes a habit."
+            }
+          ]
+        },
+        {
+          "id": "method-active-recall-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-active-recall-ex-1",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-active-recall",
+              "difficulty": "beginner",
+              "prompt": "Which step must come first when you use active recall?",
+              "instruction": "Choose the correct step.",
+              "items": [
+                {
+                  "id": "method-active-recall-ex-1-opt-a",
+                  "text": "Read the answer twice",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-active-recall-ex-1-opt-b",
+                  "text": "Produce the answer from memory before checking",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-active-recall-ex-1-opt-c",
+                  "text": "Copy the word five times",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-active-recall-ex-1-opt-d",
+                  "text": "Highlight the word in the text",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-active-recall-ex-1-opt-b"
+                ]
+              },
+              "explanation": "Retrieval has to happen before you look, otherwise you are only reading. Reading and copying are recognition, not recall.",
+              "xp": 10
+            },
+            {
+              "id": "method-active-recall-ex-2",
+              "kind": "trueFalse",
+              "topicID": "methods",
+              "lessonID": "method-active-recall",
+              "difficulty": "beginner",
+              "prompt": "In active recall, a wrong answer recalled and then corrected is more useful than never attempting it.",
+              "instruction": "Decide if the statement is true or false.",
+              "items": [
+                {
+                  "id": "method-active-recall-ex-2-opt-a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "values": [
+                  "true"
+                ]
+              },
+              "explanation": "The attempt plus the correction is what strengthens the memory. Skipping the attempt means the error stays untested and unfixed.",
+              "xp": 10
+            },
+            {
+              "id": "method-active-recall-ex-3",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-active-recall",
+              "difficulty": "beginner",
+              "prompt": "Name the three-step order of active recall in three words, using a comma: close, ask, check.",
+              "instruction": "Type the three steps in the correct order, separated by commas.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "close, ask, check",
+                  "close the page, ask, check",
+                  "close, ask, check and correct"
+                ]
+              },
+              "explanation": "Close the source, ask a specific question, then check and correct. The order is what makes the method work; skipping the check leaves errors uncorrected.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-active-recall-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Produce the answer from memory first, check second. That order is the whole method.",
+            "Ask one specific question with a short exact answer, and say it out loud.",
+            "Correct every mistake immediately; that correction is where the learning lands."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-spaced-repetition",
+      "title": "Spaced Repetition",
+      "summary": "Review a memory just before you would forget it, then review it again later. Each successful review pushes the next one further away, so a few minutes a day covers weeks of material.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-spaced-repetition-step-theory",
+          "type": "theory",
+          "heading": "Spaced Repetition",
+          "body": "Memory fades quickly. A word you meet once is mostly gone within a day; a word you review at the moment it is about to fade is re-strengthened almost for free.\n\nSo the schedule for a new item is: today, then tomorrow, then in three days, then in a week, then in a month. If you fail an item, it comes back to today, because forgetting it means the interval was too long.\n\nThe rule of thumb is simple: review slightly before the point of forgetting. It feels too early, and that feeling is the sign the schedule is right. Five minutes of reviews beats an hour of new input, because the reviews are what move material into long-term memory.",
+          "rules": [
+            {
+              "id": "method-spaced-repetition-rule-1",
+              "title": "Expand the interval only on success",
+              "statement": "If you answer correctly, wait longer next time. If you miss it, go back to the shortest interval immediately, because you have just proved you had not learned it.",
+              "examples": [
+                {
+                  "id": "method-spaced-repetition-rule-1-ex-1",
+                  "en": "Correct on Monday: next review on Tuesday. Correct again: next review on Friday.",
+                  "vi": "Đúng vào thứ Hai: lần sau ôn vào thứ Ba. Đúng lần nữa: lần sau ôn vào thứ Sáu.",
+                  "note": "The interval grows only as fast as your recall succeeds."
+                },
+                {
+                  "id": "method-spaced-repetition-rule-1-ex-2",
+                  "en": "Wrong on Friday: the item returns today, not next month.",
+                  "vi": "Sai vào thứ Sáu: mục đó quay lại hôm nay, không phải tháng sau.",
+                  "note": "Skipping a failure is how a review queue fills up with words you never learn."
+                }
+              ]
+            },
+            {
+              "id": "method-spaced-repetition-rule-2",
+              "title": "Start small and be honest",
+              "statement": "Five difficult reviews a day beats fifty easy ones. A short list reviewed daily is worth more than a long list reviewed once a month.",
+              "examples": [
+                {
+                  "id": "method-spaced-repetition-rule-2-ex-1",
+                  "en": "Ten new words a day, reviewed every day, beats fifty new words a week.",
+                  "vi": "Mười từ mới mỗi ngày, ôn hằng ngày, tốt hơn năm mươi từ mới mỗi tuần.",
+                  "note": "Consistency is what creates the intervals; volume without review creates nothing."
+                }
+              ]
+            },
+            {
+              "id": "method-spaced-repetition-rule-3",
+              "title": "Count the hard words only",
+              "statement": "An item that needs three goes in three days is not ready for next month. Test it at the real interval before you promote it.",
+              "examples": [
+                {
+                  "id": "method-spaced-repetition-rule-3-ex-1",
+                  "en": "through, thought, tough: three words that look the same and are all still hard.",
+                  "vi": "through, thought, tough: ba từ giống nhau và cả ba đều còn khó.",
+                  "note": "Similar-looking words stay in the queue longer than easy ones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-spaced-repetition-step-audio",
+          "type": "audio",
+          "title": "The spaced repetition schedule",
+          "audio": {
+            "kind": "speech",
+            "text": "Review today, tomorrow, in three days, in a week, and in a month. If you forget, start again today."
+          }
+        },
+        {
+          "id": "method-spaced-repetition-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-spaced-repetition-ex-1",
+              "en": "I met reluctant on Monday, and I had not forgotten it on Friday because I looked at it on Tuesday and Thursday.",
+              "vi": "Tôi gặp từ reluctant vào thứ Hai, và tôi không quên nó vào thứ Sáu vì đã xem lại vào thứ Ba và thứ Năm.",
+              "note": "Two short reviews beat one long study session with the same material."
+            },
+            {
+              "id": "method-spaced-repetition-ex-2",
+              "en": "I studied forty new words on Sunday. On Monday I could remember six.",
+              "vi": "Tôi học bốn mươi từ mới vào Chủ nhật. Đến thứ Hai tôi chỉ nhớ được sáu từ.",
+              "note": "This is what a one-off session produces, and it is why bulk studying feels good and works badly."
+            },
+            {
+              "id": "method-spaced-repetition-ex-3",
+              "en": "Now I learn ten words a day and review them the next day, three days later, and a week later.",
+              "vi": "Giờ tôi học mười từ mỗi ngày và ôn lại vào hôm sau, ba ngày sau, và một tuần sau.",
+              "note": "The same ten words a day is a real curriculum after a month."
+            }
+          ]
+        },
+        {
+          "id": "method-spaced-repetition-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-spaced-repetition-ex-1",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-spaced-repetition",
+              "difficulty": "beginner",
+              "prompt": "You learn a new word today and answer correctly when you review it tomorrow. What should happen to the next interval?",
+              "instruction": "Choose the correct action.",
+              "items": [
+                {
+                  "id": "method-spaced-repetition-ex-1-opt-a",
+                  "text": "Shorten it, because easy words need less practice",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-spaced-repetition-ex-1-opt-b",
+                  "text": "Lengthen it, because a successful recall justifies waiting longer",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-spaced-repetition-ex-1-opt-c",
+                  "text": "Keep it the same, because the schedule is fixed",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-spaced-repetition-ex-1-opt-d",
+                  "text": "Remove it from the review list",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-spaced-repetition-ex-1-opt-b"
+                ]
+              },
+              "explanation": "Spaced repetition stretches the interval only when the recall succeeded. Shortening after a correct answer would mean you never reach a monthly review.",
+              "xp": 10
+            },
+            {
+              "id": "method-spaced-repetition-ex-2",
+              "kind": "trueFalse",
+              "topicID": "methods",
+              "lessonID": "method-spaced-repetition",
+              "difficulty": "beginner",
+              "prompt": "If you fail to recall an item, the correct action is to review it again the same day.",
+              "instruction": "Decide if the statement is true or false.",
+              "items": [
+                {
+                  "id": "method-spaced-repetition-ex-2-opt-a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "values": [
+                  "true"
+                ]
+              },
+              "explanation": "A failure means the previous interval was too long, so the item goes back to the shortest one instead of being dropped.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-spaced-repetition-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Review just before you would forget; that timing is the whole mechanism.",
+            "Grow the interval after a correct recall, reset it to today after a miss.",
+            "Few items reviewed daily beat many items reviewed rarely."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-shadowing",
+      "title": "Shadowing",
+      "summary": "Speak along with a native recording, matching its rhythm and stress, not just its words. The goal is not comprehension; it is muscle memory for the sound of English.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-shadowing-step-theory",
+          "type": "theory",
+          "heading": "Shadowing",
+          "body": "Shadowing means playing a short recording and speaking along with it in real time, like a shadow. You are deliberately late by half a second so your voice sits just behind the speaker's.\n\nThe point is rhythm, stress and connected speech, the things you cannot learn by reading. English sentences are shortened and blended, and shadowing forces your mouth to follow those patterns instead of pronouncing each word separately.\n\nThe procedure is always the same: listen once without speaking to catch the meaning, play again and speak with it, then play a third time without the audio to check that the sentence stayed in your mouth. Five minutes of shadowing is roughly an hour of reading for your accent.",
+          "rules": [
+            {
+              "id": "method-shadowing-rule-1",
+              "title": "Shadow the rhythm, not the words",
+              "statement": "The stress pattern matters more than the individual sounds. Speak slightly behind the recording, and copy the stressed words and the short unstressed words together.",
+              "examples": [
+                {
+                  "id": "method-shadowing-rule-1-ex-1",
+                  "en": "I want to GO, not to STAY.",
+                  "vi": "Tôi MUỐN ĐI, chứ không phải Ở LẠI.",
+                  "note": "Real English is not evenly weighted, and shadowing teaches you that automatically."
+                },
+                {
+                  "id": "method-shadowing-rule-1-ex-2",
+                  "en": "I do not know.",
+                  "vi": "Tôi không biết.",
+                  "note": "Shadowing the contraction \"do not\" to \"don't\" is more useful than translating it."
+                }
+              ]
+            },
+            {
+              "id": "method-shadowing-rule-2",
+              "title": "Use short clips, repeated many times",
+              "statement": "Work with ten to twenty seconds of speech and repeat it five or six times. A long passage gives you nothing to copy because the prosody changes too fast to track.",
+              "examples": [
+                {
+                  "id": "method-shadowing-rule-2-ex-1",
+                  "en": "One fifteen-second clip, six repetitions, beats one five-minute audio played once.",
+                  "vi": "Một đoạn mười lăm giây, lặp sáu lần, hơn một đoạn năm phút phát một lần.",
+                  "note": "Repetition is what turns a new sound into an automatic one."
+                }
+              ]
+            },
+            {
+              "id": "method-shadowing-rule-3",
+              "title": "Record yourself and compare",
+              "statement": "Play your own voice next to the original. You will hear the differences instantly, and you will also hear where the native speaker used a weak form that you turned into a full one.",
+              "examples": [
+                {
+                  "id": "method-shadowing-rule-3-ex-1",
+                  "en": "I have got a question versus I've got a question.",
+                  "vi": "I have got a question so với I've got a question.",
+                  "note": "The contracted version is what the speaker actually said."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-shadowing-step-audio",
+          "type": "audio",
+          "title": "Shadow this sentence",
+          "audio": {
+            "kind": "speech",
+            "text": "Listen first, then speak with the audio, slightly behind it. Finally, say it again with no audio at all."
+          }
+        },
+        {
+          "id": "method-shadowing-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-shadowing-ex-1",
+              "en": "I said the whole sentence with him, half a second behind, and my accent got closer each time.",
+              "vi": "Tôi nói cả câu theo anh ấy, chậm hơn nửa giây, và giọng tôi tiến gần hơn mỗi lần.",
+              "note": "Three repetitions of one sentence teaches more than one pass over a long audio."
+            },
+            {
+              "id": "method-shadowing-ex-2",
+              "en": "I copied want to until it came out as wanna, and now that is how I say it.",
+              "vi": "Tôi bắt chước cụm want to cho đến khi nó ra thành wanna, và giờ tôi nói như vậy.",
+              "note": "You absorb the real reductions of spoken English without studying grammar rules."
+            },
+            {
+              "id": "method-shadowing-ex-3",
+              "en": "I recorded myself and played both voices. I was pronouncing every word; the speaker was linking them.",
+              "vi": "Tôi ghi âm lại và so sánh hai giọng. Tôi phát âm từng từ một; người nói thì nối chúng lại.",
+              "note": "The recording makes the gap obvious in a way that speaking alone never does."
+            }
+          ]
+        },
+        {
+          "id": "method-shadowing-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-shadowing-ex-1",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-shadowing",
+              "difficulty": "beginner",
+              "prompt": "In shadowing, you should speak with the audio or after it has finished?",
+              "instruction": "Choose the correct timing.",
+              "items": [
+                {
+                  "id": "method-shadowing-ex-1-opt-a",
+                  "text": "With the audio, about half a second behind the speaker",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-shadowing-ex-1-opt-b",
+                  "text": "After the audio has finished, sentence by sentence",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-shadowing-ex-1-opt-c",
+                  "text": "Only when the audio is paused",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-shadowing-ex-1-opt-d",
+                  "text": "At the same speed as the speaker, word by word",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-shadowing-ex-1-opt-a"
+                ]
+              },
+              "explanation": "Shadowing is simultaneous. Speaking afterwards is repetition, which trains recall but not the rhythm of connected speech.",
+              "xp": 10
+            },
+            {
+              "id": "method-shadowing-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-shadowing",
+              "difficulty": "beginner",
+              "prompt": "How long should a shadowing clip be, according to the rule \"Use short clips, repeated many times\"? Answer in seconds.",
+              "instruction": "Type the range in seconds, for example 10 to 20.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "10 to 20",
+                  "10-20",
+                  "ten to twenty",
+                  "10 to 20 seconds",
+                  "ten to twenty seconds"
+                ]
+              },
+              "explanation": "Ten to twenty seconds, repeated five or six times. A long passage changes prosody too fast for you to copy it accurately.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-shadowing-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Speak with the audio, half a second behind, and copy the stress pattern rather than the individual sounds.",
+            "Use ten to twenty second clips and repeat each one five or six times.",
+            "Record yourself and compare; the differences in connected speech show up immediately."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-dictation",
+      "title": "Dictation",
+      "summary": "Play a sentence, type exactly what you hear, then read the diff. Dictation is the fastest way to find out whether you actually understand what you hear, and it trains spelling at the same time.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-dictation-step-theory",
+          "type": "theory",
+          "heading": "Dictation",
+          "body": "Listening exercises often ask only whether you recognised the words. Dictation asks for something much harder: type the words exactly, in the right order, with the right spelling, from sound alone.\n\nThe method has four steps. Play the audio once without typing so you understand the sentence. Play it again and type what you hear, guessing the spelling. Compare your version with the original and look at the first word where they differ, not the whole sentence. Then play it one final time and type it again from scratch.\n\nThe last step is the important one. Re-dictating a sentence you failed the first time is what moves it into memory, and it takes half a minute.\n\nMost mistakes in dictation are not vocabulary gaps. They are unstressed words, contractions, silent letters, and linking sounds that you do not hear because you are listening to words instead of sounds.",
+          "rules": [
+            {
+              "id": "method-dictation-rule-1",
+              "title": "Find the first error, not all of them",
+              "statement": "Read the diff from the left and fix the first wrong word. After that the rest of the sentence is often wrong only because the first word was wrong, so one fix can repair the whole line.",
+              "examples": [
+                {
+                  "id": "method-dictation-rule-1-ex-1",
+                  "en": "I wrote the boy is play football, and the first error was play, which should be playing.",
+                  "vi": "Tôi viết the boy is play football, và lỗi đầu tiên là play, phải là playing.",
+                  "note": "After \"is\" you need the -ing form, so the whole rest of the line falls into place."
+                }
+              ]
+            },
+            {
+              "id": "method-dictation-rule-2",
+              "title": "Do not translate in your head",
+              "statement": "Hear the sounds, not the meaning. A word you would never think of saying in English, like comfortable, can only be written correctly if you hear it instead of translating it.",
+              "examples": [
+                {
+                  "id": "method-dictation-rule-2-ex-1",
+                  "en": "They said comfortable, and I typed compleasible.",
+                  "vi": "Người ta nói comfortable, còn tôi gõ compleasible.",
+                  "note": "The spelling is a second step, after the sound. Get the sound first."
+                }
+              ]
+            },
+            {
+              "id": "method-dictation-rule-3",
+              "title": "Handle the invisible parts",
+              "statement": "Contracted and weak forms are usually not pronounced as they are written, so expect to add or remove letters. Common cases: I'm, he's, didn't, want to, gonna.",
+              "examples": [
+                {
+                  "id": "method-dictation-rule-3-ex-1",
+                  "en": "You hear wanna, and you write want to.",
+                  "vi": "Bạn nghe wanna, rồi viết thành want to.",
+                  "note": "The sound and the spelling are different, and dictation is where you meet that fact."
+                },
+                {
+                  "id": "method-dictation-rule-3-ex-2",
+                  "en": "You hear kinda, and you write kind of.",
+                  "vi": "Bạn nghe kinda, rồi viết thành kind of.",
+                  "note": "The schwa sound appears where the writing has a full vowel."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-dictation-step-audio",
+          "type": "audio",
+          "title": "Dictation practice",
+          "audio": {
+            "kind": "speech",
+            "text": "The boy is playing football in the park this afternoon."
+          }
+        },
+        {
+          "id": "method-dictation-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-dictation-ex-1",
+              "en": "I played the sentence three times: once to listen, once to type, once to fix my first error.",
+              "vi": "Tôi phát câu đó ba lần: một lần để nghe, một lần để gõ, một lần để sửa lỗi đầu tiên.",
+              "note": "Three plays is the minimum, and the third is the one that teaches."
+            },
+            {
+              "id": "method-dictation-ex-2",
+              "en": "My first error was ball, not football. When I fixed it, the rest of the line was right.",
+              "vi": "Lỗi đầu tiên của tôi là ball chứ không phải football. Khi sửa xong, phần còn lại của câu đã đúng.",
+              "note": "One real word is often the whole difference between correct and incorrect."
+            },
+            {
+              "id": "method-dictation-ex-3",
+              "en": "He would of gone, but the speaker said he'd have gone, and that is what I wrote.",
+              "vi": "Anh ta đáng lẽ đã đi, nhưng người nói nói he'd have gone, và đó là điều tôi viết.",
+              "note": "Dictation forces the real spoken grammar, not the grammar you expect."
+            }
+          ]
+        },
+        {
+          "id": "method-dictation-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-dictation-ex-1",
+              "kind": "dictation",
+              "topicID": "methods",
+              "lessonID": "method-dictation",
+              "difficulty": "beginner",
+              "prompt": "Type the sentence you hear.",
+              "instruction": "Play the audio and type the sentence exactly.",
+              "audio": {
+                "kind": "speech",
+                "text": "The boy is playing football in the park."
+              },
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The boy is playing football in the park."
+                ]
+              },
+              "explanation": "Two things to check: is becomes the -ing form playing, and football is one word, not ball after foot.",
+              "xp": 15
+            },
+            {
+              "id": "method-dictation-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-dictation",
+              "difficulty": "beginner",
+              "prompt": "You hear the sentence \"I don't like it.\" Type it as it is written in English, keeping the contraction.",
+              "instruction": "Type the full sentence, with the apostrophe.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I don't like it.",
+                  "I do not like it"
+                ]
+              },
+              "explanation": "The spoken form and the written form differ. Both are accepted here, but the contracted version is what the speaker actually said.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-dictation-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Listen, type, compare, then re-type from scratch: four plays, not one.",
+            "Fix the first error only, because one wrong word can spoil the whole line.",
+            "Write the real spoken forms, contractions included, not the expanded ones."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-read-aloud",
+      "title": "Reading Aloud",
+      "summary": "Read English text out loud slowly and accurately. It trains pronunciation, linking, stress and spelling at the same time, and it makes an unfamiliar text far easier to remember.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-read-aloud-step-theory",
+          "type": "theory",
+          "heading": "Reading Aloud",
+          "body": "Reading aloud is different from reading silently and different from shadowing: you are speaking at your own speed, with full control, so you can fix what you hear.\n\nThe procedure is to read one short paragraph, slowly and exactly, marking the stressed words with a slash. Look up only the words you cannot say, no more. Then read it again, now paying attention to the link between the last sound of a word and the first sound of the next. Then read it once more at normal speed, without marking anything.\n\nThree reads of the same paragraph will do more for your English than one careful silent read, because the mouth is a memory device. Say a word enough times and it stops being something you look up and becomes something you own.",
+          "rules": [
+            {
+              "id": "method-read-aloud-rule-1",
+              "title": "Go slowly enough to be accurate",
+              "statement": "Accuracy first, speed later. If you cannot read a word correctly, you have not read it at all. Slow, correct repetition beats fast and wrong.",
+              "examples": [
+                {
+                  "id": "method-read-aloud-rule-1-ex-1",
+                  "en": "I said comfortable five times slowly before I tried it quickly.",
+                  "vi": "Tôi nói comfortable năm lần thật chậm trước khi thử nói nhanh.",
+                  "note": "Fast reading of an unfamiliar word is fast practice of an error."
+                }
+              ]
+            },
+            {
+              "id": "method-read-aloud-rule-2",
+              "title": "Mark the stress",
+              "statement": "Draw a slash over the stressed syllable before you read. Stressed words are longer and clearer, and unstressed words are short and quiet. This is how you stop pronouncing every word equally.",
+              "examples": [
+                {
+                  "id": "method-read-aloud-rule-2-ex-1",
+                  "en": "I want to GO, not to STAY.",
+                  "vi": "Tôi MUỐN ĐI, chứ không phải Ở LẠI.",
+                  "note": "The second part is said with a light voice, not the volume of the first."
+                }
+              ]
+            },
+            {
+              "id": "method-read-aloud-rule-3",
+              "title": "Stop at every word you cannot say",
+              "statement": "Mark the unknowns, say them aloud, and keep going. Reading past a word you do not know trains the habit of skipping, which is exactly the habit that stops your listening later.",
+              "examples": [
+                {
+                  "id": "method-read-aloud-rule-3-ex-1",
+                  "en": "I stopped at thorough, said it three times, and finished the paragraph.",
+                  "vi": "Tôi dừng ở từ thorough, nói nó ba lần, rồi đọc nốt đoạn văn.",
+                  "note": "Finishing the paragraph keeps the passage a single remembered unit."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-read-aloud-step-audio",
+          "type": "audio",
+          "title": "Read this aloud",
+          "audio": {
+            "kind": "speech",
+            "text": "Read it slowly, mark the stressed words, then read it again at normal speed."
+          }
+        },
+        {
+          "id": "method-read-aloud-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-read-aloud-ex-1",
+              "en": "I read the same page three times, and by the third time I did not need to look at the words.",
+              "vi": "Tôi đọc cùng một trang ba lần, và đến lần thứ ba tôi không cần nhìn chữ nữa.",
+              "note": "The third read is where the words become automatic."
+            },
+            {
+              "id": "method-read-aloud-ex-2",
+              "en": "I marked the stressed words first: I WAved at her, she WAVED back.",
+              "vi": "Tôi đánh dấu các từ có trọng âm trước: I WAved at her, she WAVed back.",
+              "note": "Once the pattern is marked, the rhythm is obvious."
+            },
+            {
+              "id": "method-read-aloud-ex-3",
+              "en": "Reading the recipe aloud, I learned cook, boil and stir without looking any of them up.",
+              "vi": "Đọc công thức nấu ăn thành tiếng, tôi học cook, boil và stir mà không cần tra từ điển.",
+              "note": "Saying the word attaches it to a real sentence, not to a list."
+            }
+          ]
+        },
+        {
+          "id": "method-read-aloud-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-read-aloud-ex-1",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-read-aloud",
+              "difficulty": "beginner",
+              "prompt": "Why does the method say to read slowly the first time?",
+              "instruction": "Choose the reason given in the lesson.",
+              "items": [
+                {
+                  "id": "method-read-aloud-ex-1-opt-a",
+                  "text": "Because reading slowly saves time",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-read-aloud-ex-1-opt-b",
+                  "text": "Because accuracy has to come before speed",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-read-aloud-ex-1-opt-c",
+                  "text": "Because slow reading is the correct final pace",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-read-aloud-ex-1-opt-d",
+                  "text": "Because fast reading is bad for everyone",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-read-aloud-ex-1-opt-b"
+                ]
+              },
+              "explanation": "The lesson sets the order as accuracy first, speed last. Fast and correct comes only after the word can be pronounced correctly at a slow pace.",
+              "xp": 10
+            },
+            {
+              "id": "method-read-aloud-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-read-aloud",
+              "difficulty": "beginner",
+              "prompt": "The lesson compares a second read to a different skill, where you speak with the audio slightly behind the speaker. Which method is that?",
+              "instruction": "Type the name of that method.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "shadowing",
+                  "shadow"
+                ]
+              },
+              "explanation": "Speaking along with audio is shadowing, which was the previous lesson. Reading aloud is speaking at your own pace with no audio to follow.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-read-aloud-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Accuracy before speed: a word you cannot pronounce is a word you have not read.",
+            "Mark the stressed words with a slash so you stop giving every word equal weight.",
+            "Read the same short text three times, ending at normal speed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-sentence-mining",
+      "title": "Sentence Mining",
+      "summary": "Save whole real sentences, not single word lists. A word learned inside a sentence you have actually read keeps its meaning, its grammar and its sound at the same time.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-sentence-mining-step-theory",
+          "type": "theory",
+          "heading": "Sentence Mining",
+          "body": "A vocabulary list gives you a word with no life attached: a plus noun and a meaning. A mined sentence gives you the same word in a real sentence, with a real subject, a real tense and a real person doing something.\n\nSo when you read anything in English and a word stops you, do not look it up in a dictionary. Write down the whole sentence, then note the meaning of the word in that sentence only. Save it with the sentence. Later, review the sentence, not the word, and the word comes back with its grammar intact.\n\nFive mined sentences a day, reviewed with spaced repetition, is a real and durable course. Five words a day from a list is not, because a list has nothing for your memory to hold on to.",
+          "rules": [
+            {
+              "id": "method-sentence-mining-rule-1",
+              "title": "Save the whole sentence, never the word alone",
+              "statement": "The sentence is the unit of learning. Write the full sentence with enough context to make sense of it, because the surrounding words are what tell you how the target word is being used.",
+              "examples": [
+                {
+                  "id": "method-sentence-mining-rule-1-ex-1",
+                  "en": "The report raised concerns among staff. Saved: the full sentence, not just raised.",
+                  "vi": "Báo cáo đã gây lo ngại trong số nhân viên. Lưu: cả câu, không chỉ riêng từ raised.",
+                  "note": "The next noun after raised would have changed the meaning, so context is required."
+                }
+              ]
+            },
+            {
+              "id": "method-sentence-mining-rule-2",
+              "title": "Write the meaning in that sentence, not a dictionary gloss",
+              "statement": "Record what the word means where you met it. A word rarely has one fixed translation, so a gloss from a dictionary is often a different sense from the one in front of you.",
+              "examples": [
+                {
+                  "id": "method-sentence-mining-rule-2-ex-1",
+                  "en": "I will raise your hand at the meeting. Here raise means put up, not increase.",
+                  "vi": "Tôi sẽ giơ tay bạn lên trong cuộc họp. Ở đây raise nghĩa là giơ lên, không phải tăng.",
+                  "note": "One word, two meanings; the sentence tells you which one you learned."
+                }
+              ]
+            },
+            {
+              "id": "method-sentence-mining-rule-3",
+              "title": "Mine short, spoken, real sentences",
+              "statement": "Sentences from films, series and podcasts are better material than newspaper prose, because the grammar is small enough to copy and the sentence is something a person actually said.",
+              "examples": [
+                {
+                  "id": "method-sentence-mining-rule-3-ex-1",
+                  "en": "I thought you said Tuesday. It's Wednesday.",
+                  "vi": "Tôi tưởng bạn nói thứ Ba. Hôm nay là thứ Tư.",
+                  "note": "Short, natural, and full of contractions and linking you can copy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-sentence-mining-step-audio",
+          "type": "audio",
+          "title": "A sentence worth mining",
+          "audio": {
+            "kind": "speech",
+            "text": "I thought you said Tuesday, but it is Wednesday."
+          }
+        },
+        {
+          "id": "method-sentence-mining-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-sentence-mining-ex-1",
+              "en": "I read it: \"I didn't see it coming.\" Saved with the sentence, because did not see describes the past and the surprise.",
+              "vi": "Tôi đọc câu: \"I didn't see it coming.\" Lưu kèm cả câu, vì did not see mô tả thì quá khứ và sự bất ngờ.",
+              "note": "The surrounding words tell you which sense of see you are learning."
+            },
+            {
+              "id": "method-sentence-mining-ex-2",
+              "en": "I did not save the word, I saved the sentence, and three weeks later I still remember the whole line.",
+              "vi": "Tôi không lưu từ, tôi lưu cả câu, và ba tuần sau tôi vẫn nhớ nguyên cả dòng.",
+              "note": "This is the entire argument for mining sentences instead of words."
+            },
+            {
+              "id": "method-sentence-mining-ex-3",
+              "en": "From a podcast I took: \"the rent went up again\", and now rent is a word I own.",
+              "vi": "Từ một podcast tôi lấy câu: \"the rent went up again\", và giờ rent là một từ tôi đã sở hữu.",
+              "note": "Mining works with any audio you already enjoy."
+            }
+          ]
+        },
+        {
+          "id": "method-sentence-mining-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-sentence-mining-ex-1",
+              "kind": "rearrangeWords",
+              "topicID": "methods",
+              "lessonID": "method-sentence-mining",
+              "difficulty": "beginner",
+              "prompt": "Rebuild the mined sentence.",
+              "instruction": "Put the words in the correct order.",
+              "items": [
+                {
+                  "id": "method-sentence-mining-ex-1-t0",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-sentence-mining-ex-1-t1",
+                  "text": "rent",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-sentence-mining-ex-1-t2",
+                  "text": "went",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-sentence-mining-ex-1-t3",
+                  "text": "up",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-sentence-mining-ex-1-t4",
+                  "text": "again",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  "the",
+                  "rent",
+                  "went",
+                  "up",
+                  "again"
+                ]
+              },
+              "explanation": "The mined sentence is \"the rent went up again\". Went is the past of go, and the phrasal verb go up means increase.",
+              "xp": 10
+            },
+            {
+              "id": "method-sentence-mining-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-sentence-mining",
+              "difficulty": "beginner",
+              "prompt": "What is the unit of learning in sentence mining: the word alone, or the whole sentence?",
+              "instruction": "Type the unit of learning.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "the whole sentence",
+                  "sentence",
+                  "the sentence"
+                ]
+              },
+              "explanation": "The sentence is the unit, because it carries the meaning, the grammar and the sound of the word together.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-sentence-mining-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Save the whole sentence, because the context is what teaches the word.",
+            "Write the meaning you met, not a dictionary gloss; one word rarely has one translation.",
+            "Mine short, natural sentences from audio you actually enjoy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-immersion",
+      "title": "Immersion",
+      "summary": "Put English in the environment where you already live. Change the phone language, follow English accounts, and make English the default for the things you would do anyway.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-immersion-step-theory",
+          "type": "theory",
+          "heading": "Immersion",
+          "body": "Immersion is the practice of surrounding yourself with English so that the language is always available, without a lesson being scheduled. The difference from studying is intent: in a study session you decide to practise, and in immersion the practice is a side effect of what you were doing anyway.\n\nIt works because the input is enormous and repeated. Someone who follows English subtitles, English recipes and English social media receives thousands of hours of the language a year, in contexts they care about.\n\nIt is not a substitute for the deliberate methods. Immersion supplies the raw material; active recall, spaced repetition and dictation turn that material into knowledge. The mistake is expecting a Netflix evening to teach you irregular verbs.",
+          "rules": [
+            {
+              "id": "method-immersion-rule-1",
+              "title": "Immerse in things you already love",
+              "statement": "The material has to be interesting enough to keep you coming back. Pick films, books, games and topics you would use anyway, and accept that the first months will be hard.",
+              "examples": [
+                {
+                  "id": "method-immersion-rule-1-ex-1",
+                  "en": "I read the news in English every morning because I read the news anyway.",
+                  "vi": "Tôi đọc tin tức bằng tiếng Anh mỗi sáng vì dù sao tôi vẫn đọc tin tức.",
+                  "note": "No extra time, only a change of language."
+                }
+              ]
+            },
+            {
+              "id": "method-immersion-rule-2",
+              "title": "Change the defaults, not just the intention",
+              "statement": "Set the phone, the keyboard and the browser to English. Every default you change removes a decision, and decisions are what break a habit.",
+              "examples": [
+                {
+                  "id": "method-immersion-rule-2-ex-1",
+                  "en": "My phone, my keyboard and my search bar are all in English now.",
+                  "vi": "Điện thoại, bàn phím và thanh tìm kiếm của tôi giờ đều dùng tiếng Anh.",
+                  "note": "You meet English dozens of times a day without choosing to."
+                }
+              ]
+            },
+            {
+              "id": "method-immersion-rule-3",
+              "title": "Collect what you meet",
+              "statement": "Immersion without capture leaves the input behind. Send every word that stops you into a sentence list, so the exposure is turned into something you can review.",
+              "examples": [
+                {
+                  "id": "method-immersion-rule-3-ex-1",
+                  "en": "If you do not save it, you will meet it again and stop again.",
+                  "vi": "Nếu bạn không lưu lại, bạn sẽ gặp lại nó và lại dừng lại.",
+                  "note": "Capture is the bridge between input and a real review schedule."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-immersion-step-audio",
+          "type": "audio",
+          "title": "What immersion is",
+          "audio": {
+            "kind": "speech",
+            "text": "Immersion means putting English around you in things you already enjoy, and saving every word that stops you."
+          }
+        },
+        {
+          "id": "method-immersion-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-immersion-ex-1",
+              "en": "I set my phone to English in the evening, and by the next morning I was reading notifications without noticing.",
+              "vi": "Tôi đổi điện thoại sang tiếng Anh buổi tối, và sáng hôm sau tôi đã đọc thông báo mà không nhận ra.",
+              "note": "This is exposure that costs no study time at all."
+            },
+            {
+              "id": "method-immersion-ex-2",
+              "en": "I follow English cooking channels, so I learn oven, boil and dough while I am hungry and relaxed.",
+              "vi": "Tôi theo dõi các kênh nấu ăn tiếng Anh, nên tôi học oven, boil và dough khi đang đói và thư giãn.",
+              "note": "Interest and repetition do the work that a textbook would be doing."
+            },
+            {
+              "id": "method-immersion-ex-3",
+              "en": "I watch a lot of English and forget all of it, because I never send a single sentence to my review list.",
+              "vi": "Tôi xem rất nhiều tiếng Anh và quên sạch, vì tôi chưa từng gửi một câu nào vào danh sách ôn tập.",
+              "note": "This is the common failure: exposure without capture is not study."
+            }
+          ]
+        },
+        {
+          "id": "method-immersion-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-immersion-ex-1",
+              "kind": "trueFalse",
+              "topicID": "methods",
+              "lessonID": "method-immersion",
+              "difficulty": "beginner",
+              "prompt": "Immersion alone is enough to learn irregular verb forms, so no review list is needed.",
+              "instruction": "Decide if the statement is true or false.",
+              "items": [
+                {
+                  "id": "method-immersion-ex-1-opt-a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "values": [
+                  "false"
+                ]
+              },
+              "explanation": "Immersion supplies raw input. Active recall, spaced repetition and dictation turn that input into usable knowledge, so capture and review are still required.",
+              "xp": 10
+            },
+            {
+              "id": "method-immersion-ex-2",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-immersion",
+              "difficulty": "beginner",
+              "prompt": "Which of these is the best material for immersion?",
+              "instruction": "Choose the one the lesson recommends.",
+              "items": [
+                {
+                  "id": "method-immersion-ex-2-opt-a",
+                  "text": "A textbook you dislike but feel you should read",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-immersion-ex-2-opt-b",
+                  "text": "English content on topics you already care about",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-immersion-ex-2-opt-c",
+                  "text": "Grammar exercises with no interesting subject",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-immersion-ex-2-opt-d",
+                  "text": "A dictionary read from A to Z",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-immersion-ex-2-opt-b"
+                ]
+              },
+              "explanation": "The material has to be interesting enough to keep you returning, so immersion lives in the films, books, games and topics you already use.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-immersion-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Immerse in content you already enjoy, so the input costs you no extra time.",
+            "Change the phone, keyboard and browser defaults; removed decisions become habits.",
+            "Capture every word that stops you, because exposure without capture is not study."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-listening-repetition",
+      "title": "Listening Repetition",
+      "summary": "Hear the same sixty seconds many times instead of pressing play and moving on. Repetition lets the ear stop guessing and start hearing the words that are actually there.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-listening-repetition-step-theory",
+          "type": "theory",
+          "heading": "Listening Repetition",
+          "body": "Most listening fails because the audio is longer than your attention. You hear the first ten seconds well, lose the thread in the middle, and hear nothing at the end. Repeating a very short clip removes that problem, because your attention never has to last long.\n\nThe routine is: play one short clip without the text and write what you understand. Play it again and check the words you got wrong. Read the transcript and note the specific sounds, the contractions and the linking. Then play it once more without the text, at a slower speed. Five plays of one minute is worth more than one play of an hour.\n\nSpeed control is part of the method. Slowing the audio down does not spoil it; it just lets you hear the segment that you were previously reading as one word.",
+          "rules": [
+            {
+              "id": "method-listening-repetition-rule-1",
+              "title": "Keep the clip under a minute",
+              "statement": "Repetition only works on material short enough to hold in your head. Choose one minute, learn it completely, then take the next minute.",
+              "examples": [
+                {
+                  "id": "method-listening-repetition-rule-1-ex-1",
+                  "en": "One minute, five times, beats one hour, once.",
+                  "vi": "Một phút, nghe năm lần, hơn một giờ, nghe một lần.",
+                  "note": "Repetition builds detail; duration only builds tolerance."
+                }
+              ]
+            },
+            {
+              "id": "method-listening-repetition-rule-2",
+              "title": "Write before you look at the transcript",
+              "statement": "Write down what you understood before reading the text. If you read first, the next listen only tests recognition again, which is the skill you already have.",
+              "examples": [
+                {
+                  "id": "method-listening-repetition-rule-2-ex-1",
+                  "en": "I wrote three words, then the transcript had eleven, so now I know the eight I had missed.",
+                  "vi": "Tôi viết được ba từ, rồi bản lời thoại có mười một từ, nên giờ tôi biết tám từ tôi đã bỏ lỡ.",
+                  "note": "The gap between your version and the transcript is the lesson."
+                }
+              ]
+            },
+            {
+              "id": "method-listening-repetition-rule-3",
+              "title": "Slow it down, never give up on the text",
+              "statement": "If you cannot hear a word at normal speed, play it at half speed. If it is still unclear, then read it, then hear it again at normal speed.",
+              "examples": [
+                {
+                  "id": "method-listening-repetition-rule-3-ex-1",
+                  "en": "I could not hear wanted to, so I slowed it down and copied the real linking sound.",
+                  "vi": "Tôi không nghe rõ cụm wanted to, nên tôi giảm tốc độ và chép lại âm nối thật.",
+                  "note": "Slowing down is a technique, not a failure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-listening-repetition-step-audio",
+          "type": "audio",
+          "title": "A clip to repeat",
+          "audio": {
+            "kind": "speech",
+            "text": "The train leaves at seven, so I need to be at the station by six forty five."
+          }
+        },
+        {
+          "id": "method-listening-repetition-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-listening-repetition-ex-1",
+              "en": "I heard the clip once and understood half. I heard it a fifth time and understood all of it.",
+              "vi": "Tôi nghe clip một lần và hiểu một nửa. Nghe đến lần thứ năm thì hiểu hết.",
+              "note": "The improvement is not new knowledge; it is the ear catching what was always there."
+            },
+            {
+              "id": "method-listening-repetition-ex-2",
+              "en": "I wrote what I heard, read the transcript, and the words I had missed were all contractions.",
+              "vi": "Tôi viết lại những gì đã nghe, đọc bản lời thoại, và những từ tôi bỏ lỡ đều là dạng rút gọn.",
+              "note": "Knowing what you missed tells you what to listen for next time."
+            },
+            {
+              "id": "method-listening-repetition-ex-3",
+              "en": "I played the same news bulletin at half speed every morning for a week, and by Friday I needed no text at all.",
+              "vi": "Tôi phát cùng một bản tin nửa tốc độ mỗi sáng trong một tuần, và đến thứ Sáu tôi không cần phụ đề.",
+              "note": "One minute a day, repeated, is a listening course."
+            }
+          ]
+        },
+        {
+          "id": "method-listening-repetition-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-listening-repetition-ex-1",
+              "kind": "listening",
+              "topicID": "methods",
+              "lessonID": "method-listening-repetition",
+              "difficulty": "beginner",
+              "prompt": "What time does the speaker say the train leaves?",
+              "instruction": "Play the audio and choose the time.",
+              "audio": {
+                "kind": "speech",
+                "text": "The train leaves at seven, so I need to be at the station by six forty five."
+              },
+              "items": [
+                {
+                  "id": "method-listening-repetition-ex-1-opt-a",
+                  "text": "Six",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-listening-repetition-ex-1-opt-b",
+                  "text": "Six forty five",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-listening-repetition-ex-1-opt-c",
+                  "text": "Seven",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-listening-repetition-ex-1-opt-d",
+                  "text": "Seven fifteen",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-listening-repetition-ex-1-opt-c"
+                ]
+              },
+              "explanation": "The train leaves at seven. Six forty five is when the speaker has to be at the station, which is the detail that sounds like the answer on the first listen.",
+              "xp": 10
+            },
+            {
+              "id": "method-listening-repetition-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-listening-repetition",
+              "difficulty": "beginner",
+              "prompt": "According to rule 1, how long should a repeated listening clip be at most? Answer in minutes or seconds.",
+              "instruction": "Type the maximum length of the clip.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "one minute",
+                  "1 minute",
+                  "60 seconds",
+                  "one minutes",
+                  "a minute",
+                  "1 minutes"
+                ]
+              },
+              "explanation": "The rule is to keep the clip under a minute, so that you can hold the whole thing in your head and repeat it properly.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-listening-repetition-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Keep the clip under a minute and repeat it five times instead of pressing play once.",
+            "Write what you understand before reading the transcript; the gap is the lesson.",
+            "Slow the audio down to hear a word, then hear it again at normal speed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-vocabulary-in-context",
+      "title": "Vocabulary in Context",
+      "summary": "Learn a word together with the words it usually appears with. Real vocabulary is not a list of nouns; it is phrases like depend on, take part in and be aware of.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-vocabulary-in-context-step-theory",
+          "type": "theory",
+          "heading": "Vocabulary in Context",
+          "body": "Learning the word depend gives you a word you can only use in a handful of sentences. Learning the phrase depend on gives you a ready-made piece of English that you can drop into real writing immediately.\n\nSo when you meet a new word, do not save the word. Save the two or three words it habitually sits with: a preposition, an adverb, a noun. A preposition is the one learners most often get wrong, because English verbs and adjectives take fixed partners: depend on, agree with, consist of, similar to, responsible for.\n\nCollecting these partners into phrases turns vocabulary into usable English. It also makes review cheaper, because a phrase is easier to picture and to hear than an isolated word.",
+          "rules": [
+            {
+              "id": "method-vocabulary-in-context-rule-1",
+              "title": "Save the phrase, not the single word",
+              "statement": "A phrase is one unit of meaning and can be used immediately. Store depend on, not depend, so that the preposition comes with it every time.",
+              "examples": [
+                {
+                  "id": "method-vocabulary-in-context-rule-1-ex-1",
+                  "en": "It depends on the weather, not depend weather.",
+                  "vi": "Nó phụ thuộc vào thời tiết, không phải phụ thuộc thời tiết.",
+                  "note": "The preposition on is part of the phrase, so store it with the verb."
+                }
+              ]
+            },
+            {
+              "id": "method-vocabulary-in-context-rule-2",
+              "title": "Watch the words that come after",
+              "statement": "Comparatives and adjectives take fixed partners as well: similar to, different from, careful about, good at. Learn the whole pattern or you will guess wrongly every time.",
+              "examples": [
+                {
+                  "id": "method-vocabulary-in-context-rule-2-ex-1",
+                  "en": "The result was similar to last year's, and different from what we expected.",
+                  "vi": "Kết quả tương tự với năm ngoái, và khác với điều chúng tôi dự kiến.",
+                  "note": "Similar takes to; different takes from. Neither is guessable from the meaning."
+                }
+              ]
+            },
+            {
+              "id": "method-vocabulary-in-context-rule-3",
+              "title": "Use the new phrase the same day",
+              "statement": "Write or say one real sentence of your own using the phrase today. A phrase you have not used is a phrase you only recognise.",
+              "examples": [
+                {
+                  "id": "method-vocabulary-in-context-rule-3-ex-1",
+                  "en": "I am responsible for the project, so I am careful about the deadline.",
+                  "vi": "Tôi chịu trách nhiệm cho dự án, nên tôi rất cẩn thận về thời hạn.",
+                  "note": "Two phrases in one sentence, and both are now yours."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-vocabulary-in-context-step-audio",
+          "type": "audio",
+          "title": "A phrase in use",
+          "audio": {
+            "kind": "speech",
+            "text": "The result was similar to last year's, and different from what we expected."
+          }
+        },
+        {
+          "id": "method-vocabulary-in-context-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-vocabulary-in-context-ex-1",
+              "en": "I did not save decide. I saved decide on and decide against, so I always get the preposition right.",
+              "vi": "Tôi không lưu decide. Tôi lưu decide on và decide against, nên tôi luôn dùng đúng giới từ.",
+              "note": "Two phrases cover almost every use of the verb."
+            },
+            {
+              "id": "method-vocabulary-in-context-ex-2",
+              "en": "I learned the word responsible with its partner for, and that is the part I used to be getting wrong.",
+              "vi": "Tôi học từ responsible kèm giới từ for, và đó là phần tôi từng làm sai.",
+              "note": "Knowing a word but not its partner is not knowing the word."
+            },
+            {
+              "id": "method-vocabulary-in-context-ex-3",
+              "en": "I wrote one sentence with be good at today, and I already used it in a message.",
+              "vi": "Hôm nay tôi viết một câu có be good at, và tôi đã dùng nó trong một tin nhắn.",
+              "note": "A phrase used once in real life is remembered for years."
+            }
+          ]
+        },
+        {
+          "id": "method-vocabulary-in-context-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-vocabulary-in-context-ex-1",
+              "kind": "fillInTheBlank",
+              "topicID": "methods",
+              "lessonID": "method-vocabulary-in-context",
+              "difficulty": "beginner",
+              "prompt": "The answer ___ the schedule, not the price.",
+              "instruction": "Write the preposition that completes the phrase depend on.",
+              "items": [
+                {
+                  "id": "method-vocabulary-in-context-ex-1-hint-1",
+                  "text": "depend takes one fixed preposition",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "depends",
+                  "depend"
+                ]
+              },
+              "explanation": "The subject is the answer, so the verb is the third person singular depends, followed by the fixed preposition on: depends on.",
+              "xp": 10
+            },
+            {
+              "id": "method-vocabulary-in-context-ex-2",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-vocabulary-in-context",
+              "difficulty": "beginner",
+              "prompt": "The lesson says the two most important things to store with a new word are the word itself and one of its usual partners. What is the name for that partner?",
+              "instruction": "Type the grammar term.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "preposition",
+                  "a preposition",
+                  "prepositions"
+                ]
+              },
+              "explanation": "The rule is about storing the preposition with the verb or adjective, because depend on, similar to and responsible for are fixed and cannot be guessed from the meaning.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-vocabulary-in-context-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Store the phrase, not the bare word, so the preposition is never a guess.",
+            "Adjectives and comparatives also take fixed partners: similar to, different from, good at.",
+            "Use each new phrase in a real sentence the same day."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method-pomodoro",
+      "title": "The Pomodoro Technique",
+      "summary": "Work in 25-minute blocks with 5-minute breaks, and stop a block early if you have nothing left to give. Short focused blocks protect attention, which is the resource that actually limits study.",
+      "level": "beginner",
+      "xp": 25,
+      "steps": [
+        {
+          "id": "method-pomodoro-step-theory",
+          "type": "theory",
+          "heading": "The Pomodoro Technique",
+          "body": "The problem with studying for three hours is not the difficulty, it is the drift. Attention fades long before the three hours are over, and everything after minute forty is low-quality work that still feels like effort.\n\nPomodoro fixes the length instead of the feeling. One pomodoro is 25 minutes of single-task work. Then a 5-minute break, and nothing at all: no phone, no new material. After four pomodoros, take a longer break of 15 to 20 minutes. That cycle is the whole method.\n\nThe rule that matters most is that a pomodoro is for one task. If you start thinking about something else, write it down and do it after the block. A block that contains three tasks is really one block that produced nothing.",
+          "rules": [
+            {
+              "id": "method-pomodoro-rule-1",
+              "title": "One pomodoro, one task",
+              "statement": "Choose a single task before you start and do nothing else in the block. Anything else that comes to mind goes on a list for later.",
+              "examples": [
+                {
+                  "id": "method-pomodoro-rule-1-ex-1",
+                  "en": "This pomodoro is only the eight example sentences, so I am not starting a new chapter as well.",
+                  "vi": "Pomodoro này chỉ dành cho tám câu ví dụ, nên tôi không mở thêm chương mới.",
+                  "note": "One task per block is what makes twenty-five minutes enough."
+                }
+              ]
+            },
+            {
+              "id": "method-pomodoro-rule-2",
+              "title": "Take a real break",
+              "statement": "The five-minute break is part of the method, not a reward. Stand up, move, look out of the window. Checking messages during a break removes most of its value.",
+              "examples": [
+                {
+                  "id": "method-pomodoro-rule-2-ex-1",
+                  "en": "Five minutes away from the screen, then straight back into the next pomodoro.",
+                  "vi": "Năm phút rời màn hình, rồi quay lại pomodoro tiếp theo ngay.",
+                  "note": "The break restores the attention the next block needs."
+                }
+              ]
+            },
+            {
+              "id": "method-pomodoro-rule-3",
+              "title": "Stop when the block is done, or when it stops working",
+              "statement": "Finish at 25 minutes, or earlier if you are only going through the motions. A block you finish by scrolling is not a pomodoro.",
+              "examples": [
+                {
+                  "id": "method-pomodoro-rule-3-ex-1",
+                  "en": "Two hours, twenty pomodoros, five short breaks. That was a full day of English.",
+                  "vi": "Hai tiếng, hai mươi pomodoro, năm lần nghỉ ngắn. Đó là một ngày học tiếng Anh trọn vẹn.",
+                  "note": "The count is a simple honest measure of what you actually did."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "method-pomodoro-step-audio",
+          "type": "audio",
+          "title": "One pomodoro",
+          "audio": {
+            "kind": "speech",
+            "text": "Twenty five minutes of one task, then a five minute break. After four blocks, take a longer break."
+          }
+        },
+        {
+          "id": "method-pomodoro-step-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "method-pomodoro-ex-1",
+              "en": "I set a timer for twenty five minutes and did the listening review, and the timer stopped me scrolling.",
+              "vi": "Tôi hẹn giờ hai mươi lăm phút và làm bài ôn nghe, và chiếc hẹn giờ chặn tôi lướt web.",
+              "note": "The deadline does the work that motivation fails to do."
+            },
+            {
+              "id": "method-pomodoro-ex-2",
+              "en": "After four blocks I took a twenty minute walk, and the fifth block was better than the first.",
+              "vi": "Sau bốn đợt tôi đi bộ hai mươi phút, và đợt thứ năm tốt hơn đợt thứ nhất.",
+              "note": "The long break is what makes the later blocks worth doing."
+            },
+            {
+              "id": "method-pomodoro-ex-3",
+              "en": "I stopped after eighteen minutes because I was rereading the same line, and I did not restart the pomodoro.",
+              "vi": "Tôi dừng sau mười tám phút vì tôi đang đọc lại cùng một dòng, và tôi không mở lại pomodoro.",
+              "note": "The third rule allows an early stop; the point is not to keep going when nothing is happening."
+            }
+          ]
+        },
+        {
+          "id": "method-pomodoro-step-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "method-pomodoro-ex-1",
+              "kind": "multipleChoice",
+              "topicID": "methods",
+              "lessonID": "method-pomodoro",
+              "difficulty": "beginner",
+              "prompt": "How long is one pomodoro, according to the lesson?",
+              "instruction": "Choose the correct length.",
+              "items": [
+                {
+                  "id": "method-pomodoro-ex-1-opt-a",
+                  "text": "Ten minutes",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-pomodoro-ex-1-opt-b",
+                  "text": "Twenty five minutes",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-pomodoro-ex-1-opt-c",
+                  "text": "One hour",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "method-pomodoro-ex-1-opt-d",
+                  "text": "As long as you want",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "method-pomodoro-ex-1-opt-b"
+                ]
+              },
+              "explanation": "One pomodoro is 25 minutes of single-task work, followed by a 5-minute break. The fixed length is the point of the method.",
+              "xp": 10
+            },
+            {
+              "id": "method-pomodoro-ex-2",
+              "kind": "trueFalse",
+              "topicID": "methods",
+              "lessonID": "method-pomodoro",
+              "difficulty": "beginner",
+              "prompt": "Checking messages during the five-minute break is a good use of the break.",
+              "instruction": "Decide if the statement is true or false.",
+              "items": [
+                {
+                  "id": "method-pomodoro-ex-2-opt-a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "values": [
+                  "false"
+                ]
+              },
+              "explanation": "The rule says to stand up, move and look away from the screen. Messages pull attention back before it has recovered, which removes most of the value of the break.",
+              "xp": 10
+            },
+            {
+              "id": "method-pomodoro-ex-3",
+              "kind": "typeTheAnswer",
+              "topicID": "methods",
+              "lessonID": "method-pomodoro",
+              "difficulty": "beginner",
+              "prompt": "According to the lesson, how many pomodoros do you do before taking the longer break?",
+              "instruction": "Type the number.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "four",
+                  "4"
+                ]
+              },
+              "explanation": "After four pomodoros you take the longer break of 15 to 20 minutes, which is what makes the fifth block worth doing.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "method-pomodoro-step-summary",
+          "type": "summary",
+          "takeaways": [
+            "Twenty five minutes of one task, then five minutes away from the screen.",
+            "After four blocks take a fifteen to twenty minute break.",
+            "Stop early if the block has stopped working; a block of scrolling is not a pomodoro."
+          ]
+        }
+      ]
+    }
+  ]
+}

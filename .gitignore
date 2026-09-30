@@ -1,0 +1,81 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ---- Generated project -----------------------------------------------------
+# EnglishLearning.xcodeproj is produced by `xcodegen generate` from project.yml.
+# It is generated, it is never committed, and it must never be reviewed.
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+# Info.plist is emitted by XcodeGen from project.yml (it is in the ignore list
+# because it is machine-written config, not source).
+App/Info.plist
+# ---- Build products --------------------------------------------------------
+build/
+Build/
+DerivedData/
+.build/
+DerivedData
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.dSYM
+*.o
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.hmap
+*.ipa.beta
+
+# ---- Swift Package Manager -------------------------------------------------
+# NOTE: Package.resolved is INTENTIONALLY TRACKED. Pinning transitive
+# dependency versions is the point of a lock file; ignoring it makes CI and
+# local builds drift apart.
+.swiftpm/
+**/.swiftpm/
+.swiftpm/xcode/package.xcworkspace
+Package.resolved.bak
+# Local, developer-only overrides (tokens, secrets)
+*.xcconfig.local
+Secrets.xcconfig
+
+# ---- Secrets and signing material (must never enter git) -------------------
+# A committed signing identity or provisioning profile is a credential leak:
+# revoke it, do not delete the commit.
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.certSigningRequest
+*.csr
+*.p8
+*.key
+*.asc
+*.gpg
+*.keystore
+exportOptions.plist
+!docs/**/*.example.plist
+.env
+.env.*
+secrets.json
+
+# ---- Tooling ---------------------------------------------------------------
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+*.log
+.cache/
+.tmp/
+tmp/
+__pycache__/
+*.py[cod]

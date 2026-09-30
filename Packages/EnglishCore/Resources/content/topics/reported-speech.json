@@ -1,0 +1,2844 @@
+{
+  "id": "reported-speech",
+  "title": "Reported Speech",
+  "kind": "grammar",
+  "level": "intermediate",
+  "summary": "Turn what somebody said into what somebody else said it: backshift the tense, move the pronouns and the time words, and report questions, commands and requests with the right pattern.",
+  "icon": "quote.bubble",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "rs-l1",
+      "title": "From Direct to Reported Speech",
+      "summary": "The basic shift: add a reporting verb, backshift the tense, and keep the meaning.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "rs-l1-theory",
+          "type": "theory",
+          "heading": "Someone said something, so someone else reports it",
+          "body": "Direct speech repeats the exact words of the original speaker. Reported speech says what the speaker said, so the words belong to a new speaker in a new place and time. That is why the tense shifts back, the pronouns change and the time expressions change. The meaning stays the same; only the framing moves.",
+          "rules": [
+            {
+              "title": "Say and tell",
+              "statement": "Say needs a to-phrase or a that-clause: She said that she was tired. Tell takes a person directly: She told me that she was tired.",
+              "formula": "say + (to someone) + that + clause  |  tell + someone + that + clause",
+              "examples": [
+                {
+                  "id": "rs-l1-r1-e1",
+                  "en": "He said, \"I am tired.\"  →  He said that he was tired.",
+                  "vi": "Anh ấy nói: \"Tôi mệt rồi.\" → Anh ấy nói rằng anh ấy mệt rồi.",
+                  "note": "Present simple am becomes was in reported speech."
+                },
+                {
+                  "id": "rs-l1-r1-e2",
+                  "en": "She told me, \"I live in Huế.\"  →  She told me that she lived in Huế.",
+                  "vi": "Cô ấy nói với tôi: \"Tôi sống ở Huế.\" → Cô ấy nói với tôi rằng cô ấy sống ở Huế.",
+                  "note": "Tell is followed directly by the person told; live becomes lived."
+                }
+              ]
+            },
+            {
+              "title": "Backshift the tense",
+              "statement": "When the reporting verb is past, the verb in the reported clause moves one step back into the past. It is not a change of meaning, only a change of viewpoint.",
+              "formula": "Present → past   |   Past → past perfect   |   Future → would",
+              "examples": [
+                {
+                  "id": "rs-l1-r2-e1",
+                  "en": "\"I have finished,\" she said.  →  She said that she had finished.",
+                  "vi": "\"Tôi đã xong rồi,\" cô ấy nói. → Cô ấy nói rằng cô ấy đã xong.",
+                  "note": "Present perfect has becomes past perfect had."
+                },
+                {
+                  "id": "rs-l1-r2-e2",
+                  "en": "\"I will call you,\" he said.  →  He said that he would call me.",
+                  "vi": "\"Tôi sẽ gọi cho bạn,\" anh ấy nói. → Anh ấy nói rằng anh ấy sẽ gọi cho tôi.",
+                  "note": "will becomes would, and you becomes me because the listener has changed."
+                }
+              ]
+            },
+            {
+              "title": "The that-clause and the two-speaker problem",
+              "statement": "That is optional after say and tell in a simple statement. But if the reporting verb is not said or told, that is required: He admitted that he was late. And when the reported clause contains its own that or if, keep the that to avoid confusion.",
+              "formula": "He said (that) he was late.  /  He admitted that he was late.",
+              "examples": [
+                {
+                  "id": "rs-l1-r3-e1",
+                  "en": "She said, \"The meeting is at three,\" and added that it would be in room 12.",
+                  "vi": "Cô ấy nói: \"Cuộc họp lúc ba giờ,\" rồi bổ sung rằng nó sẽ ở phòng 12.",
+                  "note": "The second clause needs that because the verb is added, not said."
+                },
+                {
+                  "id": "rs-l1-r3-e2",
+                  "en": "He said that his train would arrive late.",
+                  "vi": "Anh ấy nói rằng chuyến tàu của anh ấy sẽ đến muộn.",
+                  "note": "Keeping that before a long clause helps the listener."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l1-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l1-ex1",
+              "en": "\"I bought this book yesterday.\"  →  He said he had bought that book the day before.",
+              "vi": "\"Tôi mua cuốn sách này hôm qua.\" → Anh ấy nói anh ấy đã mua cuốn sách đó hôm trước.",
+              "note": "bought stays bought because it is already past; the perfect appears because the viewpoint is later."
+            },
+            {
+              "id": "rs-l1-ex2",
+              "en": "\"The office closes at six.\"  →  She said the office closed at six.",
+              "vi": "\"Văn phòng đóng cửa lúc sáu giờ.\" → Cô ấy nói văn phòng đóng cửa lúc sáu giờ.",
+              "note": "Time expressions are unchanged when they are part of a permanent schedule."
+            },
+            {
+              "id": "rs-l1-ex3",
+              "en": "\"I have never seen that film.\"  →  He said he had never seen that film.",
+              "vi": "\"Tôi chưa bao giờ xem bộ phim đó.\" → Anh ấy nói anh ấy chưa bao giờ xem bộ phim đó.",
+              "note": "Never already points back, so the perfect is not optional but highly natural."
+            },
+            {
+              "id": "rs-l1-ex4",
+              "en": "\"Don't worry,\" she said.  →  She told me not to worry.",
+              "vi": "\"Đừng lo,\" cô ấy nói. → Cô ấy bảo tôi đừng lo.",
+              "note": "Negative commands take to + infinitive, not a that-clause."
+            }
+          ]
+        },
+        {
+          "id": "rs-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l1-e1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "Report the sentence: 'I am busy,' she said.",
+              "instruction": "Choose the correct reported version.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She said that she was busy.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She said that she is busy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She said that she be busy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She says that she was busy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The reporting verb is past, so the present simple am backs into was, and the pronoun I has to become she because the reporter is talking about the speaker. Option b keeps the present, which only works with a present reporting verb such as 'She says'.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "\"I have lost my keys,\" he said.  →  He said that he ___ lost his keys.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had"
+                ]
+              },
+              "explanation": "Backshift moves the present perfect has one step into the past perfect, so it becomes had. The past participle lost does not change.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-e3",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "She said me that she will come later.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She told me that she would come later."
+                ]
+              },
+              "explanation": "Two errors in five words. Say never takes a person directly, so said me must become told me. And will backs into would because the reporting verb is past.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-e4",
+              "kind": "sentenceCompletion",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "Report the sentence: \"I saw him yesterday.\"  →  She said that she ___ him the day before.",
+              "instruction": "Type the missing verb form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had seen"
+                ]
+              },
+              "explanation": "A past simple verb can move up to the past perfect when the reporting happens later. The past perfect is the natural and expected choice because the reporting verb is in the past.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "Report the sentence: \"We can start now.\"  →  He said that they ___ start then.",
+              "instruction": "Type the missing modal.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "could"
+                ]
+              },
+              "explanation": "Can backs into could in reported speech, and now has to become then because the report is being made later. Getting the modal right is one of the most reliable signs that a learner controls backshift.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-e6",
+              "kind": "trueFalse",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "When the reporting verb is in the present (She says...), the tense of the reported clause does not change: She says she is busy.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Backshift only happens when the reporting verb is in the past. With a present reporting verb the report is happening now, so is busy stays is busy.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and report",
+          "items": [
+            {
+              "id": "rs-l1-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "She said that she had already sent the documents."
+              },
+              "hint": "past perfect after a past reporting verb",
+              "translation": "Cô ấy nói rằng cô ấy đã gửi tài liệu rồi.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l1-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "He told me that he would call the police."
+              },
+              "hint": "would + infinitive",
+              "translation": "Anh ấy nói với tôi rằng anh ấy sẽ gọi cảnh sát.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l1-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The manager said that the meeting had been put off."
+              },
+              "hint": "passive inside reported speech",
+              "translation": "Quản lý nói rằng cuộc họp đã được hoãn lại.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l1-quiz",
+          "type": "quiz",
+          "title": "Direct to reported",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "Report the sentence: \"I have finished my homework,\" Tom said.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Tom said that he had finished his homework.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Tom said that he has finished his homework.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Tom told that he had finished his homework.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Tom said that he finished his homework.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Tom is the subject of the reporting verb, so the reported I becomes he, and the present perfect has backs into had. Option c is impossible because tell needs a person after it.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "\"I don't agree,\" Anna said.  →  Anna said that she ___ agree.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "did not"
+                ]
+              },
+              "explanation": "Do not becomes did not after backshift, and the main verb agree loses its -s because the auxiliary now carries the tense. Writing 'did not agreed' is the classic double-marking error.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-q3",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "intermediate",
+              "prompt": "Which reporting verb does not need a to-phrase or a that-clause?",
+              "instruction": "Pick the reporting verb.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "said",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "admitted",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "denied",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "explained",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Only say and tell allow the clause marker to be dropped in a short statement. Admitted, denied and explained always need that: 'He admitted that he was late.'",
+              "xp": 10
+            },
+            {
+              "id": "rs-l1-q4",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l1",
+              "difficulty": "beginner",
+              "prompt": "Report the sentence: \"We went there last year.\"  →  She said that they ___ there the year before.",
+              "instruction": "Type the missing verb form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had gone"
+                ]
+              },
+              "explanation": "A past simple verb reporting to a later past event becomes had plus participle. 'They went there the year before' is understandable but less natural in a report.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "Say takes a to-phrase; tell takes the person directly. Neither is followed by a bare pronoun.",
+            "A past reporting verb pushes the reported tense one step back: is to was, has to had, will to would, do to did.",
+            "Pronouns shift to match the new speaker and the new listener.",
+            "That can be dropped only after say and tell."
+          ],
+          "nextLessonID": "rs-l2"
+        }
+      ]
+    },
+    {
+      "id": "rs-l2",
+      "title": "Reporting Verbs and Their Patterns",
+      "summary": "A large family of verbs, each with its own grammar and its own shade of meaning.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "rs-l2-theory",
+          "type": "theory",
+          "heading": "Choose the verb that matches the attitude",
+          "body": "Saying is not only about say and tell. English has a rich set of reporting verbs, and the one you pick tells the listener how you feel about what was said. Some are neutral, some are critical, some are formal. The grammar of each verb is fixed, so learning the verb means learning its pattern at the same time.",
+          "rules": [
+            {
+              "title": "Verbs followed by a that-clause",
+              "statement": "These take that plus a clause, and that is not optional: admit, agree, announce, complain, confirm, deny, explain, mention, promise, reply, say, suggest, warn, add, admit.",
+              "formula": "He admitted that he was wrong.  /  She suggested that we leave early.",
+              "examples": [
+                {
+                  "id": "rs-l2-r1-e1",
+                  "en": "He denied that he had taken the money.",
+                  "vi": "Anh ấy phủ nhận rằng đã lấy tiền.",
+                  "note": "Deny always takes a that-clause, and the verb inside backs into the past perfect."
+                },
+                {
+                  "id": "rs-l2-r1-e2",
+                  "en": "She complained that the room was too cold.",
+                  "vi": "Cô ấy phàn nàn rằng căn phòng quá lạnh.",
+                  "note": "Complain takes a that-clause, not a preposition like about in this pattern."
+                }
+              ]
+            },
+            {
+              "title": "Verbs followed by an infinitive or a gerund",
+              "statement": "Some verbs change the meaning depending on the pattern. Suggest that we leave means we should leave; suggest leaving means we propose doing it.",
+              "formula": "verb + to + infinitive  |  verb + gerund",
+              "examples": [
+                {
+                  "id": "rs-l2-r2-e1",
+                  "en": "He warned me to be careful.",
+                  "vi": "Anh ấy dặn tôi phải cẩn thận.",
+                  "note": "Warn someone to do something: the pattern is warn + person + to infinitive."
+                },
+                {
+                  "id": "rs-l2-r2-e2",
+                  "en": "She admitted making a mistake.",
+                  "vi": "Cô ấy thừa nhận đã phạm sai lầm.",
+                  "note": "Admit doing is the natural pattern; admitting a mistake in that form also works, but the gerund is far more idiomatic."
+                },
+                {
+                  "id": "rs-l2-r2-e3",
+                  "en": "He refused to answer the question.",
+                  "vi": "Anh ấy từ chối trả lời câu hỏi.",
+                  "note": "Refuse always takes a to-infinitive, never a gerund."
+                }
+              ]
+            },
+            {
+              "title": "Say versus tell versus talk about",
+              "statement": "Say is neutral and can be followed by to someone. Tell needs a person. Speak to somebody is about exchanging words; talk about is about the subject matter.",
+              "formula": "say to somebody  |  tell somebody  |  speak to somebody about something",
+              "examples": [
+                {
+                  "id": "rs-l2-r3-e1",
+                  "en": "She spoke to the manager about the delay.",
+                  "vi": "Cô ấy đã nói chuyện với quản lý về chuyện chậm trễ.",
+                  "note": "Speak to a person, talk about a topic. People often swap these two by mistake."
+                },
+                {
+                  "id": "rs-l2-r3-e2",
+                  "en": "He told us the truth.",
+                  "vi": "Anh ấy đã nói với chúng tôi sự thật.",
+                  "note": "Never 'He said us the truth'."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l2-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l2-ex1",
+              "en": "The witness admitted that she had not seen the whole incident.",
+              "vi": "Nhân chứng thừa nhận rằng cô ấy đã không nhìn thấy toàn bộ sự việc.",
+              "note": "Admitted + that-clause in a formal report."
+            },
+            {
+              "id": "rs-l2-ex2",
+              "en": "My uncle advised me to study medicine.",
+              "vi": "Chú tôi khuyên tôi nên học y khoa.",
+              "note": "Advise + person + to infinitive, the pattern used for professional advice."
+            },
+            {
+              "id": "rs-l2-ex3",
+              "en": "She apologised for arriving late.",
+              "vi": "Cô ấy xin lỗi vì đến muộn.",
+              "note": "Apologise for + gerund. A to-infinitive after apologise is not standard."
+            },
+            {
+              "id": "rs-l2-ex4",
+              "en": "The company promised to refund the full amount.",
+              "vi": "Công ty đã hứa hoàn lại toàn bộ số tiền.",
+              "note": "Promise to do something: the promise is about a future action, so there is no backshift of a clause."
+            }
+          ]
+        },
+        {
+          "id": "rs-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l2-e1",
+              "kind": "matching",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "beginner",
+              "prompt": "Match each reporting verb with the pattern it requires.",
+              "instruction": "Join each verb with the structure that goes with it.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "admit",
+                  "isCorrect": null,
+                  "matchKey": "that"
+                },
+                {
+                  "id": "b",
+                  "text": "warn",
+                  "isCorrect": null,
+                  "matchKey": "toInf"
+                },
+                {
+                  "id": "c",
+                  "text": "apologise",
+                  "isCorrect": null,
+                  "matchKey": "forGer"
+                },
+                {
+                  "id": "d",
+                  "text": "deny",
+                  "isCorrect": null,
+                  "matchKey": "that"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "that",
+                  "b": "toInf",
+                  "c": "forGer",
+                  "d": "that"
+                }
+              },
+              "explanation": "Admit and deny belong to the that-clause family and require the marker. Warn belongs to the family that takes a to-infinitive, and apologise is followed by for plus a gerund.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-e2",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the grammatically correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She apologised for interrupting me.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She apologised to interrupt me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She apologised that interrupted me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She apologised for interrupt me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Apologise is followed by for plus a gerund, so interrupting is right and interrupt is not. 'Apologise to interrupt' would mean to interrupt as a purpose, which changes the meaning completely.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-e3",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "The doctor ___ (advise) me to rest for a week.",
+              "instruction": "Type the correct past form of the reporting verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "advised"
+                ]
+              },
+              "explanation": "Advise takes a person plus a to-infinitive, so the form is 'advised me to rest', with no that-clause. Both verb and pattern must be right for the sentence to work.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-e4",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "He denied to take the money and said us that he had been at home.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He denied taking the money and told us that he had been at home."
+                ]
+              },
+              "explanation": "Deny is followed by a gerund or a that-clause, never by a to-infinitive. And said us must be told us, because tell is the only verb that takes a person directly.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-e5",
+              "kind": "multiSelect",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "Which reporting verbs correctly take a to-infinitive?",
+              "instruction": "Select all that apply.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "refused",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "promised",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "explained",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "warned",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b",
+                  "d"
+                ]
+              },
+              "explanation": "Refuse, promise and warn all take a to-infinitive. Explain is different: it takes a that-clause ('She explained that she was late') or a preposition, never a bare to-infinitive.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "beginner",
+              "prompt": "Complete the pattern: She complained ___ the noise from the neighbours.",
+              "instruction": "Type the missing preposition.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "about"
+                ]
+              },
+              "explanation": "Complain about something is the prepositional pattern. Complaining about the noise names the subject of the complaint; complain that the neighbours were noisy uses a that-clause instead.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l2-dictation",
+          "type": "dictation",
+          "title": "Reporting verbs in use",
+          "items": [
+            {
+              "id": "rs-l2-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The manager warned the staff to arrive earlier."
+              },
+              "hint": "warn + person + to infinitive",
+              "translation": "Quản lý đã dặn nhân viên phải đến sớm hơn.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l2-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "He admitted leaving the door unlocked."
+              },
+              "hint": "admit + gerund",
+              "translation": "Anh ấy thừa nhận đã để cửa không khóa.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l2-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The company denied that the product was unsafe."
+              },
+              "hint": "deny + that-clause",
+              "translation": "Công ty phủ nhận rằng sản phẩm không an toàn.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l2-quiz",
+          "type": "quiz",
+          "title": "Reporting verbs and their patterns",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She promised to send the file by Friday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She promised to sends the file by Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She promised sending the file by Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She promised that send the file by Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Promise takes a to-infinitive with the base form of the verb: to send. Option b adds the -s that only a present simple main verb takes, and options c and d use the wrong pattern entirely.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "He suggested that we ___ the meeting until Monday.",
+              "instruction": "Type the correct verb form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "postpone"
+                ]
+              },
+              "explanation": "Suggest introduces a proposal, and in that meaning it uses the subjunctive: that + base form, with no -s and no auxiliary. This is one of the clearest examples of the subjunctive in everyday English.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-q3",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "The teacher warned the students to not to talk during the exam.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The teacher warned the students not to talk during the exam."
+                ]
+              },
+              "explanation": "There is only one to. A negative to-infinitive is written not to talk: the negative adverb sits between to and the main verb, not as a second to.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l2-q4",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l2",
+              "difficulty": "intermediate",
+              "prompt": "Which reporting verb most strongly suggests the speaker did not believe the statement?",
+              "instruction": "Pick the verb that carries doubt.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "claimed",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "confirmed",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "repeated",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "announced",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Claim reports a statement while signalling that the reporter does not accept it. Confirm and announce present the statement as reliable, and repeat is neutral.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "Some reporting verbs take a that-clause (admit, deny, complain, confirm) and that is never optional.",
+            "Others take a to-infinitive (warn, advise, refuse, promise) or a preposition plus gerund (apologise for, insist on).",
+            "Say takes an optional to-phrase; tell takes the person directly.",
+            "Choosing the verb also chooses your attitude: claimed is not the same as confirmed."
+          ],
+          "nextLessonID": "rs-l3"
+        }
+      ]
+    },
+    {
+      "id": "rs-l3",
+      "title": "Backshift in Detail",
+      "summary": "A full map of which tenses move and which stay put.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "rs-l3-theory",
+          "type": "theory",
+          "heading": "Which tenses move, and which do not",
+          "body": "Backshift is regular, but it is not universal. Simple tenses move back one step. Perfect and continuous tenses become past perfect or past continuous. Modals and modals of deduction move too. But some expressions have no future or no past to move to, and idioms with a permanent character stay as they are.",
+          "rules": [
+            {
+              "title": "The tenses that move",
+              "statement": "Present simple, past simple, present continuous, present perfect, past continuous, future and modals all shift one step into the past when the reporting verb is past.",
+              "formula": "am/is/are → was/were   |   did → had done   |   will → would",
+              "examples": [
+                {
+                  "id": "rs-l3-r1-e1",
+                  "en": "\"I am reading.\"  →  He said he was reading.",
+                  "vi": "\"Tôi đang đọc sách.\" → Anh ấy nói anh ấy đang đọc sách.",
+                  "note": "Present continuous becomes past continuous."
+                },
+                {
+                  "id": "rs-l3-r1-e2",
+                  "en": "\"I have been waiting for an hour.\"  →  She said she had been waiting for an hour.",
+                  "vi": "\"Tôi đã chờ được một tiếng rồi.\" → Cô ấy nói cô ấy đã chờ được một tiếng rồi.",
+                  "note": "The present perfect continuous becomes the past perfect continuous, and the duration stays."
+                },
+                {
+                  "id": "rs-l3-r1-e3",
+                  "en": "\"It might rain.\"  →  He said it might rain.",
+                  "vi": "\"Có thể trời sẽ mưa.\" → Anh ấy nói trời có thể sẽ mưa.",
+                  "note": "Might is unchanged: the possible future becomes a possible past, which is still might."
+                }
+              ]
+            },
+            {
+              "title": "Tenses that do not move",
+              "statement": "If the reporting verb is still present, nothing moves. Expressions about the future that have no past equivalent, and permanent or idiomatic statements, also stay.",
+              "formula": "She says she is busy.  /  He said the shop opens at nine.",
+              "examples": [
+                {
+                  "id": "rs-l3-r2-e1",
+                  "en": "\"The earth goes round the sun.\"  →  He explained that the earth goes round the sun.",
+                  "vi": "\"Trái đất quanh mặt trời.\" → Anh ấy giải thích rằng trái đất quanh mặt trời.",
+                  "note": "A scientific fact does not move into the past."
+                },
+                {
+                  "id": "rs-l3-r2-e2",
+                  "en": "\"Water boils at 100 degrees.\"  →  She said water boils at 100 degrees.",
+                  "vi": "\"Nước sôi ở 100 độ.\" → Cô ấy nói nước sôi ở 100 độ.",
+                  "note": "Permanent truth, so the present simple stays."
+                },
+                {
+                  "id": "rs-l3-r2-e3",
+                  "en": "\"I have lived here all my life.\"  →  He said he had always lived there.",
+                  "vi": "\"Tôi đã sống ở đây cả đời.\" → Anh ấy nói anh ấy đã luôn sống ở đó.",
+                  "note": "All my life and always point back, so the present perfect becomes the past perfect."
+                }
+              ]
+            },
+            {
+              "title": "Modals of deduction and other special cases",
+              "statement": "Must, may, might and should as speculation move into past modals, but the meaning stays the same because the speaker is still assessing the evidence.",
+              "formula": "must be → must have been  |  can't be → can't have been",
+              "examples": [
+                {
+                  "id": "rs-l3-r3-e1",
+                  "en": "\"He must be at home.\"  →  She said he must be at home.",
+                  "vi": "\"Anh ấy chắc đang ở nhà.\" → Cô ấy nói anh ấy chắc đang ở nhà.",
+                  "note": "Present speculation stays as it is because the speaker's present opinion is reported."
+                },
+                {
+                  "id": "rs-l3-r3-e2",
+                  "en": "\"The bag can't have been lost.\"  →  He said the bag couldn't have been lost.",
+                  "vi": "\"Cái túi không thể đã bị mất.\" → Anh ấy nói cái túi không thể nào bị mất.",
+                  "note": "Can't have been becomes couldn't have been when the whole structure is in the past."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l3-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l3-ex1",
+              "en": "\"We were planning to move,\" they said.  →  They said they were planning to move.",
+              "vi": "\"Chúng tôi đang có ý định chuyển nhà,\" họ nói. → Họ nói rằng họ đang có ý định chuyển nhà.",
+              "note": "Past continuous backs into past continuous; the future in the plan does not change."
+            },
+            {
+              "id": "rs-l3-ex2",
+              "en": "\"I will explain it to you tomorrow,\" she said.  →  She said she would explain it to me the following day.",
+              "vi": "\"Ngày mai tôi sẽ giải thích cho bạn,\" cô ấy nói. → Cô ấy nói cô ấy sẽ giải thích cho tôi vào ngày kế tiếp.",
+              "note": "Will becomes would, you becomes me, and tomorrow becomes the following day."
+            },
+            {
+              "id": "rs-l3-ex3",
+              "en": "\"I have never been to Japan,\" she said.  →  She said she had never been to Japan.",
+              "vi": "\"Tôi chưa bao giờ đến Nhật Bản,\" cô ấy nói. → Cô ấy nói cô ấy chưa bao giờ đến Nhật Bản.",
+              "note": "Never is a past-looking word, so the present perfect moves to the past perfect."
+            },
+            {
+              "id": "rs-l3-ex4",
+              "en": "\"I go to school by bicycle,\" he said.  →  He said he went to school by bicycle.",
+              "vi": "\"Tôi đi học bằng xe đạp,\" anh ấy nói. → Anh ấy nói anh ấy đi học bằng xe đạp.",
+              "note": "The present simple moved back, but by bicycle is a fixed expression and does not change."
+            }
+          ]
+        },
+        {
+          "id": "rs-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l3-e1",
+              "kind": "rearrangeWords",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "Report the sentence: 'I have been studying for three hours.' → She said she ___.",
+              "instruction": "Arrange the words into the reported clause.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "been",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "studying",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "for",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "three",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "hours",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "had",
+                    "been",
+                    "studying",
+                    "for",
+                    "three",
+                    "hours"
+                  ]
+                ]
+              },
+              "explanation": "The present perfect continuous has been studying backs into the past perfect continuous had been studying. The duration phrase for three hours is a measure of time, not a point in time, so it is not changed.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-e2",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "Report the sentence: 'We should leave now.'  →  He said that we ___ leave then.",
+              "instruction": "Type the missing modal.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "should"
+                ]
+              },
+              "explanation": "Should is a modal with no past and future forms, so it stays exactly as it is. Learners often invent 'shoulded', which does not exist. Only modals with real past forms, such as will and can, change.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-e3",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "He said me that he didn't have no time to help.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He told me that he didn't have any time to help."
+                ]
+              },
+              "explanation": "Said me is impossible; tell is the verb that takes a person. And in reported speech the two negatives do not stack: after did not the indefinite article no must become any, or the sentence simply keeps did not have time.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-e4",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'Water boils at 100 degrees,' she said.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She said that water boiled at 100 degrees.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She said that water boils at 100 degrees.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She said that water would boil at 100 degrees.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She said that water has boiled at 100 degrees.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "Universal facts do not move into the past, because they are still true. 'Water boiled at 100 degrees' would wrongly suggest the water boiled only in the past, and would boil would suggest a future event.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-e5",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "\"I am working,\" Tom said.  →  Tom said that he ___ working.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was"
+                ]
+              },
+              "explanation": "The present continuous am working backs into the past continuous was working. Only the auxiliary changes; the -ing form stays the same.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-e6",
+              "kind": "sentenceCompletion",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "advanced",
+              "prompt": "Complete: \"I have finished the report,\" she said.  →  She said that she ___ the report the previous evening.",
+              "instruction": "Type the missing verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had finished"
+                ]
+              },
+              "explanation": "Present perfect has finished moves into past perfect had finished, and the time expression changes to the previous evening. The perfect here signals that the report was already done at the time of speaking.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l3-dictation",
+          "type": "dictation",
+          "title": "Backshift in full sentences",
+          "items": [
+            {
+              "id": "rs-l3-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "He said that he had been waiting for over an hour."
+              },
+              "hint": "past perfect continuous",
+              "translation": "Anh ấy nói rằng anh ấy đã chờ hơn một tiếng rồi.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l3-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "They said that the shop opened at nine every morning."
+              },
+              "hint": "present simple for a routine",
+              "translation": "Họ nói rằng cửa hàng mở cửa lúc chín giờ sáng mỗi ngày.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l3-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "She said that she would call me the next day."
+              },
+              "hint": "would + infinitive",
+              "translation": "Cô ấy nói rằng cô ấy sẽ gọi cho tôi vào ngày kế tiếp.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l3-quiz",
+          "type": "quiz",
+          "title": "Backshift",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'I have been to Paris twice,' she said.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She said she had been to Paris twice.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She said she has been to Paris twice.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She said she would be to Paris twice.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She said she had go to Paris twice.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Have been to is a present perfect form, so it backs into had been to. Twice is a count, not a time, so it stays. Option d uses the bare form go, which a past perfect never does.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-q2",
+              "kind": "trueFalse",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "Reported speech with a past reporting verb always requires backshift, even for universal truths.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "Universal and permanent statements keep the present, because backshifting them would change what is true: 'He said the earth goes round the sun', not 'went'.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "intermediate",
+              "prompt": "\"I didn't understand,\" he said.  →  He said that he ___ understand.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "did not"
+                ]
+              },
+              "explanation": "Didn't becomes did not, and the main verb loses its -s and -ed. Writing 'did not understood' marks the negative twice, which is a classic learner error.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l3-q4",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l3",
+              "difficulty": "advanced",
+              "prompt": "Which report is correct, even though the reporting verb is in the past?",
+              "instruction": "Pick the sentence with no backshift.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "He said that he went to school by bus.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "He said that the earth goes round the sun.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He said that he will call you tomorrow.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "He said that she is at home now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "Universal truths keep the present, because backshifting them would change what is true: the earth still goes round the sun. Options a, c and d each contain a verb form that must move back with a past reporting verb.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Simple, perfect, continuous, future and modal forms all move one step back with a past reporting verb.",
+            "Permanent facts and present-time opinions stay in the present.",
+            "Only the auxiliary changes in continuous forms: is working to was working.",
+            "Modal speculation such as must be or might be usually stays, because the speaker is still judging the evidence."
+          ],
+          "nextLessonID": "rs-l4"
+        }
+      ]
+    },
+    {
+      "id": "rs-l4",
+      "title": "Pronouns, Time and Place",
+      "summary": "The words that quietly betray you: pronouns, demonstratives, and time and place expressions.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "rs-l4-theory",
+          "type": "theory",
+          "heading": "Everything must be re-pointed at the new listener",
+          "body": "A direct quote works because everybody hears the same words from the same mouth in the same place. A report breaks that link, so every reference has to be re-aimed. Pronouns follow the new speaker and listener, demonstratives follow the new viewpoint, and words like now, here and today are recalculated from the moment of reporting, not from the moment of speaking.",
+          "rules": [
+            {
+              "title": "Pronoun shift",
+              "statement": "The speaker becomes he or she or they, the listener becomes I or me, and the original I or you follows from that.",
+              "formula": "I → he/she/they   |   you → I / me   |   he → he / they",
+              "examples": [
+                {
+                  "id": "rs-l4-r1-e1",
+                  "en": "\"I will wait for you,\" she said.  →  She said she would wait for me.",
+                  "vi": "\"Tôi sẽ đợi bạn,\" cô ấy nói. → Cô ấy nói cô ấy sẽ đợi tôi.",
+                  "note": "The original you is the person being reported to, which is me for the reporter."
+                },
+                {
+                  "id": "rs-l4-r1-e2",
+                  "en": "\"He is my brother,\" she told me.  →  She told me that he was her brother.",
+                  "vi": "\"Anh ấy là anh trai tôi,\" cô ấy nói với tôi. → Cô ấy nói với tôi rằng anh ấy là anh trai cô ấy.",
+                  "note": "My becomes her, because the possession belongs to the original speaker, not the reporter."
+                }
+              ]
+            },
+            {
+              "title": "Time and place expressions",
+              "statement": "Words anchored to the moment of speaking move to expressions anchored to the moment of reporting. Words that describe a schedule or a place that still exists stay.",
+              "formula": "now → then   |   today → that day   |   here → there   |   tomorrow → the next day",
+              "examples": [
+                {
+                  "id": "rs-l4-r2-e1",
+                  "en": "\"I saw her yesterday,\" he said.  →  He said he had seen her the day before.",
+                  "vi": "\"Tôi gặp cô ấy hôm qua,\" anh ấy nói. → Anh ấy nói anh ấy đã gặp cô ấy hôm trước.",
+                  "note": "Yesterday is measured backwards from the report: the day before."
+                },
+                {
+                  "id": "rs-l4-r2-e2",
+                  "en": "\"This book is mine,\" he said.  →  He said that book was his.",
+                  "vi": "\"Cuốn sách này của tôi,\" anh ấy nói. → Anh ấy nói cuốn sách đó của anh ấy.",
+                  "note": "This points at the speaker, so it becomes that, and mine becomes his."
+                },
+                {
+                  "id": "rs-l4-r2-e3",
+                  "en": "\"The shop opens at eight,\" she said.  →  She said the shop opened at eight.",
+                  "vi": "\"Cửa hàng mở cửa lúc tám giờ,\" cô ấy nói. → Cô ấy nói cửa hàng mở cửa lúc tám giờ.",
+                  "note": "Opening times are a fixed schedule, so at eight does not change and the present simple may stay."
+                }
+              ]
+            },
+            {
+              "title": "Fixed expressions and idioms",
+              "statement": "Idioms and set phrases behave as single units and are never re-pointed at the new listener.",
+              "formula": "idiom = fixed unit, not reassembled",
+              "examples": [
+                {
+                  "id": "rs-l4-r3-e1",
+                  "en": "\"Let's give it a break!\" she said.  →  She said they should give it a break.",
+                  "vi": "\"Nghỉ ngơi một chút đi!\" cô ấy nói. → Cô ấy nói họ nên nghỉ ngơi một chút.",
+                  "note": "The idiom give it a break is untouched; only Let us becomes they should."
+                },
+                {
+                  "id": "rs-l4-r3-e2",
+                  "en": "\"I need to get my act together,\" he said.  →  He said he needed to get his act together.",
+                  "vi": "\"Tôi cần phải tập trung lại,\" anh ấy nói. → Anh ấy nói anh ấy cần tập trung lại.",
+                  "note": "The idiom get your act together keeps its shape; only the possessive changes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l4-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l4-ex1",
+              "en": "\"Put it on my desk,\" she said.  →  She said I should put it on her desk.",
+              "vi": "\"Để nó lên bàn của tôi,\" cô ấy nói. → Cô ấy nói tôi nên để nó lên bàn của cô ấy.",
+              "note": "My becomes her because the desk belongs to the speaker, not the reporter."
+            },
+            {
+              "id": "rs-l4-ex2",
+              "en": "\"I moved here last year,\" he said.  →  He said he had moved there the year before.",
+              "vi": "\"Năm ngoái tôi chuyển đến đây,\" anh ấy nói. → Anh ấy nói anh ấy đã chuyển đến đó năm trước.",
+              "note": "Here and last year are both recalculated from the report."
+            },
+            {
+              "id": "rs-l4-ex3",
+              "en": "\"Those are our neighbours,\" she said.  →  She said those were their neighbours.",
+              "vi": "\"Đó là hàng xóm của chúng tôi,\" cô ấy nói. → Cô ấy nói đó là hàng xóm của họ.",
+              "note": "Those can stay if the things are still visible to the reporter, but our always becomes their."
+            },
+            {
+              "id": "rs-l4-ex4",
+              "en": "\"The film starts at seven tonight,\" he said.  →  He said the film started at seven that evening.",
+              "vi": "\"Bộ phim bắt đầu lúc bảy giờ tối nay,\" anh ấy nói. → Anh ấy nói bộ phim bắt đầu lúc bảy giờ tối hôm đó.",
+              "note": "Tonight becomes that evening and the present simple backs into the past simple."
+            }
+          ]
+        },
+        {
+          "id": "rs-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l4-e1",
+              "kind": "rearrangeWords",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'I bought this book here yesterday.' → He said he ___.",
+              "instruction": "Arrange the words into the reported clause.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "bought",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "that",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "book",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "there",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "day",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "before",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "had",
+                    "bought",
+                    "that",
+                    "book",
+                    "there",
+                    "the",
+                    "day",
+                    "before"
+                  ]
+                ]
+              },
+              "explanation": "Three shifts at once: this becomes that because the book is no longer the speaker's point of reference, here becomes there because the reporter is elsewhere, and yesterday becomes the day before because it is measured from the report.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-e2",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'My father is a doctor,' Tom said. → Tom said that ___ father was a doctor.",
+              "instruction": "Type the missing possessive pronoun.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "his"
+                ]
+              },
+              "explanation": "My belongs to the original speaker. Since Tom is being reported about by someone else, the father is his father, not the reporter's father.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-e3",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "He told me that he would meet you here tomorrow.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He told me that he would meet me there the next day."
+                ]
+              },
+              "explanation": "You is the listener in the report, which is me. Here belongs to the original speaker's location, so it becomes there, and tomorrow becomes the next day because it is measured from the time of reporting.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-e4",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "Which time expression usually does NOT change in reported speech?",
+              "instruction": "Pick the expression that stays the same.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "yesterday",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "tonight",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "at nine o'clock",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "last week",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
+              "explanation": "A clock time by itself is not anchored to the day, so it survives unchanged. Words like yesterday, tonight and last week are anchored to the moment of speaking and have to be recalculated.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-e5",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "advanced",
+              "prompt": "Report: 'I will send you the file tonight.' → He said he would send me the file ___.",
+              "instruction": "Type the replacement for 'tonight'.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "that evening"
+                ]
+              },
+              "explanation": "Tonight means the evening of the day the speaker was talking, so in a report made later it becomes that evening. A single evening is the right word; the morning or the afternoon would be wrong.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-e6",
+              "kind": "trueFalse",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "In reported speech, my becomes your when the reporter is the person being spoken to.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "She said her bag was my responsibility, said to me: the original you is me in the reporter's frame, so the reported you becomes my and the reported my becomes her.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l4-dictation",
+          "type": "dictation",
+          "title": "Pronouns and time words in reports",
+          "items": [
+            {
+              "id": "rs-l4-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "She said she had left her keys at home that morning."
+              },
+              "hint": "her for my, that morning for this morning",
+              "translation": "Cô ấy nói cô ấy đã để quên chìa khóa ở nhà sáng hôm đó.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l4-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "He told me that they would arrive the following week."
+              },
+              "hint": "the following week for next week",
+              "translation": "Anh ấy nói với tôi rằng họ sẽ đến vào tuần sau.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l4-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The manager said the office would open at nine."
+              },
+              "hint": "a clock time stays the same",
+              "translation": "Quản lý nói văn phòng sẽ mở cửa lúc chín giờ.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l4-quiz",
+          "type": "quiz",
+          "title": "Pronouns, time and place",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l4-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'I'll call you tonight,' she said.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She said she would call me that evening.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She said she would call you tonight.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She said she will call me that evening.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She said she would call me this evening.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Three coordinated changes: will becomes would, you becomes me because the reporter is the person being called, and tonight becomes that evening because it is measured from the report. Option c keeps the present tense, which contradicts the past reporting verb.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-q2",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "He said that he had met my brother here last night.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He said that he had met my brother there the night before."
+                ]
+              },
+              "explanation": "Here belongs to the original location, so in a report from elsewhere it becomes there, and last night becomes the night before. My brother is left alone, because the reporter really is the owner of the brother.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-q3",
+              "kind": "matching",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "intermediate",
+              "prompt": "Match each direct expression with its usual reported equivalent.",
+              "instruction": "Join each word or phrase with its replacement in reported speech.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "now",
+                  "isCorrect": null,
+                  "matchKey": "then"
+                },
+                {
+                  "id": "b",
+                  "text": "here",
+                  "isCorrect": null,
+                  "matchKey": "there"
+                },
+                {
+                  "id": "c",
+                  "text": "tomorrow",
+                  "isCorrect": null,
+                  "matchKey": "theNextDay"
+                },
+                {
+                  "id": "d",
+                  "text": "this",
+                  "isCorrect": null,
+                  "matchKey": "that"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "then",
+                  "b": "there",
+                  "c": "theNextDay",
+                  "d": "that"
+                }
+              },
+              "explanation": "Each expression is re-anchored to the reporter's viewpoint: the moment becomes then, the place becomes there, the next day becomes the following day, and a demonstrative pointing at the speaker's present becomes that.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l4-q4",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l4",
+              "difficulty": "advanced",
+              "prompt": "Report: 'I have lived in this flat since 2019.' → She said she had lived there ___.",
+              "instruction": "Type the reported form of 'since 2019'.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "since 2019"
+                ]
+              },
+              "explanation": "A starting point expressed with since is a fixed date reference, not a vague recent period, so it survives unchanged. Compare last year, which would have to become the year before.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Re-point every pronoun at the new speaker and the new listener before you worry about tense.",
+            "Time and place words are recalculated from the moment of reporting: now to then, here to there, tomorrow to the next day.",
+            "Possessives follow ownership, not proximity: my brother stays, but my keys become your keys.",
+            "Clock times, dates and idioms survive the shift unchanged."
+          ],
+          "nextLessonID": "rs-l5"
+        }
+      ]
+    },
+    {
+      "id": "rs-l5",
+      "title": "Reporting Questions",
+      "summary": "Yes/no questions and wh- questions both lose their question form and their question word order.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "rs-l5-theory",
+          "type": "theory",
+          "heading": "A question in a statement's clothes",
+          "body": "Reporting a question is the area where most mistakes cluster, because two things change at once: the word order and the use of if or whether. English questions invert the subject and the auxiliary. Inside reported speech that inversion disappears, because the whole thing is now a statement made by someone else. The single biggest error is keeping the inversion.",
+          "rules": [
+            {
+              "title": "Yes/no questions",
+              "statement": "The auxiliary do, does, did, is, are, was, were, can, will and have disappears from the front of the question, and the clause is introduced by if or whether.",
+              "formula": "Did you finish it?  →  He asked if I had finished it.",
+              "examples": [
+                {
+                  "id": "rs-l5-r1-e1",
+                  "en": "\"Are you coming?\" she asked.  →  She asked if I was coming.",
+                  "vi": "\"Bạn có đến không?\" cô ấy hỏi. → Cô ấy hỏi tôi có đến không.",
+                  "note": "The inverted are disappears and the tense backs into was."
+                },
+                {
+                  "id": "rs-l5-r1-e2",
+                  "en": "\"Have you eaten?\" he said.  →  He asked whether I had eaten.",
+                  "vi": "\"Bạn ăn chưa?\" anh ấy hỏi. → Anh ấy hỏi tôi đã ăn chưa.",
+                  "note": "Whether is the more formal alternative to if, and is preferred before to infinitive or after a preposition."
+                }
+              ]
+            },
+            {
+              "title": "Wh- questions",
+              "statement": "The question word stays and is followed by normal statement order. There is no auxiliary inversion and no do-support.",
+              "formula": "What time does it start?  →  He asked what time it started.",
+              "examples": [
+                {
+                  "id": "rs-l5-r2-e1",
+                  "en": "\"Where do you live?\" she asked.  →  She asked where I lived.",
+                  "vi": "\"Bạn sống ở đâu?\" cô ấy hỏi. → Cô ấy hỏi tôi sống ở đâu.",
+                  "note": "Where is kept, the do is dropped and the subject goes back in front of the verb."
+                },
+                {
+                  "id": "rs-l5-r2-e2",
+                  "en": "\"Why did she leave?\" he asked.  →  He asked why she had left.",
+                  "vi": "\"Tại sao cô ấy rời đi?\" anh ấy hỏi. → Anh ấy hỏi tại sao cô ấy đã rời đi.",
+                  "note": "Did disappears and the past simple becomes had left."
+                }
+              ]
+            },
+            {
+              "title": "Asking and telling about questions",
+              "statement": "Ask takes the person directly, like tell. To ask whether something is true uses ask if or whether plus a clause; to ask for something uses ask for plus a noun or gerund.",
+              "formula": "She asked me if I was ready.  /  She asked for the report.",
+              "examples": [
+                {
+                  "id": "rs-l5-r3-e1",
+                  "en": "He asked me whether I had finished the work.",
+                  "vi": "Anh ấy hỏi tôi đã xong việc chưa.",
+                  "note": "Ask me is correct; ask to me is not."
+                },
+                {
+                  "id": "rs-l5-r3-e2",
+                  "en": "She asked for a glass of water.",
+                  "vi": "Cô ấy xin một ly nước.",
+                  "note": "Ask for something takes a noun phrase, not a clause."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l5-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l5-ex1",
+              "en": "\"Do you have any questions?\" the tutor asked.  →  The tutor asked if I had any questions.",
+              "vi": "\"Bạn có câu hỏi nào không?\" gia sư hỏi. → Gia sư hỏi tôi có câu hỏi nào không.",
+              "note": "Do-support vanishes entirely in the report."
+            },
+            {
+              "id": "rs-l5-ex2",
+              "en": "\"How much does it cost?\" she asked.  →  She asked how much it cost.",
+              "vi": "\"Giá bao nhiêu?\" cô ấy hỏi. → Cô ấy hỏi giá bao nhiêu.",
+              "note": "Does is dropped and the price expression is untouched."
+            },
+            {
+              "id": "rs-l5-ex3",
+              "en": "\"When will you arrive?\" he asked.  →  He asked when I would arrive.",
+              "vi": "\"Khi nào bạn sẽ đến?\" anh ấy hỏi. → Anh ấy hỏi tôi sẽ đến khi nào.",
+              "note": "Will becomes would, but the wh- word is not replaced."
+            },
+            {
+              "id": "rs-l5-ex4",
+              "en": "\"Did she leave a message?\" they asked.  →  They asked if she had left a message.",
+              "vi": "\"Cô ấy có để lại lời nhắn không?\" họ hỏi. → Họ hỏi cô ấy có để lại lời nhắn không.",
+              "note": "Did in the question becomes had in the report, and the third person pronoun stays she."
+            }
+          ]
+        },
+        {
+          "id": "rs-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l5-e1",
+              "kind": "rearrangeWords",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "Report the question: 'What time does the meeting start?'  →  He asked ___.",
+              "instruction": "Arrange the words into the reported clause.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "what",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "time",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "meeting",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "started",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "what",
+                    "time",
+                    "the",
+                    "meeting",
+                    "started"
+                  ]
+                ]
+              },
+              "explanation": "The question word and its noun stay together as a phrase, then the clause follows normal statement order: what time the meeting started. There is no does and no inversion, because the reported clause is a statement about a question.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-e2",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "She asked me where did I live.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She asked me where I lived."
+                ]
+              },
+              "explanation": "Reported questions never invert. Once the wh- word has been taken out, the rest of the clause is an ordinary statement, so the subject I goes in front of the verb lived.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-e3",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "Report the question: 'Is your brother a doctor?'",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She asked if her brother was a doctor.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She asked is her brother a doctor.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She asked that her brother is a doctor.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She asked her brother was a doctor.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "A yes/no question is reported with if or whether plus a clause, and the is disappears while the tense backs into was. Options b and d have no clause marker at all.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "\"Have you seen my bag?\" she asked.  →  She asked ___ I had seen her bag.",
+              "instruction": "Type the missing conjunction.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "if"
+                ]
+              },
+              "explanation": "Have and whether are both possible here. If is the everyday choice; whether is more formal and is required in positions where if would create a different reading, such as before to infinitive.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "advanced",
+              "prompt": "Report the question: 'Why didn't you tell me?'  →  He asked ___ I had not told him.",
+              "instruction": "Type the missing question word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "why"
+                ]
+              },
+              "explanation": "A wh- question keeps its question word, so why survives. The auxiliary did vanishes and the past simple not told backs into had not told.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-e6",
+              "kind": "trueFalse",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "In reported speech, whether is preferred to if before a to-infinitive, as in 'She asked whether to come in.'",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "If to can be read as 'if it is possible to come in', so the less ambiguous whether is used in front of a to-infinitive. That is a case where the grammar, not the style guide, forces the choice.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l5-dictation",
+          "type": "dictation",
+          "title": "Reported questions",
+          "items": [
+            {
+              "id": "rs-l5-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "He asked me whether I had finished the report."
+              },
+              "hint": "whether + clause, no inversion",
+              "translation": "Anh ấy hỏi tôi đã xong báo cáo chưa.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l5-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The teacher asked where I lived at the time."
+              },
+              "hint": "wh- question keeps the question word",
+              "translation": "Giáo viên hỏi tôi sống ở đâu vào thời điểm đó.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l5-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "She asked if I could help her with the booking."
+              },
+              "hint": "could stays, do-support disappears",
+              "translation": "Cô ấy hỏi tôi có thể giúp cô ấy đặt vé không.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l5-quiz",
+          "type": "quiz",
+          "title": "Reporting questions",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "Report the question: 'Can you drive?' he asked me.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "He asked me if I could drive.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "He asked me if I can drive.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He asked me can I drive.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "He asked me if I can driving.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Can backs into could, the inversion disappears, and the clause is introduced by if. Option b keeps the present modal, option c has no clause marker, and option d uses a gerund after can.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-q2",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "The police asked us what we were doing at that time.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The police asked us what we were doing at the time."
+                ]
+              },
+              "explanation": "The inversion is not the problem here; the tense is. At that time refers to the moment of speaking, so in a report made later it becomes at the time.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "intermediate",
+              "prompt": "Report: 'How long have you lived here?'  →  She asked how long I ___ there.",
+              "instruction": "Type the missing verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had lived"
+                ]
+              },
+              "explanation": "Have lived is a present perfect, so it backs into had lived, and here becomes there because the original speaker's location is now the reported location.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l5-q4",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l5",
+              "difficulty": "advanced",
+              "prompt": "Which reported question is correct?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She asked whether I would come to the party.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She asked that I would come to the party.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She asked if would I come to the party.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She asked me that would I come.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Reported yes/no questions take whether or if plus a clause in statement order. Options c and d keep the question inversion, and option b uses that, which introduces a fact rather than a question.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Yes/no questions become if or whether plus a clause, with no inversion and no do-support.",
+            "Wh- questions keep the question word and then use normal statement order.",
+            "The tense still backshifts: does he go to had he gone, can to could, will to would.",
+            "Ask takes the person directly, and ask for something takes a noun, not a clause."
+          ],
+          "nextLessonID": "rs-l6"
+        }
+      ]
+    },
+    {
+      "id": "rs-l6",
+      "title": "Commands, Requests and Advice",
+      "summary": "The imperative has no tense to backshift, so the reporting verbs do the work instead.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "rs-l6-theory",
+          "type": "theory",
+          "heading": "Imperatives and the to-infinitive patterns",
+          "body": "Commands and requests are the easiest thing to report and the easiest to get wrong, because the original has no tense at all. The past participle of the imperative verb, which looks like a passive, turns out to be the beginning of a to-infinitive. The reporting verb decides whether the report sounds like an order, a request, an offer or advice.",
+          "rules": [
+            {
+              "title": "Commands and requests",
+              "statement": "Tell covers orders and negative orders. Ask covers requests and polite instructions. Warn and advise use an infinitive but carry a warning or a recommendation.",
+              "formula": "tell + person + (not) + to + infinitive  |  ask + person + (not) + to + infinitive",
+              "examples": [
+                {
+                  "id": "rs-l6-r1-e1",
+                  "en": "\"Shut the door!\" she said.  →  She told me to shut the door.",
+                  "vi": "\"Đóng cửa đi!\" cô ấy nói. → Cô ấy bảo tôi đóng cửa.",
+                  "note": "The bare verb shut becomes the to-infinitive shut, not the passive shut down."
+                },
+                {
+                  "id": "rs-l6-r1-e2",
+                  "en": "\"Don't touch that,\" he said.  →  He told me not to touch that.",
+                  "vi": "\"Đừng chạm vào cái đó,\" anh ấy nói. → Anh ấy bảo tôi đừng chạm vào cái đó.",
+                  "note": "The negative not sits between to and the main verb."
+                },
+                {
+                  "id": "rs-l6-r1-e3",
+                  "en": "\"Could you help me?\" she asked.  →  She asked me to help her.",
+                  "vi": "\"Bạn có thể giúp tôi không?\" cô ấy hỏi. → Cô ấy nhờ tôi giúp cô ấy.",
+                  "note": "A polite request in the direct speech becomes ask me to in the report."
+                }
+              ]
+            },
+            {
+              "title": "Offers, advice and refusals",
+              "statement": "Offer states what the speaker was willing to do. Advise, recommend and warn require a to-infinitive. Refuse, promise and threaten use a to-infinitive but express the speaker's own position.",
+              "formula": "offer to do  |  advise someone to do  |  refuse to do  |  promise to do",
+              "examples": [
+                {
+                  "id": "rs-l6-r2-e1",
+                  "en": "\"I'll carry the bag for you,\" he said.  →  He offered to carry the bag for me.",
+                  "vi": "\"Để tôi mang túi hộ bạn,\" anh ấy nói. → Anh ấy đề nghị mang túi hộ tôi.",
+                  "note": "I'll here is not a report of a future fact but an offer, so the reporting verb is offer."
+                },
+                {
+                  "id": "rs-l6-r2-e2",
+                  "en": "\"You should see a doctor,\" she advised.  →  She advised me to see a doctor.",
+                  "vi": "\"Bạn nên đi khám bác sĩ,\" cô ấy khuyên. → Cô ấy khuyên tôi nên đi khám bác sĩ.",
+                  "note": "Advise plus object plus to-infinitive, and should may drop because the reporting verb already carries the recommendation."
+                },
+                {
+                  "id": "rs-l6-r2-e3",
+                  "en": "\"I will not sign it,\" he said.  →  He refused to sign it.",
+                  "vi": "\"Tôi sẽ không ký,\" anh ấy nói. → Anh ấy từ chối ký.",
+                  "note": "Refuse to do is the natural report of a refusal."
+                }
+              ]
+            },
+            {
+              "title": "Negative forms and the reporting verb as a warning",
+              "statement": "Never and not before a to-infinitive report a prohibition, and the choice of reporting verb can change the tone from a rule into a warning.",
+              "formula": "warned me not to touch  |  reminded me not to touch  |  told me never to touch",
+              "examples": [
+                {
+                  "id": "rs-l6-r3-e1",
+                  "en": "\"Never open this door while the machine is running.\"  →  He warned me never to open the door while the machine was running.",
+                  "vi": "\"Tuyệt đối không mở cánh cửa này khi máy đang chạy.\" → Anh ấy dặn tôi tuyệt đối không mở cửa khi máy đang chạy.",
+                  "note": "Warn plus never plus to-infinitive; the time clause backshifts to was running."
+                },
+                {
+                  "id": "rs-l6-r3-e2",
+                  "en": "\"Don't forget to post the letter.\"  →  She reminded me not to forget to post the letter.",
+                  "vi": "\"Đừng quên gửi thư.\" → Cô ấy nhắc tôi đừng quên gửi thư.",
+                  "note": "Remind is different from tell: it presupposes that the action was intended and might be forgotten."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rs-l6-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "rs-l6-ex1",
+              "en": "\"Wait here,\" the guard said.  →  The guard told me to wait there.",
+              "vi": "\"Hãy đứng chờ ở đây,\" người gác nói. → Người gác bảo tôi đứng chờ ở đó.",
+              "note": "Here becomes there, so a place demonstrative needs recalculating just like a time word."
+            },
+            {
+              "id": "rs-l6-ex2",
+              "en": "\"Let's take a taxi,\" he said.  →  He suggested taking a taxi.",
+              "vi": "\"Cùng đi taxi nào,\" anh ấy nói. → Anh ấy đề nghị đi taxi.",
+              "note": "A suggestion including the speaker becomes an ing-form: suggest taking."
+            },
+            {
+              "id": "rs-l6-ex3",
+              "en": "\"Please sign your name here.\"  →  The clerk asked me to sign my name there.",
+              "vi": "\"Xin vui lòng ký tên ở đây.\" → Nhân viên bảo tôi ký tên ở đó.",
+              "note": "Ask is softer than tell, which is why a polite request is normally reported with ask."
+            },
+            {
+              "id": "rs-l6-ex4",
+              "en": "\"Don't worry about the exam.\"  →  He reassured me not to worry about the exam.",
+              "vi": "\"Đừng lo về kỳ thi.\" → Anh ấy trấn an tôi đừng lo về kỳ thi.",
+              "note": "The verb you choose can add an intention the original words did not state explicitly, so pick the one the speaker meant."
+            }
+          ]
+        },
+        {
+          "id": "rs-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "rs-l6-e1",
+              "kind": "rearrangeWords",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "Report the command: 'Don't forget to lock the door.' → She reminded me ___.",
+              "instruction": "Arrange the words into the reported structure.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "not",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "to",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "forget",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "to",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "lock",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "door",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "not",
+                    "to",
+                    "forget",
+                    "to",
+                    "lock",
+                    "the",
+                    "door"
+                  ]
+                ]
+              },
+              "explanation": "Two to-infinitives in a row look confusing but are both correct: the first belongs to the reported command, not to forget, and the second belongs to the original imperative, to lock the door.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-e2",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "The teacher told us don't to open the window during the test.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The teacher told us not to open the window during the test."
+                ]
+              },
+              "explanation": "There is a single to in a negative to-infinitive: not to open. Also, 'don't to open' shows a double negative that English does not allow with do not plus a to-infinitive.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-e3",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "intermediate",
+              "prompt": "Report the sentence: \"I'll help you with the bags.\"",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "He offered to help me with the bags.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "He asked me to help him with the bags.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He told me helping him with the bags.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "He would help me with the bags.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "I'll followed by an offer is reported with offer to do. Option b reverses who helps whom, which is the most common error here because the object pronoun has to follow the shift to the reporter.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-e4",
+              "kind": "sentenceCompletion",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "Report the advice: \"You should see a doctor.\"  →  She advised me ___.",
+              "instruction": "Type the reported structure.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "to see a doctor"
+                ]
+              },
+              "explanation": "Advise plus person plus to-infinitive. The should disappears because advise already marks the statement as a recommendation, and doubling it would be redundant.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "intermediate",
+              "prompt": "Report the suggestion: \"Let's meet at eight.\"  →  He suggested ___ at eight.",
+              "instruction": "Type the missing verb form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "meeting"
+                ]
+              },
+              "explanation": "When the suggestion includes the speaker, the pattern is suggest plus gerund. The alternative, suggest that we meet, uses the subjunctive base form and leaves out the first person plural.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-e6",
+              "kind": "grammarCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "The technician told me to not touch the cable and switch off the machine first before you do anything.",
+              "instruction": "Rewrite so that the pronouns, the infinitive chain and the word order are all correct.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The technician told me not to touch the cable and to switch off the machine before doing anything else."
+                ]
+              },
+              "explanation": "Three problems: the negative infinitive must be not to touch, the second command needs its own to instead of nothing, and a reported command must not switch back to the second person you, which would make the technician the one giving the instructions.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l6-dictation",
+          "type": "dictation",
+          "title": "Reported commands and requests",
+          "items": [
+            {
+              "id": "rs-l6-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The guard told us to wait there until the storm had passed."
+              },
+              "hint": "tell + us + to infinitive",
+              "translation": "Người gác bảo chúng tôi đứng chờ ở đó cho đến khi cơn bão đi qua.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l6-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "She warned me not to touch the wet paint."
+              },
+              "hint": "warn + not + to infinitive",
+              "translation": "Cô ấy dặn tôi đừng chạm vào lớp sơn ướt.",
+              "xp": 15
+            },
+            {
+              "id": "rs-l6-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "He offered to drive us to the airport."
+              },
+              "hint": "offer + to infinitive",
+              "translation": "Anh ấy đề nghị chở chúng tôi đến sân bay.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "rs-l6-quiz",
+          "type": "quiz",
+          "title": "Commands, requests and advice",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "rs-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "intermediate",
+              "prompt": "Report the command: \"Please close the window,\" she said.",
+              "instruction": "Choose the correct report.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She asked me to close the window.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She asked me closing the window.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She told me closing the window.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She asked me that I closed the window.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "A polite request is reported with ask plus a to-infinitive. Options b and c use a gerund where a to-infinitive is required, and option d uses that, which introduces a statement rather than an instruction.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "My father told to me not to go out alone at night.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "My father told me not to go out alone at night."
+                ]
+              },
+              "explanation": "Tell, like suggest, advise and warn, takes the person directly after the verb. There is no preposition, so 'told to me' is wrong; it must be 'told me'.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "advanced",
+              "prompt": "Report the sentence: \"I would rather stay at home.\"  →  She said she ___ stay at home.",
+              "instruction": "Type the missing structure.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would rather"
+                ]
+              },
+              "explanation": "Would rather survives a report unchanged, because it is a fixed expression rather than a future auxiliary. What can change is the subject it is attached to: I becomes she.",
+              "xp": 10
+            },
+            {
+              "id": "rs-l6-q4",
+              "kind": "trueFalse",
+              "topicID": "reported-speech",
+              "lessonID": "rs-l6",
+              "difficulty": "intermediate",
+              "prompt": "In reported commands, the object pronoun you must usually be changed, because the person being addressed is now the reporter.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Once the command becomes a third-person report, the person being addressed is the reporter, so you becomes I or me and my becomes his or her. Leaving you in place is one of the classic reported-speech slips.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "rs-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "Commands and requests become tell or ask plus a to-infinitive, with not sitting between to and the main verb.",
+            "Advise, warn, remind, offer, promise and refuse all use a to-infinitive but change the tone.",
+            "A suggestion that includes the speaker becomes suggest plus gerund; a suggestion about others uses that plus base form.",
+            "In a report, you becomes I or me, because the reporter is the person being addressed."
+          ]
+        }
+      ]
+    }
+  ]
+}

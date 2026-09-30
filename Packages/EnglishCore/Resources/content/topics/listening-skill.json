@@ -1,0 +1,1114 @@
+{
+  "id": "listening-skill",
+  "title": "Listening Skill",
+  "kind": "listening",
+  "icon": "ear",
+  "summary": "Train the ear deliberately: shadow single speakers, then decode fast connected speech, then hold your own attention through native-speed lectures. Every step is built around real speech you can replay slowly.",
+  "estimatedMinutes": 45,
+  "lessons": [
+    {
+      "id": "listening-skill-beginner",
+      "title": "One Speaker, Short Utterances",
+      "summary": "Train your ear on everyday English and learn to shadow a single speaker without translating.",
+      "level": "beginner",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "ls-beg-theory",
+          "type": "theory",
+          "heading": "How listening is actually trained at beginner level",
+          "body": "A beginner does not have a hearing problem; the ear simply has not been pointed at the right thing. Right now you are trying to catch individual words, which is the slowest possible strategy, because English puts function words together and swallows the unstressed ones. At this level you change the target: listen for the *stress pattern* first, then the content words, and only then connect. Two habits do most of the work. First, chunking — hear 'wanna go uptown' as three units, not six syllables. Second, shadowing — say the sentence out loud half a second behind the recording, copying the rhythm and the reductions, not imitating a fake accent. Shadowing trains the mouth and the ear together, which is why it fixes pronunciation and comprehension in the same five minutes. What to ignore at this level: background noise, the narrator's voice quality, and how fast the delivery feels. None of that changes what was said. What to notice: which words are long and stressed (usually the content words), where the pitch falls at the end of the turn, and whether the speaker sounds sure or unsure.",
+          "rules": [
+            {
+              "title": "Chunk before you decode",
+              "statement": "Group the sentence into two to four word units before you try to understand it. Chunks are where meaning lives; individual phonemes are not. If you can hear the chunks, the words inside them arrive almost for free.",
+              "examples": [
+                {
+                  "id": "ls-beg-r1-e1",
+                  "en": "I'm gonna pick you up at seven.",
+                  "vi": "Tôi sẽ đón bạn lúc bảy giờ.",
+                  "note": "Four chunks: I'm gonna / pick you up / at seven. Note 'gonna' is one sound-unit, not three syllables to spell out."
+                },
+                {
+                  "id": "ls-beg-r1-e2",
+                  "en": "Could you put that in the fridge?",
+                  "vi": "Bạn có thể để cái đó vào tủ lạnh không?",
+                  "note": "Three chunks: Could you put / that in / the fridge. The reply 'Sure, no problem' shows you understood the chunk, not the words."
+                }
+              ]
+            },
+            {
+              "title": "Shadow the rhythm, not the accent",
+              "statement": "Repeat the line out loud a beat behind the audio, copying the stressed syllables and the pauses. Copying an accent you do not have is fake; copying the rhythm is real and it makes the next listen faster.",
+              "examples": [
+                {
+                  "id": "ls-beg-r2-e1",
+                  "en": "She's been working here since ninety-eight.",
+                  "vi": "Cô ấy làm việc ở đây từ năm chín mươi tám.",
+                  "note": "Stress on BEEN, WORK, HERE, since NINETY-EIGHT. Shadow the four peaks, not a uniform stream of syllables."
+                },
+                {
+                  "id": "ls-beg-r2-e2",
+                  "en": "No, I wouldn't, thanks.",
+                  "vi": "Không, tôi sẽ không, cảm ơn.",
+                  "note": "A short turn has a narrow pitch range and a falling final word. Shadowing it teaches ending shape, which is what marks you as fluent."
+                }
+              ]
+            },
+            {
+              "title": "Answer with meaning, not with keywords",
+              "statement": "When you check your understanding, answer the question that was asked. Picking an option because it shares a word with the audio is the single most common beginner listening error.",
+              "examples": [
+                {
+                  "id": "ls-beg-r3-e1",
+                  "en": "The meeting has moved to three, not two.",
+                  "vi": "Cuộc họp đã chuyển sang ba giờ, không phải hai giờ.",
+                  "note": "Both two and three are in the audio, but only three is the new time. The word 'not' carries the whole meaning."
+                },
+                {
+                  "id": "ls-beg-r3-e2",
+                  "en": "I'd rather not, if that's all right.",
+                  "vi": "Tôi thà không, nếu điều đó được.",
+                  "note": "A refusal with no new information. A listener hunting for a time or a place will find nothing here — that absence is the answer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls-beg-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "ls-beg-ex1",
+              "en": "Sorry, could you repeat that?",
+              "vi": "Xin lỗi, bạn có thể nói lại không?",
+              "note": "The classic repair phrase. Use it instead of going silent."
+            },
+            {
+              "id": "ls-beg-ex2",
+              "en": "The bus to the airport leaves from bay twelve.",
+              "vi": "Xe buýt ra sân bay khởi hành từ số 12.",
+              "note": "One chunk: from bay twelve. The number is the only part worth writing down."
+            },
+            {
+              "id": "ls-beg-ex3",
+              "en": "I'd rather have tea, thanks.",
+              "vi": "Tôi thà uống trà, cảm ơn.",
+              "note": "'I'd rather' marks a preference, not a fact. Stress falls on rather, not on tea."
+            },
+            {
+              "id": "ls-beg-ex4",
+              "en": "What time does the shop close on Sundays?",
+              "vi": "Cửa hàng đóng cửa lúc mấy giờ vào Chủ nhật?",
+              "note": "A wh-question keeps its stress on the question word, so the pitch drops early and the listener knows the shape of the answer."
+            },
+            {
+              "id": "ls-beg-ex5",
+              "en": "My brother-in-law called twice this morning.",
+              "vi": "Anh rể của tôi đã gọi hai lần sáng nay.",
+              "note": "Listen for the two hyphens as one beat: brother-in-law. Do not try to hear three separate words."
+            }
+          ]
+        },
+        {
+          "id": "ls-beg-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "ls-beg-1",
+              "kind": "listening",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Listen to the offer, then choose the reply that actually responds to it.",
+              "instruction": "Play the audio as many times as you need, then pick the best answer.",
+              "audio": {
+                "id": "ls-beg-1-audio",
+                "kind": "speech",
+                "text": "Would you like some tea?",
+                "rate": 0.45
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Yes, please. That would be lovely.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Yes, I am fine, thanks.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "It is already on the table.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "'Would you like...' is an offer, and an offer can only be accepted or declined. Before you look at the options, name the speech act in your head: this speaker is offering, not asking for information. That single step removes both distractors: 'I am fine' answers a question about your state, and 'on the table' answers a question about location — neither fits an offer. The accepted reply also carries a reaction ('That would be lovely'), which is what natural acceptances sound like.",
+              "xp": 10
+            },
+            {
+              "id": "ls-beg-2",
+              "kind": "listeningComprehension",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Listen to the announcement. At what time does the train leave?",
+              "instruction": "The three options differ by only a few words. Replay the audio and listen for the last stressed chunk.",
+              "audio": {
+                "id": "ls-beg-2-audio",
+                "kind": "speech",
+                "text": "The train to Da Nang leaves at seven fifteen from platform three.",
+                "rate": 0.42
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Seven fifty",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Seven fifteen",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Six fifty",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "The sentence is built as three chunks: the train / the time / the platform. A common trap is to catch 'platform three' first because three repeats, and then to guess three for the time. Instead, predict the slot: after 'leaves at' you are contractually listening for a time only, and 'platform' in the last chunk tells you the second number is not a time. Fifteen is stress-initial in 'seven fifteen', so it arrives loud and early in the phrase.",
+              "xp": 10
+            },
+            {
+              "id": "ls-beg-3",
+              "kind": "dictation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Listen and type the sentence exactly as you hear it.",
+              "instruction": "Replay the audio as many times as you like. Type in chunks: I usually / get up / at six and go for a run.",
+              "audio": {
+                "id": "ls-beg-3-audio",
+                "kind": "speech",
+                "text": "I usually get up at six and go for a run.",
+                "rate": 0.4
+              },
+              "answer": {
+                "type": "text",
+                "values": ["I usually get up at six and go for a run."]
+              },
+              "explanation": "Type the chunks in the order you heard them instead of word by word: I usually / get up / at six / and go for a run. The only place beginners lose marks here is the small word 'and' between two infinitives — it is unstressed, so it sounds like a half-syllable and is easy to drop. If you wrote 'at six go for a run', you lost the connector, and the sentence now means something different. Capital letters and the full stop are ignored when your text is checked; missing content words are not.",
+              "xp": 10
+            },
+            {
+              "id": "ls-beg-4",
+              "kind": "rearrangeWords",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Listen, then rebuild the sentence you heard in the right order.",
+              "instruction": "Tap the words in the order they were spoken.",
+              "audio": {
+                "id": "ls-beg-4-audio",
+                "kind": "speech",
+                "text": "Sorry, I did not catch that.",
+                "rate": 0.4
+              },
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "Sorry",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "did",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "not",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "catch",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "that",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["Sorry", "I", "did", "not", "catch", "that"]
+              },
+              "explanation": "English puts the negation in the middle: subject + did + not + verb. Learners who build the sentence word by word often produce 'I not did catch that', which never occurs. The repair phrase is a fixed three-chunk formula — Sorry / I did not / catch that — so rehearse it as a unit until it is automatic. Keep 'did not' together; splitting it puts two stressed sounds where the sentence has only one.",
+              "xp": 10
+            },
+            {
+              "id": "ls-beg-5",
+              "kind": "translation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Say this out loud, then type it: the phrase you use when you have genuinely not understood.",
+              "instruction": "Write the English repair phrase. Any natural wording is accepted.",
+              "translation": "Xin lỗi, bạn có thể nói lại không?",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Can you say that again, please?",
+                  "Sorry, could you repeat that?",
+                  "Could you repeat that, please?",
+                  "Sorry, can you say that again?",
+                  "Could you say that again, please?"
+                ]
+              },
+              "explanation": "Build repair phrases from two slots: a politeness opener (sorry / excuse me) plus one request verb (say again / repeat) plus a politeness tag (please). Keeping the slot order open means you can improvise instead of memorising one frozen sentence. Say it aloud once before typing — if you can pronounce the sentence you are about to type, you will rarely leave out a word you are relying on. Note that 'again' and a second time both carry the meaning; one of them is enough.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "ls-beg-dictation",
+          "type": "dictation",
+          "title": "Everyday dictation",
+          "items": [
+            {
+              "id": "ls-beg-d1",
+              "audio": {
+                "id": "ls-beg-d1-audio",
+                "kind": "speech",
+                "text": "Could you turn the lights off before you go?",
+                "rate": 0.4
+              },
+              "acceptedAnswers": [
+                "Could you turn the lights off before you go out?",
+                "Can you turn the lights off before you go?"
+              ],
+              "hint": "two chunks: turn the lights off / before you go",
+              "translation": "Bạn có thể tắt đèn trước khi đi không?",
+              "xp": 15
+            },
+            {
+              "id": "ls-beg-d2",
+              "audio": {
+                "id": "ls-beg-d2-audio",
+                "kind": "speech",
+                "text": "I usually get up at six and go for a run.",
+                "rate": 0.4
+              },
+              "acceptedAnswers": [
+                "I normally get up at six and go for a run."
+              ],
+              "hint": "watch the connector before the second infinitive",
+              "translation": "Tôi thường dậy lúc sáu giờ và đi chạy.",
+              "xp": 15
+            },
+            {
+              "id": "ls-beg-d3",
+              "audio": {
+                "id": "ls-beg-d3-audio",
+                "kind": "speech",
+                "text": "My sister-in-law called twice this morning.",
+                "rate": 0.38
+              },
+              "acceptedAnswers": [
+                "My sister in law called twice this morning."
+              ],
+              "hint": "the compound noun is one beat, not three words",
+              "translation": "Chị tôi gọi hai lần sáng nay.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "ls-beg-summary",
+          "type": "summary",
+          "takeaways": [
+            "Listen for the stress pattern and the chunks first; hunting for individual words is what makes fast English feel impossible.",
+            "Shadow the audio out loud half a beat behind it, copying rhythm and pauses rather than imitating an accent.",
+            "Before you answer, name the speech act: offer, refusal, announcement, repair. Meaning beats keywords.",
+            "Three repair phrases cover almost every beginner conversation: say that again, could you repeat that, and I did not catch that.",
+            "Replay the audio instead of guessing. Guessing teaches you the sentence you invented, not the one that was said."
+          ],
+          "nextLessonID": "listening-skill-intermediate"
+        }
+      ]
+    },
+    {
+      "id": "listening-skill-intermediate",
+      "title": "Two Speakers and Fast Connected Speech",
+      "summary": "Decode reductions, linking and quick turn-taking between two speakers at normal speed.",
+      "level": "intermediate",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "ls-int-theory",
+          "type": "theory",
+          "heading": "Why fast speech is still slow speech with rules",
+          "body": "Intermediate listening fails for a structural reason: the learner still expects a written sentence to come out of the speaker's mouth. It does not. At normal speed English deletes, fuses and reassigns — 'I am going to' arrives as 'gonna', 'have to' as 'gotta', 'want to' as 'wanna', and the final consonant of a word ties itself onto the first vowel of the next word ('pick it up' sounds like 'picki-tup'). Once you hear this as rule-governed rather than as sloppy, two-speaker conversation becomes tractable. The second problem is turn-taking. When speakers overlap, the utterance you must not miss is not always the louder one: a quieter 'well' or 'I mean' from the second speaker often carries the actual stance, while the loud sentence is background. Technique for this level: shadow the first speaker for one turn, predict the second speaker's move from the conversation's purpose, then check your prediction against what actually arrived. A correct prediction is comprehension; a lucky one is not. What to notice: reductions and which words keep full vowels; linking across word boundaries; who takes the floor and how they signal it; and hedges, because 'I think', 'probably', 'a bit' are the real content of an opinion and 'definitely', 'obviously', 'clearly' tell you the speaker is persuading rather than informing. What to ignore: filler words you could delete yourself, the speed of delivery, and background noise.",
+          "rules": [
+            {
+              "title": "The four reductions you will hear most",
+              "statement": "These four contractions carry no meaning of their own — they are grammar, not vocabulary. Learn them as sounds so your ear stops hunting for words that are not there.",
+              "examples": [
+                {
+                  "id": "ls-int-r1-e1",
+                  "en": "I'm gonna be late, I gotta go now.",
+                  "vi": "Tôi sẽ đến muộn, tôi phải đi ngay.",
+                  "note": "gonna = going to, gotta = have to. Both are single stress units."
+                },
+                {
+                  "id": "ls-int-r1-e2",
+                  "en": "I wanna leave early, I really gotta go.",
+                  "vi": "Tôi muốn về sớm, tôi thật sự phải đi rồi.",
+                  "note": "wanna = want to. Learn the pair 'gonna / gotta / wanna' as one drill set."
+                }
+              ]
+            },
+            {
+              "title": "Linking: the last consonant becomes the first consonant's partner",
+              "statement": "When a word ends in a consonant and the next begins with a vowel, English glues them and often deletes one of the two sounds. Do not hunt for a silent letter.",
+              "examples": [
+                {
+                  "id": "ls-int-r2-e1",
+                  "en": "Take it easy.",
+                  "vi": "Cứ từ tế.",
+                  "note": "take it sounds like 'takee-t'; the k in take is silent before the vowel in it."
+                },
+                {
+                  "id": "ls-int-r2-e2",
+                  "en": "I met her at the party.",
+                  "vi": "Tôi gặp cô ấy ở bữa tiệc.",
+                  "note": "met her sounds like 'mether'. Same rule, same two words, every time."
+                }
+              ]
+            },
+            {
+              "title": "Track hedges, not just facts",
+              "statement": "A hedge is the speaker telling you how strongly they believe what they are about to say. Missing one flips a guess into a certainty, and that is where comprehension errors actually come from.",
+              "examples": [
+                {
+                  "id": "ls-int-r3-e1",
+                  "en": "I suppose we could try again next week.",
+                  "vi": "Tôi nghĩ chắc ta có thể thử lại tuần sau.",
+                  "note": "'I suppose' plus 'could' plus 'try again' means a weak suggestion, not a plan."
+                },
+                {
+                  "id": "ls-int-r3-e2",
+                  "en": "Obviously, we should have started earlier.",
+                  "vi": "Rõ ràng là lẽ ra chúng ta nên bắt đầu sớm hơn.",
+                  "note": "'Obviously' carries irritation. A listener who drops it hears a neutral comment and misses the tone entirely."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls-int-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "ls-int-ex1",
+              "en": "I was going to call, but I thought you'd already know.",
+              "vi": "Tôi định gọi, nhưng tôi nghĩ bạn đã biết rồi.",
+              "note": "Past continuous 'was going to' plus a but-clause. Informal and very common."
+            },
+            {
+              "id": "ls-int-ex2",
+              "en": "Hang on, I didn't catch the last bit.",
+              "vi": "Khoan đã, tôi không nghe rõ phần cuối.",
+              "note": "A repair phrase for a partial loss — far more natural than 'what?'"
+            },
+            {
+              "id": "ls-int-ex3",
+              "en": "Well, I mean, it's not that bad.",
+              "vi": "À, ý tôi là, nó không tệ đến thế.",
+              "note": "Three discourse markers in a row. The real clause is 'it's not that bad'."
+            },
+            {
+              "id": "ls-int-ex4",
+              "en": "If you ask me, she was right to push back.",
+              "vi": "Nếu là tôi, bà ấy đã đúng khi phản đối.",
+              "note": "'If you ask me' frames an opinion as personal, which lowers the speaker's commitment."
+            },
+            {
+              "id": "ls-int-ex5",
+              "en": "Let's say we push the deadline to Friday.",
+              "vi": "Giả sử ta dời hạn chót sang thứ Sáu.",
+              "note": "'Let's say' proposes a hypothetical without committing to it."
+            }
+          ]
+        },
+        {
+          "id": "ls-int-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "ls-int-1",
+              "kind": "listening",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Two speakers are talking about Friday. How certain is the second speaker about the plan?",
+              "instruction": "Listen to both turns, then choose the option that matches the degree of certainty.",
+              "audio": {
+                "id": "ls-int-1-audio",
+                "kind": "speech",
+                "text": "Speaker A: So are we still on for Friday? Speaker B: Yeah, I think so, unless the boss moves it again.",
+                "rate": 0.5
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The plan is settled for Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The plan probably still holds, but it is not certain.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The plan has been cancelled for Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "Two separate hedges do the work: 'I think so' marks it as the speaker's belief rather than a fact, and the unless-clause adds a condition that could still change things. A listener who tracks only the main clause hears 'still on for Friday' and chooses the settled plan. The habit to build is to write down hedges as you hear them, separately from the content words, and then check whether any of them weakens the answer.",
+              "xp": 10
+            },
+            {
+              "id": "ls-int-2",
+              "kind": "listeningComprehension",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Listen to the speaker. Why will they be late?",
+              "instruction": "Both reductions in the audio are written out as they are pronounced. Match them to their full forms before you choose.",
+              "audio": {
+                "id": "ls-int-2-audio",
+                "kind": "speech",
+                "text": "I'm gonna be late for the stand-up, I still gotta get to the airport.",
+                "rate": 0.5
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "They have not finished their work yet.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "They still have to travel to the airport.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Their flight has been cancelled.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "Expand the reductions first: 'gonna' is going to and 'gotta' is have to. The first clause only states the problem; the second gives the reason, and it is 'get to' plus 'airport' that answers the question. The trap here is option (a), which feels like a natural explanation for lateness but appears nowhere in the audio. A useful drill is to write the full form silently before you choose, because it forces you to hear one continuous stream of grammar instead of two separate fragments.",
+              "xp": 10
+            },
+            {
+              "id": "ls-int-3",
+              "kind": "dictation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Listen and type the sentence. It is fast, so the second half runs into a reduced form.",
+              "instruction": "Type the full form, not the sound. Replay as often as you need.",
+              "audio": {
+                "id": "ls-int-3-audio",
+                "kind": "speech",
+                "text": "We were going to leave, but we had to wait for the car.",
+                "rate": 0.48
+              },
+              "answer": {
+                "type": "text",
+                "values": ["We were going to leave, but we had to wait for the car."]
+              },
+              "explanation": "The first clause is a past continuous — 'were going to', uncontracted, which is why it is longer and easier to catch. The second clause contracts 'had to' to 'gotta' and hits you while you are still writing the first. Split the sentence at the comma, finish one half before starting the other, and write 'had to' in full: dictation is checked against the written form of the sentence, so a phonetic spelling such as 'gotta' is marked as a substitution even though you heard it perfectly.",
+              "xp": 10
+            },
+            {
+              "id": "ls-int-4",
+              "kind": "typeTheAnswer",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Listen, then type how long the discussion at the end will last.",
+              "instruction": "Type only the duration. The speaker gives the numbers indirectly, so convert them yourself.",
+              "audio": {
+                "id": "ls-int-4-audio",
+                "kind": "speech",
+                "text": "The seminar starts at half past two and finishes around four, so you'll have about ninety minutes of questions at the end.",
+                "rate": 0.5
+              },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "ninety minutes",
+                  "90 minutes",
+                  "about ninety minutes",
+                  "about 90 minutes",
+                  "1.5 hours"
+                ]
+              },
+              "explanation": "The answer is never said as a single phrase — you have to compute it from two time expressions: half past two to around four is roughly ninety minutes. When a duration is spread across two endpoints, write both times down first, then do the subtraction before you type. Type the number, not a full sentence; extra words you invent to feel safe will be counted as extra words and cost you accuracy.",
+              "xp": 10
+            },
+            {
+              "id": "ls-int-5",
+              "kind": "multipleChoice",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Listen to the sentence, then choose the option that describes what happens in the audio.",
+              "instruction": "The three options describe three different moments. Identify the sequence of events in the audio.",
+              "audio": {
+                "id": "ls-int-5-audio",
+                "kind": "speech",
+                "text": "He's gonna ask for the report before lunch, so you might want to check the figures first.",
+                "rate": 0.5
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The report will be sent after lunch.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The figures should be checked before the request arrives.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The figures have already been sent to him.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "The audio is one sentence but two events: a request 'before lunch' and a recommendation to check the figures 'first'. The 'so' clause is the consequence, and 'first' tells you the order. Option (a) reverses the timing and option (c) invents a completed action. The general method for this kind of item: after the 'so', imagine a new clock is being set, then read the time words out loud to yourself in order — before lunch, then first.",
+              "xp": 10
+            },
+            {
+              "id": "ls-int-6",
+              "kind": "translation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Say this out loud, then type it. You need a soft suggestion, not a command.",
+              "instruction": "Write the English suggestion. Any natural wording is accepted.",
+              "translation": "Chúng ta nên rời đi sớm hơn.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We should probably leave earlier.",
+                  "We should leave a bit earlier.",
+                  "Maybe we should leave earlier.",
+                  "It might be a good idea to leave earlier.",
+                  "We might want to leave earlier."
+                ]
+              },
+              "explanation": "Vietnamese 'nên' is a soft recommendation, and the direct English equivalent is weaker than you might expect: 'We should leave earlier' with no softening sounds like a complaint from a manager. To keep the politeness, add one softener — 'probably', 'a bit', 'maybe', or replace 'should' with 'might want to' or 'it might be a good idea to'. Say your sentence aloud and ask yourself whether a manager would be annoyed by it; if yes, you have left out the softener.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "ls-int-dictation",
+          "type": "dictation",
+          "title": "Connected speech dictation",
+          "items": [
+            {
+              "id": "ls-int-d1",
+              "audio": {
+                "id": "ls-int-d1-audio",
+                "kind": "speech",
+                "text": "I was going to call you, but I thought you'd already know.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "I was going to call you but I thought you had already known."
+              ],
+              "hint": "you'd is the contraction of you had — do not write 'you would'",
+              "translation": "Tôi định gọi cho bạn, nhưng tôi nghĩ bạn đã biết rồi.",
+              "xp": 15
+            },
+            {
+              "id": "ls-int-d2",
+              "audio": {
+                "id": "ls-int-d2-audio",
+                "kind": "speech",
+                "text": "Take it easy and let me know if you need anything.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "Take it easy, and let me know if you need anything."
+              ],
+              "hint": "'take it easy' is one chunk; the t in it is silent",
+              "translation": "Cứ bình tĩnh, và báo tôi biết nếu bạn cần gì.",
+              "xp": 15
+            },
+            {
+              "id": "ls-int-d3",
+              "audio": {
+                "id": "ls-int-d3-audio",
+                "kind": "speech",
+                "text": "Well, I mean, it's not that bad.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "Well I mean it's not that bad."
+              ],
+              "hint": "three discourse markers, then the real clause",
+              "translation": "À, ý tôi là, nó cũng không tệ đến thế.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "ls-int-summary",
+          "type": "summary",
+          "takeaways": [
+            "Gonna, gotta, wanna and contracted modals are grammar, not vocabulary: expand them silently before you decide what was said.",
+            "Linking is normal English, not sloppiness — 'met her', 'take it', 'pick it up'. Never hunt for a silent letter.",
+            "When two speakers talk, the loudest sentence is not always the one carrying the meaning; the quiet 'well' or 'I mean' often carries the stance.",
+            "Track hedges separately from content words. 'I think', 'probably' and 'a bit' tell you how strongly the speaker believes the information.",
+            "Predict the next turn from the purpose of the conversation, then check your prediction. A lucky guess is not comprehension."
+          ],
+          "nextLessonID": "listening-skill-advanced"
+        }
+      ]
+    },
+    {
+      "id": "listening-skill-advanced",
+      "title": "Lectures and Native-Speed Academic Speech",
+      "summary": "Hold attention through a ten-minute lecture, unknown accents, and speakers whose attitude does all the arguing.",
+      "level": "advanced",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "ls-adv-theory",
+          "type": "theory",
+          "heading": "Comprehending speech you cannot transcribe",
+          "body": "At this level the audio is no longer made of sentences; it is made of argument. A lecture does not repeat its key point, it builds it: background, then evidence, then a concession, then a claim. Listeners who expect repetition fail, because the claim arrives at the end and phrased differently from anything said before. The second change is that you must survive without full audibility. Real lectures have overlapping voices, self-corrections, half-finished clauses and a lot of discourse marking rather than content marking. The third is accent: a Scottish, Indian or Australian lecturer produces the same English with different rhythm, and if you have trained only on your own accent you will decode the words correctly and still miss the tone. Technique for this level is prediction at three levels. Before the talk, write down the two or three things you expect to be said — the scaffold. During the talk, hold only the current sub-argument in short-term memory and let the rest go. After each section, restate it in one sentence; if you cannot, you lost it at the last link rather than at the first. What to notice: stance words (however, that said, the point is), self-repair ('or rather', 'sorry'), and speed — lectures compress function words far harder than conversation does. What to ignore: every example the speaker gives in passing, and any name you are not going to need. And read the attitude, not just the words: a speaker who says 'the evidence is, frankly, quite thin' has told you how to score the argument, and no amount of vocabulary coverage will replace hearing that.",
+          "rules": [
+            {
+              "title": "The claim comes last, and it comes new",
+              "statement": "Academic speakers reserve their main claim for the end of a section and usually word it differently from any earlier sentence. If you only remember the first thing you heard, you remember the background, not the point.",
+              "examples": [
+                {
+                  "id": "ls-adv-r1-e1",
+                  "en": "The early studies were small, the later ones used different measures, and the whole field has been arguing with itself since 1998.",
+                  "vi": "Các nghiên cứu ban đầu nhỏ, các nghiên cứu sau dùng phép đo khác, và cả lĩnh vực này cãi nhau từ 1998.",
+                  "note": "Three clauses, no claim. The claim comes in the next sentence and is not a repeat."
+                },
+                {
+                  "id": "ls-adv-r1-e2",
+                  "en": "What this tells us is that the effect is real but far smaller than we assumed.",
+                  "vi": "Điều này cho chúng ta biết hiệu ứng có thật nhưng nhỏ hơn nhiều so với giả định.",
+                  "note": "'What this tells us is' is the claim marker. Note the contrast 'real but far smaller' — that is the actual content."
+                }
+              ]
+            },
+            {
+              "title": "Follow self-repair instead of the first version",
+              "statement": "Speakers restart and correct constantly. The discarded version is not content. Train yourself to discard it the moment you hear the repair signal.",
+              "examples": [
+                {
+                  "id": "ls-adv-r2-e1",
+                  "en": "There are, or rather there were, only three comparable studies.",
+                  "vi": "Có, hay đúng hơn là từng có, chỉ ba nghiên cứu tương đương.",
+                  "note": "'or rather' retires 'are'. Dictating the first version costs you a substitution."
+                },
+                {
+                  "id": "ls-adv-r2-e2",
+                  "en": "It's not so much that people forget as that they never encoded it.",
+                  "vi": "Không phải là người ta quên, mà là họ chưa từng mã hóa nó.",
+                  "note": "'not so much ... as' reframes the whole sentence. Catching the 'as' half is what shows real control."
+                }
+              ]
+            },
+            {
+              "title": "Score the argument, not just the words",
+              "statement": "Attitude words are the speaker's verdict on their own material. Learn a small closed set of them and you can hear evaluation that vocabulary lists never teach you.",
+              "examples": [
+                {
+                  "id": "ls-adv-r3-e1",
+                  "en": "The evidence is, frankly, quite thin.",
+                  "vi": "Bằng chứng, nói thẳng, khá mỏng.",
+                  "note": "'frankly' plus 'quite thin' is a dismissal. Nothing in the data says this; only the delivery does."
+                },
+                {
+                  "id": "ls-adv-r3-e2",
+                  "en": "That's a fair question, and I'll come back to it.",
+                  "vi": "Đó là một câu hỏi hay, tôi sẽ quay lại sau.",
+                  "note": "A hedge that signals the question will not be answered yet. Useful for note-taking priorities."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls-adv-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "ls-adv-ex1",
+              "en": "The point, if I can put it simply, is that the correlation is not causation.",
+              "vi": "Điểm, nếu tôi nói đơn giản, là tương quan không phải nhân quả.",
+              "note": "'If I can put it simply' promises a simplification; the main claim follows the pause."
+            },
+            {
+              "id": "ls-adv-ex2",
+              "en": "Now, this is where it gets a little more complicated.",
+              "vi": "Bây giờ, đây là chỗ nó bắt đầu phức tạp hơn một chút.",
+              "note": "A signpost. Speakers who use these are giving you the structure for free — use them to mark where to start writing."
+            },
+            {
+              "id": "ls-adv-ex3",
+              "en": "Having said that, I don't think we can ignore the second result.",
+              "vi": "Nói như vậy, tôi không nghĩ ta có thể bỏ qua kết quả thứ hai.",
+              "note": "'Having said that' concedes a point without giving it up."
+            },
+            {
+              "id": "ls-adv-ex4",
+              "en": "The literature is, at best, equivocal on this.",
+              "vi": "Tài liệu nghiên cứu, nói tốt, không dứt khoát về điều này.",
+              "note": "Formal, academic hedging. 'At best' caps how much you should believe the claim."
+            },
+            {
+              "id": "ls-adv-ex5",
+              "en": "So to summarise: the mechanism is plausible, the evidence is thin, and the effect is small.",
+              "vi": "Vậy tóm lại: cơ chế là khả thi, bằng chứng mỏng, và hiệu ứng nhỏ.",
+              "note": "Every clause of a lecture summary. Knowing this shape is worth more than memorising vocabulary."
+            }
+          ]
+        },
+        {
+          "id": "ls-adv-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "ls-adv-1",
+              "kind": "listening",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen to this short lecture opening. What is the speaker's central claim?",
+              "instruction": "The claim is not repeated verbatim. Compare the three options with the meaning of the final clause.",
+              "audio": {
+                "id": "ls-adv-1-audio",
+                "kind": "speech",
+                "text": "We looked at four studies. The first two were small, the third used a different measure entirely, and the fourth is the only one anybody has replicated. What this tells us, then, is that the effect is probably real, but the evidence is much thinner than the textbooks suggest.",
+                "rate": 0.55
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Most of the existing studies are unreliable.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The effect is probably real, but the evidence base is weaker than generally assumed.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Only the fourth study supports the original claim.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "The final clause — 'the effect is probably real, but the evidence is much thinner than the textbooks suggest' — is the claim, and it contains a contrast plus a comparison with a shared assumption. Option (a) is a detail of the survey, not the thesis, and it overstates the case. Option (c) is a true statement about study four that the speaker never puts forward as a conclusion. A reliable method: after listening, try to say the claim in your own words before you look at the options. If your version is longer and more qualified than an option, the option is a summary, not a claim.",
+              "xp": 10
+            },
+            {
+              "id": "ls-adv-2",
+              "kind": "listeningComprehension",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen to the speaker. Why does the speaker raise a figure of ninety minutes?",
+              "instruction": "The figure and its purpose are separated by a phrase that sounds like filler. Find it.",
+              "audio": {
+                "id": "ls-adv-2-audio",
+                "kind": "speech",
+                "text": "You may reasonably wonder whether ninety minutes is enough. It isn't, quite, but the alternative is worse, because the questions are the only part people remember.",
+                "rate": 0.55
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "To admit that the slot is slightly too short, while defending the decision anyway.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "To claim that the questions are more important than the lecture.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "To suggest that a longer session would be better.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The speaker concedes first ('It isn't, quite') and then justifies ('the alternative is worse'), which is the shape of a defence, not a recommendation. Option (c) contradicts 'the alternative is worse', and option (b) overreads the closing clause about memory — the speaker says questions are memorable, not that they matter more. When a speaker uses 'but' after a concession, the clause after 'but' is the real point; that single rule resolves most of these items.",
+              "xp": 10
+            },
+            {
+              "id": "ls-adv-3",
+              "kind": "dictation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen and type the sentence, including the speaker's self-correction.",
+              "instruction": "The speaker starts, stops and restarts. Type the version that was actually said, not the one that was abandoned.",
+              "audio": {
+                "id": "ls-adv-3-audio",
+                "kind": "speech",
+                "text": "There are, or rather there were, only three studies that anyone has replicated.",
+                "rate": 0.52
+              },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "There are, or rather there were, only three studies that anyone has replicated."
+                ]
+              },
+              "explanation": "Dictation of self-repair is about deciding which version survives. The phrase 'or rather' is the hinge: everything before it was abandoned, so typing 'are' as well as 'were' adds a word that was never spoken and costs you accuracy. Type the repaired clause and keep the repair phrase if you heard it clearly. Practise the same thing in reverse: listen to a recording and pause every time you hear 'or', 'I mean' or 'sorry' — that pause training is what stops the discarded version from entering your notes.",
+              "xp": 10
+            },
+            {
+              "id": "ls-adv-4",
+              "kind": "typeTheAnswer",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen, then type what the speaker implies about the proposal.",
+              "instruction": "Type the implication in a short noun phrase. Do not copy the speaker's wording.",
+              "audio": {
+                "id": "ls-adv-4-audio",
+                "kind": "speech",
+                "text": "Well, I suppose we could look at the numbers again, but honestly they tell us nothing at all.",
+                "rate": 0.55
+              },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "re-examining the numbers would be pointless",
+                  "looking at the numbers again would be pointless",
+                  "the numbers should be re-examined",
+                  "the numbers are not worth re-examining",
+                  "there is no point in re-examining the numbers"
+                ]
+              },
+              "explanation": "Nothing in the audio says 'pointless' — it is implied by 'but honestly they tell us nothing at all' and weakened by 'I suppose we could'. Inferencing means combining the concession and the objection, not retrieving a sentence. Write your answer as a claim you could defend with two pieces of evidence from the audio, and if you cannot, you have probably transposed rather than inferred. Note the hedge: the speaker is not demanding anything, so your answer should not sound like a demand either.",
+              "xp": 10
+            },
+            {
+              "id": "ls-adv-5",
+              "kind": "multipleChoice",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen to the two turns. How does the second speaker sound about the plan?",
+              "instruction": "The words are polite. Listen for the word that changes the meaning.",
+              "audio": {
+                "id": "ls-adv-5-audio",
+                "kind": "speech",
+                "text": "Speaker A: Shall we push the launch to June? Speaker B: Well, that's very reasonable of you, yes, although I did say twice that engineering wasn't ready.",
+                "rate": 0.55
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Openly angry that the plan has changed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Formally polite but quietly resentful, because an objection was previously ignored.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Genuinely happy to move the date.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "'That's very reasonable of you' sounds like agreement and is not, and 'although' introduces the real message. The count word 'twice' is the give-away: it records how often the speaker had to raise this, which is what makes the tone resentful rather than merely cautious. The general method is to ask what the speaker would be annoyed about if the conversation ended here. Answering from attitude rather than topic is the difference between an intermediate and an advanced score on this kind of item.",
+              "xp": 10
+            },
+            {
+              "id": "ls-adv-6",
+              "kind": "dictation",
+              "topicID": "listening-skill",
+              "lessonID": "listening-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen and type the final sentence of this short lecture.",
+              "instruction": "The sentence is long but follows a rigid four-part shape. Type it chunk by chunk.",
+              "audio": {
+                "id": "ls-adv-6-audio",
+                "kind": "speech",
+                "text": "To summarise, the mechanism is plausible, the evidence is thin, and the effect, while real, is small.",
+                "rate": 0.52
+              },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "To summarise, the mechanism is plausible, the evidence is thin, and the effect, while real, is small."
+                ]
+              },
+              "explanation": "Break the sentence at the commas: To summarise / the mechanism is plausible / the evidence is thin / and the effect, while real, is small. Each chunk has a different shape — a two-word opener, a subject plus 'is' plus an adjective, a contrast, and a parenthesis — and listening for the shape tells you when the next chunk has started. The parenthesis 'while real' is the piece beginners and intermediates drop: it is inserted between two commas and the speed of the sentence hides it completely.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "ls-adv-dictation",
+          "type": "dictation",
+          "title": "Academic speech dictation",
+          "items": [
+            {
+              "id": "ls-adv-d1",
+              "audio": {
+                "id": "ls-adv-d1-audio",
+                "kind": "speech",
+                "text": "The literature is, at best, equivocal on this point.",
+                "rate": 0.52
+              },
+              "acceptedAnswers": [
+                "The literature is, at best, equivocal on this."
+              ],
+              "hint": "three commas: opener, 'at best', and the closing clause",
+              "translation": "Tài liệu nghiên cứu, nói tốt, không dứt khoát về vấn đề này.",
+              "xp": 15
+            },
+            {
+              "id": "ls-adv-d2",
+              "audio": {
+                "id": "ls-adv-d2-audio",
+                "kind": "speech",
+                "text": "Not so much a failure of memory as a failure of encoding.",
+                "rate": 0.52
+              },
+              "acceptedAnswers": [
+                "Not so much a failure of memory as a failure of encoding."
+              ],
+              "hint": "the pattern is 'not so much X as Y' — both halves are needed",
+              "translation": "Không phải là thất bại ghi nhớ, mà là thất bại mã hóa.",
+              "xp": 15
+            },
+            {
+              "id": "ls-adv-d3",
+              "audio": {
+                "id": "ls-adv-d3-audio",
+                "kind": "speech",
+                "text": "Having said that, I would not rest the argument on a single study.",
+                "rate": 0.52
+              },
+              "acceptedAnswers": [
+                "Having said that, I would not rest the argument on a single study."
+              ],
+              "hint": "the opener concedes; the rest of the sentence is the new position",
+              "translation": "Nói như vậy, tôi sẽ không dựa lập luận vào chỉ một nghiên cứu.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "ls-adv-summary",
+          "type": "summary",
+          "takeaways": [
+            "A lecture states its claim at the end of a section, usually in different words from anything said before, so the first thing you heard is background.",
+            "What comes after 'but' is the point, even when what comes before it is a concession.",
+            "Train your ear to discard the abandoned half of a self-correction: 'or rather', 'I mean' and 'sorry' are repair signals, not content.",
+            "A small closed set of attitude words — 'frankly', 'at best', 'to be fair', 'I did say twice' — tells you how to score an argument, which vocabulary lists never do.",
+            "Infer meaning from the combination of clauses and delivery, and answer in your own claim rather than transposing the speaker's words."
+          ]
+        }
+      ]
+    }
+  ]
+}

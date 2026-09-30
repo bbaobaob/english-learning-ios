@@ -1,0 +1,256 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# One run per ref; a new push cancels the previous, still-queued run.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  SWIFT_VERSION: "5.10"
+
+jobs:
+  # The engine is Foundation-only, so it builds and tests on a cheap Linux
+  # runner. This is the reason the core is a separate package (see
+  # docs/ARCHITECTURE.md section 0).
+  test-core:
+    name: test-core (linux)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Swift ${{ env.SWIFT_VERSION }}
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: ${{ env.SWIFT_VERSION }}
+
+      - name: swift build
+        run: swift build --package-path Packages/EnglishCore
+
+      - name: swift test
+        run: swift test --package-path Packages/EnglishCore
+
+  # SwiftData needs Darwin (and macOS 14+), so this one cannot be Linux.
+  test-store:
+    name: test-store (macos)
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_16.app
+
+      - name: swift --version
+        run: swift --version
+
+      - name: swift test
+        run: swift test --package-path Packages/EnglishStore
+
+  # Content is data, and data breaks silently: a truncated JSON file only shows
+  # up as a missing topic card on a device. Validate it on every push.
+  lint-content:
+    name: lint-content
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate content JSON
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+
+          ROOT = "Packages/EnglishCore/Resources/content"
+          TOPICS_DIR = os.path.join(ROOT, "topics")
+          EXPECTED_TOPIC_COUNT = 19
+          errors = []
+
+          if not os.path.isdir(ROOT):
+              sys.exit("content root not found: %s" % ROOT)
+
+          json_files = []
+          for dirpath, _dirs, names in os.walk(ROOT):
+              for name in sorted(names):
+                  if name.endswith(".json"):
+                      json_files.append(os.path.join(dirpath, name))
+          if not json_files:
+              sys.exit("no .json files found under %s" % ROOT)
+
+          for path in json_files:
+              raw = open(path, encoding="utf-8").read()
+              if not raw.strip():
+                  errors.append("%s: file is empty" % path)
+                  continue
+              try:
+                  json.loads(raw)
+              except ValueError as exc:
+                  errors.append("%s: invalid JSON: %s" % (path, exc))
+
+          index_path = os.path.join(ROOT, "content.json")
+          ids = []
+          if not os.path.isfile(index_path):
+              errors.append("content.json: missing index file")
+          else:
+              index = json.load(open(index_path, encoding="utf-8"))
+              listed = index.get("topics", index.get("topicIDs", []))
+              for entry in listed:
+                  ids.append(entry["id"] if isinstance(entry, dict) else entry)
+              if len(ids) != EXPECTED_TOPIC_COUNT:
+                  errors.append("content.json: expected %d topic ids, found %d"
+                                % (EXPECTED_TOPIC_COUNT, len(ids)))
+              if len(set(ids)) != len(ids):
+                  errors.append("content.json: duplicate topic ids")
+
+          if not os.path.isdir(TOPICS_DIR):
+              errors.append("topics/: directory not found")
+          else:
+              for topic_id in ids:
+                  if not os.path.isfile(os.path.join(TOPICS_DIR, topic_id + ".json")):
+                      errors.append("topics/%s.json: listed in content.json but missing"
+                                    % topic_id)
+
+          if errors:
+              for err in errors:
+                  print("ERROR: " + err, file=sys.stderr)
+              sys.exit("%d content error(s)" % len(errors))
+
+          print("content ok: %d json files, %d topics" % (len(json_files), len(ids)))
+          PY
+
+  # End-to-end compile of the app target with the real project generated from
+  # project.yml. No signing: the simulator destination does not need it.
+  build-app:
+    name: build-app (simulator)
+    runs-on: macos-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_16.app
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project EnglishLearning.xcodeproj \
+            -scheme EnglishLearning \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath .build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build | tail -n 60
+
+  # Deliberately opt-in: no secrets configured means the job is skipped, so
+  # PRs from forks can never touch a signing identity. See docs/BUILD.md.
+  signed-ipa:
+    name: signed-ipa
+    if: ${{ secrets.APPLE_TEAM_ID != '' }}
+    needs: [test-core, test-store, lint-content, build-app]
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_16.app
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - name: Import signing certificate
+        env:
+          CERTIFICATE_P12_BASE64: ${{ secrets.CERTIFICATE_P12_BASE64 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ github.run_id }}-unsigned
+        run: |
+          set -euo pipefail
+          CERT_PATH="$RUNNER_TEMP/build.p12"
+          echo "$CERTIFICATE_P12_BASE64" | base64 --decode -o "$CERT_PATH"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" build.keychain
+          security set-keychain-settings -lut 21600 build.keychain
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" build.keychain
+          security import "$CERT_PATH" -k build.keychain \
+            -P "$CERTIFICATE_PASSWORD" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple: \
+            -s -k "$KEYCHAIN_PASSWORD" build.keychain
+          security list-keychain -d user -s build.keychain login.keychain-db
+          rm -f "$CERT_PATH"
+
+      - name: Archive
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project EnglishLearning.xcodeproj \
+            -scheme EnglishLearning \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/EnglishLearning.xcarchive \
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE_SPECIFIER=EnglishLearning \
+            -allowProvisioningUpdates \
+            archive | tail -n 60
+
+      - name: Write ExportOptions.plist
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          cat > build/ExportOptions.plist <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>teamID</key><string>${APPLE_TEAM_ID}</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>uploadSymbols</key><true/>
+          </dict>
+          </plist>
+          PLIST
+
+      - name: Export IPA
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -exportArchive \
+            -archivePath build/EnglishLearning.xcarchive \
+            -exportPath build/export \
+            -exportOptionsPlist build/ExportOptions.plist \
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" | tail -n 40
+          ls -l build/export
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: signed-ipa
+          path: build/export/*.ipa
+          if-no-files-found: error
+          retention-days: 30

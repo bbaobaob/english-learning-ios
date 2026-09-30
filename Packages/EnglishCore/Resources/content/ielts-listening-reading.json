@@ -1,0 +1,993 @@
+{
+  "id": "ielts-listening-reading",
+  "title": "IELTS Listening & Reading",
+  "skill": "listening",
+  "lessons": [
+    {
+      "id": "ielts-l-sec1",
+      "title": "Section 1 — Accommodation Enquiry",
+      "band": "5.5",
+      "minutes": 12,
+      "transcript": [
+        "Speaker A: Good morning. I received an email about student accommodation and I have a few questions.",
+        "Speaker B: Good morning. I handle enquiries for Westfield Halls, so you've come to the right place.",
+        "Speaker A: Is there an office I need to visit in person, or is everything done online?",
+        "Speaker B: Everything is done online, but the enquiries office is in Room 214 of the Student Union building if you'd rather talk to somebody.",
+        "Speaker A: Room 214. And is there a deadline for returning the form?",
+        "Speaker B: Yes. The online form must be completed by the thirtieth of September. After that date the halls are assigned by computer.",
+        "Speaker A: I see. Is there anything I have to pay before I move in?",
+        "Speaker B: There is a refundable deposit of one hundred and fifty pounds. It is held in your account and returned when you leave.",
+        "Speaker A: One hundred and fifty pounds. And what kind of rooms do you have? I am not sure whether I need a single or a shared room.",
+        "Speaker B: We do have shared rooms, but I would recommend a single. All first-year students at Westfield are in single rooms.",
+        "Speaker A: That sounds ideal. Is there anything I should bring to the viewing on Friday?",
+        "Speaker B: Yes, please bring a printed copy of your offer letter. We cannot show you a room without it.",
+        "Speaker A: A copy of the offer letter. Anything else?",
+        "Speaker B: Just a form of identification. There is no need to bring your luggage on the day.",
+        "Speaker A: Understood. And what is the hall actually like? Is it far from the science block?",
+        "Speaker B: It is about ten minutes on foot. The real advantage, though, is that the reception desk is staffed twenty-four hours a day during term.",
+        "Speaker A: Twenty-four hours. That is very useful.",
+        "Speaker B: Students often tell me that is the reason they chose us. There is also a laundry room on every floor.",
+        "Speaker A: What time does the porter lock the main entrance?",
+        "Speaker B: The main door is locked at 11 p.m., so if you come back later you need to use the night entrance.",
+        "Speaker A: And on the day I move in, what time should I arrive?",
+        "Speaker B: Before six o'clock, because the moving-in team stops work at seven.",
+        "Speaker A: Before six. Thank you very much for your help.",
+        "Speaker B: You are very welcome. Good luck with your course.",
+        "Speaker A: Thank you.",
+        "Speaker B: Have a good morning."
+      ],
+      "audio": {
+        "kind": "speech",
+        "text": "A student phones the accommodation office of Westfield Halls to ask about applying for a room. The officer explains that the form is completed online, that the enquiries office is in Room 214 of the Student Union building, and that the deadline is the thirtieth of September. She mentions a refundable deposit of one hundred and fifty pounds and recommends a single room. The student is told to bring a printed copy of the offer letter to the viewing on Friday. The officer finishes by saying that the reception desk is staffed twenty-four hours a day during term and that the main door is locked at 11 p.m."
+      },
+      "items": [
+        {
+          "id": "ielts-l-sec1-q1",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "beginner",
+          "prompt": "Enquiry form — Westfield Halls\nWhere to get help: Student Union building, Room _______",
+          "instruction": "Questions 1–4: complete the enquiry form below. Question 1 — write the room number.",
+          "answer": { "type": "text", "values": ["214"] },
+          "explanation": "The officer gives the location as Room 214. The number is read out digit by digit (two one four), so write digits, not words.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q2",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "beginner",
+          "prompt": "Enquiry form — Westfield Halls\nDate by which the online form must be completed: _______",
+          "instruction": "Questions 1–4: complete the enquiry form below. Question 2 — write the date.",
+          "answer": { "type": "text", "values": ["30 September"] },
+          "explanation": "He says the form must be completed by the thirtieth of September. Write it as 30 September; 30/09 is also accepted. Do not write 30th June — the transcript never mentions June.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q3",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "beginner",
+          "prompt": "Enquiry form — Westfield Halls\nRefundable deposit to pay: £ _______",
+          "instruction": "Questions 1–4: complete the enquiry form below. Question 3 — write the amount in figures.",
+          "answer": { "type": "text", "values": ["150"] },
+          "explanation": "One hundred and fifty pounds is the deposit, so the answer is 150. Ignore 11 p.m. and six o'clock — those are times, not money, and the form asks for a sum in pounds.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q4",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "beginner",
+          "prompt": "Enquiry form — Westfield Halls\nType of room recommended for first-year students: _______",
+          "instruction": "Questions 1–4: complete the enquiry form below. Question 4 — write ONE word.",
+          "answer": { "type": "text", "values": ["single"] },
+          "explanation": "Shared rooms exist, but he says I would recommend a single and that all first-year students are in single rooms. The form asks for the room he recommends, so single, not shared.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q5",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "intermediate",
+          "prompt": "What must the student bring to the room viewing on Friday?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "A printed copy of the offer letter", "isCorrect": true },
+            { "id": "b", "text": "A form of identification only", "isCorrect": false },
+            { "id": "c", "text": "Her luggage", "isCorrect": false },
+            { "id": "d", "text": "The completed online form", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "He says please bring a printed copy of your offer letter — we cannot show you a room without it. Option B is the second item on the list, not the essential one, and option C is explicitly ruled out (no need to bring your luggage).",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q6",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "intermediate",
+          "prompt": "According to the officer, what is the main advantage of Westfield Halls?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "The reception desk is staffed 24 hours a day in term", "isCorrect": true },
+            { "id": "b", "text": "It is only ten minutes from the science block", "isCorrect": false },
+            { "id": "c", "text": "Every floor has its own laundry room", "isCorrect": false },
+            { "id": "d", "text": "The rooms are the cheapest in the city", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The officer says the real advantage, though, is that the reception desk is staffed twenty-four hours a day. The ten-minute walk (B) and the laundry rooms (C) are true details that he adds afterwards, so they are distractors: true facts, but not the advantage asked for.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec1-q7",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec1",
+          "difficulty": "intermediate",
+          "prompt": "Enquiry notes — Westfield Halls\nMain entrance locked at _______ p.m.; use the night entrance after that.",
+          "instruction": "Questions 5–7: answer the questions about the enquiry. Question 7 — write the hour in figures.",
+          "answer": { "type": "text", "values": ["11"] },
+          "explanation": "The porter locks the main door at 11 p.m. The other time given, six o'clock, is when you should arrive on moving-in day, so it belongs to a different detail and is a trap for inattentive listeners.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "Section 1 answers are almost always a form or notes, and the gaps are pre-labelled — read the form first so you know which detail each gap wants.",
+        "Numbers and dates are the highest-value items: listen for the number doing the work (Room 214, £150, 11 p.m.) and ignore the surrounding chat.",
+        "A recommendation is not a fact: shared rooms exist at Westfield, but the officer recommends a single, and the form asks for the recommendation.",
+        "Long distractor details are a gift. Ten minutes to the science block and the laundry rooms are both in the conversation, so an option that sounds reasonable is not automatically correct — check that it is the answer to this question."
+      ]
+    },
+    {
+      "id": "ielts-l-sec2",
+      "title": "Section 2 — Campus Orientation",
+      "band": "6.0",
+      "minutes": 14,
+      "transcript": [
+        "Speaker A: Welcome, everyone, and thank you for coming along this morning.",
+        "Speaker A: My name is Daniel Okafor, and I work in the Student Services office.",
+        "Speaker A: Before we begin the tour, let me explain what today is actually for.",
+        "Speaker A: Most new students tell us their first fortnight is spent lost, walking round the same paths twice a day.",
+        "Speaker A: So today I am going to show you where the services you will need are, and nothing more.",
+        "Speaker A: If you can find the Students' Union, the library and the sports centre on your first day, you are ahead of most people.",
+        "Speaker A: Now, look at the map in front of you. The building marked A, opposite the main gate, is the Students' Union.",
+        "Speaker A: That is where the welfare team, the student newspaper and the bar are, so it is the busiest building on campus.",
+        "Speaker A: The building marked B, at the north end of the map, is the main library. It has three floors of books and two floors of study space.",
+        "Speaker A: The building marked C, just east of the library, is the sports centre. That is the swimming pool and the three gym rooms.",
+        "Speaker A: And the building marked D, in the corner behind the car park, is the language laboratory. It is where your free English classes will be held.",
+        "Speaker A: The sports centre is the only building that stays open at weekends; everything else closes at six on weekdays.",
+        "Speaker A: The library is quiet all day, but you must book a group study room online at least a day before you want it.",
+        "Speaker A: Fees are paid at the finance office, on the ground floor of the Union, and you should bring your student number with you.",
+        "Speaker A: The language laboratory has 30 computers, and they are free to use as long as you are enrolled in a language course.",
+        "Speaker A: One thing you must do before Friday: book a place on the campus safety tour.",
+        "Speaker A: The groups are limited to fifteen people, so if you do not book, you will have to wait until the end of term.",
+        "Speaker A: Finally, do try the Union bar on your first evening. Everyone ends up there eventually, and it is easier to go with somebody than alone.",
+        "Speaker A: Right, shall we start walking? We are going to begin at the main gate, where the building marked A is.",
+        "Speaker A: Please keep your map out; there is a quiz at the end of the term, and the map is the easy part."
+      ],
+      "audio": {
+        "kind": "speech",
+        "text": "Daniel Okafor from Student Services gives new students a campus orientation talk. He explains that the session exists to show them where the main services are, then walks through a campus map: the building marked A opposite the main gate is the Students' Union, B at the north end is the main library, C just east of the library is the sports centre, and D behind the car park is the language laboratory. He adds that the sports centre is the only building open at weekends, that group study rooms in the library must be booked a day in advance, that fees are paid at the finance office on the ground floor of the Union, and that everyone must book a place on the campus safety tour before Friday."
+      },
+      "items": [
+        {
+          "id": "ielts-l-sec2-q1",
+          "kind": "matching",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "Campus map labels A–D",
+          "instruction": "Questions 1–4: match each place on the map to the correct building. Write the number of the building next to the letter.\n1 Students' Union\n2 Main library\n3 Sports centre\n4 Language laboratory",
+          "items": [
+            { "id": "mapA", "matchKey": "A", "text": "A — the building opposite the main gate" },
+            { "id": "mapB", "matchKey": "B", "text": "B — the building at the north end of the map" },
+            { "id": "mapC", "matchKey": "C", "text": "C — the building just east of the library" },
+            { "id": "mapD", "matchKey": "D", "text": "D — the building behind the car park" }
+          ],
+          "answer": { "type": "pairs", "values": { "A": "1", "B": "2", "C": "3", "D": "4" } },
+          "explanation": "Each label is introduced with a location cue followed by the name: A is the Students' Union, B the main library, C the sports centre, D the language laboratory. Distractors come from the position words — the sports centre is east of the library, not the other way round, and the language lab is behind the car park, not opposite the gate.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q2",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "What is the main purpose of today's orientation session?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "To show students where the key services are", "isCorrect": true },
+            { "id": "b", "text": "To explain the exam regulations", "isCorrect": false },
+            { "id": "c", "text": "To sell sports centre memberships", "isCorrect": false },
+            { "id": "d", "text": "To introduce the IT support desk", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "He says today I am going to show you where the services you will need are, and nothing more. Nothing in the talk covers exams, memberships or the IT desk, so those options are invented to fill the space.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q3",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "What must students do before Friday?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Book a place on the campus safety tour", "isCorrect": true },
+            { "id": "b", "text": "Pay a deposit for a locker", "isCorrect": false },
+            { "id": "c", "text": "Complete an online induction questionnaire", "isCorrect": false },
+            { "id": "d", "text": "Collect their student card", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The only thing he describes as compulsory is the safety tour, and the reason is that groups are limited to fifteen people. The other options sound like plausible university admin but are never mentioned — guessing from general knowledge instead of the talk is the usual trap here.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q4",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "Which facility is open at weekends?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "The sports centre", "isCorrect": true },
+            { "id": "b", "text": "The main library", "isCorrect": false },
+            { "id": "c", "text": "The Students' Union", "isCorrect": false },
+            { "id": "d", "text": "The language laboratory", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The sports centre is the only building that stays open at weekends; everything else closes at six on weekdays. The library is the most attractive distractor because he describes it in detail, but detail is not evidence — only the closing-hours sentence answers the question.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q5",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "What does the speaker say about the library study rooms?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Group rooms must be booked online in advance", "isCorrect": true },
+            { "id": "b", "text": "The library is open twenty-four hours", "isCorrect": false },
+            { "id": "c", "text": "There are no printing facilities", "isCorrect": false },
+            { "id": "d", "text": "The library is closing next year", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "You must book a group study room online at least a day before you want it. The talk never mentions 24-hour opening, printing or closure, so those options can be eliminated on evidence rather than preference.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q6",
+          "kind": "sentenceCompletion",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "Fees are paid at the _______ office, on the ground floor of the Union.",
+          "instruction": "Questions 6–7: complete the notes below. Question 6 — choose from the list of words A, B, C or D.\nA maintenance   B finance   C admissions   D international",
+          "items": [
+            { "id": "a", "text": "maintenance" },
+            { "id": "b", "text": "finance" },
+            { "id": "c", "text": "admissions" },
+            { "id": "d", "text": "international" }
+          ],
+          "answer": { "type": "text", "values": ["finance"] },
+          "explanation": "Fees are paid at the finance office. The gap is followed by the word office, so only finance makes sense; maintenance, admissions and international are word-bank traps. The required word is the one before office, not the full phrase finance office.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec2-q7",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec2",
+          "difficulty": "intermediate",
+          "prompt": "Orientation notes\nComputers in the language laboratory: _______",
+          "instruction": "Questions 6–7: complete the notes below. Question 7 — write the number in figures.",
+          "answer": { "type": "text", "values": ["30"] },
+          "explanation": "The language laboratory has 30 computers. Fifteen, the safety-tour group limit, is the number to reject: it belongs to a different sentence and sounds plausible because it is a real number in the talk.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "Map labelling runs on the same grammar every time: position word first, name second (the building marked A, opposite the gate, is the Union). Learn that one pattern and four answers fall out of it.",
+        "A monologue has no second speaker to help you, so you cannot check by asking. Instead, use the map on your desk: anything that contradicts the shape you can see is wrong.",
+        "Details that are true but not asked for are the classic Section 2 trap. The library, the laundry, the bar — note them, then check the question stem before you commit.",
+        "Word-bank items and number questions are scored exactly, so write the single required word (finance, not finance office) and digits (30, not thirty)."
+      ]
+    },
+    {
+      "id": "ielts-l-sec3",
+      "title": "Section 3 — Student Project Discussion",
+      "band": "6.5",
+      "minutes": 15,
+      "transcript": [
+        "Speaker A: Right, let's get started. You four have the whole term to prepare the group presentation.",
+        "Speaker A: I've read the brief, but I want to hear your plans before I assign the topics.",
+        "Speaker B: I found quite a lot of material on how much water student houses use, so I'd like to take that.",
+        "Speaker C: I was thinking about the food that's thrown away in the canteen. The statistics there are alarming.",
+        "Speaker A: Good. Marcus, you were mentioning cycling, weren't you?",
+        "Speaker B: I said that, but after cycling here every day for two years I promise I can find something more interesting.",
+        "Speaker A: Then take digital privacy instead. I need somebody who reads the news carefully.",
+        "Speaker B: Understood.",
+        "Speaker A: So let's be clear. Nina, you are on water consumption in student accommodation.",
+        "Speaker A: Pedro, you have the canteen food waste project.",
+        "Speaker A: Marcus, digital privacy. And Tom, you will do cycling to the university.",
+        "Speaker B: Does Tom mind? He asked for water.",
+        "Speaker A: Tom will not mind. I will explain it to him afterwards.",
+        "Speaker C: What about the deadline? The brief says week eight, and three of us have the field trip in week six.",
+        "Speaker A: That's exactly why I've moved it. The deadline is now the end of week nine.",
+        "Speaker C: That's a relief.",
+        "Speaker A: On the reading list — I have cut it down. Forty pages per week was unrealistic.",
+        "Speaker A: Read the three articles I marked. Everything else is optional.",
+        "Speaker B: Does the survey have to cover the whole university?",
+        "Speaker A: No. I said you can survey our own department, and up to 300 students in it.",
+        "Speaker C: 300 is plenty. My worry is recruiting people, not counting them.",
+        "Speaker A: Then post on the department forum on Monday and you'll have answers by Wednesday.",
+        "Speaker B: Who writes the script? I don't want to be stuck with that on my own.",
+        "Speaker A: Split it. Two people write, two people design the slides.",
+        "Speaker C: And the presentation itself?",
+        "Speaker A: Ten minutes, and then five minutes of questions.",
+        "Speaker A: One last thing. If your data collection goes wrong, tell me early. I'd rather move a deadline than give you a presentation with no findings."
+      ],
+      "audio": {
+        "kind": "speech",
+        "text": "A tutor meets four students to plan a group presentation. After they discuss their interests, the tutor assigns the topics: Nina takes water consumption in student accommodation, Pedro takes canteen food waste, Marcus takes digital privacy, and Tom is given cycling to the university. The tutor has moved the deadline from the end of week eight to the end of week nine because three of the students are away on a field trip in week six, and has cut the reading list down to three marked articles. Students may survey up to 300 members of their own department, scripts will be shared between two people, and the presentation itself is limited to ten minutes plus five minutes of questions."
+      },
+      "items": [
+        {
+          "id": "ielts-l-sec3-q1",
+          "kind": "matching",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "Student project topics",
+          "instruction": "Questions 1–4: match each student to the project topic the tutor assigns. Write the correct number next to the name.\n1 Water consumption in student accommodation\n2 Food waste in the canteen\n3 Digital privacy\n4 Cycling to the university",
+          "items": [
+            { "id": "stu-nina", "matchKey": "Nina", "text": "Nina" },
+            { "id": "stu-pedro", "matchKey": "Pedro", "text": "Pedro" },
+            { "id": "stu-marcus", "matchKey": "Marcus", "text": "Marcus" },
+            { "id": "stu-tom", "matchKey": "Tom", "text": "Tom" }
+          ],
+          "answer": { "type": "pairs", "values": { "Nina": "1", "Pedro": "2", "Marcus": "3", "Tom": "4" } },
+          "explanation": "The tutor states the assignments in a fixed order: Nina on water consumption, Pedro on canteen food waste, Marcus on digital privacy, Tom on cycling. The trap is the swap: Marcus originally wanted cycling, and Tom had asked for water, so the topics people ask for are not the topics they are given. Match what is assigned, not what is requested.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q2",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "Why has the tutor moved the deadline?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Three of the students are away on a field trip", "isCorrect": true },
+            { "id": "b", "text": "The reading list was too long", "isCorrect": false },
+            { "id": "c", "text": "The survey results are not ready", "isCorrect": false },
+            { "id": "d", "text": "The room booked for week eight is unavailable", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "Student C mentions the field trip in week six and the tutor replies that is exactly why I have moved it, to the end of week nine. The reading list is a separate change (C), and D is invented — the tutor's only stated reason is the trip.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q3",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "What does the tutor say about the reading list?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Only three marked articles are required", "isCorrect": true },
+            { "id": "b", "text": "All forty pages must be read each week", "isCorrect": false },
+            { "id": "c", "text": "The list has been replaced by a textbook", "isCorrect": false },
+            { "id": "d", "text": "Students may read nothing at all", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "He says he has cut the list down because forty pages per week was unrealistic, and that only the three articles he marked are required. Option B inverts the sentence (the forty pages are what he cut), and D overreads everything else is optional.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q4",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "advanced",
+          "prompt": "What is Speaker C's main concern?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Recruiting enough people to answer the survey", "isCorrect": true },
+            { "id": "b", "text": "Reaching the target of 300 responses", "isCorrect": false },
+            { "id": "c", "text": "Writing the script for the presentation", "isCorrect": false },
+            { "id": "d", "text": "Finishing the slides before the deadline", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "Speaker C says my worry is recruiting people, not counting them, so the number of responses is explicitly not the concern. The script worry (C) is raised by Speaker B a moment later, which is exactly why two speakers must be tracked separately in Section 3.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q5",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "What does the tutor say the group may survey?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Up to 300 students in their own department", "isCorrect": true },
+            { "id": "b", "text": "The whole university, in two stages", "isCorrect": false },
+            { "id": "c", "text": "Only students who post on the forum", "isCorrect": false },
+            { "id": "d", "text": "Canteen staff, instead of students", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The tutor limits them to their own department and up to 300 students in it. The forum post is his suggestion for recruiting (C), not a restriction on who may be surveyed, so the two ideas must not be merged.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q6",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "Project plan notes\nMaximum number of students the group may survey: _______",
+          "instruction": "Questions 6–7: complete the notes below. Question 6 — write the number in figures.",
+          "answer": { "type": "text", "values": ["300"] },
+          "explanation": "The tutor says up to 300 students in it. The other figures in the discussion are week six, week eight, week nine and ten minutes; none of them is a headcount, so check the unit before writing.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec3-q7",
+          "kind": "sentenceCompletion",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec3",
+          "difficulty": "intermediate",
+          "prompt": "The group agreed to cover _______ in the survey, since Marcus had already read four articles on it.",
+          "instruction": "Questions 6–7: complete the notes below. Question 7 — choose from the list A, B, C or D.\nA climate change   B public transport   C data privacy   D water supply",
+          "items": [
+            { "id": "a", "text": "climate change" },
+            { "id": "b", "text": "public transport" },
+            { "id": "c", "text": "data privacy" },
+            { "id": "d", "text": "water supply" }
+          ],
+          "answer": { "type": "text", "values": ["data privacy"] },
+          "explanation": "Marcus is assigned digital privacy because the tutor wants somebody who reads the news carefully, so the group's topic is data privacy. Climate change and public transport never appear, and water supply is close to water consumption but is not the assigned topic.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "Section 3 is a discussion, so follow the decision, not the wish: topics are requested early and reassigned later, and the answers come from the tutor's final instructions.",
+        "Label the speakers in your notes. Two speakers discussing different worries in quick succession is the main cause of wrong answers here.",
+        "Numbers in academic discussions are often paired with a unit (week, minutes, students). The gap tells you which unit to listen for.",
+        "Word-bank answers are single words, and markers accept only the word that completes the sentence — data privacy, not digital privacy, even though the tutor used the latter."
+      ]
+    },
+    {
+      "id": "ielts-l-sec4",
+      "title": "Section 4 — Urban Ecology Lecture",
+      "band": "7.0",
+      "minutes": 16,
+      "transcript": [
+        "Speaker A: Good afternoon. This lecture is part of the urban ecology course, and today we look at bees.",
+        "Speaker A: I should say at the outset that I am not a biologist, and everything I give you is drawn from a single study carried out in one medium-sized city.",
+        "Speaker A: The study is unusual, because it counted colonies rather than individual bees.",
+        "Speaker A: Counting individuals is almost impossible, but a nest is a fixed point on a map, and map points can be counted.",
+        "Speaker A: The first finding concerned where those colonies actually live.",
+        "Speaker A: Roughly 40 per cent of the wild colonies recorded in the city were located inside buildings — in roof spaces, wall cavities and empty chimneys.",
+        "Speaker A: A further 30 per cent were in street trees and hedges along the main roads, which are the hardest places for a beekeeper to reach.",
+        "Speaker A: That 30 per cent figure is the one most often quoted, and it is a good illustration of how statistics get simplified.",
+        "Speaker A: The correct number for buildings is 40 per cent, but almost every newspaper printed the 30 per cent figure, because the roadside colonies are easier to photograph.",
+        "Speaker A: So if you take one methodological lesson from today, take that one: a number in the news is not automatically the most important number in the survey.",
+        "Speaker A: The second finding concerned temperature, and this is where the practical advice comes in.",
+        "Speaker A: Researchers recorded surface temperatures on three kinds of roof during a heatwave.",
+        "Speaker A: A dark, untreated roof reached 58 degrees Celsius in the afternoon.",
+        "Speaker A: The same roof, painted with a reflective coating, reached only 41 degrees — a fall of 17 degrees for the cost of a tin of paint.",
+        "Speaker A: And a roof planted with sedum, a low succulent, stayed below 45 degrees while also providing flowers for eight weeks a year.",
+        "Speaker A: Now, the study's authors were careful about one limitation, and you should be too.",
+        "Speaker A: They could not separate wild bees from the managed colonies kept by local beekeepers.",
+        "Speaker A: In other words, we have very good data about nests, and almost none about how many bees actually leave them.",
+        "Speaker A: There is a further gap, and it concerns the one species people discuss most: the honeybee.",
+        "Speaker A: Honeybees are not a wild species at all. They are livestock, and they are the best studied insects in the world, because beekeepers keep records.",
+        "Speaker A: So when a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?",
+        "Speaker A: If the answer is honeybees, the evidence may have nothing to do with the wild pollinators that keep our green spaces alive.",
+        "Speaker A: One final piece of advice, and it costs nothing.",
+        "Speaker A: On a hot day, the most effective thing a household can do is keep its shutters closed until the evening, and open the windows at night.",
+        "Speaker A: The internal temperature of a typical flat falls by four degrees that way, and the saving on cooling is immediate.",
+        "Speaker A: That is where I will stop. Next week we move to water, and to the question of what happens to a city's ponds when the rain stops."
+      ],
+      "audio": {
+        "kind": "speech",
+        "text": "A lecturer introduces a study of bees in a medium-sized city which counted colonies rather than individual bees. She explains that forty per cent of wild colonies were inside buildings, such as roof spaces and empty chimneys, while a further thirty per cent were in street trees and hedges, and she warns that newspapers often print the thirty per cent figure because it is easier to photograph. During a heatwave, an untreated dark roof reached fifty-eight degrees Celsius, a roof with a reflective coating reached forty-one, and a planted roof stayed below forty-five. She notes two limitations: the study could not separate wild bees from managed colonies, and honeybees are livestock rather than a wild species. Her final advice is to keep shutters closed during the day and windows open at night, which can lower the temperature inside a flat by four degrees."
+      },
+      "items": [
+        {
+          "id": "ielts-l-sec4-q1",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "intermediate",
+          "prompt": "Lecture notes — Urban Ecology, Lecture 6\nMethod: the study counted ______ rather than individual bees.",
+          "instruction": "Questions 1–3: complete the lecture notes below. Question 1 — write ONE word.",
+          "answer": { "type": "text", "values": ["colonies"] },
+          "explanation": "She says it counted colonies rather than individual bees, and explains why: a nest is a fixed point on a map. Count, survey and species are wrong — they are the things the study worked around, not the things it measured.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q2",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "advanced",
+          "prompt": "Lecture notes — Urban Ecology, Lecture 6\nLocation of wild colonies in the city: buildings _______ per cent.",
+          "instruction": "Questions 1–3: complete the lecture notes below. Question 2 — write the figure.",
+          "answer": { "type": "text", "values": ["40"] },
+          "explanation": "Roughly 40 per cent of wild colonies were inside buildings, in roof spaces, wall cavities and chimneys. The lecturer deliberately spends a whole paragraph warning that newspapers print the 30 per cent roadside figure instead; listening for the correction is exactly what this question tests.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q3",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "advanced",
+          "prompt": "Lecture notes — Urban Ecology, Lecture 6\nCheapest cooling measure: keep ______ closed during the day, open the windows at night.",
+          "instruction": "Questions 1–3: complete the lecture notes below. Question 3 — write ONE word.",
+          "answer": { "type": "text", "values": ["shutters"] },
+          "explanation": "Her final advice is to keep its shutters closed until the evening and open the windows at night. Curtains and blinds are the natural distractors, but she names shutters specifically and describes the same habit for flats and houses.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q4",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "intermediate",
+          "prompt": "What does the lecturer say about the reported 30 per cent figure?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "It is real but is reported because it is easier to photograph", "isCorrect": true },
+            { "id": "b", "text": "It is a mistake made by the researchers", "isCorrect": false },
+            { "id": "c", "text": "It refers to managed colonies only", "isCorrect": false },
+            { "id": "d", "text": "It was withdrawn by the city council", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "She says it is a good illustration of how statistics get simplified: the figure is correct for street trees and hedges, but newspaper chose it because those colonies are easier to photograph. The research is not wrong, which is why options B and D fail.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q5",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "advanced",
+          "prompt": "Which limitation of the study does the lecturer highlight first?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Wild bees could not be separated from managed colonies", "isCorrect": true },
+            { "id": "b", "text": "The heatwave data was collected on only one day", "isCorrect": false },
+            { "id": "c", "text": "The city covered was too small to generalise", "isCorrect": false },
+            { "id": "d", "text": "Hedgerows were mapped incorrectly", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The first limitation is that they could not separate wild bees from the managed colonies kept by local beekeepers. Option C inverts her wording: she describes the city as medium-sized and presents it as sufficient, so size is a detail, not a stated weakness.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q6",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "advanced",
+          "prompt": "Why does the lecturer say honeybees are a poor subject for city wildlife research?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "They are livestock, not a wild species", "isCorrect": true },
+            { "id": "b", "text": "They are too small to be counted", "isCorrect": false },
+            { "id": "c", "text": "They are endangered across the city", "isCorrect": false },
+            { "id": "d", "text": "They do not visit roof spaces", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "Honeybees are not a wild species at all; they are livestock, kept in hives, and therefore they tell you nothing about the wild pollinators the city depends on. Being well studied (because beekeepers keep records) is a fact she mentions, but it is not the reason they are the wrong subject.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-l-sec4-q7",
+          "kind": "dictation",
+          "topicID": "ielts",
+          "lessonID": "ielts-l-sec4",
+          "difficulty": "advanced",
+          "prompt": "Write exactly what the lecturer says.",
+          "instruction": "Question 7: listen and write the sentence the lecturer emphasises.",
+          "audio": { "kind": "speech", "text": "When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?" },
+          "answer": { "type": "text", "values": ["When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?"] },
+          "explanation": "This is the sentence the lecturer pauses around, so it is worth writing in full: when a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees. Punctuation is not marked, but every word must be there in order.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "A lecture is one voice, so the signposting words carry the answers: the first finding, the second finding, the authors were careful about one limitation, one final piece of advice.",
+        "Lecturers often give a wrong-looking figure and then correct it (40 per cent, not 30 per cent). The correction is the answer; the figure that comes first is the trap.",
+        "Limitation questions need the exact wording — could not separate wild bees from managed colonies — not a paraphrase such as the sample was small.",
+        "Dictation rewards listening for the whole sentence, not the keyword. Once you have it, check the number of clauses against the length of the pause."
+      ]
+    },
+    {
+      "id": "ielts-r-p1",
+      "title": "Reading Passage 1 — The 15-Minute City",
+      "band": "6.0",
+      "minutes": 14,
+      "items": [
+        {
+          "id": "ielts-r-p1-q1",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "The 15-minute city\n\nFor most of the twentieth century, cities were planned around the car. Streets were widened, houses were built on the edge of town, and a journey to work became an unavoidable part of daily life. That model is now being dismantled in a handful of European cities, one neighbourhood at a time, under the name of the 15-minute city. The idea is that every resident should be able to reach a grocery shop, a primary school, a park and a doctor within a quarter of an hour of their front door, by foot or by bicycle.\n\nA single council has taken the idea further than the others. Under its current plan, every new residential district must contain shops, a school and a small green space before the first family moves in. This requirement is written into the planning code, so developers cannot phase out the amenities in later years. Planners argue that the requirement matters more than the distance, because people are less willing to walk the same distance if the destination is empty or unsafe.\n\nThe scheme is also cheaper to run than the transport systems it replaces. A district designed around walking needs about a third less money on roads than a conventional suburb of the same size. Traffic volumes in the city centre have fallen by roughly a third since the first streets were closed to cars, and small shopkeepers report that trade has improved. The council is now considering whether to extend the scheme to the post-war suburbs, although no decision has been taken yet.\n\nNot everyone is convinced. Retailers with large premises outside the districts complain that footfall has been redirected, and several property companies have appealed against the planning code in the administrative court. The council's own survey found that the majority of residents welcomed the change, but it was conducted online and its results were not published in full.",
+          "instruction": "Questions 1–7: read the passage and decide whether each statement is True, False or Not Given. Question 1 is given with the passage above; Questions 2–7 follow below.",
+          "translation": "Thành phố 15 phút",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": false },
+            { "id": "false", "text": "False", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": true }
+          ],
+          "answer": { "type": "choice", "values": ["ng"] },
+          "explanation": "The passage says every new residential district must contain shops, a school and a small green space. It never mentions a market, so you cannot confirm or deny one. That is Not Given: the statement is neither contradicted nor supported. Do not assume that shops means market.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q2",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "Residents who live in a 15-minute neighbourhood are obliged to own a bicycle.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Người dân sống trong khu vực 15 phút bắt buộc phải sở hữu xe đạp.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": false },
+            { "id": "false", "text": "False", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": true }
+          ],
+          "answer": { "type": "choice", "values": ["ng"] },
+          "explanation": "The passage mentions walking and cycling as the means of travel and says nothing about owning a bicycle. Obligation is never mentioned, so the statement cannot be called False either. Not Given is correct whenever the passage simply does not deal with the point.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q3",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "The planning requirement was written into law so that developers could remove the amenities later.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Yêu cầu quy hoạch được ghi vào luật để các nhà phát triển có thể bỏ bớt tiện ích sau này.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": false },
+            { "id": "false", "text": "False", "isCorrect": true },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["false"] },
+          "explanation": "The passage says the requirement is written into the planning code so developers cannot phase out the amenities in later years. The statement reverses the reason, so it is False. This is a wording trap: the fact is true, the consequence is inverted.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q4",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "A district designed around walking costs about a third less on roads than a conventional suburb.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Một khu phố được thiết kế xoay quanh việc đi bộ tốn khoảng một phần ba chi phí đường hơn so với khu ngoại ô thông thường.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": true },
+            { "id": "false", "text": "False", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["true"] },
+          "explanation": "The passage states that such a district needs about a third less money on roads than a conventional suburb of the same size. The figures match exactly, so True.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q5",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "Traffic in the city centre fell by about half after the first streets were closed.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Lưu lượng giao thông trung tâm giảm khoảng một nửa sau khi những con đường đầu tiên bị đóng.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": false },
+            { "id": "false", "text": "False", "isCorrect": true },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["false"] },
+          "explanation": "The passage gives a fall of roughly a third, not a half. Numbers that are close but not identical turn True into False, so match the figure, not the direction of the change.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q6",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "intermediate",
+          "prompt": "Property developers have taken the council to court over the planning code.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Các công ty bất động sản đã đưa hội đồng thành phố ra tòa vì quy chuẩn quy hoạch.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": true },
+            { "id": "false", "text": "False", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["true"] },
+          "explanation": "Several property companies have appealed against the planning code in the administrative court. An appeal is exactly taking the case to court, so True. Watching the legal vocabulary is the point of this item.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p1-q7",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p1",
+          "difficulty": "advanced",
+          "prompt": "Tenants are more likely than owner-occupiers to support the scheme.",
+          "instruction": "Questions 1–7: choose True, False or Not Given.",
+          "translation": "Người thuê nhà có xu hướng ủng hộ kế hoạch hơn chủ sở hữu.",
+          "items": [
+            { "id": "true", "text": "True", "isCorrect": false },
+            { "id": "false", "text": "False", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": true }
+          ],
+          "answer": { "type": "choice", "values": ["ng"] },
+          "explanation": "The survey found that the majority of residents welcomed the change, but the passage never divides residents into tenants and owners. Since no comparison of the two groups is made, the statement is Not Given, not False.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "Read the title and the first sentence of each paragraph before the statements, and be alert to words that are reused: shops, walking, survey and court all reappear with different meanings.",
+        "Not Given is not a polite way of saying False. If the passage is completely silent on the point — no market, no bicycle ownership, no tenants versus owners — the answer is Not Given.",
+        "False usually means the passage says something incompatible: a third less money is not a half fall, and a requirement that prevents later removal is not a licence to remove.",
+        "True statements paraphrase without contradicting. Look for the same numbers and the same logical relations, as in the court appeal in question 6."
+      ]
+    },
+    {
+      "id": "ielts-r-p2",
+      "title": "Reading Passage 2 — Learning After the Crisis",
+      "band": "6.5",
+      "minutes": 15,
+      "items": [
+        {
+          "id": "ielts-r-p2-q1",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "intermediate",
+          "prompt": "Learning After the Crisis\n\nA\nThe shift to online teaching in 2020 was, in the words of one education official, a thirty-year change delivered in three weeks. When classrooms closed, almost every institution in the country moved its lectures onto a video platform within days. Most of that infrastructure has stayed in place, and the majority of students now submit their coursework online. The change was not planned, but it has outlasted the emergency.\n\nB\nLecturers discovered quickly that recording a lecture and publishing it were different acts. A recording can be watched at the student's own speed, paused and rewound, but it cannot ask a question. Several departments found that attendance figures rose rather than fell: students who watched the recording in the first twenty-four hours were far more likely to pass. The universities did not pay anyone extra to make the material; it became part of normal preparation, and workload agreements had to be renegotiated.\n\nC\nThe recordings also exposed a weakness in how much a student can absorb. Short clips of about ten minutes produced noticeably better recall than a full lecture, and much of the material is now cut into segments. Yet the shorter the input, the harder the assessment becomes. Assignments that once required a student to argue a position must now be built from scratch, and the students who struggle most are those who found the old lectures manageable because they could copy from the board.\n\nD\nThe platforms themselves turned out to be designed for a different audience. The interface is built around the teacher, who uploads and releases material on a schedule; the student is a guest in someone else's filing system. Several universities have therefore begun building small internal systems, not to replace the commercial platforms but to hold recordings and reading lists in one searchable place. None has been evaluated yet, and their organisers are careful to say they do not know whether students use them as intended.",
+          "instruction": "Questions 1–5: read the passage and decide whether each statement is Yes, No or Not Given. The passage is given with Question 1 below; Questions 2–5 follow.",
+          "translation": "Học tập sau khủng hoảng",
+          "items": [
+            { "id": "yes", "text": "Yes", "isCorrect": true },
+            { "id": "no", "text": "No", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["yes"] },
+          "explanation": "Paragraph A says the majority of students now submit their coursework online. The word now matches the statement, and submit is the same act as submit, so Yes.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p2-q2",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "intermediate",
+          "prompt": "Lecturers were paid additional money for producing the recorded material.",
+          "instruction": "Questions 1–5: choose Yes, No or Not Given.",
+          "translation": "Giảng viên được trả thêm tiền để làm tài liệu ghi hình.",
+          "items": [
+            { "id": "yes", "text": "Yes", "isCorrect": false },
+            { "id": "no", "text": "No", "isCorrect": true },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["no"] },
+          "explanation": "The passage says the universities did not pay anyone extra and that workload agreements had to be renegotiated, which implies the work was unpaid. The statement contradicts the text, so No.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p2-q3",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "intermediate",
+          "prompt": "Students who watched a lecture recording within a day were more likely to pass the course.",
+          "instruction": "Questions 1–5: choose Yes, No or Not Given.",
+          "translation": "Sinh viên xem lại bản ghi trong vòng một ngày có nhiều khả năng đỗ khóa học hơn.",
+          "items": [
+            { "id": "yes", "text": "Yes", "isCorrect": true },
+            { "id": "no", "text": "No", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["yes"] },
+          "explanation": "The passage states that students who watched the recording in the first twenty-four hours were far more likely to pass. Twenty-four hours is a day, so Yes — the paraphrase is exact.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p2-q4",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "intermediate",
+          "prompt": "Short video clips improved students' recall of the material.",
+          "instruction": "Questions 1–5: choose Yes, No or Not Given.",
+          "translation": "Các đoạn video ngắn giúp sinh viên nhớ bài tốt hơn.",
+          "items": [
+            { "id": "yes", "text": "Yes", "isCorrect": true },
+            { "id": "no", "text": "No", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["yes"] },
+          "explanation": "Short clips of about ten minutes produced noticeably better recall than a full lecture. The statement omits the comparison but keeps the direction, which is still Yes.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p2-q5",
+          "kind": "trueFalse",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "advanced",
+          "prompt": "The universities' current online licence will run out in two years.",
+          "instruction": "Questions 1–5: choose Yes, No or Not Given.",
+          "translation": "Gói cấp phép trực tuyến hiện tại của các trường sẽ hết hạn sau hai năm.",
+          "items": [
+            { "id": "yes", "text": "Yes", "isCorrect": false },
+            { "id": "no", "text": "No", "isCorrect": false },
+            { "id": "ng", "text": "Not Given", "isCorrect": true }
+          ],
+          "answer": { "type": "choice", "values": ["ng"] },
+          "explanation": "The passage never gives a licence period. Not Given is required: no date at all appears, so the statement is neither supported nor contradicted.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p2-q6",
+          "kind": "matching",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p2",
+          "difficulty": "advanced",
+          "prompt": "Matching Headings — paragraphs A–D of the passage above",
+          "instruction": "Questions 6–9: match each paragraph, A to D, with the correct heading. Choose the correct number and write it next to the letter. Use each number once only.\ni Short lessons, hard assignments\nii What happened once the emergency ended\niii A study carried out in real classrooms\niv A tool designed around the teacher\nv The cost of new hardware\nvi Parents' mixed reactions",
+          "items": [
+            { "id": "paraA", "matchKey": "A", "text": "A — the shift to online teaching in 2020" },
+            { "id": "paraB", "matchKey": "B", "text": "B — recording a lecture and publishing it" },
+            { "id": "paraC", "matchKey": "C", "text": "C — how much content a student can absorb" },
+            { "id": "paraD", "matchKey": "D", "text": "D — the platforms themselves" }
+          ],
+          "answer": { "type": "pairs", "values": { "A": "ii", "B": "iii", "C": "i", "D": "iv" } },
+          "explanation": "A describes the emergency change that has lasted (ii), B reports what happened in classrooms once recordings existed (iii), C is about short input and difficult assessment (i), and D is about platforms built for the teacher's workflow (iv). Headings v and vi are decoys: the passage mentions neither hardware costs nor parents.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "Match the main function of the paragraph, not a memorable sentence. Each paragraph here opens with its topic, and the headings are nouns while the text argues — watch the shift from recording (what it is) to assessment (what went wrong).",
+        "Yes / No / Not Given sits on a simple line: agree is Yes, disagree is No, silence is Not Given. Never choose No just because the statement feels new.",
+        "For headings, read the first and last sentences of each paragraph and the paragraph that is left over — the leftover is often the easiest one to identify last.",
+        "There are more headings than paragraphs, so two or three options are pure distractors. Deleting them first makes the remaining choice obvious."
+      ]
+    },
+    {
+      "id": "ielts-r-p3",
+      "title": "Reading Passage 3 — Working Less, Working Better",
+      "band": "7.0",
+      "minutes": 16,
+      "items": [
+        {
+          "id": "ielts-r-p3-q1",
+          "kind": "matching",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "advanced",
+          "prompt": "Working Less, Working Better\n\nA\nThe phrase work-life balance entered the language of employment in the 1980s, long before anyone measured it. For thirty years it remained a soft expression, printed in policy documents without a number attached. What changed the argument was remote work, which forced thousands of firms into an unplanned experiment.\n\nB\nThe most consistent finding is about interruption rather than hours. Employees who work from home are not finishing sooner, but they report completing fewer tasks that need sustained attention. In offices a task was interrupted every few minutes; at home the interruptions are different in kind, since household demands arrive without warning and cannot be batched. Several firms have introduced protected blocks in the morning, when most employees do their best work.\n\nC\nProductivity data is harder to interpret than employees' own accounts. One study of a call centre found that home workers were more productive; a second in the same sector found no effect at all. The difference may lie in the task, since routine calls need supervision while analytical work does not. The wider caution is that most firms introduced remote work in a single month, with no training, and were then judged on results they had not chosen.\n\nD\nThe consequences for career are less comfortable. Informal visibility, the chance to be noticed in a corridor, appears to matter more than workload, and the people interviewed described promotion as something that happened to other people. Women reported that remote work made the boundary between home and office harder to see, because interruptions arrived in a form that could not be logged as work.\n\nE\nThe lesson for employers is uncomfortable. Flexibility without control simply relocates the working day. Where staff choose their own hours, turnover falls; where the choice is offered but the workload stays fixed, the benefit disappears. The most effective policies here are unglamorous: clear expectations, a right to be unreachable, and managers trained to judge output, not presence.",
+          "instruction": "Questions 1–5: which paragraph does each statement refer to? Write the correct letter, A to E, next to each number. The passage is given below.",
+          "translation": "Làm việc ít hơn, làm việc tốt hơn",
+          "items": [
+            { "id": "mi1", "matchKey": "1", "text": "The expression used for a long time without any data behind it." },
+            { "id": "mi2", "matchKey": "2", "text": "Employees report losing concentration rather than saving time." },
+            { "id": "mi3", "matchKey": "3", "text": "Studies of the same sector have produced opposite results." },
+            { "id": "mi4", "matchKey": "4", "text": "Workers at a disadvantage because they were not visible in person." },
+            { "id": "mi5", "matchKey": "5", "text": "Flexibility only helps when workers also get control." }
+          ],
+          "answer": { "type": "pairs", "values": { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E" } },
+          "explanation": "Statement 1 is the history of the phrase in A; statement 2 is the interruption finding in B; statement 3 names the two conflicting call-centre studies in C; statement 4 is the visibility and promotion problem in D; statement 5 is the closing lesson of E. The paragraphs are written in order, but read the topic sentence of each before you rely on that.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p3-q2",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "advanced",
+          "prompt": "Summary completion — Working Less, Working Better\nThe way employers have treated remote work is criticised because it was introduced ____________ (paragraph C).",
+          "instruction": "Questions 6–8: complete the summary below from the passage. Question 6 — write ONE word.",
+          "answer": { "type": "text", "values": ["hastily"] },
+          "explanation": "Paragraph C says most organisations introduced remote work in a single month, with no training. The summary needs one adverb for that rush; quickly, suddenly and immediately are also accepted. Do not write remotely, which repeats the noun already given.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p3-q3",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "advanced",
+          "prompt": "Summary completion — Working Less, Working Better\nFirms have begun setting aside ____________ in the morning so that staff can concentrate (paragraph B).",
+          "instruction": "Questions 6–8: complete the summary below from the passage. Question 7 — write ONE word.",
+          "answer": { "type": "text", "values": ["blocks"] },
+          "explanation": "Several firms have responded by introducing protected blocks in the morning. Protected is a modifier in the passage and does not fit the gap, so the missing noun is blocks; time or hours is the natural-looking distractor, but the passage names blocks.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p3-q4",
+          "kind": "typeTheAnswer",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "intermediate",
+          "prompt": "Summary completion — Working Less, Working Better\nEmployee turnover falls only in organisations where staff ____________ their own hours (paragraph E).",
+          "instruction": "Questions 6–8: complete the summary below from the passage. Question 8 — write ONE word.",
+          "answer": { "type": "text", "values": ["choose"] },
+          "explanation": "Paragraph E says where staff choose their own hours, turnover falls. The word before the gap is where staff, so the verb must follow the subject: choose. Chose would be wrong, since the sentence is describing a general habit, not a past event.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p3-q5",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "advanced",
+          "prompt": "According to the passage, why did the two call-centre studies reach different conclusions?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "The tasks differed: routine calls need supervision, analysis does not", "isCorrect": true },
+            { "id": "b", "text": "One study measured a different period of time", "isCorrect": false },
+            { "id": "c", "text": "Only one of the firms kept accurate records", "isCorrect": false },
+            { "id": "d", "text": "The second study was carried out in another country", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "The passage suggests the difference may lie in the task itself, since routine calls need supervision while analytical work does not. The hedge may means the author is not certain, so the option must keep that openness; options B, C and D are details the passage never supplies.",
+          "xp": 15
+        },
+        {
+          "id": "ielts-r-p3-q6",
+          "kind": "multipleChoice",
+          "topicID": "ielts",
+          "lessonID": "ielts-r-p3",
+          "difficulty": "advanced",
+          "prompt": "What does the passage say about women working from home?",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            { "id": "a", "text": "Interruptions arrived in a form that could not be recorded as working time", "isCorrect": true },
+            { "id": "b", "text": "They were more productive than male colleagues", "isCorrect": false },
+            { "id": "c", "text": "They were promoted faster than men", "isCorrect": false },
+            { "id": "d", "text": "They were excluded from the two studies", "isCorrect": false }
+          ],
+          "answer": { "type": "choice", "values": ["a"] },
+          "explanation": "Women reported that the boundary between home and office was harder to see because interruptions could not be logged as working time. The other options claim a comparison or an exclusion that the passage does not make, and the productivity comparison belongs to the call-centre paragraph, not to gender.",
+          "xp": 15
+        }
+      ],
+      "review": [
+        "This passage is argument, not report: each paragraph turns a fact into a lesson, so look for the evaluative sentences (the wider caution, the lesson for employers) when you match information.",
+        "Summary completion gaps are fed by paraphrase, not by word-matching. Read the sentence before the gap to work out the grammatical slot — subject, verb or noun — and only then decide the word.",
+        "Keep the author's certainty in mind. A phrase such as the difference may lie in the task means No, No, only, never; a hedged passage does not support a strong statement.",
+        "A paragraph that sounds like general advice is usually the one the writer's argument is aiming at, which makes it the best target for the final question."
+      ]
+    }
+  ]
+}

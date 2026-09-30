@@ -1,0 +1,5395 @@
+{
+  "id": "vocab-core",
+  "title": "Core English Vocabulary",
+  "words": [
+    {
+      "id": "w-water",
+      "word": "water",
+      "ipa": "/ˈwɔːtə/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Nước",
+      "example": "I drink a glass of water every morning.",
+      "exampleVI": "Tôi uống một ly nước mỗi buổi sáng.",
+      "audio": {
+        "kind": "speech",
+        "text": "water"
+      },
+      "synonyms": [
+        "liquid",
+        "fluid"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "drinking water",
+        "fresh water",
+        "water bottle"
+      ],
+      "wordFormation": {
+        "noun": "water"
+      }
+    },
+    {
+      "id": "w-house",
+      "word": "house",
+      "ipa": "/haʊs/",
+      "level": "beginner",
+      "topic": "describing-places",
+      "meaning": "Nhà, ngôi nhà",
+      "example": "They live in a small house near the school.",
+      "exampleVI": "Họ sống trong một ngôi nhà nhỏ gần trường học.",
+      "audio": {
+        "kind": "speech",
+        "text": "house"
+      },
+      "synonyms": [
+        "home",
+        "residence"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "live in a house",
+        "a small house",
+        "buy a house"
+      ],
+      "wordFormation": {
+        "noun": "house",
+        "verb": "house",
+        "adjective": "residential"
+      }
+    },
+    {
+      "id": "w-family",
+      "word": "family",
+      "ipa": "/ˈfæməli/",
+      "level": "beginner",
+      "topic": "society",
+      "meaning": "Gia đình",
+      "example": "My family lives in a quiet street.",
+      "exampleVI": "Gia đình tôi sống trong một con đường yên tĩnh.",
+      "audio": {
+        "kind": "speech",
+        "text": "family"
+      },
+      "synonyms": [
+        "household"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a big family",
+        "family members",
+        "immediate family"
+      ],
+      "wordFormation": {
+        "noun": "family",
+        "adjective": "family-friendly"
+      }
+    },
+    {
+      "id": "w-friend",
+      "word": "friend",
+      "ipa": "/frend/",
+      "level": "beginner",
+      "topic": "society",
+      "meaning": "Bạn, người bạn",
+      "example": "She is my best friend from school.",
+      "exampleVI": "Cô ấy là người bạn thân nhất của tôi từ hồi đi học.",
+      "audio": {
+        "kind": "speech",
+        "text": "friend"
+      },
+      "synonyms": [
+        "companion",
+        "pal"
+      ],
+      "antonyms": [
+        "enemy"
+      ],
+      "collocations": [
+        "a close friend",
+        "best friend",
+        "make friends"
+      ],
+      "wordFormation": {
+        "noun": "friend",
+        "verb": "befriend",
+        "adjective": "friendly"
+      }
+    },
+    {
+      "id": "w-name",
+      "word": "name",
+      "ipa": "/neɪm/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Tên, tên gọi",
+      "example": "What is your name, and where are you from?",
+      "exampleVI": "Bạn tên gì và bạn đến từ đâu?",
+      "audio": {
+        "kind": "speech",
+        "text": "name"
+      },
+      "synonyms": [
+        "title"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "my name is",
+        "first name",
+        "full name"
+      ],
+      "wordFormation": {
+        "noun": "name",
+        "verb": "name",
+        "adjective": "nameless"
+      }
+    },
+    {
+      "id": "w-school",
+      "word": "school",
+      "ipa": "/skuːl/",
+      "level": "beginner",
+      "topic": "education",
+      "meaning": "Trường học",
+      "example": "The school closes at four in the afternoon.",
+      "exampleVI": "Trường học đóng cửa lúc bốn giờ chiều.",
+      "audio": {
+        "kind": "speech",
+        "text": "school"
+      },
+      "synonyms": [
+        "academy"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "go to school",
+        "school day",
+        "school children"
+      ],
+      "wordFormation": {
+        "noun": "school",
+        "verb": "school",
+        "adjective": "schooling"
+      }
+    },
+    {
+      "id": "w-teacher",
+      "word": "teacher",
+      "ipa": "/ˈtiːtʃə/",
+      "level": "beginner",
+      "topic": "education",
+      "meaning": "Giáo viên, thầy cô giáo",
+      "example": "Our teacher explains new words very clearly.",
+      "exampleVI": "Giáo viên của chúng tôi giải thích từ mới rất rõ ràng.",
+      "audio": {
+        "kind": "speech",
+        "text": "teacher"
+      },
+      "synonyms": [
+        "tutor",
+        "instructor"
+      ],
+      "antonyms": [
+        "student"
+      ],
+      "collocations": [
+        "a good teacher",
+        "English teacher",
+        "become a teacher"
+      ],
+      "wordFormation": {
+        "noun": "teacher",
+        "verb": "teach"
+      }
+    },
+    {
+      "id": "w-learn",
+      "word": "learn",
+      "ipa": "/lɜːn/",
+      "level": "beginner",
+      "topic": "education",
+      "meaning": "Học, học tập",
+      "example": "I learn twenty new words every week.",
+      "exampleVI": "Tôi học hai mươi từ mới mỗi tuần.",
+      "audio": {
+        "kind": "speech",
+        "text": "learn"
+      },
+      "synonyms": [
+        "study",
+        "master"
+      ],
+      "antonyms": [
+        "forget"
+      ],
+      "collocations": [
+        "learn a language",
+        "learn from mistakes",
+        "learn quickly"
+      ],
+      "wordFormation": {
+        "verb": "learn",
+        "noun": "learning",
+        "adjective": "learned"
+      }
+    },
+    {
+      "id": "w-book",
+      "word": "book",
+      "ipa": "/bʊk/",
+      "level": "beginner",
+      "topic": "education",
+      "meaning": "Sách, quyển sách",
+      "example": "I borrow a book from the library every month.",
+      "exampleVI": "Tôi mượn một cuốn sách từ thư viện mỗi tháng.",
+      "audio": {
+        "kind": "speech",
+        "text": "book"
+      },
+      "synonyms": [
+        "volume"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "read a book",
+        "book a table",
+        "textbook"
+      ],
+      "wordFormation": {
+        "noun": "book",
+        "verb": "book",
+        "adjective": "bookish"
+      }
+    },
+    {
+      "id": "w-city",
+      "word": "city",
+      "ipa": "/ˈsɪti/",
+      "level": "beginner",
+      "topic": "describing-places",
+      "meaning": "Thành phố",
+      "example": "Ho Chi Minh City is a very busy city.",
+      "exampleVI": "Thành phố Hồ Chí Minh là một thành phố rất nhộn nhịp.",
+      "audio": {
+        "kind": "speech",
+        "text": "city"
+      },
+      "synonyms": [
+        "town"
+      ],
+      "antonyms": [
+        "countryside"
+      ],
+      "collocations": [
+        "big city",
+        "city centre",
+        "city life"
+      ],
+      "wordFormation": {
+        "noun": "city",
+        "adjective": "urban"
+      }
+    },
+    {
+      "id": "w-street",
+      "word": "street",
+      "ipa": "/striːt/",
+      "level": "beginner",
+      "topic": "describing-places",
+      "meaning": "Đường, con đường",
+      "example": "There is a new coffee shop on this street.",
+      "exampleVI": "Có một quán cà phê mới trên con đường này.",
+      "audio": {
+        "kind": "speech",
+        "text": "street"
+      },
+      "synonyms": [
+        "road",
+        "avenue"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "main street",
+        "cross the street",
+        "street food"
+      ],
+      "wordFormation": {
+        "noun": "street"
+      }
+    },
+    {
+      "id": "w-train",
+      "word": "train",
+      "ipa": "/treɪn/",
+      "level": "beginner",
+      "topic": "travel",
+      "meaning": "Tàu hỏa; huấn luyện",
+      "example": "The train to Hue leaves at seven this morning.",
+      "exampleVI": "Chuyến tàu đi Huế khởi hành lúc bảy giờ sáng nay.",
+      "audio": {
+        "kind": "speech",
+        "text": "train"
+      },
+      "synonyms": [
+        "railway service"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "catch a train",
+        "train ticket",
+        "train station"
+      ],
+      "wordFormation": {
+        "noun": "train",
+        "verb": "train",
+        "adjective": "trained"
+      }
+    },
+    {
+      "id": "w-airport",
+      "word": "airport",
+      "ipa": "/ˈeəpɔːt/",
+      "level": "beginner",
+      "topic": "describing-places",
+      "meaning": "Sân bay",
+      "example": "We waited two hours at the airport.",
+      "exampleVI": "Chúng tôi đã chờ hai tiếng ở sân bay.",
+      "audio": {
+        "kind": "speech",
+        "text": "airport"
+      },
+      "synonyms": [
+        "airfield"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "arrive at the airport",
+        "airport terminal",
+        "airport staff"
+      ],
+      "wordFormation": {
+        "noun": "airport",
+        "adjective": "aeroplane"
+      }
+    },
+    {
+      "id": "w-journey",
+      "word": "journey",
+      "ipa": "/ˈdʒɜːni/",
+      "level": "beginner",
+      "topic": "travel",
+      "meaning": "Hành trình, chuyến đi",
+      "example": "The journey from Hanoi to Da Nang takes two hours.",
+      "exampleVI": "Hành trình từ Hà Nội đến Đà Nẵng mất hai tiếng.",
+      "audio": {
+        "kind": "speech",
+        "text": "journey"
+      },
+      "synonyms": [
+        "trip"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "long journey",
+        "a journey of",
+        "start the journey"
+      ],
+      "wordFormation": {
+        "noun": "journey",
+        "verb": "journey"
+      }
+    },
+    {
+      "id": "w-ticket",
+      "word": "ticket",
+      "ipa": "/ˈtɪkɪt/",
+      "level": "beginner",
+      "topic": "travel",
+      "meaning": "Vé",
+      "example": "I bought a return ticket online last night.",
+      "exampleVI": "Tối qua tôi đã mua vé khứ hồi qua mạng.",
+      "audio": {
+        "kind": "speech",
+        "text": "ticket"
+      },
+      "synonyms": [
+        "pass"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "buy a ticket",
+        "return ticket",
+        "ticket price"
+      ],
+      "wordFormation": {
+        "noun": "ticket",
+        "verb": "ticket"
+      }
+    },
+    {
+      "id": "w-food",
+      "word": "food",
+      "ipa": "/fuːd/",
+      "level": "beginner",
+      "topic": "food",
+      "meaning": "Thức ăn, đồ ăn",
+      "example": "The food at this restaurant is very cheap.",
+      "exampleVI": "Món ăn ở nhà hàng này rất rẻ.",
+      "audio": {
+        "kind": "speech",
+        "text": "food"
+      },
+      "synonyms": [
+        "cuisine",
+        "fare"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "fast food",
+        "street food",
+        "a food lover"
+      ],
+      "wordFormation": {
+        "noun": "food",
+        "adjective": "edible"
+      }
+    },
+    {
+      "id": "w-bread",
+      "word": "bread",
+      "ipa": "/bred/",
+      "level": "beginner",
+      "topic": "food",
+      "meaning": "Bánh mì",
+      "example": "He buys fresh bread every morning at the bakery.",
+      "exampleVI": "Anh ấy mua bánh mì tươi mỗi sáng ở tiệm bánh.",
+      "audio": {
+        "kind": "speech",
+        "text": "bread"
+      },
+      "synonyms": [
+        "loaf"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "fresh bread",
+        "bread and butter",
+        "a slice of bread"
+      ],
+      "wordFormation": {
+        "noun": "bread",
+        "verb": "bread",
+        "adjective": "breaded"
+      }
+    },
+    {
+      "id": "w-fruit",
+      "word": "fruit",
+      "ipa": "/fruːt/",
+      "level": "beginner",
+      "topic": "food",
+      "meaning": "Trái cây",
+      "example": "Eat more fruit and vegetables every day.",
+      "exampleVI": "Hãy ăn nhiều trái cây và rau mỗi ngày.",
+      "audio": {
+        "kind": "speech",
+        "text": "fruit"
+      },
+      "synonyms": [
+        "produce"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "fresh fruit",
+        "fruit juice",
+        "tropical fruit"
+      ],
+      "wordFormation": {
+        "noun": "fruit",
+        "adjective": "fruity",
+        "verb": "fruit"
+      }
+    },
+    {
+      "id": "w-restaurant",
+      "word": "restaurant",
+      "ipa": "/ˈrestrɒnt/",
+      "level": "beginner",
+      "topic": "food",
+      "meaning": "Nhà hàng",
+      "example": "We booked a table in a small restaurant downtown.",
+      "exampleVI": "Chúng tôi đặt bàn ở một nhà hàng nhỏ trong thành phố.",
+      "audio": {
+        "kind": "speech",
+        "text": "restaurant"
+      },
+      "synonyms": [
+        "eatery"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "Chinese restaurant",
+        "go to a restaurant",
+        "restaurant menu"
+      ],
+      "wordFormation": {
+        "noun": "restaurant"
+      }
+    },
+    {
+      "id": "w-hungry",
+      "word": "hungry",
+      "ipa": "/ˈhʌŋɡri/",
+      "level": "beginner",
+      "topic": "food",
+      "meaning": "Đói",
+      "example": "I am hungry, so let's have lunch now.",
+      "exampleVI": "Tôi đói rồi, nên chúng ta ăn trưa nhé.",
+      "audio": {
+        "kind": "speech",
+        "text": "hungry"
+      },
+      "synonyms": [
+        "starving"
+      ],
+      "antonyms": [
+        "full",
+        "satisfied"
+      ],
+      "collocations": [
+        "feel hungry",
+        "very hungry",
+        "get hungry"
+      ],
+      "wordFormation": {
+        "adjective": "hungry",
+        "noun": "hunger",
+        "verb": "hunger"
+      }
+    },
+    {
+      "id": "w-happy",
+      "word": "happy",
+      "ipa": "/ˈhæpi/",
+      "level": "beginner",
+      "topic": "emotions",
+      "meaning": "Vui, hạnh phúc",
+      "example": "She looked happy after she got the good news.",
+      "exampleVI": "Cô ấy trông vui vẻ sau khi nhận được tin vui.",
+      "audio": {
+        "kind": "speech",
+        "text": "happy"
+      },
+      "synonyms": [
+        "glad",
+        "cheerful"
+      ],
+      "antonyms": [
+        "sad"
+      ],
+      "collocations": [
+        "very happy",
+        "happy with",
+        "a happy ending"
+      ],
+      "wordFormation": {
+        "adjective": "happy",
+        "noun": "happiness",
+        "adverb": "happily"
+      }
+    },
+    {
+      "id": "w-sad",
+      "word": "sad",
+      "ipa": "/sæd/",
+      "level": "beginner",
+      "topic": "emotions",
+      "meaning": "Buồn",
+      "example": "He felt sad when his old dog died.",
+      "exampleVI": "Anh ấy thấy buồn khi chó cũ của mình qua đời.",
+      "audio": {
+        "kind": "speech",
+        "text": "sad"
+      },
+      "synonyms": [
+        "unhappy",
+        "sorrowful"
+      ],
+      "antonyms": [
+        "happy"
+      ],
+      "collocations": [
+        "feel sad",
+        "very sad",
+        "a sad song"
+      ],
+      "wordFormation": {
+        "adjective": "sad",
+        "noun": "sadness",
+        "adverb": "sadly"
+      }
+    },
+    {
+      "id": "w-angry",
+      "word": "angry",
+      "ipa": "/ˈæŋɡri/",
+      "level": "beginner",
+      "topic": "emotions",
+      "meaning": "Giận, tức giận",
+      "example": "My father was angry about the broken window.",
+      "exampleVI": "Bố tôi rất giận về cái cửa sổ vỡ.",
+      "audio": {
+        "kind": "speech",
+        "text": "angry"
+      },
+      "synonyms": [
+        "furious",
+        "cross"
+      ],
+      "antonyms": [
+        "calm",
+        "pleased"
+      ],
+      "collocations": [
+        "angry with",
+        "get angry",
+        "an angry voice"
+      ],
+      "wordFormation": {
+        "adjective": "angry",
+        "noun": "anger",
+        "adverb": "angrily"
+      }
+    },
+    {
+      "id": "w-afraid",
+      "word": "afraid",
+      "ipa": "/əˈfreɪd/",
+      "level": "beginner",
+      "topic": "emotions",
+      "meaning": "Sợ, sợ hãi",
+      "example": "The little boy is afraid of big dogs.",
+      "exampleVI": "Cậu bé sợ những con chó lớn.",
+      "audio": {
+        "kind": "speech",
+        "text": "afraid"
+      },
+      "synonyms": [
+        "scared",
+        "frightened"
+      ],
+      "antonyms": [
+        "brave"
+      ],
+      "collocations": [
+        "afraid of",
+        "be afraid to",
+        "afraid that"
+      ],
+      "wordFormation": {
+        "adjective": "afraid",
+        "noun": "fear"
+      }
+    },
+    {
+      "id": "w-tired",
+      "word": "tired",
+      "ipa": "/ˈtaɪəd/",
+      "level": "beginner",
+      "topic": "describing-people",
+      "meaning": "Mệt, kiệt sức",
+      "example": "I feel tired after a long day at work.",
+      "exampleVI": "Tôi thấy mệt sau một ngày dài ở chỗ làm việc.",
+      "audio": {
+        "kind": "speech",
+        "text": "tired"
+      },
+      "synonyms": [
+        "exhausted",
+        "weary"
+      ],
+      "antonyms": [
+        "energetic",
+        "rested"
+      ],
+      "collocations": [
+        "feel tired",
+        "tired of",
+        "very tired"
+      ],
+      "wordFormation": {
+        "adjective": "tired",
+        "noun": "tiredness",
+        "verb": "tire"
+      }
+    },
+    {
+      "id": "w-work",
+      "word": "work",
+      "ipa": "/wɜːk/",
+      "level": "beginner",
+      "topic": "work",
+      "meaning": "Việc làm, công việc; làm việc",
+      "example": "She works in a small office downtown.",
+      "exampleVI": "Cô ấy làm việc ở một văn phòng nhỏ trong thành phố.",
+      "audio": {
+        "kind": "speech",
+        "text": "work"
+      },
+      "synonyms": [
+        "job",
+        "employment"
+      ],
+      "antonyms": [
+        "leisure"
+      ],
+      "collocations": [
+        "go to work",
+        "hard work",
+        "work experience"
+      ],
+      "wordFormation": {
+        "noun": "work",
+        "verb": "work",
+        "adjective": "working"
+      }
+    },
+    {
+      "id": "w-office",
+      "word": "office",
+      "ipa": "/ˈɒfɪs/",
+      "level": "beginner",
+      "topic": "work",
+      "meaning": "Văn phòng",
+      "example": "His office is on the third floor.",
+      "exampleVI": "Văn phòng của anh ấy nằm ở tầng ba.",
+      "audio": {
+        "kind": "speech",
+        "text": "office"
+      },
+      "synonyms": [
+        "workplace"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "go to the office",
+        "office hours",
+        "head office"
+      ],
+      "wordFormation": {
+        "noun": "office",
+        "adjective": "official",
+        "adverb": "officially"
+      }
+    },
+    {
+      "id": "w-money",
+      "word": "money",
+      "ipa": "/ˈmʌni/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Tiền",
+      "example": "I do not have enough money to buy a laptop.",
+      "exampleVI": "Tôi không đủ tiền để mua một chiếc máy tính xách tay.",
+      "audio": {
+        "kind": "speech",
+        "text": "money"
+      },
+      "synonyms": [
+        "cash",
+        "funds"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "save money",
+        "spend money",
+        "a lot of money"
+      ],
+      "wordFormation": {
+        "noun": "money",
+        "adjective": "monetary"
+      }
+    },
+    {
+      "id": "w-price",
+      "word": "price",
+      "ipa": "/praɪs/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Giá, giá cả",
+      "example": "The price of this shirt is quite reasonable.",
+      "exampleVI": "Giá chiếc áo này khá hợp lý.",
+      "audio": {
+        "kind": "speech",
+        "text": "price"
+      },
+      "synonyms": [
+        "cost"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "the price of",
+        "a low price",
+        "price list"
+      ],
+      "wordFormation": {
+        "noun": "price",
+        "verb": "price",
+        "adjective": "priceless"
+      }
+    },
+    {
+      "id": "w-job",
+      "word": "job",
+      "ipa": "/dʒɒb/",
+      "level": "beginner",
+      "topic": "work",
+      "meaning": "Công việc, việc làm",
+      "example": "He found a job in a foreign company.",
+      "exampleVI": "Anh ấy tìm được việc ở một công ty nước ngoài.",
+      "audio": {
+        "kind": "speech",
+        "text": "job"
+      },
+      "synonyms": [
+        "position",
+        "occupation"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a full-time job",
+        "look for a job",
+        "lose a job"
+      ],
+      "wordFormation": {
+        "noun": "job",
+        "adjective": "jobless"
+      }
+    },
+    {
+      "id": "w-help",
+      "word": "help",
+      "ipa": "/help/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Giúp, giúp đỡ",
+      "example": "Could you help me move this heavy table?",
+      "exampleVI": "Bạn có thể giúp tôi chuyển cái bàn nặng này không?",
+      "audio": {
+        "kind": "speech",
+        "text": "help"
+      },
+      "synonyms": [
+        "assist",
+        "aid"
+      ],
+      "antonyms": [
+        "hinder"
+      ],
+      "collocations": [
+        "help somebody with",
+        "help out",
+        "ask for help"
+      ],
+      "wordFormation": {
+        "verb": "help",
+        "noun": "help",
+        "adjective": "helpful",
+        "adverb": "helpfully"
+      }
+    },
+    {
+      "id": "w-clean",
+      "word": "clean",
+      "ipa": "/kliːn/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Sạch; làm sạch",
+      "example": "The kitchen is clean and very bright.",
+      "exampleVI": "Nhà bếp sạch sẽ và rất sáng.",
+      "audio": {
+        "kind": "speech",
+        "text": "clean"
+      },
+      "synonyms": [
+        "spotless",
+        "tidy"
+      ],
+      "antonyms": [
+        "dirty",
+        "messy"
+      ],
+      "collocations": [
+        "clean the room",
+        "keep clean",
+        "clean water"
+      ],
+      "wordFormation": {
+        "adjective": "clean",
+        "verb": "clean",
+        "adverb": "cleanly",
+        "noun": "cleaner"
+      }
+    },
+    {
+      "id": "w-small",
+      "word": "small",
+      "ipa": "/smɔːl/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Nhỏ, bé",
+      "example": "They live in a small flat with two rooms.",
+      "exampleVI": "Họ sống trong một căn hộ nhỏ có hai phòng.",
+      "audio": {
+        "kind": "speech",
+        "text": "small"
+      },
+      "synonyms": [
+        "little",
+        "tiny"
+      ],
+      "antonyms": [
+        "big",
+        "large"
+      ],
+      "collocations": [
+        "a small shop",
+        "very small",
+        "small size"
+      ],
+      "wordFormation": {
+        "adjective": "small",
+        "noun": "smallness"
+      }
+    },
+    {
+      "id": "w-big",
+      "word": "big",
+      "ipa": "/bɪɡ/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "To, lớn",
+      "example": "They built a big new library last year.",
+      "exampleVI": "Năm ngoái họ dựng một thư viện lớn mới.",
+      "audio": {
+        "kind": "speech",
+        "text": "big"
+      },
+      "synonyms": [
+        "large",
+        "huge"
+      ],
+      "antonyms": [
+        "small",
+        "little"
+      ],
+      "collocations": [
+        "a big house",
+        "big deal",
+        "grow big"
+      ],
+      "wordFormation": {
+        "adjective": "big"
+      }
+    },
+    {
+      "id": "w-new",
+      "word": "new",
+      "ipa": "/njuː/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Mới",
+      "example": "She bought a new phone last Friday.",
+      "exampleVI": "Cô ấy mua một chiếc điện thoại mới vào thứ Sáu tuần trước.",
+      "audio": {
+        "kind": "speech",
+        "text": "new"
+      },
+      "synonyms": [
+        "fresh",
+        "recent"
+      ],
+      "antonyms": [
+        "old",
+        "used"
+      ],
+      "collocations": [
+        "a new job",
+        "brand new",
+        "new to me"
+      ],
+      "wordFormation": {
+        "adjective": "new",
+        "adverb": "newly",
+        "noun": "newness"
+      }
+    },
+    {
+      "id": "w-old",
+      "word": "old",
+      "ipa": "/əʊld/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Cũ, già; già",
+      "example": "My grandfather lives in an old house.",
+      "exampleVI": "Ông nội tôi sống trong một ngôi nhà cũ.",
+      "audio": {
+        "kind": "speech",
+        "text": "old"
+      },
+      "synonyms": [
+        "elderly",
+        "ancient"
+      ],
+      "antonyms": [
+        "new",
+        "young"
+      ],
+      "collocations": [
+        "an old man",
+        "how old",
+        "old fashioned"
+      ],
+      "wordFormation": {
+        "adjective": "old",
+        "noun": "age",
+        "adverb": "formerly"
+      }
+    },
+    {
+      "id": "w-quick",
+      "word": "quick",
+      "ipa": "/kwɪk/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Nhanh, mau",
+      "example": "We took a quick shower before the meeting.",
+      "exampleVI": "Chúng tôi tắm nhanh trước cuộc họp.",
+      "audio": {
+        "kind": "speech",
+        "text": "quick"
+      },
+      "synonyms": [
+        "fast",
+        "rapid"
+      ],
+      "antonyms": [
+        "slow"
+      ],
+      "collocations": [
+        "a quick answer",
+        "quickly done",
+        "quick lunch"
+      ],
+      "wordFormation": {
+        "adjective": "quick",
+        "adverb": "quickly",
+        "noun": "quickness"
+      }
+    },
+    {
+      "id": "w-slow",
+      "word": "slow",
+      "ipa": "/sləʊ/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Chậm, chậm chạp",
+      "example": "The train is slow because of the heavy rain.",
+      "exampleVI": "Tàu chạy chậm vì mưa lớn.",
+      "audio": {
+        "kind": "speech",
+        "text": "slow"
+      },
+      "synonyms": [
+        "gradual",
+        "sluggish"
+      ],
+      "antonyms": [
+        "fast",
+        "quick"
+      ],
+      "collocations": [
+        "slow down",
+        "a slow train",
+        "too slow"
+      ],
+      "wordFormation": {
+        "adjective": "slow",
+        "adverb": "slowly",
+        "noun": "slowness",
+        "verb": "slow"
+      }
+    },
+    {
+      "id": "w-walk",
+      "word": "walk",
+      "ipa": "/wɔːk/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Đi bộ, dạo bộ",
+      "example": "We walk to the park every evening.",
+      "exampleVI": "Chúng tôi đi bộ ra công viên mỗi tối.",
+      "audio": {
+        "kind": "speech",
+        "text": "walk"
+      },
+      "synonyms": [
+        "stroll"
+      ],
+      "antonyms": [
+        "run"
+      ],
+      "collocations": [
+        "walk to school",
+        "take a walk",
+        "walk fast"
+      ],
+      "wordFormation": {
+        "verb": "walk",
+        "noun": "walk",
+        "adjective": "walkable"
+      }
+    },
+    {
+      "id": "w-run",
+      "word": "run",
+      "ipa": "/rʌn/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Chạy; vận hành",
+      "example": "He runs five kilometres every morning.",
+      "exampleVI": "Anh ấy chạy năm kilômét mỗi sáng.",
+      "audio": {
+        "kind": "speech",
+        "text": "run"
+      },
+      "synonyms": [
+        "dash",
+        "sprint"
+      ],
+      "antonyms": [
+        "walk"
+      ],
+      "collocations": [
+        "run a business",
+        "run away",
+        "a long run"
+      ],
+      "wordFormation": {
+        "verb": "run",
+        "noun": "run",
+        "adjective": "running"
+      }
+    },
+    {
+      "id": "w-eat",
+      "word": "eat",
+      "ipa": "/iːt/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Ăn, ăn uống",
+      "example": "We eat dinner at seven o'clock.",
+      "exampleVI": "Chúng tôi ăn tối lúc bảy giờ.",
+      "audio": {
+        "kind": "speech",
+        "text": "eat"
+      },
+      "synonyms": [
+        "have a meal"
+      ],
+      "antonyms": [
+        "starve"
+      ],
+      "collocations": [
+        "eat well",
+        "eat out",
+        "eat breakfast"
+      ],
+      "wordFormation": {
+        "verb": "eat",
+        "noun": "eating",
+        "adjective": "edible"
+      }
+    },
+    {
+      "id": "w-sleep",
+      "word": "sleep",
+      "ipa": "/sliːp/",
+      "level": "beginner",
+      "topic": "health",
+      "meaning": "Ngủ",
+      "example": "Children need eight hours of sleep each night.",
+      "exampleVI": "Trẻ em cần tám tiếng ngủ mỗi đêm.",
+      "audio": {
+        "kind": "speech",
+        "text": "sleep"
+      },
+      "synonyms": [
+        "rest"
+      ],
+      "antonyms": [
+        "wake"
+      ],
+      "collocations": [
+        "sleep well",
+        "go to sleep",
+        "a good night's sleep"
+      ],
+      "wordFormation": {
+        "verb": "sleep",
+        "noun": "sleep",
+        "adjective": "sleepy"
+      }
+    },
+    {
+      "id": "w-speak",
+      "word": "speak",
+      "ipa": "/spiːk/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Nói, nói chuyện",
+      "example": "Do you speak English with your teacher?",
+      "exampleVI": "Bạn có nói chuyện tiếng Anh với giáo viên không?",
+      "audio": {
+        "kind": "speech",
+        "text": "speak"
+      },
+      "synonyms": [
+        "talk",
+        "say"
+      ],
+      "antonyms": [
+        "listen"
+      ],
+      "collocations": [
+        "speak English",
+        "speak to somebody",
+        "speak up"
+      ],
+      "wordFormation": {
+        "verb": "speak",
+        "noun": "speech",
+        "adjective": "spoken"
+      }
+    },
+    {
+      "id": "w-listen",
+      "word": "listen",
+      "ipa": "/ˈlɪsn/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Nghe, lắng nghe",
+      "example": "Please listen to the recording twice carefully.",
+      "exampleVI": "Vui lòng nghe bản ghi âm hai lần thật kỹ.",
+      "audio": {
+        "kind": "speech",
+        "text": "listen"
+      },
+      "synonyms": [
+        "hear"
+      ],
+      "antonyms": [
+        "ignore"
+      ],
+      "collocations": [
+        "listen to music",
+        "listen carefully",
+        "listen to me"
+      ],
+      "wordFormation": {
+        "verb": "listen",
+        "adverb": "listening",
+        "noun": "listener"
+      }
+    },
+    {
+      "id": "w-write",
+      "word": "write",
+      "ipa": "/raɪt/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Viết",
+      "example": "She writes a short email to her friend.",
+      "exampleVI": "Cô ấy viết một email ngắn cho bạn.",
+      "audio": {
+        "kind": "speech",
+        "text": "write"
+      },
+      "synonyms": [
+        "compose",
+        "put down"
+      ],
+      "antonyms": [
+        "read"
+      ],
+      "collocations": [
+        "write a letter",
+        "write down",
+        "write an essay"
+      ],
+      "wordFormation": {
+        "verb": "write",
+        "noun": "writing",
+        "adjective": "written"
+      }
+    },
+    {
+      "id": "w-read",
+      "word": "read",
+      "ipa": "/riːd/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Đọc",
+      "example": "He reads the newspaper with his coffee.",
+      "exampleVI": "Anh ấy đọc báo cùng với cà phê.",
+      "audio": {
+        "kind": "speech",
+        "text": "read"
+      },
+      "synonyms": [
+        "peruse"
+      ],
+      "antonyms": [
+        "write"
+      ],
+      "collocations": [
+        "read a book",
+        "read aloud",
+        "read news"
+      ],
+      "wordFormation": {
+        "verb": "read",
+        "noun": "reader",
+        "adjective": "readable"
+      }
+    },
+    {
+      "id": "w-buy",
+      "word": "buy",
+      "ipa": "/baɪ/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Mua",
+      "example": "I want to buy a bigger kitchen table.",
+      "exampleVI": "Tôi muốn mua một chiếc bàn bếp lớn hơn.",
+      "audio": {
+        "kind": "speech",
+        "text": "buy"
+      },
+      "synonyms": [
+        "purchase"
+      ],
+      "antonyms": [
+        "sell"
+      ],
+      "collocations": [
+        "buy food",
+        "buy online",
+        "buy a house"
+      ],
+      "wordFormation": {
+        "verb": "buy",
+        "noun": "buyer",
+        "adjective": "bought"
+      }
+    },
+    {
+      "id": "w-cook",
+      "word": "cook",
+      "ipa": "/kʊk/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Nấu ăn, người nấu",
+      "example": "My mother cooks fish very well.",
+      "exampleVI": "Mẹ tôi nấu cá rất ngon.",
+      "audio": {
+        "kind": "speech",
+        "text": "cook"
+      },
+      "synonyms": [
+        "prepare a meal"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "cook dinner",
+        "learn to cook",
+        "cooking oil"
+      ],
+      "wordFormation": {
+        "verb": "cook",
+        "noun": "cook",
+        "adjective": "cooked"
+      }
+    },
+    {
+      "id": "w-go",
+      "word": "go",
+      "ipa": "/ɡəʊ/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Đi, tới",
+      "example": "We go to the market on Sunday mornings.",
+      "exampleVI": "Chúng tôi đi chợ vào sáng chủ nhật.",
+      "audio": {
+        "kind": "speech",
+        "text": "go"
+      },
+      "synonyms": [
+        "move",
+        "travel"
+      ],
+      "antonyms": [
+        "stay",
+        "come"
+      ],
+      "collocations": [
+        "go home",
+        "go to bed",
+        "going on"
+      ],
+      "wordFormation": {
+        "verb": "go",
+        "noun": "goer"
+      }
+    },
+    {
+      "id": "w-come",
+      "word": "come",
+      "ipa": "/kʌm/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Đến, tới nơi",
+      "example": "Please come to my house after class.",
+      "exampleVI": "Hãy đến nhà tôi sau khi học xong.",
+      "audio": {
+        "kind": "speech",
+        "text": "come"
+      },
+      "synonyms": [
+        "arrive"
+      ],
+      "antonyms": [
+        "go",
+        "leave"
+      ],
+      "collocations": [
+        "come back",
+        "come from",
+        "come to school"
+      ],
+      "wordFormation": {
+        "verb": "come",
+        "noun": "come"
+      }
+    },
+    {
+      "id": "w-make",
+      "word": "make",
+      "ipa": "/meɪk/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Làm, tạo ra",
+      "example": "She likes to make cakes for her friends.",
+      "exampleVI": "Cô ấy thích làm bánh cho bạn bè.",
+      "audio": {
+        "kind": "speech",
+        "text": "make"
+      },
+      "synonyms": [
+        "create",
+        "build"
+      ],
+      "antonyms": [
+        "destroy"
+      ],
+      "collocations": [
+        "make a cake",
+        "make friends",
+        "make a decision"
+      ],
+      "wordFormation": {
+        "verb": "make",
+        "noun": "maker"
+      }
+    },
+    {
+      "id": "w-take",
+      "word": "take",
+      "ipa": "/teɪk/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Cầm, lấy; mất",
+      "example": "Please take an umbrella; it may rain later.",
+      "exampleVI": "Vui lòng cầm một chiếc dù; trời có thể mưa sau.",
+      "audio": {
+        "kind": "speech",
+        "text": "take"
+      },
+      "synonyms": [
+        "hold",
+        "carry"
+      ],
+      "antonyms": [
+        "give",
+        "leave"
+      ],
+      "collocations": [
+        "take a bus",
+        "take a photo",
+        "take medicine"
+      ],
+      "wordFormation": {
+        "verb": "take",
+        "noun": "taking"
+      }
+    },
+    {
+      "id": "w-give",
+      "word": "give",
+      "ipa": "/ɡɪv/",
+      "level": "beginner",
+      "topic": "describing-actions",
+      "meaning": "Cho, tặng",
+      "example": "My uncle gave me a bike for my birthday.",
+      "exampleVI": "Chú tôi tặng tôi một chiếc xe đạp vào sinh nhật.",
+      "audio": {
+        "kind": "speech",
+        "text": "give"
+      },
+      "synonyms": [
+        "offer",
+        "present"
+      ],
+      "antonyms": [
+        "take",
+        "receive"
+      ],
+      "collocations": [
+        "give a gift",
+        "give back",
+        "give someone a hand"
+      ],
+      "wordFormation": {
+        "verb": "give",
+        "noun": "giving",
+        "adjective": "given"
+      }
+    },
+    {
+      "id": "w-very",
+      "word": "very",
+      "ipa": "/ˈveri/",
+      "level": "beginner",
+      "topic": "describing-things",
+      "meaning": "Rất, quá",
+      "example": "The soup outside is very hot today.",
+      "exampleVI": "Món súp ngoài kia hôm nay rất nóng.",
+      "audio": {
+        "kind": "speech",
+        "text": "very"
+      },
+      "synonyms": [
+        "extremely"
+      ],
+      "antonyms": [
+        "barely"
+      ],
+      "collocations": [
+        "very good",
+        "very much",
+        "very important"
+      ],
+      "wordFormation": {
+        "adverb": "very"
+      }
+    },
+    {
+      "id": "w-always",
+      "word": "always",
+      "ipa": "/ˈɔːlweɪz/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Luôn luôn, không bao giờ khác",
+      "example": "He always drinks coffee before breakfast.",
+      "exampleVI": "Anh ấy luôn uống cà phê trước bữa sáng.",
+      "audio": {
+        "kind": "speech",
+        "text": "always"
+      },
+      "synonyms": [
+        "constantly",
+        "invariably"
+      ],
+      "antonyms": [
+        "never"
+      ],
+      "collocations": [
+        "always at work",
+        "not always",
+        "always remember to"
+      ],
+      "wordFormation": {
+        "adverb": "always"
+      }
+    },
+    {
+      "id": "w-often",
+      "word": "often",
+      "ipa": "/ˈɒfn/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Thường, hay",
+      "example": "We often talk about our plans after work.",
+      "exampleVI": "Chúng tôi thường nói chuyện về kế hoạch sau giờ làm.",
+      "audio": {
+        "kind": "speech",
+        "text": "often"
+      },
+      "synonyms": [
+        "frequently",
+        "regularly"
+      ],
+      "antonyms": [
+        "rarely",
+        "seldom"
+      ],
+      "collocations": [
+        "quite often",
+        "often ask",
+        "more often than not"
+      ],
+      "wordFormation": {
+        "adverb": "often"
+      }
+    },
+    {
+      "id": "w-never",
+      "word": "never",
+      "ipa": "/ˈnevə/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Không bao giờ, chưa từng",
+      "example": "She never drinks coffee late at night.",
+      "exampleVI": "Cô ấy không bao giờ uống cà phê muộn ban đêm.",
+      "audio": {
+        "kind": "speech",
+        "text": "never"
+      },
+      "synonyms": [
+        "not once"
+      ],
+      "antonyms": [
+        "always"
+      ],
+      "collocations": [
+        "never forget",
+        "never mind",
+        "never seen before"
+      ],
+      "wordFormation": {
+        "adverb": "never"
+      }
+    },
+    {
+      "id": "w-now",
+      "word": "now",
+      "ipa": "/naʊ/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Bây giờ, lúc này",
+      "example": "We must start the meeting right now.",
+      "exampleVI": "Chúng ta phải bắt đầu cuộc họp ngay bây giờ.",
+      "audio": {
+        "kind": "speech",
+        "text": "now"
+      },
+      "synonyms": [
+        "at present"
+      ],
+      "antonyms": [
+        "then"
+      ],
+      "collocations": [
+        "right now",
+        "now and then",
+        "from now on"
+      ],
+      "wordFormation": {
+        "adverb": "now",
+        "noun": "moment"
+      }
+    },
+    {
+      "id": "w-today",
+      "word": "today",
+      "ipa": "/təˈdeɪ/",
+      "level": "beginner",
+      "topic": "everyday",
+      "meaning": "Hôm nay",
+      "example": "What is your plan for today?",
+      "exampleVI": "Kế hoạch hôm nay của bạn là gì?",
+      "audio": {
+        "kind": "speech",
+        "text": "today"
+      },
+      "synonyms": [
+        "this day"
+      ],
+      "antonyms": [
+        "tomorrow"
+      ],
+      "collocations": [
+        "today morning",
+        "later today",
+        "as of today"
+      ],
+      "wordFormation": {
+        "adverb": "today",
+        "noun": "day"
+      }
+    },
+    {
+      "id": "w-weather",
+      "word": "weather",
+      "ipa": "/ˈweðə/",
+      "level": "beginner",
+      "topic": "environment",
+      "meaning": "Thời tiết",
+      "example": "The weather is cold and dry in December.",
+      "exampleVI": "Tháng mười hai thời tiết lạnh và khô.",
+      "audio": {
+        "kind": "speech",
+        "text": "weather"
+      },
+      "synonyms": [
+        "climate",
+        "conditions"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "bad weather",
+        "weather forecast",
+        "hot weather"
+      ],
+      "wordFormation": {
+        "noun": "weather",
+        "verb": "weather"
+      }
+    },
+    {
+      "id": "w-achieve",
+      "word": "achieve",
+      "ipa": "/əˈtʃiːv/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Đạt được, hoàn thành",
+      "example": "She achieved excellent results in her final exam.",
+      "exampleVI": "Cô ấy đã đạt kết quả xuất sắc trong kỳ thi cuối.",
+      "audio": {
+        "kind": "speech",
+        "text": "achieve"
+      },
+      "synonyms": [
+        "accomplish",
+        "attain"
+      ],
+      "antonyms": [
+        "fail"
+      ],
+      "collocations": [
+        "achieve a goal",
+        "achieve success",
+        "achieve results"
+      ],
+      "wordFormation": {
+        "verb": "achieve",
+        "noun": "achievement",
+        "adjective": "achievable"
+      }
+    },
+    {
+      "id": "w-advice",
+      "word": "advice",
+      "ipa": "/ədˈvaɪs/",
+      "level": "intermediate",
+      "topic": "everyday",
+      "meaning": "Lời khuyên",
+      "example": "My teacher gave me useful advice about my writing.",
+      "exampleVI": "Giáo viên đã cho tôi lời khuyên hữu ích về bài viết của mình.",
+      "audio": {
+        "kind": "speech",
+        "text": "advice"
+      },
+      "synonyms": [
+        "suggestion",
+        "guidance"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "ask for advice",
+        "give advice",
+        "take advice"
+      ],
+      "wordFormation": {
+        "noun": "advice",
+        "verb": "advise",
+        "adjective": "advisable"
+      }
+    },
+    {
+      "id": "w-afford",
+      "word": "afford",
+      "ipa": "/əˈfɔːd/",
+      "level": "intermediate",
+      "topic": "everyday",
+      "meaning": "Đủ khả năng (mua, làm)",
+      "example": "I cannot afford a new car on my salary.",
+      "exampleVI": "Tôi không đủ khả năng mua một chiếc xe mới với mức lương của mình.",
+      "audio": {
+        "kind": "speech",
+        "text": "afford"
+      },
+      "synonyms": [
+        "pay for"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "afford to do",
+        "can afford",
+        "afford the cost"
+      ],
+      "wordFormation": {
+        "verb": "afford",
+        "noun": "affordability",
+        "adjective": "affordable"
+      }
+    },
+    {
+      "id": "w-apply",
+      "word": "apply",
+      "ipa": "/əˈplaɪ/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Ứng tuyển, áp dụng",
+      "example": "She applied for a job at a design company.",
+      "exampleVI": "Cô ấy đã ứng tuyển vào một công ty thiết kế.",
+      "audio": {
+        "kind": "speech",
+        "text": "apply"
+      },
+      "synonyms": [
+        "put forward"
+      ],
+      "antonyms": [
+        "withdraw"
+      ],
+      "collocations": [
+        "apply for a job",
+        "apply for",
+        "apply a method"
+      ],
+      "wordFormation": {
+        "verb": "apply",
+        "noun": "application",
+        "adjective": "applicable"
+      }
+    },
+    {
+      "id": "w-borrow",
+      "word": "borrow",
+      "ipa": "/ˈbɒrəʊ/",
+      "level": "intermediate",
+      "topic": "everyday",
+      "meaning": "Vay, mượn",
+      "example": "Can I borrow your pen for a moment?",
+      "exampleVI": "Tôi có thể mượn cây bút của bạn một chút không?",
+      "audio": {
+        "kind": "speech",
+        "text": "borrow"
+      },
+      "synonyms": [
+        "take on loan"
+      ],
+      "antonyms": [
+        "lend"
+      ],
+      "collocations": [
+        "borrow money",
+        "borrow from someone",
+        "borrow a book"
+      ],
+      "wordFormation": {
+        "verb": "borrow",
+        "noun": "borrower"
+      }
+    },
+    {
+      "id": "w-budget",
+      "word": "budget",
+      "ipa": "/ˈbʌdʒɪt/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Ngân sách, ngân sách chi tiêu",
+      "example": "We must keep the project under budget.",
+      "exampleVI": "Chúng ta phải giữ dự án dưới mức ngân sách.",
+      "audio": {
+        "kind": "speech",
+        "text": "budget"
+      },
+      "synonyms": [
+        "financial plan"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a tight budget",
+        "budget for",
+        "stay within budget"
+      ],
+      "wordFormation": {
+        "noun": "budget",
+        "verb": "budget",
+        "adjective": "budgetary"
+      }
+    },
+    {
+      "id": "w-career",
+      "word": "career",
+      "ipa": "/kəˈrɪə/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Sự nghiệp, nghề nghiệp",
+      "example": "She changed her career after ten years of teaching.",
+      "exampleVI": "Sau mười năm đi dạy, cô ấy đã đổi nghề.",
+      "audio": {
+        "kind": "speech",
+        "text": "career"
+      },
+      "synonyms": [
+        "profession"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a successful career",
+        "career path",
+        "change career"
+      ],
+      "wordFormation": {
+        "noun": "career",
+        "adjective": "career-minded"
+      }
+    },
+    {
+      "id": "w-choose",
+      "word": "choose",
+      "ipa": "/tʃuːz/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Chọn, lựa chọn",
+      "example": "You can choose any book from this list.",
+      "exampleVI": "Bạn có thể chọn bất kỳ cuốn sách nào trong danh sách này.",
+      "audio": {
+        "kind": "speech",
+        "text": "choose"
+      },
+      "synonyms": [
+        "select",
+        "pick"
+      ],
+      "antonyms": [
+        "reject"
+      ],
+      "collocations": [
+        "choose carefully",
+        "choose to do",
+        "choose between"
+      ],
+      "wordFormation": {
+        "verb": "choose",
+        "noun": "choice",
+        "adjective": "choosable"
+      }
+    },
+    {
+      "id": "w-colleague",
+      "word": "colleague",
+      "ipa": "/ˈkɒliːɡ/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Đồng nghiệp",
+      "example": "My colleague will cover the office while I travel.",
+      "exampleVI": "Đồng nghiệp của tôi sẽ trông coi văn phòng khi tôi đi công tác.",
+      "audio": {
+        "kind": "speech",
+        "text": "colleague"
+      },
+      "synonyms": [
+        "co-worker",
+        "associate"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a former colleague",
+        "work with colleagues",
+        "close colleague"
+      ],
+      "wordFormation": {
+        "noun": "colleague"
+      }
+    },
+    {
+      "id": "w-commute",
+      "word": "commute",
+      "ipa": "/kəˈmjuːt/",
+      "level": "intermediate",
+      "topic": "travel",
+      "meaning": "Đi làm xa nhà",
+      "example": "She commutes to the office by bus every day.",
+      "exampleVI": "Cô ấy đi xe buýt đi làm mỗi ngày.",
+      "audio": {
+        "kind": "speech",
+        "text": "commute"
+      },
+      "synonyms": [
+        "travel to work"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "daily commute",
+        "commute to work",
+        "long commute"
+      ],
+      "wordFormation": {
+        "verb": "commute",
+        "noun": "commuter",
+        "adjective": "commuter-friendly"
+      }
+    },
+    {
+      "id": "w-decide",
+      "word": "decide",
+      "ipa": "/dɪˈsaɪd/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Quyết định",
+      "example": "They decided to move to a quieter street.",
+      "exampleVI": "Họ quyết định chuyển đến một con đường yên tĩnh hơn.",
+      "audio": {
+        "kind": "speech",
+        "text": "decide"
+      },
+      "synonyms": [
+        "determine",
+        "resolve"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "decide to do",
+        "decide on",
+        "hard to decide"
+      ],
+      "wordFormation": {
+        "verb": "decide",
+        "noun": "decision",
+        "adjective": "decisive"
+      }
+    },
+    {
+      "id": "w-describe",
+      "word": "describe",
+      "ipa": "/dɪˈskraɪb/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Mô tả",
+      "example": "Can you describe the man you saw last night?",
+      "exampleVI": "Bạn có thể mô tả người đàn ông bạn nhìn thấy tối qua không?",
+      "audio": {
+        "kind": "speech",
+        "text": "describe"
+      },
+      "synonyms": [
+        "explain",
+        "outline"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "describe a person",
+        "describe in detail",
+        "briefly describe"
+      ],
+      "wordFormation": {
+        "verb": "describe",
+        "noun": "description",
+        "adjective": "descriptive"
+      }
+    },
+    {
+      "id": "w-design",
+      "word": "design",
+      "ipa": "/dɪˈzaɪn/",
+      "level": "intermediate",
+      "topic": "technology",
+      "meaning": "Thiết kế",
+      "example": "The app was designed for students on the move.",
+      "exampleVI": "Ứng dụng được thiết kế cho học sinh luôn di chuyển.",
+      "audio": {
+        "kind": "speech",
+        "text": "design"
+      },
+      "synonyms": [
+        "plan",
+        "create"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "design a website",
+        "modern design",
+        "by design"
+      ],
+      "wordFormation": {
+        "verb": "design",
+        "noun": "design",
+        "adjective": "designed"
+      }
+    },
+    {
+      "id": "w-develop",
+      "word": "develop",
+      "ipa": "/dɪˈveləp/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Phát triển, xây dựng",
+      "example": "She developed a strong interest in biology.",
+      "exampleVI": "Cô ấy hình thành niềm yêu thích mạnh mẽ với sinh học.",
+      "audio": {
+        "kind": "speech",
+        "text": "develop"
+      },
+      "synonyms": [
+        "build up",
+        "grow"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "develop a habit",
+        "develop skills",
+        "develop over time"
+      ],
+      "wordFormation": {
+        "verb": "develop",
+        "noun": "development",
+        "adjective": "developed"
+      }
+    },
+    {
+      "id": "w-diet",
+      "word": "diet",
+      "ipa": "/ˈdaɪət/",
+      "level": "intermediate",
+      "topic": "health",
+      "meaning": "Chế độ ăn, khẩu phần",
+      "example": "A balanced diet keeps your body strong.",
+      "exampleVI": "Một chế độ ăn cân bằng giúp cơ thể bạn khỏe mạnh.",
+      "audio": {
+        "kind": "speech",
+        "text": "diet"
+      },
+      "synonyms": [
+        "nutrition",
+        "food intake"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "balanced diet",
+        "change diet",
+        "follow a diet"
+      ],
+      "wordFormation": {
+        "noun": "diet",
+        "adjective": "dietary"
+      }
+    },
+    {
+      "id": "w-discuss",
+      "word": "discuss",
+      "ipa": "/dɪˈskʌs/",
+      "level": "intermediate",
+      "topic": "abstract",
+      "meaning": "Thảo luận, bàn luận",
+      "example": "We discussed the plan with the whole team.",
+      "exampleVI": "Chúng tôi đã thảo luận kế hoạch với cả nhóm.",
+      "audio": {
+        "kind": "speech",
+        "text": "discuss"
+      },
+      "synonyms": [
+        "talk about",
+        "debate"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "discuss a topic",
+        "discuss with someone",
+        "open to discussion"
+      ],
+      "wordFormation": {
+        "verb": "discuss",
+        "noun": "discussion",
+        "adjective": "discussed"
+      }
+    },
+    {
+      "id": "w-effective",
+      "word": "effective",
+      "ipa": "/ɪˈfektɪv/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Hiệu quả, có tác dụng",
+      "example": "Short daily reviews are surprisingly effective.",
+      "exampleVI": "Những buổi ôn tập ngắn hằng ngày hiệu quả một cách đáng ngạc nhiên.",
+      "audio": {
+        "kind": "speech",
+        "text": "effective"
+      },
+      "synonyms": [
+        "successful",
+        "useful"
+      ],
+      "antonyms": [
+        "ineffective"
+      ],
+      "collocations": [
+        "highly effective",
+        "most effective",
+        "an effective method"
+      ],
+      "wordFormation": {
+        "adjective": "effective",
+        "adverb": "effectively",
+        "noun": "effectiveness"
+      }
+    },
+    {
+      "id": "w-effort",
+      "word": "effort",
+      "ipa": "/ˈefət/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Cố gắng, nỗ lực",
+      "example": "It takes a lot of effort to learn two languages.",
+      "exampleVI": "Học hai ngôn ngữ đòi hỏi rất nhiều nỗ lực.",
+      "audio": {
+        "kind": "speech",
+        "text": "effort"
+      },
+      "synonyms": [
+        "endeavour",
+        "work"
+      ],
+      "antonyms": [
+        "apathy"
+      ],
+      "collocations": [
+        "make an effort",
+        "with great effort",
+        "effort towards"
+      ],
+      "wordFormation": {
+        "noun": "effort",
+        "adjective": "effortless"
+      }
+    },
+    {
+      "id": "w-employee",
+      "word": "employee",
+      "ipa": "/ɪmˈplɔɪiː/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Nhân viên, người lao động",
+      "example": "Every employee receives free training each year.",
+      "exampleVI": "Mỗi nhân viên đều được đào tạo miễn phí hằng năm.",
+      "audio": {
+        "kind": "speech",
+        "text": "employee"
+      },
+      "synonyms": [
+        "worker",
+        "staff member"
+      ],
+      "antonyms": [
+        "employer"
+      ],
+      "collocations": [
+        "hire an employee",
+        "part-time employee",
+        "employee benefits"
+      ],
+      "wordFormation": {
+        "noun": "employee",
+        "verb": "employ",
+        "adjective": "employable"
+      }
+    },
+    {
+      "id": "w-encourage",
+      "word": "encourage",
+      "ipa": "/ɪnˈkʌrɪdʒ/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Khuyến khích, động viên",
+      "example": "My teacher encouraged me to keep practising.",
+      "exampleVI": "Giáo viên khuyến khích tôi tiếp tục luyện tập.",
+      "audio": {
+        "kind": "speech",
+        "text": "encourage"
+      },
+      "synonyms": [
+        "support",
+        "motivate"
+      ],
+      "antonyms": [
+        "discourage"
+      ],
+      "collocations": [
+        "encourage somebody to",
+        "encourage growth",
+        "feel encouraged"
+      ],
+      "wordFormation": {
+        "verb": "encourage",
+        "noun": "encouragement",
+        "adjective": "encouraging"
+      }
+    },
+    {
+      "id": "w-environment",
+      "word": "environment",
+      "ipa": "/ɪnˈvaɪrənmənt/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Môi trường",
+      "example": "Plastic waste is damaging the environment every day.",
+      "exampleVI": "Rác thải nhựa đang gây hại cho môi trường mỗi ngày.",
+      "audio": {
+        "kind": "speech",
+        "text": "environment"
+      },
+      "synonyms": [
+        "surroundings"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "protect the environment",
+        "work environment",
+        "natural environment"
+      ],
+      "wordFormation": {
+        "noun": "environment",
+        "adjective": "environmental"
+      }
+    },
+    {
+      "id": "w-expect",
+      "word": "expect",
+      "ipa": "/ɪkˈspekt/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Mong đợi, dự kiến",
+      "example": "We expect the results by the end of June.",
+      "exampleVI": "Chúng tôi dự kiến có kết quả trước cuối tháng Sáu.",
+      "audio": {
+        "kind": "speech",
+        "text": "expect"
+      },
+      "synonyms": [
+        "anticipate",
+        "wait for"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "expect to do",
+        "as expected",
+        "expect someone to"
+      ],
+      "wordFormation": {
+        "verb": "expect",
+        "noun": "expectation",
+        "adjective": "expected"
+      }
+    },
+    {
+      "id": "w-expensive",
+      "word": "expensive",
+      "ipa": "/ɪkˈspensɪv/",
+      "level": "intermediate",
+      "topic": "everyday",
+      "meaning": "Đắt, tốn kém",
+      "example": "That restaurant is too expensive for us.",
+      "exampleVI": "Nhà hàng đó quá đắt đối với chúng tôi.",
+      "audio": {
+        "kind": "speech",
+        "text": "expensive"
+      },
+      "synonyms": [
+        "costly",
+        "pricey"
+      ],
+      "antonyms": [
+        "cheap",
+        "affordable"
+      ],
+      "collocations": [
+        "too expensive",
+        "quite expensive",
+        "an expensive habit"
+      ],
+      "wordFormation": {
+        "adjective": "expensive",
+        "adverb": "expensively",
+        "noun": "expense"
+      }
+    },
+    {
+      "id": "w-experience",
+      "word": "experience",
+      "ipa": "/ɪkˈspɪəriəns/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Kinh nghiệm, trải nghiệm",
+      "example": "Two years of work experience is preferred here.",
+      "exampleVI": "Hai năm kinh nghiệm làm việc được ưu tiên ở đây.",
+      "audio": {
+        "kind": "speech",
+        "text": "experience"
+      },
+      "synonyms": [
+        "practice",
+        "background"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "work experience",
+        "gain experience",
+        "first-hand experience"
+      ],
+      "wordFormation": {
+        "noun": "experience",
+        "verb": "experience",
+        "adjective": "experienced"
+      }
+    },
+    {
+      "id": "w-explain",
+      "word": "explain",
+      "ipa": "/ɪkˈspleɪn/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Giải thích",
+      "example": "Could you explain this grammar rule again?",
+      "exampleVI": "Bạn có thể giải thích lại quy tắc ngữ pháp này không?",
+      "audio": {
+        "kind": "speech",
+        "text": "explain"
+      },
+      "synonyms": [
+        "clarify",
+        "describe"
+      ],
+      "antonyms": [
+        "confuse"
+      ],
+      "collocations": [
+        "explain to somebody",
+        "explain how",
+        "briefly explain"
+      ],
+      "wordFormation": {
+        "verb": "explain",
+        "noun": "explanation",
+        "adjective": "explanatory"
+      }
+    },
+    {
+      "id": "w-express",
+      "word": "express",
+      "ipa": "/ɪkˈspres/",
+      "level": "intermediate",
+      "topic": "emotions",
+      "meaning": "Diễn đạt, bày tỏ",
+      "example": "It is hard to express my feelings in another language.",
+      "exampleVI": "Thật khó diễn đạt tình cảm của tôi bằng một ngôn ngữ khác.",
+      "audio": {
+        "kind": "speech",
+        "text": "express"
+      },
+      "synonyms": [
+        "convey",
+        "state"
+      ],
+      "antonyms": [
+        "hide"
+      ],
+      "collocations": [
+        "express an opinion",
+        "express yourself",
+        "express concern"
+      ],
+      "wordFormation": {
+        "verb": "express",
+        "noun": "expression",
+        "adjective": "expressive"
+      }
+    },
+    {
+      "id": "w-familiar",
+      "word": "familiar",
+      "ipa": "/fəˈmɪliə/",
+      "level": "intermediate",
+      "topic": "describing-things",
+      "meaning": "Quen thuộc",
+      "example": "The street looks familiar to me now.",
+      "exampleVI": "Con đường đó giờ trông quen thuộc với tôi.",
+      "audio": {
+        "kind": "speech",
+        "text": "familiar"
+      },
+      "synonyms": [
+        "well known",
+        "recognisable"
+      ],
+      "antonyms": [
+        "unfamiliar"
+      ],
+      "collocations": [
+        "familiar with",
+        "look familiar",
+        "a familiar face"
+      ],
+      "wordFormation": {
+        "adjective": "familiar",
+        "noun": "familiarity",
+        "adverb": "familiarly"
+      }
+    },
+    {
+      "id": "w-favourite",
+      "word": "favourite",
+      "ipa": "/ˈfeɪvərɪt/",
+      "level": "intermediate",
+      "topic": "describing-things",
+      "meaning": "Yêu thích nhất",
+      "example": "This song has been my favourite for years.",
+      "exampleVI": "Bài hát này đã là bài yêu thích của tôi nhiều năm.",
+      "audio": {
+        "kind": "speech",
+        "text": "favourite"
+      },
+      "synonyms": [
+        "preferred",
+        "best-loved"
+      ],
+      "antonyms": [
+        "least favourite"
+      ],
+      "collocations": [
+        "my favourite food",
+        "favourite song",
+        "a personal favourite"
+      ],
+      "wordFormation": {
+        "adjective": "favourite",
+        "noun": "favourite",
+        "adverb": "favourably"
+      }
+    },
+    {
+      "id": "w-goal",
+      "word": "goal",
+      "ipa": "/ɡəʊl/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Mục tiêu, thành tích",
+      "example": "My main goal is to pass the exam with a high score.",
+      "exampleVI": "Mục tiêu chính của tôi là đỗ kỳ thi với điểm cao.",
+      "audio": {
+        "kind": "speech",
+        "text": "goal"
+      },
+      "synonyms": [
+        "aim",
+        "target",
+        "objective"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "achieve a goal",
+        "set a goal",
+        "long-term goal"
+      ],
+      "wordFormation": {
+        "noun": "goal",
+        "adjective": "goalless"
+      }
+    },
+    {
+      "id": "w-government",
+      "word": "government",
+      "ipa": "/ˈɡʌvənmənt/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Chính phủ, nhà nước",
+      "example": "The government announced a new recycling programme.",
+      "exampleVI": "Chính phủ đã công bố một chương trình tái chế mới.",
+      "audio": {
+        "kind": "speech",
+        "text": "government"
+      },
+      "synonyms": [
+        "administration",
+        "state"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "local government",
+        "government policy",
+        "in government"
+      ],
+      "wordFormation": {
+        "noun": "government",
+        "adjective": "governmental",
+        "verb": "govern"
+      }
+    },
+    {
+      "id": "w-improve",
+      "word": "improve",
+      "ipa": "/ɪmˈpruːv/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Cải thiện, tốt hơn",
+      "example": "Listening to podcasts improved my spoken English.",
+      "exampleVI": "Nghe podcast đã cải thiện tiếng Anh nói của tôi.",
+      "audio": {
+        "kind": "speech",
+        "text": "improve"
+      },
+      "synonyms": [
+        "enhance",
+        "boost"
+      ],
+      "antonyms": [
+        "worsen"
+      ],
+      "collocations": [
+        "improve your English",
+        "improve quickly",
+        "greatly improve"
+      ],
+      "wordFormation": {
+        "verb": "improve",
+        "noun": "improvement",
+        "adjective": "improved"
+      }
+    },
+    {
+      "id": "w-include",
+      "word": "include",
+      "ipa": "/ɪnˈkluːd/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Bao gồm, bao hàm",
+      "example": "The price includes breakfast and airport transfers.",
+      "exampleVI": "Giá bao gồm bữa sáng và xe đưa đón sân bay.",
+      "audio": {
+        "kind": "speech",
+        "text": "include"
+      },
+      "synonyms": [
+        "contain",
+        "comprise"
+      ],
+      "antonyms": [
+        "exclude"
+      ],
+      "collocations": [
+        "include breakfast",
+        "includes tax",
+        "including tax"
+      ],
+      "wordFormation": {
+        "verb": "include",
+        "noun": "inclusion",
+        "adjective": "inclusive"
+      }
+    },
+    {
+      "id": "w-knowledge",
+      "word": "knowledge",
+      "ipa": "/ˈnɒlɪdʒ/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Kiến thức, tri thức",
+      "example": "Practice turns knowledge into real skill.",
+      "exampleVI": "Luyện tập biến kiến thức thành kỹ năng thực sự.",
+      "audio": {
+        "kind": "speech",
+        "text": "knowledge"
+      },
+      "synonyms": [
+        "understanding",
+        "expertise"
+      ],
+      "antonyms": [
+        "ignorance"
+      ],
+      "collocations": [
+        "general knowledge",
+        "knowledge of English",
+        "prior knowledge"
+      ],
+      "wordFormation": {
+        "noun": "knowledge",
+        "verb": "know",
+        "adjective": "knowledgeable"
+      }
+    },
+    {
+      "id": "w-language",
+      "word": "language",
+      "ipa": "/ˈlæŋɡwɪdʒ/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Ngôn ngữ, tiếng",
+      "example": "English is a useful language for travel.",
+      "exampleVI": "Tiếng Anh là một ngôn ngữ hữu ích khi đi du lịch.",
+      "audio": {
+        "kind": "speech",
+        "text": "language"
+      },
+      "synonyms": [
+        "tongue"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "learn a language",
+        "native language",
+        "body language"
+      ],
+      "wordFormation": {
+        "noun": "language",
+        "adjective": "linguistic"
+      }
+    },
+    {
+      "id": "w-local",
+      "word": "local",
+      "ipa": "/ˈləʊkl/",
+      "level": "intermediate",
+      "topic": "describing-places",
+      "meaning": "Địa phương, bản địa",
+      "example": "We ate dinner at a local family restaurant.",
+      "exampleVI": "Chúng tôi ăn tối ở một nhà hàng gia đình bản địa.",
+      "audio": {
+        "kind": "speech",
+        "text": "local"
+      },
+      "synonyms": [
+        "regional",
+        "nearby"
+      ],
+      "antonyms": [
+        "foreign",
+        "global"
+      ],
+      "collocations": [
+        "local people",
+        "local market",
+        "a local shop"
+      ],
+      "wordFormation": {
+        "adjective": "local",
+        "adverb": "locally",
+        "noun": "local"
+      }
+    },
+    {
+      "id": "w-manage",
+      "word": "manage",
+      "ipa": "/ˈmænɪdʒ/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Quản lý, xoay xở",
+      "example": "He manages a team of eight people.",
+      "exampleVI": "Anh ấy quản lý một nhóm tám người.",
+      "audio": {
+        "kind": "speech",
+        "text": "manage"
+      },
+      "synonyms": [
+        "administer",
+        "handle"
+      ],
+      "antonyms": [
+        "mess up"
+      ],
+      "collocations": [
+        "manage a team",
+        "manage to do",
+        "manage time"
+      ],
+      "wordFormation": {
+        "verb": "manage",
+        "noun": "manager",
+        "adjective": "manageable"
+      }
+    },
+    {
+      "id": "w-medicine",
+      "word": "medicine",
+      "ipa": "/ˈmedsn/",
+      "level": "intermediate",
+      "topic": "health",
+      "meaning": "Thuốc, y học",
+      "example": "Take this medicine twice a day after meals.",
+      "exampleVI": "Hãy dùng loại thuốc này hai lần mỗi ngày sau bữa ăn.",
+      "audio": {
+        "kind": "speech",
+        "text": "medicine"
+      },
+      "synonyms": [
+        "drug",
+        "remedy"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "take medicine",
+        "prescribe medicine",
+        "herbal medicine"
+      ],
+      "wordFormation": {
+        "noun": "medicine",
+        "adjective": "medical"
+      }
+    },
+    {
+      "id": "w-neighbour",
+      "word": "neighbour",
+      "ipa": "/ˈneɪbə/",
+      "level": "intermediate",
+      "topic": "describing-places",
+      "meaning": "Hàng xóm, người láng giềng",
+      "example": "Our neighbour looks after our cat when we travel.",
+      "exampleVI": "Hàng xóm của chúng tôi trông nom mèo khi chúng tôi đi du lịch.",
+      "audio": {
+        "kind": "speech",
+        "text": "neighbour"
+      },
+      "synonyms": [
+        "neighbor",
+        "resident nearby"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a friendly neighbour",
+        "next-door neighbour",
+        "neighbour from"
+      ],
+      "wordFormation": {
+        "noun": "neighbour",
+        "adjective": "neighbouring"
+      }
+    },
+    {
+      "id": "w-offer",
+      "word": "offer",
+      "ipa": "/ˈɒfə/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Đề nghị, chào mời",
+      "example": "They offered me a job in another branch.",
+      "exampleVI": "Họ chào mời tôi làm việc ở một chi nhánh khác.",
+      "audio": {
+        "kind": "speech",
+        "text": "offer"
+      },
+      "synonyms": [
+        "propose",
+        "provide"
+      ],
+      "antonyms": [
+        "withhold"
+      ],
+      "collocations": [
+        "offer help",
+        "job offer",
+        "offer someone a job"
+      ],
+      "wordFormation": {
+        "verb": "offer",
+        "noun": "offer",
+        "adjective": "offered"
+      }
+    },
+    {
+      "id": "w-patient",
+      "word": "patient",
+      "ipa": "/ˈpeɪʃnt/",
+      "level": "intermediate",
+      "topic": "health",
+      "meaning": "Bệnh nhân; kiên nhẫn",
+      "example": "Please wait here until the patient is ready.",
+      "exampleVI": "Xin vui lòng chờ ở đây cho đến khi bệnh nhân sẵn sàng.",
+      "audio": {
+        "kind": "speech",
+        "text": "patient"
+      },
+      "synonyms": [
+        "case",
+        "inpatient"
+      ],
+      "antonyms": [
+        "doctor"
+      ],
+      "collocations": [
+        "a patient of",
+        "patient recovers",
+        "be patient with"
+      ],
+      "wordFormation": {
+        "noun": "patient",
+        "adjective": "patient",
+        "adverb": "patiently"
+      }
+    },
+    {
+      "id": "w-pollution",
+      "word": "pollution",
+      "ipa": "/pəˈluːʃn/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Ô nhiễm",
+      "example": "Air pollution is worst during rush hour.",
+      "exampleVI": "Ô nhiễm không khí tệ nhất vào giờ cao điểm.",
+      "audio": {
+        "kind": "speech",
+        "text": "pollution"
+      },
+      "synonyms": [
+        "contamination"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "air pollution",
+        "reduce pollution",
+        "noise pollution"
+      ],
+      "wordFormation": {
+        "noun": "pollution",
+        "verb": "pollute",
+        "adjective": "polluted"
+      }
+    },
+    {
+      "id": "w-popular",
+      "word": "popular",
+      "ipa": "/ˈpɒpjələ/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Phổ biến, được yêu thích",
+      "example": "That song is popular with young listeners.",
+      "exampleVI": "Bài hát đó rất được các bạn nghe trẻ yêu thích.",
+      "audio": {
+        "kind": "speech",
+        "text": "popular"
+      },
+      "synonyms": [
+        "well liked",
+        "favoured"
+      ],
+      "antonyms": [
+        "unpopular"
+      ],
+      "collocations": [
+        "very popular",
+        "popular with",
+        "a popular choice"
+      ],
+      "wordFormation": {
+        "adjective": "popular",
+        "adverb": "popularly",
+        "noun": "popularity"
+      }
+    },
+    {
+      "id": "w-population",
+      "word": "population",
+      "ipa": "/ˌpɒpjuˈleɪʃn/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Dân số, dân cư",
+      "example": "The population of the city is growing fast.",
+      "exampleVI": "Dân số thành phố đang tăng rất nhanh.",
+      "audio": {
+        "kind": "speech",
+        "text": "population"
+      },
+      "synonyms": [
+        "inhabitants"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a growing population",
+        "population density",
+        "rural population"
+      ],
+      "wordFormation": {
+        "noun": "population",
+        "adjective": "populated",
+        "verb": "populate"
+      }
+    },
+    {
+      "id": "w-prefer",
+      "word": "prefer",
+      "ipa": "/prɪˈfɜː/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Thích hơn, ưu tiên",
+      "example": "I prefer tea to coffee in the afternoon.",
+      "exampleVI": "Buổi chiều tôi thích trà hơn cà phê.",
+      "audio": {
+        "kind": "speech",
+        "text": "prefer"
+      },
+      "synonyms": [
+        "favour",
+        "like better"
+      ],
+      "antonyms": [
+        "avoid"
+      ],
+      "collocations": [
+        "prefer A to B",
+        "would prefer",
+        "prefer to do"
+      ],
+      "wordFormation": {
+        "verb": "prefer",
+        "noun": "preference",
+        "adjective": "preferred"
+      }
+    },
+    {
+      "id": "w-prepare",
+      "word": "prepare",
+      "ipa": "/prɪˈpeə/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Chuẩn bị",
+      "example": "I prepare my notes the night before class.",
+      "exampleVI": "Tôi chuẩn bị ghi chú vào tối trước buổi học.",
+      "audio": {
+        "kind": "speech",
+        "text": "prepare"
+      },
+      "synonyms": [
+        "get ready",
+        "arrange"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "prepare for an exam",
+        "prepare a meal",
+        "well prepared"
+      ],
+      "wordFormation": {
+        "verb": "prepare",
+        "noun": "preparation",
+        "adjective": "prepared"
+      }
+    },
+    {
+      "id": "w-prevent",
+      "word": "prevent",
+      "ipa": "/prɪˈvent/",
+      "level": "intermediate",
+      "topic": "health",
+      "meaning": "Ngăn chặn, phòng tránh",
+      "example": "Washing your hands prevents many infections.",
+      "exampleVI": "Rửa tay giúp phòng tránh nhiều bệnh nhiễm trùng.",
+      "audio": {
+        "kind": "speech",
+        "text": "prevent"
+      },
+      "synonyms": [
+        "stop",
+        "avoid"
+      ],
+      "antonyms": [
+        "cause"
+      ],
+      "collocations": [
+        "prevent disease",
+        "prevent from",
+        "prevent accidents"
+      ],
+      "wordFormation": {
+        "verb": "prevent",
+        "noun": "prevention",
+        "adjective": "preventable"
+      }
+    },
+    {
+      "id": "w-produce",
+      "word": "produce",
+      "ipa": "/prəˈdjuːs/",
+      "level": "intermediate",
+      "topic": "food",
+      "meaning": "Sản xuất, tạo ra",
+      "example": "This farm produces rice for the whole region.",
+      "exampleVI": "Trang trại này sản xuất gạo cho cả khu vực.",
+      "audio": {
+        "kind": "speech",
+        "text": "produce"
+      },
+      "synonyms": [
+        "make",
+        "grow"
+      ],
+      "antonyms": [
+        "consume"
+      ],
+      "collocations": [
+        "produce food",
+        "produce goods",
+        "locally produced"
+      ],
+      "wordFormation": {
+        "verb": "produce",
+        "noun": "producer"
+      }
+    },
+    {
+      "id": "w-protect",
+      "word": "protect",
+      "ipa": "/prəˈtekt/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Bảo vệ, che chở",
+      "example": "Trees protect the soil from heavy rain.",
+      "exampleVI": "Cây bảo vệ đất khỏi mưa lớn.",
+      "audio": {
+        "kind": "speech",
+        "text": "protect"
+      },
+      "synonyms": [
+        "shield",
+        "guard"
+      ],
+      "antonyms": [
+        "expose"
+      ],
+      "collocations": [
+        "protect from",
+        "protect against",
+        "protect the wild"
+      ],
+      "wordFormation": {
+        "verb": "protect",
+        "noun": "protection",
+        "adjective": "protective"
+      }
+    },
+    {
+      "id": "w-provide",
+      "word": "provide",
+      "ipa": "/prəˈvaɪd/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Cung cấp, cấp",
+      "example": "The school provides free English classes at night.",
+      "exampleVI": "Trường cung cấp các lớp tiếng Anh miễn phí vào buổi tối.",
+      "audio": {
+        "kind": "speech",
+        "text": "provide"
+      },
+      "synonyms": [
+        "supply",
+        "offer"
+      ],
+      "antonyms": [
+        "withhold"
+      ],
+      "collocations": [
+        "provide someone with",
+        "provide free",
+        "provide support"
+      ],
+      "wordFormation": {
+        "verb": "provide",
+        "noun": "provider",
+        "adjective": "provided"
+      }
+    },
+    {
+      "id": "w-public",
+      "word": "public",
+      "ipa": "/ˈpʌblɪk/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Công cộng, công chúng",
+      "example": "The museum is open to the public on weekends.",
+      "exampleVI": "Bảo tàng mở cửa cho công chúng vào cuối tuần.",
+      "audio": {
+        "kind": "speech",
+        "text": "public"
+      },
+      "synonyms": [
+        "communal",
+        "general"
+      ],
+      "antonyms": [
+        "private",
+        "personal"
+      ],
+      "collocations": [
+        "the general public",
+        "public transport",
+        "in public"
+      ],
+      "wordFormation": {
+        "adjective": "public",
+        "adverb": "publicly",
+        "noun": "public"
+      }
+    },
+    {
+      "id": "w-purpose",
+      "word": "purpose",
+      "ipa": "/ˈpɜːpəs/",
+      "level": "intermediate",
+      "topic": "abstract",
+      "meaning": "Mục đích, mục tiêu",
+      "example": "I read the notice to understand its purpose.",
+      "exampleVI": "Tôi đọc thông báo để hiểu mục đích của nó.",
+      "audio": {
+        "kind": "speech",
+        "text": "purpose"
+      },
+      "synonyms": [
+        "aim",
+        "intention",
+        "goal"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "on purpose",
+        "the main purpose",
+        "serve a purpose"
+      ],
+      "wordFormation": {
+        "noun": "purpose",
+        "adjective": "purposeful",
+        "adverb": "purposely"
+      }
+    },
+    {
+      "id": "w-quality",
+      "word": "quality",
+      "ipa": "/ˈkwɒləti/",
+      "level": "intermediate",
+      "topic": "abstract",
+      "meaning": "Chất lượng, phẩm chất",
+      "example": "This shop sells good quality coffee at a low price.",
+      "exampleVI": "Cửa hàng này bán cà phê chất lượng tốt với giá rẻ.",
+      "audio": {
+        "kind": "speech",
+        "text": "quality"
+      },
+      "synonyms": [
+        "standard",
+        "excellence"
+      ],
+      "antonyms": [
+        "poor quality"
+      ],
+      "collocations": [
+        "high quality",
+        "quality control",
+        "quality of life"
+      ],
+      "wordFormation": {
+        "noun": "quality",
+        "adjective": "qualitative",
+        "adverb": "qualitatively"
+      }
+    },
+    {
+      "id": "w-recycle",
+      "word": "recycle",
+      "ipa": "/ˌriːˈsaɪkl/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Tái chế",
+      "example": "We recycle paper, glass and plastic at home.",
+      "exampleVI": "Chúng tôi tái chế giấy, thủy tinh và nhựa ở nhà.",
+      "audio": {
+        "kind": "speech",
+        "text": "recycle"
+      },
+      "synonyms": [
+        "reuse"
+      ],
+      "antonyms": [
+        "discard"
+      ],
+      "collocations": [
+        "recycle waste",
+        "recycle glass",
+        "easy to recycle"
+      ],
+      "wordFormation": {
+        "verb": "recycle",
+        "noun": "recycling",
+        "adjective": "recyclable"
+      }
+    },
+    {
+      "id": "w-reduce",
+      "word": "reduce",
+      "ipa": "/rɪˈdjuːs/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Giảm, làm giảm",
+      "example": "Walking to work reduces air pollution a little.",
+      "exampleVI": "Đi bộ đi làm giúp giảm ô nhiễm không khí một chút.",
+      "audio": {
+        "kind": "speech",
+        "text": "reduce"
+      },
+      "synonyms": [
+        "cut",
+        "lower"
+      ],
+      "antonyms": [
+        "increase"
+      ],
+      "collocations": [
+        "reduce costs",
+        "reduce waste",
+        "greatly reduce"
+      ],
+      "wordFormation": {
+        "verb": "reduce",
+        "noun": "reduction",
+        "adjective": "reduced"
+      }
+    },
+    {
+      "id": "w-relationship",
+      "word": "relationship",
+      "ipa": "/rɪˈleɪʃnʃɪp/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Mối quan hệ",
+      "example": "They have a good relationship with their neighbours.",
+      "exampleVI": "Họ có mối quan hệ tốt với hàng xóm.",
+      "audio": {
+        "kind": "speech",
+        "text": "relationship"
+      },
+      "synonyms": [
+        "connection",
+        "link"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a close relationship",
+        "build a relationship",
+        "relationship with"
+      ],
+      "wordFormation": {
+        "noun": "relationship",
+        "verb": "relate"
+      }
+    },
+    {
+      "id": "w-reliable",
+      "word": "reliable",
+      "ipa": "/rɪˈlaɪəbl/",
+      "level": "intermediate",
+      "topic": "describing-things",
+      "meaning": "Đáng tin cậy, ổn định",
+      "example": "We need a reliable method to save time.",
+      "exampleVI": "Chúng ta cần một phương pháp đáng tin cậy để tiết kiệm thời gian.",
+      "audio": {
+        "kind": "speech",
+        "text": "reliable"
+      },
+      "synonyms": [
+        "dependable",
+        "trustworthy"
+      ],
+      "antonyms": [
+        "unreliable"
+      ],
+      "collocations": [
+        "highly reliable",
+        "a reliable source",
+        "reliable results"
+      ],
+      "wordFormation": {
+        "adjective": "reliable",
+        "adverb": "reliably",
+        "noun": "reliability"
+      }
+    },
+    {
+      "id": "w-repair",
+      "word": "repair",
+      "ipa": "/rɪˈpeə/",
+      "level": "intermediate",
+      "topic": "describing-actions",
+      "meaning": "Sửa, sửa chữa",
+      "example": "He repaired the broken chair in ten minutes.",
+      "exampleVI": "Anh ấy sửa chiếc ghế vỡ trong mười phút.",
+      "audio": {
+        "kind": "speech",
+        "text": "repair"
+      },
+      "synonyms": [
+        "fix",
+        "mend"
+      ],
+      "antonyms": [
+        "break"
+      ],
+      "collocations": [
+        "repair a car",
+        "under repair",
+        "repair work"
+      ],
+      "wordFormation": {
+        "verb": "repair",
+        "noun": "repair",
+        "adjective": "repairable"
+      }
+    },
+    {
+      "id": "w-research",
+      "word": "research",
+      "ipa": "/rɪˈsɜːtʃ/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Nghiên cứu",
+      "example": "The research on sleep was published last year.",
+      "exampleVI": "Nghiên cứu về giấc ngủ được công bố năm ngoái.",
+      "audio": {
+        "kind": "speech",
+        "text": "research"
+      },
+      "synonyms": [
+        "study",
+        "investigation"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "do research",
+        "research on",
+        "latest research"
+      ],
+      "wordFormation": {
+        "noun": "research",
+        "verb": "research",
+        "adjective": "researcher"
+      }
+    },
+    {
+      "id": "w-result",
+      "word": "result",
+      "ipa": "/rɪˈzʌlt/",
+      "level": "intermediate",
+      "topic": "education",
+      "meaning": "Kết quả",
+      "example": "The result of the test surprised everyone.",
+      "exampleVI": "Kết quả bài kiểm tra khiến mọi người ngạc nhiên.",
+      "audio": {
+        "kind": "speech",
+        "text": "result"
+      },
+      "synonyms": [
+        "outcome",
+        "conclusion"
+      ],
+      "antonyms": [
+        "cause"
+      ],
+      "collocations": [
+        "a positive result",
+        "as a result",
+        "test results"
+      ],
+      "wordFormation": {
+        "noun": "result",
+        "verb": "result",
+        "adjective": "resultant"
+      }
+    },
+    {
+      "id": "w-safe",
+      "word": "safe",
+      "ipa": "/seɪf/",
+      "level": "intermediate",
+      "topic": "health",
+      "meaning": "An toàn, an toàn cho sức khỏe",
+      "example": "Is it safe to swim in this river now?",
+      "exampleVI": "Bây giờ bơi ở con sông này có an toàn không?",
+      "audio": {
+        "kind": "speech",
+        "text": "safe"
+      },
+      "synonyms": [
+        "secure",
+        "harmless"
+      ],
+      "antonyms": [
+        "dangerous",
+        "unsafe"
+      ],
+      "collocations": [
+        "safe to use",
+        "a safe place",
+        "keep safe"
+      ],
+      "wordFormation": {
+        "adjective": "safe",
+        "adverb": "safely",
+        "noun": "safety"
+      }
+    },
+    {
+      "id": "w-serious",
+      "word": "serious",
+      "ipa": "/ˈsɪəriəs/",
+      "level": "intermediate",
+      "topic": "emotions",
+      "meaning": "Nghiêm trọng, nghiêm túc",
+      "example": "Her illness was more serious than we thought.",
+      "exampleVI": "Bệnh của cô ấy nghiêm trọng hơn chúng tôi nghĩ.",
+      "audio": {
+        "kind": "speech",
+        "text": "serious"
+      },
+      "synonyms": [
+        "grave",
+        "solemn"
+      ],
+      "antonyms": [
+        "light-hearted",
+        "trivial"
+      ],
+      "collocations": [
+        "a serious problem",
+        "get serious",
+        "seriously ill"
+      ],
+      "wordFormation": {
+        "adjective": "serious",
+        "adverb": "seriously",
+        "noun": "seriousness"
+      }
+    },
+    {
+      "id": "w-service",
+      "word": "service",
+      "ipa": "/ˈsɜːvɪs/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Dịch vụ, sự phục vụ",
+      "example": "The service at that hotel was excellent.",
+      "exampleVI": "Dịch vụ ở khách sạn đó rất tuyệt vời.",
+      "audio": {
+        "kind": "speech",
+        "text": "service"
+      },
+      "synonyms": [
+        "facility",
+        "attention"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "customer service",
+        "public service",
+        "in service"
+      ],
+      "wordFormation": {
+        "noun": "service",
+        "verb": "serve",
+        "adjective": "serviceable"
+      }
+    },
+    {
+      "id": "w-solution",
+      "word": "solution",
+      "ipa": "/səˈluːʃn/",
+      "level": "intermediate",
+      "topic": "abstract",
+      "meaning": "Giải pháp, lời giải",
+      "example": "There is no easy solution to traffic problems.",
+      "exampleVI": "Không có giải pháp dễ dàng nào cho vấn đề giao thông.",
+      "audio": {
+        "kind": "speech",
+        "text": "solution"
+      },
+      "synonyms": [
+        "answer",
+        "resolution"
+      ],
+      "antonyms": [
+        "problem"
+      ],
+      "collocations": [
+        "find a solution",
+        "practical solution",
+        "the solution to"
+      ],
+      "wordFormation": {
+        "noun": "solution",
+        "verb": "solve"
+      }
+    },
+    {
+      "id": "w-succeed",
+      "word": "succeed",
+      "ipa": "/səkˈsiːd/",
+      "level": "intermediate",
+      "topic": "work",
+      "meaning": "Thành công",
+      "example": "She succeeded in passing the test on her first try.",
+      "exampleVI": "Cô ấy đã thành công trong kỳ thi ngay lần đầu.",
+      "audio": {
+        "kind": "speech",
+        "text": "succeed"
+      },
+      "synonyms": [
+        "achieve",
+        "prosper"
+      ],
+      "antonyms": [
+        "fail"
+      ],
+      "collocations": [
+        "succeed in doing",
+        "succeed at",
+        "finally succeed"
+      ],
+      "wordFormation": {
+        "verb": "succeed",
+        "noun": "success",
+        "adjective": "successful"
+      }
+    },
+    {
+      "id": "w-suggest",
+      "word": "suggest",
+      "ipa": "/səˈdʒest/",
+      "level": "intermediate",
+      "topic": "abstract",
+      "meaning": "Đề nghị, gợi ý",
+      "example": "I suggest we meet on Friday afternoon.",
+      "exampleVI": "Tôi đề nghị chúng ta gặp nhau vào chiều thứ Sáu.",
+      "audio": {
+        "kind": "speech",
+        "text": "suggest"
+      },
+      "synonyms": [
+        "propose",
+        "recommend"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "suggest doing",
+        "suggest that",
+        "it is suggested"
+      ],
+      "wordFormation": {
+        "verb": "suggest",
+        "noun": "suggestion"
+      }
+    },
+    {
+      "id": "w-support",
+      "word": "support",
+      "ipa": "/səˈpɔːt/",
+      "level": "intermediate",
+      "topic": "society",
+      "meaning": "Ủng hộ, hỗ trợ",
+      "example": "Thank you for supporting my project so far.",
+      "exampleVI": "Cảm ơn bạn đã ủng hộ dự án của tôi cho đến giờ.",
+      "audio": {
+        "kind": "speech",
+        "text": "support"
+      },
+      "synonyms": [
+        "back",
+        "help"
+      ],
+      "antonyms": [
+        "oppose"
+      ],
+      "collocations": [
+        "support a cause",
+        "in support of",
+        "support family"
+      ],
+      "wordFormation": {
+        "verb": "support",
+        "noun": "support",
+        "adjective": "supportive"
+      }
+    },
+    {
+      "id": "w-technology",
+      "word": "technology",
+      "ipa": "/tekˈnɒlədʒi/",
+      "level": "intermediate",
+      "topic": "technology",
+      "meaning": "Công nghệ, kỹ thuật",
+      "example": "Modern technology makes studying much easier.",
+      "exampleVI": "Công nghệ hiện đại làm việc học dễ hơn nhiều.",
+      "audio": {
+        "kind": "speech",
+        "text": "technology"
+      },
+      "synonyms": [
+        "machinery",
+        "technique"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "modern technology",
+        "advances in technology",
+        "technology company"
+      ],
+      "wordFormation": {
+        "noun": "technology",
+        "adjective": "technological"
+      }
+    },
+    {
+      "id": "w-traffic",
+      "word": "traffic",
+      "ipa": "/ˈtræfɪk/",
+      "level": "intermediate",
+      "topic": "travel",
+      "meaning": "Giao thông, xe cộ",
+      "example": "The traffic is terrible at eight in the morning.",
+      "exampleVI": "Giao thông rất tệ lúc tám giờ sáng.",
+      "audio": {
+        "kind": "speech",
+        "text": "traffic"
+      },
+      "synonyms": [
+        "congestion"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "heavy traffic",
+        "traffic jam",
+        "traffic police"
+      ],
+      "wordFormation": {
+        "noun": "traffic",
+        "verb": "traffic"
+      }
+    },
+    {
+      "id": "w-waste",
+      "word": "waste",
+      "ipa": "/weɪst/",
+      "level": "intermediate",
+      "topic": "environment",
+      "meaning": "Rác thải, lãng phí",
+      "example": "We waste about a third of our food.",
+      "exampleVI": "Chúng ta lãng phí khoảng một phần ba lượng thức ăn.",
+      "audio": {
+        "kind": "speech",
+        "text": "waste"
+      },
+      "synonyms": [
+        "refuse",
+        "squander"
+      ],
+      "antonyms": [
+        "save",
+        "conserve"
+      ],
+      "collocations": [
+        "waste time",
+        "food waste",
+        "a waste of money"
+      ],
+      "wordFormation": {
+        "noun": "waste",
+        "verb": "waste",
+        "adjective": "wasteful"
+      }
+    },
+    {
+      "id": "w-wealthy",
+      "word": "wealthy",
+      "ipa": "/ˈwelθi/",
+      "level": "intermediate",
+      "topic": "describing-people",
+      "meaning": "Giàu có, phong phú",
+      "example": "She came from a wealthy family in the countryside.",
+      "exampleVI": "Cô ấy xuất thân từ một gia đình giàu có ở nông thôn.",
+      "audio": {
+        "kind": "speech",
+        "text": "wealthy"
+      },
+      "synonyms": [
+        "rich",
+        "affluent"
+      ],
+      "antonyms": [
+        "poor",
+        "impoverished"
+      ],
+      "collocations": [
+        "a wealthy family",
+        "wealthy enough",
+        "become wealthy"
+      ],
+      "wordFormation": {
+        "adjective": "wealthy",
+        "noun": "wealth"
+      }
+    },
+    {
+      "id": "w-abstract",
+      "word": "abstract",
+      "ipa": "/ˈæbstrækt/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Trừu tượng",
+      "example": "The essay begins with a rather abstract statement.",
+      "exampleVI": "Bài luận văn bắt đầu bằng một phát biểu khá trừu tượng.",
+      "audio": {
+        "kind": "speech",
+        "text": "abstract"
+      },
+      "synonyms": [
+        "theoretical",
+        "conceptual"
+      ],
+      "antonyms": [
+        "concrete"
+      ],
+      "collocations": [
+        "abstract concept",
+        "in abstract terms",
+        "too abstract"
+      ],
+      "wordFormation": {
+        "adjective": "abstract",
+        "noun": "abstraction",
+        "adverb": "abstractly"
+      }
+    },
+    {
+      "id": "w-acknowledge",
+      "word": "acknowledge",
+      "ipa": "/əkˈnɒlɪdʒ/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Công nhận, thừa nhận",
+      "example": "The report acknowledges the limits of the study.",
+      "exampleVI": "Báo cáo thừa nhận những hạn chế của nghiên cứu.",
+      "audio": {
+        "kind": "speech",
+        "text": "acknowledge"
+      },
+      "synonyms": [
+        "admit",
+        "recognise"
+      ],
+      "antonyms": [
+        "deny"
+      ],
+      "collocations": [
+        "acknowledge that",
+        "widely acknowledged",
+        "acknowledge a mistake"
+      ],
+      "wordFormation": {
+        "verb": "acknowledge",
+        "noun": "acknowledgement"
+      }
+    },
+    {
+      "id": "w-apparent",
+      "word": "apparent",
+      "ipa": "/əˈpærənt/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Rõ ràng, hiển nhiên",
+      "example": "It soon became apparent that the plan would fail.",
+      "exampleVI": "Chẳng bao lâu người ta nhận ra kế hoạch sẽ thất bại.",
+      "audio": {
+        "kind": "speech",
+        "text": "apparent"
+      },
+      "synonyms": [
+        "obvious",
+        "evident"
+      ],
+      "antonyms": [
+        "unclear"
+      ],
+      "collocations": [
+        "it is apparent that",
+        "clearly apparent",
+        "become apparent"
+      ],
+      "wordFormation": {
+        "adjective": "apparent",
+        "adverb": "apparently",
+        "noun": "apparency"
+      }
+    },
+    {
+      "id": "w-assess",
+      "word": "assess",
+      "ipa": "/əˈses/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Đánh giá, ước lượng",
+      "example": "Teachers assess progress at the end of each term.",
+      "exampleVI": "Giáo viên đánh giá tiến độ vào cuối mỗi học kỳ.",
+      "audio": {
+        "kind": "speech",
+        "text": "assess"
+      },
+      "synonyms": [
+        "evaluate",
+        "judge"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "assess performance",
+        "risk assessment",
+        "assess the impact"
+      ],
+      "wordFormation": {
+        "verb": "assess",
+        "noun": "assessment"
+      }
+    },
+    {
+      "id": "w-assumption",
+      "word": "assumption",
+      "ipa": "/əˈsʌmpʃn/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Giả định, điều giả định",
+      "example": "The plan rests on the assumption that prices will fall.",
+      "exampleVI": "Kế hoạch dựa trên giả định rằng giá sẽ giảm.",
+      "audio": {
+        "kind": "speech",
+        "text": "assumption"
+      },
+      "synonyms": [
+        "premise",
+        "presupposition"
+      ],
+      "antonyms": [
+        "fact"
+      ],
+      "collocations": [
+        "make an assumption",
+        "on the assumption that",
+        "question an assumption"
+      ],
+      "wordFormation": {
+        "noun": "assumption",
+        "verb": "assume"
+      }
+    },
+    {
+      "id": "w-collaborate",
+      "word": "collaborate",
+      "ipa": "/kəˈlæbəreɪt/",
+      "level": "advanced",
+      "topic": "work",
+      "meaning": "Cộng tác, hợp tác",
+      "example": "The two departments collaborated on the new project.",
+      "exampleVI": "Hai khoa đã hợp tác cho dự án mới.",
+      "audio": {
+        "kind": "speech",
+        "text": "collaborate"
+      },
+      "synonyms": [
+        "cooperate",
+        "work together"
+      ],
+      "antonyms": [
+        "compete"
+      ],
+      "collocations": [
+        "collaborate with",
+        "collaborate closely",
+        "in collaboration"
+      ],
+      "wordFormation": {
+        "verb": "collaborate",
+        "noun": "collaboration",
+        "adjective": "collaborative"
+      }
+    },
+    {
+      "id": "w-competent",
+      "word": "competent",
+      "ipa": "/ˈkɒmpɪtənt/",
+      "level": "advanced",
+      "topic": "describing-people",
+      "meaning": "Có năng lực, giỏi",
+      "example": "She is a competent engineer with real field experience.",
+      "exampleVI": "Cô ấy là một kỹ sư có năng lực với kinh nghiệm thực tế.",
+      "audio": {
+        "kind": "speech",
+        "text": "competent"
+      },
+      "synonyms": [
+        "capable",
+        "skilled"
+      ],
+      "antonyms": [
+        "incompetent"
+      ],
+      "collocations": [
+        "highly competent",
+        "competent in a field",
+        "fully competent"
+      ],
+      "wordFormation": {
+        "adjective": "competent",
+        "noun": "competence",
+        "adverb": "competently"
+      }
+    },
+    {
+      "id": "w-comprehensive",
+      "word": "comprehensive",
+      "ipa": "/ˌkɒmprɪˈhensɪv/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Toàn diện, bao quát",
+      "example": "The course offers a comprehensive guide to writing.",
+      "exampleVI": "Khóa học cung cấp một hướng dẫn toàn diện về viết.",
+      "audio": {
+        "kind": "speech",
+        "text": "comprehensive"
+      },
+      "synonyms": [
+        "thorough",
+        "extensive"
+      ],
+      "antonyms": [
+        "partial"
+      ],
+      "collocations": [
+        "comprehensive review",
+        "comprehensive coverage",
+        "a comprehensive study"
+      ],
+      "wordFormation": {
+        "adjective": "comprehensive",
+        "adverb": "comprehensively",
+        "noun": "comprehension"
+      }
+    },
+    {
+      "id": "w-contribute",
+      "word": "contribute",
+      "ipa": "/kənˈtrɪbjuːt/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Đóng góp, góp phần",
+      "example": "Regular practice contributes to real progress.",
+      "exampleVI": "Luyện tập thường xuyên góp phần tạo nên tiến bộ thực sự.",
+      "audio": {
+        "kind": "speech",
+        "text": "contribute"
+      },
+      "synonyms": [
+        "add to",
+        "help"
+      ],
+      "antonyms": [
+        "withhold"
+      ],
+      "collocations": [
+        "contribute to",
+        "contribute an article",
+        "largely contribute"
+      ],
+      "wordFormation": {
+        "verb": "contribute",
+        "noun": "contribution",
+        "adjective": "contributory"
+      }
+    },
+    {
+      "id": "w-crucial",
+      "word": "crucial",
+      "ipa": "/ˈkruːʃl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Quyết định, cốt lõi",
+      "example": "The first two weeks are crucial for new learners.",
+      "exampleVI": "Hai tuần đầu là giai đoạn cốt lõi với người học mới.",
+      "audio": {
+        "kind": "speech",
+        "text": "crucial"
+      },
+      "synonyms": [
+        "vital",
+        "decisive"
+      ],
+      "antonyms": [
+        "trivial"
+      ],
+      "collocations": [
+        "a crucial role",
+        "crucial evidence",
+        "absolutely crucial"
+      ],
+      "wordFormation": {
+        "adjective": "crucial",
+        "adverb": "crucially"
+      }
+    },
+    {
+      "id": "w-decline",
+      "word": "decline",
+      "ipa": "/dɪˈklaɪn/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Suy giảm, từ chối",
+      "example": "Sales declined sharply after the price increase.",
+      "exampleVI": "Doanh số giảm mạnh sau khi tăng giá.",
+      "audio": {
+        "kind": "speech",
+        "text": "decline"
+      },
+      "synonyms": [
+        "fall",
+        "refuse"
+      ],
+      "antonyms": [
+        "rise",
+        "accept"
+      ],
+      "collocations": [
+        "a sharp decline",
+        "decline to do",
+        "decline in numbers"
+      ],
+      "wordFormation": {
+        "verb": "decline",
+        "noun": "decline"
+      }
+    },
+    {
+      "id": "w-define",
+      "word": "define",
+      "ipa": "/dɪˈfaɪn/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Định nghĩa, xác định",
+      "example": "The report does not define its key terms.",
+      "exampleVI": "Báo cáo không định nghĩa các thuật ngữ chủ chốt của mình.",
+      "audio": {
+        "kind": "speech",
+        "text": "define"
+      },
+      "synonyms": [
+        "explain",
+        "specify"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "define a term",
+        "clearly defined",
+        "define the scope"
+      ],
+      "wordFormation": {
+        "verb": "define",
+        "noun": "definition",
+        "adjective": "definable"
+      }
+    },
+    {
+      "id": "w-demonstrate",
+      "word": "demonstrate",
+      "ipa": "/ˈdemənstreɪt/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Chứng minh, trình diễn",
+      "example": "The results demonstrate a clear improvement.",
+      "exampleVI": "Kết quả cho thấy một sự cải thiện rõ ràng.",
+      "audio": {
+        "kind": "speech",
+        "text": "demonstrate"
+      },
+      "synonyms": [
+        "show",
+        "prove"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "demonstrate that",
+        "clearly demonstrate",
+        "demonstrate skills"
+      ],
+      "wordFormation": {
+        "verb": "demonstrate",
+        "noun": "demonstration"
+      }
+    },
+    {
+      "id": "w-diminish",
+      "word": "diminish",
+      "ipa": "/dɪˈmɪnɪʃ/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Giảm bớt, làm hao mòn",
+      "example": "Interest in the topic gradually diminished.",
+      "exampleVI": "Sự quan tâm đến chủ đề đó dần nhạt đi.",
+      "audio": {
+        "kind": "speech",
+        "text": "diminish"
+      },
+      "synonyms": [
+        "decrease",
+        "fade"
+      ],
+      "antonyms": [
+        "increase"
+      ],
+      "collocations": [
+        "diminish rapidly",
+        "greatly diminish",
+        "diminish in importance"
+      ],
+      "wordFormation": {
+        "verb": "diminish",
+        "noun": "diminution",
+        "adjective": "diminished"
+      }
+    },
+    {
+      "id": "w-diverse",
+      "word": "diverse",
+      "ipa": "/daɪˈvɜːs/",
+      "level": "advanced",
+      "topic": "describing-things",
+      "meaning": "Đa dạng, phong phú",
+      "example": "The class has a diverse background and many accents.",
+      "exampleVI": "Lớp học có hoàn cảnh đa dạng và nhiều giọng vùng miền.",
+      "audio": {
+        "kind": "speech",
+        "text": "diverse"
+      },
+      "synonyms": [
+        "varied",
+        "assorted"
+      ],
+      "antonyms": [
+        "uniform"
+      ],
+      "collocations": [
+        "a diverse range",
+        "culturally diverse",
+        "highly diverse"
+      ],
+      "wordFormation": {
+        "adjective": "diverse",
+        "adverb": "diversely",
+        "noun": "diversity"
+      }
+    },
+    {
+      "id": "w-eliminate",
+      "word": "eliminate",
+      "ipa": "/ɪˈlɪmɪneɪt/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Loại bỏ, triệt tiêu",
+      "example": "The new design eliminates most of the wasted space.",
+      "exampleVI": "Thiết kế mới loại bỏ phần lớn không gian bị lãng phí.",
+      "audio": {
+        "kind": "speech",
+        "text": "eliminate"
+      },
+      "synonyms": [
+        "remove",
+        "get rid of"
+      ],
+      "antonyms": [
+        "add",
+        "introduce"
+      ],
+      "collocations": [
+        "eliminate waste",
+        "completely eliminate",
+        "eliminate the need for"
+      ],
+      "wordFormation": {
+        "verb": "eliminate",
+        "noun": "elimination"
+      }
+    },
+    {
+      "id": "w-emerge",
+      "word": "emerge",
+      "ipa": "/ɪˈmɜːdʒ/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Xuất hiện, bộc lộ",
+      "example": "A clear pattern emerged after six months of data.",
+      "exampleVI": "Sau sáu tháng dữ liệu, một mô hình rõ ràng đã hiện ra.",
+      "audio": {
+        "kind": "speech",
+        "text": "emerge"
+      },
+      "synonyms": [
+        "appear",
+        "surface"
+      ],
+      "antonyms": [
+        "disappear"
+      ],
+      "collocations": [
+        "emerge from",
+        "it emerged that",
+        "begin to emerge"
+      ],
+      "wordFormation": {
+        "verb": "emerge",
+        "adjective": "emergent",
+        "noun": "emergence"
+      }
+    },
+    {
+      "id": "w-emphasise",
+      "word": "emphasise",
+      "ipa": "/ˈemfəsaɪz/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Nhấn mạnh",
+      "example": "The teacher emphasised the importance of daily review.",
+      "exampleVI": "Giáo viên nhấn mạnh tầm quan trọng của việc ôn tập hằng ngày.",
+      "audio": {
+        "kind": "speech",
+        "text": "emphasise"
+      },
+      "synonyms": [
+        "stress",
+        "highlight"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "emphasise the importance of",
+        "heavily emphasised",
+        "stress and emphasise"
+      ],
+      "wordFormation": {
+        "verb": "emphasise",
+        "noun": "emphasis"
+      }
+    },
+    {
+      "id": "w-enhance",
+      "word": "enhance",
+      "ipa": "/ɪnˈhɑːns/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Tăng cường, nâng cao",
+      "example": "Good sleep enhances memory and concentration.",
+      "exampleVI": "Giấc ngủ tốt tăng cường trí nhớ và sự tập trung.",
+      "audio": {
+        "kind": "speech",
+        "text": "enhance"
+      },
+      "synonyms": [
+        "improve",
+        "strengthen"
+      ],
+      "antonyms": [
+        "reduce"
+      ],
+      "collocations": [
+        "enhance performance",
+        "greatly enhance",
+        "enhance the quality of"
+      ],
+      "wordFormation": {
+        "verb": "enhance",
+        "noun": "enhancement"
+      }
+    },
+    {
+      "id": "w-essential",
+      "word": "essential",
+      "ipa": "/ɪˈsenʃl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Thiết yếu, không thể thiếu",
+      "example": "Sleep is essential for learning new words well.",
+      "exampleVI": "Giấc ngủ là điều thiết yếu để học từ mới hiệu quả.",
+      "audio": {
+        "kind": "speech",
+        "text": "essential"
+      },
+      "synonyms": [
+        "necessary",
+        "vital"
+      ],
+      "antonyms": [
+        "optional",
+        "unnecessary"
+      ],
+      "collocations": [
+        "essential for",
+        "absolutely essential",
+        "an essential part of"
+      ],
+      "wordFormation": {
+        "adjective": "essential",
+        "adverb": "essentially",
+        "noun": "essence"
+      }
+    },
+    {
+      "id": "w-facilitate",
+      "word": "facilitate",
+      "ipa": "/fəˈsɪlɪteɪt/",
+      "level": "advanced",
+      "topic": "work",
+      "meaning": "Tạo điều kiện, hỗ trợ",
+      "example": "A quiet room facilitates deep concentration.",
+      "exampleVI": "Một căn phòng yên tĩnh giúp tập trung sâu.",
+      "audio": {
+        "kind": "speech",
+        "text": "facilitate"
+      },
+      "synonyms": [
+        "enable",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder"
+      ],
+      "collocations": [
+        "facilitate communication",
+        "facilitate the process",
+        "greatly facilitate"
+      ],
+      "wordFormation": {
+        "verb": "facilitate",
+        "noun": "facilitation"
+      }
+    },
+    {
+      "id": "w-feasible",
+      "word": "feasible",
+      "ipa": "/ˈfiːzəbl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Khả thi, có thể làm được",
+      "example": "Finishing the course in six months is feasible.",
+      "exampleVI": "Hoàn thành khóa học trong sáu tháng là khả thi.",
+      "audio": {
+        "kind": "speech",
+        "text": "feasible"
+      },
+      "synonyms": [
+        "possible",
+        "workable"
+      ],
+      "antonyms": [
+        "impractical"
+      ],
+      "collocations": [
+        "technically feasible",
+        "a feasible plan",
+        "economically feasible"
+      ],
+      "wordFormation": {
+        "adjective": "feasible",
+        "noun": "feasibility",
+        "adverb": "feasibly"
+      }
+    },
+    {
+      "id": "w-framework",
+      "word": "framework",
+      "ipa": "/ˈfreɪmwɜːk/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Khung, khung lý thuyết",
+      "example": "The paper sets out a clear theoretical framework.",
+      "exampleVI": "Bài báo trình bày một khung lý thuyết rõ ràng.",
+      "audio": {
+        "kind": "speech",
+        "text": "framework"
+      },
+      "synonyms": [
+        "structure",
+        "foundation"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a conceptual framework",
+        "within the framework",
+        "analytical framework"
+      ],
+      "wordFormation": {
+        "noun": "framework",
+        "verb": "frame",
+        "adjective": "structural"
+      }
+    },
+    {
+      "id": "w-fundamental",
+      "word": "fundamental",
+      "ipa": "/ˌfʌndəˈmentl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Cơ bản, nền tảng",
+      "example": "There is a fundamental difference between the two ideas.",
+      "exampleVI": "Có một sự khác biệt cơ bản giữa hai ý tưởng này.",
+      "audio": {
+        "kind": "speech",
+        "text": "fundamental"
+      },
+      "synonyms": [
+        "basic",
+        "essential"
+      ],
+      "antonyms": [
+        "secondary",
+        "superficial"
+      ],
+      "collocations": [
+        "a fundamental change",
+        "fundamental principles",
+        "fundamentally different"
+      ],
+      "wordFormation": {
+        "adjective": "fundamental",
+        "adverb": "fundamentally",
+        "noun": "foundation"
+      }
+    },
+    {
+      "id": "w-implement",
+      "word": "implement",
+      "ipa": "/ˈɪmplɪment/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Thực hiện, triển khai",
+      "example": "The school implemented the new policy in September.",
+      "exampleVI": "Trường đã triển khai chính sách mới vào tháng Chín.",
+      "audio": {
+        "kind": "speech",
+        "text": "implement"
+      },
+      "synonyms": [
+        "carry out",
+        "apply"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "implement a policy",
+        "fully implemented",
+        "implement changes"
+      ],
+      "wordFormation": {
+        "verb": "implement",
+        "noun": "implementation"
+      }
+    },
+    {
+      "id": "w-incentive",
+      "word": "incentive",
+      "ipa": "/ɪnˈsentɪv/",
+      "level": "advanced",
+      "topic": "work",
+      "meaning": "Động lực, khuyến khích",
+      "example": "Free lessons are a strong incentive to enrol.",
+      "exampleVI": "Các buổi học miễn phí là một động lực mạnh để đăng ký.",
+      "audio": {
+        "kind": "speech",
+        "text": "incentive"
+      },
+      "synonyms": [
+        "motivation",
+        "stimulus"
+      ],
+      "antonyms": [
+        "disincentive"
+      ],
+      "collocations": [
+        "financial incentive",
+        "an incentive to",
+        "provide incentives"
+      ],
+      "wordFormation": {
+        "noun": "incentive",
+        "verb": "incentivise"
+      }
+    },
+    {
+      "id": "w-inevitable",
+      "word": "inevitable",
+      "ipa": "/ɪnˈevɪtəbl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Không thể tránh, tất yếu",
+      "example": "Some mistakes are inevitable in a new language.",
+      "exampleVI": "Một số sai sót là điều không thể tránh với ngôn ngữ mới.",
+      "audio": {
+        "kind": "speech",
+        "text": "inevitable"
+      },
+      "synonyms": [
+        "unavoidable",
+        "certain"
+      ],
+      "antonyms": [
+        "avoidable"
+      ],
+      "collocations": [
+        "it is inevitable that",
+        "an inevitable result",
+        "sooner or later inevitable"
+      ],
+      "wordFormation": {
+        "adjective": "inevitable",
+        "adverb": "inevitably",
+        "noun": "inevitability"
+      }
+    },
+    {
+      "id": "w-inhibit",
+      "word": "inhibit",
+      "ipa": "/ɪnˈhɪbɪt/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Ngăn chặn, ức chế",
+      "example": "Fear of mistakes inhibits many adult learners.",
+      "exampleVI": "Nỗi sợ sai sót ức chế nhiều người học trưởng thành.",
+      "audio": {
+        "kind": "speech",
+        "text": "inhibit"
+      },
+      "synonyms": [
+        "suppress",
+        "restrain"
+      ],
+      "antonyms": [
+        "encourage",
+        "promote"
+      ],
+      "collocations": [
+        "inhibit growth",
+        "strongly inhibit",
+        "inhibit development"
+      ],
+      "wordFormation": {
+        "verb": "inhibit",
+        "noun": "inhibition",
+        "adjective": "inhibitory"
+      }
+    },
+    {
+      "id": "w-innovation",
+      "word": "innovation",
+      "ipa": "/ˌɪnəˈveɪʃn/",
+      "level": "advanced",
+      "topic": "technology",
+      "meaning": "Đổi mới, sáng tạo",
+      "example": "Digital tools have driven rapid innovation in teaching.",
+      "exampleVI": "Công cụ số đã thúc đẩy sự đổi mới nhanh chóng trong giảng dạy.",
+      "audio": {
+        "kind": "speech",
+        "text": "innovation"
+      },
+      "synonyms": [
+        "invention",
+        "newness"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "technological innovation",
+        "a culture of innovation",
+        "drive innovation"
+      ],
+      "wordFormation": {
+        "noun": "innovation",
+        "verb": "innovate",
+        "adjective": "innovative"
+      }
+    },
+    {
+      "id": "w-integrate",
+      "word": "integrate",
+      "ipa": "/ˈɪntɪɡreɪt/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Tích hợp, hòa nhập",
+      "example": "The app integrates notes, audio and progress tracking.",
+      "exampleVI": "Ứng dụng tích hợp ghi chú, âm thanh và theo dõi tiến độ.",
+      "audio": {
+        "kind": "speech",
+        "text": "integrate"
+      },
+      "synonyms": [
+        "combine",
+        "merge"
+      ],
+      "antonyms": [
+        "separate",
+        "isolate"
+      ],
+      "collocations": [
+        "integrate into",
+        "fully integrated",
+        "integrate systems"
+      ],
+      "wordFormation": {
+        "verb": "integrate",
+        "noun": "integration",
+        "adjective": "integrated"
+      }
+    },
+    {
+      "id": "w-justify",
+      "word": "justify",
+      "ipa": "/ˈdʒʌstɪfaɪ/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Biện minh, chứng minh là có lý",
+      "example": "Nothing can justify such a waste of money.",
+      "exampleVI": "Không điều gì biện minh cho sự lãng phí tiền như vậy.",
+      "audio": {
+        "kind": "speech",
+        "text": "justify"
+      },
+      "synonyms": [
+        "warrant",
+        "defend"
+      ],
+      "antonyms": [
+        "condemn"
+      ],
+      "collocations": [
+        "justify a decision",
+        "hard to justify",
+        "justify the cost"
+      ],
+      "wordFormation": {
+        "verb": "justify",
+        "noun": "justification",
+        "adjective": "justified"
+      }
+    },
+    {
+      "id": "w-maintain",
+      "word": "maintain",
+      "ipa": "/meɪnˈteɪn/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Duy trì, bảo dưỡng",
+      "example": "Students who maintain a routine progress faster.",
+      "exampleVI": "Học sinh duy trì một nếp sinh hoạt sẽ tiến bộ nhanh hơn.",
+      "audio": {
+        "kind": "speech",
+        "text": "maintain"
+      },
+      "synonyms": [
+        "keep",
+        "preserve"
+      ],
+      "antonyms": [
+        "neglect"
+      ],
+      "collocations": [
+        "maintain a healthy weight",
+        "maintain standards",
+        "well maintained"
+      ],
+      "wordFormation": {
+        "verb": "maintain",
+        "noun": "maintenance"
+      }
+    },
+    {
+      "id": "w-notion",
+      "word": "notion",
+      "ipa": "/ˈnəʊʃn/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Khái niệm, ý tưởng",
+      "example": "The notion that talent alone guarantees success is wrong.",
+      "exampleVI": "Ý tưởng rằng tài năng đơn thuần đảm bảo thành công là sai.",
+      "audio": {
+        "kind": "speech",
+        "text": "notion"
+      },
+      "synonyms": [
+        "idea",
+        "concept"
+      ],
+      "antonyms": [
+        "fact"
+      ],
+      "collocations": [
+        "the notion that",
+        "a common notion",
+        "reject the notion"
+      ],
+      "wordFormation": {
+        "noun": "notion"
+      }
+    },
+    {
+      "id": "w-objective",
+      "word": "objective",
+      "ipa": "/əbˈdʒektɪv/",
+      "level": "advanced",
+      "topic": "work",
+      "meaning": "Mục tiêu, mục đích",
+      "example": "The main objective is to reduce waiting time.",
+      "exampleVI": "Mục tiêu chính là giảm thời gian chờ.",
+      "audio": {
+        "kind": "speech",
+        "text": "objective"
+      },
+      "synonyms": [
+        "goal",
+        "aim"
+      ],
+      "antonyms": [
+        "subjective"
+      ],
+      "collocations": [
+        "a clear objective",
+        "main objective of",
+        "meet the objective"
+      ],
+      "wordFormation": {
+        "noun": "objective",
+        "adjective": "objective",
+        "adverb": "objectively"
+      }
+    },
+    {
+      "id": "w-plausible",
+      "word": "plausible",
+      "ipa": "/ˈplɔːzəbl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Hợp lý, đáng tin",
+      "example": "That sounds like a plausible explanation.",
+      "exampleVI": "Điều đó nghe như một lời giải thích hợp lý.",
+      "audio": {
+        "kind": "speech",
+        "text": "plausible"
+      },
+      "synonyms": [
+        "believable",
+        "reasonable"
+      ],
+      "antonyms": [
+        "implausible"
+      ],
+      "collocations": [
+        "a plausible explanation",
+        "seem plausible",
+        "perfectly plausible"
+      ],
+      "wordFormation": {
+        "adjective": "plausible",
+        "adverb": "plausibly",
+        "noun": "plausibility"
+      }
+    },
+    {
+      "id": "w-predominant",
+      "word": "predominant",
+      "ipa": "/prɪˈdɒmɪnənt/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Chủ đạo, chiếm ưu thế",
+      "example": "Short words are predominant in everyday speech.",
+      "exampleVI": "Từ ngắn chiếm ưu thế trong lời nói hằng ngày.",
+      "audio": {
+        "kind": "speech",
+        "text": "predominant"
+      },
+      "synonyms": [
+        "dominant",
+        "chief"
+      ],
+      "antonyms": [
+        "minor",
+        "secondary"
+      ],
+      "collocations": [
+        "the predominant cause",
+        "predominant feature",
+        "predominantly rural"
+      ],
+      "wordFormation": {
+        "adjective": "predominant",
+        "adverb": "predominantly",
+        "verb": "predominate"
+      }
+    },
+    {
+      "id": "w-prevalent",
+      "word": "prevalent",
+      "ipa": "/ˈprevələnt/",
+      "level": "advanced",
+      "topic": "society",
+      "meaning": "Phổ biến, thịnh hành",
+      "example": "Short-form video is prevalent among young internet users.",
+      "exampleVI": "Video dạng ngắn rất phổ biến với người dùng internet trẻ.",
+      "audio": {
+        "kind": "speech",
+        "text": "prevalent"
+      },
+      "synonyms": [
+        "widespread",
+        "common"
+      ],
+      "antonyms": [
+        "rare"
+      ],
+      "collocations": [
+        "widely prevalent",
+        "prevalent among",
+        "increasingly prevalent"
+      ],
+      "wordFormation": {
+        "adjective": "prevalent",
+        "adverb": "prevalently",
+        "noun": "prevalence"
+      }
+    },
+    {
+      "id": "w-principle",
+      "word": "principle",
+      "ipa": "/ˈprɪnsəpl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Nguyên lý, nguyên tắc",
+      "example": "He refused the job on principle, not for money.",
+      "exampleVI": "Anh ấy từ chối công việc vì nguyên tắc, không phải vì tiền.",
+      "audio": {
+        "kind": "speech",
+        "text": "principle"
+      },
+      "synonyms": [
+        "rule",
+        "tenet"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "on principle",
+        "a guiding principle",
+        "basic principles"
+      ],
+      "wordFormation": {
+        "noun": "principle",
+        "adjective": "principled"
+      }
+    },
+    {
+      "id": "w-priority",
+      "word": "priority",
+      "ipa": "/praɪˈɒrəti/",
+      "level": "advanced",
+      "topic": "work",
+      "meaning": "Ưu tiên, điều quan trọng nhất",
+      "example": "Safety is our first priority on the building site.",
+      "exampleVI": "An toàn là ưu tiên hàng đầu của chúng tôi tại công trường.",
+      "audio": {
+        "kind": "speech",
+        "text": "priority"
+      },
+      "synonyms": [
+        "importance",
+        "preference"
+      ],
+      "antonyms": [],
+      "collocations": [
+        "a top priority",
+        "give priority to",
+        "high-priority task"
+      ],
+      "wordFormation": {
+        "noun": "priority",
+        "adjective": "prior"
+      }
+    },
+    {
+      "id": "w-profound",
+      "word": "profound",
+      "ipa": "/prəˈfaʊnd/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Sâu sắc, sâu xa",
+      "example": "The book had a profound effect on my teaching.",
+      "exampleVI": "Cuốn sách đó đã có ảnh hưởng sâu sắc đến việc dạy của tôi.",
+      "audio": {
+        "kind": "speech",
+        "text": "profound"
+      },
+      "synonyms": [
+        "deep",
+        "far-reaching"
+      ],
+      "antonyms": [
+        "trivial",
+        "superficial"
+      ],
+      "collocations": [
+        "a profound impact",
+        "profound knowledge",
+        "profound change"
+      ],
+      "wordFormation": {
+        "adjective": "profound",
+        "adverb": "profoundly",
+        "noun": "profundity"
+      }
+    },
+    {
+      "id": "w-reinforce",
+      "word": "reinforce",
+      "ipa": "/ˌriːɪnˈfɔːs/",
+      "level": "advanced",
+      "topic": "describing-actions",
+      "meaning": "Củng cố, tăng cường",
+      "example": "Review sessions reinforce what you learnt last week.",
+      "exampleVI": "Các buổi ôn tập củng cố những gì bạn đã học tuần trước.",
+      "audio": {
+        "kind": "speech",
+        "text": "reinforce"
+      },
+      "synonyms": [
+        "strengthen",
+        "consolidate"
+      ],
+      "antonyms": [
+        "weaken"
+      ],
+      "collocations": [
+        "reinforce learning",
+        "further reinforce",
+        "reinforce a message"
+      ],
+      "wordFormation": {
+        "verb": "reinforce",
+        "noun": "reinforcement"
+      }
+    },
+    {
+      "id": "w-reluctant",
+      "word": "reluctant",
+      "ipa": "/rɪˈlʌktənt/",
+      "level": "advanced",
+      "topic": "emotions",
+      "meaning": "Miễn cưỡng, không sẵn lòng",
+      "example": "He was reluctant to speak in front of the class.",
+      "exampleVI": "Anh ấy miễn cưỡng nói trước lớp.",
+      "audio": {
+        "kind": "speech",
+        "text": "reluctant"
+      },
+      "synonyms": [
+        "unwilling",
+        "hesitant"
+      ],
+      "antonyms": [
+        "eager",
+        "willing"
+      ],
+      "collocations": [
+        "reluctant to do",
+        "highly reluctant",
+        "initially reluctant"
+      ],
+      "wordFormation": {
+        "adjective": "reluctant",
+        "adverb": "reluctantly",
+        "noun": "reluctance"
+      }
+    },
+    {
+      "id": "w-rigorous",
+      "word": "rigorous",
+      "ipa": "/ˈrɪɡərəs/",
+      "level": "advanced",
+      "topic": "education",
+      "meaning": "Nghiêm ngặt, khắt khe",
+      "example": "The study used a rigorous method to check the results.",
+      "exampleVI": "Nghiên cứu dùng một phương pháp nghiêm ngặt để kiểm tra kết quả.",
+      "audio": {
+        "kind": "speech",
+        "text": "rigorous"
+      },
+      "synonyms": [
+        "strict",
+        "thorough"
+      ],
+      "antonyms": [
+        "lax",
+        "careless"
+      ],
+      "collocations": [
+        "rigorous testing",
+        "rigorous training",
+        "rigorous standards"
+      ],
+      "wordFormation": {
+        "adjective": "rigorous",
+        "adverb": "rigorously",
+        "noun": "rigour"
+      }
+    },
+    {
+      "id": "w-subsequent",
+      "word": "subsequent",
+      "ipa": "/ˈsʌbsɪkwənt/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Tiếp theo, sau đó",
+      "example": "Subsequent studies confirmed the original finding.",
+      "exampleVI": "Những nghiên cứu sau đó đã xác nhận phát hiện ban đầu.",
+      "audio": {
+        "kind": "speech",
+        "text": "subsequent"
+      },
+      "synonyms": [
+        "following",
+        "later"
+      ],
+      "antonyms": [
+        "previous",
+        "earlier"
+      ],
+      "collocations": [
+        "subsequent years",
+        "in subsequent decades",
+        "subsequent to"
+      ],
+      "wordFormation": {
+        "adjective": "subsequent",
+        "adverb": "subsequently",
+        "noun": "subsequence"
+      }
+    },
+    {
+      "id": "w-substantial",
+      "word": "substantial",
+      "ipa": "/səbˈstænʃl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Đáng kể, lớn",
+      "example": "The charity received a substantial donation last year.",
+      "exampleVI": "Tổ chức từ thiện nhận được một khoản quyên góp đáng kể năm ngoái.",
+      "audio": {
+        "kind": "speech",
+        "text": "substantial"
+      },
+      "synonyms": [
+        "considerable",
+        "significant"
+      ],
+      "antonyms": [
+        "insignificant",
+        "minor"
+      ],
+      "collocations": [
+        "a substantial amount",
+        "substantial evidence",
+        "substantial change"
+      ],
+      "wordFormation": {
+        "adjective": "substantial",
+        "adverb": "substantially",
+        "noun": "substance"
+      }
+    },
+    {
+      "id": "w-sustain",
+      "word": "sustain",
+      "ipa": "/səˈsteɪn/",
+      "level": "advanced",
+      "topic": "environment",
+      "meaning": "Duy trì, chịu đựng",
+      "example": "The country cannot sustain this rate of growth.",
+      "exampleVI": "Đất nước này không thể duy trì tốc độ tăng trưởng này.",
+      "audio": {
+        "kind": "speech",
+        "text": "sustain"
+      },
+      "synonyms": [
+        "maintain",
+        "endure"
+      ],
+      "antonyms": [
+        "exhaust"
+      ],
+      "collocations": [
+        "sustain growth",
+        "sustain an injury",
+        "sustainable growth"
+      ],
+      "wordFormation": {
+        "verb": "sustain",
+        "noun": "sustainability",
+        "adjective": "sustainable"
+      }
+    },
+    {
+      "id": "w-undermine",
+      "word": "undermine",
+      "ipa": "/ˌʌndəˈmaɪn/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Làm suy yếu, phá hoại ngầm",
+      "example": "Constant testing can undermine a child's confidence.",
+      "exampleVI": "Kiểm tra liên tục có thể làm suy yếu lòng tự tin của trẻ.",
+      "audio": {
+        "kind": "speech",
+        "text": "undermine"
+      },
+      "synonyms": [
+        "weaken",
+        "erode"
+      ],
+      "antonyms": [
+        "strengthen",
+        "support"
+      ],
+      "collocations": [
+        "undermine confidence",
+        "undermine authority",
+        "seriously undermine"
+      ],
+      "wordFormation": {
+        "verb": "undermine",
+        "noun": "undermining"
+      }
+    },
+    {
+      "id": "w-viable",
+      "word": "viable",
+      "ipa": "/ˈvaɪəbl/",
+      "level": "advanced",
+      "topic": "abstract",
+      "meaning": "Khả thi, sống được",
+      "example": "Solar power is now a viable option here.",
+      "exampleVI": "Điện mặt trời giờ đã là một lựa chọn khả thi ở đây.",
+      "audio": {
+        "kind": "speech",
+        "text": "viable"
+      },
+      "synonyms": [
+        "workable",
+        "sustainable"
+      ],
+      "antonyms": [
+        "unviable"
+      ],
+      "collocations": [
+        "commercially viable",
+        "a viable option",
+        "viable alternative"
+      ],
+      "wordFormation": {
+        "adjective": "viable",
+        "adverb": "viably",
+        "noun": "viability"
+      }
+    },
+    {
+      "id": "w-vulnerability",
+      "word": "vulnerability",
+      "ipa": "/ˌvʌlnərəˈbɪləti/",
+      "level": "advanced",
+      "topic": "health",
+      "meaning": "Tính dễ bị tổn thương, điểm yếu",
+      "example": "The report identifies the village's vulnerability to floods.",
+      "exampleVI": "Báo cáo chỉ ra tính dễ bị lũ lụt của ngôi làng.",
+      "audio": {
+        "kind": "speech",
+        "text": "vulnerability"
+      },
+      "synonyms": [
+        "weakness",
+        "susceptibility"
+      ],
+      "antonyms": [
+        "resilience",
+        "strength"
+      ],
+      "collocations": [
+        "a sense of vulnerability",
+        "vulnerability to",
+        "expose vulnerability"
+      ],
+      "wordFormation": {
+        "noun": "vulnerability",
+        "adjective": "vulnerable"
+      }
+    },
+    {
+      "id": "w-automation",
+      "word": "automation",
+      "ipa": "/ˌɔːtəˈmeɪʃn/",
+      "level": "advanced",
+      "topic": "technology",
+      "meaning": "Tự động hóa",
+      "example": "Automation has changed how banks handle customer accounts.",
+      "exampleVI": "Tự động hóa đã thay đổi cách các ngân hàng xử lý tài khoản khách hàng.",
+      "audio": {
+        "kind": "speech",
+        "text": "automation"
+      },
+      "synonyms": [
+        "mechanisation",
+        "computerisation"
+      ],
+      "antonyms": [
+        "manual work"
+      ],
+      "collocations": [
+        "process automation",
+        "automation tools",
+        "increased automation"
+      ],
+      "wordFormation": {
+        "noun": "automation",
+        "verb": "automate",
+        "adjective": "automated"
+      }
+    }
+  ]
+}

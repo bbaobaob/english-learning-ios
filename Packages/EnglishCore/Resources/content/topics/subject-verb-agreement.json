@@ -1,0 +1,2773 @@
+{
+  "id": "subject-verb-agreement",
+  "title": "Subject-Verb Agreement",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Make the verb match the real subject: singulars take -s, plural words take the base form, and words like every, each, the number of and a pair of decide which one it is.",
+  "icon": "person.2",
+  "estimatedMinutes": 35,
+  "lessons": [
+    {
+      "id": "sva-l1",
+      "title": "One Subject, One Verb",
+      "summary": "The simplest and most important rule: the verb agrees with the subject in number and person.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "sva-l1-theory",
+          "type": "theory",
+          "heading": "The verb copies the subject",
+          "body": "In English the present simple verb has a special form for the third person singular. Every other subject takes the base form. Agreement is decided by the number of the subject, so the first job is always to find the real subject and ask whether it is one or more than one.",
+          "rules": [
+            {
+              "title": "Third person singular takes -s",
+              "statement": "In the present simple, he, she, it and every singular noun take the -s form: works, goes, needs. The other forms do not.",
+              "formula": "He works.  /  They work.",
+              "examples": [
+                {
+                  "id": "sva-l1-r1-e1",
+                  "en": "She works in a hospital.",
+                  "vi": "Cô ấy làm việc ở một bệnh viện.",
+                  "note": "Singular subject, so the verb takes -s."
+                },
+                {
+                  "id": "sva-l1-r1-e2",
+                  "en": "The children play in the garden every afternoon.",
+                  "vi": "Bọn trẻ chơi trong vườn mỗi chiều.",
+                  "note": "Plural subject, so the base form is used with no -s."
+                }
+              ]
+            },
+            {
+              "title": "Agreement is with the subject, not the object",
+              "statement": "A long phrase can sit between the subject and the verb. Ignore the words in the middle and look only at the head noun of the subject.",
+              "formula": "The box of chocolates + is + on the table",
+              "examples": [
+                {
+                  "id": "sva-l1-r2-e1",
+                  "en": "The list of names is on the screen.",
+                  "vi": "Danh sách tên đang trên màn hình.",
+                  "note": "The subject is 'the list', which is singular, so is is correct."
+                },
+                {
+                  "id": "sva-l1-r2-e2",
+                  "en": "The students in the front row are taking an exam.",
+                  "vi": "Các học sinh ở hàng trước đang làm bài thi.",
+                  "note": "The subject is 'the students', which is plural, so are is correct."
+                }
+              ]
+            },
+            {
+              "title": "The plural form is not always -s",
+              "statement": "Some plurals have no s at all, and some singulars end in s. Ending in s is a clue, not a rule.",
+              "formula": "sheep is / sheep are  |  news is  |  glasses are",
+              "examples": [
+                {
+                  "id": "sva-l1-r3-e1",
+                  "en": "The news is not good.",
+                  "vi": "Tin tức không tốt.",
+                  "note": "News ends in s but is singular, so it takes is."
+                },
+                {
+                  "id": "sva-l1-r3-e2",
+                  "en": "Two sheep are grazing on the hill.",
+                  "vi": "Hai con cừu đang gặm cỏ trên đồi.",
+                  "note": "The plural of sheep has no s, but it is still plural, so it takes are."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l1-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l1-ex1",
+              "en": "My brother lives in Đà Nẵng.",
+              "vi": "Anh trai tôi sống ở Đà Nẵng.",
+              "note": "Singular subject in the third person, so lives takes -s."
+            },
+            {
+              "id": "sva-l1-ex2",
+              "en": "The keys are on the kitchen table.",
+              "vi": "Chìa khóa ở trên bàn bếp.",
+              "note": "Plural subject, so the verb is are, not is."
+            },
+            {
+              "id": "sva-l1-ex3",
+              "en": "This bag of rice weighs ten kilos.",
+              "vi": "Cái túi gạo này nặng mười ký.",
+              "note": "One bag, so the verb is weighs even though rice is uncountable and there is a plural-looking noun after it."
+            },
+            {
+              "id": "sva-l1-ex4",
+              "en": "The weather forecast says it will rain.",
+              "vi": "Dự báo thời tiết nói sẽ có mưa.",
+              "note": "The subject is 'the forecast', singular, so says is right."
+            }
+          ]
+        },
+        {
+          "id": "sva-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l1-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "The teacher ___ (explain) the lesson twice yesterday.",
+              "instruction": "Type the correct past simple form of the verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "explained"
+                ]
+              },
+              "explanation": "The past simple is the same for every person, and the singular subject 'the teacher' would need explains in the present simple. In the past there is no -s, so the -ed form is correct here.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-e2",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the sentence with correct agreement.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The number of applicants are increasing.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The number of applicants is increasing.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The number of applicant is increasing.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "A number of applicants is increasing.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "The number of means the quantity as a single idea, so the verb is singular. A number of means several and takes a plural verb: 'A number of applicants are increasing.'",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-e3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "The list of items are ready for delivery.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The list of items is ready for delivery."
+                ]
+              },
+              "explanation": "The head of the subject is 'the list', which is singular. 'Of items' is a prepositional phrase inside the subject and does not control the verb.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-e4",
+              "kind": "trueFalse",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "A noun ending in -s is always plural, so 'the news are good' is correct.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "Ending in s tells you nothing on its own. News, information, advice and furniture are all singular despite the s, and sheep and series are plural without it.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Type the present simple form of 'to go' for the subject 'she'.",
+              "instruction": "Type the verb only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "goes"
+                ]
+              },
+              "explanation": "The third person singular of go is goes. This -s ending is the single most tested point in English agreement, and it appears in every tense except the past.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-e6",
+              "kind": "sentenceCompletion",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Complete with the correct verb: 'The two sisters ___ (teach) at the same school.'",
+              "instruction": "Type the full verb phrase in the present simple.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "teach"
+                ]
+              },
+              "explanation": "The subject 'the two sisters' is plural, so the present simple takes the base form teach with no -s.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and write the verb",
+          "items": [
+            {
+              "id": "sva-l1-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The shop opens at eight every morning."
+              },
+              "hint": "singular subject in the third person",
+              "translation": "Cửa hàng mở cửa lúc tám giờ sáng mỗi ngày.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l1-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Two windows were broken in the storm."
+              },
+              "hint": "plural subject in the past",
+              "translation": "Hai cửa sổ đã bị vỡ trong bão.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l1-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The amount of water in the tank is low."
+              },
+              "hint": "the amount of takes a singular verb",
+              "translation": "Lượng nước trong bể đang thấp.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l1-quiz",
+          "type": "quiz",
+          "title": "One subject, one verb",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The bag of oranges are on the table.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The bag of oranges is on the table.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The bag of orange are on the table.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "A bag of oranges is on the table.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "One bag is one object, so the verb is is. Option d is grammatical, but it describes a different situation: a different bag, not the one already mentioned. The test asks about the same bag, so option b is the answer.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Neither of the answers ___ (be) correct.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "Neither is a singular word even when it refers to two things, so the present simple verb is is. The near-universal learner instinct is to use are, and it is always wrong with neither.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-q3",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "beginner",
+              "prompt": "Which plural subject takes a singular verb?",
+              "instruction": "Pick the subject that is grammatically singular.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "the police",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "the glasses",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "the series",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "the trousers",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
+              "explanation": "A series is one complete set, so it is grammatically singular: the series was excellent. The police, the glasses and the trousers are all genuinely plural and take are.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l1-q4",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l1",
+              "difficulty": "intermediate",
+              "prompt": "The quality of the recordings are excellent.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The quality of the recordings is excellent."
+                ]
+              },
+              "explanation": "The subject is 'the quality', singular, and 'of the recordings' is only a prepositional phrase inside it. The same trap appears with the amount of, the news and a piece of.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "In the present simple, he, she and it take -s; everybody else takes the base form.",
+            "Agreement is with the head of the subject: the box of chocolates is.",
+            "Ending in s is not a test for plural: news is, but sheep are.",
+            "The number of is singular; a number of is plural."
+          ],
+          "nextLessonID": "sva-l2"
+        }
+      ]
+    },
+    {
+      "id": "sva-l2",
+      "title": "Every, Each, Everyone",
+      "summary": "Words that look plural but count as one, every single time.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "sva-l2-theory",
+          "type": "theory",
+          "heading": "Quantifiers that mean one",
+          "body": "English has a group of words that take a singular noun and a singular verb even though they refer to many people or things. The reason is simple: from the point of view of the sentence, they count as one. Everyone, each, every, either and neither are all singular subjects.",
+          "rules": [
+            {
+              "title": "Every, each and everyone take singular verbs",
+              "statement": "These quantifiers treat what they refer to one at a time, so the verb is singular even when the noun after them is plural.",
+              "formula": "Every student + has + a book.",
+              "examples": [
+                {
+                  "id": "sva-l2-r1-e1",
+                  "en": "Every student in the class has a laptop.",
+                  "vi": "Mọi học sinh trong lớp đều có một chiếc máy tính.",
+                  "note": "Every + plural noun, but the verb is singular: has, not have."
+                },
+                {
+                  "id": "sva-l2-r1-e2",
+                  "en": "Each of the answers is on the desk.",
+                  "vi": "Mỗi câu trả lời đều trên bàn.",
+                  "note": "Each of is followed by the plural of the noun inside an of-phrase, and the verb is still singular."
+                }
+              ]
+            },
+            {
+              "title": "Everyone, somebody, nobody and anyone",
+              "statement": "These indefinite pronouns are singular, both as a subject and as an object. Their plural forms, every few, some, all and none, are plural.",
+              "formula": "Everyone is here.  /  Some are late.",
+              "examples": [
+                {
+                  "id": "sva-l2-r2-e1",
+                  "en": "Everyone is welcome at the workshop.",
+                  "vi": "Ai cũng được chào đón tại buổi làm việc.",
+                  "note": "Everyone is singular, so the verb is is."
+                },
+                {
+                  "id": "sva-l2-r2-e2",
+                  "en": "Nobody has answered the question yet.",
+                  "vi": "Chưa ai trả lời câu hỏi cả.",
+                  "note": "Nobody is negative singular, so it takes has, not have."
+                }
+              ]
+            },
+            {
+              "title": "Either and neither",
+              "statement": "Both are singular, and they are used in pairs. When they join two subjects with either or, the verb usually agrees with the nearer subject.",
+              "formula": "Either answer is acceptable.  /  Neither answer is acceptable.",
+              "examples": [
+                {
+                  "id": "sva-l2-r3-e1",
+                  "en": "Neither team is playing at home this weekend.",
+                  "vi": "Không đội nào được thi đấu ở nhà cuối tuần này.",
+                  "note": "Neither plus a plural noun still gives a singular verb."
+                },
+                {
+                  "id": "sva-l2-r3-e2",
+                  "en": "Either the manager or his assistants are coming.",
+                  "vi": "Hoặc quản lý hoặc các trợ lý của ông ấy sẽ đến.",
+                  "note": "With either or, the verb normally agrees with the subject closest to it, so plural assistants gives are."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l2-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l2-ex1",
+              "en": "Everyone in our team works from home on Fridays.",
+              "vi": "Tất cả mọi người trong nhóm của chúng tôi làm việc tại nhà vào thứ Sáu.",
+              "note": "Everyone is singular, so works takes -s."
+            },
+            {
+              "id": "sva-l2-ex2",
+              "en": "Each of the machines is checked every morning.",
+              "vi": "Mỗi máy đều được kiểm tra vào buổi sáng.",
+              "note": "Each of plus plural noun, singular verb."
+            },
+            {
+              "id": "sva-l2-ex3",
+              "en": "Every route has been surveyed twice.",
+              "vi": "Mọi tuyến đường đều đã được khảo sát hai lần.",
+              "note": "Every takes a singular verb even when the following noun is plural."
+            },
+            {
+              "id": "sva-l2-ex4",
+              "en": "Nobody has seen the missing keys.",
+              "vi": "Không ai nhìn thấy đồng hồ bị thất lạc.",
+              "note": "Negative singular: has, not have."
+            }
+          ]
+        },
+        {
+          "id": "sva-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l2-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Every one of the volunteers ___ (need) a training session.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "needs"
+                ]
+              },
+              "explanation": "Every one of counts as one, so the present simple verb is needs. The plural noun inside the of-phrase does not change the agreement.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-e2",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Each of the tickets have a barcode on the back.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Each of the tickets has a barcode on the back."
+                ]
+              },
+              "explanation": "Each is singular, so it takes has. Learners are pulled towards have because the noun right after of is plural, but the of-phrase is not the subject.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-e3",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Everyone has finished the form.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Everyone have finished the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Everyone are finished the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Everyone are finish the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Everyone is singular, so it takes has finished: the third person singular form plus the past participle. Option b is the agreement error, and options c and d also break the verb form itself.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-e4",
+              "kind": "trueFalse",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Neither of my parents is allergic to seafood.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Neither is always singular, so is is correct even though my parents is plural. This sentence is one of the standard agreement examples in English.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-e5",
+              "kind": "matching",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "intermediate",
+              "prompt": "Match each subject with the verb that agrees with it.",
+              "instruction": "Join each subject with the correct verb form.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Every one of the applicants",
+                  "isCorrect": null,
+                  "matchKey": "has"
+                },
+                {
+                  "id": "b",
+                  "text": "Some of the water",
+                  "isCorrect": null,
+                  "matchKey": "is"
+                },
+                {
+                  "id": "c",
+                  "text": "Most of the questions",
+                  "isCorrect": null,
+                  "matchKey": "are"
+                },
+                {
+                  "id": "d",
+                  "text": "Neither of the options",
+                  "isCorrect": null,
+                  "matchKey": "is"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "has",
+                  "b": "is",
+                  "c": "are",
+                  "d": "is"
+                }
+              },
+              "explanation": "The pattern is quantity of plus noun. If the noun is countable and plural, some and most take a plural verb; if it is uncountable, they take is; and every one of and neither of take a singular verb regardless of the noun.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "intermediate",
+              "prompt": "Type the correct verb: 'Either the bus or the train ___ late.'",
+              "instruction": "Type the present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "With either or, agreement normally follows the subject nearest to the verb, and the train is singular, so is is correct. Note that with a genuine plural closer, as in 'either the manager or his assistants', the verb becomes plural.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l2-dictation",
+          "type": "dictation",
+          "title": "Every, each and everyone",
+          "items": [
+            {
+              "id": "sva-l2-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Every student needs a student card."
+              },
+              "hint": "every takes a singular verb",
+              "translation": "Mọi sinh viên đều cần một thẻ sinh viên.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l2-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Each of the shops opens at nine."
+              },
+              "hint": "each of plus a singular verb",
+              "translation": "Mỗi cửa hàng đều mở cửa lúc chín giờ.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l2-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Nobody has reported a problem so far."
+              },
+              "hint": "negative singular subject",
+              "translation": "Cho đến nay chưa ai báo cáo sự cố nào.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l2-quiz",
+          "type": "quiz",
+          "title": "Every, each, everyone",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Every visitor must sign the register.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Every visitor must signs the register.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Every visitors must sign the register.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Everyone must sign the register.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "d"
+                ]
+              },
+              "explanation": "Both a and d are correct: every visitor and everyone are both singular subjects, and a modal has no agreement form at all. Options b and c break the pattern in two different ways.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "beginner",
+              "prompt": "Everybody ___ (be) ready for the inspection.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "Everybody is a singular indefinite pronoun, so the verb is is. The same applies to somebody, anybody, nobody and everyone.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-q3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "intermediate",
+              "prompt": "Neither of the two answers were acceptable to the examiner.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Neither of the two answers was acceptable to the examiner."
+                ]
+              },
+              "explanation": "Neither is singular no matter what follows it, so the past simple must be was. This is the most frequent agreement error with neither in written English.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l2-q4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l2",
+              "difficulty": "intermediate",
+              "prompt": "In 'Each of the two reports ___ wrong', what does the verb agree with?",
+              "instruction": "Pick the explanation.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "with the plural noun 'reports', so the verb is were",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "with the singular quantifier 'each', so the verb is was",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "with the number 'two', so the verb is were",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "with the preposition 'of', so no agreement is possible",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "The head of the subject is each, which is singular, so the past simple is was. The plural noun sits inside an of-phrase and cannot control the verb.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "Every, each and every one of take singular verbs even with a plural noun.",
+            "Everyone, somebody, anybody, nobody, someone and no one are singular subjects.",
+            "Neither and either are singular, and with either or the verb follows the nearer subject.",
+            "A modal verb has no agreement form, so every visitor must and everyone must are both fine."
+          ],
+          "nextLessonID": "sva-l3"
+        }
+      ]
+    },
+    {
+      "id": "sva-l3",
+      "title": "Uncountable Nouns and Quantities",
+      "summary": "Why the news is singular, how much differs from how many, and what a piece of does for you.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "sva-l3-theory",
+          "type": "theory",
+          "heading": "Not everything that looks plural can be counted",
+          "body": "Uncountable nouns name things measured rather than counted: information, advice, furniture, luggage, progress. They are grammatically singular, they have no plural form, and they cannot be counted with numbers. English solves this with containers and units, such as a piece of advice or two items of luggage.",
+          "rules": [
+            {
+              "title": "Uncountable nouns are singular",
+              "statement": "A noun with no plural form takes a singular verb and a singular pronoun, and the -s form is only in the present simple.",
+              "formula": "The information is / The news is / The advice was",
+              "examples": [
+                {
+                  "id": "sva-l3-r1-e1",
+                  "en": "The information you need is on page ten.",
+                  "vi": "Thông tin bạn cần nằm ở trang mười.",
+                  "note": "Information is uncountable and singular, so is is correct."
+                },
+                {
+                  "id": "sva-l3-r1-e2",
+                  "en": "Their luggage was lost in transit.",
+                  "vi": "Hành lý của họ đã thất lạc trên đường vận chuyển.",
+                  "note": "Luggage looks like a plural but is a single uncountable noun, so the past simple is was."
+                }
+              ]
+            },
+            {
+              "title": "How much and how many",
+              "statement": "How much is used with uncountable nouns and singular quantities; how many is used with countable plural nouns.",
+              "formula": "How much + uncountable  |  How many + countable plural",
+              "examples": [
+                {
+                  "id": "sva-l3-r2-e1",
+                  "en": "How much luggage are you taking?",
+                  "vi": "Bạn mang bao nhiêu hành lý?",
+                  "note": "Luggage is uncountable, so how much is right; in careful English the singular verb is also preferred: how much luggage is you taking?"
+                },
+                {
+                  "id": "sva-l3-r2-e2",
+                  "en": "How many boxes are still packed?",
+                  "vi": "Còn bao nhiêu thùng đã được đóng?",
+                  "note": "Boxes is a countable plural, so how many and are."
+                }
+              ]
+            },
+            {
+              "title": "Counting the uncountable",
+              "statement": "Use a unit noun to make an uncountable noun countable: a piece of, an item of, a bit of. The verb then agrees with the unit, which is singular.",
+              "formula": "a piece of advice + is  |  three items of luggage + are",
+              "examples": [
+                {
+                  "id": "sva-l3-r3-e1",
+                  "en": "Can I give you a piece of advice?",
+                  "vi": "Tôi có thể cho bạn một lời khuyên không?",
+                  "note": "One piece of advice, so the verb is singular."
+                },
+                {
+                  "id": "sva-l3-r3-e2",
+                  "en": "Three items of furniture were delivered yesterday.",
+                  "vi": "Ba món nội thất đã được giao hôm qua.",
+                  "note": "Furniture is uncountable, but items of furniture is countable, so were is correct."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l3-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l3-ex1",
+              "en": "The progress we have made is remarkable.",
+              "vi": "Tiến bộ chúng tôi đạt được là đáng chú ý.",
+              "note": "Progress is uncountable and singular, so is is right."
+            },
+            {
+              "id": "sva-l3-ex2",
+              "en": "The police are investigating how the equipment was damaged.",
+              "vi": "Cảnh sát đang điều tra xem thiết bị đã hư hỏng ra sao.",
+              "note": "The police takes a plural verb, while the equipment inside the second clause is singular: was damaged."
+            },
+            {
+              "id": "sva-l3-ex3",
+              "en": "Two pieces of advice were given at the meeting.",
+              "vi": "Hai lời khuyên đã được đưa ra tại cuộc họp.",
+              "note": "Advice is uncountable, but pieces of advice is countable, so the plural were is correct."
+            },
+            {
+              "id": "sva-l3-ex4",
+              "en": "Very little research has been done on this topic.",
+              "vi": "Rất ít nghiên cứu đã được thực hiện về chủ đề này.",
+              "note": "Research is uncountable, and little treats it as singular: has been done."
+            }
+          ]
+        },
+        {
+          "id": "sva-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l3-e1",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "beginner",
+              "prompt": "The informations you gave me were very useful.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The information you gave me was very useful."
+                ]
+              },
+              "explanation": "Information has no plural form in English, so the s must go, and the singular verb was is required. The same applies to advice, furniture, equipment, luggage and research.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "beginner",
+              "prompt": "How much ___ (be) the fee for the course?",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "The fee is one amount, so it is singular and the verb is is. How much already signals that we are dealing with an uncountable or singular quantity.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-e3",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "A piece of advice would be welcome.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "An advice would be welcome.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "A piece of advices would be welcome.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "A piece of advice were welcome.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Advice is uncountable, so the article an is impossible and there is no plural. Making it countable with a piece of then gives one item, so the verb is would be.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-e4",
+              "kind": "sentenceCompletion",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "intermediate",
+              "prompt": "Complete: Two items of equipment ___ (be) delivered this morning.",
+              "instruction": "Type the correct past simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "Equipment is uncountable, but 'two items of equipment' is a countable plural, so the verb agrees with items and is were. The trap is to keep was because of the word equipment.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-e5",
+              "kind": "trueFalse",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "beginner",
+              "prompt": "The furniture in this room is old and expensive.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Furniture is uncountable, so the verb is singular even though it means several pieces. If you want a plural, say 'three pieces of furniture are old'.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "intermediate",
+              "prompt": "Type the plural noun that goes with 'a piece of' to make 'advice' countable: three ___ of advice.",
+              "instruction": "Type the plural noun only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "pieces"
+                ]
+              },
+              "explanation": "The standard units are a piece of advice, a bit of advice, an item of advice. Because the unit is countable, 'three pieces of advice' takes a plural verb: were given, is wrong.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l3-dictation",
+          "type": "dictation",
+          "title": "Uncountable nouns",
+          "items": [
+            {
+              "id": "sva-l3-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The advice from the doctor was very useful."
+              },
+              "hint": "advice is uncountable and singular",
+              "translation": "Lời khuyên của bác sĩ rất hữu ích.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l3-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Their luggage was checked at the airport."
+              },
+              "hint": "luggage is singular",
+              "translation": "Hành lý của họ đã được kiểm tra ở sân bay.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l3-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Two pieces of furniture were moved to the other room."
+              },
+              "hint": "pieces makes it countable",
+              "translation": "Hai món đồ nội thất đã được chuyển sang phòng bên.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l3-quiz",
+          "type": "quiz",
+          "title": "Uncountable nouns",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The news is not good today.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The news are not good today.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The news are not good today, sadly.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The news were not good today.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "News is grammatically singular in the sense that it reports one thing, so the present simple is is. The plural news are is heard in some regional varieties but is not standard for written English.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "intermediate",
+              "prompt": "How many ___ (be) the applications received?",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are"
+                ]
+              },
+              "explanation": "How many signals a countable plural, and applications is plural, so the verb is are. Contrast 'How much information is on the form', where the verb is singular.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-q3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "intermediate",
+              "prompt": "Two pieces of furnitures were bought last week.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Two pieces of furniture were bought last week."
+                ]
+              },
+              "explanation": "Furniture has no plural form in English, so 'furnitures' is not a word. The unit noun pieces makes the phrase countable, and were agrees with that plural unit.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l3-q4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l3",
+              "difficulty": "intermediate",
+              "prompt": "Which noun is NOT uncountable?",
+              "instruction": "Pick the countable noun.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "luggage",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "equipment",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "suitcase",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "traffic",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
+              "explanation": "A suitcase is a single object you can count: one suitcase, two suitcases. Luggage, equipment and traffic are all uncountable, which is why you say 'two items of luggage' rather than 'two luggages'.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Uncountable nouns such as information, advice, furniture, equipment, luggage, research and traffic are singular and have no plural form.",
+            "How much goes with uncountable nouns; how many goes with countable plurals.",
+            "A piece of, an item of and a bit of make an uncountable noun countable, and the verb agrees with the unit.",
+            "Little, much and a lot of take a singular verb with uncountable nouns."
+          ],
+          "nextLessonID": "sva-l4"
+        }
+      ]
+    },
+    {
+      "id": "sva-l4",
+      "title": "Compound Subjects",
+      "summary": "Two subjects joined by and, or, nor, either or and not only but also.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "sva-l4-theory",
+          "type": "theory",
+          "heading": "Joining two subjects",
+          "body": "When two subjects are joined, the verb usually becomes plural, because it now covers more than one thing. The exceptions are concentrated in a small number of joining words, and those are exactly the cases tests love to ask about.",
+          "rules": [
+            {
+              "title": "and makes a plural",
+              "statement": "Two nouns joined by and normally take a plural verb. If the two are the same idea, such as tea and coffee, the verb can be singular.",
+              "formula": "A + and + B + plural verb",
+              "examples": [
+                {
+                  "id": "sva-l4-r1-e1",
+                  "en": "The keys and the wallet are on the table.",
+                  "vi": "Chìa khóa và ví đang trên bàn.",
+                  "note": "Two separate things, so the verb is are."
+                },
+                {
+                  "id": "sva-l4-r1-e2",
+                  "en": "Tea and coffee is my only weakness.",
+                  "vi": "Trà và cà phê là điểm yếu duy nhất của tôi.",
+                  "note": "Two names for one category, so a singular verb is natural."
+                }
+              ]
+            },
+            {
+              "title": "or, nor and either or",
+              "statement": "With or and nor, the verb normally agrees with the subject closest to it. This is the proximity rule, and it applies to either or and neither nor as well.",
+              "formula": "Either A or B + verb agreeing with B",
+              "examples": [
+                {
+                  "id": "sva-l4-r2-e1",
+                  "en": "The manager or his assistants are coming.",
+                  "vi": "Quản lý hoặc các trợ lý của ông ấy sẽ đến.",
+                  "note": "The nearer subject is plural, so are is expected."
+                },
+                {
+                  "id": "sva-l4-r2-e2",
+                  "en": "Neither the manager nor his assistants were informed.",
+                  "vi": "Không phải quản lý cũng không phải trợ lý của ông ấy được thông báo.",
+                  "note": "With neither nor the plural assistants pulls the verb to were."
+                }
+              ]
+            },
+            {
+              "title": "not only but also, both and, either and",
+              "statement": "These pairs join two subjects, so the verb is plural. The words only, both and either are not subjects on their own.",
+              "formula": "Not only A but also B + plural verb",
+              "examples": [
+                {
+                  "id": "sva-l4-r3-e1",
+                  "en": "Not only the students but also the teacher were surprised.",
+                  "vi": "Không chỉ học sinh mà cả giáo viên cũng ngạc nhiên.",
+                  "note": "Two subjects joined, so the plural were is used, even though the noun nearest the verb is singular."
+                },
+                {
+                  "id": "sva-l4-r3-e2",
+                  "en": "Both the answer and the explanation are on the last page.",
+                  "vi": "Cả câu trả lời lẫn phần giải thích đều ở trang cuối.",
+                  "note": "Both joins two subjects, so the verb is are."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l4-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l4-ex1",
+              "en": "The shop is open on Saturdays and Sundays.",
+              "vi": "Cửa hàng mở cửa vào các ngày thứ Bảy và Chủ nhật.",
+              "note": "Saturday and Sunday is one opening schedule, so the singular is also acceptable here."
+            },
+            {
+              "id": "sva-l4-ex2",
+              "en": "Her salary and her pension are both fixed until 2030.",
+              "vi": "Lương và lương hưu của cô ấy đều cố định đến năm 2030.",
+              "note": "Two separate sums, so the plural verb is correct."
+            },
+            {
+              "id": "sva-l4-ex3",
+              "en": "Either the shop or the market is closed on Sundays.",
+              "vi": "Hoặc cửa hàng hoặc chợ đều đóng vào Chủ nhật.",
+              "note": "The nearer subject is singular, so is is the expected form."
+            },
+            {
+              "id": "sva-l4-ex4",
+              "en": "The walls were painted and the windows were replaced.",
+              "vi": "Tường đã được sơn và cửa sổ đã được thay thế.",
+              "note": "Two separate clauses, so each verb agrees with its own subject."
+            }
+          ]
+        },
+        {
+          "id": "sva-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l4-e1",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "beginner",
+              "prompt": "The bread and the butter is on the table.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The bread and the butter are on the table."
+                ]
+              },
+              "explanation": "Bread and butter are two separate things, so the compound subject is plural and the verb is are. If they were always eaten together as one dish, singular would be possible, as in 'bread and butter is my usual breakfast'.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "Not only the players but also the coach ___ (be) unhappy with the result.",
+              "instruction": "Type the correct past simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "Not only but also joins two subjects, so the verb is plural: were. The singular noun closest to the verb, coach, is a trap here, because a joining pair of subjects always outranks proximity.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-e3",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Either the morning or the evening sessions are cancelled.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Either the morning or the evening session are cancelled.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Either the morning or the evening session is cancelled.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Either the morning nor the evening sessions is cancelled.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
+              "explanation": "With either or the verb follows the nearer subject, and both sessions (plural) and session (singular) are possible depending on what the writer means. Option b mixes the two, and option d turns the pair into neither nor, which changes the meaning to neither one at all.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-e4",
+              "kind": "sentenceCompletion",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "Complete: Neither the tickets nor the money ___ (be) lost.",
+              "instruction": "Type the correct past simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was"
+                ]
+              },
+              "explanation": "The nearer subject is money, which is uncountable and singular, so was is the expected form. Note that this is the proximity rule, and that the two nouns are not being treated as a plural pair, because the pair is neither nor rather than and.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-e5",
+              "kind": "trueFalse",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "In 'Not only the teacher but also the students ___ wrong', the verb should agree with 'students' because it is nearer.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Here the two rules happen to agree, because students is both plural and the nearest subject. The pair is treated as two subjects, so the verb is plural either way, which makes the sentence safe.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-e6",
+              "kind": "rearrangeWords",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "Build a correct sentence: 'the printer / and / the scanner / are / in the office'.",
+              "instruction": "Arrange the words into a correct sentence.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "The",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "printer",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "and",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "scanner",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "are",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "in",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t9",
+                  "text": "office",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "The",
+                    "printer",
+                    "and",
+                    "the",
+                    "scanner",
+                    "are",
+                    "in",
+                    "the",
+                    "office"
+                  ]
+                ]
+              },
+              "explanation": "Two singular nouns joined by and make a plural subject, so the verb is are. The prepositional phrase in the office comes last and does not affect agreement at all.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l4-dictation",
+          "type": "dictation",
+          "title": "Compound subjects",
+          "items": [
+            {
+              "id": "sva-l4-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The walls and the ceiling were painted last week."
+              },
+              "hint": "and makes the verb plural",
+              "translation": "Tường và trần nhà đã được sơn tuần trước.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l4-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Neither the coach nor the players agreed to the change."
+              },
+              "hint": "nor follows the nearer subject",
+              "translation": "Không huấn luyện viên cũng không cầu thủ nào đồng ý thay đổi.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l4-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Both her parents and her brother were at the ceremony."
+              },
+              "hint": "both joins two subjects",
+              "translation": "Cả bố mẹ lẫn anh trai cô ấy đều dự lễ.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l4-quiz",
+          "type": "quiz",
+          "title": "Compound subjects",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l4-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The pen and the paper are on the desk.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The pen and the paper is on the desk.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The pen and the paper are on the desk",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The pen and the paper have on the desk.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Two separate objects joined by and take a plural verb, are. Option d replaces the linking verb with a transitive verb and destroys the meaning.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "The director or one of his deputies ___ (be) attending the meeting.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "With or the verb follows the nearer subject, and one of his deputies is the closer one, so the singular is is expected. Some style guides prefer were in this construction, but is is the standard school answer.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-q3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "intermediate",
+              "prompt": "Both the answer and the explanation was on the last page.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Both the answer and the explanation were on the last page."
+                ]
+              },
+              "explanation": "Both joins two subjects, so the past simple must be were. The singular noun nearest the verb does not win here, because a joining pair always makes the subject plural.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l4-q4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l4",
+              "difficulty": "advanced",
+              "prompt": "Which sentence uses a singular verb correctly with a compound subject?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Rice and vegetables is a common dish here.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Rice and vegetables are cooked slowly.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Her bag and her keys is on the hook.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The stairs and the lift is out of order.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Rice and vegetables names one dish, one idea, so the singular is is. The other sentences name two separate things and therefore require are.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Two nouns joined by and take a plural verb, unless the pair names one idea or one unit.",
+            "With or and nor, the verb normally agrees with the subject closest to it.",
+            "Not only but also, both and, either and and neither nor always join two subjects, so the verb is plural.",
+            "When a verb phrase is split into two clauses, each verb agrees with its own subject: The walls were painted and the windows were replaced."
+          ],
+          "nextLessonID": "sva-l5"
+        }
+      ]
+    },
+    {
+      "id": "sva-l5",
+      "title": "Collective Nouns, There and It",
+      "summary": "Groups, openers that carry their own verb, and the other indefinite pronouns.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "sva-l5-theory",
+          "type": "theory",
+          "heading": "Groups, and sentences whose verb belongs to the opener",
+          "body": "A collective noun names a group, and English treats groups two different ways depending on whether you are thinking of the members or of the group as one body. Separately, sentences beginning with there and it look like they need no verb, but they do have one, and it is singular. The verb of a there-sentence is the word that follows there.",
+          "rules": [
+            {
+              "title": "Collective nouns: one group or many members",
+              "statement": "A group treated as a single unit takes a singular verb. A group treated as its individual members takes a plural verb. British English leans singular for most groups, American English leans plural for sports teams and similar organisations.",
+              "formula": "The team + is / are + one thing as a whole or its members",
+              "examples": [
+                {
+                  "id": "sva-l5-r1-e1",
+                  "en": "The committee has decided to postpone the meeting.",
+                  "vi": "Ủy ban đã quyết định hoãn cuộc họp.",
+                  "note": "The committee as a single decision-making body: has."
+                },
+                {
+                  "id": "sva-l5-r1-e2",
+                  "en": "The police are looking for witnesses.",
+                  "vi": "Cảnh sát đang tìm kiếm nhân chứng.",
+                  "note": "The police is a classic plural in British English because it means the individual officers."
+                }
+              ]
+            },
+            {
+              "title": "The other indefinite pronouns",
+              "statement": "Some, all, any, none, most, more and half are plural when they stand alone or with a countable plural noun, and singular with an uncountable noun. Few, a few and several take plural verbs.",
+              "formula": "Some of the books are.  /  Some of the water is.",
+              "examples": [
+                {
+                  "id": "sva-l5-r2-e1",
+                  "en": "Few of the applicants have the required experience.",
+                  "vi": "Rất ít ứng tuyển có kinh nghiệm cần thiết.",
+                  "note": "Few plus a countable plural, so the verb is have."
+                },
+                {
+                  "id": "sva-l5-r2-e2",
+                  "en": "All of the equipment is brand new.",
+                  "vi": "Toàn bộ thiết bị đều là mới hoàn toàn.",
+                  "note": "All of plus an uncountable noun, so the verb is is."
+                }
+              ]
+            },
+            {
+              "title": "There and it as openers",
+              "statement": "In a there-sentence the real subject comes after the verb, and the verb agrees with it. It-sentences about time, weather and distance take a singular verb, whatever the following phrase contains.",
+              "formula": "There is a problem.  /  There are two problems.  |  It is raining.",
+              "examples": [
+                {
+                  "id": "sva-l5-r3-e1",
+                  "en": "There is a book on the table.",
+                  "vi": "Trên bàn có một quyển sách.",
+                  "note": "There is not the subject; a book is, so the verb is is."
+                },
+                {
+                  "id": "sva-l5-r3-e2",
+                  "en": "It is twenty degrees outside.",
+                  "vi": "Bên ngoài hai mươi độ.",
+                  "note": "The temperature is one thing, so the verb is is, whatever follows."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l5-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l5-ex1",
+              "en": "The staff have been very helpful this week.",
+              "vi": "Nhân viên đã rất hỗ trợ trong tuần này.",
+              "note": "The staff treated as the individual people: have."
+            },
+            {
+              "id": "sva-l5-ex2",
+              "en": "There were two messages waiting for you.",
+              "vi": "Có hai tin nhắn đang chờ bạn.",
+              "note": "The real subject is two messages, so the verb is were."
+            },
+            {
+              "id": "sva-l5-ex3",
+              "en": "It took three hours to get to the airport.",
+              "vi": "Mất ba tiếng để đến sân bay.",
+              "note": "It is a dummy subject and the verb is singular, even though three hours is plural."
+            },
+            {
+              "id": "sva-l5-ex4",
+              "en": "Most of the tickets have already been sold.",
+              "vi": "Hầu hết vé đã được bán hết.",
+              "note": "Most of plus a countable plural takes a plural verb: have been sold."
+            }
+          ]
+        },
+        {
+          "id": "sva-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l5-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "beginner",
+              "prompt": "There ___ (be) no milk left in the fridge.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "In a there-sentence, the verb agrees with the real subject that follows it. Here the real subject is no milk, which is uncountable and singular, so the verb is is. There never agrees with anything.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-e2",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "There were three reasons for the delay.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "There was three reasons for the delay.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "There have been three reasons for the delay.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "There are three reason for the delay.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The real subject is three reasons, which is plural, so the past simple is were. Option c uses the present perfect with a finished past time, and option d breaks the plural of the noun.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-e3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "There is many people waiting outside the hall.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "There are many people waiting outside the hall."
+                ]
+              },
+              "explanation": "Many people is a plural real subject, so the verb must be are, not is. The trap is that beginners often make the verb agree with there instead of with what follows.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-e4",
+              "kind": "trueFalse",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "In 'It is five kilometres to the station', the verb is singular even though the distance contains a plural noun.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "It is a dummy subject describing one situation, so the verb is is. The plural noun inside the prepositional phrase has no influence on the verb.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-e5",
+              "kind": "multiSelect",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "Which subjects correctly take a plural verb?",
+              "instruction": "Select all that apply.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Few of the questions",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "All of the information",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Most of the applicants",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "One of the answers",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
+              "explanation": "Few and most of with a countable plural take a plural verb. All of the information is uncountable, so is, and one of is singular by definition: 'One of the answers is missing.'",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-e6",
+              "kind": "sentenceCompletion",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "Complete: The police said that they ___ (be) investigating the case.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "The police is treated as a plural group of officers in standard British English, so the verb is were. Inside reported speech the tense has also backed into the past.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l5-dictation",
+          "type": "dictation",
+          "title": "Groups, there and it",
+          "items": [
+            {
+              "id": "sva-l5-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "There were two broken windows on the ground floor."
+              },
+              "hint": "the real subject is plural",
+              "translation": "Có hai cửa sổ vỡ ở tầng trệt.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l5-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The committee has not reached a decision yet."
+              },
+              "hint": "a group as one body",
+              "translation": "Ủy ban chưa đưa ra được quyết định.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l5-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "It took two hours to reach the airport."
+              },
+              "hint": "dummy it, singular verb",
+              "translation": "Mất hai tiếng để đến sân bay.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l5-quiz",
+          "type": "quiz",
+          "title": "Collective nouns, there and it",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "There is a lot of traffic on this road today.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "There are a lot of traffic on this road today.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "There have a lot of traffic on this road today.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "There is many traffic on this road today.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Traffic is uncountable, so a lot of traffic takes a singular verb and there is. Many cannot modify an uncountable noun at all.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "The audience ___ (be) very enthusiastic about the new show.",
+              "instruction": "Type the correct past simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was"
+                ]
+              },
+              "explanation": "An audience watching one performance is treated as a single group, so the past simple is was. If the sentence focused on the individual reactions of the people, were would be used instead.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-q3",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "intermediate",
+              "prompt": "There is some chairs and some tables in the garden.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "There are some chairs and some tables in the garden."
+                ]
+              },
+              "explanation": "Some chairs and some tables is a plural real subject, so the verb is are. Some can never be followed by a singular noun, so the word some itself gives the number away here.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l5-q4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l5",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct in standard British English?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The police have not released any information.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The police has not released any information.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The police have not released any informations.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The police is not releasing no information.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The police is plural, so have, and information is uncountable, so no -s. Option d stacks two negatives, which changes the meaning completely.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Collective nouns follow your point of view: the group as one unit takes is, the members take are.",
+            "The police, staff, couple and family are the most commonly tested collective nouns.",
+            "In a there-sentence the verb agrees with the real subject that follows there, never with there itself.",
+            "It-sentences about time, weather and distance always take a singular verb."
+          ],
+          "nextLessonID": "sva-l6"
+        }
+      ]
+    },
+    {
+      "id": "sva-l6",
+      "title": "Distances, Amounts and Final Traps",
+      "summary": "Measurements, money, percentages, and the traps that catch experienced speakers.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "sva-l6-theory",
+          "type": "theory",
+          "heading": "When the number is the thing being measured",
+          "body": "A distance, a duration, a weight or a price is treated as one quantity, so the verb is singular. The plural noun that follows it is only a unit and does not change the agreement. This is different from a plural number of separate objects, which takes a plural verb.",
+          "rules": [
+            {
+              "title": "Distances, durations, weights and prices",
+              "statement": "The whole measurement is one thing, so the verb is singular, even when the number is greater than one.",
+              "formula": "Ten kilometres + is  |  Three hours + was",
+              "examples": [
+                {
+                  "id": "sva-l6-r1-e1",
+                  "en": "The journey is about fifty kilometres.",
+                  "vi": "Quãng đường dài khoảng năm mươi ki-lô-mét.",
+                  "note": "One distance, so is. Writing 'are fifty kilometres' is a very common error."
+                },
+                {
+                  "id": "sva-l6-r1-e2",
+                  "en": "The film is only ninety minutes long.",
+                  "vi": "Bộ phim chỉ dài chín mươi phút.",
+                  "note": "One length of time, so is, even though minutes is plural."
+                }
+              ]
+            },
+            {
+              "title": "Percentages and money",
+              "statement": "A percentage is singular. A price with a plural currency noun is also singular when it names one sum, but becomes plural when the sum is one item among several.",
+              "formula": "Ten percent + is  |  Ten dollars + is one price  |  Ten dollars + are several notes",
+              "examples": [
+                {
+                  "id": "sva-l6-r2-e1",
+                  "en": "Around forty percent of the students were absent.",
+                  "vi": "Khoảng bốn mươi phần trăm sinh viên vắng mặt.",
+                  "note": "The verb of the main clause is were, agreeing with students; the percentage phrase is only a modifier."
+                },
+                {
+                  "id": "sva-l6-r2-e2",
+                  "en": "The fee is two hundred dollars.",
+                  "vi": "Học phí là hai trăm đô la.",
+                  "note": "One price, so is. In a shop, 'these are twenty dollars' would describe separate coins and would take are."
+                }
+              ]
+            },
+            {
+              "title": "The traps that catch good speakers",
+              "statement": "A pair of, a series of, a number of and phrases like one of the plus a participle all have fixed agreement. So do data, criteria, media and phenomena, which are plural in form but take the verb their writer intends, usually plural.",
+              "formula": "A pair of shoes + is  |  The data show  |  One of the students is missing.",
+              "examples": [
+                {
+                  "id": "sva-l6-r3-e1",
+                  "en": "A pair of shoes was left on the step.",
+                  "vi": "Một đôi giày bị bỏ lại trên bậc cửa.",
+                  "note": "The unit is a pair, which is singular, so was. The plural shoes inside the of-phrase is irrelevant."
+                },
+                {
+                  "id": "sva-l6-r3-e2",
+                  "en": "The data show a clear pattern.",
+                  "vi": "Số liệu cho thấy một xu hướng rõ ràng.",
+                  "note": "In modern usage data takes a plural verb; datum is the singular form."
+                },
+                {
+                  "id": "sva-l6-r3-e3",
+                  "en": "One of the participants was absent without notice.",
+                  "vi": "Một trong số người tham gia đã vắng mặt mà không báo.",
+                  "note": "One of is singular: the verb agrees with one, not with participants."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sva-l6-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sva-l6-ex1",
+              "en": "The population is now over ten million.",
+              "vi": "Dân số hiện nay đã vượt quá mười triệu.",
+              "note": "A population is one total figure, so is, not are."
+            },
+            {
+              "id": "sva-l6-ex2",
+              "en": "Thirty degrees is too hot for a long walk.",
+              "vi": "Ba mươi độ quá nóng để đi bộ xa.",
+              "note": "One temperature, so is."
+            },
+            {
+              "id": "sva-l6-ex3",
+              "en": "The criteria for the scholarship are published on the website.",
+              "vi": "Tiêu chí học bổng được đăng trên trang web.",
+              "note": "Criteria is a plural noun and takes are, even though the singular criteria for looks odd."
+            },
+            {
+              "id": "sva-l6-ex4",
+              "en": "Two thirds of the class were absent on Monday.",
+              "vi": "Hai phần ba lớp học vắng mặt vào thứ Hai.",
+              "note": "The fraction modifies the real subject, the class, which is plural: were."
+            }
+          ]
+        },
+        {
+          "id": "sva-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sva-l6-e1",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "intermediate",
+              "prompt": "The distance between the two towns are about forty kilometres.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The distance between the two towns is about forty kilometres."
+                ]
+              },
+              "explanation": "The distance is one measurement, so the verb is is. The plural kilometres is only the unit that measures it, and a unit does not become the subject.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Twenty percent of the electricity ___ (be) used by air conditioning alone.",
+              "instruction": "Type the correct present simple form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "Twenty percent of the electricity names one uncountable quantity, so the verb is is. The trap is to use are because the percentage is greater than one.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-e3",
+              "kind": "matching",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Match each subject with the verb it takes.",
+              "instruction": "Join each subject with the correct verb form.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "A pair of shoes",
+                  "isCorrect": null,
+                  "matchKey": "is"
+                },
+                {
+                  "id": "b",
+                  "text": "The data",
+                  "isCorrect": null,
+                  "matchKey": "show"
+                },
+                {
+                  "id": "c",
+                  "text": "The series of lectures",
+                  "isCorrect": null,
+                  "matchKey": "is"
+                },
+                {
+                  "id": "d",
+                  "text": "The research findings",
+                  "isCorrect": null,
+                  "matchKey": "show"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "is",
+                  "b": "show",
+                  "c": "is",
+                  "d": "show"
+                }
+              },
+              "explanation": "A pair of shoes and a series of lectures are single units, so they take a singular verb. Data and findings are plural nouns in their own right and take a plural verb regardless of the nouns around them.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-e4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The conference lasted two full days.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The conference lasted two full day.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The conference were lasting two full days.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The conference have lasted two full day.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The duration is one period, so the verb is lasted, and two full days needs its plural unit noun. Option c uses a progressive form where a completed duration is required.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-e5",
+              "kind": "grammarCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "There are three kilometres between the station and the hotel, and the walk take around twenty minutes.",
+              "instruction": "Rewrite so that both clauses agree with their subjects.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "is",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "There are three kilometres between the station and the hotel, and the walk takes around twenty minutes."
+                ]
+              },
+              "explanation": "Two separate points are being tested. The there-sentence is already correct, because kilometres is the real subject. The main clause needs takes, because the subject is the singular noun the walk, not the twenty minutes that follows it.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-e6",
+              "kind": "multiSelect",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Which subjects take a singular verb?",
+              "instruction": "Select all that apply.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Twenty kilometres",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Three hours",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The criteria",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "A number of reasons",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b"
+                ]
+              },
+              "explanation": "Distances and durations are single measurements, so they take a singular verb. The criteria is plural in form, and a number of reasons is plural because of the noun reasons.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l6-dictation",
+          "type": "dictation",
+          "title": "Measurements and amounts",
+          "items": [
+            {
+              "id": "sva-l6-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The new motorway is sixty kilometres long."
+              },
+              "hint": "one length, so a singular verb",
+              "translation": "Đường cao tốc mới dài sáu mươi ki-lô-mét.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l6-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "A pair of gloves was left in the changing room."
+              },
+              "hint": "the unit is the pair, so was",
+              "translation": "Một đôi găng tay bị bỏ lại trong phòng thay đồ.",
+              "xp": 15
+            },
+            {
+              "id": "sva-l6-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "The survey took three months to complete."
+              },
+              "hint": "one duration, so a singular verb",
+              "translation": "Khảo sát mất ba tháng để hoàn thành.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sva-l6-quiz",
+          "type": "quiz",
+          "title": "Distances, amounts and traps",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sva-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The village has about five hundred residents.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The village have about five hundred residents.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The village are about five hundred residents.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The village is about five hundreds residents.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The village is one place and one population, so the verb is has and the noun is singular. The number five hundred modifies the residents; it does not turn the village into a plural subject.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Two of the machines were out of order, and the rest were working normally.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Two of the machines were out of order, and the rest were working normally."
+                ]
+              },
+              "explanation": "This sentence is already correct, and checking it is the point. Two of the machines is a plural subject, and the rest is also plural because rest stands for the remaining machines, so were is right in both clauses.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "A series of workshops ___ (be) being held every month this year.",
+              "instruction": "Type the correct present continuous auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is"
+                ]
+              },
+              "explanation": "A series is one connected set, so the auxiliary is is even though workshops is plural. The whole unit is being held, not the individual workshops.",
+              "xp": 10
+            },
+            {
+              "id": "sva-l6-q4",
+              "kind": "multipleChoice",
+              "topicID": "subject-verb-agreement",
+              "lessonID": "sva-l6",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The number of complaints has fallen sharply this year.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The number of complaints have fallen sharply this year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "A number of complaints has fallen sharply this year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The number of complaint has fallen sharply this year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The number of is a single quantity, so it takes the singular has, while the plural noun complaints sits inside the of-phrase. A number of would take have, and complaint would have to be uncountable.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sva-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "Distances, durations, weights and prices are single measurements and take singular verbs.",
+            "A percentage is singular, but the noun it modifies can still be plural: twenty percent of the students were late.",
+            "A pair of, a series of and a list of are singular units; the plural noun after of does not change that.",
+            "The number of is singular, a number of is plural, and this pair is the most tested distinction in the whole topic."
+          ]
+        }
+      ]
+    }
+  ]
+}

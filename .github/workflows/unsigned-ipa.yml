@@ -1,0 +1,120 @@
+name: Unsigned IPA
+
+# Produces an installable-but-unsigned .ipa. Installs via Sideloadly / AltStore
+# / TrollStore, which re-sign it with your own Apple ID. See docs/BUILD.md.
+on:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: Build configuration
+        type: choice
+        default: Release
+        options: [Release, Debug]
+  push:
+    tags: ["v*"]
+    branches: [main]
+
+concurrency:
+  group: unsigned-ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  XCODE_VERSION: "16.x"
+
+jobs:
+  build:
+    name: unsigned-ipa
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode ${{ env.XCODE_VERSION }}
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: ${{ env.XCODE_VERSION }}
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Cache SPM and DerivedData
+        uses: actions/cache@v4
+        with:
+          path: |
+            .build
+            ~/Library/Developer/Xcode/DerivedData
+          key: unsigned-ipa-${{ runner.os }}-${{ hashFiles('**/Package.resolved', 'project.yml') }}
+          restore-keys: |
+            unsigned-ipa-${{ runner.os }}-
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - name: Archive (unsigned)
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project EnglishLearning.xcodeproj \
+            -scheme EnglishLearning \
+            -configuration ${{ inputs.configuration || 'Release' }} \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/EnglishLearning.xcarchive \
+            -derivedDataPath .build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            SKIP_INSTALL=NO \
+            archive | tail -n 60
+
+      # The unsigned .app is left inside the archive:
+      #   build/EnglishLearning.xcarchive/Products/<Config>-iphoneos/EnglishLearning.app
+      - name: Package unsigned IPA
+        id: package
+        run: |
+          set -euo pipefail
+          CONFIG="${{ inputs.configuration || 'Release' }}"
+          APP="build/EnglishLearning.xcarchive/Products/${CONFIG}-iphoneos/EnglishLearning.app"
+          if [ ! -d "$APP" ]; then
+            APP=$(find build/EnglishLearning.xcarchive/Products -maxdepth 2 -name 'EnglishLearning.app' -print -quit)
+          fi
+          if [ -z "$APP" ] || [ ! -d "$APP" ]; then
+            echo "EnglishLearning.app not found in the archive" >&2
+            exit 1
+          fi
+          echo "Packaging: $APP"
+          rm -rf build/Payload
+          mkdir -p build/Payload
+          cp -R "$APP" build/Payload/
+          cd build
+          zip -qry EnglishLearning-unsigned.ipa Payload
+          cd ..
+          tar -czf build/EnglishLearning.xcarchive.tar.gz -C build EnglishLearning.xcarchive
+          ls -l build/EnglishLearning-unsigned.ipa
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: EnglishLearning-unsigned-ipa
+          path: build/EnglishLearning-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload xcarchive
+        uses: actions/upload-artifact@v4
+        with:
+          name: EnglishLearning-xcarchive
+          path: build/EnglishLearning.xcarchive.tar.gz
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/EnglishLearning-unsigned.ipa
+          draft: false
+          prerelease: ${{ contains(github.ref, '-rc') }}
+          generate_release_notes: true

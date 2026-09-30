@@ -1,0 +1,33 @@
+{
+  "id": "english-core",
+  "title": "English Learning",
+  "description": "A complete English course: alphabet and phonics, eighteen grammar topics from beginner to advanced, core vocabulary, dictation and listening practice, and four IELTS modules.",
+  "topicIDs": [
+    "alphabet",
+    "tenses",
+    "gerund-infinitive",
+    "modal-verbs",
+    "types-of-words",
+    "noun",
+    "verb",
+    "adjective",
+    "adverb",
+    "comparison",
+    "passive-voice",
+    "reported-speech",
+    "subject-verb-agreement",
+    "subjunctive",
+    "inversion",
+    "word-formation",
+    "collocations",
+    "clauses",
+    "types-of-condition"
+  ],
+  "vocabularyDeckID": "vocab-core",
+  "ieltsModuleIDs": [
+    "ielts-listening",
+    "ielts-reading",
+    "ielts-writing",
+    "ielts-speaking"
+  ]
+}

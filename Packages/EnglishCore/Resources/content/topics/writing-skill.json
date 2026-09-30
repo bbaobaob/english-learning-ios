@@ -1,0 +1,1006 @@
+{
+  "id": "writing-skill",
+  "title": "Writing Skill",
+  "kind": "writing",
+  "icon": "square.and.pencil",
+  "summary": "Control the sentence first, then the paragraph: fix the errors that mark you as a learner, use cohesion deliberately, and edit your own work against a checklist you can actually apply.",
+  "estimatedMinutes": 50,
+  "lessons": [
+    {
+      "id": "writing-skill-beginner",
+      "title": "Sentence Control: Tense, Articles and Agreement",
+      "summary": "Fix the four error families that account for most learner mistakes in a short piece of writing.",
+      "level": "beginner",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "wr-beg-theory",
+          "type": "theory",
+          "heading": "Why sentence control comes before style",
+          "body": "Beginner writing problems are almost never problems of style. They are problems of a rule not firing, usually because the writer is thinking about meaning while the grammar runs on autopilot. Four families cover most of them. Tense consistency: pick one tense per paragraph and hold it, and be especially careful that the present simple does not leak into a past narrative. Articles: English needs a, an or the before most singular countable nouns, and the decision has three steps — is it the first or second mention, is it specific to the listener, is it a whole class. Agreement: after he, she, it and every singular noun the verb takes -s, and after I, you, we, they and plural nouns it does not. Prepositions: a small set of verbs and phrases governs a fixed preposition, and the Vietnamese equivalent is a different word. The practical method at this level is not more reading about grammar; it is editing with a fixed order. Read your draft once for meaning, then once only for tense, once only for articles, then once for agreement. Separate passes beat a single careful read, because the eye supplies what you expected to see. What to notice: which error family you personally make most, and write a two-line rule for it. What to ignore: sentence variety and vocabulary elegance until the basics are automatic. A short paragraph with perfect tense control scores higher than a stylish paragraph with a shifting tense.",
+          "rules": [
+            {
+              "title": "One tense per paragraph, and the tense a time word forces",
+              "statement": "Do not move tenses for variety; move them for time. Every explicit time reference (yesterday, next week, since 2019) fixes the tense you must use.",
+              "examples": [
+                {
+                  "id": "wr-beg-r1-e1",
+                  "en": "Last year I cycle to work, and it saves money.",
+                  "vi": "Năm ngoái tôi đi xe đạp đi làm, và điều đó tiết kiệm tiền.",
+                  "note": "Both verbs need the past simple. 'Last year' is the time word, and it governs the whole sentence, not just the first verb."
+                },
+                {
+                  "id": "wr-beg-r1-e2",
+                  "en": "She has worked here since 2019.",
+                  "vi": "Cô ấy làm việc ở đây từ năm 2019.",
+                  "note": "'Since' with a point in time takes the present perfect, and the second verb has to match."
+                }
+              ]
+            },
+            {
+              "title": "Decide the article before you write the noun",
+              "statement": "Use a or an for a new, countable singular; the for anything the listener can identify; zero for a whole class or an uncountable noun. Applying this one test removes most article errors.",
+              "examples": [
+                {
+                  "id": "wr-beg-r2-e1",
+                  "en": "I bought a book. The book is about bees.",
+                  "vi": "Tôi mua một cuốn sách. Cuốn sách đó nói về ong.",
+                  "note": "First mention takes a, second mention takes the. The article follows the mention, not the word."
+                },
+                {
+                  "id": "wr-beg-r2-e2",
+                  "en": "I need some information about trains.",
+                  "vi": "Tôi cần một số thông tin về tàu hỏa.",
+                  "note": "Information is uncountable, so no article. In Vietnamese the noun is singular, which is why this is missed."
+                }
+              ]
+            },
+            {
+              "title": "The -s is the mark of a singular subject",
+              "statement": "After he, she, it and every one of a set, the verb takes -s in the present simple. After I, you, we, they and plural nouns it does not. This is a sound rule, not a grammar rule: the -s is heard.",
+              "examples": [
+                {
+                  "id": "wr-beg-r3-e1",
+                  "en": "My brother play tennis, but my friends play football.",
+                  "vi": "Anh tôi chơi quần vợt, nhưng bạn bè tôi chơi bóng đá.",
+                  "note": "Sibling nouns, opposite endings. Check the subject before the verb, never the other way round."
+                },
+                {
+                  "id": "wr-beg-r3-e2",
+                  "en": "Each student needs a dictionary.",
+                  "vi": "Mỗi học sinh cần một cuốn từ điển.",
+                  "note": "'Each', 'every', 'neither' and 'either' are singular, so the verb takes -s even in Vietnamese-explicit contexts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wr-beg-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "wr-beg-ex1",
+              "en": "Last year I cycled to work every day.",
+              "vi": "Năm ngoái tôi đi xe đạp đi làm mỗi ngày.",
+              "note": "'Last year' fixes the past simple for the whole clause. One time word, one tense."
+            },
+            {
+              "id": "wr-beg-ex2",
+              "en": "I bought a laptop. The laptop took two hours to set up.",
+              "vi": "Tôi mua một chiếc máy tính. Chiếc máy tính mất hai giờ để cài đặt.",
+              "note": "First mention: a. Second mention: the. 'Laptop' is countable, so the test applies."
+            },
+            {
+              "id": "wr-beg-ex3",
+              "en": "She works at night and sleeps during the day.",
+              "vi": "Cô ấy làm việc vào ban đêm và ngủ vào ban ngày.",
+              "note": "Third person singular takes -s; the second verb agrees with the same subject."
+            },
+            {
+              "id": "wr-beg-ex4",
+              "en": "I am interested in history, not science.",
+              "vi": "Tôi quan tâm đến lịch sử, không phải khoa học.",
+              "note": "'Interested in' and 'not' rather than 'but not'. A frequent preposition error."
+            },
+            {
+              "id": "wr-beg-ex5",
+              "en": "Each of the rooms has a window.",
+              "vi": "Mỗi phòng đều có một cửa sổ.",
+              "note": "Each is singular, so the verb takes -s. A rule that Vietnamese word order makes easy to miss."
+            }
+          ]
+        },
+        {
+          "id": "wr-beg-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "wr-beg-1",
+              "kind": "errorCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Last year my brother go to Japan and he stay there for two month.",
+              "instruction": "Rewrite the sentence correctly. Two verbs are in the wrong tense and one noun is in the wrong number.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Last year my brother went to Japan and he stayed there for two months."
+                ]
+              },
+              "explanation": "'Last year' is an explicit past time, so both coordinated verbs take the past simple — not just the first one. Learners often fix the first verb and leave the second in the present, which produces exactly this pattern. The noun error is separate: 'for two month' needs the plural, because the numeral is greater than one. Fix tense family first, then number, and check every verb after the conjunction as well as before it.",
+              "xp": 10
+            },
+            {
+              "id": "wr-beg-2",
+              "kind": "errorCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "She is interested about art and she want to study it at university.",
+              "instruction": "Rewrite the sentence correctly. One preposition and one verb form are wrong.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She is interested in art and she wants to study it at university.",
+                  "She is interested in art, and she wants to study it at university."
+                ]
+              },
+              "explanation": "The verb interest takes the preposition in, not about: interested in, worried about, good at. Note that the pattern is inconsistent in English on purpose, so it has to be memorised as a set of verb plus preposition pairs rather than reasoned out. The second error is subject-verb agreement: 'she' takes -s in the present simple. Find the subject in front of each verb before you check the ending.",
+              "xp": 10
+            },
+            {
+              "id": "wr-beg-3",
+              "kind": "grammarCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "I have a sister and a brother. My sister is doctor and my brother work in a bank.",
+              "instruction": "Rewrite the sentence correctly. The articles and one verb ending are wrong.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I have a sister and a brother. My sister is a doctor and my brother works in a bank.",
+                  "I have a sister and a brother. My sister is a doctor, and my brother works in a bank."
+                ]
+              },
+              "explanation": "'Is doctor' is missing an article because a doctor is a countable singular noun naming a profession, and the first mention needs 'a'. The second error is agreement: 'my brother' is singular, so the verb is 'works'. Ask two questions for any noun: is it countable, and has it been mentioned before? Asking them in that order gets both the article and the number right.",
+              "xp": 10
+            },
+            {
+              "id": "wr-beg-4",
+              "kind": "rearrangeWords",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Put the words in the order that makes the sentence correct.",
+              "instruction": "Check the subject and the verb ending before you commit to an order.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "Each",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "student",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "needs",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "a",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "dictionary",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["Each", "student", "needs", "a", "dictionary"]
+              },
+              "explanation": "The order is determiner, noun, verb, determiner, noun: Each student needs a dictionary. Two determiner-noun pairs are involved, and in English the determiner always precedes its noun. The verb 'needs' takes -s because 'each student' is singular, and the article 'a' appears because a dictionary is a countable singular noun in its first mention. Learners who write word-for-word from Vietnamese often place the number or the classifier after the noun; checking determiner-noun pairs in order catches that immediately.",
+              "xp": 10
+            },
+            {
+              "id": "wr-beg-5",
+              "kind": "sentenceCompletion",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Complete the sentence so that the article is correct and the second mention is clear.",
+              "instruction": "Add the missing article. Keep the rest of the sentence unchanged.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I went to a market. The market was very crowded.",
+                  "I went to the market. The market was very crowded."
+                ]
+              },
+              "explanation": "Both versions are correct English, and the difference is referential, not grammatical. With 'a market' the reader hears a new, unspecified place, and 'the market' in the second sentence identifies that same place for the first time. With 'the market' the place is already known from shared context, so the first sentence also takes 'the'. The rule: a first mention of a countable singular takes a or an unless the listener can already identify it, and every later mention takes the.",
+              "xp": 10
+            },
+            {
+              "id": "wr-beg-6",
+              "kind": "translation",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Write this sentence in English. Choose the tense the time word requires.",
+              "instruction": "Write the English sentence. Any natural wording is accepted.",
+              "translation": "Năm ngoái tôi bắt đầu đi làm từ xa.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Last year I started working from home.",
+                  "I started working from home last year.",
+                  "Last year, I started working remotely.",
+                  "Last year I began to work from home."
+                ]
+              },
+              "explanation": "'Năm ngoái' is a completed past period, so English requires the past simple, not the present simple and not a present continuous. The 'started' form also fixes what follows: once you choose the past simple for the first verb, a second coordinated verb in the same clause has to match. Check your version by asking one question: could 'last year' go in front of it without changing the meaning? If not, the tense is wrong.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "wr-beg-dictation",
+          "type": "dictation",
+          "title": "Write these sentences correctly",
+          "items": [
+            {
+              "id": "wr-beg-d1",
+              "audio": {
+                "id": "wr-beg-d1-audio",
+                "kind": "speech",
+                "text": "She has worked here since 2019.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "She's worked here since 2019."
+              ],
+              "hint": "'since' with a point in time takes the present perfect",
+              "translation": "Cô ấy làm việc ở đây từ năm 2019.",
+              "xp": 15
+            },
+            {
+              "id": "wr-beg-d2",
+              "audio": {
+                "id": "wr-beg-d2-audio",
+                "kind": "speech",
+                "text": "Each of the rooms has a window.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "Each one of the rooms has a window."
+              ],
+              "hint": "'each' is singular, so the verb takes -s",
+              "translation": "Mỗi phòng đều có một cửa sổ.",
+              "xp": 15
+            },
+            {
+              "id": "wr-beg-d3",
+              "audio": {
+                "id": "wr-beg-d3-audio",
+                "kind": "speech",
+                "text": "I need some information about the train times.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "I need some information on the train times."
+              ],
+              "hint": "uncountable nouns take no article",
+              "translation": "Tôi cần một số thông tin về giờ tàu.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "wr-beg-summary",
+          "type": "summary",
+          "takeaways": [
+            "Edit in separate passes: one read for meaning, then one each for tense, articles, agreement and prepositions. Separate passes catch what one careful read cannot.",
+            "A time word in the sentence fixes the tense for the whole clause, including verbs after a conjunction.",
+            "Article test, in order: is it countable and singular, has it been mentioned before, and can the listener already identify it?",
+            "Check the subject in front of every verb. He, she, it, each, every and singular nouns take -s; I, you, we, they and plurals do not.",
+            "Learn verb plus preposition as fixed pairs: interested in, worried about, good at, depend on, consist of.",
+            "Fix your most frequent error family first. One habit removed is worth more than five styles attempted."
+          ],
+          "nextLessonID": "writing-skill-intermediate"
+        }
+      ]
+    },
+    {
+      "id": "writing-skill-intermediate",
+      "title": "Cohesion, Paragraphs and Register",
+      "summary": "Join sentences so a reader can follow the argument, structure a paragraph, and match your language to the situation.",
+      "level": "intermediate",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "wr-int-theory",
+          "type": "theory",
+          "heading": "How sentences become paragraphs and paragraphs become writing",
+          "body": "Intermediate writing is judged on structure. A reader will forgive a small error in a well-organised paragraph and will not forgive a good paragraph in an order they cannot follow. Four ideas carry most of the weight. First, cohesion: every sentence after the first needs a signal that tells the reader how it attaches — adding, contrast, cause, example, or consequence. Readers do not reconstruct this automatically; if the signal is missing, they experience the text as a list. Second, paragraph structure: a paragraph is one idea plus its support. A useful test is the one-sentence test — if you cannot state each paragraph's point in one sentence, the paragraph is doing two jobs and should be split. Third, register: the same fact reads differently in a message to a friend, a reply to a teacher, and a report to a manager, and the difference is not politeness alone, it is vocabulary size, sentence length, and how much you assume. Fourth, accuracy under pressure: intermediate writing is where time pressure shows. The timed-task strategy that works is to reserve the last fifth of the time for a single read-through for the four error families from the previous lesson, and to write the topic sentence first. What to notice: what each connective does before you use it, and whether your first and last sentence of a paragraph point the same way. What to ignore: fancy vocabulary. A short word you use accurately beats a long word you use wrongly, in every exam and in every real email.",
+          "rules": [
+            {
+              "title": "Name the relationship, then pick the device",
+              "statement": "Before you choose a connector, decide what the two sentences do: add, contrast, cause, give an example, or show a result. The device follows the relationship, not the other way round.",
+              "examples": [
+                {
+                  "id": "wr-int-r1-e1",
+                  "en": "The train was delayed. However, we still arrived on time.",
+                  "vi": "Tàu bị hoãn. Tuy nhiên, chúng tôi vẫn đến đúng giờ.",
+                  "note": "Contrast. 'However' signals that the second sentence opposes the expectation created by the first."
+                },
+                {
+                  "id": "wr-int-r1-e2",
+                  "en": "The train was delayed. As a result, we missed the first half of the lecture.",
+                  "vi": "Tàu bị hoãn. Kết quả là, chúng tôi bỏ lỡ nửa đầu buổi giảng.",
+                  "note": "Consequence. The same two facts can be joined as cause or as result, depending on which you want to foreground."
+                }
+              ]
+            },
+            {
+              "title": "One paragraph, one idea, and a topic sentence",
+              "statement": "State the paragraph's point in the first sentence and keep every following sentence on that point. The one-sentence test is the check: if you cannot summarise the paragraph in a single sentence, split it.",
+              "examples": [
+                {
+                  "id": "wr-int-r2-e1",
+                  "en": "Remote work suits some people very well. Others find it isolating. The most effective teams are mixed, with some days in the office.",
+                  "vi": "Làm việc từ xa rất hợp với một số người. Số khác thấy cô đơn. Nhóm hiệu quả nhất là nhóm kết hợp, có một vài ngày ở văn phòng.",
+                  "note": "Two contrasting views plus a verdict. All three sentences serve one idea: how to arrange remote work."
+                },
+                {
+                  "id": "wr-int-r2-e2",
+                  "en": "Bad paragraph: I like tea. My cousin moved to Da Nang last year. Tea prices have risen sharply since 2022.",
+                  "vi": "Đoạn tệ: Tôi thích trà. Em tôi chuyển đến Đà Nẵng năm ngoái. Giá trà đã tăng mạnh kể từ 2022.",
+                  "note": "Three unrelated sentences with no topic sentence. Split it into three paragraphs or pick one idea."
+                }
+              ]
+            },
+            {
+              "title": "Register is a range, not a ladder",
+              "statement": "Choose register by asking how much you assume the reader knows and how much distance you want. Keep a stable register within one piece; mixing it reads as inconsistency.",
+              "examples": [
+                {
+                  "id": "wr-int-r3-e1",
+                  "en": "Could you send me the figures by Thursday? (neutral, work)",
+                  "vi": "Bạn có thể gửi cho tôi các số liệu trước thứ Năm không? (trung tính, công việc)",
+                  "note": "Direct but not demanding. 'By Thursday' is a clear deadline stated as a request."
+                },
+                {
+                  "id": "wr-int-r3-e2",
+                  "en": "Just get me those numbers, would you? (informal, familiar)",
+                  "vi": "Lấy giúp tôi mấy con số đó nhé? (thân mật)",
+                  "note": "Same request, closer relationship. The imperative is fine only where the informal register is appropriate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wr-int-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "wr-int-ex1",
+              "en": "However, the sample was too small to support that conclusion.",
+              "vi": "Tuy nhiên, mẫu quá nhỏ để chống lại kết luận đó.",
+              "note": "Contrast device. The connector goes at the start of the sentence, before a comma."
+            },
+            {
+              "id": "wr-int-ex2",
+              "en": "As a result, the deadline was moved by two weeks.",
+              "vi": "Kết quả là, thời hạn bị dời lại hai tuần.",
+              "note": "Result device. Use it when the second sentence is a consequence the reader should feel as inevitable."
+            },
+            {
+              "id": "wr-int-ex3",
+              "en": "For instance, three of the five participants finished early.",
+              "vi": "Ví dụ, ba trong số năm người tham gia đã hoàn thành sớm.",
+              "note": "Example device. The number makes the example carry evidence rather than decoration."
+            },
+            {
+              "id": "wr-int-ex4",
+              "en": "In short, the scheme works, but only where the staff have time to use it.",
+              "vi": "Nói ngắn gọn, kế hoạch này hiệu quả, nhưng chỉ ở nơi nhân viên có thời gian để dùng nó.",
+              "note": "Summarising device with a limit attached. A summary that drops the limit misrepresents the text."
+            },
+            {
+              "id": "wr-int-ex5",
+              "en": "It might be worth considering whether the deadline is realistic.",
+              "vi": "Có lẽ đáng để xem xét liệu thời hạn có thực tế không.",
+              "note": "Hedging device. Softens a proposal without weakening the point."
+            }
+          ]
+        },
+        {
+          "id": "wr-int-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "wr-int-1",
+              "kind": "matching",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Match each writing job to the cohesion device that does it.",
+              "instruction": "One device per job. Decide the relationship first, then pick the device.",
+              "items": [
+                {
+                  "id": "m1",
+                  "text": "adding a second point on the same line",
+                  "isCorrect": null,
+                  "matchKey": "also"
+                },
+                {
+                  "id": "m2",
+                  "text": "showing a result",
+                  "isCorrect": null,
+                  "matchKey": "result"
+                },
+                {
+                  "id": "m3",
+                  "text": "making a claim less certain",
+                  "isCorrect": null,
+                  "matchKey": "hedge"
+                },
+                {
+                  "id": "m4",
+                  "text": "condensing a paragraph into a verdict",
+                  "isCorrect": null,
+                  "matchKey": "summary"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "also",
+                  "m2": "result",
+                  "m3": "hedge",
+                  "m4": "summary"
+                }
+              },
+              "explanation": "Each job has a family of devices, and the reliable method is to name the relationship before you choose the word. Addition takes 'also', 'in addition', 'moreover'; result takes 'as a result', 'consequently', 'so'; hedging takes 'may', 'might', 'it could be argued that'; summarising takes 'in short', 'on balance', 'to sum up'. Two rules keep this from turning into a list to memorise: do not use the same device twice in a paragraph, and never pair a result device with a result device, which makes the causal link look stronger than you intended.",
+              "xp": 10
+            },
+            {
+              "id": "wr-int-2",
+              "kind": "grammarCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "The report was very long, so nobody read all of it. The writer argues that the problem is not length, is structure.",
+              "instruction": "Rewrite the second sentence so that it makes a contrast. The writer is not denying the length.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The writer argues that the problem is not length but structure.",
+                  "The writer argues that the problem is not length, but structure.",
+                  "The writer argues that the problem is not the length but the structure.",
+                  "The writer argues that the structure, not the length, is the problem."
+                ]
+              },
+              "explanation": "To negate one element and assert another in English you use 'not X but Y', not 'not X, is Y'. The fixed pattern matters because the two halves must be the same part of speech: not + noun, but + noun. A simpler alternative is to reverse the order and use 'rather than': 'the problem is structure rather than length'. Either version works, but pick one and use it consistently, because mixing the two is what produced the original error.",
+              "xp": 10
+            },
+            {
+              "id": "wr-int-3",
+              "kind": "wordFormation",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "The results were ___ (help) to nobody.",
+              "instruction": "Write the adjective that completes the sentence. Add the right prefix or suffix.",
+              "answer": {
+                "type": "text",
+                "values": ["helpful", "unhelpful"]
+              },
+              "explanation": "Two suffixes turn the noun help into adjectives: -ful gives 'helpful', meaning it does assist, and the negative prefix un- gives 'unhelpful'. Both fit the blank grammatically, so the context decides: 'to nobody' describes a result that assisted no one, which is 'unhelpful'. The general method is to identify the part of speech the blank needs first (here, after 'were' and before 'to nobody', so an adjective), then choose the affix. Getting the part of speech right does most of the work; the affix is the last step.",
+              "xp": 10
+            },
+            {
+              "id": "wr-int-4",
+              "kind": "sentenceCompletion",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Complete the sentence with a hedging device so the proposal sounds careful rather than blunt.",
+              "instruction": "Add a short phrase. Keep the rest of the sentence unchanged.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It might be worth reconsidering the deadline",
+                  "It may be worth reconsidering the deadline",
+                  "It could be worth reconsidering the deadline",
+                  "It may be worth reviewing the deadline",
+                  "It might be worth looking at the deadline again"
+                ]
+              },
+              "explanation": "Hedging is not vagueness; it is how a careful writer proposes something without dictating. 'Might be worth' is a double softener and suits a suggestion to a peer, while 'may be worth' is slightly more formal. Compare with 'You must reconsider the deadline', which converts a proposal into an order. The structural test: your hedged sentence should still be actionable — a reader should know what you want them to do, even though you are not ordering them.",
+              "xp": 10
+            },
+            {
+              "id": "wr-int-5",
+              "kind": "rearrangeWords",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Build a sentence in which the contrast falls at the end, where it lands hardest.",
+              "instruction": "Order the words so that the sentence ends on the concession.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "The scheme",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "is expensive,",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "but",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "it",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "works.",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["The", "scheme", "is expensive,", "but", "it", "works."]
+              },
+              "explanation": "A concession belongs at the end of an English sentence when it carries the real point. Here the expense is the expected objection and 'it works' is the verdict, so the sentence closes on the verdict. Putting 'but it works' first would produce a sentence that sounds like a complaint ending on a concession, which reverses the emphasis entirely. A useful general rule: put the information you want remembered in the final clause, because that is what the reader keeps.",
+              "xp": 10
+            },
+            {
+              "id": "wr-int-6",
+              "kind": "translation",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Write this in English as one cohesive sentence with a contrast.",
+              "instruction": "Write the English sentence. Any natural wording is accepted.",
+              "translation": "Kế hoạch này tốn kém, nhưng nó tiết kiệm thời gian về sau.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The plan is expensive, but it saves time later.",
+                  "This plan is expensive, however it saves time later.",
+                  "The scheme is costly, though it saves time in the long run.",
+                  "The plan is expensive, but it will save time later."
+                ]
+              },
+              "explanation": "Vietnamese 'nhưng' can start a new sentence or sit inside one; English lets it do both, using 'but' mid-sentence or 'however' after a full stop. Note that 'however' cannot be joined with a comma to a second clause in the same sentence, so if you choose it, put a full stop before it. Ending on the benefit rather than the cost gives the sentence the emphasis the Vietnamese order already had, and keeps the second clause as the information you want remembered.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "wr-int-dictation",
+          "type": "dictation",
+          "title": "Write these sentences with the right cohesion",
+          "items": [
+            {
+              "id": "wr-int-d1",
+              "audio": {
+                "id": "wr-int-d1-audio",
+                "kind": "speech",
+                "text": "However, the sample was too small to support that conclusion.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "However the sample was too small to support that conclusion."
+              ],
+              "hint": "'however' at the start of a sentence takes a comma",
+              "translation": "Tuy nhiên, mẫu quá nhỏ để chống lại kết luận đó.",
+              "xp": 15
+            },
+            {
+              "id": "wr-int-d2",
+              "audio": {
+                "id": "wr-int-d2-audio",
+                "kind": "speech",
+                "text": "In short, the scheme works, but only where the staff have time to use it.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "In short the scheme works, but only where the staff have time to use it."
+              ],
+              "hint": "a summarising phrase, then a concession with a limit",
+              "translation": "Nói ngắn gọn, kế hoạch này hiệu quả, nhưng chỉ ở nơi nhân viên có thời gian để dùng nó.",
+              "xp": 15
+            },
+            {
+              "id": "wr-int-d3",
+              "audio": {
+                "id": "wr-int-d3-audio",
+                "kind": "speech",
+                "text": "It might be worth considering whether the deadline is realistic.",
+                "rate": 0.48
+              },
+              "acceptedAnswers": [
+                "It might be worth considering if the deadline is realistic."
+              ],
+              "hint": "hedge, then an embedded whether-clause",
+              "translation": "Có lẽ đáng để xem xét liệu thời hạn có thực tế không.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "wr-int-summary",
+          "type": "summary",
+          "takeaways": [
+            "Name the relationship before you choose a connector: add, contrast, cause, example or result. The device follows the relationship.",
+            "One paragraph is one idea. Write a topic sentence, and apply the one-sentence test before you move on.",
+            "Put the information you want remembered in the final clause; that is what the reader keeps.",
+            "Hedging keeps a proposal actionable. A cautious sentence should still tell the reader what to do.",
+            "Register is a choice about how much you assume and how much distance you want, and it should stay consistent within one piece.",
+            "'Not X but Y' needs two parts of the same kind, usually nouns. 'Rather than' is the safe alternative when you are unsure."
+          ],
+          "nextLessonID": "writing-skill-advanced"
+        }
+      ]
+    },
+    {
+      "id": "writing-skill-advanced",
+      "title": "Editing, Proofreading and Timed Tasks",
+      "summary": "Apply a real proofreading checklist, protect your range under time pressure, and write a timed task in a deliberate order.",
+      "level": "advanced",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "wr-adv-theory",
+          "type": "theory",
+          "heading": "How to finish a piece of writing deliberately",
+          "body": "Advanced writing is defined by the last twenty per cent: the sentences that are individually correct but collectively weak. Four things separate a strong piece from a competent one. First, editing as a separate activity. While drafting you are generating content, and every attention spent on a comma is attention stolen from the argument. Proofreading is a different mode, entered deliberately after a break, and the checklist below is the tool for entering it. Second, range and accuracy. Advanced writing is judged partly on how wide your vocabulary is, and partly on whether you can control which words you use. The practical method is not to read a dictionary list but to note collocations as they appear in reading: 'draw a conclusion', 'meet a deadline', 'pose a risk'. Collocations are what a native reader hears as fluency, and they are cheap to acquire and expensive to guess. Third, argument structure at paragraph scale: a paragraph that presents evidence must also say what the evidence shows, and many pieces fail because the interpretation is missing. Fourth, timed-task strategy. In a timed task, the plan is: read the question twice and write the plan before the first sentence; write the topic sentence of each paragraph first if you can, so the paragraph is built around a decided point; keep a fixed vocabulary set and stay inside it rather than gambling on an unusual word you cannot use correctly; and reserve the final fifth of the time for a single proofreading pass, which is where most of the marks are still available. What to notice: your own recurring error in the proofreading pass, which is the item to add to your checklist. What to ignore: perfect word choice in a paragraph that does not answer the question.",
+          "rules": [
+            {
+              "title": "The proofreading checklist, in order",
+              "statement": "Run a fixed pass in a fixed order, because each pass looks for a different kind of error. The order below is deliberate: grammar before word choice, and coherence before grammar.",
+              "examples": [
+                {
+                  "id": "wr-adv-r1-e1",
+                  "en": "1. Task: does the text answer the question asked? 2. Structure: one idea per paragraph, topic sentence present? 3. Cohesion: does each sentence say how it attaches?",
+                  "vi": "1. Nhiệm vụ: văn bản có trả lời đúng câu hỏi không? 2. Cấu trúc: mỗi đoạn một ý, có câu chủ đề? 3. Mạch lạc: mỗi câu có nói rõ cách nó nối vào câu trước?",
+                  "note": "Do the reading-level passes first. Fixing a comma before you know the paragraph makes sense wastes the pass."
+                },
+                {
+                  "id": "wr-adv-r1-e2",
+                  "en": "4. Grammar: tense, articles, agreement, prepositions. 5. Word choice: is the word the most accurate one available? 6. Mechanics: spelling, punctuation, capital letters.",
+                  "vi": "4. Ngữ pháp: thì, mạo từ, chủ-vật, giới từ. 5. Từ vựng: từ đã dùng có chính xác nhất không? 6. Kỹ thuật: chính tả, dấu câu, chữ hoa.",
+                  "note": "Mechanics last, because a misspelt word in the wrong sentence cannot be corrected at the word level."
+                }
+              ]
+            },
+            {
+              "title": "Write the plan before the first sentence",
+              "statement": "In a timed task, the plan is not a summary of what you will write; it is a list of the points, in order, with one word for each. It stops paragraph drift and keeps your vocabulary on topic.",
+              "examples": [
+                {
+                  "id": "wr-adv-r2-e1",
+                  "en": "Plan: (1) reason for change; (2) example; (3) objection and answer; (4) recommendation.",
+                  "vi": "Kế hoạch: (1) lý do thay đổi; (2) ví dụ; (3) phản đối và trả lời; (4) khuyến nghị.",
+                  "note": "Four one-word entries buy you a coherent piece. The recommendation is the last move in almost every argumentative task."
+                },
+                {
+                  "id": "wr-adv-r2-e2",
+                  "en": "Topic sentences, written first: 'There are two reasons for the change.' 'The clearest example is ...' 'This does not, however, settle the question.'",
+                  "vi": "Câu chủ đề, viết trước: 'Có hai lý do cho thay đổi này.' 'Ví dụ rõ nhất là ...' 'Tuy nhiên, điều này không giải quyết được câu hỏi.'",
+                  "note": "Writing the topic sentences first turns a blank page into a sequence of fills, and the paragraph can no longer drift off its point."
+                }
+              ]
+            },
+            {
+              "title": "Accurate and narrow beats impressive and wrong",
+              "statement": "In a timed task, stay inside the vocabulary set you control. A precise mid-range word scores higher than an ambitious word used in the wrong sense, because the second signals a lack of control rather than a lack of vocabulary.",
+              "examples": [
+                {
+                  "id": "wr-adv-r3-e1",
+                  "en": "'The figures are inconsistent' rather than 'the figures are irrefutable' in a sentence that means the figures disagree.",
+                  "vi": "'Các số liệu không nhất quán' thay vì 'các số liệu không thể bác bỏ' trong câu có nghĩa là các số liệu mâu thuẫn.",
+                  "note": "Check the direction of the meaning before you use an impressive word. Irrefutable is the opposite of inconsistent."
+                },
+                {
+                  "id": "wr-adv-r3-e2",
+                  "en": "Collocation worth storing: 'draw a conclusion', 'meet a deadline', 'pose a risk', 'carry out a survey'.",
+                  "vi": "Cụm từ đáng ghi nhớ: 'rút ra kết luận', 'đáp ứng thời hạn', 'mang lại rủi ro', 'tiến hành khảo sát'.",
+                  "note": "Native fluency is heard in the verb plus noun pairs, not in single rare words. These four cover a large share of argumentative writing."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wr-adv-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "wr-adv-ex1",
+              "en": "In conclusion, the evidence supports the change, with two qualifications.",
+              "vi": "Kết luận, bằng chứng ủng hộ thay đổi, với hai điều kiện.",
+              "note": "A verdict plus its limits. Never drop the qualifications in the final sentence."
+            },
+            {
+              "id": "wr-adv-ex2",
+              "en": "This, admittedly, is a small sample.",
+              "vi": "Điều này, phải công nhận, là mẫu nhỏ.",
+              "note": "A concession placed where the reader meets the weakness, before you build on it."
+            },
+            {
+              "id": "wr-adv-ex3",
+              "en": "The survey drew a response from forty per cent of households.",
+              "vi": "Khảo sát nhận được phản hồi từ bốn mươi phần trăm hộ gia đình.",
+              "note": "Hedged data. 'Drew a response from' is more careful than 'covered'."
+            },
+            {
+              "id": "wr-adv-ex4",
+              "en": "Taken together, these three factors point in the same direction.",
+              "vi": "Nhìn chung, ba yếu tố này cùng chỉ một hướng.",
+              "note": "A synthesis device. Use it to close an evidence paragraph."
+            },
+            {
+              "id": "wr-adv-ex5",
+              "en": "On balance, the risks are smaller than the benefits.",
+              "vi": "Nhìn tổng thể, rủi ro nhỏ hơn lợi ích.",
+              "note": "A weighing device. The 'on balance' tells the reader you have compared, not simply preferred."
+            }
+          ]
+        },
+        {
+          "id": "wr-adv-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "wr-adv-1",
+              "kind": "errorCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "The survey was draw in March and the sample was to small for draw a firm conclusion.",
+              "instruction": "Rewrite the sentence correctly. Two passive verbs need restructuring and one number is wrong.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The survey was drawn up in March, and the sample was too small to draw a firm conclusion.",
+                  "The survey was carried out in March, and the sample was too small to draw a firm conclusion."
+                ]
+              },
+              "explanation": "Three errors, and they are the ones a proofreading pass catches fastest. First, the past participle is 'drawn', not 'draw', and the collocation is 'drawn up' or 'carried out' — a survey is not 'drawn'. Second, 'to small' should be 'too small': 'too' means excessively and is followed by an adjective. Third, 'for draw' should be 'to draw', because the infinitive after 'too ... to' is a fixed pattern. Read the sentence once for grammar rather than meaning and all three appear, which is the case for separate proofreading passes.",
+              "xp": 10
+            },
+            {
+              "id": "wr-adv-2",
+              "kind": "grammarCorrection",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "The data are inconsistent, and it is unlikely to be irrefutable.",
+              "instruction": "Rewrite the second clause so the conclusion follows from the first and the two references agree.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The data are inconsistent, and it is unlikely to be irrefutable.",
+                  "The data are inconsistent, so they are unlikely to be irrefutable.",
+                  "The data are inconsistent, and it is therefore unlikely that they are irrefutable.",
+                  "The data are inconsistent, which makes them unlikely to be irrefutable."
+                ]
+              },
+              "explanation": "Two problems hide in this sentence. 'The data' is plural in the established scientific convention, so the pronoun that refers back to it should be 'they', not 'it' — and the verb after 'it is' then has the wrong number. 'Irrefutable' also means impossible to refute, so the original meaning was close to the opposite of what a writer would want. Note that the first clause is correct and must be preserved: proofreading means correcting, not rewriting. Read the sentence twice — once for reference and number, once for meaning.",
+              "xp": 10
+            },
+            {
+              "id": "wr-adv-3",
+              "kind": "wordFormation",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "The committee reached a ___ (decide) on the proposal after three hours.",
+              "instruction": "Write the noun. Watch the required suffixes: one for the person, one for the thing.",
+              "answer": {
+                "type": "text",
+                "values": ["decision"]
+              },
+              "explanation": "The blank is after an article and before 'on the proposal', so it is a noun, and the sentence needs the thing rather than the act or the person. Decide becomes decision with the suffix -ion; the person would be a decision-maker, and the act is deciding or a decision-making process. The reliable method is to write the part of speech into the gap first and only then choose the suffix — most word-formation errors are part-of-speech errors wearing a suffix error's clothes. As a check, the noun should still make sense if you replace 'a' with 'the'.",
+              "xp": 10
+            },
+            {
+              "id": "wr-adv-4",
+              "kind": "matching",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Match each move in a paragraph to the device that performs it.",
+              "instruction": "One device per move. This is the structure of a single evidence paragraph.",
+              "items": [
+                {
+                  "id": "m1",
+                  "text": "telling the reader what the paragraph is about",
+                  "isCorrect": null,
+                  "matchKey": "topic"
+                },
+                {
+                  "id": "m2",
+                  "text": "admitting a weakness before it is raised",
+                  "isCorrect": null,
+                  "matchKey": "concession"
+                },
+                {
+                  "id": "m3",
+                  "text": "showing what the evidence adds up to",
+                  "isCorrect": null,
+                  "matchKey": "synthesis"
+                },
+                {
+                  "id": "m4",
+                  "text": "limiting the claim to what the evidence supports",
+                  "isCorrect": null,
+                  "matchKey": "qualification"
+                }
+              ],
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "topic",
+                  "m2": "concession",
+                  "m3": "synthesis",
+                  "m4": "qualification"
+                }
+              },
+              "explanation": "A strong evidence paragraph performs four moves in order, and knowing them is what stops a paragraph from being a list of quotations. The topic sentence fixes the point; the concession handles the obvious objection before a reader objects; the synthesis tells the reader what the evidence means, which is the move most often missing; and the qualification limits the claim. Test your own paragraphs by counting the moves: a paragraph with evidence and a topic sentence but no synthesis reads as an unexplained list of facts, however accurate the facts are.",
+              "xp": 10
+            },
+            {
+              "id": "wr-adv-5",
+              "kind": "multipleChoice",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "You have twenty minutes. What is the best use of the first three?",
+              "instruction": "Choose the option a strong candidate actually does first in a timed task.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Write the topic sentence of each paragraph.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Check the spelling of the question.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Draft the introduction in full.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The topic sentences are the plan, and writing them first fixes the order of your ideas before the clock runs out on an introduction you will rewrite. Option (b) is a proofreading activity and belongs in the final fifth of the time, when there is something to proofread. Option (c) is the classic trap: introductions written first tend to promise a structure you do not end up following. After the topic sentences, spend two minutes on vocabulary — list six or seven words you know you can use correctly, and stay inside that set for the rest of the task.",
+              "xp": 10
+            },
+            {
+              "id": "wr-adv-6",
+              "kind": "sentenceCompletion",
+              "topicID": "writing-skill",
+              "lessonID": "writing-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Complete the sentence so the final claim is limited by exactly what the evidence supports.",
+              "instruction": "Add the qualifying clause. Keep the rest of the sentence unchanged.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "In conclusion, the evidence supports the change, with two qualifications",
+                  "In conclusion, the evidence supports the change, subject to two qualifications",
+                  "In conclusion, the evidence supports the change, although two qualifications remain",
+                  "In conclusion, the evidence broadly supports the change, with two qualifications"
+                ]
+              },
+              "explanation": "A closing sentence carries the most weight, so a limit stated here protects the whole piece from overclaiming. Four devices do the job: 'with two qualifications' (lightest), 'subject to' (more formal and stronger), 'although two qualifications remain' (a concession that keeps the limit visible in the grammar), and 'broadly' plus the limit. Choose the one that matches how strong your evidence really is — a hedging device on a well-supported claim weakens it, and a bare assertion on a small sample overclaims. The check is whether a reader could quote your last sentence out of context without it misleading them.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "wr-adv-dictation",
+          "type": "dictation",
+          "title": "Model sentences to write from memory",
+          "items": [
+            {
+              "id": "wr-adv-d1",
+              "audio": {
+                "id": "wr-adv-d1-audio",
+                "kind": "speech",
+                "text": "Taken together, these three factors point in the same direction.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "Taken together, these three factors point in the same direction."
+              ],
+              "hint": "a synthesis phrase, then a collocation: point in the same direction",
+              "translation": "Nhìn chung, ba yếu tố này cùng chỉ một hướng.",
+              "xp": 15
+            },
+            {
+              "id": "wr-adv-d2",
+              "audio": {
+                "id": "wr-adv-d2-audio",
+                "kind": "speech",
+                "text": "In conclusion, the evidence supports the change, with two qualifications.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "In conclusion, the evidence supports the change, with two qualifications."
+              ],
+              "hint": "a verdict plus its limits — the limit is not optional",
+              "translation": "Kết luận, bằng chứng ủng hộ thay đổi, với hai điều kiện.",
+              "xp": 15
+            },
+            {
+              "id": "wr-adv-d3",
+              "audio": {
+                "id": "wr-adv-d3-audio",
+                "kind": "speech",
+                "text": "The survey drew a response from forty per cent of households.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "The survey drew responses from forty per cent of households."
+              ],
+              "hint": "careful data language: drew a response, not covered",
+              "translation": "Khảo sát nhận được phản hồi từ bốn mươi phần trăm hộ gia đình.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "wr-adv-summary",
+          "type": "summary",
+          "takeaways": [
+            "Proofread in a fixed order: does it answer the question, is the structure right, is it cohesive, is the grammar right, is the word choice accurate, are the mechanics clean.",
+            "Drafting and proofreading are different modes. Do not check commas while you are still deciding what the paragraph says.",
+            "In a timed task, write the topic sentences first, list the vocabulary you will use, and keep the final fifth of the time for one proofreading pass.",
+            "An evidence paragraph needs four moves: a topic, a concession, a synthesis of what the evidence shows, and a qualification. The synthesis is the one most often missing.",
+            "Stay inside the vocabulary you control. A precise mid-range word beats an ambitious word used in the wrong sense.",
+            "Store collocations, not rare words. 'Draw a conclusion', 'meet a deadline', 'pose a risk' is where native fluency is heard."
+          ]
+        }
+      ]
+    }
+  ]
+}

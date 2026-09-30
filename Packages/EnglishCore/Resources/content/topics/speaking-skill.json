@@ -1,0 +1,1070 @@
+{
+  "id": "speaking-skill",
+  "title": "Speaking Skill",
+  "kind": "speaking",
+  "icon": "waveform",
+  "summary": "Build a voice that is easy to follow: clear sounds, right word stress, natural sentence stress, and the hesitation repair that keeps a conversation alive when you lose your place.",
+  "estimatedMinutes": 45,
+  "lessons": [
+    {
+      "id": "speaking-skill-beginner",
+      "title": "Clear Sounds, Right Word Stress",
+      "summary": "Fix the sounds that change a word's identity and put the stress where a listener can find it.",
+      "level": "beginner",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "sp-beg-theory",
+          "type": "theory",
+          "heading": "What beginner pronunciation is actually made of",
+          "body": "At beginner level pronunciation is not about accent; it is about being decodable. Two things make a learner hard to follow: sounds that are substituted, and stress in the wrong place. Both are fixable with a small, concrete drill. The substitution set that causes the most damage is predictable: final consonants are dropped ('night' becomes 'nigh', 'cold' becomes 'col'), the 'th' sound becomes 's' or 'f' ('think' becomes 'sink', 'three' becomes 'free'), long and short vowels collapse ('ship' and 'sheep' merge), and word-final -ed gets swallowed entirely ('walked' becomes 'walk'). Each of these changes a word's identity or number, which is why listeners lose you. The second pillar is word stress: in a two-syllable word, English usually stresses the first syllable (PHOtograph, DEvelop) but sometimes the second (phoTOgraph, deVElop), and both versions are real words. The third is sentence stress: you cannot stress every word. Pick the word that carries the meaning and let the rest fall — that drop in volume is what makes a listener's job easy. Finally, fluency is not speed. A learner who speaks slowly with clear sentence stress is far easier to follow than a learner who rushes. Technique: record yourself, write down the sentence you meant to say, and compare. What to notice: whether the listener could write your sentence down from hearing it. What to ignore: your accent, and any 'sounds' of English you do not have — you can be completely intelligible without them.",
+          "rules": [
+            {
+              "title": "Keep the consonants that carry the meaning",
+              "statement": "Final consonants and the th sound are the first things to protect, because dropping them changes the word. Train the mouth position, not the spelling.",
+              "examples": [
+                {
+                  "id": "sp-beg-r1-e1",
+                  "en": "I think three things are wrong.",
+                  "vi": "Tôi nghĩ ba điều sai.",
+                  "note": "th in think and three, and the final consonants in thing and wrong. Say it slowly, then at speed — the three consonants must survive both."
+                },
+                {
+                  "id": "sp-beg-r1-e2",
+                  "en": "She asked for cold milk, not hot.",
+                  "vi": "Cô ấy xin sữa lạnh, không phải nóng.",
+                  "note": "The d in cold and the final t in hot change the words completely. Land the tongue on the ridge of the mouth for t."
+                }
+              ]
+            },
+            {
+              "title": "Stress the content word, drop the rest",
+              "statement": "One word per sentence carries the new information. Give that word a longer, louder, higher syllable and reduce the others. If everything is stressed, nothing is.",
+              "examples": [
+                {
+                  "id": "sp-beg-r2-e1",
+                  "en": "I need a PEN, not a pencil.",
+                  "vi": "Tôi cần một cây BÚT, không phải bút chì.",
+                  "note": "Four syllables, one peak. The contrast is made by the peak, not by speaking louder overall."
+                },
+                {
+                  "id": "sp-beg-r2-e2",
+                  "en": "We left on MONDAY, not Friday.",
+                  "vi": "Chúng tôi đi vào THỨ HAI, không phải thứ Sáu.",
+                  "note": "MONDAY carries the new information; 'we', 'left' and 'on' are given and can shrink."
+                }
+              ]
+            },
+            {
+              "title": "Say final -ed as a syllable when the grammar needs it",
+              "statement": "After t or d, -ed is a separate syllable: walked is 'walk-id', wanted is 'want-id'. After most other consonants it is a short t-like sound, and the syllable stays closed. Saying every -ed as 'id' is wrong, so check the letter before the ending.",
+              "examples": [
+                {
+                  "id": "sp-beg-r3-e1",
+                  "en": "We wanted to go, so we walked instead.",
+                  "vi": "Chúng tôi muốn đi, nên chúng tôi đi bộ.",
+                  "note": "wanted = want-id (d before ed), walked = walkt. Compare the two endings in one sentence and feel the difference."
+                },
+                {
+                  "id": "sp-beg-r3-e2",
+                  "en": "He asked, she answered.",
+                  "vi": "Anh ấy hỏi, cô ấy trả lời.",
+                  "note": "Both are two syllables: ask-ed, answer-ed. Saying just 'ask' and 'answer' is the classic error here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sp-beg-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sp-beg-ex1",
+              "en": "Could you repeat that, please?",
+              "vi": "Bạn có thể nói lại không?",
+              "note": "Model repair phrase. Say it clearly, then repeat it until it is automatic."
+            },
+            {
+              "id": "sp-beg-ex2",
+              "en": "I need three tickets for Saturday.",
+              "vi": "Tôi cần ba vé cho thứ Bảy.",
+              "note": "th, the final consonants in need and Saturday. Three places the mouth does real work."
+            },
+            {
+              "id": "sp-beg-ex3",
+              "en": "That's a problem, isn't it?",
+              "vi": "Đó là một vấn đề, phải không?",
+              "note": "The tag question falls in pitch — it asks, it does not state."
+            },
+            {
+              "id": "sp-beg-ex4",
+              "en": "Sorry, I was saying something else.",
+              "vi": "Xin lỗi, tôi đang nói cái khác.",
+              "note": "Naming the problem out loud is the fastest way to recover a conversation."
+            },
+            {
+              "id": "sp-beg-ex5",
+              "en": "Let me think for a second.",
+              "vi": "Để tôi nghĩ một chút.",
+              "note": "Buying thinking time openly is better than filling the gap with noise."
+            }
+          ]
+        },
+        {
+          "id": "sp-beg-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sp-beg-1",
+              "kind": "multipleChoice",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Say the sentence aloud both ways. Which version puts the stress where a listener expects it?",
+              "instruction": "Read the sentence aloud, listen to your own recording, and choose the version that carries the contrast.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I need a PEN, not a pencil.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I NEED a pen, not a pencil.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I need a pen, not a PENCIL.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The information structure of the sentence is 'I need X, not Y': the correction of what the listener assumed is new, so the peak belongs on the corrected item. Option (b) stresses the given subject instead, which wastes your loudest syllable and hides the contrast. Option (c) is the mirror image — it is the right pattern if you were correcting a different assumption, so context decides, not a fixed rule. The test that works: after you speak, could your partner write down exactly which object you meant? If yes, the stress is right.",
+              "xp": 10
+            },
+            {
+              "id": "sp-beg-2",
+              "kind": "rearrangeWords",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Put the words in the order a speaker would naturally say them.",
+              "instruction": "Build the sentence, then say it aloud once before you submit.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "three",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "need",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "tickets",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "for",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "Saturday",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["I", "need", "three", "tickets", "for", "Saturday"]
+              },
+              "explanation": "English order is subject, verb, then object, and the numeral sits between the verb and the noun: I need three tickets. Learners who translate word-for-word from Vietnamese sometimes push the number to the end, producing 'I need tickets three', which is not English. Say the finished sentence out loud as a check: if it sounds like a phrase you have heard in real English, the order is probably right.",
+              "xp": 10
+            },
+            {
+              "id": "sp-beg-3",
+              "kind": "sentenceCompletion",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "You did not hear your partner. Add the discourse marker that makes the repair sound natural.",
+              "instruction": "Complete the sentence with one or two words. A brief filler plus the question works best.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Sorry, could you say that again?",
+                  "Sorry, could you repeat that?",
+                  "Excuse me, could you say that again?",
+                  "Sorry, could you say it again, please?",
+                  "Pardon, could you say that again?"
+                ]
+              },
+              "explanation": "Natural repair has two parts: a softener that takes the edge off the interruption, then a short request. Just 'What?' is understood but sounds abrupt; a softener plus 'could you' is polite and equally efficient. Keep the request short — 'say that again' or 'repeat that' — because long apologies in the middle of a conversation stop the other person more than the interruption did.",
+              "xp": 10
+            },
+            {
+              "id": "sp-beg-4",
+              "kind": "errorCorrection",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "He asked three quetion about the plan.",
+              "instruction": "Rewrite the sentence correctly. The mistake is a spelling error in a word the listener will not understand.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He asked three questions about the plan.",
+                  "He asked three question about the plan."
+                ]
+              },
+              "explanation": "The error is a missing plural s: question becomes questions when it follows a numeral like 'three'. This is not a grammar mistake so much as a writing habit that leaks into speaking — when learners letter a text instead of speaking, the plural mark is often lost, and the ear then hears a count of three with a singular noun. Check every noun that follows a number, and every verb after he, she or it, before you consider the sentence finished.",
+              "xp": 10
+            },
+            {
+              "id": "sp-beg-5",
+              "kind": "translation",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-beginner",
+              "difficulty": "beginner",
+              "prompt": "Say this out loud, then type it. The sentence needs a final consonant and a clear stress.",
+              "instruction": "Write the English sentence. Any natural wording is accepted.",
+              "translation": "Tôi cần ba vé cho thứ Bảy.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I need three tickets for Saturday.",
+                  "I need three tickets for Saturday evening.",
+                  "I need three tickets for this Saturday."
+                ]
+              },
+              "explanation": "Three sounds in this sentence are commonly lost by Vietnamese learners: the th in three, the final d in need, and the final y in Saturday. Practise the mouth position, not the spelling — the tongue touches the teeth for th, and the final d requires closing the lips and touching the tongue ridge. When you type your answer, keep the finals; when you say it, rehearse the three landings in that order.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sp-beg-dictation",
+          "type": "dictation",
+          "title": "Speak it, then type it",
+          "items": [
+            {
+              "id": "sp-beg-d1",
+              "audio": {
+                "id": "sp-beg-d1-audio",
+                "kind": "speech",
+                "text": "Sorry, could you say that again, please?",
+                "rate": 0.42
+              },
+              "acceptedAnswers": [
+                "Sorry, could you repeat that, please?"
+              ],
+              "hint": "softener, then a short request, then please",
+              "translation": "Xin lỗi, bạn có thể nói lại không?",
+              "xp": 15
+            },
+            {
+              "id": "sp-beg-d2",
+              "audio": {
+                "id": "sp-beg-d2-audio",
+                "kind": "speech",
+                "text": "I think three things are wrong with the plan.",
+                "rate": 0.42
+              },
+              "acceptedAnswers": [
+                "I think there are three things wrong with the plan."
+              ],
+              "hint": "two th sounds, and stress on wrong",
+              "translation": "Tôi nghĩ có ba điều sai với kế hoạch này.",
+              "xp": 15
+            },
+            {
+              "id": "sp-beg-d3",
+              "audio": {
+                "id": "sp-beg-d3-audio",
+                "kind": "speech",
+                "text": "He asked, she answered, and nobody said a word.",
+                "rate": 0.42
+              },
+              "acceptedAnswers": [
+                "He asked, she answered and nobody said a word."
+              ],
+              "hint": "both verbs end in -ed after d, so both are two syllables",
+              "translation": "Anh ấy hỏi, cô ấy trả lời, và không ai nói gì.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sp-beg-summary",
+          "type": "summary",
+          "takeaways": [
+            "Protect the sounds that change a word's identity: final consonants, th, long versus short vowels, and -ed after t or d.",
+            "One stress peak per sentence, placed on the word that carries the new information; everything else can shrink.",
+            "Say every -ed after t or d as a separate syllable, and check every noun that follows a number for a plural s.",
+            "Fluency is not speed. A clear sentence with good stress is easier to follow than a fast, flat one.",
+            "Repair openly and briefly: a softener plus 'could you say that again' beats silence or a bare 'What?'",
+            "Test any sentence you speak by asking whether your partner could write down exactly what you meant."
+          ],
+          "nextLessonID": "speaking-skill-intermediate"
+        }
+      ]
+    },
+    {
+      "id": "speaking-skill-intermediate",
+      "title": "Linking, Intonation and Hesitation Repair",
+      "summary": "Sound like connected speech instead of careful single words, and recover from a blank moment without apologising for it.",
+      "level": "intermediate",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "sp-int-theory",
+          "type": "theory",
+          "heading": "How connected speech and calm repair work",
+          "body": "Intermediate pronunciation is about two things: joining, and staying in the conversation when you have nothing to say. Joining is where most 'I sound like a textbook' notes come from. English does not put a gap between every word. A word ending in a consonant links to the next word's vowel ('pick it up' becomes one flow), and a word ending in a vowel plus a glide links to a vowel ('go on' runs together). Function words also reduce: 'of' becomes /əv/, 'to' becomes /tə/, 'and' becomes /ən/. A learner who pronounces every word separately with a small pause sounds foreign even when every individual sound is correct, because the linking is doing the timing work. The second pillar is intonation, which is how English marks attitude. Falling intonation at the end of a statement sounds neutral; rising intonation turns a statement into a question or a check with the listener. Only changing the last part of the phrase, not the volume, is enough. Third is hesitation repair. Real speakers restart constantly: 'The meeting is, I mean, on Friday.' Good repair is fast, specific and forward-moving. Bad repair repeats the whole sentence, apologises twice, or goes silent. Technique: rehearse a small set of repair phrases as reflexes — 'sorry, what I meant was', 'let me start again', 'the word I'm looking for is', 'how do you say'. What to notice: whether your listener has to work. What to ignore: your pace at the start of an answer — three seconds of thinking before you speak reads as a much longer pause than it is.",
+          "rules": [
+            {
+              "title": "Link across word boundaries",
+              "statement": "Do not insert a gap between a word ending in a consonant and the next word beginning with a vowel. The final consonant glides straight into the vowel, and often the consonant itself becomes silent.",
+              "examples": [
+                {
+                  "id": "sp-int-r1-e1",
+                  "en": "Pick it up and put it away.",
+                  "vi": "Nhặt lên và cất đi.",
+                  "note": "pick-it-up is one flow. The k in pick is silent before the vowel in it."
+                },
+                {
+                  "id": "sp-int-r1-e2",
+                  "en": "Go on, then. I'll meet you at eight.",
+                  "vi": "Tiếp đi. Tôi sẽ gặp bạn lúc tám giờ.",
+                  "note": "'go on' and 'meet you' both link. The rhythm, not the pauses, is what makes this sound fluent."
+                }
+              ]
+            },
+            {
+              "title": "Rising intonation asks; falling intonation tells",
+              "statement": "Keep the first part of the phrase flat and move the pitch only on the last few words. Rising on a final statement invites the listener in; falling on a question makes it sound like a confirmation request.",
+              "examples": [
+                {
+                  "id": "sp-int-r2-e1",
+                  "en": "So the deadline is Friday? (rising: checking)",
+                  "vi": "Vậy hạn chót là thứ Sáu? (lên giọng: đang hỏi lại)",
+                  "note": "The same words mean different things with different pitch. Nothing else changes."
+                },
+                {
+                  "id": "sp-int-r2-e2",
+                  "en": "The deadline is Friday. (falling: telling)",
+                  "vi": "Hạn chót là thứ Sáu. (xuống giọng: đang khẳng định)",
+                  "note": "Falling on 'Friday' closes the topic. Rising keeps the floor open for the listener."
+                }
+              ]
+            },
+            {
+              "title": "Repair forward, not backward",
+              "statement": "When you lose your place, name the specific problem in a few words and continue from the nearest good point. Never restart the whole sentence and never apologise twice.",
+              "examples": [
+                {
+                  "id": "sp-int-r3-e1",
+                  "en": "The train is, sorry, the service is suspended.",
+                  "vi": "Tàu thì, xin lỗi, dịch vụ bị tạm dừng.",
+                  "note": "'Sorry' plus the restart: 0.5 seconds, and the listener is with you."
+                },
+                {
+                  "id": "sp-int-r3-e2",
+                  "en": "What I mean is that it's too expensive.",
+                  "vi": "Ý tôi là nó quá đắt.",
+                  "note": "'What I mean is' is a repair frame. It reframes instead of retracing, so no time is lost."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sp-int-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sp-int-ex1",
+              "en": "Sorry, what I meant was the later train.",
+              "vi": "Xin lỗi, ý tôi là chuyến tàu muộn hơn.",
+              "note": "The core repair frame. Keep it as a single reflex."
+            },
+            {
+              "id": "sp-int-ex2",
+              "en": "Let me put that another way.",
+              "vi": "Để tôi nói lại theo cách khác.",
+              "note": "Signals that the content was right but the wording failed."
+            },
+            {
+              "id": "sp-int-ex3",
+              "en": "How do you say that in English?",
+              "vi": "Từ đó trong tiếng Anh nói là gì?",
+              "note": "A legitimate question, not an admission of failure. Use it when the word is genuinely blocking you."
+            },
+            {
+              "id": "sp-int-ex4",
+              "en": "Well, that's interesting.",
+              "vi": "À, điều đó thú vị đấy.",
+              "note": "A thinking filler. It buys time and sounds thoughtful, not empty."
+            },
+            {
+              "id": "sp-int-ex5",
+              "en": "Give me a second, the name's gone blank.",
+              "vi": "Đợi tôi một chút, cái tên nó mất rồi.",
+              "note": "Humor buys forgiveness. A light self-repair keeps the conversation warm."
+            }
+          ]
+        },
+        {
+          "id": "sp-int-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sp-int-1",
+              "kind": "listening",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Listen to the model sentence, then judge your own attempt.",
+              "instruction": "Play the audio, record yourself saying the same words, and choose the version your stress is closest to.",
+              "audio": {
+                "id": "sp-int-1-audio",
+                "kind": "speech",
+                "text": "I told her the meeting was on FRIDAY, not Thursday.",
+                "rate": 0.45
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I TOLD her the MEETING was on Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I told her the meeting was on FRIDAY, not Thursday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I told her the meeting was on Friday, not THURSDAY.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "The sentence corrects a wrong assumption, and the correction is the new information, so the peak goes on Friday. Option (a) stresses the givens and leaves the real information flat, so the listener cannot tell what you are correcting. Option (c) is the mirror pattern and would be right in a different context. Judge with a test rather than an impression: after you speak, ask your partner which day you said. If they hesitate, your peak is in the wrong place.",
+              "xp": 10
+            },
+            {
+              "id": "sp-int-2",
+              "kind": "multipleChoice",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Which version sounds like connected English rather than a list of separate words?",
+              "instruction": "Say each version aloud. Choose the one a native speaker would use in conversation.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Pick it up and put it in the box.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Pick it up, and put it in the box.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Pick it up and put it in the other box over there.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "English joins consonant-final to vowel-initial: 'pick it' and 'put it' each become a single flow with a silent k and a silent t at the joins. Option (b) breaks those joins with a pause, which is how careful word-by-word speech sounds to a native ear. Option (c) is a real, natural sentence but it adds information the exercise did not give you, so it is not the target here. Practise linking by saying the sentence without any pause at all, then open your eyes and notice you could not say where the words started.",
+              "xp": 10
+            },
+            {
+              "id": "sp-int-3",
+              "kind": "sentenceCompletion",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "You started the sentence and lost it. Add the repair frame that keeps you moving.",
+              "instruction": "Complete the sentence so that it sounds like a speaker correcting themselves, not restarting.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "sorry, what I meant was the earlier train",
+                  "sorry, what I meant was the train earlier",
+                  "sorry, I meant the earlier train",
+                  "sorry, I meant the train earlier"
+                ]
+              },
+              "explanation": "A repair frame has three jobs in order: acknowledge with 'sorry', name the shift with 'what I meant was', then deliver the new version. Keeping all three means the listener always knows where you are — the middle phrase is what stops them from assuming you have abandoned the topic. Do not re-run the whole original sentence; every word you retread is a second the listener has to spend. Say the completed frame aloud at natural speed: if it takes longer than a second, it is too long.",
+              "xp": 10
+            },
+            {
+              "id": "sp-int-4",
+              "kind": "errorCorrection",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "He gave to me his phone number and I can call to him tomorrow.",
+              "instruction": "Rewrite the sentence with natural word order. There are two errors.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He gave me his phone number and I can call him tomorrow.",
+                  "He gave me his phone number and I can call to him tomorrow."
+                ]
+              },
+              "explanation": "Two preposition errors, and both come from keeping the Vietnamese pattern. 'Give someone something' is not 'give to someone something', so 'to' must go. And a few verbs like call, visit, answer, mention and arrive are followed directly by the object: 'call him', not 'call to him'. A useful test is to ask whether the verb is one of the common two-part verbs (look after, listen to, wait for) — if not, the direct object usually follows with no preposition at all.",
+              "xp": 10
+            },
+            {
+              "id": "sp-int-5",
+              "kind": "rearrangeWords",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Build the sentence in the order that sounds like natural spoken English.",
+              "instruction": "Put the words in order, then say the whole thing aloud in one breath.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "at",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "half",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "The",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "meeting",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "is",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "past",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["The", "meeting", "is", "past", "half", "at"]
+              },
+              "explanation": "The information order is: topic first, verb, then the new time information at the end, where the pitch rise can carry the emphasis. 'Half at' is a fixed pair that must stay together, and it belongs after 'past' because past already takes the phrase as its object. Say it in one breath with the stress on PAST — the ending is a statement, so the pitch falls on 'half at' rather than rising.",
+              "xp": 10
+            },
+            {
+              "id": "sp-int-6",
+              "kind": "translation",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-intermediate",
+              "difficulty": "intermediate",
+              "prompt": "Say this out loud, then type it. The English is softer and shorter than the Vietnamese.",
+              "instruction": "Write the English sentence. Say it aloud before you submit.",
+              "translation": "Tôi nghĩ có lẽ chúng ta nên rời đi sớm hơn.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I suppose we should probably leave earlier.",
+                  "I think we should probably leave earlier.",
+                  "I guess we should probably leave earlier.",
+                  "I suppose we ought to leave a bit earlier.",
+                  "I think we'd better leave earlier."
+                ]
+              },
+              "explanation": "The Vietnamese stacks three softeners — 'có lẽ', 'chúng ta nên', 'sớm hơn' — and English needs a different distribution of them. Use one verb of tentativeness (suppose, think, guess) plus one softener (probably, a bit, better) and you get a natural sentence; stacking all three in English sounds over-hedged. Also note that 'we should' is already softer than the Vietnamese tone suggests, so you do not need as much padding as you think.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sp-int-dictation",
+          "type": "dictation",
+          "title": "Model sentences to speak and type",
+          "items": [
+            {
+              "id": "sp-int-d1",
+              "audio": {
+                "id": "sp-int-d1-audio",
+                "kind": "speech",
+                "text": "Sorry, what I meant was the later train.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "Sorry, what I meant was the train later."
+              ],
+              "hint": "frame, then the correction — never the whole sentence again",
+              "translation": "Xin lỗi, ý tôi là chuyến tàu muộn hơn.",
+              "xp": 15
+            },
+            {
+              "id": "sp-int-d2",
+              "audio": {
+                "id": "sp-int-d2-audio",
+                "kind": "speech",
+                "text": "Pick it up and put it away before anyone sees it.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "Pick it up and put it away before anyone sees it."
+              ],
+              "hint": "four silent consonants at the word joins",
+              "translation": "Nhặt lên và cất đi trước khi ai nhìn thấy.",
+              "xp": 15
+            },
+            {
+              "id": "sp-int-d3",
+              "audio": {
+                "id": "sp-int-d3-audio",
+                "kind": "speech",
+                "text": "The deadline is Friday, not Thursday, if that helps.",
+                "rate": 0.45
+              },
+              "acceptedAnswers": [
+                "The deadline is Friday, not Thursday, if that would help."
+              ],
+              "hint": "the peak is on the corrected day, not on the last word",
+              "translation": "Hạn chót là thứ Sáu, không phải thứ Năm, nếu điều đó có ích.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sp-int-summary",
+          "type": "summary",
+          "takeaways": [
+            "Join consonant-final to vowel-initial words and let the final consonant go silent; separate word-by-word speech is the clearest sign of a non-native rhythm.",
+            "Use falling intonation to state and rising intonation to check, and move the pitch only on the last few words.",
+            "Keep four repair frames as reflexes: 'sorry, what I meant was', 'let me start again', 'how do you say', 'give me a second'.",
+            "Repair forward: acknowledge, name the shift, deliver the new version. Never retread the whole sentence or apologise twice.",
+            "Check the two-part verb list: look after, listen to, wait for, agree with. Everything else usually takes its object directly.",
+            "Three seconds of silence at the start of an answer feels far longer to your listener than it feels to you."
+          ],
+          "nextLessonID": "speaking-skill-advanced"
+        }
+      ]
+    },
+    {
+      "id": "speaking-skill-advanced",
+      "title": "Range, Accuracy and Confusable Pairs",
+      "summary": "Speak at professional speed with deliberate control of confusable sounds, and handle the pairs learners get wrong most often.",
+      "level": "advanced",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "sp-adv-theory",
+          "type": "theory",
+          "heading": "Precision, rhythm control, and the pairs that undo you",
+          "body": "Advanced speaking is judged on range and control, not on absence of mistakes. Two things separate a confident speaker from an accurate one. First, rhythm: at this level you manage sentence stress deliberately rather than falling into a pitch that makes every clause sound equally important. Meaning in English is carried by intonation, so a flat pitch on a multi-clause sentence makes the listener guess which clause the rest of it belongs to. Practice is to mark your clauses in advance and give the terminal clause its own falling contour, letting the earlier clauses rise. Second, confusable pairs. These are the words and sounds where an error is not just awkward but produces a different word: ship/sheep, full/fool, think/sink, walk/work, beat/bite, and the far more dangerous list of lexical confusables — economical/economic, historic/historical, alternate (two meanings), comprise/comprise, continual/continuous, farther/further, loan/lend, and the classic affect/effect. A learner who says 'sheep' for 'ship' will be misunderstood, not just judged. Method for a confusable pair: never learn the two words separately, learn them as a pair with a minimal sentence each, and drill the contrast until you can produce both on demand. Range means giving yourself a choice of several ways to say one thing — the formal and informal register, the direct and the softened version, the shorter and the fuller clause — and picking deliberately. Also at this level: repair with sophistication. A smooth speaker does not restart; they substitute ('Friday — sorry, Thursday — is the deadline'), or they build a placeholder and come back to it ('the, uh, second point, actually'). What to notice: whether your listener can act on your message. What to ignore: your own accent. It is not an error, and pursuing it costs you the things on this page.",
+          "rules": [
+            {
+              "title": "Learn confusables as pairs, never alone",
+              "statement": "A word that differs from another by one sound or one suffix cannot be practised on its own. Practise the contrast in a minimal pair so your ear and your mouth know which one you are producing.",
+              "examples": [
+                {
+                  "id": "sp-adv-r1-e1",
+                  "en": "The ship left; the sheep stayed.",
+                  "vi": "Con tàu đi; con cừu ở lại.",
+                  "note": "One sound, two completely different meanings. Say both slowly, then at speed, alternating."
+                },
+                {
+                  "id": "sp-adv-r1-e2",
+                  "en": "It was an historic day, though the film was only historical.",
+                  "vi": "Đó là một ngày lịch sử, dù bộ phim chỉ mang tính lịch sử.",
+                  "note": "Historic = important in history. Historical = relating to the past. One suffix, two ideas."
+                }
+              ]
+            },
+            {
+              "title": "Give each clause its own contour",
+              "statement": "When a sentence has more than one clause, the terminal clause carries the main point. Let the earlier clauses rise and land the last one on a fall, or the listener cannot tell what you are asserting.",
+              "examples": [
+                {
+                  "id": "sp-adv-r2-e1",
+                  "en": "We've finished the analysis, which means we can present on Friday.",
+                  "vi": "Chúng tôi đã xong phân tích, nghĩa là có thể trình bày vào thứ Sáu.",
+                  "note": "Rise on 'which means we can present', fall on 'on Friday'. The fall lands the information."
+                },
+                {
+                  "id": "sp-adv-r2-e2",
+                  "en": "It's ambitious, it's risky, and it's still the right thing to do.",
+                  "vi": "Nó tham vọng, nó rủi ro, và vẫn là điều đúng để làm.",
+                  "note": "Two rises and one fall: the final clause is the assertion. Keeping it level would lose it."
+                }
+              ]
+            },
+            {
+              "title": "Substitute, don't restart",
+              "statement": "At this level a correction is one word, not one sentence. Swap the wrong word for the right one inside the sentence you are already saying, and carry on.",
+              "examples": [
+                {
+                  "id": "sp-adv-r3-e1",
+                  "en": "The launch is on the thirty-first — sorry, the first of May.",
+                  "vi": "Ra mắt là ngày ba mươi mốt — à, ngày một tháng Năm.",
+                  "note": "One word substituted, half a second, no loss of momentum."
+                },
+                {
+                  "id": "sp-adv-r3-e2",
+                  "en": "It was an important, an historic, decision.",
+                  "vi": "Đó là một quyết định quan trọng, mang tính lịch sử.",
+                  "note": "Even a slip inside a word gets repaired in place. This is what fluent sounding actually is."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sp-adv-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sp-adv-ex1",
+              "en": "To be clear, I support the plan but not the timeline.",
+              "vi": "Nói rõ, tôi ủng hộ kế hoạch nhưng không ủng hộ tiến độ.",
+              "note": "Range: a one-sentence contrast instead of two sentences. The fall lands on 'not the timeline'."
+            },
+            {
+              "id": "sp-adv-ex2",
+              "en": "We're a bit behind, which is why the second phase may slip.",
+              "vi": "Chúng tôi hơi chậm, đó là lý do giai đoạn hai có thể bị trễ.",
+              "note": "A formal register marker: 'which is why' in place of 'so'."
+            },
+            {
+              "id": "sp-adv-ex3",
+              "en": "The loan's approved; I still need you to lend me the paperwork.",
+              "vi": "Khoản vay đã được duyệt; tôi vẫn cần bạn đưa tôi hồ sơ.",
+              "note": "Loan is what a bank gives you. Lend is what you do. A classic and audible confusion."
+            },
+            {
+              "id": "sp-adv-ex4",
+              "en": "The effect was measurable, the cause was not.",
+              "vi": "Tác động thì đo được, nguyên nhân thì không.",
+              "note": "Effect is the result; affect is the verb. Say both, then use each once."
+            },
+            {
+              "id": "sp-adv-ex5",
+              "en": "Let's park that and come back to it after lunch.",
+              "vi": "Tạm gác chuyện đó, ta quay lại sau bữa trưa.",
+              "note": "A 'placeholder' move: park a topic instead of dropping it, then return explicitly."
+            }
+          ]
+        },
+        {
+          "id": "sp-adv-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sp-adv-1",
+              "kind": "multipleChoice",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Say the sentence aloud both ways. Which intonation pattern makes the point?",
+              "instruction": "Listen to the difference, then choose the pattern that tells the listener where your main point lands.",
+              "audio": {
+                "id": "sp-adv-1-audio",
+                "kind": "speech",
+                "text": "We've finished the analysis, which means we can present on Friday.",
+                "rate": 0.5
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Rise on the first clause, fall on the last — the emphasis lands on Friday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Fall on the first clause, rise on the last — the listener is invited to respond.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Keep both clauses level and speak louder throughout.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["a"]
+              },
+              "explanation": "The second clause is the point of the sentence, and English marks the end of a complete thought with a falling contour. Option (b) is a real pattern, but it converts the statement into a check, which changes the meaning — a speaker using it is asking whether Friday works rather than announcing it. Option (c) is the most common advanced-level error: volume cannot replace pitch movement, and a level tone on two clauses leaves the listener guessing which part is asserted. Record yourself and check whether the last word drops.",
+              "xp": 10
+            },
+            {
+              "id": "sp-adv-2",
+              "kind": "errorCorrection",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "The economical report showed a steady affect on the housing market.",
+              "instruction": "Rewrite the sentence so that the intended words are used. Both words are wrong for the intended meaning.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The economic report showed a steady effect on the housing market.",
+                  "The economic report showed a steady effect on the housing market."
+                ]
+              },
+              "explanation": "Two classic confusables. 'Economical' means thrifty — it describes spending, not a report; 'economic' means relating to the economy, which is what the report is. 'Affect' is the verb 'to influence'; 'effect' is the noun 'the result'. Ask two questions for any confusable pair: what part of speech do I need here, and what is the real dictionary definition, not the sound-alike. Drilling the pair in one minimal sentence — 'an economic report', 'a steady effect' — is the only way it stays straight under pressure.",
+              "xp": 10
+            },
+            {
+              "id": "sp-adv-3",
+              "kind": "errorCorrection",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "I can see you're working, but I need you to lent me your notes for a minute.",
+              "instruction": "Rewrite the sentence with the right verb form. One word is used for the wrong action.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I can see you're working, but I need you to lend me your notes for a minute.",
+                  "I can see you are working, but I need you to lend me your notes for a minute."
+                ]
+              },
+              "explanation": "Two points, both about the same verb. First, 'lend' is not a past tense: past is 'lent', and 'lent' is past only, never 'lented'. Second, 'lend' needs a double object — lend someone something — so 'lend me your notes', never 'lend your notes to me' in this pattern. The pairing that fixes it: the bank loans you money, a friend lends you money. Learn that one sentence and the verb distinction never has to be thought about again.",
+              "xp": 10
+            },
+            {
+              "id": "sp-adv-4",
+              "kind": "sentenceCompletion",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Add the discourse marker that lets you set an idea aside and return to it later.",
+              "instruction": "Complete the sentence naturally. Keep it to a short phrase.",
+              "answer": {
+                "type": "text",
+                "values": [
+                  "let's park that and come back to it",
+                  "let's park that for now and come back to it",
+                  "let's park that and come back to it after lunch",
+                  "let's put that aside and come back to it"
+                ]
+              },
+              "explanation": "An advanced speaker manages the shape of a conversation, not just its content, and 'parking' a topic is one of the highest-value moves available. The phrase signals three things at once: the point is not lost, the current thread continues, and you are in control of the order. Use it instead of a vague 'anyway', which throws the topic away. A natural version always pairs the parking phrase with an explicit return — 'and come back to it' — so the listener knows the loop will be closed.",
+              "xp": 10
+            },
+            {
+              "id": "sp-adv-5",
+              "kind": "rearrangeWords",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Build a sentence that sounds like deliberate professional speech.",
+              "instruction": "Order the words so that the contrast lands at the end, where the pitch can fall.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "support",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "plan",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "but",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "not the timeline",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": ["I", "support", "the", "plan", "but", "not the timeline"]
+              },
+              "explanation": "The clause you want your listener to remember goes last, because English intonation falls at the end of a unit and a falling end is what sounds like a decision. 'but not the timeline' therefore carries the peak and the fall together. Putting the objection first and the agreement last inverts the emphasis and makes the sentence sound like a concession — the opposite of the intent. Say it aloud: the rise before 'not' and the fall on 'timeline' is the whole effect.",
+              "xp": 10
+            },
+            {
+              "id": "sp-adv-6",
+              "kind": "listening",
+              "topicID": "speaking-skill",
+              "lessonID": "speaking-skill-advanced",
+              "difficulty": "advanced",
+              "prompt": "Listen to the speaker's self-repair, then choose what the speaker actually said.",
+              "instruction": "The speaker substitutes one word mid-sentence. Judge which version was finally said.",
+              "audio": {
+                "id": "sp-adv-6-audio",
+                "kind": "speech",
+                "text": "The launch is on the thirty-first — sorry, the first of May.",
+                "rate": 0.5
+              },
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The thirty-first of May",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The first of May",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Neither; the speaker abandoned both dates.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": ["b"]
+              },
+              "explanation": "The dash plus 'sorry' is the substitution signal, and everything before it is withdrawn. A listener who records the abandoned version has heard a date the speaker explicitly rejected — a real risk in meetings, which is why fluent speakers substitute in place instead of starting again. Say this yourself and copy the rhythm: three beats for the wrong version, a short beat, then the correction at the same pitch. The correction is not an apology and must not be said more quietly.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sp-adv-dictation",
+          "type": "dictation",
+          "title": "Professional model sentences",
+          "items": [
+            {
+              "id": "sp-adv-d1",
+              "audio": {
+                "id": "sp-adv-d1-audio",
+                "kind": "speech",
+                "text": "To be clear, I support the plan but not the timeline.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "To be clear, I support the plan, but not the timeline."
+              ],
+              "hint": "the objection goes last, where the pitch can fall",
+              "translation": "Nói rõ, tôi ủng hộ kế hoạch nhưng không ủng hộ tiến độ.",
+              "xp": 15
+            },
+            {
+              "id": "sp-adv-d2",
+              "audio": {
+                "id": "sp-adv-d2-audio",
+                "kind": "speech",
+                "text": "The loan's approved, but I still need you to lend me the paperwork.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "The loan is approved, but I still need you to lend me the paperwork."
+              ],
+              "hint": "loan and lend in the same sentence: say both slowly first",
+              "translation": "Khoản vay đã được duyệt, nhưng tôi vẫn cần bạn đưa tôi hồ sơ.",
+              "xp": 15
+            },
+            {
+              "id": "sp-adv-d3",
+              "audio": {
+                "id": "sp-adv-d3-audio",
+                "kind": "speech",
+                "text": "Let's park that and come back to it after lunch.",
+                "rate": 0.5
+              },
+              "acceptedAnswers": [
+                "Let us park that and come back to it after lunch."
+              ],
+              "hint": "two phrases, always in this order: park, then return",
+              "translation": "Tạm gác chuyện đó, ta quay lại sau bữa trưa.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sp-adv-summary",
+          "type": "summary",
+          "takeaways": [
+            "Give every clause its own contour: rise through the setup, fall on the terminal clause, and volume never replaces pitch.",
+            "Learn confusables as pairs in minimal sentences — ship/sheep, historic/historical, effect/affect, loan/lend, economical/economic — and never one word at a time.",
+            "Range means choosing deliberately between a formal and an informal version, a direct and a softened version, a short and a fuller clause.",
+            "Substitute in place rather than restarting: one wrong word costs half a second, one restarted sentence costs a whole thought.",
+            "Park a topic and promise the return. Managing the order of a conversation is as much a part of speaking skill as managing content.",
+            "Your accent is not an error. Judge your speech on one question only: could your listener act on your message?"
+          ]
+        }
+      ]
+    }
+  ]
+}
