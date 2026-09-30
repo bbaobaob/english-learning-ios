@@ -1,6 +1,7 @@
 import SwiftUI
 import AVKit
 import Observation
+import EnglishCore
 
 /// The playback state behind ``VideoLessonView``.
 ///

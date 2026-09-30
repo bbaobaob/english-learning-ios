@@ -10,7 +10,7 @@ import Observation
 /// the result is two half-sentences spoken at once. One instance, one voice.
 @MainActor
 @Observable
-public final class SpeechService {
+public final class SpeechService: NSObject {
 
     /// `true` while an utterance is in flight.
     public private(set) var isSpeaking: Bool = false
@@ -26,7 +26,8 @@ public final class SpeechService {
     @ObservationIgnored
     private var completion: (() -> Void)?
 
-    public init() {
+    public override init() {
+        super.init()
         synthesizer.delegate = self
     }
 
@@ -129,14 +130,14 @@ public final class SpeechService {
 }
 
 extension SpeechService: AVSpeechSynthesizerDelegate {
-    nonisolated func speechSynthesizer(
+    nonisolated public func speechSynthesizer(
         _ synthesizer: AVSpeechSynthesizer,
         didFinish utterance: AVSpeechUtterance
     ) {
         Task { @MainActor [weak self] in self?.finish() }
     }
 
-    nonisolated func speechSynthesizer(
+    nonisolated public func speechSynthesizer(
         _ synthesizer: AVSpeechSynthesizer,
         didCancel utterance: AVSpeechUtterance
     ) {

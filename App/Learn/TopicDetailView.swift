@@ -1,5 +1,6 @@
 import SwiftUI
 import EnglishCore
+import EnglishStore
 
 /// One topic: its header, its weak-area callout, and its lesson list.
 ///

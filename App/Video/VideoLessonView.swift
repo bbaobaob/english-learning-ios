@@ -1,5 +1,6 @@
 import SwiftUI
 import AVKit
+import EnglishCore
 
 /// A video lesson: stage, subtitles, custom transport, transcript sheet.
 ///

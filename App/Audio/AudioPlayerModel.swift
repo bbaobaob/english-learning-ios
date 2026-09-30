@@ -2,6 +2,7 @@ import Foundation
 import AVFoundation
 import MediaPlayer
 import Observation
+import EnglishCore
 
 /// Plays one `AudioClip` at a time, whichever of the three kinds it is.
 ///
@@ -273,7 +274,10 @@ public final class AudioPlayerModel {
     }
 
     /// Stops everything and releases the loaded clip.
-    func stop() {
+    ///
+    /// Also the `SpeechPlaying` witness: this is the one the whole app calls,
+    /// so the protocol conformance adds no second implementation.
+    public func stop() {
         speech.stop()
         player?.stop()
         player = nil
@@ -977,13 +981,6 @@ extension AudioPlayerModel: SpeechPlaying {
     /// those guesses from accumulating.
     func speak(_ text: String, completion: (() -> Void)? = nil) {
         speak(text, rate: SpeechRate.normal, completion: completion)
-    }
-
-    public func stop() {
-        player?.stop()
-        isPlaying = false
-        clearTicker()
-        speech.stop()
     }
 }
 

@@ -157,7 +157,7 @@ struct ExerciseView: View {
             ReadOnlyStepCard(
                 symbol: "text.book.closed",
                 title: "Read",
-                body: theoryText(for: step),
+                text: theoryText(for: step),
                 onContinue: advance
             )
             .padding(Spacing.lg)
@@ -184,7 +184,7 @@ struct ExerciseView: View {
             ReadOnlyStepCard(
                 symbol: "list.bullet",
                 title: "Examples",
-                body: examples.map(\.en).joined(separator: "\n"),
+                text: examples.map(\.en).joined(separator: "\n"),
                 onContinue: advance
             )
             .padding(Spacing.lg)
@@ -193,7 +193,7 @@ struct ExerciseView: View {
             ReadOnlyStepCard(
                 symbol: "checkmark.seal",
                 title: "Summary",
-                body: takeaways.joined(separator: "\n"),
+                text: takeaways.joined(separator: "\n"),
                 onContinue: advance
             )
             .padding(Spacing.lg)
@@ -364,7 +364,7 @@ private struct DictationSessionCard: View {
 private struct ReadOnlyStepCard: View {
     let symbol: String
     let title: String
-    let body: String
+    let text: String
     let onContinue: () -> Void
 
     var body: some View {
@@ -374,7 +374,7 @@ private struct ReadOnlyStepCard: View {
                 .foregroundStyle(Palette.brand)
                 .accessibilityAddTraits(.isHeader)
 
-            Text(body)
+            Text(text)
                 .font(AppFont.body(.body))
                 .foregroundStyle(Palette.textPrimary)
                 .fixedSize(horizontal: false, vertical: true)

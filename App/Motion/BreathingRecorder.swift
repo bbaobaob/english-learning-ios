@@ -26,7 +26,7 @@ import SwiftUI
 struct BreathingRecorder: View {
 
     /// What the indicator is reporting.
-    enum State: Equatable {
+    enum RecorderState: Equatable {
         /// Nothing is happening. The learner has not started.
         case idle
         /// The microphone is open and levels are arriving, but nothing is
@@ -66,7 +66,7 @@ struct BreathingRecorder: View {
     // MARK: Input
 
     /// The state to display.
-    var state: State = .idle
+    var state: RecorderState = .idle
     /// The ring's diameter in points. Sized in points, not from text, so it
     /// stays put at every Dynamic Type size.
     var diameter: CGFloat = 64
@@ -184,9 +184,9 @@ extension BreathingRecorder {
     /// that must survive Reduce Motion, which drops the timing but not the
     /// colour, ring count or centre fill.
     static func check() {
-        let idle = State.idle
-        let listening = State.listening
-        let recording = State.recording
+        let idle = RecorderState.idle
+        let listening = RecorderState.listening
+        let recording = RecorderState.recording
 
         // Each state has its own spoken label — the non-visual carrier of state.
         let labels = [idle.spokenLabel, listening.spokenLabel, recording.spokenLabel]

@@ -1,5 +1,6 @@
 import SwiftUI
 import EnglishCore
+import EnglishStore
 
 /// The lesson player: renders `lesson.steps` in order and writes progress as the
 /// learner moves through them.

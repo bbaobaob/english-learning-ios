@@ -1,4 +1,5 @@
 import SwiftUI
+import EnglishCore
 
 /// The transport bar for one `AudioClip`.
 ///

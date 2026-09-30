@@ -107,7 +107,7 @@ func listeningItems(
 // MARK: - Session state
 
 /// How one item currently stands.
-private enum ListenPhase {
+fileprivate enum ListenPhase {
     /// Played (or not yet played); the learner has not submitted anything.
     case fresh
     /// Submitted and wrong: the answer is shown and they may try again.
