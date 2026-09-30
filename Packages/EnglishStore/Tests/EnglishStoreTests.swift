@@ -73,7 +73,7 @@ struct EnglishStoreTests {
 
     @Test("the schema opens and every model is present")
     func schemaOpens() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         // A malformed @Model graph fails at container creation, so reaching this
         // assertion is the actual test.
         #expect(store.topicProgress().isEmpty)
@@ -112,7 +112,7 @@ struct EnglishStoreTests {
 
     /// Writes attempts and a completion into a store on `url`, then drops it.
     private static func writeSampleActivity(at url: URL) throws {
-        let store = try openStore(at: url)
+        let store = try Self.openStore(at: url)
         store.recordAttempt(result(exerciseID: "ex-1", correct: true), topicID: "tenses", lessonID: "l1")
         store.recordAttempt(result(exerciseID: "ex-2", correct: true), topicID: "tenses", lessonID: "l1")
         store.recordAttempt(
@@ -131,7 +131,7 @@ struct EnglishStoreTests {
     private static func readSampleSummary(
         at url: URL
     ) throws -> (topics: [String: Double], stats: LearnerStats) {
-        let store = try openStore(at: url)
+        let store = try Self.openStore(at: url)
         return (store.topicProgress().mapValues(\.accuracy), store.learnerStats())
     }
 
@@ -142,17 +142,17 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        let day1 = try openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
+        let day1 = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
         #expect(day1.current == 1)
         #expect(day1.xpToday == 30)
 
-        let reopened = try openStore(at: url).streak()
+        let reopened = try Self.openStore(at: url).streak()
         #expect(reopened.current == 1)
         #expect(reopened.totalDays == 1)
         #expect(reopened.xpToday == 30)
         #expect(reopened.longest == 1)
 
-        let day2 = try openStore(at: url, now: Self.nextDay)
+        let day2 = try Self.openStore(at: url, now: Self.nextDay)
             .registerStudy(minutes: 10, xp: 10, kind: .practice)
         #expect(day2.current == 2)
         #expect(day2.longest == 2)
@@ -162,7 +162,7 @@ struct EnglishStoreTests {
 
     @Test("a second session on the same day does not extend the streak")
     func sameDayStreakIsIdempotent() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         _ = store.registerStudy(minutes: 10, xp: 10, kind: .lesson)
         let second = store.registerStudy(minutes: 5, xp: 20, kind: .lesson)
 
@@ -177,13 +177,13 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        _ = try openStore(at: url).registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        _ = try openStore(at: url, now: Self.nextDay)
+        _ = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 10, kind: .lesson)
+        _ = try Self.openStore(at: url, now: Self.nextDay)
             .registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        #expect(try openStore(at: url, now: Self.nextDay).streak().current == 2)
+        #expect(try Self.openStore(at: url, now: Self.nextDay).streak().current == 2)
 
         let fiveDaysOn = Self.calendar.date(byAdding: .day, value: 5, to: Self.epoch) ?? Self.epoch
-        let afterGap = try openStore(at: url, now: fiveDaysOn)
+        let afterGap = try Self.openStore(at: url, now: fiveDaysOn)
             .registerStudy(minutes: 10, xp: 10, kind: .lesson)
         #expect(afterGap.current == 1)
         #expect(afterGap.longest == 2)
@@ -195,9 +195,9 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        _ = try openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
+        _ = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
         for _ in 0..<3 {
-            let untouched = try openStore(at: url).streak()
+            let untouched = try Self.openStore(at: url).streak()
             #expect(untouched.current == 1)
             #expect(untouched.totalDays == 1)
             #expect(untouched.longest == 1)
@@ -211,34 +211,34 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try openStore(at: url).updateLessonProgress(
+        try Self.openStore(at: url).updateLessonProgress(
             lessonID: "tenses-present",
             topicID: "tenses",
             stepIndex: 2,
             lastStepID: "step-video"
         )
         // A later clock, so the ordering under test is unambiguous.
-        try openStore(at: url, now: Self.nextDay).updateLessonProgress(
+        try Self.openStore(at: url, now: Self.nextDay).updateLessonProgress(
             lessonID: "tenses-past",
             topicID: "tenses",
             stepIndex: 5,
             lastStepID: "step-quiz"
         )
 
-        let resumed = try openStore(at: url, now: Self.nextDay).resumePoint()
+        let resumed = try Self.openStore(at: url, now: Self.nextDay).resumePoint()
         #expect(resumed?.lessonID == "tenses-past")
         #expect(resumed?.stepIndex == 5)
     }
 
     @Test("there is no resume point when nothing is in progress")
     func resumePointIsNilWhenEmpty() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         #expect(store.resumePoint() == nil)
     }
 
     @Test("a completed lesson is not a resume point")
     func completedLessonIsNotResumable() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.updateLessonProgress(lessonID: "l1", topicID: "t1", stepIndex: 3, lastStepID: nil)
         #expect(store.resumePoint()?.lessonID == "l1")
 
@@ -251,13 +251,13 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try openStore(at: url).updateLessonProgress(
+        try Self.openStore(at: url).updateLessonProgress(
             lessonID: "old", topicID: "t1", stepIndex: 1, lastStepID: nil
         )
-        try openStore(at: url, now: Self.nextDay).updateLessonProgress(
+        try Self.openStore(at: url, now: Self.nextDay).updateLessonProgress(
             lessonID: "new", topicID: "t1", stepIndex: 4, lastStepID: nil
         )
-        #expect(try openStore(at: url, now: Self.nextDay).resumePoint()?.lessonID == "new")
+        #expect(try Self.openStore(at: url, now: Self.nextDay).resumePoint()?.lessonID == "new")
     }
 
     // MARK: - Bookmarks survive close/reopen
@@ -267,18 +267,18 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        #expect(try openStore(at: url).bookmark("a-1") == 0)
-        try openStore(at: url).saveBookmark("a-1", position: 42.5)
+        #expect(try Self.openStore(at: url).bookmark("a-1") == 0)
+        try Self.openStore(at: url).saveBookmark("a-1", position: 42.5)
 
-        #expect(try openStore(at: url).bookmark("a-1") == 42.5)
+        #expect(try Self.openStore(at: url).bookmark("a-1") == 42.5)
 
-        try openStore(at: url).saveBookmark("a-1", position: 100)
-        #expect(try openStore(at: url).bookmark("a-1") == 100)
+        try Self.openStore(at: url).saveBookmark("a-1", position: 100)
+        #expect(try Self.openStore(at: url).bookmark("a-1") == 100)
     }
 
     @Test("a negative bookmark position is clamped to zero")
     func bookmarkClampsNegative() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.saveBookmark("a-2", position: -30)
         #expect(store.bookmark("a-2") == 0)
     }
@@ -287,7 +287,7 @@ struct EnglishStoreTests {
 
     @Test("notification prefs return all five kinds, including never-set ones")
     func notificationPrefsAreComplete() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         let prefs = store.notificationPrefs()
 
         #expect(prefs.count == 5)
@@ -305,25 +305,25 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try openStore(at: url).setNotificationPref(.dailyReminder, enabled: true, hour: 20, minute: 15)
-        try openStore(at: url).setNotificationPref(.ieltsPractice, enabled: true, hour: 7, minute: 5)
+        try Self.openStore(at: url).setNotificationPref(.dailyReminder, enabled: true, hour: 20, minute: 15)
+        try Self.openStore(at: url).setNotificationPref(.ieltsPractice, enabled: true, hour: 7, minute: 5)
 
-        let prefs = try openStore(at: url).notificationPrefs()
+        let prefs: [NotificationKind: NotificationPref] = try Self.openStore(at: url).notificationPrefs()
         #expect(prefs.count == 5)
-        #expect(prefs[.dailyReminder]?.enabled == true)
-        #expect(prefs[.dailyReminder]?.hour == 20)
-        #expect(prefs[.dailyReminder]?.minute == 15)
-        #expect(prefs[.ieltsPractice]?.minute == 5)
+        #expect(prefs[NotificationKind.dailyReminder]?.enabled == true)
+        #expect(prefs[NotificationKind.dailyReminder]?.hour == 20)
+        #expect(prefs[NotificationKind.dailyReminder]?.minute == 15)
+        #expect(prefs[NotificationKind.ieltsPractice]?.minute == 5)
         // Untouched kinds still come back with defaults, not missing.
-        #expect(prefs[.streakReminder]?.enabled == false)
-        #expect(prefs[.streakReminder]?.hour == 9)
+        #expect(prefs[NotificationKind.streakReminder]?.enabled == false)
+        #expect(prefs[NotificationKind.streakReminder]?.hour == 9)
     }
 
     @Test("out-of-range notification times are clamped")
     func notificationTimesAreClamped() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.setNotificationPref(.vocabularyReview, enabled: true, hour: 99, minute: -5)
-        let pref = store.notificationPrefs()[.vocabularyReview]
+        let pref: NotificationPref? = store.notificationPrefs()[.vocabularyReview]
         #expect(pref?.hour == 23)
         #expect(pref?.minute == 0)
     }
@@ -335,23 +335,23 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try openStore(at: url).setFavorite("w-achieve", true)
-        try openStore(at: url).setFavorite("w-fail", false)
+        try Self.openStore(at: url).setFavorite("w-achieve", true)
+        try Self.openStore(at: url).setFavorite("w-fail", false)
 
-        let states = try openStore(at: url).vocabularyStates()
+        let states = try Self.openStore(at: url).vocabularyStates()
         #expect(states.count == 2)
         #expect(states["w-achieve"]?.favorite == true)
         #expect(states["w-fail"]?.favorite == false)
 
-        try openStore(at: url).setFavorite("w-achieve", false)
-        #expect(try openStore(at: url).vocabularyStates()["w-achieve"]?.favorite == false)
+        try Self.openStore(at: url).setFavorite("w-achieve", false)
+        #expect(try Self.openStore(at: url).vocabularyStates()["w-achieve"]?.favorite == false)
     }
 
     // MARK: - Review scheduling
 
     @Test("a correct attempt schedules a review one day out")
     func correctAttemptSchedulesReview() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.recordAttempt(
             Self.result(exerciseID: "ex-1", correct: true),
             topicID: "tenses",
@@ -370,7 +370,7 @@ struct EnglishStoreTests {
 
     @Test("a wrong attempt is due again the same day and penalises ease")
     func wrongAttemptLapses() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.recordAttempt(
             Self.result(exerciseID: "ex-2", correct: true),
             topicID: "tenses",
@@ -391,7 +391,7 @@ struct EnglishStoreTests {
 
     @Test("the review queue is ordered by due date ascending")
     func reviewQueueIsSorted() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         let base = Self.epoch
         store.upsertReview(Self.reviewItem(id: "exercise:c", due: base.addingTimeInterval(300)))
         store.upsertReview(Self.reviewItem(id: "exercise:a", due: base.addingTimeInterval(100)))
@@ -404,7 +404,7 @@ struct EnglishStoreTests {
 
     @Test("upserting the same item twice does not duplicate it")
     func upsertReviewIsIdempotent() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         var item = Self.reviewItem(id: "vocabulary:w-1", due: Self.epoch)
         store.upsertReview(item)
         item.repetitions = 3
@@ -423,10 +423,10 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try openStore(at: url).unlock(["first-lesson", "streak-3"])
-        try openStore(at: url).unlock(["first-lesson"])
+        try Self.openStore(at: url).unlock(["first-lesson", "streak-3"])
+        try Self.openStore(at: url).unlock(["first-lesson"])
 
-        let unlocked = try openStore(at: url).unlockedAchievements()
+        let unlocked = try Self.openStore(at: url).unlockedAchievements()
         #expect(unlocked == ["first-lesson", "streak-3"])
     }
 
@@ -434,7 +434,7 @@ struct EnglishStoreTests {
 
     @Test("registering study accumulates minutes and XP per kind")
     func registerStudyAccumulates() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.registerStudy(minutes: 10, xp: 20, kind: .lesson)
         store.registerStudy(minutes: 5, xp: 15, kind: .dictation)
         store.registerStudy(minutes: 3, xp: 5, kind: .practice)
@@ -450,17 +450,17 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        let first = try openStore(at: url).registerStudy(minutes: 10, xp: 60, kind: .lesson)
+        let first = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 60, kind: .lesson)
         #expect(first.xpToday == 60)
 
-        let second = try openStore(at: url, now: Self.nextDay)
+        let second = try Self.openStore(at: url, now: Self.nextDay)
             .registerStudy(minutes: 10, xp: 10, kind: .lesson)
         #expect(second.xpToday == 10)
     }
 
     @Test("completing a lesson banks its XP and marks the lesson done")
     func completeLessonBanksXP() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         store.completeLesson("l1", topicID: "tenses", xp: 40)
         store.completeLesson("l2", topicID: "tenses", xp: 30)
 
@@ -472,7 +472,7 @@ struct EnglishStoreTests {
 
     @Test("stats are all zero for a fresh install")
     func freshStatsAreZero() throws {
-        let store = try ProgressStore(inMemory: true)
+        let store = try ProgressStore(inMemory: true, calendar: Self.calendar, now: { Self.epoch })
         let stats = store.learnerStats()
         #expect(stats.totalXP == 0)
         #expect(stats.streak == 0)
@@ -514,14 +514,27 @@ private func onDiskConfiguration(url: URL) -> ModelConfiguration {
 private func makeForeignContainer() throws -> ModelContainer {
     try ModelContainer(
         for: UnrelatedModel.self,
-        configurations: [ModelConfiguration(isStoredInMemoryOnly: true, cloudKitDatabase: .none)]
+        configurations: ModelConfiguration(isStoredInMemoryOnly: true, cloudKitDatabase: .none)
     )
 }
 
 /// A model that belongs to no other test.
+///
+/// The `@Model` macro does not synthesise an initialiser for a type that
+/// declares one itself, so it is written out: the container smoke test needs a
+/// constructible model to build a foreign schema from.
 @Model
 private final class UnrelatedModel {
-    var note: String = ""
+
+    /// An arbitrary payload; nothing reads it.
+    var note: String
+
+    /// Creates the model.
+    ///
+    /// - Parameter note: An arbitrary payload.
+    init(note: String = "") {
+        self.note = note
+    }
 }
 
 

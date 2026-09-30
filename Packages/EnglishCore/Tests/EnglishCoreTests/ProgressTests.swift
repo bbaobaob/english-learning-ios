@@ -330,9 +330,9 @@ struct AchievementTests {
 
     @Test("evaluate skips achievements that are already unlocked")
     func evaluateSkipsUnlocked() {
-        let stats = LearnerStats(totalXP: 600, streak: 8, accuracy: 0.97, lessonsCompleted: 12)
+        let stats = LearnerStats(totalXP: 600, streak: 8, lessonsCompleted: 12, accuracy: 0.97)
         let earned = AchievementEngine.evaluate(stats: stats, unlocked: [])
-        let ids = Set(earned.map(\.id))
+        let ids = Set(earned.map(\Achievement.id))
 
         let secondPass = AchievementEngine.evaluate(stats: stats, unlocked: ids)
         #expect(secondPass.isEmpty)

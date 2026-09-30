@@ -109,11 +109,36 @@ public final class ProgressStore {
     ///   read as intent rather than as a hard-coded factory call.
     /// - Throws: Any error `ModelContainer` raises for this schema.
     public convenience init(inMemory: Bool) throws {
+        try self.init(inMemory: inMemory, calendar: .current, now: Date.init)
+    }
+
+    /// Creates a throwaway store with an injected clock and calendar.
+    ///
+    /// `init(inMemory:)` hard-codes `Date.init`, which makes a fixed-date test
+    /// impossible: rows are stamped with the wall clock while the assertions
+    /// query a reference date, so nothing is ever due. Inject the same
+    /// reference date the test asserts against and the two agree.
+    ///
+    /// - Parameters:
+    ///   - inMemory: Must be `true`; the parameter exists so call sites read as
+    ///     intent rather than as a hard-coded factory call.
+    ///   - calendar: The calendar used to bucket days.
+    ///   - now: Supplies the current instant used to stamp rows and due dates.
+    /// - Throws: Any error `ModelContainer` raises for this schema.
+    public convenience init(
+        inMemory: Bool,
+        calendar: Calendar,
+        now: @escaping @Sendable () -> Date
+    ) throws {
         let configuration = ModelConfiguration(
             isStoredInMemoryOnly: inMemory,
             cloudKitDatabase: .none
         )
-        try self.init(container: Self.makeContainer(configuration))
+        try self.init(
+            container: Self.makeContainer(configuration),
+            calendar: calendar,
+            now: now
+        )
     }
 
     /// Builds a container carrying every model in this package.
