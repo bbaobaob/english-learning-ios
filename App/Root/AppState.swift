@@ -61,12 +61,37 @@ final class AppState {
 
     /// One navigation path per tab, so switching tabs and coming back restores
     /// where the learner was instead of dropping them at the root.
-    var paths: [AppTab: [AppRoute]] = [:]
+    ///
+    /// Keyed by tab and typed `[AnyHashable]` because each tab's stack holds
+    /// its *own* lane's route enum — `LearnRoute` has a two-argument `.lesson`
+    /// case that a shared route enum deliberately does not model, and forcing every
+    /// lane onto one enum would put a `.lesson(topicID:lessonID:)` case in the
+    /// vocabulary and practice tabs, which have no lessons. Each tab resolves
+    /// its own routes in its own `navigationDestination`.
+    private(set) var paths: [AppTab: [AnyHashable]] = [:]
 
-    /// The one `UserProfile` accessor. A separate type from `ProgressStore`
-    /// because the frozen store API has no profile read or write; see
-    /// ``ProfileWriter`` for the note about folding it in.
-    let profiles: ProfileWriter
+    /// The navigation path of the currently selected tab.
+    ///
+    /// A convenience over ``paths`` so a view that only ever pushes onto the
+    /// tab it is showing can bind to this directly. Settable, so
+    /// `NavigationStack(path: $app.navigationPath)` works.
+    var navigationPath: [AnyHashable] {
+        get { paths[selectedTab] ?? [] }
+        set { paths[selectedTab] = newValue }
+    }
+
+    /// Whether onboarding still needs to run, and the write that ends it.
+    ///
+    /// These go through the `ProgressStore` extension the Profile lane added
+    /// (`profile()`, `setProfileName`, `setDailyGoal`) rather than a second
+    /// door onto the same row — two writers for one `UserProfile` is how the
+    /// display name and the goal drift apart.
+    ///
+    /// The one thing that store has no method for is stamping `onboardedAt`,
+    /// because the frozen API has no profile write at all. That is the single
+    /// reason this type exists.
+    // TODO(store): `markOnboarded()` belongs in `EnglishStore` beside
+    // `setNotificationPref`. It is the only reason this type exists.
 
     // MARK: - Onboarding
 
@@ -81,7 +106,6 @@ final class AppState {
 
     init(store: ProgressStore) {
         self.store = store
-        self.profiles = ProfileWriter(container: store.container)
         let speech = SpeechService()
         self.speech = speech
         self.audio = AudioPlayerModel(speech: speech)
@@ -91,7 +115,7 @@ final class AppState {
     /// Loads content and refreshes the derived state. Safe to call repeatedly;
     /// a second call re-reads the bundle.
     func bootstrap() {
-        needsOnboarding = profiles.needsOnboarding()
+        needsOnboarding = store.profile().onboardedAt == nil
         loadContent()
     }
 
@@ -143,7 +167,7 @@ final class AppState {
     // MARK: - Routing helpers
 
     /// The navigation path for a tab, creating it on first use.
-    func path(for tab: AppTab) -> Binding<[AppRoute]> {
+    func path(for tab: AppTab) -> Binding<[AnyHashable]> {
         Binding(
             get: { [weak self] in self?.paths[tab] ?? [] },
             set: { [weak self] newValue in self?.paths[tab] = newValue }
@@ -151,7 +175,7 @@ final class AppState {
     }
 
     /// Pushes a route onto a tab's stack.
-    func navigate(_ route: AppRoute, in tab: AppTab) {
+    func navigate(_ route: AnyHashable, in tab: AppTab) {
         selectedTab = tab
         paths[tab, default: []].append(route)
     }
@@ -165,12 +189,56 @@ final class AppState {
 
     /// Writes the learner's onboarding answers and stops showing the flow.
     ///
-    /// This is the one place the app writes a `UserProfile`, and it goes
-    /// through ``ProfileWriter`` rather than touching a `ModelContext` from a
-    /// view.
+    /// The name and the goal go through the store's own setters, so there is
+    /// one writer per field. `onboardedAt` is stamped here because the frozen
+    /// store API has no way to write it — see the TODO above.
+    ///
+    /// - Parameters:
+    ///   - name: The display name. Ignored when blank, so the Profile screen
+    ///     keeps its "Learner" default rather than showing an empty header.
+    ///   - level: The starting difficulty, used to price the daily goal.
+    ///   - dailyMinutes: The learner's chosen daily study time.
     func completeOnboarding(name: String, level: Level, dailyMinutes: Int) {
-        profiles.saveProfile(name: name, level: level, dailyMinutes: dailyMinutes)
+        store.setProfileName(name)
+        store.setDailyGoal(AppState.dailyGoalXP(forMinutes: dailyMinutes, level: level))
+        markOnboarded()
         needsOnboarding = false
+    }
+
+    /// The XP a day of `minutes` study is worth, by starting level.
+    ///
+    /// 10 XP per minute at beginner, rising with level: a more experienced
+    /// learner clears a lesson faster, so a flat rate would make the goal
+    /// trivial for them and unreachable for a beginner.
+    ///
+    /// ponytail: a flat per-minute rate, not a measured difficulty model. If
+    /// goal-completion rates turn out to differ sharply between levels, give
+    /// this a table driven by real completion data.
+    static func dailyGoalXP(forMinutes minutes: Int, level: Level) -> Int {
+        let perMinute: Int
+        switch level {
+        case .beginner: perMinute = 10
+        case .intermediate: perMinute = 12
+        case .advanced: perMinute = 15
+        }
+        // `setDailyGoal` clamps to 10...500, so no clamp is needed here.
+        return max(10, minutes * perMinute)
+    }
+
+    /// Stamps `onboardedAt` on the profile row.
+    ///
+    /// The only persistence this type does itself, and the only reason it
+    /// exists. `ProgressStore` owns the container, so this goes through the
+    /// store's public surface rather than opening a second `ModelContext`.
+    // TODO(store): fold into `ProgressStore` as `markOnboarded()` and delete
+    // this method. The frozen API lists `UserProfile` in the schema but no
+    // accessor for it; the Profile lane's extension is where it belongs.
+    private func markOnboarded() {
+        let row = store.profile()
+        if row.onboardedAt == nil {
+            row.onboardedAt = Date()
+            try? store.container.mainContext.save()
+        }
     }
 }
 
@@ -206,22 +274,4 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable {
         case .profile: "person.crop.circle.fill"
         }
     }
-}
-
-/// The routes a tab's `NavigationStack` can push.
-///
-/// A closed enum rather than `AnyHashable` or a string: a mistyped route is a
-/// compile error instead of a blank screen at runtime, and the associated
-/// values keep a topic id from being passed where a lesson id belongs.
-enum AppRoute: Hashable {
-    /// A topic and its lesson list.
-    case topic(String)
-    /// One lesson's step flow.
-    case lesson(String)
-    /// A vocabulary deck.
-    case vocabulary
-    /// An IELTS module.
-    case ielts(String)
-    /// A weak-area practice set.
-    case practice(String)
 }

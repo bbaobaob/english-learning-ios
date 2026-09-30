@@ -154,7 +154,8 @@ extension IELTSPaperLesson {
             let trimmed = line.trimmingCharacters(in: .whitespaces)
             if trimmed.hasPrefix("•") {
                 bullets.append(trimmed.dropFirst().trimmingCharacters(in: .whitespaces))
-            } else if !trimmed.isEmpty && bullets.isEmpty {
+            } else if !trimmed.isEmpty && !trimmed.hasSuffix(":") && bullets.isEmpty {
+                // "You should say:" is a label, not the topic.
                 topic = trimmed
             }
         }
@@ -171,27 +172,31 @@ extension IELTSPaperLesson {
 
     /// The examiner's questions, pulled out of the brief. Handles both the numbered
     /// style ("1. What sort of place…") and the topic-block style ("Hometown: What is…?").
+    ///
+    /// Only sentences that actually end in a question mark are kept, so the paragraph
+    /// of instructions above the list never turns into one giant "question".
     var speakingQuestions: [String] {
         var text = prompt
         if let start = text.range(of: "Cue card:") { text = String(text[text.startIndex..<start.lowerBound]) }
+        if let end = text.range(of: "Follow-up question:") { text = String(text[..<end.lowerBound]) }
+
         var found: [String] = []
-        for line in text.split(separator: "\n") {
-            var line = String(line)
+        // One sentence per match, terminator included.
+        guard let regex = try? NSRegularExpression(pattern: "[^.?!\\n]+[.?!]") else { return [] }
+        let ns = text as NSString
+        for match in regex.matches(in: text, range: NSRange(location: 0, length: ns.length)) {
+            var sentence = ns.substring(with: match.range).trimmingCharacters(in: .whitespacesAndNewlines)
+            guard sentence.hasSuffix("?") else { continue }
             // Strip "1. " numbering and a "Hometown: " block label.
-            if let match = line.range(of: "^\\s*\\d+\\.\\s*", options: .regularExpression) {
-                line.removeSubrange(match)
+            if let numbered = sentence.range(of: "^\\s*\\d+\\.\\s*", options: .regularExpression) {
+                sentence.removeSubrange(numbered)
             }
-            if let match = line.range(of: "^[^?:]{1,40}:\\s*", options: .regularExpression) {
-                line.removeSubrange(match)
+            if let labelled = sentence.range(of: "^[^?:]{1,40}:\\s*", options: .regularExpression) {
+                sentence.removeSubrange(labelled)
             }
-            line = line.trimmingCharacters(in: .whitespaces)
-            guard !line.isEmpty else { continue }
-            // A single line can hold several questions.
-            for piece in line.split(separator: "?") {
-                let question = piece.trimmingCharacters(in: .whitespaces)
-                guard !question.isEmpty else { continue }
-                found.append(question + "?")
-            }
+            sentence = sentence.trimmingCharacters(in: .whitespaces)
+            guard sentence.count > 4 else { continue }
+            found.append(sentence)
         }
         return found
     }
@@ -223,17 +228,8 @@ enum IELTSCatalog {
 
     static var all: [IELTSPaper] { papers }
 
-    static func lessons(for skill: IELTSSkill) -> [IELTSPaperLesson] {
-        all.filter { $0.skill == skill }.flatMap(\.lessons)
-    }
-
-    static func lesson(_ id: String) -> IELTSPaperLesson? {
-        all.lazy.flatMap(\.lessons).first { $0.id == id }
-    }
-
-    /// The two shipped content files, wherever the resource bundle landed.
+    /// The shipped IELTS content files, wherever the resource bundle landed.
     private static func contentURLs() -> [URL] {
-        let names = ["ielts-listening-reading", "ielts-writing-speaking"]
         var bundles: [Bundle] = [Bundle.main]
         // EnglishCore ships its resources as `EnglishCore_EnglishCore.bundle`.
         if let url = Bundle.main.url(forResource: "EnglishCore_EnglishCore", withExtension: "bundle"),
@@ -241,11 +237,13 @@ enum IELTSCatalog {
             bundles.append(bundle)
         }
         var found: [URL] = []
-        for name in names {
-            for bundle in bundles {
-                let url = bundle.url(forResource: name, withExtension: "json", subdirectory: "content")
-                    ?? bundle.url(forResource: name, withExtension: "json")
-                if let url, !found.contains(url) { found.append(url) }
+        for bundle in bundles {
+            guard let directory = bundle.url(forResource: "content", withExtension: nil),
+                  let names = try? FileManager.default.contentsOfDirectory(atPath: directory.path)
+            else { continue }
+            for name in names.sorted() where name.hasPrefix("ielts-") && name.hasSuffix(".json") {
+                let url = directory.appendingPathComponent(name)
+                if !found.contains(url) { found.append(url) }
             }
         }
         return found
@@ -277,7 +275,7 @@ enum IELTSCatalog {
                 AudioClip(id: "\(file.id)-audio", kind: clip.kind, text: clip.text,
                           rate: clip.rate, title: file.title)
             },
-            items: file.items,
+            items: file.makeItems(),
             review: file.review ?? [],
             passage: passage,
             questions: questions

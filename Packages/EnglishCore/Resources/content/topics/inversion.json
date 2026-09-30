@@ -446,7 +446,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "The correct inversion is 'Never does he eat meat', because a simple present verb has no auxiliary and do or does must be supplied. The auxiliary always comes before the subject.",
               "xp": 10
@@ -1468,7 +1468,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "The pairs are fixed: no sooner with than, hardly and scarcely with when. Swapping them, for example no sooner when the bell rang, is a recognisable error in speech and in writing.",
               "xp": 10
@@ -2926,7 +2926,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "Headline style is a deliberate simplification for space. Writing 'Minister to open new hospital' in a letter or an exam answer looks wrong; write 'The minister will open the new hospital' instead.",
               "xp": 10

@@ -96,6 +96,16 @@ public final class AudioPlayerModel {
     @ObservationIgnored
     private var observers: [NSObjectProtocol] = []
 
+    /// The `AVAudioPlayer` delegate bridge. `AVAudioPlayer` holds its delegate
+    /// weakly, so the model retains it explicitly for exactly as long as the
+    /// player exists.
+    @ObservationIgnored
+    private lazy var playerDelegate: PlayerDelegateProxy = {
+        let proxy = PlayerDelegateProxy()
+        proxy.owner = self
+        return proxy
+    }()
+
     // MARK: - SpeechPlaying
 
     /// `true` while the shared synthesizer has an utterance in flight.
@@ -127,7 +137,7 @@ public final class AudioPlayerModel {
     /// - Parameters:
     ///   - clip: The clip to play.
     ///   - autoplay: Start playing as soon as it is ready.
-    func play(_ clip: AudioClip, autoplay: Bool = true) {
+    func play(_ clip: AudioClip, autoplay: Bool) {
         if self.clip?.id == clip.id, player != nil || isSpeaking {
             if autoplay, !isPlaying { resume() }
             return
@@ -136,6 +146,12 @@ public final class AudioPlayerModel {
         self.clip = clip
         completedPlays = 0
         errorMessage = nil
+        // A per-clip loop setting, if one was remembered, wins over the global
+        // toggle — otherwise a caller that loops one example would leave the
+        // whole next clip looping too.
+        if let remembered = loopByClipID[clip.id] {
+            isLooping = remembered
+        }
         applyAudioSession()
 
         switch clip.kind {
@@ -178,7 +194,7 @@ public final class AudioPlayerModel {
             speech.speak(
                 clip.text ?? "",
                 rate: scaledSpeechRate,
-                completion: { [weak self] in self?.handleClipFinished() }
+                completion: { [weak self] in self?.clipDidFinishPlaying() }
             )
         case .file, .remote:
             guard let player else { return }
@@ -224,7 +240,7 @@ public final class AudioPlayerModel {
             speech.speak(
                 clip?.text ?? "",
                 rate: scaledSpeechRate,
-                completion: { [weak self] in self?.handleClipFinished() }
+                completion: { [weak self] in self?.clipDidFinishPlaying() }
             )
         case .file, .remote:
             player?.currentTime = 0
@@ -254,7 +270,7 @@ public final class AudioPlayerModel {
             speech.speak(
                 clip.text ?? "",
                 rate: clip.speakingRate * slowRate,
-                completion: { [weak self] in self?.handleClipFinished() }
+                completion: { [weak self] in self?.clipDidFinishPlaying() }
             )
         case .file, .remote:
             guard let player else { return }
@@ -289,6 +305,33 @@ public final class AudioPlayerModel {
     func skip(by seconds: TimeInterval) {
         seek(to: elapsed + seconds)
     }
+
+    /// Turns looping on or off for the loaded clip, applying it immediately.
+    ///
+    /// Separate from setting `isLooping` directly so a screen can pass the value
+    /// it toggled rather than doing the negation itself — six lanes inverting a
+    /// bool by hand is six chances to get one of them backwards.
+    func setLooping(_ isLooping: Bool) {
+        self.isLooping = isLooping
+    }
+
+    /// Turns looping on or off for one named clip, and remembers it.
+    ///
+    /// For a screen that previews several clips in turn — an example list, a
+    /// word deck — where the loop state is a property of the clip rather than
+    /// of whatever happens to be loaded. The setting is stored per clip id and
+    /// applied by ``play(_:autoplay:)`` when that clip is loaded, so toggling
+    /// the loop on an example that is not playing yet is not lost.
+    func setLooping(_ isLooping: Bool, for clip: AudioClip) {
+        loopByClipID[clip.id] = isLooping
+        if self.clip?.id == clip.id {
+            self.isLooping = isLooping
+        }
+    }
+
+    /// Per-clip loop settings, applied when a clip loads.
+    @ObservationIgnored
+    private var loopByClipID: [String: Bool] = [:]
 
     /// Appends one to the repeat counter, clamped to the legal range.
     func incrementRepeat() {
@@ -360,7 +403,7 @@ public final class AudioPlayerModel {
         do {
             let player = try AVAudioPlayer(contentsOf: url)
             player.enableRate = true
-            player.delegate = self
+            player.delegate = playerDelegate
             player.prepareToPlay()
             self.player = player
             duration = player.duration
@@ -375,7 +418,7 @@ public final class AudioPlayerModel {
         do {
             let player = try AVAudioPlayer(data: data)
             player.enableRate = true
-            player.delegate = self
+            player.delegate = playerDelegate
             player.prepareToPlay()
             self.player = player
             duration = player.duration
@@ -565,16 +608,31 @@ public final class AudioPlayerModel {
         guard let player else { return }
         elapsed = player.currentTime
         if !player.isPlaying, isPlaying {
-            // The delegate fires too, but a tick that lands first means the
-            // repeat counter can never advance twice for one clip.
-            handleClipFinished()
+            // End of clip. The delegate normally reports this too, and both
+            // paths funnel through `clipDidFinishPlaying`, which is guarded so
+            // the repeat counter cannot advance twice for one play.
+            clipDidFinishPlaying()
             return
         }
         updateNowPlaying()
     }
 
+    /// The player could not decode its bytes. Surfaced rather than swallowed,
+    /// because a clip that silently does nothing is indistinguishable from a
+    /// learner who is not tapping play.
+    func reportDecodeFailure() {
+        isPlaying = false
+        errorMessage = "This audio file could not be decoded."
+    }
+
     /// One play of the clip has ended. Honours loop and the repeat counter.
-    private func handleClipFinished() {
+    ///
+    /// Re-entrancy guarded: the end of a clip is reported both by the delegate
+    /// and by the next `tick()`, and whichever lands first flips `isPlaying`,
+    /// so the second call returns immediately instead of counting two plays and
+    /// skipping a repeat.
+    func clipDidFinishPlaying() {
+        guard isPlaying else { return }
         completedPlays += 1
         if isLooping || completedPlays < repeatCount {
             replay()
@@ -612,15 +670,35 @@ public final class AudioPlayerModel {
 
 // MARK: - AVAudioPlayerDelegate
 
-extension AudioPlayerModel: AVAudioPlayerDelegate {
-    nonisolated func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        Task { @MainActor [weak self] in self?.handleClipFinished() }
+/// Forwards `AVAudioPlayer`'s callbacks to the model.
+///
+/// A separate `NSObject` subclass rather than making `AudioPlayerModel` itself
+/// the delegate, for two reasons that both bite in practice: `AVAudioPlayer`
+/// holds its delegate **weakly**, so a non-`NSObject` `@MainActor @Observable`
+/// class is at the mercy of how Swift's observation machinery lays out its
+/// storage; and an `@objc` protocol conformance on a `@MainActor` type forces
+/// every requirement to be `nonisolated`, which pushes the state mutation into
+/// a `Task` and out of the callback's ordering.
+///
+/// The proxy is retained by the model and does nothing but forward, so the
+/// model's own isolation stays intact.
+private final class PlayerDelegateProxy: NSObject, AVAudioPlayerDelegate {
+    /// Set by the model. Weak, so the proxy never keeps a torn-down player
+    /// alive.
+    weak var owner: AudioPlayerModel?
+
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        // Not `assumeIsolated`: `AVAudioPlayer` calls its delegate on an
+        /// arbitrary queue, and `assumeIsolated` would trap if that queue is
+        // not the main one. A `Task` hops correctly whatever the caller did.
+        Task { @MainActor [owner] in
+            owner?.clipDidFinishPlaying()
+        }
     }
 
-    nonisolated func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
-        Task { @MainActor [weak self] in
-            self?.isPlaying = false
-            self?.errorMessage = "This audio file could not be decoded."
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        Task { @MainActor [owner] in
+            owner?.reportDecodeFailure()
         }
     }
 }
@@ -634,13 +712,33 @@ extension AudioPlayerModel: SpeechPlaying {
         speech.stop()
         speech.speak(text, rate: rate) { [weak self] in
             completion?()
-            MainActor.assumeIsolated { self?.isPlaying = false }
+            self?.isPlaying = false
         }
     }
 
     public func stop() {
         speech.stop()
         isPlaying = false
+    }
+}
+
+extension AudioPlayerModel {
+    /// Speaks `text` with no completion handler.
+    ///
+    /// A separate method rather than a default argument on the protocol
+    /// conformance: the protocol fixes the three-argument shape, and a screen
+    /// that only wants a word spoken should not have to write `{}`.
+    func speak(_ text: String, rate: Float) {
+        speak(text, rate: rate, completion: nil)
+    }
+
+    /// Loads and plays a clip, with the transport's own defaults.
+    ///
+    /// `play(_:autoplay:)` already defaults `autoplay` to `true`; this exists so
+    /// a call site reads as `play(clip)` rather than as a decision it did not
+    /// make.
+    func play(_ clip: AudioClip) {
+        play(clip, autoplay: true)
     }
 }
 

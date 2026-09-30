@@ -171,9 +171,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "values": [
-                  "true"
-                ]
+                "values": true
               },
               "explanation": "The attempt plus the correction is what strengthens the memory. Skipping the attempt means the error stays untested and unfixed.",
               "xp": 10
@@ -369,9 +367,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "values": [
-                  "true"
-                ]
+                "values": true
               },
               "explanation": "A failure means the previous interval was too long, so the item goes back to the shortest one instead of being dropped.",
               "xp": 10
@@ -1167,9 +1163,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "values": [
-                  "false"
-                ]
+                "values": false
               },
               "explanation": "Immersion supplies raw input. Active recall, spaced repetition and dictation turn that input into usable knowledge, so capture and review are still required.",
               "xp": 10
@@ -1706,9 +1700,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "values": [
-                  "false"
-                ]
+                "values": false
               },
               "explanation": "The rule says to stand up, move and look away from the screen. Messages pull attention back before it has recovered, which removes most of the value of the break.",
               "xp": 10

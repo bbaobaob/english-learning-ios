@@ -60,14 +60,10 @@ struct AlphabetView: View {
                 LessonView(topicID: topicID, lessonID: lessonID)
             case .alphabetListening:
                 AlphabetListeningView()
+            case .methods:
+                MethodsView()
             case .alphabet:
-                EmptyStateView(
-                    symbol: "textformat",
-                    title: "Already here",
-                    message: "You are looking at the alphabet course.",
-                    actionTitle: "Back",
-                    action: { app.navigationPath.removeLast() }
-                )
+                AlphabetView()
             case .topic(let id):
                 if let next = app.library.topic(id) {
                     TopicDetailView(topic: next)

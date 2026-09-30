@@ -25,8 +25,18 @@
               "statement": "After these verbs the verb takes the -ing form and never the to-infinitive. The subject of the -ing clause is normally the same as the subject of the main verb.",
               "formula": "verb + V-ing",
               "examples": [
-                { "id": "gig-r1e1", "en": "She enjoys reading before bed.", "vi": "Cô ấy thích đọc sách trước khi ngủ.", "note": "enjoy + reading, not enjoy to read" },
-                { "id": "gig-r1e2", "en": "I don't mind waiting a little longer.", "vi": "Tôi không ngại chờ thêm một chút.", "note": "mind + -ing" }
+                {
+                  "id": "gig-r1e1",
+                  "en": "She enjoys reading before bed.",
+                  "vi": "Cô ấy thích đọc sách trước khi ngủ.",
+                  "note": "enjoy + reading, not enjoy to read"
+                },
+                {
+                  "id": "gig-r1e2",
+                  "en": "I don't mind waiting a little longer.",
+                  "vi": "Tôi không ngại chờ thêm một chút.",
+                  "note": "mind + -ing"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "The verbs are easiest to remember in clusters: enjoyment, evaluation, avoidance and thought.",
               "formula": "enjoy, like, dislike, love, hate, prefer, mind | finish, quit, suggest, consider, imagine, risk, avoid, deny, admit, delay | keep, practise, miss, waste, admit",
               "examples": [
-                { "id": "gig-r2e1", "en": "He finished reading the book last week.", "vi": "Anh ấy đã đọc xong cuốn sách tuần trước.", "note": "finish + -ing" },
-                { "id": "gig-r2e2", "en": "They postponed having the meeting.", "vi": "Họ đã hoãn việc họp lại.", "note": "postpone + -ing" }
+                {
+                  "id": "gig-r2e1",
+                  "en": "He finished reading the book last week.",
+                  "vi": "Anh ấy đã đọc xong cuốn sách tuần trước.",
+                  "note": "finish + -ing"
+                },
+                {
+                  "id": "gig-r2e2",
+                  "en": "They postponed having the meeting.",
+                  "vi": "Họ đã hoãn việc họp lại.",
+                  "note": "postpone + -ing"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "After a preposition the verb always takes the -ing form, with no exception, whatever the main verb is.",
               "formula": "preposition + V-ing",
               "examples": [
-                { "id": "gig-r3e1", "en": "I'm looking forward to seeing you again.", "vi": "Tôi rất mong được gặp lại bạn.", "note": "to here is a preposition, not an infinitive" },
-                { "id": "gig-r3e2", "en": "She is good at solving difficult problems.", "vi": "Cô ấy giỏi giải quyết những vấn đề khó.", "note": "good at + -ing" }
+                {
+                  "id": "gig-r3e1",
+                  "en": "I'm looking forward to seeing you again.",
+                  "vi": "Tôi rất mong được gặp lại bạn.",
+                  "note": "to here is a preposition, not an infinitive"
+                },
+                {
+                  "id": "gig-r3e2",
+                  "en": "She is good at solving difficult problems.",
+                  "vi": "Cô ấy giỏi giải quyết những vấn đề khó.",
+                  "note": "good at + -ing"
+                }
               ]
             }
           ]
@@ -53,11 +83,36 @@
           "id": "gig-examples",
           "type": "examples",
           "examples": [
-            { "id": "gig-ex1", "en": "I really enjoy learning new languages.", "vi": "Tôi thật sự thích học ngôn ngữ mới.", "note": "enjoy + gerund" },
-            { "id": "gig-ex2", "en": "Have you ever tried riding a motorbike?", "vi": "Bạn đã bao giờ thử đi xe máy chưa?", "note": "try + -ing" },
-            { "id": "gig-ex3", "en": "He denied taking the money.", "vi": "Anh ấy đã phủ nhận việc lấy tiền.", "note": "deny + -ing; the gerund names the accusation" },
-            { "id": "gig-ex4", "en": "They suggested meeting at seven.", "vi": "Họ gợi ý họp lúc bảy giờ.", "note": "suggest + -ing, with the meeting as the topic" },
-            { "id": "gig-ex5", "en": "Stop worrying about the exam.", "vi": "Đừng lo lắng về kỳ thi nữa.", "note": "stop + -ing, meaning stop the activity" }
+            {
+              "id": "gig-ex1",
+              "en": "I really enjoy learning new languages.",
+              "vi": "Tôi thật sự thích học ngôn ngữ mới.",
+              "note": "enjoy + gerund"
+            },
+            {
+              "id": "gig-ex2",
+              "en": "Have you ever tried riding a motorbike?",
+              "vi": "Bạn đã bao giờ thử đi xe máy chưa?",
+              "note": "try + -ing"
+            },
+            {
+              "id": "gig-ex3",
+              "en": "He denied taking the money.",
+              "vi": "Anh ấy đã phủ nhận việc lấy tiền.",
+              "note": "deny + -ing; the gerund names the accusation"
+            },
+            {
+              "id": "gig-ex4",
+              "en": "They suggested meeting at seven.",
+              "vi": "Họ gợi ý họp lúc bảy giờ.",
+              "note": "suggest + -ing, with the meeting as the topic"
+            },
+            {
+              "id": "gig-ex5",
+              "en": "Stop worrying about the exam.",
+              "vi": "Đừng lo lắng về kỳ thi nữa.",
+              "note": "stop + -ing, meaning stop the activity"
+            }
           ]
         },
         {
@@ -73,12 +128,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She suggested to meet at eight.", "isCorrect": false },
-                { "id": "b", "text": "She suggested meeting at eight.", "isCorrect": true },
-                { "id": "c", "text": "She suggested meet at eight.", "isCorrect": false },
-                { "id": "d", "text": "She suggested met at eight.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She suggested to meet at eight.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "She suggested meeting at eight.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "She suggested meet at eight.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "She suggested met at eight.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Suggest is one of the verbs that only takes the -ing form, so suggested meeting is the only option. Learners who answer a reach for the to-infinitive because the English word suggest looks like a verb of planning; the reason is that suggest is about mentioning a topic, not making a decision.",
               "xp": 10
             },
@@ -90,7 +166,12 @@
               "difficulty": "beginner",
               "prompt": "We have finished ___ (pack) our bags.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["packing"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "packing"
+                ]
+              },
               "explanation": "Finish is followed by the -ing form: packing. The only other candidate, packed, is a past participle, and the pattern here is verb + gerund, not have + participle.",
               "xp": 10
             },
@@ -102,7 +183,12 @@
               "difficulty": "beginner",
               "prompt": "I am looking forward to meet my cousin next week.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I am looking forward to meeting my cousin next week."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I am looking forward to meeting my cousin next week."
+                ]
+              },
               "explanation": "In look forward to, the to is a preposition, and a preposition is always followed by the -ing form. Writing to meet treats the preposition as the start of an infinitive, which is the standard error in this pattern.",
               "xp": 10
             },
@@ -115,12 +201,36 @@
               "prompt": "Match each verb to the form it takes.",
               "instruction": "Pair every verb with the correct pattern.",
               "items": [
-                { "id": "v1", "text": "enjoy", "matchKey": "gerund" },
-                { "id": "v2", "text": "avoid", "matchKey": "gerund" },
-                { "id": "v3", "text": "finish", "matchKey": "gerund" },
-                { "id": "v4", "text": "imagine", "matchKey": "gerund" }
+                {
+                  "id": "v1",
+                  "text": "enjoy",
+                  "matchKey": "gerund"
+                },
+                {
+                  "id": "v2",
+                  "text": "avoid",
+                  "matchKey": "gerund"
+                },
+                {
+                  "id": "v3",
+                  "text": "finish",
+                  "matchKey": "gerund"
+                },
+                {
+                  "id": "v4",
+                  "text": "imagine",
+                  "matchKey": "gerund"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "v1": "gerund", "v2": "gerund", "v3": "gerund", "v4": "gerund" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "v1": "gerund",
+                  "v2": "gerund",
+                  "v3": "gerund",
+                  "v4": "gerund"
+                }
+              },
               "explanation": "All four verbs in this set take only the -ing form, which is why they are grouped together in the first place. Recognising a cluster makes the pattern predictable instead of something to be checked verb by verb.",
               "xp": 10
             }
@@ -133,16 +243,26 @@
           "items": [
             {
               "id": "gig-d1",
-              "audio": { "kind": "speech", "text": "She denied taking the last slice of cake." },
-              "acceptedAnswers": ["She denied taking the last slice of cake."],
+              "audio": {
+                "kind": "speech",
+                "text": "She denied taking the last slice of cake."
+              },
+              "acceptedAnswers": [
+                "She denied taking the last slice of cake."
+              ],
               "hint": "deny + -ing",
               "translation": "Cô ấy phủ nhận việc đã ăn miếng bánh cuối cùng.",
               "xp": 15
             },
             {
               "id": "gig-d2",
-              "audio": { "kind": "speech", "text": "I am looking forward to hearing from you soon." },
-              "acceptedAnswers": ["I am looking forward to hearing from you soon."],
+              "audio": {
+                "kind": "speech",
+                "text": "I am looking forward to hearing from you soon."
+              },
+              "acceptedAnswers": [
+                "I am looking forward to hearing from you soon."
+              ],
               "hint": "to is a preposition, so use -ing",
               "translation": "Tôi mong sớm được tin từ bạn.",
               "xp": 15
@@ -163,12 +283,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "He avoids to pay the fees in advance.", "isCorrect": false },
-                { "id": "b", "text": "He avoids paying the fees in advance.", "isCorrect": true },
-                { "id": "c", "text": "He avoids pay the fees in advance.", "isCorrect": false },
-                { "id": "d", "text": "He avoids paid the fees in advance.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "He avoids to pay the fees in advance.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "He avoids paying the fees in advance.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "He avoids pay the fees in advance.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He avoids paid the fees in advance.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Avoid is followed by the gerund only: avoids paying. Option c uses a bare base verb and option d uses the past participle, and neither can follow avoid in English.",
               "xp": 10
             },
@@ -180,7 +321,13 @@
               "difficulty": "intermediate",
               "prompt": "Write the -ing form of the verb 'to travel'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["travelling", "traveling"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "travelling",
+                  "traveling"
+                ]
+              },
               "explanation": "The -ing form of travel is travelling, with the final consonant doubled because the stress falls on the second syllable. American spelling drops the second l, so both variants are accepted here.",
               "xp": 10
             },
@@ -192,7 +339,12 @@
               "difficulty": "intermediate",
               "prompt": "He is good at play chess.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He is good at playing chess."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He is good at playing chess."
+                ]
+              },
               "explanation": "After the preposition at the verb must be in the -ing form: playing. There is no exception for short verbs, and no to-infinitive is possible after a preposition.",
               "xp": 10
             }
@@ -230,8 +382,18 @@
               "statement": "After these verbs, put to + base form of the next verb. The to may be dropped only after a modal or another auxiliary.",
               "formula": "verb + to + base verb",
               "examples": [
-                { "id": "gii-r1e1", "en": "I want to learn Japanese.", "vi": "Tôi muốn học tiếng Nhật.", "note": "want + to + base verb" },
-                { "id": "gii-r1e2", "en": "She decided to move abroad.", "vi": "Cô ấy quyết định đi nước ngoài.", "note": "decide + to + base verb" }
+                {
+                  "id": "gii-r1e1",
+                  "en": "I want to learn Japanese.",
+                  "vi": "Tôi muốn học tiếng Nhật.",
+                  "note": "want + to + base verb"
+                },
+                {
+                  "id": "gii-r1e2",
+                  "en": "She decided to move abroad.",
+                  "vi": "Cô ấy quyết định đi nước ngoài.",
+                  "note": "decide + to + base verb"
+                }
               ]
             },
             {
@@ -239,8 +401,18 @@
               "statement": "Group them by meaning: intention, decision and obligation, effort and judgement.",
               "formula": "want, hope, plan, intend, would like, offer | decide, agree, promise, refuse, manage | try, attempt, learn, manage | pretend, seem, appear, claim",
               "examples": [
-                { "id": "gii-r2e1", "en": "He refused to pay the fine.", "vi": "Anh ấy từ chối nộp phạt.", "note": "refuse + to + base verb" },
-                { "id": "gii-r2e2", "en": "They agreed to meet earlier.", "vi": "Họ đồng ý gặp sớm hơn.", "note": "agree + to + base verb" }
+                {
+                  "id": "gii-r2e1",
+                  "en": "He refused to pay the fine.",
+                  "vi": "Anh ấy từ chối nộp phạt.",
+                  "note": "refuse + to + base verb"
+                },
+                {
+                  "id": "gii-r2e2",
+                  "en": "They agreed to meet earlier.",
+                  "vi": "Họ đồng ý gặp sớm hơn.",
+                  "note": "agree + to + base verb"
+                }
               ]
             },
             {
@@ -248,8 +420,18 @@
               "statement": "Modals and auxiliaries are followed by the bare base form, with no to at all.",
               "formula": "can / will / must / should / would + base verb",
               "examples": [
-                { "id": "gii-r3e1", "en": "I can help you with that.", "vi": "Tôi có thể giúp bạn việc đó.", "note": "can + help, not can to help" },
-                { "id": "gii-r3e2", "en": "You should book the tickets early.", "vi": "Bạn nên đặt vé sớm.", "note": "should + book" }
+                {
+                  "id": "gii-r3e1",
+                  "en": "I can help you with that.",
+                  "vi": "Tôi có thể giúp bạn việc đó.",
+                  "note": "can + help, not can to help"
+                },
+                {
+                  "id": "gii-r3e2",
+                  "en": "You should book the tickets early.",
+                  "vi": "Bạn nên đặt vé sớm.",
+                  "note": "should + book"
+                }
               ]
             }
           ]
@@ -258,11 +440,36 @@
           "id": "gii-examples",
           "type": "examples",
           "examples": [
-            { "id": "gii-ex1", "en": "My parents hope to visit me next year.", "vi": "Bố mẹ tôi hy vọng được thăm tôi vào năm sau.", "note": "hope + to + base verb" },
-            { "id": "gii-ex2", "en": "He learned to swim when he was six.", "vi": "Anh ấy học bơi khi sáu tuổi.", "note": "learn + to + base verb: skill acquired" },
-            { "id": "gii-ex3", "en": "I would like to book a window seat.", "vi": "Tôi muốn đặt một ghế cạnh cửa sổ.", "note": "would like + to + base verb, polite" },
-            { "id": "gii-ex4", "en": "They pretended to understand the question.", "vi": "Họ giả vờ hiểu câu hỏi.", "note": "pretend + to + base verb" },
-            { "id": "gii-ex5", "en": "I don't want to argue about it now.", "vi": "Tôi không muốn tranh luận về chuyện đó bây giờ.", "note": "negative: do not + want + to + base verb" }
+            {
+              "id": "gii-ex1",
+              "en": "My parents hope to visit me next year.",
+              "vi": "Bố mẹ tôi hy vọng được thăm tôi vào năm sau.",
+              "note": "hope + to + base verb"
+            },
+            {
+              "id": "gii-ex2",
+              "en": "He learned to swim when he was six.",
+              "vi": "Anh ấy học bơi khi sáu tuổi.",
+              "note": "learn + to + base verb: skill acquired"
+            },
+            {
+              "id": "gii-ex3",
+              "en": "I would like to book a window seat.",
+              "vi": "Tôi muốn đặt một ghế cạnh cửa sổ.",
+              "note": "would like + to + base verb, polite"
+            },
+            {
+              "id": "gii-ex4",
+              "en": "They pretended to understand the question.",
+              "vi": "Họ giả vờ hiểu câu hỏi.",
+              "note": "pretend + to + base verb"
+            },
+            {
+              "id": "gii-ex5",
+              "en": "I don't want to argue about it now.",
+              "vi": "Tôi không muốn tranh luận về chuyện đó bây giờ.",
+              "note": "negative: do not + want + to + base verb"
+            }
           ]
         },
         {
@@ -278,12 +485,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I want learning Spanish.", "isCorrect": false },
-                { "id": "b", "text": "I want to learn Spanish.", "isCorrect": true },
-                { "id": "c", "text": "I want learn Spanish.", "isCorrect": false },
-                { "id": "d", "text": "I am wanting to learn Spanish.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I want learning Spanish.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I want to learn Spanish.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I want learn Spanish.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I am wanting to learn Spanish.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Want belongs to the to-infinitive group, so want to learn is correct. Option a uses the gerund, which belongs to verbs such as enjoy and avoid; option c leaves out the to; option d adds an auxiliary that want does not need.",
               "xp": 10
             },
@@ -295,7 +523,12 @@
               "difficulty": "beginner",
               "prompt": "They agreed ___ (meet) in front of the library.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["to meet"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "to meet"
+                ]
+              },
               "explanation": "Agree is followed by to + base verb, so to meet is required. Agree is a good example of a verb that is easy to confuse with enjoy-type verbs, because the two groups differ only in the pattern, not in the meaning of the English word.",
               "xp": 10
             },
@@ -307,7 +540,12 @@
               "difficulty": "intermediate",
               "prompt": "She refused paying for the meal.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She refused to pay for the meal."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She refused to pay for the meal."
+                ]
+              },
               "explanation": "Refuse takes the to-infinitive, so both the pattern and the verb form change: refused to pay. Paying is a gerund, which is what would be required after a verb like enjoy, not after refuse.",
               "xp": 10
             },
@@ -320,12 +558,36 @@
               "prompt": "Match each verb to the pattern it takes.",
               "instruction": "Pair every verb with the correct pattern.",
               "items": [
-                { "id": "v1", "text": "hope", "matchKey": "infinitive" },
-                { "id": "v2", "text": "manage", "matchKey": "infinitive" },
-                { "id": "v3", "text": "promise", "matchKey": "infinitive" },
-                { "id": "v4", "text": "refuse", "matchKey": "infinitive" }
+                {
+                  "id": "v1",
+                  "text": "hope",
+                  "matchKey": "infinitive"
+                },
+                {
+                  "id": "v2",
+                  "text": "manage",
+                  "matchKey": "infinitive"
+                },
+                {
+                  "id": "v3",
+                  "text": "promise",
+                  "matchKey": "infinitive"
+                },
+                {
+                  "id": "v4",
+                  "text": "refuse",
+                  "matchKey": "infinitive"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "v1": "infinitive", "v2": "infinitive", "v3": "infinitive", "v4": "infinitive" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "v1": "infinitive",
+                  "v2": "infinitive",
+                  "v3": "infinitive",
+                  "v4": "infinitive"
+                }
+              },
               "explanation": "Hope, manage, promise and refuse all belong to the to-infinitive group. Notice that refuse is the opposite of enjoy in meaning but opposite in pattern too, which is exactly why the two sets have to be learned separately.",
               "xp": 10
             }
@@ -338,16 +600,26 @@
           "items": [
             {
               "id": "gii-d1",
-              "audio": { "kind": "speech", "text": "I would like to reserve a table for two people." },
-              "acceptedAnswers": ["I would like to reserve a table for two people."],
+              "audio": {
+                "kind": "speech",
+                "text": "I would like to reserve a table for two people."
+              },
+              "acceptedAnswers": [
+                "I would like to reserve a table for two people."
+              ],
               "hint": "would like + to + base verb",
               "translation": "Tôi muốn đặt bàn cho hai người.",
               "xp": 15
             },
             {
               "id": "gii-d2",
-              "audio": { "kind": "speech", "text": "They promised to send the documents before Friday." },
-              "acceptedAnswers": ["They promised to send the documents before Friday."],
+              "audio": {
+                "kind": "speech",
+                "text": "They promised to send the documents before Friday."
+              },
+              "acceptedAnswers": [
+                "They promised to send the documents before Friday."
+              ],
               "hint": "promise + to + base verb",
               "translation": "Họ hứa sẽ gửi giấy tờ trước thứ Sáu.",
               "xp": 15
@@ -368,12 +640,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She promised to be there at six.", "isCorrect": true },
-                { "id": "b", "text": "She promised being there at six.", "isCorrect": false },
-                { "id": "c", "text": "She promised to being there at six.", "isCorrect": false },
-                { "id": "d", "text": "She promised that there at six.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She promised to be there at six.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "She promised being there at six.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "She promised to being there at six.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "She promised that there at six.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "After to we need the base form: to be. Option b uses the gerund, and option c stacks an -ing form onto the infinitive; the two patterns are alternatives, never a combination.",
               "xp": 10
             },
@@ -385,7 +678,12 @@
               "difficulty": "intermediate",
               "prompt": "I can to help you with your English.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I can help you with your English."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I can help you with your English."
+                ]
+              },
               "explanation": "After a modal, English uses the bare base form with no to at all: can help. The to-infinitive is for ordinary verbs such as want and decide, and modals are the exception to that pattern.",
               "xp": 10
             },
@@ -397,7 +695,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the -ing form of the verb 'to run'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["running"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "running"
+                ]
+              },
               "explanation": "Run doubles its final consonant before -ing because the stress falls on the last syllable: running. This matters when you see running in a gerund pattern, as in She enjoys running every morning.",
               "xp": 10
             }
@@ -435,8 +738,18 @@
               "statement": "The gerund refers to a past action you recall; the to-infinitive refers to a future action you must not forget.",
               "formula": "remember doing = recall the past | remember to do = not forget",
               "examples": [
-                { "id": "giv-r1e1", "en": "I remember locking the door.", "vi": "Tôi nhớ là đã khóa cửa.", "note": "gerund: the action is a memory" },
-                { "id": "giv-r1e2", "en": "Remember to lock the door when you leave.", "vi": "Nhớ khóa cửa khi bạn ra đi.", "note": "infinitive: an instruction for the future" }
+                {
+                  "id": "giv-r1e1",
+                  "en": "I remember locking the door.",
+                  "vi": "Tôi nhớ là đã khóa cửa.",
+                  "note": "gerund: the action is a memory"
+                },
+                {
+                  "id": "giv-r1e2",
+                  "en": "Remember to lock the door when you leave.",
+                  "vi": "Nhớ khóa cửa khi bạn ra đi.",
+                  "note": "infinitive: an instruction for the future"
+                }
               ]
             },
             {
@@ -444,8 +757,18 @@
               "statement": "After stop the gerund means quit the activity; the infinitive means prevent it. After try the gerund means experiment; the infinitive means attempt.",
               "formula": "stop doing = quit | stop to do = pause in order to do | try doing = experiment | try to do = attempt",
               "examples": [
-                { "id": "giv-r2e1", "en": "He stopped smoking last year.", "vi": "Anh ấy đã bỏ thuốc lá năm ngoái.", "note": "stop + -ing: the activity ended" },
-                { "id": "giv-r2e2", "en": "She stopped to smoke at the corner.", "vi": "Cô ấy dừng lại để hút thuốc ở góc phố.", "note": "stop + to: she paused for another purpose" }
+                {
+                  "id": "giv-r2e1",
+                  "en": "He stopped smoking last year.",
+                  "vi": "Anh ấy đã bỏ thuốc lá năm ngoái.",
+                  "note": "stop + -ing: the activity ended"
+                },
+                {
+                  "id": "giv-r2e2",
+                  "en": "She stopped to smoke at the corner.",
+                  "vi": "Cô ấy dừng lại để hút thuốc ở góc phố.",
+                  "note": "stop + to: she paused for another purpose"
+                }
               ]
             },
             {
@@ -453,8 +776,18 @@
               "statement": "Regret doing looks back with sorry; regret to do apologises now for something ahead. Mean doing refers to what something signifies; mean to do refers to intention.",
               "formula": "regret doing = sorry about the past | regret to do = apologise now | mean doing = signify | mean to do = intend",
               "examples": [
-                { "id": "giv-r3e1", "en": "I regret telling her the truth.", "vi": "Tôi hối hận vì đã nói thật với cô ấy.", "note": "gerund: the telling is already done" },
-                { "id": "giv-r3e2", "en": "I regret to inform you that your application was rejected.", "vi": "Tôi rất tiếc phải thông báo rằng hồ sơ của bạn đã bị từ chối.", "note": "infinitive: the rejection is the news being given now" }
+                {
+                  "id": "giv-r3e1",
+                  "en": "I regret telling her the truth.",
+                  "vi": "Tôi hối hận vì đã nói thật với cô ấy.",
+                  "note": "gerund: the telling is already done"
+                },
+                {
+                  "id": "giv-r3e2",
+                  "en": "I regret to inform you that your application was rejected.",
+                  "vi": "Tôi rất tiếc phải thông báo rằng hồ sơ của bạn đã bị từ chối.",
+                  "note": "infinitive: the rejection is the news being given now"
+                }
               ]
             }
           ]
@@ -463,11 +796,36 @@
           "id": "giv-examples",
           "type": "examples",
           "examples": [
-            { "id": "giv-ex1", "en": "Don't forget to bring your passport.", "vi": "Đừng quên mang hộ chiếu theo.", "note": "infinitive: something still ahead" },
-            { "id": "giv-ex2", "en": "I'll never forget meeting her at that conference.", "vi": "Tôi sẽ không bao giờ quên cuộc gặp gỡ cô ấy tại hội nghị đó.", "note": "gerund: a memory of the past" },
-            { "id": "giv-ex3", "en": "He tried to lift the box but it was too heavy.", "vi": "Anh ấy cố bê chiếc hộp nhưng nó quá nặng.", "note": "try + to: an attempt at a task" },
-            { "id": "giv-ex4", "en": "We tried living in the countryside for a month.", "vi": "Chúng tôi đã thử sống ở nông thôn trong một tháng.", "note": "try + -ing: an experiment" },
-            { "id": "giv-ex5", "en": "What do you mean by saying that?", "vi": "Bạn nói vậy nghĩa là gì?", "note": "mean + by + -ing: what something signifies" }
+            {
+              "id": "giv-ex1",
+              "en": "Don't forget to bring your passport.",
+              "vi": "Đừng quên mang hộ chiếu theo.",
+              "note": "infinitive: something still ahead"
+            },
+            {
+              "id": "giv-ex2",
+              "en": "I'll never forget meeting her at that conference.",
+              "vi": "Tôi sẽ không bao giờ quên cuộc gặp gỡ cô ấy tại hội nghị đó.",
+              "note": "gerund: a memory of the past"
+            },
+            {
+              "id": "giv-ex3",
+              "en": "He tried to lift the box but it was too heavy.",
+              "vi": "Anh ấy cố bê chiếc hộp nhưng nó quá nặng.",
+              "note": "try + to: an attempt at a task"
+            },
+            {
+              "id": "giv-ex4",
+              "en": "We tried living in the countryside for a month.",
+              "vi": "Chúng tôi đã thử sống ở nông thôn trong một tháng.",
+              "note": "try + -ing: an experiment"
+            },
+            {
+              "id": "giv-ex5",
+              "en": "What do you mean by saying that?",
+              "vi": "Bạn nói vậy nghĩa là gì?",
+              "note": "mean + by + -ing: what something signifies"
+            }
           ]
         },
         {
@@ -483,12 +841,33 @@
               "prompt": "You are about to leave the office. Which sentence is right?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "Remember locking the door.", "isCorrect": false },
-                { "id": "b", "text": "Remember to lock the door.", "isCorrect": true },
-                { "id": "c", "text": "Remember locking to the door.", "isCorrect": false },
-                { "id": "d", "text": "Remember that lock the door.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "Remember locking the door.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "Remember to lock the door.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "Remember locking to the door.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "Remember that lock the door.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "The action has not happened yet, so remember to lock is the instruction. Remember locking would only make sense if you were looking back at a past action, and option c mixes the two patterns in a way English does not allow.",
               "xp": 10
             },
@@ -501,12 +880,34 @@
               "prompt": "Which sentences describe something that already happened? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "a", "text": "I remember meeting her.", "isCorrect": true },
-                { "id": "b", "text": "I remember to meet her.", "isCorrect": false },
-                { "id": "c", "text": "He stopped smoking.", "isCorrect": true },
-                { "id": "d", "text": "He stopped to smoke.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I remember meeting her.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "I remember to meet her.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "He stopped smoking.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "He stopped to smoke.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "The gerund points back at a past event, so remember meeting and stopped smoking both describe what has already happened. The to-infinitive points forward: remember to meet is a future reminder and stopped to smoke means he paused in order to smoke.",
               "xp": 10
             },
@@ -518,7 +919,12 @@
               "difficulty": "intermediate",
               "prompt": "I regret to lose my passport on the trip.",
               "instruction": "Rewrite the sentence so that it refers to what has already happened.",
-              "answer": { "type": "text", "values": ["I regret losing my passport on the trip."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I regret losing my passport on the trip."
+                ]
+              },
               "explanation": "Losing the passport is already past, so the gerund is correct: regret losing. Regret to do is reserved for apologising now about news you are about to deliver, as in I regret to inform you.",
               "xp": 10
             },
@@ -530,7 +936,12 @@
               "difficulty": "advanced",
               "prompt": "Complete with the correct form: 'She stopped ___ when the alarm rang.'",
               "instruction": "Write the verb form only.",
-              "answer": { "type": "text", "values": ["smoking"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "smoking"
+                ]
+              },
               "explanation": "An alarm ringing is a sudden interruption of an activity already in progress, so the background action is a gerund: stopped smoking. If the intended meaning were that she paused in order to do something, the sentence would need a different structure such as She stopped to smoke.",
               "xp": 10
             }
@@ -543,16 +954,26 @@
           "items": [
             {
               "id": "giv-d1",
-              "audio": { "kind": "speech", "text": "I will never forget taking that first flight." },
-              "acceptedAnswers": ["I will never forget taking that first flight."],
+              "audio": {
+                "kind": "speech",
+                "text": "I will never forget taking that first flight."
+              },
+              "acceptedAnswers": [
+                "I will never forget taking that first flight."
+              ],
               "hint": "forget + -ing looks back at the past",
               "translation": "Tôi sẽ không bao giờ quên chuyến bay đầu tiên đó.",
               "xp": 15
             },
             {
               "id": "giv-d2",
-              "audio": { "kind": "speech", "text": "He stopped to buy some fruit on the way home." },
-              "acceptedAnswers": ["He stopped to buy some fruit on the way home."],
+              "audio": {
+                "kind": "speech",
+                "text": "He stopped to buy some fruit on the way home."
+              },
+              "acceptedAnswers": [
+                "He stopped to buy some fruit on the way home."
+              ],
               "hint": "stop + to = pause in order to do something",
               "translation": "Anh ấy dừng lại mua trái cây trên đường về nhà.",
               "xp": 15
@@ -573,12 +994,33 @@
               "prompt": "Which sentence means 'he quit smoking'?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "He stopped smoking.", "isCorrect": true },
-                { "id": "b", "text": "He stopped to smoke.", "isCorrect": false },
-                { "id": "c", "text": "He stopped smoke.", "isCorrect": false },
-                { "id": "d", "text": "He stopped for smoke.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "He stopped smoking.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "He stopped to smoke.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "He stopped smoke.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He stopped for smoke.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Stopping the activity itself is stop plus the gerund: stopped smoking. Option b means he paused his journey in order to have a cigarette, which is the opposite life choice.",
               "xp": 10
             },
@@ -590,7 +1032,12 @@
               "difficulty": "advanced",
               "prompt": "He suggested to meet at the airport.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He suggested meeting at the airport."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He suggested meeting at the airport."
+                ]
+              },
               "explanation": "Suggest never takes a to-infinitive, so the correct form is suggested meeting. This is the most common error in the whole area, and it happens because suggested is often confused with advised or proposed, which do take the infinitive.",
               "xp": 10
             },
@@ -602,7 +1049,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the -ing form of the verb 'to mean'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["meaning"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "meaning"
+                ]
+              },
               "explanation": "Mean takes the -ing form without changing its spelling: meaning, as in I don't know what you're meaning by that. Written as meanning it would be a spelling error, since a stressed long vowel does not double the consonant.",
               "xp": 10
             }
@@ -640,8 +1092,18 @@
               "statement": "Used to + base verb describes a habit that has stopped. Be used to + noun or gerund describes a habit that still holds.",
               "formula": "used to + base verb (past habit) | be used to + noun / -ing (accustomed)",
               "examples": [
-                { "id": "gim-r1e1", "en": "I used to work at night.", "vi": "Trước đây tôi từng làm việc vào ban đêm.", "note": "past habit that no longer applies" },
-                { "id": "gim-r1e2", "en": "I am used to working at night.", "vi": "Tôi đã quen làm việc vào ban đêm.", "note": "the habit continues now" }
+                {
+                  "id": "gim-r1e1",
+                  "en": "I used to work at night.",
+                  "vi": "Trước đây tôi từng làm việc vào ban đêm.",
+                  "note": "past habit that no longer applies"
+                },
+                {
+                  "id": "gim-r1e2",
+                  "en": "I am used to working at night.",
+                  "vi": "Tôi đã quen làm việc vào ban đêm.",
+                  "note": "the habit continues now"
+                }
               ]
             },
             {
@@ -649,8 +1111,18 @@
               "statement": "A group of adjectives takes a fixed preposition, and the verb after it is always in the -ing form.",
               "formula": "interested in, keen on, good at, bad at, surprised at, worried about",
               "examples": [
-                { "id": "gim-r2e1", "en": "She is interested in learning Korean.", "vi": "Cô ấy quan tâm đến việc học tiếng Hàn.", "note": "interested in + -ing" },
-                { "id": "gim-r2e2", "en": "I am worried about missing the deadline.", "vi": "Tôi lo lắng về việc sẽ hết hạn.", "note": "worried about + -ing" }
+                {
+                  "id": "gim-r2e1",
+                  "en": "She is interested in learning Korean.",
+                  "vi": "Cô ấy quan tâm đến việc học tiếng Hàn.",
+                  "note": "interested in + -ing"
+                },
+                {
+                  "id": "gim-r2e2",
+                  "en": "I am worried about missing the deadline.",
+                  "vi": "Tôi lo lắng về việc sẽ hết hạn.",
+                  "note": "worried about + -ing"
+                }
               ]
             },
             {
@@ -658,8 +1130,18 @@
               "statement": "A few verbs differ more than a glance between the two patterns: prefer doing means enjoying something generally, while prefer to do means choosing one option.",
               "formula": "I prefer walking. / I prefer to walk.",
               "examples": [
-                { "id": "gim-r3e1", "en": "I prefer reading to watching television.", "vi": "Tôi thích đọc sách hơn là xem tivi.", "note": "preference between two general activities" },
-                { "id": "gim-r3e2", "en": "I prefer to walk rather than take the bus.", "vi": "Tôi thà đi bộ còn hơn đi xe buýt.", "note": "a choice between two specific options" }
+                {
+                  "id": "gim-r3e1",
+                  "en": "I prefer reading to watching television.",
+                  "vi": "Tôi thích đọc sách hơn là xem tivi.",
+                  "note": "preference between two general activities"
+                },
+                {
+                  "id": "gim-r3e2",
+                  "en": "I prefer to walk rather than take the bus.",
+                  "vi": "Tôi thà đi bộ còn hơn đi xe buýt.",
+                  "note": "a choice between two specific options"
+                }
               ]
             }
           ]
@@ -668,11 +1150,36 @@
           "id": "gim-examples",
           "type": "examples",
           "examples": [
-            { "id": "gim-ex1", "en": "He used to smoke, but he stopped two years ago.", "vi": "Trước đây anh ấy từng hút thuốc, nhưng hai năm trước anh ấy đã bỏ.", "note": "used to marks a habit that has ended" },
-            { "id": "gim-ex2", "en": "I'm not used to getting up so early.", "vi": "Tôi không quen dậy sớm như vậy.", "note": "be used to = accustomed, so gerund follows" },
-            { "id": "gim-ex3", "en": "They are keen on joining the marathon.", "vi": "Họ rất háo hức tham gia marathon.", "note": "keen on + gerund" },
-            { "id": "gim-ex4", "en": "He was surprised to see the changes.", "vi": "Anh ấy đã rất ngạc nhiên khi thấy những thay đổi.", "note": "surprised to see, a to-infinitive after an adjective" },
-            { "id": "gim-ex5", "en": "I prefer to take the train on long journeys.", "vi": "Tôi thà đi tàu hơn trên những chuyến đi dài.", "note": "prefer to do for a specific choice" }
+            {
+              "id": "gim-ex1",
+              "en": "He used to smoke, but he stopped two years ago.",
+              "vi": "Trước đây anh ấy từng hút thuốc, nhưng hai năm trước anh ấy đã bỏ.",
+              "note": "used to marks a habit that has ended"
+            },
+            {
+              "id": "gim-ex2",
+              "en": "I'm not used to getting up so early.",
+              "vi": "Tôi không quen dậy sớm như vậy.",
+              "note": "be used to = accustomed, so gerund follows"
+            },
+            {
+              "id": "gim-ex3",
+              "en": "They are keen on joining the marathon.",
+              "vi": "Họ rất háo hức tham gia marathon.",
+              "note": "keen on + gerund"
+            },
+            {
+              "id": "gim-ex4",
+              "en": "He was surprised to see the changes.",
+              "vi": "Anh ấy đã rất ngạc nhiên khi thấy những thay đổi.",
+              "note": "surprised to see, a to-infinitive after an adjective"
+            },
+            {
+              "id": "gim-ex5",
+              "en": "I prefer to take the train on long journeys.",
+              "vi": "Tôi thà đi tàu hơn trên những chuyến đi dài.",
+              "note": "prefer to do for a specific choice"
+            }
           ]
         },
         {
@@ -688,12 +1195,33 @@
               "prompt": "Choose the sentence that means 'he is accustomed to working at night'.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "He used to work at night.", "isCorrect": false },
-                { "id": "b", "text": "He is used to working at night.", "isCorrect": true },
-                { "id": "c", "text": "He is used to work at night.", "isCorrect": false },
-                { "id": "d", "text": "He is use to working at night.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "He used to work at night.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "He is used to working at night.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "He is used to work at night.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He is use to working at night.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Be used to is the passive meaning accustomed, so it is followed by a gerund. Option a describes a habit that has stopped, option c wrongly puts a base verb after the adjective phrase, and option d gets the spelling of the passive participle wrong.",
               "xp": 10
             },
@@ -705,7 +1233,12 @@
               "difficulty": "intermediate",
               "prompt": "She is interested in to study history.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She is interested in studying history."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She is interested in studying history."
+                ]
+              },
               "explanation": "In interested in, the in is a preposition, and prepositions are followed by the gerund: studying. This is the general rule that fixes the whole family of patterns, including keen on and good at.",
               "xp": 10
             },
@@ -718,9 +1251,16 @@
               "prompt": "The phrase 'used to' followed by a base verb describes a habit in the past that no longer continues.",
               "instruction": "Decide whether the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "The statement is true. Used to plus a base verb is the past habit marker and always implies the habit has ended, which is why speakers add a negation when they want to keep it: I used to not like coffee.",
               "xp": 10
             },
@@ -732,7 +1272,12 @@
               "difficulty": "advanced",
               "prompt": "I am not used to ___ (get) up at five in the morning.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["getting"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "getting"
+                ]
+              },
               "explanation": "After be used to the verb takes the -ing form, so getting is required. Using the bare form get is the classic confusion between the habit marker used to and the adjective be used to.",
               "xp": 10
             }
@@ -745,16 +1290,26 @@
           "items": [
             {
               "id": "gim-d1",
-              "audio": { "kind": "speech", "text": "I am used to getting up early, but my sister is not." },
-              "acceptedAnswers": ["I am used to getting up early, but my sister is not."],
+              "audio": {
+                "kind": "speech",
+                "text": "I am used to getting up early, but my sister is not."
+              },
+              "acceptedAnswers": [
+                "I am used to getting up early, but my sister is not."
+              ],
               "hint": "be used to + gerund = accustomed",
               "translation": "Tôi quen dậy sớm, nhưng em gái tôi thì không.",
               "xp": 15
             },
             {
               "id": "gim-d2",
-              "audio": { "kind": "speech", "text": "She is keen on taking part in the debate club." },
-              "acceptedAnswers": ["She is keen on taking part in the debate club."],
+              "audio": {
+                "kind": "speech",
+                "text": "She is keen on taking part in the debate club."
+              },
+              "acceptedAnswers": [
+                "She is keen on taking part in the debate club."
+              ],
               "hint": "keen on + gerund",
               "translation": "Cô ấy rất háo hức tham gia câu lạc bộ tranh luận.",
               "xp": 15
@@ -774,7 +1329,12 @@
               "difficulty": "advanced",
               "prompt": "He is used to work in the morning now.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He is used to working in the morning now."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He is used to working in the morning now."
+                ]
+              },
               "explanation": "Be used to here means accustomed, so the following verb must be the gerund working. If the intended meaning were the past habit that has stopped, the sentence would be He used to work in the morning.",
               "xp": 10
             },
@@ -787,12 +1347,33 @@
               "prompt": "Which pattern is correct after the adjective 'interested'?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "interested in learning", "isCorrect": true },
-                { "id": "b", "text": "interested to learn", "isCorrect": false },
-                { "id": "c", "text": "interested learning", "isCorrect": false },
-                { "id": "d", "text": "interested for learning", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "interested in learning",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "interested to learn",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "interested learning",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "interested for learning",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Interested takes the preposition in, and a preposition is followed by the gerund: interested in learning. Be interested to do is a common but incorrect mixture of the two patterns.",
               "xp": 10
             },
@@ -804,7 +1385,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the -ing form of the verb 'to prefer'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["preferring"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "preferring"
+                ]
+              },
               "explanation": "Prefer doubles the r before -ing: preferring, because the stress falls on the second syllable. Both prefer + -ing and prefer + to exist, so the form has to be spelled correctly in either pattern.",
               "xp": 10
             }
@@ -842,8 +1428,18 @@
               "statement": "A gerund subject is singular and takes a singular verb. It is common with adjectives like important, dangerous, useless and interesting.",
               "formula": "V-ing + singular verb",
               "examples": [
-                { "id": "gisg-r1e1", "en": "Learning a language takes patience.", "vi": "Học một ngôn ngữ cần sự kiên nhẫn.", "note": "gerund subject + singular verb takes" },
-                { "id": "gisg-r1e2", "en": "Waiting in line for an hour is exhausting.", "vi": "Xếp hàng chờ một tiếng thật mệt.", "note": "gerund subject + singular verb is" }
+                {
+                  "id": "gisg-r1e1",
+                  "en": "Learning a language takes patience.",
+                  "vi": "Học một ngôn ngữ cần sự kiên nhẫn.",
+                  "note": "gerund subject + singular verb takes"
+                },
+                {
+                  "id": "gisg-r1e2",
+                  "en": "Waiting in line for an hour is exhausting.",
+                  "vi": "Xếp hàng chờ một tiếng thật mệt.",
+                  "note": "gerund subject + singular verb is"
+                }
               ]
             },
             {
@@ -851,8 +1447,18 @@
               "statement": "The gerund can be the object of any preposition, which is how it fills the slot after in, on, of, for and about.",
               "formula": "preposition + V-ing + …",
               "examples": [
-                { "id": "gisg-r2e1", "en": "I'm fond of cooking at home.", "vi": "Tôi thích nấu ăn ở nhà.", "note": "of + gerund" },
-                { "id": "gisg-r2e2", "en": "She is good at making people laugh.", "vi": "Cô ấy giỏi khiến người ta cười.", "note": "at + gerund" }
+                {
+                  "id": "gisg-r2e1",
+                  "en": "I'm fond of cooking at home.",
+                  "vi": "Tôi thích nấu ăn ở nhà.",
+                  "note": "of + gerund"
+                },
+                {
+                  "id": "gisg-r2e2",
+                  "en": "She is good at making people laugh.",
+                  "vi": "Cô ấy giỏi khiến người ta cười.",
+                  "note": "at + gerund"
+                }
               ]
             },
             {
@@ -860,8 +1466,18 @@
               "statement": "Some verbs take a bare gerund and the same verb with a preposition takes a full clause. The preposition makes the structure heavier and more explanatory.",
               "formula": "I insist on the fact that he was late. / I insist that he was late.",
               "examples": [
-                { "id": "gisg-r3e1", "en": "He apologised for being late.", "vi": "Anh ấy đã xin lỗi vì đến muộn.", "note": "for + gerund" },
-                { "id": "gisg-r3e2", "en": "They objected to being interrupted.", "vi": "Họ phản đối việc bị ngắt lời.", "note": "to + gerund" }
+                {
+                  "id": "gisg-r3e1",
+                  "en": "He apologised for being late.",
+                  "vi": "Anh ấy đã xin lỗi vì đến muộn.",
+                  "note": "for + gerund"
+                },
+                {
+                  "id": "gisg-r3e2",
+                  "en": "They objected to being interrupted.",
+                  "vi": "Họ phản đối việc bị ngắt lời.",
+                  "note": "to + gerund"
+                }
               ]
             }
           ]
@@ -870,11 +1486,36 @@
           "id": "gisg-examples",
           "type": "examples",
           "examples": [
-            { "id": "gisg-ex1", "en": "Reading in dim light is bad for your eyes.", "vi": "Đọc sách trong ánh sáng yếu có hại cho mắt.", "note": "gerund subject with a singular verb" },
-            { "id": "gisg-ex2", "en": "I spent the afternoon sorting the files.", "vi": "Tôi dành buổi chiều để sắp xếp hồ sơ.", "note": "spend + time + gerund" },
-            { "id": "gisg-ex3", "en": "There's no point in arguing about it.", "vi": "Tranh cãi về chuyện đó chẳng có ý nghĩa gì.", "note": "no point in + gerund" },
-            { "id": "gisg-ex4", "en": "She has a habit of biting her nails.", "vi": "Cô ấy có thói quen cắn móng tay.", "note": "habit of + gerund" },
-            { "id": "gisg-ex5", "en": "Getting up early every day takes real motivation.", "vi": "Dậy sớm mỗi ngày thật sự cần động lực.", "note": "gerund subject + singular verb" }
+            {
+              "id": "gisg-ex1",
+              "en": "Reading in dim light is bad for your eyes.",
+              "vi": "Đọc sách trong ánh sáng yếu có hại cho mắt.",
+              "note": "gerund subject with a singular verb"
+            },
+            {
+              "id": "gisg-ex2",
+              "en": "I spent the afternoon sorting the files.",
+              "vi": "Tôi dành buổi chiều để sắp xếp hồ sơ.",
+              "note": "spend + time + gerund"
+            },
+            {
+              "id": "gisg-ex3",
+              "en": "There's no point in arguing about it.",
+              "vi": "Tranh cãi về chuyện đó chẳng có ý nghĩa gì.",
+              "note": "no point in + gerund"
+            },
+            {
+              "id": "gisg-ex4",
+              "en": "She has a habit of biting her nails.",
+              "vi": "Cô ấy có thói quen cắn móng tay.",
+              "note": "habit of + gerund"
+            },
+            {
+              "id": "gisg-ex5",
+              "en": "Getting up early every day takes real motivation.",
+              "vi": "Dậy sớm mỗi ngày thật sự cần động lực.",
+              "note": "gerund subject + singular verb"
+            }
           ]
         },
         {
@@ -890,12 +1531,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "Learning English takes a lot of time.", "isCorrect": true },
-                { "id": "b", "text": "Learning English take a lot of time.", "isCorrect": false },
-                { "id": "c", "text": "Learn English takes a lot of time.", "isCorrect": false },
-                { "id": "d", "text": "Learning English are a lot of time.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "Learning English takes a lot of time.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "Learning English take a lot of time.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "Learn English takes a lot of time.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "Learning English are a lot of time.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A gerund subject is one thing, so the verb is singular: takes. Option b uses the plural verb, which is the error learners make when they mentally translate the gerund as an action with a doer rather than a single unit.",
               "xp": 10
             },
@@ -907,7 +1569,12 @@
               "difficulty": "intermediate",
               "prompt": "There's no point in ___ (worry) about something you cannot change.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["worrying"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "worrying"
+                ]
+              },
               "explanation": "The phrase no point in contains a preposition, and prepositions take the gerund: worrying. The same sentence with no point of would need a different construction entirely.",
               "xp": 10
             },
@@ -919,7 +1586,12 @@
               "difficulty": "intermediate",
               "prompt": "He apologised to be late for the meeting.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He apologised for being late for the meeting."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He apologised for being late for the meeting."
+                ]
+              },
               "explanation": "Apologise takes the preposition for, and after for the verb must be a gerund: for being late. To apologise is also wrong, because apologise is a verb of apology, not a verb of intention.",
               "xp": 10
             },
@@ -932,17 +1604,57 @@
               "prompt": "Put the words in the correct order.",
               "instruction": "Build the sentence.",
               "items": [
-                { "id": "w1", "text": "worrying" },
-                { "id": "w2", "text": "There" },
-                { "id": "w3", "text": "is" },
-                { "id": "w4", "text": "no" },
-                { "id": "w5", "text": "about" },
-                { "id": "w6", "text": "result" },
-                { "id": "w7", "text": "point" },
-                { "id": "w8", "text": "the" },
-                { "id": "w9", "text": "in" }
+                {
+                  "id": "w1",
+                  "text": "worrying"
+                },
+                {
+                  "id": "w2",
+                  "text": "There"
+                },
+                {
+                  "id": "w3",
+                  "text": "is"
+                },
+                {
+                  "id": "w4",
+                  "text": "no"
+                },
+                {
+                  "id": "w5",
+                  "text": "about"
+                },
+                {
+                  "id": "w6",
+                  "text": "result"
+                },
+                {
+                  "id": "w7",
+                  "text": "point"
+                },
+                {
+                  "id": "w8",
+                  "text": "the"
+                },
+                {
+                  "id": "w9",
+                  "text": "in"
+                }
               ],
-              "answer": { "type": "order", "values": ["There", "is", "no", "point", "in", "worrying", "about", "the", "result"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "There",
+                  "is",
+                  "no",
+                  "point",
+                  "in",
+                  "worrying",
+                  "about",
+                  "the",
+                  "result"
+                ]
+              },
               "explanation": "The phrase no point in is a fixed prepositional pattern, so the gerund worrying has to come directly after in, before the next preposition about. The word in therefore cannot be moved forward to join about, which is the trap this exercise sets.",
               "xp": 10
             }
@@ -955,16 +1667,26 @@
           "items": [
             {
               "id": "gisg-d1",
-              "audio": { "kind": "speech", "text": "Studying a new subject requires a lot of discipline." },
-              "acceptedAnswers": ["Studying a new subject requires a lot of discipline."],
+              "audio": {
+                "kind": "speech",
+                "text": "Studying a new subject requires a lot of discipline."
+              },
+              "acceptedAnswers": [
+                "Studying a new subject requires a lot of discipline."
+              ],
               "hint": "gerund subject + singular verb",
               "translation": "Học một môn mới đòi hỏi rất nhiều kỷ luật.",
               "xp": 15
             },
             {
               "id": "gisg-d2",
-              "audio": { "kind": "speech", "text": "I don't feel like cooking tonight." },
-              "acceptedAnswers": ["I don't feel like cooking tonight."],
+              "audio": {
+                "kind": "speech",
+                "text": "I don't feel like cooking tonight."
+              },
+              "acceptedAnswers": [
+                "I don't feel like cooking tonight."
+              ],
               "hint": "like is followed by a gerund",
               "translation": "Tối nay tôi không muốn nấu ăn.",
               "xp": 15
@@ -984,7 +1706,12 @@
               "difficulty": "intermediate",
               "prompt": "Keeping a diary help a lot with learning.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Keeping a diary helps a lot with learning."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Keeping a diary helps a lot with learning."
+                ]
+              },
               "explanation": "The subject is the gerund phrase Keeping a diary, which counts as one thing, so the verb must be singular: helps. Using help would treat the gerund as a plural action.",
               "xp": 10
             },
@@ -997,12 +1724,33 @@
               "prompt": "Which sentence uses a gerund correctly as the object of a preposition?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I'm fond of cooking traditional food.", "isCorrect": true },
-                { "id": "b", "text": "I'm fond to cooking traditional food.", "isCorrect": false },
-                { "id": "c", "text": "I'm fond cooking traditional food.", "isCorrect": false },
-                { "id": "d", "text": "I'm fond of cook traditional food.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I'm fond of cooking traditional food.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "I'm fond to cooking traditional food.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "I'm fond cooking traditional food.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I'm fond of cook traditional food.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Fond of is a prepositional phrase, so the gerund cooking follows the preposition. Option b replaces the preposition with an infinitive to, and option d puts a base verb after the preposition.",
               "xp": 10
             },
@@ -1014,7 +1762,12 @@
               "difficulty": "intermediate",
               "prompt": "Complete with the gerund: 'She avoided ___ the question directly.'",
               "instruction": "Write the verb form only.",
-              "answer": { "type": "text", "values": ["answering"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "answering"
+                ]
+              },
               "explanation": "Avoid is one of the gerund-only verbs, so answering is required. The gerund names the action that she steered clear of, which is why no to-infinitive is possible here.",
               "xp": 10
             }
@@ -1052,8 +1805,18 @@
               "statement": "Verbs of opinion, knowledge, emotion and fact are followed by a that-clause, which keeps statement word order.",
               "formula": "verb + that + subject + verb",
               "examples": [
-                { "id": "ginc-r1e1", "en": "I think that she is right.", "vi": "Tôi nghĩ cô ấy đúng.", "note": "think + that + statement order" },
-                { "id": "ginc-r1e2", "en": "He admitted that he had been wrong.", "vi": "Anh ấy thừa nhận rằng anh ấy đã sai.", "note": "admit + that, the that may be omitted" }
+                {
+                  "id": "ginc-r1e1",
+                  "en": "I think that she is right.",
+                  "vi": "Tôi nghĩ cô ấy đúng.",
+                  "note": "think + that + statement order"
+                },
+                {
+                  "id": "ginc-r1e2",
+                  "en": "He admitted that he had been wrong.",
+                  "vi": "Anh ấy thừa nhận rằng anh ấy đã sai.",
+                  "note": "admit + that, the that may be omitted"
+                }
               ]
             },
             {
@@ -1061,8 +1824,18 @@
               "statement": "After ask, tell, wonder, know and similar verbs, the embedded question uses question word order but drops the auxiliary if there is one.",
               "formula": "ask / wonder + whether / if / what / how + subject + verb",
               "examples": [
-                { "id": "ginc-r2e1", "en": "She asked where the station was.", "vi": "Cô ấy hỏi nhà ga ở đâu.", "note": "no subject-auxiliary inversion: where the station was" },
-                { "id": "ginc-r2e2", "en": "I wonder if they have finished.", "vi": "Tôi tự hỏi họ đã xong chưa.", "note": "the do is dropped: have, not do they have" }
+                {
+                  "id": "ginc-r2e1",
+                  "en": "She asked where the station was.",
+                  "vi": "Cô ấy hỏi nhà ga ở đâu.",
+                  "note": "no subject-auxiliary inversion: where the station was"
+                },
+                {
+                  "id": "ginc-r2e2",
+                  "en": "I wonder if they have finished.",
+                  "vi": "Tôi tự hỏi họ đã xong chưa.",
+                  "note": "the do is dropped: have, not do they have"
+                }
               ]
             },
             {
@@ -1070,8 +1843,18 @@
               "statement": "Some verbs change meaning with the clause type: a that-clause states a fact, while a gerund or infinitive clause presents the content as an idea or an intention.",
               "formula": "I remember that I locked the door. / I remember locking the door. / I remember to lock the door.",
               "examples": [
-                { "id": "ginc-r3e1", "en": "I believe that he is honest.", "vi": "Tôi tin rằng anh ấy trung thực.", "note": "that-clause asserts a belief" },
-                { "id": "ginc-r3e2", "en": "He promised to return the money.", "vi": "Anh ấy hứa sẽ trả lại khoản tiền.", "note": "infinitive clause states a future intention" }
+                {
+                  "id": "ginc-r3e1",
+                  "en": "I believe that he is honest.",
+                  "vi": "Tôi tin rằng anh ấy trung thực.",
+                  "note": "that-clause asserts a belief"
+                },
+                {
+                  "id": "ginc-r3e2",
+                  "en": "He promised to return the money.",
+                  "vi": "Anh ấy hứa sẽ trả lại khoản tiền.",
+                  "note": "infinitive clause states a future intention"
+                }
               ]
             }
           ]
@@ -1080,11 +1863,36 @@
           "id": "ginc-examples",
           "type": "examples",
           "examples": [
-            { "id": "ginc-ex1", "en": "Do you know when the library opens?", "vi": "Bạn có biết thư viện mở cửa lúc nào không?", "note": "embedded question: opens, not does it open" },
-            { "id": "ginc-ex2", "en": "He explained why the flight had been delayed.", "vi": "Anh ấy giải thích lý do chuyến bay bị hoãn.", "note": "why + clause in statement order" },
-            { "id": "ginc-ex3", "en": "I appreciate your taking the trouble to come.", "vi": "Tôi trân trọng việc bạn đã cố gắng đến thăm.", "note": "appreciate + gerund, formal but standard" },
-            { "id": "ginc-ex4", "en": "She admitted that she had taken the file.", "vi": "Cô ấy thừa nhận đã lấy tệp tin đó.", "note": "past perfect inside the that-clause" },
-            { "id": "ginc-ex5", "en": "I'd rather you didn't mention the price.", "vi": "Tôi thà bạn đừng nhắc đến mức giá.", "note": "would rather + clause, not would rather you not to mention" }
+            {
+              "id": "ginc-ex1",
+              "en": "Do you know when the library opens?",
+              "vi": "Bạn có biết thư viện mở cửa lúc nào không?",
+              "note": "embedded question: opens, not does it open"
+            },
+            {
+              "id": "ginc-ex2",
+              "en": "He explained why the flight had been delayed.",
+              "vi": "Anh ấy giải thích lý do chuyến bay bị hoãn.",
+              "note": "why + clause in statement order"
+            },
+            {
+              "id": "ginc-ex3",
+              "en": "I appreciate your taking the trouble to come.",
+              "vi": "Tôi trân trọng việc bạn đã cố gắng đến thăm.",
+              "note": "appreciate + gerund, formal but standard"
+            },
+            {
+              "id": "ginc-ex4",
+              "en": "She admitted that she had taken the file.",
+              "vi": "Cô ấy thừa nhận đã lấy tệp tin đó.",
+              "note": "past perfect inside the that-clause"
+            },
+            {
+              "id": "ginc-ex5",
+              "en": "I'd rather you didn't mention the price.",
+              "vi": "Tôi thà bạn đừng nhắc đến mức giá.",
+              "note": "would rather + clause, not would rather you not to mention"
+            }
           ]
         },
         {
@@ -1099,7 +1907,12 @@
               "difficulty": "advanced",
               "prompt": "She asked where was the meeting room.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She asked where the meeting room was."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She asked where the meeting room was."
+                ]
+              },
               "explanation": "Inside an embedded question the word order returns to statement order: where the meeting room was. The inversion of a direct question does not survive inside a that-less clause after a verb of asking.",
               "xp": 10
             },
@@ -1112,12 +1925,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I don't know what is his job.", "isCorrect": false },
-                { "id": "b", "text": "I don't know what his job is.", "isCorrect": true },
-                { "id": "c", "text": "I don't know what his job.", "isCorrect": false },
-                { "id": "d", "text": "I don't know what is job his.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I don't know what is his job.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I don't know what his job is.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I don't know what his job.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I don't know what is job his.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "The embedded question keeps statement order, so the order is what his job is. Option a keeps the inversion of a direct question, and option c is simply an incomplete clause.",
               "xp": 10
             },
@@ -1129,7 +1963,12 @@
               "difficulty": "advanced",
               "prompt": "He suggested me to go to the hospital.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He suggested that I should go to the hospital."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He suggested that I should go to the hospital."
+                ]
+              },
               "explanation": "Suggest cannot be followed by an object plus an infinitive, and it does not take a to-infinitive either. Two repairs are possible: the that-clause above, or the gerund form He suggested going to the hospital.",
               "xp": 10
             },
@@ -1142,12 +1981,35 @@
               "prompt": "Which verbs are normally followed by a that-clause stating a belief or fact? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "a", "text": "believe", "isCorrect": true },
-                { "id": "b", "text": "know", "isCorrect": true },
-                { "id": "c", "text": "enjoy", "isCorrect": false },
-                { "id": "d", "text": "suppose", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "believe",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "know",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "enjoy",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "suppose",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "b", "d"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b",
+                  "d"
+                ]
+              },
               "explanation": "Believe, know and suppose are verbs of opinion and fact, so they take a that-clause. Enjoy is an enjoyment verb and takes the gerund, not a clause.",
               "xp": 10
             },
@@ -1159,7 +2021,12 @@
               "difficulty": "advanced",
               "prompt": "Complete the clause: 'He admitted that he ___ the window before the storm.'",
               "instruction": "Write the verb phrase only.",
-              "answer": { "type": "text", "values": ["had broken"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had broken"
+                ]
+              },
               "explanation": "Inside a that-clause after admitted, the event reported is earlier than the admission itself, so the past perfect is required: had broken. Using broke would put the two events at the same time.",
               "xp": 10
             }
@@ -1172,16 +2039,26 @@
           "items": [
             {
               "id": "ginc-d1",
-              "audio": { "kind": "speech", "text": "I wonder whether we will finish the project on time." },
-              "acceptedAnswers": ["I wonder whether we will finish the project on time."],
+              "audio": {
+                "kind": "speech",
+                "text": "I wonder whether we will finish the project on time."
+              },
+              "acceptedAnswers": [
+                "I wonder whether we will finish the project on time."
+              ],
               "hint": "embedded question, no inversion",
               "translation": "Tôi tự hỏi liệu chúng ta có kịp hoàn thành dự án đúng hạn không.",
               "xp": 15
             },
             {
               "id": "ginc-d2",
-              "audio": { "kind": "speech", "text": "She insisted that he pay for the damage." },
-              "acceptedAnswers": ["She insisted that he pay for the damage."],
+              "audio": {
+                "kind": "speech",
+                "text": "She insisted that he pay for the damage."
+              },
+              "acceptedAnswers": [
+                "She insisted that he pay for the damage."
+              ],
               "hint": "insist + that-clause with the bare form",
               "translation": "Cô ấy khẳng định rằng anh ấy phải bồi thường thiệt hại.",
               "xp": 15
@@ -1201,7 +2078,12 @@
               "difficulty": "advanced",
               "prompt": "Can you tell me where does the bus stop?",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Can you tell me where the bus stops?"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Can you tell me where the bus stops?"
+                ]
+              },
               "explanation": "After tell me the clause is embedded, so the word order is statement order: where the bus stops. The inversion of a direct question is only correct in a clause that is itself a question.",
               "xp": 10
             },
@@ -1214,12 +2096,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "He admitted taking the money.", "isCorrect": true },
-                { "id": "b", "text": "He admitted to take the money.", "isCorrect": false },
-                { "id": "c", "text": "He admitted to taking the money.", "isCorrect": false },
-                { "id": "d", "text": "He admitted that taking the money.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "He admitted taking the money.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "He admitted to take the money.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "He admitted to taking the money.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He admitted that taking the money.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Admit takes the gerund: admitted taking. Option b puts a base verb after a preposition, option c adds a to before the gerund, and option d leaves the clause without a verb.",
               "xp": 10
             },
@@ -1231,7 +2134,12 @@
               "difficulty": "advanced",
               "prompt": "Write the -ing form of the verb 'to recommend'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["recommending"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "recommending"
+                ]
+              },
               "explanation": "Recommend doubles the d before -ing: recommending, because the stress is on the second syllable. The form appears in formal patterns such as I recommend booking early.",
               "xp": 10
             }

@@ -1,3 +1,4 @@
+import EnglishCore
 import Foundation
 import Observation
 
@@ -40,5 +41,21 @@ final class IELTSSectionModel {
     func leastPractised(using totals: [IELTSSkill: Int]) -> IELTSSkill? {
         guard !lessons(for: skillOrder.first ?? .listening).isEmpty else { return nil }
         return skillOrder.min { (totals[$0] ?? 0) < (totals[$1] ?? 0) }
+    }
+}
+
+/// How far one IELTS lesson has got, read out of the store's row.
+struct ProgressSnapshot: Equatable {
+    var isCompleted: Bool
+    var currentStepIndex: Int
+    var updatedAt: Date?
+
+    /// Has the learner already started this lesson?
+    var isStarted: Bool { currentStepIndex > 0 || isCompleted }
+
+    /// "Review" beats "Resume" beats "Start".
+    var resumeLabel: String {
+        if isCompleted { return "Review" }
+        return isStarted ? "Resume" : "Start"
     }
 }

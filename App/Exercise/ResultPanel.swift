@@ -244,80 +244,126 @@ struct ResultPanel: View {
     }
 }
 
-/// Renders `text` with the tokens named by `diffs` highlighted.
+/// Renders `text` with the words named by `diffs` marked in place.
 ///
-/// Each diff token is marked in the learner's own sentence rather than in a
-/// side-by-side comparison, because the thing they need to fix is the sentence
-/// they wrote. A `substituted` or `extra` word is struck; a `missing` word has
-/// no position in the learner's text, so it is appended in the right place as
-/// an insertion.
+/// The learner's own sentence, marked — not a side-by-side comparison — because
+/// the thing they need to fix is the sentence they wrote. A `substituted` or
+/// `extra` word is struck through and coloured; a `missing` word has no
+/// position in their text at all, so it is listed underneath as an insertion.
+///
+/// **How the marks are matched.** `TokenDiff.index` is an index into the
+/// *expected* token list for `.missing` and `.substituted`, and into the
+/// *learner's* list for `.extra` — so it cannot be used directly as a position
+/// in the learner's sentence. Instead each `.extra` diff is matched by its
+/// `index`, and each `.substituted` diff by walking the learner's tokens in
+/// order looking for the normalized `user` word. Walking in order is what makes
+/// a repeated word work: "the the cat" marks the *second* "the", because the
+/// first one was consumed as a match.
 struct DiffMarkedText: View {
     let text: String
     let diffs: [TokenDiff]
 
     var body: some View {
-        // Concatenated `Text` rather than an `HStack` of words: a FlowLayout
-        // would break the sentence's own wrapping at large accessibility sizes,
-        // and a joined `Text` wraps naturally and stays one accessibility
-        // element.
-        composed
-            .font(AppFont.display(.body))
-            .fixedSize(horizontal: false, vertical: true)
-            .textSelection(.enabled)
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel(Text(verbatim: spokenSummary))
+        VStack(alignment: .leading, spacing: Spacing.sm) {
+            // Concatenated `Text` rather than a row of words: a flow layout
+            // would break the sentence's own wrapping at large accessibility
+            // sizes, and a joined `Text` wraps naturally and stays one
+            // accessibility element.
+            composed
+                .font(AppFont.display(.body))
+                .fixedSize(horizontal: false, vertical: true)
+                .textSelection(.enabled)
+
+            if !missingWords.isEmpty {
+                insertions
+            }
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(verbatim: spokenSummary))
     }
 
     private var composed: Text {
         var result = Text("")
         for (index, token) in tokens.enumerated() {
-            let mark = diff(for: index)
-            let piece = Text(token + (index == tokens.count - 1 ? "" : " "))
-            if let mark {
-                switch mark.kind {
-                case .substituted, .extra:
-                    result = result + piece
-                        .foregroundColor(Palette.danger)
-                        .strikethrough(true, color: Palette.danger)
-                case .missing:
-                    // Rendered as an insertion at the front of the sentence
-                    // when the learner left it out entirely.
-                    result = result + Text("[missing: \(mark.expected ?? "")] ")
-                        .foregroundColor(Palette.warning)
-                        .bold()
-                }
+            let separator = index == tokens.count - 1 ? "" : " "
+            if markedIndices.contains(index) {
+                result = result + Text(token + separator)
+                    .foregroundColor(Palette.danger)
+                    .strikethrough(true, color: Palette.danger)
             } else {
-                result = result + piece
+                result = result + Text(token + separator)
                     .foregroundColor(Palette.textPrimary)
             }
         }
         return result
     }
 
+    private var insertions: some View {
+        VStack(alignment: .leading, spacing: Spacing.xs) {
+            Text("You left out")
+                .font(AppFont.body(.caption, weight: .semibold))
+                .foregroundStyle(Palette.textSecondary)
+
+            ForEach(missingWords, id: \.self) { word in
+                HStack(spacing: Spacing.xs) {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.caption)
+                        .foregroundStyle(Palette.warning)
+                        .accessibilityHidden(true)
+                    Text(word)
+                        .font(AppFont.display(.callout))
+                        .foregroundStyle(Palette.textPrimary)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(Spacing.sm)
+        .background(
+            RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
+                .fill(Palette.warningSurface)
+        )
+    }
+
     private var tokens: [String] {
         text.split(separator: " ", omittingEmptySubsequences: true).map(String.init)
     }
 
-    /// The diff that lands on `index`, if any.
+    /// The words the learner omitted, in the order they were expected.
+    private var missingWords: [String] {
+        diffs
+            .filter { $0.kind == .missing }
+            .sorted { $0.index < $1.index }
+            .compactMap(\.expected)
+    }
+
+    /// Which of the learner's own tokens were wrong.
     ///
-    /// `TokenDiff.index` is the position in the *expected* token list for a
-    /// `missing` or `substituted` diff and in the *user's* list for an `extra`
-    /// one, so a diff is only applied to the learner's own token when the index
-    /// is in range and the token actually differs. A mismatched index is
-    /// skipped rather than guessed at: highlighting the wrong word teaches the
-    /// wrong lesson.
-    private func diff(for index: Int) -> TokenDiff? {
-        diffs.first { diff in
-            switch diff.kind {
-            case .extra:
-                // An extra word exists in the learner's text at this position.
-                index == diff.index && diff.user == tokens[index]
-            case .substituted, .missing:
-                guard index < tokens.count else { return false }
-                guard let user = diff.user else { return diff.kind == .missing && index == 0 }
-                return user == tokens[index]
+    /// Built once per render rather than looked up per token, because the
+    /// substituted walk is stateful and a per-token query would restart it.
+    private var markedIndices: Set<Int> {
+        var marked = Set<Int>()
+        let normalizer = AnswerNormalizer()
+        let learnerKeys = tokens.map { normalizer.normalize($0) }
+
+        // `.extra` carries a learner-side index, so it is placed directly.
+        for diff in diffs where diff.kind == .extra {
+            if learnerKeys.indices.contains(diff.index) {
+                marked.insert(diff.index)
             }
         }
+
+        // `.substituted` carries an expected-side index and a normalized user
+        // word, so it is placed by walking the learner tokens from the last
+        // position this loop reached. Consuming as it goes means a repeated
+        // word marks its second occurrence, not its first.
+        var cursor = 0
+        for diff in diffs.filter({ $0.kind == .substituted }).sorted(by: { $0.index < $1.index }) {
+            guard let user = diff.user.map({ normalizer.normalize($0) }) else { continue }
+            guard let found = learnerKeys[cursor...].firstIndex(of: user) else { continue }
+            marked.insert(found)
+            cursor = found + 1
+        }
+        return marked
     }
 
     /// A plain-language version of the marked sentence, because struck-through

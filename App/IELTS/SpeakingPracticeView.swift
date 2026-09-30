@@ -86,9 +86,7 @@ struct SpeakingPracticeView: View {
                     RapidQuestionRow(
                         number: index + 1,
                         question: question,
-                        prepSeconds: 5,
-                        recorder: recorder,
-                        onFinish: { registerTime() }
+                        onFinish: registerTime
                     )
                 }
             }
@@ -119,7 +117,7 @@ struct SpeakingPracticeView: View {
                 .examPage()
             }
 
-            LongTurnControls(recorder: recorder, onFinish: { registerTime() })
+            LongTurnControls(recorder: recorder, onFinish: registerTime)
 
             modelAnswerCard
 
@@ -142,7 +140,7 @@ struct SpeakingPracticeView: View {
                 SharedTimerBar(
                     timer: sharedTimer,
                     caption: "Discussion time",
-                    speaks: sharedTimer != nil,
+                    speaks: true,
                     onReset: { sharedTimer?.reset() }
                 )
                 .frame(height: 44)
@@ -252,8 +250,10 @@ struct SpeakingPracticeView: View {
         .examPage()
     }
 
-    private func registerTime() {
-        appState.store.registerStudy(minutes: max(recorder.elapsed / 60, 0), xp: 0, kind: .ielts)
+    /// Log the time actually spent talking. Short takes round to zero minutes, which
+    /// is honest: the store counts whole minutes.
+    private func registerTime(seconds: Int) {
+        appState.store.registerStudy(minutes: seconds / 60, xp: 0, kind: .ielts)
     }
 }
 
@@ -263,7 +263,8 @@ struct SpeakingPracticeView: View {
 /// reflow as the digits change.
 struct RecordingBar: View {
     let recorder: RecordingService
-    var onFinish: () -> Void = {}
+    /// Called with the take's length the moment the learner stops recording.
+    var onFinish: (Int) -> Void = { _ in }
 
     var body: some View {
         VStack(spacing: Spacing.sm) {
@@ -335,6 +336,11 @@ struct RecordingBar: View {
         .padding(Spacing.sm)
         .background(Color.examPaperSunk, in: .rect(cornerRadius: Radius.card))
         .accessibilityElement(children: .contain)
+        // A take is over the instant the learner stops, so that is when the seconds
+        // are worth banking.
+        .onChange(of: recorder.state) { _, state in
+            if state == .recorded { onFinish(recorder.elapsed) }
+        }
     }
 
     private var buttonTitle: String {
@@ -391,7 +397,6 @@ private struct WaveformView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            let bars = max(levels.count, 1)
             let width = proxy.size.width / CGFloat(max(bars, 1))
             HStack(alignment: .center, spacing: 1.5) {
                 ForEach(0..<max(levels.count, 8), id: \.self) { index in
@@ -409,14 +414,17 @@ private struct WaveformView: View {
 
 // MARK: - Part 1
 
-/// One question, its own five-second preparation window, and the record control.
+/// One question, its own five-second preparation window, and its own recorder.
+///
+/// Each row owns its recorder rather than sharing the screen's: ten identical
+/// record buttons bound to one microphone state would show the same take ten times.
 private struct RapidQuestionRow: View {
     let number: Int
     let question: String
-    let prepSeconds: Int
-    let recorder: RecordingService
-    let onFinish: () -> Void
+    /// Seconds spent on a take, handed up so the screen can log study time.
+    let onFinish: (Int) -> Void
 
+    @State private var recorder = RecordingService()
     @State private var timer = ExamTimer(seconds: 5, label: "Think time")
     @State private var isExpanded = true
 
@@ -519,7 +527,7 @@ private struct CueCardView: View {
 /// because mixing them up is the most common way to waste the long turn.
 private struct LongTurnControls: View {
     let recorder: RecordingService
-    let onFinish: () -> Void
+    let onFinish: (Int) -> Void
 
     private enum Stage: Int { case prepare, speak, done }
 
@@ -610,7 +618,7 @@ private struct LongTurnControls: View {
             prepareTimer.pause()
             speakTimer.pause()
             recorder.stopRecording()
-            onFinish()
+            onFinish(speakTimer.total - speakTimer.remaining)
         }
     }
 }
@@ -648,7 +656,8 @@ private struct DiscussionRow: View {
 /// The one timer control used by all three parts. Visible, pausable, and readable
 /// aloud: the time remaining is a value, not a string of pixels.
 struct SharedTimerBar: View {
-    let timer: ExamTimer
+    /// Optional because Part 3's shared timer is built on appear.
+    let timer: ExamTimer?
     let caption: String
     /// When false, only the display is shown — used where the surrounding screen owns
     /// the play control (Part 3).
@@ -656,6 +665,14 @@ struct SharedTimerBar: View {
     var onReset: () -> Void = {}
 
     var body: some View {
+        if let timer {
+            content(for: timer)
+        } else {
+            Color.examPaperSunk.frame(height: 40).accessibilityHidden(true)
+        }
+    }
+
+    private func content(for timer: ExamTimer) -> some View {
         HStack(spacing: Spacing.sm) {
             if speaks {
                 Button {

@@ -50,7 +50,6 @@ struct ListeningLessonView: View {
 
     @State private var phase: Phase = .attempt
     @State private var session: LearnSession?
-    @State private var showAudio = false
     @State private var confirmReveal = false
     /// The learner chose to see the transcript mid-attempt. Sticky, and named out loud.
     @State private var transcriptBroken = false

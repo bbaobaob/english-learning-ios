@@ -123,6 +123,8 @@ public struct Answer: Codable, Sendable, Hashable, Identifiable {
     private enum CodingKeys: String, CodingKey {
         case type
         case values
+        /// Accepted only as a tolerated alias for ``values`` when decoding a boolean.
+        case value
     }
 
     public init(from decoder: any Decoder) throws {
@@ -139,10 +141,33 @@ public struct Answer: Codable, Sendable, Hashable, Identifiable {
         case .pairs:
             values = .pairs(try container.decodeIfPresent([String: String].self, forKey: .values) ?? [:])
         case .boolean:
-            values = .boolean(try container.decodeIfPresent(Bool.self, forKey: .values) ?? false)
+            values = .boolean(Self.decodeBoolean(from: container))
         case .none:
             values = AnswerValue.none
         }
+    }
+
+    /// Decodes a boolean answer tolerantly.
+    ///
+    /// The authored shape is `{"type": "boolean", "values": true}`. A renamed key
+    /// (`value`) and a string or single-element array form are accepted too,
+    /// because the alternative failure mode is silent: a strict
+    /// `decodeIfPresent(Bool.self, forKey: .values) ?? false` turns every
+    /// True/False question into "the answer was False", and a `["true"]` array
+    /// throws a type mismatch that removes the whole file — and therefore the
+    /// whole topic — from the library without any visible error.
+    private static func decodeBoolean(from container: KeyedDecodingContainer<CodingKeys>) -> Bool {
+        let truthy = ["true", "1", "yes", "correct"]
+        for key in [CodingKeys.values, .value] where container.contains(key) {
+            if let flag = try? container.decode(Bool.self, forKey: key) { return flag }
+            if let text = try? container.decode(String.self, forKey: key) {
+                return truthy.contains(text.trimmingCharacters(in: .whitespaces).lowercased())
+            }
+            if let list = try? container.decode([String].self, forKey: key), let first = list.first {
+                return truthy.contains(first.trimmingCharacters(in: .whitespaces).lowercased())
+            }
+        }
+        return false
     }
 
     public func encode(to encoder: any Encoder) throws {

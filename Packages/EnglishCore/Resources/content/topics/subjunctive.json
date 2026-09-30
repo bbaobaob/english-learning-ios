@@ -388,7 +388,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "The subjunctive has no tense of its own. In a proposal it uses the base form regardless of when the proposal is made, which is why the same sentence can sit in a past or a future report unchanged.",
               "xp": 10
@@ -820,7 +820,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "That is the standard pair: past in the condition, would in the result. The rare alternative, if I were you, you took the job, sounds old-fashioned and is not used in modern English.",
               "xp": 10
@@ -1297,7 +1297,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "When the conditional clause comes first it is set off by a comma: 'Were I you, I would go.' That is standard punctuation for a fronted subordinate clause.",
               "xp": 10
@@ -1710,7 +1710,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Hope is followed by ordinary indicative tenses, because the outcome is still possible. No -s after he, and the base form after to is also correct: 'I hope the manager approves' or 'to approve'.",
               "xp": 10
@@ -2558,7 +2558,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "The third conditional is about the past and the result did not happen, which is what makes it hypothetical. Contrast the mixed sequence 'If she had studied medicine, she would be working there now', where the condition is real and only the consequence is counterfactual.",
               "xp": 10

@@ -46,7 +46,7 @@ struct MatchingGridView: View {
                     .font(AppFont.body(.caption, weight: .semibold))
                     .foregroundStyle(Palette.success)
             } else {
-                Text(focusedID.flatMap(keyFor) ?? "Tap a word, then tap its match.")
+                Text(focusedLabel().map { "\($0) — now tap its match." } ?? "Tap a word, then tap its match.")
                     .font(AppFont.body(.caption))
                     .foregroundStyle(Palette.textSecondary)
             }
@@ -94,18 +94,19 @@ struct MatchingGridView: View {
     }
 
     private func rightCell(for key: String) -> some View {
-        // The owner of this key, when it has been paired. A key can be the
-        // match for exactly one item, so this is the item this cell lights up
-        // when its pair is locked.
-        let owner = leftItems.first { $0.id == pairs.first { $0.value == key }?.key }
-        let isOwnerFocused = owner.map { focusedID == $0.id } ?? false
-        let isPending = isOwnerFocused
+        // The item this key is currently paired to, if any. Read back from
+        // `pairs` rather than from the item's own `matchKey`, because the
+        // content's `matchKey` *is* the answer and reading it here would paint
+        // the solution onto the grid.
+        let owner = leftItems.first { item in pairs[item.id] == key }
 
         return MatchChip(
             text: key,
-            isSelected: isPending,
+            // A paired key highlights itself rather than its owner, because the
+            // learner's attention is on the key they just tapped.
+            isSelected: owner != nil,
             isPaired: owner != nil,
-            tint: Palette.brand,
+            tint: Palette.success,
             action: {
                 guard let owner, isAvailable(key: key) else { return }
                 Haptics.selection()
@@ -126,8 +127,14 @@ struct MatchingGridView: View {
         return alreadyOwned == nil
     }
 
-    private func keyFor(_ id: String) -> String? {
-        leftItems.first { $0.id == id }?.matchKey
+    /// The label of the focused item, for the status line.
+    ///
+    /// Deliberately the item's *text* and never its `matchKey`: the match key
+    /// is the answer, and printing it under the grid would hand over the
+    /// solution the moment the learner tapped the first word.
+    private func focusedLabel() -> String? {
+        guard let focusedID, let item = leftItems.first(where: { $0.id == focusedID }) else { return nil }
+        return item.text ?? item.id
     }
 }
 
@@ -136,6 +143,10 @@ private struct MatchChip: View {
     let isSelected: Bool
     let isPaired: Bool
     let tint: Color
+    /// `nil` when the chip is not currently tappable, e.g. a key that is
+    /// already spoken for. Such a chip is still a labelled, readable element —
+    /// it just is not announced as a button, because activating it would do
+    /// nothing.
     let action: (() -> Void)?
 
     var body: some View {
@@ -143,14 +154,17 @@ private struct MatchChip: View {
             if let action {
                 Button(action: action) { label }
                     .buttonStyle(.plain)
+                    .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
             } else {
                 label
+                    .accessibilityAddTraits(isSelected ? .isSelected : [])
             }
         }
-        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
         .accessibilityLabel(Text(verbatim: text))
         .accessibilityValue(Text(verbatim: isPaired ? "Matched" : isSelected ? "Selected" : "Not matched"))
-        .accessibilityHint(Text(verbatim: "Double tap to select, then tap its match."))
+        .accessibilityHint(
+            Text(verbatim: action == nil ? "Already used for another word." : "Double tap to select, then tap its match.")
+        )
     }
 
     private var label: some View {

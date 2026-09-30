@@ -56,13 +56,16 @@ struct ExerciseCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.lg) {
             prompt
-            if exercise.translation != nil, !isAnswered {
-                translation
-            }
             if !isAnswered {
+                // Only rendered when there is something to render: the dictation
+                // kind gets its audio inside `DictationAnswerArea`, so showing a
+                // second player for it would mean two play buttons for one clip.
+                if let translation = exercise.translation, !translation.isEmpty {
+                    translationBlock(translation)
+                }
                 answerArea
-                if exercise.audio != nil, exercise.kind != .dictation {
-                    AudioPlayerView(clip: exercise.audio!)
+                if let clip = exercise.audio, exercise.kind != .dictation {
+                    AudioPlayerView(clip: clip)
                         .padding(.top, Spacing.sm)
                 }
                 submitButton
@@ -110,8 +113,8 @@ struct ExerciseCard: View {
         }
     }
 
-    private var translation: some View {
-        Text(exercise.translation ?? "")
+    private func translationBlock(_ translation: String) -> some View {
+        Text(translation)
             .font(AppFont.body(.subheadline))
             .foregroundStyle(Palette.textSecondary)
             .padding(Spacing.sm)
@@ -120,7 +123,7 @@ struct ExerciseCard: View {
                 RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
                     .fill(Palette.field)
             )
-            .accessibilityLabel(Text(verbatim: "Vietnamese: \(exercise.translation ?? "")"))
+            .accessibilityLabel(Text(verbatim: "Vietnamese: \(translation)"))
     }
 
     // MARK: - Answer area
@@ -185,16 +188,16 @@ struct ExerciseCard: View {
     /// expected answer, because the view has no business knowing it.
     private var canSubmit: Bool {
         switch exercise.kind {
-        case .multipleChoice, .reading, .listening, .listeningComprehension:
-            !selectedIDs.isEmpty
-        case .multiSelect:
+        case .multipleChoice, .multiSelect, .reading, .listening, .listeningComprehension:
             !selectedIDs.isEmpty
         case .trueFalse:
             boolean != nil
         case .matching:
-            // Every left-hand item must be paired before the answer means
-            // anything, so a half-finished grid cannot be submitted.
-            !pairs.isEmpty && pairs.count == exercise.items.filter { $0.matchKey != nil }.count
+            // Every item must be paired before the answer means anything, so a
+            // half-finished grid cannot be submitted. The count is the item
+            // count, not the distinct-key count: the grid's left column is
+            // every item, so that is how many pairs a full grid has.
+            !exercise.items.isEmpty && pairs.count == exercise.items.count
         case .rearrangeWords:
             !order.isEmpty
         case .fillInTheBlank, .dictation, .typeTheAnswer, .sentenceCompletion,
@@ -231,31 +234,21 @@ struct ExerciseCard: View {
 
     /// Seeds the interaction state for the current exercise.
     ///
-    /// A `rearrangeWords` exercise opens with its tokens in a stable but
-    /// deliberately jumbled order, because an unscrambled list that happens to
-    /// already be in order gives the answer away for free.
+    /// A `rearrangeWords` exercise opens with its tokens rotated by one, so the
+    /// list is not already in answer order — a list that starts solved gives
+    /// the answer away for free. A rotation is stable across launches, so the
+    /// exercise looks the same every time the learner opens it.
     private func prepare() {
         selectedIDs = []
         text = ""
         pairs = [:]
         boolean = nil
         focusedLeft = nil
-        switch exercise.kind {
-        case .rearrangeWords:
-            order = exercise.items
-                .map { $0.text ?? $0.id }
-                .enumerated()
-                // Rotate by one: nothing is in its answer position unless the
-                // answer is a rotation, and the rotation is still checkable.
-                .dropFirst(1)
-                .map(\.element)
-                + (exercise.items.first.map { [$0.text ?? $0.id] } ?? [])
-        case .fillInTheBlank, .sentenceCompletion, .wordFormation:
-            // Offer the word bank as a tappable chip row when the content
-            // provides one; it is a hint, not a constraint.
-            break
-        default:
-            break
+        if exercise.kind == .rearrangeWords {
+            let tokens = exercise.items.map { $0.text ?? $0.id }
+            order = tokens.count > 1 ? Array(tokens.dropFirst()) + [tokens[0]] : tokens
+        } else {
+            order = []
         }
     }
 }

@@ -159,9 +159,31 @@ final class ProfileModel {
     // MARK: - Weak areas
 
     /// Re-sorts the weak-area list after the sort picker changes.
+    ///
+    /// Reads nothing from the store: the rows are already loaded, only their
+    /// order changes.
     func resortWeakAreas() {
-        weakAreas = sorted(store: ProgressStore?, unsorted: weakAreas)
-        weakAreas = weakAreas.sorted { lhs, rhs in
+        weakAreas = sortWeak(weakAreas)
+    }
+
+    private func loadWeakAreas(store: ProgressStore, library: ContentLibrary) {
+        let rows = store.topicProgress().filter { $0.value.exercisesDone > 0 }
+        weakAreas = sortWeak(
+            rows.map { id, row in
+                WeakArea(
+                    id: id,
+                    title: library.topic(id)?.title ?? id,
+                    symbol: library.topic(id)?.icon ?? "questionmark",
+                    accuracy: row.accuracy,
+                    missed: max(0, row.exercisesDone - row.correctCount),
+                    done: row.exercisesDone
+                )
+            }
+        )
+    }
+
+    private func sortWeak(_ areas: [WeakArea]) -> [WeakArea] {
+        areas.sorted { lhs, rhs in
             switch weakSort {
             case .accuracy:
                 return lhs.accuracy == rhs.accuracy ? lhs.missed > rhs.missed : lhs.accuracy < rhs.accuracy
@@ -172,23 +194,6 @@ final class ProfileModel {
             }
         }
     }
-
-    private func loadWeakAreas(store: ProgressStore, library: ContentLibrary) {
-        let rows = store.topicProgress().filter { $0.value.exercisesDone > 0 }
-        let mapped = rows.map { id, row in
-            WeakArea(
-                id: id,
-                title: library.topic(id)?.title ?? id,
-                symbol: library.topic(id)?.icon ?? "questionmark",
-                accuracy: row.accuracy,
-                missed: max(0, row.exercisesDone - row.correctCount),
-                done: row.exercisesDone
-            )
-        }
-        weakAreas = sorted(store: store, unsorted: mapped)
-    }
-
-    private func sorted(store: ProgressStore?, unsorted: [WeakArea]) -> [WeakArea] {
 
     // MARK: - Skills
 

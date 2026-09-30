@@ -25,8 +25,18 @@
               "statement": "Use the base verb with I, you, we and they, and add -s to the verb with he, she, it and singular nouns.",
               "formula": "I / you / we / they + base verb  |  he / she / it + verb-s",
               "examples": [
-                { "id": "tps-r1e1", "en": "I drink coffee every morning.", "vi": "Tôi uống cà phê mỗi sáng.", "note": "base form with I" },
-                { "id": "tps-r1e2", "en": "She drinks tea every morning.", "vi": "Cô ấy uống trà mỗi sáng.", "note": "third person singular takes -s" }
+                {
+                  "id": "tps-r1e1",
+                  "en": "I drink coffee every morning.",
+                  "vi": "Tôi uống cà phê mỗi sáng.",
+                  "note": "base form with I"
+                },
+                {
+                  "id": "tps-r1e2",
+                  "en": "She drinks tea every morning.",
+                  "vi": "Cô ấy uống trà mỗi sáng.",
+                  "note": "third person singular takes -s"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "In the negative and in questions the verb returns to its base form, because the meaning is carried by do or does.",
               "formula": "do not / does not + base verb  |  Do / Does + subject + base verb?",
               "examples": [
-                { "id": "tps-r2e1", "en": "They don't live here.", "vi": "Họ không sống ở đây.", "note": "don't + live, not don't lives" },
-                { "id": "tps-r2e2", "en": "Does he speak Vietnamese?", "vi": "Anh ấy có nói tiếng Việt không?", "note": "Does already carries the -s" }
+                {
+                  "id": "tps-r2e1",
+                  "en": "They don't live here.",
+                  "vi": "Họ không sống ở đây.",
+                  "note": "don't + live, not don't lives"
+                },
+                {
+                  "id": "tps-r2e2",
+                  "en": "Does he speak Vietnamese?",
+                  "vi": "Anh ấy có nói tiếng Việt không?",
+                  "note": "Does already carries the -s"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "Most verbs add -s. Verbs ending in -o, -ch, -sh, -s and -x add -es, and the irregular forms have, does and go need their own endings.",
               "formula": "-o, -ch, -sh, -s, -x + -es  |  have → has, do → does, go → goes",
               "examples": [
-                { "id": "tps-r3e1", "en": "He goes to work by bus.", "vi": "Anh ấy đi làm bằng xe buýt.", "note": "go takes -es" },
-                { "id": "tps-r3e2", "en": "The shop opens at eight.", "vi": "Cửa hàng mở cửa lúc tám giờ.", "note": "open takes -s" }
+                {
+                  "id": "tps-r3e1",
+                  "en": "He goes to work by bus.",
+                  "vi": "Anh ấy đi làm bằng xe buýt.",
+                  "note": "go takes -es"
+                },
+                {
+                  "id": "tps-r3e2",
+                  "en": "The shop opens at eight.",
+                  "vi": "Cửa hàng mở cửa lúc tám giờ.",
+                  "note": "open takes -s"
+                }
               ]
             }
           ]
@@ -53,11 +83,36 @@
           "id": "tps-examples",
           "type": "examples",
           "examples": [
-            { "id": "tps-ex1", "en": "My father reads the newspaper every morning.", "vi": "Bố tôi đọc báo mỗi sáng.", "note": "habit: every morning signals the present simple" },
-            { "id": "tps-ex2", "en": "Water boils at 100 degrees Celsius.", "vi": "Nước sôi ở 100 độ C.", "note": "general fact that never changes" },
-            { "id": "tps-ex3", "en": "The train to Hue leaves at 6:45.", "vi": "Tàu đi Huế khởi hành lúc 6 giờ 45.", "note": "timetable: the present simple is standard for schedules" },
-            { "id": "tps-ex4", "en": "I don't understand this word.", "vi": "Tôi không hiểu từ này.", "note": "don't + base verb" },
-            { "id": "tps-ex5", "en": "Does your sister live near the station?", "vi": "Chị bạn bạn sống gần nhà ga không?", "note": "Does + subject + base verb in questions" }
+            {
+              "id": "tps-ex1",
+              "en": "My father reads the newspaper every morning.",
+              "vi": "Bố tôi đọc báo mỗi sáng.",
+              "note": "habit: every morning signals the present simple"
+            },
+            {
+              "id": "tps-ex2",
+              "en": "Water boils at 100 degrees Celsius.",
+              "vi": "Nước sôi ở 100 độ C.",
+              "note": "general fact that never changes"
+            },
+            {
+              "id": "tps-ex3",
+              "en": "The train to Hue leaves at 6:45.",
+              "vi": "Tàu đi Huế khởi hành lúc 6 giờ 45.",
+              "note": "timetable: the present simple is standard for schedules"
+            },
+            {
+              "id": "tps-ex4",
+              "en": "I don't understand this word.",
+              "vi": "Tôi không hiểu từ này.",
+              "note": "don't + base verb"
+            },
+            {
+              "id": "tps-ex5",
+              "en": "Does your sister live near the station?",
+              "vi": "Chị bạn bạn sống gần nhà ga không?",
+              "note": "Does + subject + base verb in questions"
+            }
           ]
         },
         {
@@ -73,12 +128,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She don't like coffee.", "isCorrect": false },
-                { "id": "b", "text": "She doesn't likes coffee.", "isCorrect": false },
-                { "id": "c", "text": "She doesn't like coffee.", "isCorrect": true },
-                { "id": "d", "text": "She not like coffee.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She don't like coffee.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "She doesn't likes coffee.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "She doesn't like coffee.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "She not like coffee.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
               "explanation": "After does not (doesn't), the verb goes back to its base form: like, not likes. The two classic mistakes are both doubles — doesn't don't and doesn't likes — and they show the learner treating -s as part of the present simple instead of the third person ending that does already supplies.",
               "xp": 10
             },
@@ -90,7 +166,12 @@
               "difficulty": "beginner",
               "prompt": "He ___ (watch) TV every evening.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["watches"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "watches"
+                ]
+              },
               "explanation": "He is third person singular, so the verb takes -es: watch + -es = watches. Writing watch would be right with I, you, we or they, but with he the ending is obligatory; every evening only tells us it is a habit and does not change the ending.",
               "xp": 10
             },
@@ -102,7 +183,12 @@
               "difficulty": "beginner",
               "prompt": "My brother play football on Saturdays.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["My brother plays football on Saturdays."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "My brother plays football on Saturdays."
+                ]
+              },
               "explanation": "The subject is my brother, so the third person singular form is needed. A single -s is the whole correction; there is no need for does is playing or any restructuring, because the time marker on Saturdays asks for the simple present in the first place.",
               "xp": 10
             },
@@ -114,7 +200,12 @@
               "difficulty": "intermediate",
               "prompt": "swim",
               "instruction": "Write the third person singular form of this verb in the present simple.",
-              "answer": { "type": "text", "values": ["swims"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "swims"
+                ]
+              },
               "explanation": "The -s form of swim is regular, so it simply adds -s: he swims. This is worth checking because swim is one of a small set of verbs whose past and past participle are irregular, and learners who over-generalise irregularity sometimes write a doubling form here.",
               "xp": 10
             }
@@ -127,16 +218,26 @@
           "items": [
             {
               "id": "tps-d1",
-              "audio": { "kind": "speech", "text": "My mother goes to the market every Sunday." },
-              "acceptedAnswers": ["My mother goes to the market every Sunday."],
+              "audio": {
+                "kind": "speech",
+                "text": "My mother goes to the market every Sunday."
+              },
+              "acceptedAnswers": [
+                "My mother goes to the market every Sunday."
+              ],
               "hint": "third person singular -es after go",
               "translation": "Mẹ tôi đi chợ mỗi Chủ nhật.",
               "xp": 15
             },
             {
               "id": "tps-d2",
-              "audio": { "kind": "speech", "text": "The library does not open on public holidays." },
-              "acceptedAnswers": ["The library does not open on public holidays."],
+              "audio": {
+                "kind": "speech",
+                "text": "The library does not open on public holidays."
+              },
+              "acceptedAnswers": [
+                "The library does not open on public holidays."
+              ],
               "hint": "does not + base verb",
               "translation": "Thư viện không mở cửa vào những ngày lễ.",
               "xp": 15
@@ -156,7 +257,12 @@
               "difficulty": "beginner",
               "prompt": "She ___ (teach) English at a primary school.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["teaches"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "teaches"
+                ]
+              },
               "explanation": "Teach ends in -ch, so the third person singular adds -es and keeps the ch: teaches. The -es ending protects the /tʃ/ sound; a bare -s would turn it into /tʃs/, which does not exist in English.",
               "xp": 10
             },
@@ -168,7 +274,12 @@
               "difficulty": "beginner",
               "prompt": "Write the full form (not the contraction) of the negative present simple of 'do' with 'he'.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["does not"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "does not"
+                ]
+              },
               "explanation": "The full form is does not. Learners often answer do not because they choose the form by habit, but do not pairs with I, you, we and they; he and she require does, and the base verb after it stays unchanged.",
               "xp": 10
             },
@@ -181,12 +292,33 @@
               "prompt": "Which sentence uses the present simple correctly?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "The train leave at seven o'clock.", "isCorrect": false },
-                { "id": "b", "text": "The train leaves at seven o'clock.", "isCorrect": true },
-                { "id": "c", "text": "The trains is leaving at seven o'clock.", "isCorrect": false },
-                { "id": "d", "text": "The train is leave at seven o'clock.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "The train leave at seven o'clock.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "The train leaves at seven o'clock.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "The trains is leaving at seven o'clock.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "The train is leave at seven o'clock.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "English timetables use the present simple, and the subject the train is singular, so the verb must be leaves. Option c mixes the present simple with the present continuous and also disagrees with the plural trains, and option d puts a base verb after is, which is impossible.",
               "xp": 10
             }
@@ -224,8 +356,18 @@
               "statement": "The tense is always two words: the auxiliary am, is or agree in the present simple, then the verb with -ing.",
               "formula": "am / is / are + verb-ing",
               "examples": [
-                { "id": "tpc-r1e1", "en": "I am studying English now.", "vi": "Tôi đang học tiếng Anh.", "note": "am + studying" },
-                { "id": "tpc-r1e2", "en": "They are waiting outside.", "vi": "Họ đang đứng đợi bên ngoài.", "note": "are + waiting" }
+                {
+                  "id": "tpc-r1e1",
+                  "en": "I am studying English now.",
+                  "vi": "Tôi đang học tiếng Anh.",
+                  "note": "am + studying"
+                },
+                {
+                  "id": "tpc-r1e2",
+                  "en": "They are waiting outside.",
+                  "vi": "Họ đang đứng đợi bên ngoài.",
+                  "note": "are + waiting"
+                }
               ]
             },
             {
@@ -233,8 +375,18 @@
               "statement": "Normally add -ing to the base verb. Drop a silent e, and double a final consonant after a short stressed vowel when the word is one syllable.",
               "formula": "make → making, write → writing, run → running, swim → swimming",
               "examples": [
-                { "id": "tpc-r2e1", "en": "He is writing a letter.", "vi": "Anh ấy đang viết thư.", "note": "drop the silent e" },
-                { "id": "tpc-r2e2", "en": "The children are running in the yard.", "vi": "Lũ trẻ đang chạy trong sân.", "note": "double the final consonant" }
+                {
+                  "id": "tpc-r2e1",
+                  "en": "He is writing a letter.",
+                  "vi": "Anh ấy đang viết thư.",
+                  "note": "drop the silent e"
+                },
+                {
+                  "id": "tpc-r2e2",
+                  "en": "The children are running in the yard.",
+                  "vi": "Lũ trẻ đang chạy trong sân.",
+                  "note": "double the final consonant"
+                }
               ]
             },
             {
@@ -242,8 +394,18 @@
               "statement": "Use the present simple for the usual routine and the present continuous for what is unusual or temporary this time.",
               "formula": "I usually walk. / Today I am walking.",
               "examples": [
-                { "id": "tpc-r3e1", "en": "She usually cycles to work, but today she is taking the bus.", "vi": "Bình thường cô ấy đi xe đạp đi làm, nhưng hôm nay cô ấy đang đi xe buýt.", "note": "habit versus temporary change" },
-                { "id": "tpc-r3e2", "en": "The shop usually opens at nine, but today it is opening at ten.", "vi": "Cửa hàng bình thường mở lúc chín giờ, nhưng hôm nay lại mở lúc mười giờ.", "note": "present simple = rule, present continuous = today's exception" }
+                {
+                  "id": "tpc-r3e1",
+                  "en": "She usually cycles to work, but today she is taking the bus.",
+                  "vi": "Bình thường cô ấy đi xe đạp đi làm, nhưng hôm nay cô ấy đang đi xe buýt.",
+                  "note": "habit versus temporary change"
+                },
+                {
+                  "id": "tpc-r3e2",
+                  "en": "The shop usually opens at nine, but today it is opening at ten.",
+                  "vi": "Cửa hàng bình thường mở lúc chín giờ, nhưng hôm nay lại mở lúc mười giờ.",
+                  "note": "present simple = rule, present continuous = today's exception"
+                }
               ]
             }
           ]
@@ -252,11 +414,36 @@
           "id": "tpc-examples",
           "type": "examples",
           "examples": [
-            { "id": "tpc-ex1", "en": "Look! The cat is sleeping on my chair.", "vi": "Nhìn kìa! Con mèo đang ngủ trên ghế của tôi.", "note": "an action in progress at the moment of speaking" },
-            { "id": "tpc-ex2", "en": "I am reading a very long novel this month.", "vi": "Tháng này tôi đang đọc một tiểu thuyết rất dài.", "note": "a temporary situation limited in time" },
-            { "id": "tpc-ex3", "en": "We are meeting Mai at the airport tonight.", "vi": "Tối nay chúng tôi sẽ gặp Mai ở sân bay.", "note": "a fixed future arrangement often uses the present continuous" },
-            { "id": "tpc-ex4", "en": "What are you doing this weekend?", "vi": "Cuối tuần này bạn đang làm gì?", "note": "wh- question in the present continuous" },
-            { "id": "tpc-ex5", "en": "It is not raining right now.", "vi": "Ngay lúc này trời đang không mưa.", "note": "the negative uses not after the auxiliary" }
+            {
+              "id": "tpc-ex1",
+              "en": "Look! The cat is sleeping on my chair.",
+              "vi": "Nhìn kìa! Con mèo đang ngủ trên ghế của tôi.",
+              "note": "an action in progress at the moment of speaking"
+            },
+            {
+              "id": "tpc-ex2",
+              "en": "I am reading a very long novel this month.",
+              "vi": "Tháng này tôi đang đọc một tiểu thuyết rất dài.",
+              "note": "a temporary situation limited in time"
+            },
+            {
+              "id": "tpc-ex3",
+              "en": "We are meeting Mai at the airport tonight.",
+              "vi": "Tối nay chúng tôi sẽ gặp Mai ở sân bay.",
+              "note": "a fixed future arrangement often uses the present continuous"
+            },
+            {
+              "id": "tpc-ex4",
+              "en": "What are you doing this weekend?",
+              "vi": "Cuối tuần này bạn đang làm gì?",
+              "note": "wh- question in the present continuous"
+            },
+            {
+              "id": "tpc-ex5",
+              "en": "It is not raining right now.",
+              "vi": "Ngay lúc này trời đang không mưa.",
+              "note": "the negative uses not after the auxiliary"
+            }
           ]
         },
         {
@@ -272,12 +459,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She is write an email at the moment.", "isCorrect": false },
-                { "id": "b", "text": "She is writing an email at the moment.", "isCorrect": true },
-                { "id": "c", "text": "She is writes an email at the moment.", "isCorrect": false },
-                { "id": "d", "text": "She writing an email at the moment.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She is write an email at the moment.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "She is writing an email at the moment.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "She is writes an email at the moment.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "She writing an email at the moment.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "After is the verb must be in the -ing form, writing. Option a keeps the base verb, option c adds the present simple -s, and option d leaves out the auxiliary entirely — the present continuous is never made of one word.",
               "xp": 10
             },
@@ -289,7 +497,12 @@
               "difficulty": "beginner",
               "prompt": "Listen! Someone ___ (sing) in the next room.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["is singing"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is singing"
+                ]
+              },
               "explanation": "The clue is happening right now, so we need the present continuous with is and the -ing form. An English speaker would say is singing, and the is is part of the answer — writing only singing leaves the sentence unfinished.",
               "xp": 10
             },
@@ -302,9 +515,16 @@
               "prompt": "In English, the present continuous is not normally used with verbs of permanent state such as know, believe or love.",
               "instruction": "Decide whether the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "The statement is true. Permanent-state verbs resist the progressive: we say I know the answer, not I am knowing the answer. The continuous form only works with actions that have a beginning and an end, which is why verbs like know, believe, own and belong stay in the simple form.",
               "xp": 10
             },
@@ -316,7 +536,12 @@
               "difficulty": "intermediate",
               "prompt": "My father is watch the news at the moment.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["My father is watching the news at the moment."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "My father is watching the news at the moment."
+                ]
+              },
               "explanation": "The auxiliary is already there, so the verb only needs the -ing ending: watching. Keeping the base form after is is the single most common progressive error in Vietnamese-speaking learners, who translate the English pattern word for word.",
               "xp": 10
             }
@@ -329,16 +554,26 @@
           "items": [
             {
               "id": "tpc-d1",
-              "audio": { "kind": "speech", "text": "The students are practising the pronunciation right now." },
-              "acceptedAnswers": ["The students are practising the pronunciation right now."],
+              "audio": {
+                "kind": "speech",
+                "text": "The students are practising the pronunciation right now."
+              },
+              "acceptedAnswers": [
+                "The students are practising the pronunciation right now."
+              ],
               "hint": "are + verb-ing, in progress now",
               "translation": "Các học sinh đang luyện phát âm ngay lúc này.",
               "xp": 15
             },
             {
               "id": "tpc-d2",
-              "audio": { "kind": "speech", "text": "She is not working today, so she is coming with us." },
-              "acceptedAnswers": ["She is not working today, so she is coming with us."],
+              "audio": {
+                "kind": "speech",
+                "text": "She is not working today, so she is coming with us."
+              },
+              "acceptedAnswers": [
+                "She is not working today, so she is coming with us."
+              ],
               "hint": "two present continuous clauses joined by so",
               "translation": "Hôm nay cô ấy không làm việc, nên cô ấy sẽ đi cùng chúng tôi.",
               "xp": 15
@@ -358,7 +593,12 @@
               "difficulty": "beginner",
               "prompt": "They ___ (plan) a trip to Sa Pa right now.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["are planning"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are planning"
+                ]
+              },
               "explanation": "Right now asks for the present continuous, and the subject is they, so the auxiliary is are. The answer needs both parts of the tense: are planning, not just planning.",
               "xp": 10
             },
@@ -370,7 +610,12 @@
               "difficulty": "intermediate",
               "prompt": "I am study for my final exam these days.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I am studying for my final exam these days."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I am studying for my final exam these days."
+                ]
+              },
               "explanation": "These days is a temporary period around now, so the progressive fits: am studying. Study is a two-syllable word ending in a vowel plus y, so it keeps its spelling and simply takes -ing rather than changing y to i as carry → carried does.",
               "xp": 10
             },
@@ -383,12 +628,33 @@
               "prompt": "Bình usually walks to school, but today he ___ a bus because of the rain.",
               "instruction": "Pick the option that completes the sentence correctly.",
               "items": [
-                { "id": "a", "text": "is taking", "isCorrect": true },
-                { "id": "b", "text": "takes", "isCorrect": false },
-                { "id": "c", "text": "take", "isCorrect": false },
-                { "id": "d", "text": "is take", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "is taking",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "takes",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "take",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "is take",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The pattern usually walks … but today is a classic contrast: habit in the present simple, today's temporary exception in the present continuous. Option d is impossible because a base verb cannot follow is.",
               "xp": 10
             }
@@ -426,8 +692,18 @@
               "statement": "Add -ed to the base verb. A final silent e is dropped before -ed, and a final consonant after a short stressed vowel is doubled.",
               "formula": "work → worked, live → lived, stop → stopped, carry → carried",
               "examples": [
-                { "id": "tpas-r1e1", "en": "She worked in Hanoi for three years.", "vi": "Cô ấy đã làm việc ở Hà Nội trong ba năm.", "note": "regular past, no change to the spelling" },
-                { "id": "tpas-r1e2", "en": "We travelled to Ninh Binh last summer.", "vi": "Chúng tôi đã đi Ninh Bình vào hè năm ngoái.", "note": "double the l" }
+                {
+                  "id": "tpas-r1e1",
+                  "en": "She worked in Hanoi for three years.",
+                  "vi": "Cô ấy đã làm việc ở Hà Nội trong ba năm.",
+                  "note": "regular past, no change to the spelling"
+                },
+                {
+                  "id": "tpas-r1e2",
+                  "en": "We travelled to Ninh Binh last summer.",
+                  "vi": "Chúng tôi đã đi Ninh Bình vào hè năm ngoái.",
+                  "note": "double the l"
+                }
               ]
             },
             {
@@ -435,8 +711,18 @@
               "statement": "Many frequent verbs change completely in the past, and the same form is used for the past simple and the past participle.",
               "formula": "go → went, eat → ate, see → saw, take → took, make → made, write → wrote",
               "examples": [
-                { "id": "tpas-r2e1", "en": "He went to Da Nang last week.", "vi": "Anh ấy đã đi Đà Nẵng tuần trước.", "note": "go → went" },
-                { "id": "tpas-r2e2", "en": "I ate noodles for lunch.", "vi": "Tôi đã ăn mì cho bữa trưa.", "note": "eat → ate" }
+                {
+                  "id": "tpas-r2e1",
+                  "en": "He went to Da Nang last week.",
+                  "vi": "Anh ấy đã đi Đà Nẵng tuần trước.",
+                  "note": "go → went"
+                },
+                {
+                  "id": "tpas-r2e2",
+                  "en": "I ate noodles for lunch.",
+                  "vi": "Tôi đã ăn mì cho bữa trưa.",
+                  "note": "eat → ate"
+                }
               ]
             },
             {
@@ -444,8 +730,18 @@
               "statement": "The auxiliary did carries the past tense, so the main verb returns to the base form.",
               "formula": "did not (didn't) + base verb  |  Did + subject + base verb?",
               "examples": [
-                { "id": "tpas-r3e1", "en": "I didn't call her yesterday.", "vi": "Hôm qua tôi đã không gọi cô ấy.", "note": "did + not + call, not called" },
-                { "id": "tpas-r3e2", "en": "Did you finish the report?", "vi": "Bạn đã xong báo cáo chưa?", "note": "Did + finish, the -ed is not repeated" }
+                {
+                  "id": "tpas-r3e1",
+                  "en": "I didn't call her yesterday.",
+                  "vi": "Hôm qua tôi đã không gọi cô ấy.",
+                  "note": "did + not + call, not called"
+                },
+                {
+                  "id": "tpas-r3e2",
+                  "en": "Did you finish the report?",
+                  "vi": "Bạn đã xong báo cáo chưa?",
+                  "note": "Did + finish, the -ed is not repeated"
+                }
               ]
             },
             {
@@ -453,7 +749,12 @@
               "statement": "Finished past expressions lock the sentence into the past simple.",
               "formula": "yesterday, last night, in 2019, three days ago, when I was a child",
               "examples": [
-                { "id": "tpas-r4e1", "en": "We met two days ago.", "vi": "Hai ngày trước chúng tôi đã gặp nhau.", "note": "two days ago is finished past time" }
+                {
+                  "id": "tpas-r4e1",
+                  "en": "We met two days ago.",
+                  "vi": "Hai ngày trước chúng tôi đã gặp nhau.",
+                  "note": "two days ago is finished past time"
+                }
               ]
             }
           ]
@@ -462,11 +763,36 @@
           "id": "tpas-examples",
           "type": "examples",
           "examples": [
-            { "id": "tpas-ex1", "en": "I visited my grandparents last Tet.", "vi": "Tết năm ngoái tôi đã ghé thăm ông bà.", "note": "finished event with a finished time marker" },
-            { "id": "tpas-ex2", "en": "The film started at eight and ended at ten.", "vi": "Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ.", "note": "both ends of the event are given" },
-            { "id": "tpas-ex3", "en": "He didn't bring his camera on the trip.", "vi": "Anh ấy đã không mang máy ảnh khi đi chuyến đi.", "note": "didn't + base verb" },
-            { "id": "tpas-ex4", "en": "Did the shop open in 1998?", "vi": "Cửa hàng đã mở cửa vào năm 1998 chứ?", "note": "question with Did and a base verb" },
-            { "id": "tpas-ex5", "en": "My grandmother told us many stories about the war.", "vi": "Bà tôi đã kể cho chúng tôi nhiều câu chuyện về cuộc chiến.", "note": "tell → told, an irregular past" }
+            {
+              "id": "tpas-ex1",
+              "en": "I visited my grandparents last Tet.",
+              "vi": "Tết năm ngoái tôi đã ghé thăm ông bà.",
+              "note": "finished event with a finished time marker"
+            },
+            {
+              "id": "tpas-ex2",
+              "en": "The film started at eight and ended at ten.",
+              "vi": "Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ.",
+              "note": "both ends of the event are given"
+            },
+            {
+              "id": "tpas-ex3",
+              "en": "He didn't bring his camera on the trip.",
+              "vi": "Anh ấy đã không mang máy ảnh khi đi chuyến đi.",
+              "note": "didn't + base verb"
+            },
+            {
+              "id": "tpas-ex4",
+              "en": "Did the shop open in 1998?",
+              "vi": "Cửa hàng đã mở cửa vào năm 1998 chứ?",
+              "note": "question with Did and a base verb"
+            },
+            {
+              "id": "tpas-ex5",
+              "en": "My grandmother told us many stories about the war.",
+              "vi": "Bà tôi đã kể cho chúng tôi nhiều câu chuyện về cuộc chiến.",
+              "note": "tell → told, an irregular past"
+            }
           ]
         },
         {
@@ -482,12 +808,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She didn't went to the party.", "isCorrect": false },
-                { "id": "b", "text": "She didn't go to the party.", "isCorrect": true },
-                { "id": "c", "text": "She didn't gone to the party.", "isCorrect": false },
-                { "id": "d", "text": "She not went to the party.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She didn't went to the party.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "She didn't go to the party.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "She didn't gone to the party.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "She not went to the party.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "After did not the verb is the base form, go, because did already marks the past. The pair of wrong options a and c shows both forms of the same mistake: keeping the past form went or the past participle gone after the auxiliary.",
               "xp": 10
             },
@@ -499,7 +846,12 @@
               "difficulty": "beginner",
               "prompt": "Write the past simple form of the verb 'to buy'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["bought"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "bought"
+                ]
+              },
               "explanation": "Buy is irregular: buy → bought → bought. It is one of the verbs that has no -ed anywhere, so it has to be memorised as a set of three forms rather than generated by a rule.",
               "xp": 10
             },
@@ -511,7 +863,12 @@
               "difficulty": "beginner",
               "prompt": "We ___ (watch) a film about the Mekong Delta last night.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["watched"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "watched"
+                ]
+              },
               "explanation": "Last night is finished past time, so the verb takes the regular -ed ending: watched. Because watch is a two-syllable word ending in a consonant, it does not double the ch.",
               "xp": 10
             },
@@ -523,7 +880,12 @@
               "difficulty": "intermediate",
               "prompt": "Did you saw the new teacher yesterday?",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Did you see the new teacher yesterday?"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Did you see the new teacher yesterday?"
+                ]
+              },
               "explanation": "The auxiliary Did already carries the past tense, so the main verb must be the base form see. Writing saw doubles the tense, which is the same error pattern as didn't went.",
               "xp": 10
             }
@@ -536,16 +898,26 @@
           "items": [
             {
               "id": "tpas-d1",
-              "audio": { "kind": "speech", "text": "We drove to Can Tho during the summer holiday." },
-              "acceptedAnswers": ["We drove to Can Tho during the summer holiday."],
+              "audio": {
+                "kind": "speech",
+                "text": "We drove to Can Tho during the summer holiday."
+              },
+              "acceptedAnswers": [
+                "We drove to Can Tho during the summer holiday."
+              ],
               "hint": "irregular past form of drive",
               "translation": "Chúng tôi đã lái xe đến Cần Thơ trong kỳ nghỉ hè.",
               "xp": 15
             },
             {
               "id": "tpas-d2",
-              "audio": { "kind": "speech", "text": "The match did not start because of the heavy rain." },
-              "acceptedAnswers": ["The match did not start because of the heavy rain."],
+              "audio": {
+                "kind": "speech",
+                "text": "The match did not start because of the heavy rain."
+              },
+              "acceptedAnswers": [
+                "The match did not start because of the heavy rain."
+              ],
               "hint": "did not + base verb",
               "translation": "Trận đấu đã không bắt đầu vì mưa lớn.",
               "xp": 15
@@ -565,7 +937,12 @@
               "difficulty": "beginner",
               "prompt": "I ___ (lose) my keys on the way home yesterday.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["lost"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "lost"
+                ]
+              },
               "explanation": "Lose is irregular: lose → lost → lost. Yesterday confirms finished past time, so the irregular past is the only form that fits.",
               "xp": 10
             },
@@ -578,12 +955,33 @@
               "prompt": "Which sentence describes a finished action in the past correctly?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I was watching TV when the phone rang.", "isCorrect": false },
-                { "id": "b", "text": "I watched TV and then the phone rang.", "isCorrect": true },
-                { "id": "c", "text": "I am watching TV yesterday.", "isCorrect": false },
-                { "id": "d", "text": "I have watched TV last night.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I was watching TV when the phone rang.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I watched TV and then the phone rang.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I am watching TV yesterday.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I have watched TV last night.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Option b gives two complete past events in order, which is what the past simple is for. Option a is a past action in progress, option c puts a present tense on a finished past time, and option d combines the present perfect with the finished marker last night, which English does not allow.",
               "xp": 10
             },
@@ -595,7 +993,12 @@
               "difficulty": "intermediate",
               "prompt": "They didn't arrived on time for the concert.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["They didn't arrive on time for the concert."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "They didn't arrive on time for the concert."
+                ]
+              },
               "explanation": "Did not is followed by the base verb arrive. Arrived is the regular past form, and the past tense is already in didn't, so the -ed ending is redundant.",
               "xp": 10
             }
@@ -633,8 +1036,18 @@
               "statement": "Use have or has with the past participle of the main verb. The participle of a regular verb is the -ed form; for an irregular verb it is the third form in the list.",
               "formula": "have / has + past participle",
               "examples": [
-                { "id": "tpp-r1e1", "en": "I have finished my homework.", "vi": "Tôi đã làm xong bài tập.", "note": "have + finished; the result is true now" },
-                { "id": "tpp-r1e2", "en": "She has gone to Hue.", "vi": "Cô ấy đã đi Huế rồi.", "note": "has + gone, a third-form participle" }
+                {
+                  "id": "tpp-r1e1",
+                  "en": "I have finished my homework.",
+                  "vi": "Tôi đã làm xong bài tập.",
+                  "note": "have + finished; the result is true now"
+                },
+                {
+                  "id": "tpp-r1e2",
+                  "en": "She has gone to Hue.",
+                  "vi": "Cô ấy đã đi Huế rồi.",
+                  "note": "has + gone, a third-form participle"
+                }
               ]
             },
             {
@@ -642,8 +1055,18 @@
               "statement": "Use the past simple with a finished time, and the present perfect when the time is open or the connection to now is the point.",
               "formula": "I saw him yesterday. / I have seen him three times.",
               "examples": [
-                { "id": "tpp-r2e1", "en": "We visited the old citadel in 2018.", "vi": "Chúng tôi đã tham quan thành cổ vào năm 2018.", "note": "in 2018 is finished, so past simple" },
-                { "id": "tpp-r2e2", "en": "I have visited the old citadel twice.", "vi": "Tôi đã tham quan thành cổ hai lần.", "note": "twice is not a finished time, so present perfect" }
+                {
+                  "id": "tpp-r2e1",
+                  "en": "We visited the old citadel in 2018.",
+                  "vi": "Chúng tôi đã tham quan thành cổ vào năm 2018.",
+                  "note": "in 2018 is finished, so past simple"
+                },
+                {
+                  "id": "tpp-r2e2",
+                  "en": "I have visited the old citadel twice.",
+                  "vi": "Tôi đã tham quan thành cổ hai lần.",
+                  "note": "twice is not a finished time, so present perfect"
+                }
               ]
             },
             {
@@ -651,8 +1074,18 @@
               "statement": "For measures a length of time, since names the starting point. Both describe a situation that started in the past and is still true.",
               "formula": "for + period (three years, a long time) | since + point (2019, Monday, I was a student)",
               "examples": [
-                { "id": "tpp-r3e1", "en": "She has lived in Hanoi for five years.", "vi": "Cô ấy đã sống ở Hà Nội được năm năm.", "note": "for + length of time" },
-                { "id": "tpp-r3e2", "en": "He has worked here since 2019.", "vi": "Anh ấy đã làm việc ở đây từ năm 2019.", "note": "since + starting point" }
+                {
+                  "id": "tpp-r3e1",
+                  "en": "She has lived in Hanoi for five years.",
+                  "vi": "Cô ấy đã sống ở Hà Nội được năm năm.",
+                  "note": "for + length of time"
+                },
+                {
+                  "id": "tpp-r3e2",
+                  "en": "He has worked here since 2019.",
+                  "vi": "Anh ấy đã làm việc ở đây từ năm 2019.",
+                  "note": "since + starting point"
+                }
               ]
             },
             {
@@ -660,8 +1093,18 @@
               "statement": "The auxiliary have or has behaves like any other auxiliary: never has it in negatives and questions, and the participle never changes.",
               "formula": "have not (haven't) + participle | Have / Has + subject + participle?",
               "examples": [
-                { "id": "tpp-r4e1", "en": "I haven't seen him since we graduated.", "vi": "Tôi chưa gặp anh ấy kể từ khi chúng tôi tốt nghiệp.", "note": "haven't + seen" },
-                { "id": "tpp-r4e2", "en": "Has the package arrived yet?", "vi": "Gói hàng đã đến chưa?", "note": "Has + arrived, with yet" }
+                {
+                  "id": "tpp-r4e1",
+                  "en": "I haven't seen him since we graduated.",
+                  "vi": "Tôi chưa gặp anh ấy kể từ khi chúng tôi tốt nghiệp.",
+                  "note": "haven't + seen"
+                },
+                {
+                  "id": "tpp-r4e2",
+                  "en": "Has the package arrived yet?",
+                  "vi": "Gói hàng đã đến chưa?",
+                  "note": "Has + arrived, with yet"
+                }
               ]
             }
           ]
@@ -670,11 +1113,36 @@
           "id": "tpp-examples",
           "type": "examples",
           "examples": [
-            { "id": "tpp-ex1", "en": "I have never been to Japan.", "vi": "Tôi chưa bao giờ đến Nhật Bản.", "note": "experience up to now" },
-            { "id": "tpp-ex2", "en": "She has just left the office.", "vi": "Cô ấy vừa rời khỏi văn phòng.", "note": "just places the event very near now" },
-            { "id": "tpp-ex3", "en": "We have known each other for ten years.", "vi": "Chúng tôi đã quen nhau mười năm.", "note": "situation that is still true now" },
-            { "id": "tpp-ex4", "en": "Have you finished the report yet?", "vi": "Bạn đã xong báo cáo chưa?", "note": "yet in a question about an unfinished situation" },
-            { "id": "tpp-ex5", "en": "He has written three emails so far.", "vi": "Anh ấy đã viết ba email cho đến giờ.", "note": "so far keeps the time open" }
+            {
+              "id": "tpp-ex1",
+              "en": "I have never been to Japan.",
+              "vi": "Tôi chưa bao giờ đến Nhật Bản.",
+              "note": "experience up to now"
+            },
+            {
+              "id": "tpp-ex2",
+              "en": "She has just left the office.",
+              "vi": "Cô ấy vừa rời khỏi văn phòng.",
+              "note": "just places the event very near now"
+            },
+            {
+              "id": "tpp-ex3",
+              "en": "We have known each other for ten years.",
+              "vi": "Chúng tôi đã quen nhau mười năm.",
+              "note": "situation that is still true now"
+            },
+            {
+              "id": "tpp-ex4",
+              "en": "Have you finished the report yet?",
+              "vi": "Bạn đã xong báo cáo chưa?",
+              "note": "yet in a question about an unfinished situation"
+            },
+            {
+              "id": "tpp-ex5",
+              "en": "He has written three emails so far.",
+              "vi": "Anh ấy đã viết ba email cho đến giờ.",
+              "note": "so far keeps the time open"
+            }
           ]
         },
         {
@@ -690,12 +1158,33 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I have seen him yesterday.", "isCorrect": false },
-                { "id": "b", "text": "I saw him yesterday.", "isCorrect": true },
-                { "id": "c", "text": "I have saw him yesterday.", "isCorrect": false },
-                { "id": "d", "text": "I seen him yesterday.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I have seen him yesterday.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I saw him yesterday.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I have saw him yesterday.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I seen him yesterday.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Yesterday is a finished time, so English requires the past simple saw. The present perfect cannot take a finished time marker because it deliberately leaves the time open; the other options also confuse the participle seen with the past form saw.",
               "xp": 10
             },
@@ -708,13 +1197,40 @@
               "prompt": "Which time expressions can go with the present perfect? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "a", "text": "so far", "isCorrect": true },
-                { "id": "b", "text": "last Tuesday", "isCorrect": false },
-                { "id": "c", "text": "since 2020", "isCorrect": true },
-                { "id": "d", "text": "two days ago", "isCorrect": false },
-                { "id": "e", "text": "never", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "so far",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "last Tuesday",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "since 2020",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "two days ago",
+                  "isCorrect": false
+                },
+                {
+                  "id": "e",
+                  "text": "never",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c", "e"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c",
+                  "e"
+                ]
+              },
               "explanation": "So far, since 2020 and never all leave the time open or point at a starting point, which is exactly what the present perfect needs. Last Tuesday and two days ago are finished points in time, so they force the past simple instead.",
               "xp": 10
             },
@@ -726,7 +1242,13 @@
               "difficulty": "intermediate",
               "prompt": "They ___ (not eat) anything since they arrived.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["have not eaten", "haven't eaten"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "have not eaten",
+                  "haven't eaten"
+                ]
+              },
               "explanation": "Since they arrived is a starting point, so the sentence needs has or have plus the participle eaten. The past participle of eat is eaten, not ate; that form belongs to the past simple.",
               "xp": 10
             },
@@ -738,7 +1260,12 @@
               "difficulty": "intermediate",
               "prompt": "I have bought this bike last year.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I bought this bike last year."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I bought this bike last year."
+                ]
+              },
               "explanation": "Last year is a finished time, so the present perfect is not available and the past simple bought is the right choice. The other possible repair, I have owned this bike since last year, would be correct too, but the minimal fix keeps last year and changes the tense.",
               "xp": 10
             }
@@ -751,16 +1278,26 @@
           "items": [
             {
               "id": "tpp-d1",
-              "audio": { "kind": "speech", "text": "I have already sent the invitation to her." },
-              "acceptedAnswers": ["I have already sent the invitation to her."],
+              "audio": {
+                "kind": "speech",
+                "text": "I have already sent the invitation to her."
+              },
+              "acceptedAnswers": [
+                "I have already sent the invitation to her."
+              ],
               "hint": "have + past participle, with already",
               "translation": "Tôi đã gửi lời mời cho cô ấy rồi.",
               "xp": 15
             },
             {
               "id": "tpp-d2",
-              "audio": { "kind": "speech", "text": "They have not finished building the new library yet." },
-              "acceptedAnswers": ["They have not finished building the new library yet."],
+              "audio": {
+                "kind": "speech",
+                "text": "They have not finished building the new library yet."
+              },
+              "acceptedAnswers": [
+                "They have not finished building the new library yet."
+              ],
               "hint": "have not + participle, with yet",
               "translation": "Họ chưa xong việc xây thư viện mới.",
               "xp": 15
@@ -780,7 +1317,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the past participle of the verb 'to write'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["written"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "written"
+                ]
+              },
               "explanation": "Write is irregular: write → wrote → written. The third form, written, is what you need after have, has, should and other modals; mixing up wrote and written is the single most common irregular-verb error in this tense.",
               "xp": 10
             },
@@ -792,7 +1334,12 @@
               "difficulty": "intermediate",
               "prompt": "She has went to the countryside three times.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She has gone to the countryside three times."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She has gone to the countryside three times."
+                ]
+              },
               "explanation": "After has we need the past participle, and the participle of go is gone. Went is the past simple form, which is only correct with a finished time, and three times is not one.",
               "xp": 10
             },
@@ -805,12 +1352,33 @@
               "prompt": "Which sentence correctly contrasts the two tenses?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I have met her in 2019 and I still remember her face.", "isCorrect": false },
-                { "id": "b", "text": "I met her in 2019 and I still remember her face.", "isCorrect": true },
-                { "id": "c", "text": "I have met her since 2019 and I still remember her face.", "isCorrect": false },
-                { "id": "d", "text": "I met her for 2019 and I still remember her face.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I have met her in 2019 and I still remember her face.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I met her in 2019 and I still remember her face.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I have met her since 2019 and I still remember her face.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I met her for 2019 and I still remember her face.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "In 2019 is a finished point in time, so the first clause must be the past simple met; the second clause is in the present simple, which is the normal pattern for expressing a result that still holds. Option c would work with since 2019, but not with in 2019, and option d mixes for with a date.",
               "xp": 10
             }
@@ -848,8 +1416,18 @@
               "statement": "Use the past form of be with the -ing form of the verb, with the same spelling rules as the present continuous.",
               "formula": "was / were + verb-ing",
               "examples": [
-                { "id": "tpc2-r1e1", "en": "I was cooking dinner at eight o'clock.", "vi": "Lúc tám giờ tôi đang nấu bữa tối.", "note": "was + cooking, an unfinished past action" },
-                { "id": "tpc2-r1e2", "en": "They were waiting for the bus.", "vi": "Họ đang đợi xe buýt.", "note": "were + waiting" }
+                {
+                  "id": "tpc2-r1e1",
+                  "en": "I was cooking dinner at eight o'clock.",
+                  "vi": "Lúc tám giờ tôi đang nấu bữa tối.",
+                  "note": "was + cooking, an unfinished past action"
+                },
+                {
+                  "id": "tpc2-r1e2",
+                  "en": "They were waiting for the bus.",
+                  "vi": "Họ đang đợi xe buýt.",
+                  "note": "were + waiting"
+                }
               ]
             },
             {
@@ -857,8 +1435,18 @@
               "statement": "The action in progress takes the past continuous; the interrupting, shorter event takes the past simple.",
               "formula": "I was reading when the lights went out.",
               "examples": [
-                { "id": "tpc2-r2e1", "en": "She was typing an email when her boss came in.", "vi": "Cô ấy đang gõ email thì sếp bước vào.", "note": "typing = background, came = interruption" },
-                { "id": "tpc2-r2e2", "en": "We were walking home and it started to rain.", "vi": "Chúng tôi đang đi bộ về nhà thì trời bắt đầu mưa.", "note": "started is the new, short event" }
+                {
+                  "id": "tpc2-r2e1",
+                  "en": "She was typing an email when her boss came in.",
+                  "vi": "Cô ấy đang gõ email thì sếp bước vào.",
+                  "note": "typing = background, came = interruption"
+                },
+                {
+                  "id": "tpc2-r2e2",
+                  "en": "We were walking home and it started to rain.",
+                  "vi": "Chúng tôi đang đi bộ về nhà thì trời bắt đầu mưa.",
+                  "note": "started is the new, short event"
+                }
               ]
             },
             {
@@ -866,8 +1454,18 @@
               "statement": "While introduces the longer action in progress; when introduces the shorter interrupting event. The two words are often interchangeable, but the meaning shifts slightly.",
               "formula": "while + past continuous, when + past simple",
               "examples": [
-                { "id": "tpc2-r3e1", "en": "While I was cooking, my brother called.", "vi": "Trong lúc tôi đang nấu ăn, anh trai tôi gọi điện.", "note": "while sets the background" },
-                { "id": "tpc2-r3e2", "en": "I dropped a plate when the dog ran into the kitchen.", "vi": "Tôi làm rơi một cái đĩa khi con chó chạy vào bếp.", "note": "when introduces the cause" }
+                {
+                  "id": "tpc2-r3e1",
+                  "en": "While I was cooking, my brother called.",
+                  "vi": "Trong lúc tôi đang nấu ăn, anh trai tôi gọi điện.",
+                  "note": "while sets the background"
+                },
+                {
+                  "id": "tpc2-r3e2",
+                  "en": "I dropped a plate when the dog ran into the kitchen.",
+                  "vi": "Tôi làm rơi một cái đĩa khi con chó chạy vào bếp.",
+                  "note": "when introduces the cause"
+                }
               ]
             },
             {
@@ -875,7 +1473,12 @@
               "statement": "When two past actions overlap and neither interrupts the other, both can take the past continuous, and while is the natural linker.",
               "formula": "I was cooking while she was setting the table.",
               "examples": [
-                { "id": "tpc2-r4e1", "en": "While I was cooking, she was setting the table.", "vi": "Trong lúc tôi nấu ăn thì cô ấy đang bày bàn.", "note": "two simultaneous backgrounds" }
+                {
+                  "id": "tpc2-r4e1",
+                  "en": "While I was cooking, she was setting the table.",
+                  "vi": "Trong lúc tôi nấu ăn thì cô ấy đang bày bàn.",
+                  "note": "two simultaneous backgrounds"
+                }
               ]
             }
           ]
@@ -884,11 +1487,36 @@
           "id": "tpc2-examples",
           "type": "examples",
           "examples": [
-            { "id": "tpc2-ex1", "en": "The sky was getting darker and the wind was rising.", "vi": "Bầu trời đang tối dần và gió đang mạnh lên.", "note": "two backgrounds in progress in the past" },
-            { "id": "tpc2-ex2", "en": "I wasn't listening when she asked the question.", "vi": "Tôi đã không lắng nghe khi cô ấy đặt câu hỏi.", "note": "wasn't + listening is a background action" },
-            { "id": "tpc2-ex3", "en": "What were you doing at ten last night?", "vi": "Lúc mười giờ đêm qua bạn đang làm gì?", "note": "question in the past continuous about an interrupted activity" },
-            { "id": "tpc2-ex4", "en": "They were playing badminton when the rain stopped.", "vi": "Họ đang chơi cầu lông thì mưa ngừng.", "note": "playing continues, stopped marks the new event" },
-            { "id": "tpc2-ex5", "en": "While she was waiting, a stranger offered her a seat.", "vi": "Trong lúc cô ấy đứng đợi, một người lạ đã nhường ghế cho cô ấy.", "note": "while introduces the longer waiting" }
+            {
+              "id": "tpc2-ex1",
+              "en": "The sky was getting darker and the wind was rising.",
+              "vi": "Bầu trời đang tối dần và gió đang mạnh lên.",
+              "note": "two backgrounds in progress in the past"
+            },
+            {
+              "id": "tpc2-ex2",
+              "en": "I wasn't listening when she asked the question.",
+              "vi": "Tôi đã không lắng nghe khi cô ấy đặt câu hỏi.",
+              "note": "wasn't + listening is a background action"
+            },
+            {
+              "id": "tpc2-ex3",
+              "en": "What were you doing at ten last night?",
+              "vi": "Lúc mười giờ đêm qua bạn đang làm gì?",
+              "note": "question in the past continuous about an interrupted activity"
+            },
+            {
+              "id": "tpc2-ex4",
+              "en": "They were playing badminton when the rain stopped.",
+              "vi": "Họ đang chơi cầu lông thì mưa ngừng.",
+              "note": "playing continues, stopped marks the new event"
+            },
+            {
+              "id": "tpc2-ex5",
+              "en": "While she was waiting, a stranger offered her a seat.",
+              "vi": "Trong lúc cô ấy đứng đợi, một người lạ đã nhường ghế cho cô ấy.",
+              "note": "while introduces the longer waiting"
+            }
           ]
         },
         {
@@ -904,12 +1532,33 @@
               "prompt": "While I ___, the phone rang.",
               "instruction": "Pick the option that completes the sentence correctly.",
               "items": [
-                { "id": "a", "text": "was cooking dinner", "isCorrect": true },
-                { "id": "b", "text": "cooked dinner", "isCorrect": false },
-                { "id": "c", "text": "am cooking dinner", "isCorrect": false },
-                { "id": "d", "text": "have cooked dinner", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "was cooking dinner",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "cooked dinner",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "am cooking dinner",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "have cooked dinner",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "While introduces the longer action in progress, so it needs the past continuous: was cooking. The other options describe a completed action, a present situation, or a link to now, none of which set the background for a past interruption.",
               "xp": 10
             },
@@ -922,16 +1571,52 @@
               "prompt": "Put the words in the correct order.",
               "instruction": "Build the sentence.",
               "items": [
-                { "id": "w1", "text": "was" },
-                { "id": "w2", "text": "she" },
-                { "id": "w3", "text": "reading" },
-                { "id": "w4", "text": "when" },
-                { "id": "w5", "text": "the" },
-                { "id": "w6", "text": "lights" },
-                { "id": "w7", "text": "went" },
-                { "id": "w8", "text": "out" }
+                {
+                  "id": "w1",
+                  "text": "was"
+                },
+                {
+                  "id": "w2",
+                  "text": "she"
+                },
+                {
+                  "id": "w3",
+                  "text": "reading"
+                },
+                {
+                  "id": "w4",
+                  "text": "when"
+                },
+                {
+                  "id": "w5",
+                  "text": "the"
+                },
+                {
+                  "id": "w6",
+                  "text": "lights"
+                },
+                {
+                  "id": "w7",
+                  "text": "went"
+                },
+                {
+                  "id": "w8",
+                  "text": "out"
+                }
               ],
-              "answer": { "type": "order", "values": ["she", "was", "reading", "when", "the", "lights", "went", "out"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "she",
+                  "was",
+                  "reading",
+                  "when",
+                  "the",
+                  "lights",
+                  "went",
+                  "out"
+                ]
+              },
               "explanation": "The subject comes first, then was and the -ing form, then the when clause with the short past simple event. The order was she was reading when the lights went out teaches the whole long-action / short-interruption pattern in one sentence.",
               "xp": 10
             },
@@ -943,7 +1628,13 @@
               "difficulty": "intermediate",
               "prompt": "They ___ (not watch) TV when I entered the room.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["were not watching", "weren't watching"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were not watching",
+                  "weren't watching"
+                ]
+              },
               "explanation": "The subject is they, so the auxiliary is were, and the action is in progress, so the participle is watching. Watched would describe a finished action and would remove the background meaning the sentence needs.",
               "xp": 10
             },
@@ -955,7 +1646,12 @@
               "difficulty": "intermediate",
               "prompt": "I was study when the bell rang.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I was studying when the bell rang."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I was studying when the bell rang."
+                ]
+              },
               "explanation": "The auxiliary was requires the -ing form, so the verb becomes studying. Just as is never takes a base verb, was never takes one either; this is the same progressive error as in the present continuous, only in the past.",
               "xp": 10
             }
@@ -968,16 +1664,26 @@
           "items": [
             {
               "id": "tpc2-d1",
-              "audio": { "kind": "speech", "text": "While she was revising for her exam, her brother was making noise." },
-              "acceptedAnswers": ["While she was revising for her exam, her brother was making noise."],
+              "audio": {
+                "kind": "speech",
+                "text": "While she was revising for her exam, her brother was making noise."
+              },
+              "acceptedAnswers": [
+                "While she was revising for her exam, her brother was making noise."
+              ],
               "hint": "while + was + verb-ing",
               "translation": "Trong lúc cô ấy đang ôn thi, anh trai cô ấy đang gây ồn.",
               "xp": 15
             },
             {
               "id": "tpc2-d2",
-              "audio": { "kind": "speech", "text": "We were having dinner when the power went out." },
-              "acceptedAnswers": ["We were having dinner when the power went out."],
+              "audio": {
+                "kind": "speech",
+                "text": "We were having dinner when the power went out."
+              },
+              "acceptedAnswers": [
+                "We were having dinner when the power went out."
+              ],
               "hint": "were + verb-ing, interrupted by went",
               "translation": "Chúng tôi đang ăn tối thì mất điện.",
               "xp": 15
@@ -998,12 +1704,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "He was sleep when I called him.", "isCorrect": false },
-                { "id": "b", "text": "He was sleeping when I called him.", "isCorrect": true },
-                { "id": "c", "text": "He was slept when I called him.", "isCorrect": false },
-                { "id": "d", "text": "He is sleeping when I called him.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "He was sleep when I called him.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "He was sleeping when I called him.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "He was slept when I called him.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He is sleeping when I called him.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Was needs the -ing form, so the verb is sleeping, and the interruption is in the past simple: called. Option c uses the past participle after a progressive auxiliary, and option d mixes a present tense with a past clause.",
               "xp": 10
             },
@@ -1015,7 +1742,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the full form (not the contraction) of the negative past continuous of 'to be' with 'she'.",
               "instruction": "Type the auxiliary only.",
-              "answer": { "type": "text", "values": ["was not"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was not"
+                ]
+              },
               "explanation": "With she the past auxiliary is was, so the full negative is was not. Learners often write did not because the sentence is about the past, but the past continuous does not use did at all — that is a feature of the past simple only.",
               "xp": 10
             },
@@ -1027,7 +1759,12 @@
               "difficulty": "advanced",
               "prompt": "Complete with the past continuous: 'They ___ dinner when the doorbell rang.'",
               "instruction": "Write the verb phrase only.",
-              "answer": { "type": "text", "values": ["were having"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were having"
+                ]
+              },
               "explanation": "The background action takes the past continuous, so the phrase is were having. Having is the -ing form of have, and with a plural subject the auxiliary is were, not was.",
               "xp": 10
             }
@@ -1065,8 +1802,18 @@
               "statement": "Will is for spontaneous decisions, promises, offers and opinion-based predictions. Going to is for intentions decided before now and for predictions based on visible evidence.",
               "formula": "will + base verb | be going to + base verb",
               "examples": [
-                { "id": "tff-r1e1", "en": "I'll help you with those bags.", "vi": "Tôi sẽ giúp bạn mang những túi đó.", "note": "an offer decided at the moment of speaking" },
-                { "id": "tff-r1e2", "en": "Look at those clouds — it's going to rain.", "vi": "Nhìn những đám mây kia, trời sắp mưa rồi.", "note": "prediction from evidence we can see now" }
+                {
+                  "id": "tff-r1e1",
+                  "en": "I'll help you with those bags.",
+                  "vi": "Tôi sẽ giúp bạn mang những túi đó.",
+                  "note": "an offer decided at the moment of speaking"
+                },
+                {
+                  "id": "tff-r1e2",
+                  "en": "Look at those clouds — it's going to rain.",
+                  "vi": "Nhìn những đám mây kia, trời sắp mưa rồi.",
+                  "note": "prediction from evidence we can see now"
+                }
               ]
             },
             {
@@ -1074,8 +1821,18 @@
               "statement": "The present continuous is used for arrangements agreed in advance, and the present simple for timetables and programmes.",
               "formula": "am / is / are + verb-ing | present simple for schedules",
               "examples": [
-                { "id": "tff-r2e1", "en": "I'm meeting the dentist on Friday.", "vi": "Tôi sẽ gặp bác sĩ răng vào thứ Sáu.", "note": "a fixed arrangement" },
-                { "id": "tff-r2e2", "en": "The plane departs at 6:15 tomorrow.", "vi": "Máy bay cất cánh lúc 6 giờ 15 ngày mai.", "note": "timetable, so the present simple" }
+                {
+                  "id": "tff-r2e1",
+                  "en": "I'm meeting the dentist on Friday.",
+                  "vi": "Tôi sẽ gặp bác sĩ răng vào thứ Sáu.",
+                  "note": "a fixed arrangement"
+                },
+                {
+                  "id": "tff-r2e2",
+                  "en": "The plane departs at 6:15 tomorrow.",
+                  "vi": "Máy bay cất cánh lúc 6 giờ 15 ngày mai.",
+                  "note": "timetable, so the present simple"
+                }
               ]
             },
             {
@@ -1083,8 +1840,18 @@
               "statement": "Will have plus the past participle looks back from a future point to an action that will be finished by then. Time phrases such as by then, by the time and before usually accompany it.",
               "formula": "will have + past participle",
               "examples": [
-                { "id": "tff-r3e1", "en": "By next June I will have graduated.", "vi": "Đến tháng Sáu tới tôi sẽ đã tốt nghiệp.", "note": "finished before a future deadline" },
-                { "id": "tff-r3e2", "en": "She will have finished the report by noon tomorrow.", "vi": "Đến trưa mai cô ấy sẽ đã xong báo cáo.", "note": "by + time point" }
+                {
+                  "id": "tff-r3e1",
+                  "en": "By next June I will have graduated.",
+                  "vi": "Đến tháng Sáu tới tôi sẽ đã tốt nghiệp.",
+                  "note": "finished before a future deadline"
+                },
+                {
+                  "id": "tff-r3e2",
+                  "en": "She will have finished the report by noon tomorrow.",
+                  "vi": "Đến trưa mai cô ấy sẽ đã xong báo cáo.",
+                  "note": "by + time point"
+                }
               ]
             },
             {
@@ -1092,8 +1859,18 @@
               "statement": "In a when, if, as soon as or before clause about the future, English normally uses the present simple or present continuous, not will.",
               "formula": "I'll call you as soon as I arrive.",
               "examples": [
-                { "id": "tff-r4e1", "en": "I'll call you as soon as I arrive at the airport.", "vi": "Tôi sẽ gọi cho bạn ngay khi tôi đến sân bay.", "note": "as soon as + present simple" },
-                { "id": "tff-r4e2", "en": "She won't leave until the meeting finishes.", "vi": "Cô ấy sẽ không đi cho đến khi cuộc họp kết thúc.", "note": "until + present simple" }
+                {
+                  "id": "tff-r4e1",
+                  "en": "I'll call you as soon as I arrive at the airport.",
+                  "vi": "Tôi sẽ gọi cho bạn ngay khi tôi đến sân bay.",
+                  "note": "as soon as + present simple"
+                },
+                {
+                  "id": "tff-r4e2",
+                  "en": "She won't leave until the meeting finishes.",
+                  "vi": "Cô ấy sẽ không đi cho đến khi cuộc họp kết thúc.",
+                  "note": "until + present simple"
+                }
               ]
             }
           ]
@@ -1102,11 +1879,36 @@
           "id": "tff-examples",
           "type": "examples",
           "examples": [
-            { "id": "tff-ex1", "en": "I think you will do well in the interview.", "vi": "Tôi nghĩ bạn sẽ làm tốt trong cuộc phỏng vấn.", "note": "opinion-based prediction with will" },
-            { "id": "tff-ex2", "en": "We're going to visit our grandparents this weekend.", "vi": "Cuối tuần này chúng tôi dự định đi thăm ông bà.", "note": "intention formed earlier" },
-            { "id": "tff-ex3", "en": "The bus leaves from bay four at half past six.", "vi": "Xe buýt xuất phát từ số 4 lúc sáu giờ rưỡi.", "note": "timetable in the present simple" },
-            { "id": "tff-ex4", "en": "By the time you get here, we will have finished.", "vi": "Đến lúc bạn tới nơi thì chúng tôi sẽ đã xong rồi.", "note": "future perfect with by the time" },
-            { "id": "tff-ex5", "en": "I'll let you know as soon as I hear from her.", "vi": "Tôi sẽ báo bạn ngay khi nào nhận được tin cô ấy.", "note": "will in the main clause, present simple after as soon as" }
+            {
+              "id": "tff-ex1",
+              "en": "I think you will do well in the interview.",
+              "vi": "Tôi nghĩ bạn sẽ làm tốt trong cuộc phỏng vấn.",
+              "note": "opinion-based prediction with will"
+            },
+            {
+              "id": "tff-ex2",
+              "en": "We're going to visit our grandparents this weekend.",
+              "vi": "Cuối tuần này chúng tôi dự định đi thăm ông bà.",
+              "note": "intention formed earlier"
+            },
+            {
+              "id": "tff-ex3",
+              "en": "The bus leaves from bay four at half past six.",
+              "vi": "Xe buýt xuất phát từ số 4 lúc sáu giờ rưỡi.",
+              "note": "timetable in the present simple"
+            },
+            {
+              "id": "tff-ex4",
+              "en": "By the time you get here, we will have finished.",
+              "vi": "Đến lúc bạn tới nơi thì chúng tôi sẽ đã xong rồi.",
+              "note": "future perfect with by the time"
+            },
+            {
+              "id": "tff-ex5",
+              "en": "I'll let you know as soon as I hear from her.",
+              "vi": "Tôi sẽ báo bạn ngay khi nào nhận được tin cô ấy.",
+              "note": "will in the main clause, present simple after as soon as"
+            }
           ]
         },
         {
@@ -1122,12 +1924,33 @@
               "prompt": "The bag is very heavy. — 'I ___ you with it.'",
               "instruction": "Pick the best option.",
               "items": [
-                { "id": "a", "text": "will help", "isCorrect": true },
-                { "id": "b", "text": "am going to help", "isCorrect": false },
-                { "id": "c", "text": "help", "isCorrect": false },
-                { "id": "d", "text": "would helped", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "will help",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "am going to help",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "help",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "would helped",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The offer is made at the moment of speaking, which is the job of will. Going to would suggest the speaker had already decided to help, and the bare base verb has no future marking at all.",
               "xp": 10
             },
@@ -1140,12 +1963,34 @@
               "prompt": "Which sentences are correct English? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "a", "text": "I'll text you when I will arrive.", "isCorrect": false },
-                { "id": "b", "text": "I'll text you when I arrive.", "isCorrect": true },
-                { "id": "c", "text": "By December she will have been here for ten years.", "isCorrect": true },
-                { "id": "d", "text": "By December she will be here since ten years.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I'll text you when I will arrive.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I'll text you when I arrive.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "By December she will have been here for ten years.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "By December she will be here since ten years.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b",
+                  "c"
+                ]
+              },
               "explanation": "A future time clause takes a present form, so when I arrive is right and when I will arrive is not. Option c is a correct future perfect with a by phrase; option d mixes by with since, and since does not belong after by.",
               "xp": 10
             },
@@ -1157,7 +2002,12 @@
               "difficulty": "advanced",
               "prompt": "By the time we get to the station, the train will left.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["By the time we get to the station, the train will have left."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "By the time we get to the station, the train will have left."
+                ]
+              },
               "explanation": "The action will be finished before the future point named in the first clause, so we need the future perfect: will have left. Left is the past participle on its own, which needs the auxiliary have; will left is not possible in English.",
               "xp": 10
             },
@@ -1170,7 +2020,12 @@
               "prompt": "Translate into English: 'Đến cuối năm nay tôi sẽ đã sống ở đây được ba năm.'",
               "instruction": "Write the English sentence.",
               "translation": "By the end of this year I will have lived here for three years.",
-              "answer": { "type": "text", "values": ["By the end of this year I will have lived here for three years."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "By the end of this year I will have lived here for three years."
+                ]
+              },
               "explanation": "The Vietnamese đến cuối năm nay marks a deadline in the future, so English needs by the end of this year plus the future perfect will have lived. A simple future will live would lose the idea that the three years will already be complete by then.",
               "xp": 10
             },
@@ -1182,7 +2037,13 @@
               "difficulty": "intermediate",
               "prompt": "Look at that child — he ___ (spill) the whole glass.",
               "instruction": "Write the correct verb phrase.",
-              "answer": { "type": "text", "values": ["is going to spill", "he's going to spill"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "is going to spill",
+                  "he's going to spill"
+                ]
+              },
               "explanation": "There is visible evidence right now, so English predicts with going to. Will would express an opinion or a decision, and the present continuous would suggest an arrangement already agreed rather than a prediction.",
               "xp": 10
             }
@@ -1195,16 +2056,26 @@
           "items": [
             {
               "id": "tff-d1",
-              "audio": { "kind": "speech", "text": "I will let you know as soon as the results come out." },
-              "acceptedAnswers": ["I will let you know as soon as the results come out."],
+              "audio": {
+                "kind": "speech",
+                "text": "I will let you know as soon as the results come out."
+              },
+              "acceptedAnswers": [
+                "I will let you know as soon as the results come out."
+              ],
               "hint": "will in the main clause, present simple after as soon as",
               "translation": "Tôi sẽ báo bạn ngay khi có kết quả.",
               "xp": 15
             },
             {
               "id": "tff-d2",
-              "audio": { "kind": "speech", "text": "By the end of the course we will have learned two thousand words." },
-              "acceptedAnswers": ["By the end of the course we will have learned two thousand words."],
+              "audio": {
+                "kind": "speech",
+                "text": "By the end of the course we will have learned two thousand words."
+              },
+              "acceptedAnswers": [
+                "By the end of the course we will have learned two thousand words."
+              ],
               "hint": "by the end of + future perfect",
               "translation": "Đến cuối khóa học chúng ta sẽ đã học được hai nghìn từ.",
               "xp": 15
@@ -1225,12 +2096,33 @@
               "prompt": "Which sentence correctly uses a future form in both parts?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "I will call you as soon as I will get home.", "isCorrect": false },
-                { "id": "b", "text": "I will call you as soon as I get home.", "isCorrect": true },
-                { "id": "c", "text": "I will call you as soon as I got home.", "isCorrect": false },
-                { "id": "d", "text": "I am going to call you as soon as I will get home.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "I will call you as soon as I will get home.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "I will call you as soon as I get home.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "I will call you as soon as I got home.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "I am going to call you as soon as I will get home.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "English does not put will in a future time clause, so as soon as I get home is the natural form. Option c uses the past simple, which would suggest a routine in the past rather than a single future event.",
               "xp": 10
             },
@@ -1242,7 +2134,12 @@
               "difficulty": "advanced",
               "prompt": "By next March I will finish my degree.",
               "instruction": "Rewrite the sentence so that it expresses a completed result before March.",
-              "answer": { "type": "text", "values": ["By next March I will have finished my degree."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "By next March I will have finished my degree."
+                ]
+              },
               "explanation": "A by phrase pointing to a future deadline normally pairs with the future perfect when the focus is on completion: will have finished. The simple future is also possible, but it treats the finishing as the event rather than a state already achieved by that date.",
               "xp": 10
             },
@@ -1254,7 +2151,12 @@
               "difficulty": "advanced",
               "prompt": "Write the past participle of the verb 'to be'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["been"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "been"
+                ]
+              },
               "explanation": "Be → was or were → been. Been is the participle used in have been and will have been; learners often write was, which is a past form and cannot follow have or will have.",
               "xp": 10
             }

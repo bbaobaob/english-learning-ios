@@ -251,7 +251,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Backshift only happens when the reporting verb is in the past. With a present reporting verb the report is happening now, so is busy stays is busy.",
               "xp": 10
@@ -1325,7 +1325,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "Universal and permanent statements keep the present, because backshifting them would change what is true: 'He said the earth goes round the sun', not 'went'.",
               "xp": 10
@@ -1714,7 +1714,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "She said her bag was my responsibility, said to me: the original you is me in the reporter's frame, so the reported you becomes my and the reported my becomes her.",
               "xp": 10
@@ -2185,7 +2185,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "If to can be read as 'if it is possible to come in', so the less ambiguous whether is used in front of a to-infinitive. That is a case where the grammar, not the style guide, forces the choice.",
               "xp": 10
@@ -2821,7 +2821,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Once the command becomes a third-person report, the person being addressed is the reporter, so you becomes I or me and my becomes his or her. Leaving you in place is one of the classic reported-speech slips.",
               "xp": 10

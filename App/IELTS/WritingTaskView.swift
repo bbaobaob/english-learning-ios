@@ -11,7 +11,6 @@ struct WritingTaskView: View {
     let lesson: IELTSPaperLesson
 
     @Environment(AppState.self) private var appState
-    @Environment(\.dismiss) private var dismiss
 
     @State private var drafts = WritingDraftStore()
     @State private var text = ""
@@ -24,6 +23,8 @@ struct WritingTaskView: View {
     @State private var hasAppeared = false
     @State private var hasSubmitted = false
     @State private var accuracy: Double = 0
+    /// `.alert` needs a settable binding; the timer's own flag is read-only.
+    @State private var showTimeUpAlert = false
 
     private var wordCount: Int { ExamWordCount.words(in: text) }
     private var minimumWords: Int { lesson.minimumWords }
@@ -39,7 +40,7 @@ struct WritingTaskView: View {
                     if showGuide { structureGuide }
                     selfCheckSection
                     helperSection
-                    if let submitted = submittedOutcome { outcomeCard(submitted) }
+                    if hasSubmitted { outcomeCard }
                 }
                 .padding(.horizontal, Spacing.md)
                 .padding(.bottom, 140)
@@ -79,9 +80,23 @@ struct WritingTaskView: View {
         appState.store.updateLessonProgress(
             lessonID: lesson.id,
             topicID: "ielts",
-            stepIndex: max(text.isEmpty ? 0 : 1, 0),
+            stepIndex: text.isEmpty ? 0 : 1,
             lastStepID: "draft"
         )
+    }
+
+    /// Keystrokes land here; the disk write does not. A write per character would
+    /// make the editor stutter on a long essay, and a draft that lags half a second
+    /// behind the screen loses nothing.
+    @State private var saveTask: Task<Void, Never>?
+
+    private func scheduleSave() {
+        saveTask?.cancel()
+        saveTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 600_000_000)
+            guard !Task.isCancelled else { return }
+            await self?.saveDraft()
+        }
     }
 
     // MARK: Timer bar
@@ -109,6 +124,10 @@ struct WritingTaskView: View {
                 .foregroundStyle(timer.isUrgent ? Color.examWrong : Color.examInk)
                 .contentTransition(.numericText())
                 .animation(ExamMotion.tick, value: timer.remaining)
+                // The clock is a value, not a picture of one. VoiceOver re-reads it
+                // whenever it changes because it is a live region.
+                .accessibilityLabel(timer.spokenLabel)
+                .accessibilityAddTraits(.updatesFrequently)
 
             Text("of 40:00")
                 .font(.examBody(12))
@@ -125,21 +144,22 @@ struct WritingTaskView: View {
                     .foregroundStyle(Color.examInkSoft)
             }
             .accessibilityElement(children: .combine)
-            .accessibilityLabel("\(wordCount) words, minimum \(minimumWords)")
+            .accessibilityLabel("\(wordCount) words written, minimum \(minimumWords)")
         }
         .padding(.horizontal, Spacing.md)
         .padding(.vertical, Spacing.xs)
         .examFloatingGlass()
         .padding(.horizontal, Spacing.md)
         .padding(.top, Spacing.xs)
-        .accessibilityElement(children: .contain)
-        .accessibilityLabel(timer.spokenLabel)
-        .accessibilityValue("\(wordCount) words written, minimum \(minimumWords)")
-        .alert("Time is up", isPresented: .constant(timer.didFinish)) {
+        .alert("Time is up", isPresented: $showTimeUpAlert) {
             Button("Keep writing") { timer.pause() }
             Button("Stop and review") { showChecklist = true }
         } message: {
             Text("The 40 minutes for this task are gone. You can still finish your answer.")
+        }
+        // Fired once, when the clock reaches zero, rather than held by the binding.
+        .onChange(of: timer.didFinish) { _, finished in
+            if finished { showTimeUpAlert = true }
         }
         .examReveal(hasAppeared)
     }
@@ -226,6 +246,7 @@ struct WritingTaskView: View {
                 )
                 Spacer()
                 Button {
+                    saveTask?.cancel()
                     text = ""
                     saveDraft()
                     Haptics.warning()
@@ -251,7 +272,7 @@ struct WritingTaskView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(Color.examRule, lineWidth: 1)
                 )
-                .onChange(of: text) { _, _ in saveDraft() }
+                .onChange(of: text) { _, _ in scheduleSave() }
                 .accessibilityLabel("Your answer")
                 .accessibilityHint("Write your essay here. Your draft is saved automatically")
 
@@ -389,12 +410,6 @@ struct WritingTaskView: View {
 
     // MARK: Outcome
 
-    /// Non-nil once the learner has run the self-check, so the "after your answer"
-    /// panel stays out of the way until there is something to say.
-    private var submittedOutcome: Double? {
-        hasSubmitted ? accuracy : nil
-    }
-
     private func showOutcome() {
         timer.pause()
         saveDraft()
@@ -406,9 +421,14 @@ struct WritingTaskView: View {
         Haptics.success()
     }
 
-    private func outcomeCard(_ value: Double) -> some View {
+    private var outcomeCard: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             SectionHeader(title: "After your answer", subtitle: "Your words, and what the task wants")
+
+            Text("You checked \(Int((accuracy * 100).rounded()))% of the self-check items yourself. That is your own assessment, not a mark.")
+                .font(.examBody(12))
+                .foregroundStyle(Color.examInkSoft)
+                .fixedSize(horizontal: false, vertical: true)
 
             HStack(spacing: Spacing.sm) {
                 StatCard(
@@ -444,7 +464,7 @@ struct WritingTaskView: View {
                 }
             }
 
-            if !lesson.modelAnswers.isEmpty {
+            if !comparisonMaterial.isEmpty {
                 modelAnswerSection
             }
 
@@ -457,11 +477,15 @@ struct WritingTaskView: View {
         .examPage()
     }
 
-    /// Sample-answer items from the content, played on demand.
+    /// The sample-answer material shipped with the lesson.
+    ///
+    /// Writing lessons ship their exemplars as exercise items — a model opening
+    /// sentence, a corrected report — rather than as audio, so when there is no
+    /// playable model the prompts themselves are the thing to read your answer against.
     private var modelAnswerSection: some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
-            Text("Sample-answer material").examFieldLabel()
-            ForEach(lesson.modelAnswers) { sample in
+            Text(lesson.modelAnswers.isEmpty ? "Compare against the exemplars" : "Sample-answer material").examFieldLabel()
+            ForEach(comparisonMaterial) { sample in
                 VStack(alignment: .leading, spacing: 6) {
                     Text(sample.prompt)
                         .font(.examBody(14, weight: .medium))
@@ -486,6 +510,10 @@ struct WritingTaskView: View {
                 .background(Color.examPaperSunk, in: .rect(cornerRadius: Radius.chip))
             }
         }
+    }
+
+    private var comparisonMaterial: [Exercise] {
+        lesson.modelAnswers.isEmpty ? lesson.items : lesson.modelAnswers
     }
 }
 
@@ -551,8 +579,6 @@ struct SelfCheckItem: Identifiable, Equatable {
     let isAutomatic: Bool
     var isChecked = false
     var measured: String?
-
-    var isAnswered: Bool { isAutomatic ? isChecked : false }
 
     static func items(for lesson: IELTSPaperLesson) -> [SelfCheckItem] {
         var items: [SelfCheckItem] = []

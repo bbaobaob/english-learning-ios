@@ -46,12 +46,19 @@ struct ExerciseView: View {
     /// here, which is the same behaviour.
     @State private var result: ExerciseResult?
 
+    /// Called with each graded result as it lands. Only the standalone-exercise
+    /// initialiser sets it; the session-driven ones report through `onFinish`
+    /// instead, because a caller that owns a session wants the totals, not a
+    /// stream of per-item results.
+    private let onResult: ((ExerciseResult) -> Void)?
+
     init(session: LearnSession) {
         self.session = session
         self.topicID = session.current?.asExercise?.topicID ?? ""
         self.lessonID = session.current?.asExercise?.lessonID
         self.stepID = nil
         self.onFinish = { _ in }
+        self.onResult = nil
     }
 
     init(
@@ -66,6 +73,7 @@ struct ExerciseView: View {
         self.lessonID = lessonID
         self.stepID = stepID
         self.onFinish = onFinish
+        self.onResult = nil
     }
 
     /// One standalone exercise, outside any session.
@@ -84,22 +92,8 @@ struct ExerciseView: View {
         self.topicID = topicID
         self.lessonID = exercise.lessonID
         self.stepID = nil
-        self.onFinish = { _ in onComplete(exerciseResult) }
-    }
-
-    /// The result of the last graded item, captured for ``init(exercise:topicID:onComplete:)``
-    /// so its closure can hand the caller's callback the real result.
-    ///
-    /// ponytail: a mutable box rather than restructuring the stored
-    /// `onFinish` signature, because the other two initialisers want the
-    /// session's totals rather than one result. Replace if a fourth caller
-    /// ever wants the result itself.
-    private let exerciseResultBox: ResultBox?
-
-    /// A one-slot mutable box. `let` on a class reference so `init` can fill it
-    /// before `self` is available.
-    final class ResultBox {
-        var value: ExerciseResult?
+        self.onFinish = { _ in }
+        self.onResult = onComplete
     }
 
     var body: some View {
@@ -270,6 +264,7 @@ struct ExerciseView: View {
             // each screen lane is what keeps the review queue honest.
             app.store.recordAttempt(graded, topicID: topicID, lessonID: lessonID)
         }
+        onResult?(graded)
     }
 
     /// Moves to the next item, or finishes.

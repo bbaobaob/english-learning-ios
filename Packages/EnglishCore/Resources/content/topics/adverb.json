@@ -25,8 +25,18 @@
               "statement": "Adverbs answer how, when, where and how much. Manner, time, place and degree are the four main meanings.",
               "formula": "She spoke softly, yesterday, outside and very loudly.",
               "examples": [
-                { "id": "adverb-l1-r1-e1", "en": "The baby slept quietly through the whole night.", "vi": "Em bé ngủ yên tĩnh suốt đêm.", "note": "quietly tells us how the baby slept" },
-                { "id": "adverb-l1-r1-e2", "en": "He works very hard in the morning.", "vi": "Anh ấy làm việc rất chăm chỉ vào buổi sáng.", "note": "hard tells us how he works" }
+                {
+                  "id": "adverb-l1-r1-e1",
+                  "en": "The baby slept quietly through the whole night.",
+                  "vi": "Em bé ngủ yên tĩnh suốt đêm.",
+                  "note": "quietly tells us how the baby slept"
+                },
+                {
+                  "id": "adverb-l1-r1-e2",
+                  "en": "He works very hard in the morning.",
+                  "vi": "Anh ấy làm việc rất chăm chỉ vào buổi sáng.",
+                  "note": "hard tells us how he works"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "Most adverbs of manner are an adjective plus -ly. The adjective describes a noun; the -ly adverb describes a verb, an adjective or another adverb.",
               "formula": "quick -> quickly, careful -> carefully, happy -> happily",
               "examples": [
-                { "id": "adverb-l1-r1-e3", "en": "She is a careful driver, and she drives very carefully.", "vi": "Cô ấy là một tài xế cẩn thận, và cô ấy lái xe rất cẩn thận.", "note": "careful describes the driver, carefully describes the driving" },
-                { "id": "adverb-l1-r1-e4", "en": "The test was quite difficult, and he answered very carefully.", "vi": "Bài kiểm tra khá khó, và anh ấy trả lời rất cẩn thận.", "note": "difficult describes the test, carefully describes the answering" }
+                {
+                  "id": "adverb-l1-r1-e3",
+                  "en": "She is a careful driver, and she drives very carefully.",
+                  "vi": "Cô ấy là một tài xế cẩn thận, và cô ấy lái xe rất cẩn thận.",
+                  "note": "careful describes the driver, carefully describes the driving"
+                },
+                {
+                  "id": "adverb-l1-r1-e4",
+                  "en": "The test was quite difficult, and he answered very carefully.",
+                  "vi": "Bài kiểm tra khá khó, và anh ấy trả lời rất cẩn thận.",
+                  "note": "difficult describes the test, carefully describes the answering"
+                }
               ]
             }
           ]
@@ -44,11 +64,36 @@
           "id": "adverb-l1-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l1-ex1", "en": "Please speak slowly so I can understand.", "vi": "Xin hãy nói chậm lại để tôi hiểu.", "note": "adverb of manner, from slow" },
-            { "id": "adverb-l1-ex2", "en": "The train leaves early, so we have to get up at five.", "vi": "Tàu khởi hành sớm nên chúng ta phải dậy lúc năm giờ.", "note": "early has the same form as an adjective" },
-            { "id": "adverb-l1-ex3", "en": "They worked hard and finished the project well.", "vi": "Họ làm việc chăm chỉ và hoàn thành dự án tốt.", "note": "two adverbs, one manner each" },
-            { "id": "adverb-l1-ex4", "en": "The music was very loud, so we turned it down.", "vi": "Nhạc rất to nên chúng tôi vặn nhỏ lại.", "note": "loud is an adjective describing music, turned down is a phrasal verb" },
-            { "id": "adverb-l1-ex5", "en": "He almost never arrives on time, but he always tries.", "vi": "Gần như không bao giờ anh ấy đến đúng giờ, nhưng anh ấy luôn cố gắng.", "note": "two frequency adverbs with a different meaning" }
+            {
+              "id": "adverb-l1-ex1",
+              "en": "Please speak slowly so I can understand.",
+              "vi": "Xin hãy nói chậm lại để tôi hiểu.",
+              "note": "adverb of manner, from slow"
+            },
+            {
+              "id": "adverb-l1-ex2",
+              "en": "The train leaves early, so we have to get up at five.",
+              "vi": "Tàu khởi hành sớm nên chúng ta phải dậy lúc năm giờ.",
+              "note": "early has the same form as an adjective"
+            },
+            {
+              "id": "adverb-l1-ex3",
+              "en": "They worked hard and finished the project well.",
+              "vi": "Họ làm việc chăm chỉ và hoàn thành dự án tốt.",
+              "note": "two adverbs, one manner each"
+            },
+            {
+              "id": "adverb-l1-ex4",
+              "en": "The music was very loud, so we turned it down.",
+              "vi": "Nhạc rất to nên chúng tôi vặn nhỏ lại.",
+              "note": "loud is an adjective describing music, turned down is a phrasal verb"
+            },
+            {
+              "id": "adverb-l1-ex5",
+              "en": "He almost never arrives on time, but he always tries.",
+              "vi": "Gần như không bao giờ anh ấy đến đúng giờ, nhưng anh ấy luôn cố gắng.",
+              "note": "two frequency adverbs with a different meaning"
+            }
           ]
         },
         {
@@ -64,12 +109,37 @@
               "prompt": "Which word in She answered the question correctly is the adverb?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "answered", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "question", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "correctly", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "the", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "answered",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "question",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "correctly",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "the",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
               "explanation": "correctly modifies the verb answered, telling us how she answered. question is a noun, answered is a verb and the is a determiner, so none of those can be the adverb.",
               "xp": 10
             },
@@ -82,9 +152,19 @@
               "prompt": "He drives very careful on the highway.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "very careful", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "very careful",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["He drives very carefully on the highway."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He drives very carefully on the highway."
+                ]
+              },
               "explanation": "Careful is an adjective and it is modifying the verb drives, so it needs the adverb form carefully. The same sentence with a noun would use the adjective: He is a very careful driver.",
               "xp": 10
             },
@@ -97,9 +177,19 @@
               "prompt": "The children played ___ (happy) in the garden all afternoon.",
               "instruction": "Write the correct word in the blank.",
               "items": [
-                { "id": "h1", "text": "adjective or adverb?", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "adjective or adverb?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["happily"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "happily"
+                ]
+              },
               "explanation": "The blank describes how the children played, so it modifies the verb and needs the -ly adverb happily. Happy describes a person or a state, not an action.",
               "xp": 10
             },
@@ -112,9 +202,17 @@
               "prompt": "The words fast, hard, late and early can be both adjectives and adverbs with no change in form.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. a fast train uses fast as an adjective describing the noun, and they run fast uses it as an adverb describing the verb. No -ly is ever added to these five words.",
               "xp": 10
             }
@@ -127,21 +225,30 @@
           "items": [
             {
               "id": "adverb-l1-d1",
-              "audio": { "kind": "speech", "text": "She spoke softly so that everybody could hear." },
+              "audio": {
+                "kind": "speech",
+                "text": "She spoke softly so that everybody could hear."
+              },
               "hint": "manner adverb from soft",
               "translation": "Cô ấy nói khẽ để mọi người đều nghe thấy.",
               "xp": 15
             },
             {
               "id": "adverb-l1-d2",
-              "audio": { "kind": "speech", "text": "The shop opens early and closes very late." },
+              "audio": {
+                "kind": "speech",
+                "text": "The shop opens early and closes very late."
+              },
               "hint": "two adverbs with the same form as adjectives",
               "translation": "Cửa hàng mở sớm và đóng rất muộn.",
               "xp": 15
             },
             {
               "id": "adverb-l1-d3",
-              "audio": { "kind": "speech", "text": "He listened carefully and took detailed notes." },
+              "audio": {
+                "kind": "speech",
+                "text": "He listened carefully and took detailed notes."
+              },
               "hint": "two manner adverbs",
               "translation": "Anh ấy lắng nghe cẩn thận và ghi chép chi tiết.",
               "xp": 15
@@ -162,7 +269,12 @@
               "prompt": "She sings very beautiful in the school choir.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [],
-              "answer": { "type": "text", "values": ["She sings very beautifully in the school choir."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She sings very beautifully in the school choir."
+                ]
+              },
               "explanation": "The word describes the verb sings, so the adverb beautifully is required. A beautiful singer would be the adjective version, because then the word describes the noun singer.",
               "xp": 10
             },
@@ -175,12 +287,37 @@
               "prompt": "Which word is an adverb in We arrived yesterday?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "arrived", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "yesterday", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "we", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "at", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "arrived",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "yesterday",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "we",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "at",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "yesterday tells us when the arrival happened, which is the job of an adverb of time. arrived is the verb and we is the subject pronoun.",
               "xp": 10
             },
@@ -193,9 +330,19 @@
               "prompt": "The two plans are different, so we must choose ___ (careful).",
               "instruction": "Write the correct word in the blank.",
               "items": [
-                { "id": "h1", "text": "adjective or adverb?", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "adjective or adverb?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["carefully"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "carefully"
+                ]
+              },
               "explanation": "The blank tells us how to choose, so it modifies the verb and takes -ly. A careful choice would put the adjective in front of the noun, but there is no noun here.",
               "xp": 10
             },
@@ -208,9 +355,17 @@
               "prompt": "In a very quiet room, quiet is an adjective and very is a degree adverb.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. quiet describes the noun room, so it is an adjective, and very modifies that adjective, so it is an adverb of degree. In a very quiet street the same two words do the same two jobs.",
               "xp": 10
             }
@@ -248,8 +403,18 @@
               "statement": "Add -ly to most adjectives, changing the spelling so the word stays easy to say: -le becomes -ly, -ic becomes -ically, and consonant plus y becomes -ily.",
               "formula": "gentle -> gently, basic -> basically, happy -> happily",
               "examples": [
-                { "id": "adverb-l2-r1-e1", "en": "She explained the rules simply and clearly.", "vi": "Cô ấy giải thích các quy tắc một cách đơn giản và rõ ràng.", "note": "simple takes -ly, not simplely" },
-                { "id": "adverb-l2-r1-e2", "en": "The project was basically finished last week.", "vi": "Dự án về cơ bản đã xong tuần trước.", "note": "basic takes -ally to keep the syllable" }
+                {
+                  "id": "adverb-l2-r1-e1",
+                  "en": "She explained the rules simply and clearly.",
+                  "vi": "Cô ấy giải thích các quy tắc một cách đơn giản và rõ ràng.",
+                  "note": "simple takes -ly, not simplely"
+                },
+                {
+                  "id": "adverb-l2-r1-e2",
+                  "en": "The project was basically finished last week.",
+                  "vi": "Dự án về cơ bản đã xong tuần trước.",
+                  "note": "basic takes -ally to keep the syllable"
+                }
               ]
             },
             {
@@ -257,8 +422,18 @@
               "statement": "Some adverbs do not follow the rule at all: good becomes well, bad becomes badly, and hard and late never take -ly.",
               "formula": "good -> well, bad -> badly, hard -> hard, late -> late",
               "examples": [
-                { "id": "adverb-l2-r1-e3", "en": "He sings well, although he does not practise hard enough.", "vi": "Anh ấy hát hay, dù không luyện tập đủ chuyên cần.", "note": "well from good, and hard with no -ly" },
-                { "id": "adverb-l2-r1-e4", "en": "She sings beautifully and dances very well.", "vi": "Cô ấy hát hay và nhảy rất giỏi.", "note": "well is the adverb of good, so beautiful and well can sit side by side" }
+                {
+                  "id": "adverb-l2-r1-e3",
+                  "en": "He sings well, although he does not practise hard enough.",
+                  "vi": "Anh ấy hát hay, dù không luyện tập đủ chuyên cần.",
+                  "note": "well from good, and hard with no -ly"
+                },
+                {
+                  "id": "adverb-l2-r1-e4",
+                  "en": "She sings beautifully and dances very well.",
+                  "vi": "Cô ấy hát hay và nhảy rất giỏi.",
+                  "note": "well is the adverb of good, so beautiful and well can sit side by side"
+                }
               ]
             }
           ]
@@ -267,11 +442,36 @@
           "id": "adverb-l2-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l2-ex1", "en": "The instructions were written clearly and simply.", "vi": "Hướng dẫn được viết rõ ràng và đơn giản.", "note": "clearly from clear, simply from simple" },
-            { "id": "adverb-l2-ex2", "en": "He answered the difficult question confidently.", "vi": "Anh ấy trả lời câu hỏi khó một cách tự tin.", "note": "confidently from confident" },
-            { "id": "adverb-l2-ex3", "en": "The situation is basically the same as last year.", "vi": "Tình hình về cơ bản vẫn như năm ngoái.", "note": "basically from basic" },
-            { "id": "adverb-l2-ex4", "en": "She greeted us warmly and served tea politely.", "vi": "Cô ấy chào chúng tôi thật thân và phục vụ trà lịch sự.", "note": "two -ly adverbs describing manner" },
-            { "id": "adverb-l2-ex5", "en": "He works hard and sleeps late, but he never complains.", "vi": "Anh ấy làm việc chăm chỉ và ngủ muộn, nhưng không bao giờ than phiền.", "note": "hard and late have no -ly forms" }
+            {
+              "id": "adverb-l2-ex1",
+              "en": "The instructions were written clearly and simply.",
+              "vi": "Hướng dẫn được viết rõ ràng và đơn giản.",
+              "note": "clearly from clear, simply from simple"
+            },
+            {
+              "id": "adverb-l2-ex2",
+              "en": "He answered the difficult question confidently.",
+              "vi": "Anh ấy trả lời câu hỏi khó một cách tự tin.",
+              "note": "confidently from confident"
+            },
+            {
+              "id": "adverb-l2-ex3",
+              "en": "The situation is basically the same as last year.",
+              "vi": "Tình hình về cơ bản vẫn như năm ngoái.",
+              "note": "basically from basic"
+            },
+            {
+              "id": "adverb-l2-ex4",
+              "en": "She greeted us warmly and served tea politely.",
+              "vi": "Cô ấy chào chúng tôi thật thân và phục vụ trà lịch sự.",
+              "note": "two -ly adverbs describing manner"
+            },
+            {
+              "id": "adverb-l2-ex5",
+              "en": "He works hard and sleeps late, but he never complains.",
+              "vi": "Anh ấy làm việc chăm chỉ và ngủ muộn, nhưng không bao giờ than phiền.",
+              "note": "hard and late have no -ly forms"
+            }
           ]
         },
         {
@@ -287,9 +487,19 @@
               "prompt": "The teacher explained the rule ___ (clear) to the whole class.",
               "instruction": "Write the correct adverb.",
               "items": [
-                { "id": "h1", "text": "clear / clearly", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "clear / clearly",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["clearly"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "clearly"
+                ]
+              },
               "explanation": "The word describes how the teacher explained, so it modifies the verb and needs -ly. A clear rule would be the adjective form, because then it describes the noun rule.",
               "xp": 10
             },
@@ -302,7 +512,12 @@
               "prompt": "He plays the guitar very good, and he sings very good too.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [],
-              "answer": { "type": "text", "values": ["He plays the guitar very well, and he sings very well too."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He plays the guitar very well, and he sings very well too."
+                ]
+              },
               "explanation": "good is an adjective, and its adverb is well, an irregular form. Very well is the only correct phrase here; goodly is not an English word.",
               "xp": 10
             },
@@ -315,9 +530,19 @@
               "prompt": "The plan was ___ (basic) the same as the old one.",
               "instruction": "Write the correct adverb.",
               "items": [
-                { "id": "h1", "text": "basicly / basically", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "basicly / basically",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["basically"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "basically"
+                ]
+              },
               "explanation": "An adjective ending in -ic keeps the c and adds -ally, so basic becomes basically. Basicly would be difficult to pronounce and is not used.",
               "xp": 10
             },
@@ -330,13 +555,47 @@
               "prompt": "Match each adjective to its adverb.",
               "instruction": "Drag each adjective onto the correct adverb.",
               "items": [
-                { "id": "m1", "text": "gentle", "isCorrect": true, "matchKey": "gently" },
-                { "id": "m2", "text": "terrible", "isCorrect": true, "matchKey": "terribly" },
-                { "id": "m3", "text": "happy", "isCorrect": true, "matchKey": "happily" },
-                { "id": "m4", "text": "dramatic", "isCorrect": true, "matchKey": "dramatically" },
-                { "id": "m5", "text": "tragic", "isCorrect": true, "matchKey": "tragically" }
+                {
+                  "id": "m1",
+                  "text": "gentle",
+                  "isCorrect": true,
+                  "matchKey": "gently"
+                },
+                {
+                  "id": "m2",
+                  "text": "terrible",
+                  "isCorrect": true,
+                  "matchKey": "terribly"
+                },
+                {
+                  "id": "m3",
+                  "text": "happy",
+                  "isCorrect": true,
+                  "matchKey": "happily"
+                },
+                {
+                  "id": "m4",
+                  "text": "dramatic",
+                  "isCorrect": true,
+                  "matchKey": "dramatically"
+                },
+                {
+                  "id": "m5",
+                  "text": "tragic",
+                  "isCorrect": true,
+                  "matchKey": "tragically"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "m1": "gently", "m2": "terribly", "m3": "happily", "m4": "dramatically", "m5": "tragically" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "gently",
+                  "m2": "terribly",
+                  "m3": "happily",
+                  "m4": "dramatically",
+                  "m5": "tragically"
+                }
+              },
               "explanation": "Three different spellings are at work: -le takes -ly, consonant plus y becomes -ily, and -ic takes -ically. Matching these by sound rather than by pattern is what the exercise is testing.",
               "xp": 10
             },
@@ -349,7 +608,12 @@
               "prompt": "We hardly worked hardly, so we were tired lately.",
               "instruction": "Rewrite the sentence so each adverb is the right one.",
               "items": [],
-              "answer": { "type": "text", "values": ["We hardly worked hard, so we were tired late."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We hardly worked hard, so we were tired late."
+                ]
+              },
               "explanation": "Two of the five irregular words are involved. hardly means almost not, so it cannot mean worked intensely; hard does. lately means recently, which does not match the idea of being tired after work; late does.",
               "xp": 10
             }
@@ -362,21 +626,30 @@
           "items": [
             {
               "id": "adverb-l2-d1",
-              "audio": { "kind": "speech", "text": "She explained the situation politely and clearly." },
+              "audio": {
+                "kind": "speech",
+                "text": "She explained the situation politely and clearly."
+              },
               "hint": "two ly adverbs",
               "translation": "Cô ấy giải thích tình hình một cách lịch sự và rõ ràng.",
               "xp": 15
             },
             {
               "id": "adverb-l2-d2",
-              "audio": { "kind": "speech", "text": "He plays the piano well and practices daily." },
+              "audio": {
+                "kind": "speech",
+                "text": "He plays the piano well and practices daily."
+              },
               "hint": "well as the adverb of good",
               "translation": "Anh ấy chơi đàn piano hay và luyện tập hằng ngày.",
               "xp": 15
             },
             {
               "id": "adverb-l2-d3",
-              "audio": { "kind": "speech", "text": "The results are basically the same as last year." },
+              "audio": {
+                "kind": "speech",
+                "text": "The results are basically the same as last year."
+              },
               "hint": "ic to ically",
               "translation": "Kết quả về cơ bản giống như năm ngoái.",
               "xp": 15
@@ -397,9 +670,19 @@
               "prompt": "She answered the question gentle and polite.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "gentle", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "gentle",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["She answered the question gently and politely."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She answered the question gently and politely."
+                ]
+              },
               "explanation": "Both words describe how she answered, so both need the adverb form. An adjective ending in -le takes -y, giving gently, and polite simply takes -ly.",
               "xp": 10
             },
@@ -412,12 +695,37 @@
               "prompt": "Which adverb is the correct form of late?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "lately", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "late", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "latily", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "lating", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "lately",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "late",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "latily",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "lating",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "late keeps its own form as an adverb: we arrived late. Lately already exists with a completely different meaning of recently, so lately cannot be used for late.",
               "xp": 10
             },
@@ -430,9 +738,17 @@
               "prompt": "Hardly means the opposite of hard when it describes how much someone works.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "False. hard means intensely, as in He works hard, while hardly means almost not, as in He hardly works. The two words are opposites, and confusing them reverses the meaning of a sentence.",
               "xp": 10
             },
@@ -445,9 +761,19 @@
               "prompt": "They completed the task ___ (easy) before the deadline.",
               "instruction": "Write the correct adverb.",
               "items": [
-                { "id": "h1", "text": "easly / easily", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "easly / easily",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["easily"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "easily"
+                ]
+              },
               "explanation": "An adjective ending in a consonant plus y changes the y to i before -ly, so easy becomes easily. Easly is not a word.",
               "xp": 10
             }
@@ -485,8 +811,18 @@
               "statement": "Manner, place and time adverbs go at the end. Frequency adverbs go between the subject and the main verb. Degree adverbs go before the adjective they modify.",
               "formula": "She is always late. / She arrived late. / It is very cold.",
               "examples": [
-                { "id": "adverb-l3-r1-e1", "en": "They usually arrive early and always sit at the back.", "vi": "Họ thường đến sớm và luôn ngồi ở hàng sau.", "note": "two frequency adverbs, both in the middle position" },
-                { "id": "adverb-l3-r1-e2", "en": "He put the keys quietly on the table.", "vi": "Anh ấy đặt chìa khóa nhẹ nhàng lên bàn.", "note": "quietly sits between the verb and its object for rhythm, which is acceptable" }
+                {
+                  "id": "adverb-l3-r1-e1",
+                  "en": "They usually arrive early and always sit at the back.",
+                  "vi": "Họ thường đến sớm và luôn ngồi ở hàng sau.",
+                  "note": "two frequency adverbs, both in the middle position"
+                },
+                {
+                  "id": "adverb-l3-r1-e2",
+                  "en": "He put the keys quietly on the table.",
+                  "vi": "Anh ấy đặt chìa khóa nhẹ nhàng lên bàn.",
+                  "note": "quietly sits between the verb and its object for rhythm, which is acceptable"
+                }
               ]
             },
             {
@@ -494,8 +830,18 @@
               "statement": "When several adverbs share the end position, the order is place, then manner, then time.",
               "formula": "She waited outside silently for an hour.",
               "examples": [
-                { "id": "adverb-l3-r1-e3", "en": "The children played happily in the garden all afternoon.", "vi": "Lũ trẻ vui vẻ chơi trong vườn suốt buổi chiều.", "note": "place in the garden, manner happily, time all afternoon" },
-                { "id": "adverb-l3-r1-e4", "en": "He spoke quietly at the meeting last night.", "vi": "Anh ấy nói khẽ trong cuộc họp đêm qua.", "note": "the same three-part order" }
+                {
+                  "id": "adverb-l3-r1-e3",
+                  "en": "The children played happily in the garden all afternoon.",
+                  "vi": "Lũ trẻ vui vẻ chơi trong vườn suốt buổi chiều.",
+                  "note": "place in the garden, manner happily, time all afternoon"
+                },
+                {
+                  "id": "adverb-l3-r1-e4",
+                  "en": "He spoke quietly at the meeting last night.",
+                  "vi": "Anh ấy nói khẽ trong cuộc họp đêm qua.",
+                  "note": "the same three-part order"
+                }
               ]
             }
           ]
@@ -504,11 +850,36 @@
           "id": "adverb-l3-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l3-ex1", "en": "She has never been to Japan, and she wants to go soon.", "vi": "Cô ấy chưa bao giờ đến Nhật, và cô ấy muốn đi sớm.", "note": "never before the main verb, soon at the end" },
-            { "id": "adverb-l3-ex2", "en": "The train arrived late because of the heavy rain yesterday.", "vi": "Tàu đến muộn vì mưa lớn hôm qua.", "note": "late and yesterday are both time adverbs at the end" },
-            { "id": "adverb-l3-ex3", "en": "He is always careful, but he is never late.", "vi": "Anh ấy luôn cẩn thận, nhưng không bao giờ đến muộn.", "note": "after the linking verb is, frequency adverbs follow it" },
-            { "id": "adverb-l3-ex4", "en": "The exam was really difficult and she prepared extremely well.", "vi": "Kỳ thi thực sự khó và cô ấy chuẩn bị cực kỳ tốt.", "note": "degree adverbs before adjectives and before adverbs" },
-            { "id": "adverb-l3-ex5", "en": "They usually walk to work, but in winter they take the bus.", "vi": "Họ thường đi bộ đến chỗ làm, nhưng mùa đông họ đi xe buýt.", "note": "usually in the middle, in winter at the front as a time adverb" }
+            {
+              "id": "adverb-l3-ex1",
+              "en": "She has never been to Japan, and she wants to go soon.",
+              "vi": "Cô ấy chưa bao giờ đến Nhật, và cô ấy muốn đi sớm.",
+              "note": "never before the main verb, soon at the end"
+            },
+            {
+              "id": "adverb-l3-ex2",
+              "en": "The train arrived late because of the heavy rain yesterday.",
+              "vi": "Tàu đến muộn vì mưa lớn hôm qua.",
+              "note": "late and yesterday are both time adverbs at the end"
+            },
+            {
+              "id": "adverb-l3-ex3",
+              "en": "He is always careful, but he is never late.",
+              "vi": "Anh ấy luôn cẩn thận, nhưng không bao giờ đến muộn.",
+              "note": "after the linking verb is, frequency adverbs follow it"
+            },
+            {
+              "id": "adverb-l3-ex4",
+              "en": "The exam was really difficult and she prepared extremely well.",
+              "vi": "Kỳ thi thực sự khó và cô ấy chuẩn bị cực kỳ tốt.",
+              "note": "degree adverbs before adjectives and before adverbs"
+            },
+            {
+              "id": "adverb-l3-ex5",
+              "en": "They usually walk to work, but in winter they take the bus.",
+              "vi": "Họ thường đi bộ đến chỗ làm, nhưng mùa đông họ đi xe buýt.",
+              "note": "usually in the middle, in winter at the front as a time adverb"
+            }
           ]
         },
         {
@@ -524,9 +895,19 @@
               "prompt": "She goes always to the gym after work.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "goes always", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "goes always",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["She always goes to the gym after work."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She always goes to the gym after work."
+                ]
+              },
               "explanation": "The frequency adverb always belongs in the middle position, between the subject and the main verb. At the end of the sentence the position is reserved for adverbs of place, manner and time such as after work.",
               "xp": 10
             },
@@ -539,15 +920,63 @@
               "prompt": "Put the words in the natural order of adverbs.",
               "instruction": "Tap the words in the correct order.",
               "items": [
-                { "id": "t1", "text": "The", "isCorrect": null, "matchKey": null },
-                { "id": "t2", "text": "children", "isCorrect": null, "matchKey": null },
-                { "id": "t3", "text": "played", "isCorrect": null, "matchKey": null },
-                { "id": "t4", "text": "happily", "isCorrect": null, "matchKey": null },
-                { "id": "t5", "text": "in the garden", "isCorrect": null, "matchKey": null },
-                { "id": "t6", "text": "all", "isCorrect": null, "matchKey": null },
-                { "id": "t7", "text": "afternoon", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "t1",
+                  "text": "The",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "children",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "played",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "happily",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "in the garden",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "all",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "afternoon",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": [["The", "children", "played", "happily", "in the garden", "all", "afternoon"]] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "The",
+                    "children",
+                    "played",
+                    "happily",
+                    "in the garden",
+                    "all",
+                    "afternoon"
+                  ]
+                ]
+              },
               "explanation": "Manner adverbs can come directly after the verb, and place then time follow at the end. English also accepts the place before the manner here, so in the garden happily all afternoon is possible, but the order given is the most common in speech.",
               "xp": 10
             },
@@ -560,9 +989,19 @@
               "prompt": "He is ___ (always / late) for class, so the teacher waits.",
               "instruction": "Write the correct word in the blank.",
               "items": [
-                { "id": "h1", "text": "frequency or late?", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "frequency or late?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["always late"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "always late"
+                ]
+              },
               "explanation": "After the linking verb is, the frequency adverb goes first: he is always late. He is late always is not the natural order, and it would suggest that lateness is the only fact being reported.",
               "xp": 10
             },
@@ -575,9 +1014,19 @@
               "prompt": "I have seen never such a beautiful sunset in my life.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "seen never", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "seen never",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["I have never seen such a beautiful sunset in my life."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I have never seen such a beautiful sunset in my life."
+                ]
+              },
               "explanation": "The mid-position adverb goes between the auxiliary have and the main verb seen. I have seen never is not possible, because never is locked into the position before the main verb.",
               "xp": 10
             },
@@ -590,13 +1039,47 @@
               "prompt": "Match each adverb to its usual position.",
               "instruction": "Drag each adverb onto the right position.",
               "items": [
-                { "id": "m1", "text": "always", "isCorrect": true, "matchKey": "before the main verb" },
-                { "id": "m2", "text": "quietly", "isCorrect": true, "matchKey": "end of the sentence" },
-                { "id": "m3", "text": "yesterday", "isCorrect": true, "matchKey": "end of the sentence" },
-                { "id": "m4", "text": "often", "isCorrect": true, "matchKey": "before the main verb" },
-                { "id": "m5", "text": "outside", "isCorrect": true, "matchKey": "end of the sentence" }
+                {
+                  "id": "m1",
+                  "text": "always",
+                  "isCorrect": true,
+                  "matchKey": "before the main verb"
+                },
+                {
+                  "id": "m2",
+                  "text": "quietly",
+                  "isCorrect": true,
+                  "matchKey": "end of the sentence"
+                },
+                {
+                  "id": "m3",
+                  "text": "yesterday",
+                  "isCorrect": true,
+                  "matchKey": "end of the sentence"
+                },
+                {
+                  "id": "m4",
+                  "text": "often",
+                  "isCorrect": true,
+                  "matchKey": "before the main verb"
+                },
+                {
+                  "id": "m5",
+                  "text": "outside",
+                  "isCorrect": true,
+                  "matchKey": "end of the sentence"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "m1": "before the main verb", "m2": "end of the sentence", "m3": "end of the sentence", "m4": "before the main verb", "m5": "end of the sentence" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "before the main verb",
+                  "m2": "end of the sentence",
+                  "m3": "end of the sentence",
+                  "m4": "before the main verb",
+                  "m5": "end of the sentence"
+                }
+              },
               "explanation": "Frequency adverbs always and often sit in the middle position, between the subject and the main verb. Manner, time and place adverbs such as quietly, yesterday and outside go at the end. The preposition of is part of outside, which makes it a place adverb here.",
               "xp": 10
             }
@@ -609,21 +1092,30 @@
           "items": [
             {
               "id": "adverb-l3-d1",
-              "audio": { "kind": "speech", "text": "She has never visited Europe, but she wants to go soon." },
+              "audio": {
+                "kind": "speech",
+                "text": "She has never visited Europe, but she wants to go soon."
+              },
               "hint": "mid-position adverb after the auxiliary",
               "translation": "Cô ấy chưa bao giờ đến châu Âu, nhưng cô ấy muốn đi sớm.",
               "xp": 15
             },
             {
               "id": "adverb-l3-d2",
-              "audio": { "kind": "speech", "text": "They worked quietly in the library until midnight." },
+              "audio": {
+                "kind": "speech",
+                "text": "They worked quietly in the library until midnight."
+              },
               "hint": "manner, place, time at the end",
               "translation": "Họ làm việc yên lặng trong thư viện cho đến nửa đêm.",
               "xp": 15
             },
             {
               "id": "adverb-l3-d3",
-              "audio": { "kind": "speech", "text": "He is always late, and the meeting is always short." },
+              "audio": {
+                "kind": "speech",
+                "text": "He is always late, and the meeting is always short."
+              },
               "hint": "frequency adverbs after the verb is",
               "translation": "Anh ấy luôn đến muộn, và các cuộc họp luôn ngắn.",
               "xp": 15
@@ -644,9 +1136,19 @@
               "prompt": "She speaks very well English and French.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "very well English", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "very well English",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["She speaks English and French very well."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She speaks English and French very well."
+                ]
+              },
               "explanation": "An adverb of degree should not be wedged between the verb and its object. Move it to the end: speaks English and French very well, which keeps the verb and its object together.",
               "xp": 10
             },
@@ -659,12 +1161,37 @@
               "prompt": "Where does the frequency adverb usually go?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "Before the subject", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "Between the subject and the main verb", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "After the object", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "Only at the end of the sentence", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Before the subject",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Between the subject and the main verb",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "After the object",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Only at the end of the sentence",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Frequency adverbs go in the middle position: She often reads, We never complain. Moving them to the end either creates a different meaning or sounds unnatural, as in She reads often.",
               "xp": 10
             },
@@ -677,13 +1204,49 @@
               "prompt": "Put the words in the natural order.",
               "instruction": "Tap the words in the correct order.",
               "items": [
-                { "id": "t1", "text": "We", "isCorrect": null, "matchKey": null },
-                { "id": "t2", "text": "often", "isCorrect": null, "matchKey": null },
-                { "id": "t3", "text": "have", "isCorrect": null, "matchKey": null },
-                { "id": "t4", "text": "lunch", "isCorrect": null, "matchKey": null },
-                { "id": "t5", "text": "outside", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "t1",
+                  "text": "We",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "often",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "have",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "lunch",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "outside",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": [["We", "often", "have", "lunch", "outside"]] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "We",
+                    "often",
+                    "have",
+                    "lunch",
+                    "outside"
+                  ]
+                ]
+              },
               "explanation": "The frequency adverb often goes between the subject We and the auxiliary have, and the place adverb outside goes at the end where the object has been mentioned already.",
               "xp": 10
             },
@@ -696,9 +1259,17 @@
               "prompt": "Mid-position adverbs such as never and already must come before the main verb.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. She has already left, I have never seen him, He had just finished eating. Putting them after the main verb breaks the structure or shifts the emphasis unnaturally.",
               "xp": 10
             }
@@ -736,8 +1307,18 @@
               "statement": "Frequency adverbs go in the middle position and form a scale from always to never.",
               "formula": "always > usually > often > sometimes > rarely > never",
               "examples": [
-                { "id": "adverb-l4-r1-e1", "en": "She usually reads in the evening and sometimes in the morning.", "vi": "Cô ấy thường đọc vào buổi tối và thỉnh thoảng vào buổi sáng.", "note": "usually and sometimes on the same frequency scale" },
-                { "id": "adverb-l4-r1-e2", "en": "He hardly ever eats meat and never drinks beer.", "vi": "Anh ấy hầu như không bao giờ ăn thịt và không bao giờ uống bia.", "note": "hardly ever is stronger than rarely, and never is the absolute end" }
+                {
+                  "id": "adverb-l4-r1-e1",
+                  "en": "She usually reads in the evening and sometimes in the morning.",
+                  "vi": "Cô ấy thường đọc vào buổi tối và thỉnh thoảng vào buổi sáng.",
+                  "note": "usually and sometimes on the same frequency scale"
+                },
+                {
+                  "id": "adverb-l4-r1-e2",
+                  "en": "He hardly ever eats meat and never drinks beer.",
+                  "vi": "Anh ấy hầu như không bao giờ ăn thịt và không bao giờ uống bia.",
+                  "note": "hardly ever is stronger than rarely, and never is the absolute end"
+                }
               ]
             },
             {
@@ -745,8 +1326,18 @@
               "statement": "Manner adverbs say how an action happens and go at the end. Degree adverbs say how strong a quality is and go in front of the adjective.",
               "formula": "She drove slowly. / The film is extremely long.",
               "examples": [
-                { "id": "adverb-l4-r1-e3", "en": "He answered the question calmly and with confidence.", "vi": "Anh ấy trả lời câu hỏi một cách bình tĩnh và tự tin.", "note": "two manner expressions describing the same action" },
-                { "id": "adverb-l4-r1-e4", "en": "It was rather cold, and the wind was quite strong.", "vi": "Trời khá lạnh và gió khá mạnh.", "note": "rather and quite both moderate the degree" }
+                {
+                  "id": "adverb-l4-r1-e3",
+                  "en": "He answered the question calmly and with confidence.",
+                  "vi": "Anh ấy trả lời câu hỏi một cách bình tĩnh và tự tin.",
+                  "note": "two manner expressions describing the same action"
+                },
+                {
+                  "id": "adverb-l4-r1-e4",
+                  "en": "It was rather cold, and the wind was quite strong.",
+                  "vi": "Trời khá lạnh và gió khá mạnh.",
+                  "note": "rather and quite both moderate the degree"
+                }
               ]
             }
           ]
@@ -755,11 +1346,36 @@
           "id": "adverb-l4-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l4-ex1", "en": "We rarely eat out, but we always cook at home.", "vi": "Chúng tôi hiếm khi ăn ngoài, nhưng luôn nấu ở nhà.", "note": "rarely and always on the same scale, opposite ends" },
-            { "id": "adverb-l4-ex2", "en": "She spoke in English during the interview yesterday.", "vi": "Cô ấy đã nói tiếng Anh trong buổi phỏng vấn hôm qua.", "note": "in English is a manner adverb made of a prepositional phrase" },
-            { "id": "adverb-l4-ex3", "en": "The letter arrived almost two weeks later than expected.", "vi": "Lá thư đến gần hai tuần sau so với dự kiến.", "note": "almost and later are both time expressions" },
-            { "id": "adverb-l4-ex4", "en": "He waited outside for nearly an hour before the door opened.", "vi": "Anh ấy đã chờ bên ngoài gần một tiếng trước khi cửa mở.", "note": "outside is place and nearly an hour is duration" },
-            { "id": "adverb-l4-ex5", "en": "The results are almost ready, and the report is completely finished.", "vi": "Kết quả gần như sẵn sàng và báo cáo đã hoàn thành hoàn toàn.", "note": "almost and completely both modify adjectives" }
+            {
+              "id": "adverb-l4-ex1",
+              "en": "We rarely eat out, but we always cook at home.",
+              "vi": "Chúng tôi hiếm khi ăn ngoài, nhưng luôn nấu ở nhà.",
+              "note": "rarely and always on the same scale, opposite ends"
+            },
+            {
+              "id": "adverb-l4-ex2",
+              "en": "She spoke in English during the interview yesterday.",
+              "vi": "Cô ấy đã nói tiếng Anh trong buổi phỏng vấn hôm qua.",
+              "note": "in English is a manner adverb made of a prepositional phrase"
+            },
+            {
+              "id": "adverb-l4-ex3",
+              "en": "The letter arrived almost two weeks later than expected.",
+              "vi": "Lá thư đến gần hai tuần sau so với dự kiến.",
+              "note": "almost and later are both time expressions"
+            },
+            {
+              "id": "adverb-l4-ex4",
+              "en": "He waited outside for nearly an hour before the door opened.",
+              "vi": "Anh ấy đã chờ bên ngoài gần một tiếng trước khi cửa mở.",
+              "note": "outside is place and nearly an hour is duration"
+            },
+            {
+              "id": "adverb-l4-ex5",
+              "en": "The results are almost ready, and the report is completely finished.",
+              "vi": "Kết quả gần như sẵn sàng và báo cáo đã hoàn thành hoàn toàn.",
+              "note": "almost and completely both modify adjectives"
+            }
           ]
         },
         {
@@ -775,14 +1391,54 @@
               "prompt": "Match each adverb to its type.",
               "instruction": "Drag each adverb onto the right type.",
               "items": [
-                { "id": "m1", "text": "often", "isCorrect": true, "matchKey": "frequency" },
-                { "id": "m2", "text": "carefully", "isCorrect": true, "matchKey": "manner" },
-                { "id": "m3", "text": "quite", "isCorrect": true, "matchKey": "degree" },
-                { "id": "m4", "text": "yesterday", "isCorrect": true, "matchKey": "time" },
-                { "id": "m5", "text": "outside", "isCorrect": true, "matchKey": "place" },
-                { "id": "m6", "text": "everywhere", "isCorrect": true, "matchKey": "place" }
+                {
+                  "id": "m1",
+                  "text": "often",
+                  "isCorrect": true,
+                  "matchKey": "frequency"
+                },
+                {
+                  "id": "m2",
+                  "text": "carefully",
+                  "isCorrect": true,
+                  "matchKey": "manner"
+                },
+                {
+                  "id": "m3",
+                  "text": "quite",
+                  "isCorrect": true,
+                  "matchKey": "degree"
+                },
+                {
+                  "id": "m4",
+                  "text": "yesterday",
+                  "isCorrect": true,
+                  "matchKey": "time"
+                },
+                {
+                  "id": "m5",
+                  "text": "outside",
+                  "isCorrect": true,
+                  "matchKey": "place"
+                },
+                {
+                  "id": "m6",
+                  "text": "everywhere",
+                  "isCorrect": true,
+                  "matchKey": "place"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "m1": "frequency", "m2": "manner", "m3": "degree", "m4": "time", "m5": "place", "m6": "place" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "frequency",
+                  "m2": "manner",
+                  "m3": "degree",
+                  "m4": "time",
+                  "m5": "place",
+                  "m6": "place"
+                }
+              },
               "explanation": "often says how often, carefully says how, quite says how much, yesterday says when, and outside and everywhere say where. Knowing the type is the fastest way to place the word correctly in a sentence.",
               "xp": 10
             },
@@ -795,9 +1451,19 @@
               "prompt": "He ___ (rare / eat) fast food, so he has started cooking.",
               "instruction": "Write the correct adverb in the blank.",
               "items": [
-                { "id": "h1", "text": "frequency adverb", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "frequency adverb",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["rarely"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "rarely"
+                ]
+              },
               "explanation": "Rare is an adjective, and the frequency adverb is rarely. The clue is the second clause, which explains a change of habit caused by doing something only occasionally.",
               "xp": 10
             },
@@ -810,9 +1476,19 @@
               "prompt": "The teacher explained the lesson very clear for beginners.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [
-                { "id": "w1", "text": "very clear", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "very clear",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["The teacher explained the lesson very clearly for beginners."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The teacher explained the lesson very clearly for beginners."
+                ]
+              },
               "explanation": "Clear here describes how the lesson was explained, so it modifies the verb and needs -ly. Degree adverbs such as very sit in front of it either way: very clearly.",
               "xp": 10
             },
@@ -825,12 +1501,38 @@
               "prompt": "Which of these are frequency adverbs?",
               "instruction": "Select all the correct options.",
               "items": [
-                { "id": "a", "text": "seldom", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "quickly", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "always", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "outside", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "seldom",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "quickly",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "always",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "outside",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "seldom and always both say how often an action happens. quickly is a manner adverb and outside is a place adverb, so neither answers the question of frequency.",
               "xp": 10
             },
@@ -843,12 +1545,37 @@
               "prompt": "Choose the most natural sentence.",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "She speaks in a fluent English.", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "She speaks fluent English.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "She speaks fluently the English.", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "She speaks fluently English.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She speaks in a fluent English.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She speaks fluent English.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She speaks fluently the English.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She speaks fluently English.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Fluent describes the English, so it is an adjective before the noun. When you describe how she speaks, use the adverb fluently, and put it at the end: She speaks English fluently.",
               "xp": 10
             }
@@ -861,21 +1588,30 @@
           "items": [
             {
               "id": "adverb-l4-d1",
-              "audio": { "kind": "speech", "text": "She never eats breakfast, but she always drinks coffee." },
+              "audio": {
+                "kind": "speech",
+                "text": "She never eats breakfast, but she always drinks coffee."
+              },
               "hint": "two frequency adverbs on the scale",
               "translation": "Cô ấy không bao giờ ăn sáng, nhưng luôn uống cà phê.",
               "xp": 15
             },
             {
               "id": "adverb-l4-d2",
-              "audio": { "kind": "speech", "text": "The children played quietly in the classroom for an hour." },
+              "audio": {
+                "kind": "speech",
+                "text": "The children played quietly in the classroom for an hour."
+              },
               "hint": "manner, place, duration",
               "translation": "Lũ trẻ chơi yên lặng trong lớp suốt một tiếng.",
               "xp": 15
             },
             {
               "id": "adverb-l4-d3",
-              "audio": { "kind": "speech", "text": "The results are extremely important to everyone involved." },
+              "audio": {
+                "kind": "speech",
+                "text": "The results are extremely important to everyone involved."
+              },
               "hint": "degree adverb before an adjective",
               "translation": "Kết quả cực kỳ quan trọng đối với tất cả mọi người liên quan.",
               "xp": 15
@@ -896,7 +1632,12 @@
               "prompt": "He drives very slow on narrow roads.",
               "instruction": "Rewrite the sentence correctly.",
               "items": [],
-              "answer": { "type": "text", "values": ["He drives very slowly on narrow roads."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He drives very slowly on narrow roads."
+                ]
+              },
               "explanation": "Slow describes how he drives, so it needs the adverb form slowly. This is the same rule as very carefully, and only nouns take the adjective form: a very slow car.",
               "xp": 10
             },
@@ -909,12 +1650,37 @@
               "prompt": "Which adverb tells you where something happens?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "often", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "outside", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "quickly", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "very", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "often",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "outside",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "quickly",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "very",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "outside answers where. often answers how often, quickly answers how, and very answers how much, so each of the other three belongs to a different type.",
               "xp": 10
             },
@@ -927,9 +1693,19 @@
               "prompt": "We finished the project ___ (almost) three days before the deadline.",
               "instruction": "Write the correct word in the blank.",
               "items": [
-                { "id": "h1", "text": "degree or time?", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "degree or time?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["almost"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "almost"
+                ]
+              },
               "explanation": "Almost here works on the amount of time rather than on a quality, so it stands as a degree adverb in front of the phrase three days. Almost is not a frequency adverb, so it does not go in the middle position.",
               "xp": 10
             },
@@ -942,9 +1718,17 @@
               "prompt": "Rarely and hardly ever are both frequency adverbs, and hardly ever is stronger than rarely.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. Both describe how often an action happens, and hardly ever is closer to never, so it means even less often than rarely. The scale runs always, usually, often, sometimes, rarely, hardly ever, never.",
               "xp": 10
             }
@@ -982,8 +1766,18 @@
               "statement": "Gradable adverbs and adjectives take comparatives; absolute adverbs such as absolutely, completely and utterly do not.",
               "formula": "slightly colder / much colder / the coldest",
               "examples": [
-                { "id": "adverb-l5-r1-e1", "en": "This room is slightly warmer, but the kitchen is much colder.", "vi": "Căn phòng này ấm hơn một chút, nhưng nhà bếp lạnh hơn nhiều.", "note": "gradable scale with a comparative" },
-                { "id": "adverb-l5-r1-e2", "en": "The situation is completely different from what we expected.", "vi": "Tình hình hoàn toàn khác với điều chúng tôi dự kiến.", "note": "absolute adverb, so no comparative is possible" }
+                {
+                  "id": "adverb-l5-r1-e1",
+                  "en": "This room is slightly warmer, but the kitchen is much colder.",
+                  "vi": "Căn phòng này ấm hơn một chút, nhưng nhà bếp lạnh hơn nhiều.",
+                  "note": "gradable scale with a comparative"
+                },
+                {
+                  "id": "adverb-l5-r1-e2",
+                  "en": "The situation is completely different from what we expected.",
+                  "vi": "Tình hình hoàn toàn khác với điều chúng tôi dự kiến.",
+                  "note": "absolute adverb, so no comparative is possible"
+                }
               ]
             },
             {
@@ -991,8 +1785,18 @@
               "statement": "just, only, even, merely, simply and still do not change degree; they show which part of the sentence the speaker wants to emphasise.",
               "formula": "She only works on Mondays. / She works only on Mondays.",
               "examples": [
-                { "id": "adverb-l5-r1-e3", "en": "I only wanted some advice, not a complete solution.", "vi": "Tôi chỉ muốn có một lời khuyên, không phải một giải pháp hoàn chỉnh.", "note": "only narrows what was requested" },
-                { "id": "adverb-l5-r1-e4", "en": "Even the youngest member finished the course.", "vi": "Ngay cả thành viên trẻ nhất cũng đã hoàn thành khóa học.", "note": "even points to the most unexpected case on the scale" }
+                {
+                  "id": "adverb-l5-r1-e3",
+                  "en": "I only wanted some advice, not a complete solution.",
+                  "vi": "Tôi chỉ muốn có một lời khuyên, không phải một giải pháp hoàn chỉnh.",
+                  "note": "only narrows what was requested"
+                },
+                {
+                  "id": "adverb-l5-r1-e4",
+                  "en": "Even the youngest member finished the course.",
+                  "vi": "Ngay cả thành viên trẻ nhất cũng đã hoàn thành khóa học.",
+                  "note": "even points to the most unexpected case on the scale"
+                }
               ]
             }
           ]
@@ -1001,11 +1805,36 @@
           "id": "adverb-l5-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l5-ex1", "en": "The second test was considerably harder than the first.", "vi": "Bài kiểm tra thứ hai khó hơn bài đầu đáng kể.", "note": "considerably is a formal gradable adverb" },
-            { "id": "adverb-l5-ex2", "en": "He has already eaten, so we can go without him.", "vi": "Anh ấy đã ăn rồi nên chúng ta có thể đi không cần anh ấy.", "note": "already focuses on the time, not the degree" },
-            { "id": "adverb-l5-ex3", "en": "I only wanted to borrow the book, not to buy it.", "vi": "Tôi chỉ muốn mượn cuốn sách chứ không phải mua nó.", "note": "only restricts the intention, not the time or the place" },
-            { "id": "adverb-l5-ex4", "en": "The instructions are almost useless, and I am completely lost.", "vi": "Hướng dẫn gần như vô dụng và tôi hoàn toàn bối rối.", "note": "almost and completely at opposite ends of the scale" },
-            { "id": "adverb-l5-ex5", "en": "It is simply that I was too tired to think clearly.", "vi": "Đơn giản là tôi quá mệt để suy nghĩ rõ ràng.", "note": "simply is a softener that does not change the facts" }
+            {
+              "id": "adverb-l5-ex1",
+              "en": "The second test was considerably harder than the first.",
+              "vi": "Bài kiểm tra thứ hai khó hơn bài đầu đáng kể.",
+              "note": "considerably is a formal gradable adverb"
+            },
+            {
+              "id": "adverb-l5-ex2",
+              "en": "He has already eaten, so we can go without him.",
+              "vi": "Anh ấy đã ăn rồi nên chúng ta có thể đi không cần anh ấy.",
+              "note": "already focuses on the time, not the degree"
+            },
+            {
+              "id": "adverb-l5-ex3",
+              "en": "I only wanted to borrow the book, not to buy it.",
+              "vi": "Tôi chỉ muốn mượn cuốn sách chứ không phải mua nó.",
+              "note": "only restricts the intention, not the time or the place"
+            },
+            {
+              "id": "adverb-l5-ex4",
+              "en": "The instructions are almost useless, and I am completely lost.",
+              "vi": "Hướng dẫn gần như vô dụng và tôi hoàn toàn bối rối.",
+              "note": "almost and completely at opposite ends of the scale"
+            },
+            {
+              "id": "adverb-l5-ex5",
+              "en": "It is simply that I was too tired to think clearly.",
+              "vi": "Đơn giản là tôi quá mệt để suy nghĩ rõ ràng.",
+              "note": "simply is a softener that does not change the facts"
+            }
           ]
         },
         {
@@ -1021,9 +1850,19 @@
               "prompt": "This solution is absolutely better than the one we tried last week.",
               "instruction": "Rewrite the sentence naturally.",
               "items": [
-                { "id": "w1", "text": "absolutely better", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "absolutely better",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["This solution is much better than the one we tried last week."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "This solution is much better than the one we tried last week."
+                ]
+              },
               "explanation": "Absolutely is an absolute adverb and does not combine with a comparative, because there is nothing to scale: it already means completely. Use a gradable adverb such as much, considerably or far with better.",
               "xp": 10
             },
@@ -1036,7 +1875,12 @@
               "prompt": "I have only finished the first chapter, not the whole book.",
               "instruction": "Rewrite the sentence so the emphasis is on the chapter.",
               "items": [],
-              "answer": { "type": "text", "values": ["I have finished only the first chapter, not the whole book."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I have finished only the first chapter, not the whole book."
+                ]
+              },
               "explanation": "The focusing adverb normally attaches to the element it emphasises, so only the first chapter limits the chapter. Placing only before the whole sentence puts the emphasis on the person instead, which is a different message.",
               "xp": 10
             },
@@ -1049,12 +1893,38 @@
               "prompt": "Which adverbs are absolute and cannot normally be used with a comparative?",
               "instruction": "Select all the correct options.",
               "items": [
-                { "id": "a", "text": "completely", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "slightly", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "utterly", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "considerably", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "completely",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "slightly",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "utterly",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "considerably",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "completely and utterly are absolute, so completely better is not natural English. slightly and considerably are gradable and appear in comparisons: slightly better, considerably better.",
               "xp": 10
             },
@@ -1067,9 +1937,23 @@
               "prompt": "Complete with a suitable degree adverb: The second half of the exam was ___ easier than the first.",
               "instruction": "Write one word.",
               "items": [
-                { "id": "h1", "text": "gradable adverb", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "gradable adverb",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["much", "considerably", "far", "significantly", "definitely"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "much",
+                  "considerably",
+                  "far",
+                  "significantly",
+                  "definitely"
+                ]
+              },
               "explanation": "A comparative is already present, so the adverb must be gradable: much, considerably or far. An absolute adverb such as completely or absolutely cannot sit in front of easier with than.",
               "xp": 10
             },
@@ -1082,9 +1966,17 @@
               "prompt": "Moving the word only inside a sentence can change which piece of information is being emphasised.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. She only works on Mondays, She works only on Mondays and She works on Mondays only each restrict a different element, and a listener can hear the difference without seeing it.",
               "xp": 10
             }
@@ -1097,21 +1989,30 @@
           "items": [
             {
               "id": "adverb-l5-d1",
-              "audio": { "kind": "speech", "text": "The new method is considerably faster than the old one." },
+              "audio": {
+                "kind": "speech",
+                "text": "The new method is considerably faster than the old one."
+              },
               "hint": "gradable adverb before a comparative",
               "translation": "Phương pháp mới nhanh hơn đáng kể so với phương pháp cũ.",
               "xp": 15
             },
             {
               "id": "adverb-l5-d2",
-              "audio": { "kind": "speech", "text": "I only wanted to check the time, and I am sorry." },
+              "audio": {
+                "kind": "speech",
+                "text": "I only wanted to check the time, and I am sorry."
+              },
               "hint": "only attached to the wrong element",
               "translation": "Tôi chỉ muốn xem giờ thôi, và tôi xin lỗi.",
               "xp": 15
             },
             {
               "id": "adverb-l5-d3",
-              "audio": { "kind": "speech", "text": "Even the doctor could not explain the results clearly." },
+              "audio": {
+                "kind": "speech",
+                "text": "Even the doctor could not explain the results clearly."
+              },
               "hint": "even as an intensifier of a scale",
               "translation": "Ngay cả bác sĩ cũng không giải thích rõ ràng được kết quả.",
               "xp": 15
@@ -1132,9 +2033,19 @@
               "prompt": "Her explanation was completely clearer than mine.",
               "instruction": "Rewrite the sentence naturally.",
               "items": [
-                { "id": "w1", "text": "completely clearer", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "completely clearer",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["Her explanation was much clearer than mine."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Her explanation was much clearer than mine."
+                ]
+              },
               "explanation": "Completely is absolute and does not combine with a comparative, and quite clearly is a contradiction because quite means moderately. Use a gradable adverb such as much or considerably with clearer.",
               "xp": 10
             },
@@ -1147,12 +2058,37 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "The results are slightly worse than last year.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The results are utterly worse than last year.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The results are absolutely worse than last year.", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "The results are totally worse than last year.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The results are slightly worse than last year.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The results are utterly worse than last year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The results are absolutely worse than last year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The results are totally worse than last year.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Slightly is gradable, so it works with the comparative worse. Utterly, absolutely and totally are absolute adverbs and do not combine with a comparison, because a comparison already implies a scale.",
               "xp": 10
             },
@@ -1165,9 +2101,19 @@
               "prompt": "He is ready just after he has finished the report.",
               "instruction": "Rewrite the sentence so the emphasis falls on the report, not on the timing.",
               "items": [
-                { "id": "w1", "text": "just after", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "just after",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["He is ready only after he has finished the report."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He is ready only after he has finished the report."
+                ]
+              },
               "explanation": "Just after says the timing is very close, which says nothing about which part of the sentence matters. Only after restricts the condition to finishing the report, so only is the focusing adverb the sentence needs.",
               "xp": 10
             },
@@ -1180,9 +2126,17 @@
               "prompt": "In the sentence She is only nineteen, only restricts the age, not the person.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. Because only sits directly in front of nineteen, the restriction is on the number. Only she is nineteen would restrict who is nineteen, which is a completely different emphasis.",
               "xp": 10
             }
@@ -1220,8 +2174,18 @@
               "statement": "Use a semicolon or a full stop before however and therefore for a strong contrast or result, and a comma on both sides for a weak one inside a sentence.",
               "formula": "The test was difficult; however, she passed. / The test was difficult. However, she passed.",
               "examples": [
-                { "id": "adverb-l6-r1-e1", "en": "The plan is expensive; however, it saves a lot of time.", "vi": "Kế hoạch rất tốn kém; tuy nhiên, nó tiết kiệm nhiều thời gian.", "note": "semicolon for a strong contrast" },
-                { "id": "adverb-l6-r1-e2", "en": "The plan is expensive. However, it saves a lot of time.", "vi": "Kế hoạch rất tốn kém. Tuy nhiên, nó tiết kiệm nhiều thời gian.", "note": "full stop for a strong contrast between two sentences" }
+                {
+                  "id": "adverb-l6-r1-e1",
+                  "en": "The plan is expensive; however, it saves a lot of time.",
+                  "vi": "Kế hoạch rất tốn kém; tuy nhiên, nó tiết kiệm nhiều thời gian.",
+                  "note": "semicolon for a strong contrast"
+                },
+                {
+                  "id": "adverb-l6-r1-e2",
+                  "en": "The plan is expensive. However, it saves a lot of time.",
+                  "vi": "Kế hoạch rất tốn kém. Tuy nhiên, nó tiết kiệm nhiều thời gian.",
+                  "note": "full stop for a strong contrast between two sentences"
+                }
               ]
             },
             {
@@ -1229,8 +2193,18 @@
               "statement": "in fact, actually, namely, in other words and specifically add or correct information, and they are set off with a comma and an opening capital.",
               "formula": "He said he was tired. In fact, he had slept for two hours.",
               "examples": [
-                { "id": "adverb-l6-r1-e3", "en": "She bought two bags, namely a laptop bag and a shopping bag.", "vi": "Cô ấy đã mua hai túi, cụ thể là một ba lô máy tính và một túi mua sắm.", "note": "namely explains what was meant" },
-                { "id": "adverb-l6-r1-e4", "en": "It is simply that I was too tired to continue.", "vi": "Đơn giản là tôi quá mệt để tiếp tục.", "note": "simply softens the statement without changing the facts" }
+                {
+                  "id": "adverb-l6-r1-e3",
+                  "en": "She bought two bags, namely a laptop bag and a shopping bag.",
+                  "vi": "Cô ấy đã mua hai túi, cụ thể là một ba lô máy tính và một túi mua sắm.",
+                  "note": "namely explains what was meant"
+                },
+                {
+                  "id": "adverb-l6-r1-e4",
+                  "en": "It is simply that I was too tired to continue.",
+                  "vi": "Đơn giản là tôi quá mệt để tiếp tục.",
+                  "note": "simply softens the statement without changing the facts"
+                }
               ]
             }
           ]
@@ -1239,11 +2213,36 @@
           "id": "adverb-l6-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l6-ex1", "en": "He did not study hard; however, he passed the exam easily.", "vi": "Anh ấy không học chăm chỉ; tuy nhiên, anh ấy đã dễ dàng vượt qua kỳ thi.", "note": "however after a semicolon for a strong contrast" },
-            { "id": "adverb-l6-ex2", "en": "The train was late; therefore, we missed the first part of the film.", "vi": "Tàu đến muộn; vì vậy, chúng tôi đã bỏ lỡ phần đầu của bộ phim.", "note": "therefore after a semicolon for a result" },
-            { "id": "adverb-l6-ex3", "en": "She looked tired. In fact, she had worked for twelve hours.", "vi": "Cô ấy trông có vẻ mệt. Thực tế, cô ấy đã làm việc mười hai tiếng.", "note": "in fact corrects what the listener might assume" },
-            { "id": "adverb-l6-ex4", "en": "The room is small, in other words it has about ten square metres.", "vi": "Căn phòng nhỏ, nói cách khác là khoảng mười mét vuông.", "note": "in other words rephrases the first clause" },
-            { "id": "adverb-l6-ex5", "en": "Yesterday we were working late, and today the deadline is midnight.", "vi": "Hôm qua chúng tôi làm việc muộn, và hôm nay hạn chót là nửa đêm.", "note": "a time adverb at the front is possible when it is long or contrastive" }
+            {
+              "id": "adverb-l6-ex1",
+              "en": "He did not study hard; however, he passed the exam easily.",
+              "vi": "Anh ấy không học chăm chỉ; tuy nhiên, anh ấy đã dễ dàng vượt qua kỳ thi.",
+              "note": "however after a semicolon for a strong contrast"
+            },
+            {
+              "id": "adverb-l6-ex2",
+              "en": "The train was late; therefore, we missed the first part of the film.",
+              "vi": "Tàu đến muộn; vì vậy, chúng tôi đã bỏ lỡ phần đầu của bộ phim.",
+              "note": "therefore after a semicolon for a result"
+            },
+            {
+              "id": "adverb-l6-ex3",
+              "en": "She looked tired. In fact, she had worked for twelve hours.",
+              "vi": "Cô ấy trông có vẻ mệt. Thực tế, cô ấy đã làm việc mười hai tiếng.",
+              "note": "in fact corrects what the listener might assume"
+            },
+            {
+              "id": "adverb-l6-ex4",
+              "en": "The room is small, in other words it has about ten square metres.",
+              "vi": "Căn phòng nhỏ, nói cách khác là khoảng mười mét vuông.",
+              "note": "in other words rephrases the first clause"
+            },
+            {
+              "id": "adverb-l6-ex5",
+              "en": "Yesterday we were working late, and today the deadline is midnight.",
+              "vi": "Hôm qua chúng tôi làm việc muộn, và hôm nay hạn chót là nửa đêm.",
+              "note": "a time adverb at the front is possible when it is long or contrastive"
+            }
           ]
         },
         {
@@ -1259,7 +2258,12 @@
               "prompt": "The room is small, however it is comfortable and very warm.",
               "instruction": "Rewrite the sentence with the correct punctuation.",
               "items": [],
-              "answer": { "type": "text", "values": ["The room is small; however, it is comfortable and very warm."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The room is small; however, it is comfortable and very warm."
+                ]
+              },
               "explanation": "A comma after however is not standard punctuation for this contrast. English puts a semicolon before it, or a full stop and then a capital: The room is small. However, it is comfortable.",
               "xp": 10
             },
@@ -1272,9 +2276,19 @@
               "prompt": "He was very tired, therefore he went to bed early.",
               "instruction": "Rewrite the sentence with the correct punctuation.",
               "items": [
-                { "id": "w1", "text": "tired, therefore", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "tired, therefore",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["He was very tired; therefore, he went to bed early."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He was very tired; therefore, he went to bed early."
+                ]
+              },
               "explanation": "A result expressed with therefore needs a semicolon before it, or a full stop. A plain comma leaves the two clauses running together without enough punctuation between them.",
               "xp": 10
             },
@@ -1287,12 +2301,37 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "The task was hard. However, the team finished it on time.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The task was hard, however the team finished it on time.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The task was hard however, the team finished it on time.", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "The task was hard however the team finished it on time.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The task was hard. However, the team finished it on time.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The task was hard, however the team finished it on time.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The task was hard however, the team finished it on time.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The task was hard however the team finished it on time.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "However at the start of a new sentence needs a full stop before it and a capital after it. A semicolon plus however, comma is also correct, but a bare comma in front of however is not.",
               "xp": 10
             },
@@ -1305,16 +2344,70 @@
               "prompt": "Put the words in order to make a correct sentence.",
               "instruction": "Tap the words in the correct order.",
               "items": [
-                { "id": "t1", "text": "The", "isCorrect": null, "matchKey": null },
-                { "id": "t2", "text": "shop", "isCorrect": null, "matchKey": null },
-                { "id": "t3", "text": "was", "isCorrect": null, "matchKey": null },
-                { "id": "t4", "text": "closed", "isCorrect": null, "matchKey": null },
-                { "id": "t5", "text": "therefore", "isCorrect": null, "matchKey": null },
-                { "id": "t6", "text": "we", "isCorrect": null, "matchKey": null },
-                { "id": "t7", "text": "went", "isCorrect": null, "matchKey": null },
-                { "id": "t8", "text": "home", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "t1",
+                  "text": "The",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "shop",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "closed",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "therefore",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "we",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "went",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "home",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": [["The", "shop", "was", "closed", "therefore", "we", "went", "home"]] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "The",
+                    "shop",
+                    "was",
+                    "closed",
+                    "therefore",
+                    "we",
+                    "went",
+                    "home"
+                  ]
+                ]
+              },
               "explanation": "The result adverb therefore comes after the cause, so The shop was closed therefore we went home follows the logical order. In writing you would add a semicolon before therefore and a comma after it.",
               "xp": 10
             },
@@ -1327,9 +2420,17 @@
               "prompt": "In fact and actually can be used to correct or add to what a listener might expect.",
               "instruction": "Decide if the statement is true.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "True. He said he was busy. In fact, he had nothing to do gives the listener the missing piece. In other words, namely and that is serve the same clarifying function in a more formal register.",
               "xp": 10
             }
@@ -1342,21 +2443,30 @@
           "items": [
             {
               "id": "adverb-l6-d1",
-              "audio": { "kind": "speech", "text": "The hotel was cheap. However, the room was extremely small." },
+              "audio": {
+                "kind": "speech",
+                "text": "The hotel was cheap. However, the room was extremely small."
+              },
               "hint": "full stop before however",
               "translation": "Khách sạn rẻ. Tuy nhiên, căn phòng cực kỳ nhỏ.",
               "xp": 15
             },
             {
               "id": "adverb-l6-d2",
-              "audio": { "kind": "speech", "text": "He lost his keys; therefore, he arrived late for the meeting." },
+              "audio": {
+                "kind": "speech",
+                "text": "He lost his keys; therefore, he arrived late for the meeting."
+              },
               "hint": "semicolon before therefore",
               "translation": "Anh ấy đánh mất chìa khóa; vì vậy, anh ấy đến muộn cho cuộc họp.",
               "xp": 15
             },
             {
               "id": "adverb-l6-d3",
-              "audio": { "kind": "speech", "text": "She looked bored. In fact, she was extremely tired." },
+              "audio": {
+                "kind": "speech",
+                "text": "She looked bored. In fact, she was extremely tired."
+              },
               "hint": "in fact at the start of a sentence",
               "translation": "Cô ấy trông có vẻ chán. Thực tế, cô ấy đã rất mệt.",
               "xp": 15
@@ -1377,7 +2487,12 @@
               "prompt": "She studied very hard, however she did not pass the test.",
               "instruction": "Rewrite the sentence with the correct punctuation.",
               "items": [],
-              "answer": { "type": "text", "values": ["She studied very hard; however, she did not pass the test."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She studied very hard; however, she did not pass the test."
+                ]
+              },
               "explanation": "A contrast with however needs a semicolon before it or a full stop and a new sentence. A plain comma before however is not standard English punctuation.",
               "xp": 10
             },
@@ -1390,12 +2505,37 @@
               "prompt": "Which sentence uses a linking adverb correctly?",
               "instruction": "Choose one option.",
               "items": [
-                { "id": "a", "text": "The roads were closed; consequently, we had to stay at home.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The roads were closed, consequently we had to stay at home.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The roads were closed consequently, we had to stay at home.", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "The roads were closed. Consequently we had to stay at home.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The roads were closed; consequently, we had to stay at home.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The roads were closed, consequently we had to stay at home.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The roads were closed consequently, we had to stay at home.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The roads were closed. Consequently we had to stay at home.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Consequently is a linking adverb of result, so it takes a semicolon before it and a comma after it. As a result, which is a prepositional phrase, is the safest alternative for a full stop: The roads were closed. As a result, we had to stay at home.",
               "xp": 10
             },
@@ -1408,9 +2548,19 @@
               "prompt": "He said he was finished. In fact he had only started.",
               "instruction": "Rewrite the sentence with the correct punctuation.",
               "items": [
-                { "id": "w1", "text": "In fact he", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "In fact he",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["He said he was finished. In fact, he had only started."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He said he was finished. In fact, he had only started."
+                ]
+              },
               "explanation": "A clarifying adverb that opens a sentence is followed by a comma: In fact, he had only started. Without the comma the correction is less clearly marked as an addition to what came before.",
               "xp": 10
             },
@@ -1423,9 +2573,21 @@
               "prompt": "Complete with a suitable linking adverb: The bus was full. ___, we walked to the station.",
               "instruction": "Write one word.",
               "items": [
-                { "id": "h1", "text": "result", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "h1",
+                  "text": "result",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["Therefore", "Consequently", "Hence"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Therefore",
+                  "Consequently",
+                  "Hence"
+                ]
+              },
               "explanation": "The second sentence is a result of the first, so a linking adverb of result is needed: Therefore, consequently or hence. Each one takes a full stop before it and a comma after it, or a semicolon instead of the full stop.",
               "xp": 10
             }

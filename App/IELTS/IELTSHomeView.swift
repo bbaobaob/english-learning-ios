@@ -309,7 +309,7 @@ struct LessonRow: View {
 // MARK: - Progress overview
 
 /// Lessons completed per skill, total minutes practised, and the target band of
-/// whatever is in front of the learner. Never a band score.
+/// whatever is in front of the learner. Never presented as an IELTS grade.
 struct ProgressOverview: View {
     let model: IELTSSectionModel
     @Environment(AppState.self) private var appState

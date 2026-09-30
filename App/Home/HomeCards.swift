@@ -49,6 +49,8 @@ struct ContinueLearningCard: View {
 
     let model: HomeModel
     let onOpen: (String, String, Int) -> Void
+    /// Used only by the "course complete" state, which has no lesson to open.
+    let onOpenIELTS: () -> Void
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
@@ -87,7 +89,20 @@ struct ContinueLearningCard: View {
         .padding(Spacing.lg)
         .liquidGlass(cornerRadius: Radius.card)
         .padding(.vertical, Spacing.xs)
+        // The one deliberate motion on the dashboard: the card the learner came
+        // for lifts into place, everything else on the screen is still.
+        .offset(y: appeared ? 0 : 14)
+        .opacity(appeared ? 1 : 0)
+        .onAppear {
+            guard !reduceMotion else {
+                appeared = true
+                return
+            }
+            withAnimation(.spring(response: 0.55, dampingFraction: 0.82)) { appeared = true }
+        }
     }
+
+    @State private var appeared = false
 
     private enum Payload {
         case resume(HomeModel.ContinueLesson)
@@ -156,8 +171,10 @@ struct ContinueLearningCard: View {
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
 
-            SecondaryButton(title: "IELTS practice", symbol: "globe") {}
-                .accessibilityHint("Opens the IELTS tab")
+            SecondaryButton(title: "IELTS practice", symbol: "globe") {
+                onOpenIELTS()
+            }
+            .accessibilityHint("Opens the IELTS tab")
         }
     }
 }

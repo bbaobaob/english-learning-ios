@@ -208,7 +208,7 @@ struct OnboardingView: View {
                     }
                 }
 
-                Text("That is about \(ProfileWriter.xpPerMinute(for: level) * dailyMinutes) XP a day at your level.")
+                Text("That is about \(AppState.dailyGoalXP(forMinutes: dailyMinutes, level: level)) XP a day at your level.")
                     .font(AppFont.body(.footnote))
                     .foregroundStyle(Palette.textTertiary)
                     .fixedSize(horizontal: false, vertical: true)

@@ -59,7 +59,9 @@ struct TopicDetailView: View {
                         VStack(alignment: .leading, spacing: Spacing.sm) {
                             SectionHeader(
                                 title: level.shortTitle,
-                                subtitle: "\(lessons.count) lesson\(lessons.count == 1 ? "" : "s")"
+                                subtitle: "\(lessons.count) lesson\(lessons.count == 1 ? "" : "s")",
+                                actionTitle: nil,
+                                action: nil
                             )
                             ForEach(lessons) { lesson in
                                 lessonRow(lesson)
@@ -82,6 +84,8 @@ struct TopicDetailView: View {
                 AlphabetView()
             case .alphabetListening:
                 AlphabetListeningView()
+            case .methods:
+                MethodsView()
             case .topic(let id):
                 if let next = app.library.topic(id), next.id != topic.id {
                     TopicDetailView(topic: next)
@@ -172,7 +176,9 @@ struct TopicDetailView: View {
         return VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(
                 title: isWeak ? "Needs another pass" : "Worth reviewing",
-                subtitle: "\(weak.missedCount) exercise\(weak.missedCount == 1 ? "" : "s") still to get right"
+                subtitle: "\(weak.missedCount) exercise\(weak.missedCount == 1 ? "" : "s") still to get right",
+                actionTitle: nil,
+                action: nil
             )
             HStack(spacing: Spacing.md) {
                 Image(systemName: isWeak ? "exclamationmark.triangle.fill" : "arrow.triangle.2.circlepath")

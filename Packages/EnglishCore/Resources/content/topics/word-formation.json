@@ -25,8 +25,18 @@
               "statement": "Add un- directly to an adjective or adverb to make its opposite. No extra letters, no change of spelling.",
               "formula": "un- + happy = unhappy",
               "examples": [
-                { "id": "wf-p-ex1", "en": "an unhappy customer", "vi": "một khách hàng không hạnh phúc", "note": "happy + un- = unhappy, double p survives" },
-                { "id": "wf-p-ex2", "en": "an unfair decision", "vi": "một quyết định không công bằng", "note": "fair + un- = unfair, f + un is fine" }
+                {
+                  "id": "wf-p-ex1",
+                  "en": "an unhappy customer",
+                  "vi": "một khách hàng không hạnh phúc",
+                  "note": "happy + un- = unhappy, double p survives"
+                },
+                {
+                  "id": "wf-p-ex2",
+                  "en": "an unfair decision",
+                  "vi": "một quyết định không công bằng",
+                  "note": "fair + un- = unfair, f + un is fine"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "Before b, m and p the negative prefix in- becomes im-, il- or ir- so the word stays pronounceable.",
               "formula": "in- + possible = impossible",
               "examples": [
-                { "id": "wf-p-ex3", "en": "an impossible task", "vi": "một nhiệm vụ không thể làm được", "note": "in- + p becomes im-; then double p" },
-                { "id": "wf-p-ex4", "en": "an irregular verb", "vi": "một động từ bất quy tắc", "note": "in- + r becomes ir-" }
+                {
+                  "id": "wf-p-ex3",
+                  "en": "an impossible task",
+                  "vi": "một nhiệm vụ không thể làm được",
+                  "note": "in- + p becomes im-; then double p"
+                },
+                {
+                  "id": "wf-p-ex4",
+                  "en": "an irregular verb",
+                  "vi": "một động từ bất quy tắc",
+                  "note": "in- + r becomes ir-"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "Use dis- when the prefix means not, reverse, or split apart. Many dis- words are verbs and nouns.",
               "formula": "dis- + agree = disagree",
               "examples": [
-                { "id": "wf-p-ex5", "en": "to disagree politely", "vi": "lịch sự không đồng ý", "note": "dis- reverses agree" },
-                { "id": "wf-p-ex6", "en": "a disagreement between the teams", "vi": "một bất đồng giữa hai đội", "note": "the noun keeps the prefix" }
+                {
+                  "id": "wf-p-ex5",
+                  "en": "to disagree politely",
+                  "vi": "lịch sự không đồng ý",
+                  "note": "dis- reverses agree"
+                },
+                {
+                  "id": "wf-p-ex6",
+                  "en": "a disagreement between the teams",
+                  "vi": "một bất đồng giữa hai đội",
+                  "note": "the noun keeps the prefix"
+                }
               ]
             },
             {
@@ -52,8 +82,18 @@
               "statement": "Use non- when you simply state that something is not that thing, without judging it.",
               "formula": "non- + stop = nonstop",
               "examples": [
-                { "id": "wf-p-ex7", "en": "a non-stop flight", "vi": "một chuyến bay không dừng", "note": "descriptive, not emotional" },
-                { "id": "wf-p-ex8", "en": "a non-smoking area", "vi": "khu vực không hút thuốc", "note": "a fact about the area, not a moral judgement" }
+                {
+                  "id": "wf-p-ex7",
+                  "en": "a non-stop flight",
+                  "vi": "một chuyến bay không dừng",
+                  "note": "descriptive, not emotional"
+                },
+                {
+                  "id": "wf-p-ex8",
+                  "en": "a non-smoking area",
+                  "vi": "khu vực không hút thuốc",
+                  "note": "a fact about the area, not a moral judgement"
+                }
               ]
             }
           ]
@@ -62,10 +102,30 @@
           "id": "wf-prefixes-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-pe-1", "en": "He was unpunctual, so the meeting started late.", "vi": "Anh ấy đến không đúng giờ, nên cuộc họp bắt đầu muộn.", "note": "punctual + un- = unpunctual" },
-            { "id": "wf-pe-2", "en": "The two reports disagree about the total.", "vi": "Hai báo cáo không đồng ý về tổng số.", "note": "dis- + agree, verb" },
-            { "id": "wf-pe-3", "en": "It is impossible to finish this today.", "vi": "Hôm nay không thể nào hoàn thành việc này.", "note": "in- before p becomes im-; double p" },
-            { "id": "wf-pe-4", "en": "The shop offers a non-alcoholic drink.", "vi": "Cửa hàng có đồ uống không cồn.", "note": "non- before a word beginning with a vowel usually keeps its hyphen" }
+            {
+              "id": "wf-pe-1",
+              "en": "He was unpunctual, so the meeting started late.",
+              "vi": "Anh ấy đến không đúng giờ, nên cuộc họp bắt đầu muộn.",
+              "note": "punctual + un- = unpunctual"
+            },
+            {
+              "id": "wf-pe-2",
+              "en": "The two reports disagree about the total.",
+              "vi": "Hai báo cáo không đồng ý về tổng số.",
+              "note": "dis- + agree, verb"
+            },
+            {
+              "id": "wf-pe-3",
+              "en": "It is impossible to finish this today.",
+              "vi": "Hôm nay không thể nào hoàn thành việc này.",
+              "note": "in- before p becomes im-; double p"
+            },
+            {
+              "id": "wf-pe-4",
+              "en": "The shop offers a non-alcoholic drink.",
+              "vi": "Cửa hàng có đồ uống không cồn.",
+              "note": "non- before a word beginning with a vowel usually keeps its hyphen"
+            }
           ]
         },
         {
@@ -81,12 +141,37 @@
               "prompt": "Which is the correct negative form of possible?",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "impossible", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "inpossible", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "unpossible", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "dispossible", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "impossible",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "inpossible",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "unpossible",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "dispossible",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "in- before p turns into im-, and the base possible already ends in -e with a double p, so the result is impossible. inpossible is not pronounceable, un- is only for adjectives and adverbs, and dis- marks separation or reversal, not impossibility.",
               "xp": 10
             },
@@ -98,7 +183,12 @@
               "difficulty": "beginner",
               "prompt": "Add un- to happy to make the adjective that means the opposite.",
               "instruction": "Write the adjective.",
-              "answer": { "type": "text", "values": ["unhappy"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "unhappy"
+                ]
+              },
               "explanation": "un- simply goes in front of happy and the existing double p is kept, giving unhappy. There is no extra syllable to insert, so the word stays two syllables and ends in a consonant sound.",
               "xp": 10
             },
@@ -110,7 +200,12 @@
               "difficulty": "beginner",
               "prompt": "The two departments are in complete ___ over the budget.",
               "instruction": "Write the correct word.",
-              "answer": { "type": "text", "values": ["disagreement"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "disagreement"
+                ]
+              },
               "explanation": "agree reversed is disagree, and the noun of the same family is disagreement. in disagreement would also be formed this way and is common in writing, but the trap here is dis- versus un-: the pair are in total opposition, not merely unhappy.",
               "xp": 10
             },
@@ -122,7 +217,12 @@
               "difficulty": "intermediate",
               "prompt": "She felt incomfortible in the crowded waiting room.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["She felt uncomfortable in the crowded waiting room."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She felt uncomfortable in the crowded waiting room."
+                ]
+              },
               "explanation": "comfortable never takes double m: it is com-fort-a-ble with a single m, so the adjective is comfortable and the negative is uncomfortable. Writing incomfortible is the most common spelling mistake with this word.",
               "xp": 10
             },
@@ -135,12 +235,38 @@
               "prompt": "Which sentences use the prefix correctly?",
               "instruction": "Select every correct sentence.",
               "items": [
-                { "id": "a", "text": "It was an unavoidable delay because of the storm.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The plane took off in time.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "He is a non-professional musician.", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "She felt unhappyness all evening.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "It was an unavoidable delay because of the storm.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The plane took off in time.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He is a non-professional musician.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She felt unhappyness all evening.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "avoid with un- gives unavoidable, and non- before a professional is correct because you are naming a category, not judging. The other two are wrong: in time has no negative prefix at all, and the correct noun is unhappiness with one p, not unhappyness.",
               "xp": 10
             }
@@ -153,24 +279,39 @@
           "items": [
             {
               "id": "wf-pref-d1",
-              "audio": { "kind": "speech", "text": "The children were unhappy because the ice cream was unavailable." },
-              "acceptedAnswers": ["The children were unhappy because the ice cream was unavailable."],
+              "audio": {
+                "kind": "speech",
+                "text": "The children were unhappy because the ice cream was unavailable."
+              },
+              "acceptedAnswers": [
+                "The children were unhappy because the ice cream was unavailable."
+              ],
               "hint": "two negative prefixes",
               "translation": "Lũ trẻ không vui vì không có kem.",
               "xp": 15
             },
             {
               "id": "wf-pref-d2",
-              "audio": { "kind": "speech", "text": "A non-stop flight to Da Nang is usually cheaper." },
-              "acceptedAnswers": ["A non-stop flight to Da Nang is usually cheaper."],
+              "audio": {
+                "kind": "speech",
+                "text": "A non-stop flight to Da Nang is usually cheaper."
+              },
+              "acceptedAnswers": [
+                "A non-stop flight to Da Nang is usually cheaper."
+              ],
               "hint": "non- with a hyphen",
               "translation": "Chuyến bay thẳng đi Đà Nẵng thường rẻ hơn.",
               "xp": 15
             },
             {
               "id": "wf-pref-d3",
-              "audio": { "kind": "speech", "text": "The two reports disagree about the final number." },
-              "acceptedAnswers": ["The two reports disagree about the final number."],
+              "audio": {
+                "kind": "speech",
+                "text": "The two reports disagree about the final number."
+              },
+              "acceptedAnswers": [
+                "The two reports disagree about the final number."
+              ],
               "hint": "dis- plus a simple verb",
               "translation": "Hai báo cáo không thống nhất về con số cuối cùng.",
               "xp": 15
@@ -192,12 +333,37 @@
               "prompt": "Choose the correct form: the room is ___ and cold.",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "uncomfortable", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "discomfortable", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "noncomfortable", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "incomfortable", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "uncomfortable",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "discomfortable",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "noncomfortable",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "incomfortable",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "un- is the prefix for adjectives, and comfortable has a single m, so uncomfortable is the only correct spelling.",
               "xp": 10
             },
@@ -210,12 +376,37 @@
               "prompt": "Which word correctly negates legal?",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "illegal", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "unlegal", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "dislegal", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "nonlegal", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "illegal",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "unlegal",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "dislegal",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "nonlegal",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "in- before l becomes il-, giving illegal. unlegal is not a word, and nonlegal would only name a category rather than deny a quality.",
               "xp": 10
             },
@@ -228,9 +419,17 @@
               "prompt": "non- and un- both make a word negative, and they can be used interchangeably.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "They are not interchangeable. un- negates a quality (unhappy, untidy), while non- states a neutral fact about a category (non-stop, non-alcoholic).",
               "xp": 10
             },
@@ -243,11 +442,31 @@
               "prompt": "Which sentence uses dis- in the standard way?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The wire disconnected when I moved the laptop.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "I disapprove the idea.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The meeting was disscheduled.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The wire disconnected when I moved the laptop.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I disapprove the idea.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The meeting was disscheduled.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "disconnect means to break a connection, which is the separation sense of dis-. disapprove always needs a preposition of, and schedule takes un- (unscheduled) or re- (rescheduled), never dis-.",
               "xp": 10
             }
@@ -284,8 +503,18 @@
               "statement": "Attach -tion to a verb stem to make a noun for the action itself. Most -tion nouns are uncountable and end in a clear syllable.",
               "formula": "inform -> information, decide -> decision",
               "examples": [
-                { "id": "wf-n-ex1", "en": "We need more information before we decide.", "vi": "Chúng tôi cần thêm thông tin trước khi quyết định.", "note": "inform + ation; the stem loses nothing" },
-                { "id": "wf-n-ex2", "en": "Her decision surprised everyone.", "vi": "Quyết định của cô ấy khiến mọi người ngạc nhiên.", "note": "decid + e + sion" }
+                {
+                  "id": "wf-n-ex1",
+                  "en": "We need more information before we decide.",
+                  "vi": "Chúng tôi cần thêm thông tin trước khi quyết định.",
+                  "note": "inform + ation; the stem loses nothing"
+                },
+                {
+                  "id": "wf-n-ex2",
+                  "en": "Her decision surprised everyone.",
+                  "vi": "Quyết định của cô ấy khiến mọi người ngạc nhiên.",
+                  "note": "decid + e + sion"
+                }
               ]
             },
             {
@@ -293,8 +522,18 @@
               "statement": "Attach -ment to a verb to make a noun for the thing that results from the action. Many -ment nouns are countable.",
               "formula": "argue -> argument, replace -> replacement",
               "examples": [
-                { "id": "wf-n-ex3", "en": "They reached an agreement after a long argument.", "vi": "Họ đạt được một thỏa thuận sau một cuộc tranh luận dài.", "note": "argue + -ment, no spelling change" },
-                { "id": "wf-n-ex4", "en": "The engine needs replacing.", "vi": "Động cơ cần được thay thế.", "note": "replace + -ment; the noun here is the action" }
+                {
+                  "id": "wf-n-ex3",
+                  "en": "They reached an agreement after a long argument.",
+                  "vi": "Họ đạt được một thỏa thuận sau một cuộc tranh luận dài.",
+                  "note": "argue + -ment, no spelling change"
+                },
+                {
+                  "id": "wf-n-ex4",
+                  "en": "The engine needs replacing.",
+                  "vi": "Động cơ cần được thay thế.",
+                  "note": "replace + -ment; the noun here is the action"
+                }
               ]
             },
             {
@@ -302,8 +541,18 @@
               "statement": "Attach -ness to an adjective to make a noun for the quality itself. It is a very productive suffix in everyday English.",
               "formula": "happy -> happiness, dark -> darkness",
               "examples": [
-                { "id": "wf-n-ex5", "en": "Her kindness surprised the whole village.", "vi": "Lòng tốt của cô ấy làm cả ngôi làng ngạc nhiên.", "note": "kind + -ness" },
-                { "id": "wf-n-ex6", "en": "The road was covered in darkness.", "vi": "Con đường chìm trong bóng tối.", "note": "dark + -ness, no doubling" }
+                {
+                  "id": "wf-n-ex5",
+                  "en": "Her kindness surprised the whole village.",
+                  "vi": "Lòng tốt của cô ấy làm cả ngôi làng ngạc nhiên.",
+                  "note": "kind + -ness"
+                },
+                {
+                  "id": "wf-n-ex6",
+                  "en": "The road was covered in darkness.",
+                  "vi": "Con đường chìm trong bóng tối.",
+                  "note": "dark + -ness, no doubling"
+                }
               ]
             },
             {
@@ -311,8 +560,18 @@
               "statement": "Attach -ity to an adjective to make a more formal noun, often for a property of a person or thing.",
               "formula": "possible -> possibility, able -> ability",
               "examples": [
-                { "id": "wf-n-ex7", "en": "He has the ability to explain hard ideas simply.", "vi": "Anh ấy có khả năng giải thích những ý khó một cách đơn giản.", "note": "able + -ity, e dropped" },
-                { "id": "wf-n-ex8", "en": "The possibility of rain is quite high today.", "vi": "Khả năng có mưa hôm nay khá cao.", "note": "possible + -ity, e dropped" }
+                {
+                  "id": "wf-n-ex7",
+                  "en": "He has the ability to explain hard ideas simply.",
+                  "vi": "Anh ấy có khả năng giải thích những ý khó một cách đơn giản.",
+                  "note": "able + -ity, e dropped"
+                },
+                {
+                  "id": "wf-n-ex8",
+                  "en": "The possibility of rain is quite high today.",
+                  "vi": "Khả năng có mưa hôm nay khá cao.",
+                  "note": "possible + -ity, e dropped"
+                }
               ]
             }
           ]
@@ -321,10 +580,30 @@
           "id": "wf-noun-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-ne-1", "en": "Their apology was not enough to end the argument.", "vi": "Lời xin lỗi của họ không đủ để kết thúc cuộc tranh luận.", "note": "apologise + -ment" },
-            { "id": "wf-ne-2", "en": "Nobody doubted his honesty.", "vi": "Không ai nghi ngờ sự trung thực của anh ấy.", "note": "honest + -y + -ness" },
-            { "id": "wf-ne-3", "en": "We should consider the possibility of a delay.", "vi": "Chúng ta nên cân nhắc khả năng bị hoãn.", "note": "possible + -ity" },
-            { "id": "wf-ne-4", "en": "The construction of the bridge is still going on.", "vi": "Việc xây cầu vẫn đang tiếp diễn.", "note": "construct + -ion" }
+            {
+              "id": "wf-ne-1",
+              "en": "Their apology was not enough to end the argument.",
+              "vi": "Lời xin lỗi của họ không đủ để kết thúc cuộc tranh luận.",
+              "note": "apologise + -ment"
+            },
+            {
+              "id": "wf-ne-2",
+              "en": "Nobody doubted his honesty.",
+              "vi": "Không ai nghi ngờ sự trung thực của anh ấy.",
+              "note": "honest + -y + -ness"
+            },
+            {
+              "id": "wf-ne-3",
+              "en": "We should consider the possibility of a delay.",
+              "vi": "Chúng ta nên cân nhắc khả năng bị hoãn.",
+              "note": "possible + -ity"
+            },
+            {
+              "id": "wf-ne-4",
+              "en": "The construction of the bridge is still going on.",
+              "vi": "Việc xây cầu vẫn đang tiếp diễn.",
+              "note": "construct + -ion"
+            }
           ]
         },
         {
@@ -339,7 +618,12 @@
               "difficulty": "beginner",
               "prompt": "happy - add the noun suffix -ness.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["happiness"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "happiness"
+                ]
+              },
               "explanation": "Drop the y and add -ness: happy becomes happiness. The double s is not a typo; -ness already ends in ss and the base syllable ness merges with it.",
               "xp": 10
             },
@@ -351,7 +635,12 @@
               "difficulty": "intermediate",
               "prompt": "decide - add the noun suffix -tion.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["decision"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "decision"
+                ]
+              },
               "explanation": "decide loses its final e, then -tion attaches and the i of the stem is written as ci: decision. The same pattern gives decide, decision, decisive.",
               "xp": 10
             },
@@ -363,7 +652,12 @@
               "difficulty": "intermediate",
               "prompt": "enjoy - add the noun suffix -ment.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["enjoyment"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "enjoyment"
+                ]
+              },
               "explanation": "enjoy takes -ment with no letter dropped, giving enjoyment. The noun means the pleasure or fun, not the enjoyment of a person in general.",
               "xp": 10
             },
@@ -375,7 +669,12 @@
               "difficulty": "beginner",
               "prompt": "The ___ of the road made the trip dangerous.",
               "instruction": "Write the noun that fits.",
-              "answer": { "type": "text", "values": ["badness"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "badness"
+                ]
+              },
               "explanation": "The sentence describes a quality of the road, so the noun comes from the adjective bad plus -ness: badness. Something more natural here would be the danger, but the exercise asks for the -ness noun and badness is the only correct formation.",
               "xp": 10
             },
@@ -388,12 +687,37 @@
               "prompt": "Which noun describes the ability to be responsible?",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "responsibility", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "responsibilty", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "responsiblement", "isCorrect": false, "matchKey": null },
-                { "id": "c2", "text": "responsiblity", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "responsibility",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "responsibilty",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "responsiblement",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c2",
+                  "text": "responsiblity",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The noun of responsible is responsibility, formed with -ity and spelled with i before ty. responsiblement is not a word, and dropping either of the two i letters is a common spelling slip.",
               "xp": 10
             }
@@ -406,24 +730,39 @@
           "items": [
             {
               "id": "wf-noun-d1",
-              "audio": { "kind": "speech", "text": "Their honesty and kindness are the reason we trust them." },
-              "acceptedAnswers": ["Their honesty and kindness are the reason we trust them."],
+              "audio": {
+                "kind": "speech",
+                "text": "Their honesty and kindness are the reason we trust them."
+              },
+              "acceptedAnswers": [
+                "Their honesty and kindness are the reason we trust them."
+              ],
               "hint": "two -ness nouns",
               "translation": "Sự trung thực và lòng tốt của họ là lý do chúng tôi tin họ.",
               "xp": 15
             },
             {
               "id": "wf-noun-d2",
-              "audio": { "kind": "speech", "text": "The agreement was signed after a very long discussion." },
-              "acceptedAnswers": ["The agreement was signed after a very long discussion."],
+              "audio": {
+                "kind": "speech",
+                "text": "The agreement was signed after a very long discussion."
+              },
+              "acceptedAnswers": [
+                "The agreement was signed after a very long discussion."
+              ],
               "hint": "-ment and -sion",
               "translation": "Thỏa thuận được ký sau một cuộc thảo luận rất dài.",
               "xp": 15
             },
             {
               "id": "wf-noun-d3",
-              "audio": { "kind": "speech", "text": "There is a real possibility of rain this afternoon." },
-              "acceptedAnswers": ["There is a real possibility of rain this afternoon."],
+              "audio": {
+                "kind": "speech",
+                "text": "There is a real possibility of rain this afternoon."
+              },
+              "acceptedAnswers": [
+                "There is a real possibility of rain this afternoon."
+              ],
               "hint": "possible plus -ity",
               "translation": "Chiều nay có khả năng thực sự trời mưa.",
               "xp": 15
@@ -445,11 +784,31 @@
               "prompt": "Which noun describes the quality of being polite?",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "politeness", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "politness", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "politeity", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "politeness",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "politness",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "politeity",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "polite + -ness keeps the e, giving politeness. The -ity noun would be a different word entirely and is not used for politeness.",
               "xp": 10
             },
@@ -461,7 +820,12 @@
               "difficulty": "intermediate",
               "prompt": "possible - add the noun suffix -ity.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["possibility"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "possibility"
+                ]
+              },
               "explanation": "Drop the final e, add -ity, and write i before ty: possibility. Spellings like possibilty or possiblity come from forgetting the final i.",
               "xp": 10
             },
@@ -473,7 +837,12 @@
               "difficulty": "intermediate",
               "prompt": "The developement of the new drug took six years.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["The development of the new drug took six years."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The development of the new drug took six years."
+                ]
+              },
               "explanation": "The noun of develop is development, spelled with a single e after the d. developement with two e sounds plausible but is always a misspelling.",
               "xp": 10
             },
@@ -486,9 +855,17 @@
               "prompt": "The noun of the verb to arrive is an arrival.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "arrive takes -al, giving arrival. Noun suffixes are strongly conventional: the base word chooses the ending, and knowing the family (arrive, arrival, arrivee is rare) is what lets you pick correctly.",
               "xp": 10
             }
@@ -525,8 +902,18 @@
               "statement": "Attach -able (or -ible) to a verb to say that something can be done. If you can imagine doing it, the adjective probably ends this way.",
               "formula": "comfort -> comfortable, enjoy -> enjoyable",
               "examples": [
-                { "id": "wf-a-ex1", "en": "The film was enjoyable from start to finish.", "vi": "Bộ phim thú vị từ đầu đến cuối.", "note": "enjoy + -able" },
-                { "id": "wf-a-ex2", "en": "We need a solution that is acceptable to both sides.", "vi": "Chúng ta cần một giải pháp mà cả hai bên đều chấp nhận được.", "note": "accept + -able, e dropped" }
+                {
+                  "id": "wf-a-ex1",
+                  "en": "The film was enjoyable from start to finish.",
+                  "vi": "Bộ phim thú vị từ đầu đến cuối.",
+                  "note": "enjoy + -able"
+                },
+                {
+                  "id": "wf-a-ex2",
+                  "en": "We need a solution that is acceptable to both sides.",
+                  "vi": "Chúng ta cần một giải pháp mà cả hai bên đều chấp nhận được.",
+                  "note": "accept + -able, e dropped"
+                }
               ]
             },
             {
@@ -534,8 +921,18 @@
               "statement": "-ive attaches to a verb stem, -ous attaches to a noun. Both describe something that has a strong quality.",
               "formula": "act -> active, fame -> famous",
               "examples": [
-                { "id": "wf-a-ex3", "en": "He took an active part in the class discussion.", "vi": "Anh ấy đóng vai tích cực trong thảo luận lớp học.", "note": "act + -ive" },
-                { "id": "wf-a-ex4", "en": "The road was slippery and dangerous.", "vi": "Con đường trơn trượt và nguy hiểm.", "note": "danger + -ous" }
+                {
+                  "id": "wf-a-ex3",
+                  "en": "He took an active part in the class discussion.",
+                  "vi": "Anh ấy đóng vai tích cực trong thảo luận lớp học.",
+                  "note": "act + -ive"
+                },
+                {
+                  "id": "wf-a-ex4",
+                  "en": "The road was slippery and dangerous.",
+                  "vi": "Con đường trơn trượt và nguy hiểm.",
+                  "note": "danger + -ous"
+                }
               ]
             },
             {
@@ -543,8 +940,18 @@
               "statement": "-ful means full of the base word, -less means without it. Together they make a clean pair that you can remember once.",
               "formula": "help + ful = helpful, help + less = helpless",
               "examples": [
-                { "id": "wf-a-ex5", "en": "Her presentation was helpful and clear.", "vi": "Bài trình bày của cô ấy hữu ích và rõ ràng.", "note": "-ful" },
-                { "id": "wf-a-ex6", "en": "Without the map we were completely helpless.", "vi": "Không có bản đồ, chúng tôi hoàn toàn bất lực.", "note": "-less, the opposite of helpful" }
+                {
+                  "id": "wf-a-ex5",
+                  "en": "Her presentation was helpful and clear.",
+                  "vi": "Bài trình bày của cô ấy hữu ích và rõ ràng.",
+                  "note": "-ful"
+                },
+                {
+                  "id": "wf-a-ex6",
+                  "en": "Without the map we were completely helpless.",
+                  "vi": "Không có bản đồ, chúng tôi hoàn toàn bất lực.",
+                  "note": "-less, the opposite of helpful"
+                }
               ]
             },
             {
@@ -552,8 +959,18 @@
               "statement": "-al turns a noun into an adjective of belonging or function, and is very common in academic and legal English.",
               "formula": "nation -> national, music -> musical",
               "examples": [
-                { "id": "wf-a-ex7", "en": "The national library is closed on public holidays.", "vi": "Thư viện quốc gia đóng cửa vào các ngày lễ.", "note": "nation + -al" },
-                { "id": "wf-a-ex8", "en": "They made a musical record of the folk songs.", "vi": "Họ đã làm một bản thu âm các bài dân ca.", "note": "music + -al, u to o" }
+                {
+                  "id": "wf-a-ex7",
+                  "en": "The national library is closed on public holidays.",
+                  "vi": "Thư viện quốc gia đóng cửa vào các ngày lễ.",
+                  "note": "nation + -al"
+                },
+                {
+                  "id": "wf-a-ex8",
+                  "en": "They made a musical record of the folk songs.",
+                  "vi": "Họ đã làm một bản thu âm các bài dân ca.",
+                  "note": "music + -al, u to o"
+                }
               ]
             }
           ]
@@ -562,10 +979,30 @@
           "id": "wf-adj-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-ae-1", "en": "The exam was difficult but manageable.", "vi": "Kỳ thi khó nhưng còn xử lý được.", "note": "manage + -able" },
-            { "id": "wf-ae-2", "en": "Traffic is usually lighter on holiday mornings.", "vi": "Giao thông thường nhẹ hơn vào sáng ngày lễ.", "note": "light + -er" },
-            { "id": "wf-ae-3", "en": "An aggressive dog frightened the children.", "vi": "Một con chó hung dữ làm trẻ em sợ hãi.", "note": "aggress + -ive, keep the double s" },
-            { "id": "wf-ae-4", "en": "We are grateful for your generous support.", "vi": "Chúng tôi rất biết ơn sự hỗ trợ hào phóng của bạn.", "note": "generous, o to u" }
+            {
+              "id": "wf-ae-1",
+              "en": "The exam was difficult but manageable.",
+              "vi": "Kỳ thi khó nhưng còn xử lý được.",
+              "note": "manage + -able"
+            },
+            {
+              "id": "wf-ae-2",
+              "en": "Traffic is usually lighter on holiday mornings.",
+              "vi": "Giao thông thường nhẹ hơn vào sáng ngày lễ.",
+              "note": "light + -er"
+            },
+            {
+              "id": "wf-ae-3",
+              "en": "An aggressive dog frightened the children.",
+              "vi": "Một con chó hung dữ làm trẻ em sợ hãi.",
+              "note": "aggress + -ive, keep the double s"
+            },
+            {
+              "id": "wf-ae-4",
+              "en": "We are grateful for your generous support.",
+              "vi": "Chúng tôi rất biết ơn sự hỗ trợ hào phóng của bạn.",
+              "note": "generous, o to u"
+            }
           ]
         },
         {
@@ -581,14 +1018,54 @@
               "prompt": "Match each noun with its adjective.",
               "instruction": "Pair every noun with the correct adjective.",
               "items": [
-                { "id": "a", "text": "comfort", "isCorrect": null, "matchKey": "comfortable" },
-                { "id": "b", "text": "nation", "isCorrect": null, "matchKey": "national" },
-                { "id": "c", "text": "help", "isCorrect": null, "matchKey": "helpful" },
-                { "id": "d", "text": "danger", "isCorrect": null, "matchKey": "dangerous" },
-                { "id": "e", "text": "act", "isCorrect": null, "matchKey": "active" },
-                { "id": "f", "text": "help", "isCorrect": null, "matchKey": "helpless" }
+                {
+                  "id": "a",
+                  "text": "comfort",
+                  "isCorrect": null,
+                  "matchKey": "comfortable"
+                },
+                {
+                  "id": "b",
+                  "text": "nation",
+                  "isCorrect": null,
+                  "matchKey": "national"
+                },
+                {
+                  "id": "c",
+                  "text": "help",
+                  "isCorrect": null,
+                  "matchKey": "helpful"
+                },
+                {
+                  "id": "d",
+                  "text": "danger",
+                  "isCorrect": null,
+                  "matchKey": "dangerous"
+                },
+                {
+                  "id": "e",
+                  "text": "act",
+                  "isCorrect": null,
+                  "matchKey": "active"
+                },
+                {
+                  "id": "f",
+                  "text": "help",
+                  "isCorrect": null,
+                  "matchKey": "helpless"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "comfortable", "b": "national", "c": "helpful", "d": "dangerous", "e": "active", "f": "helpless" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "comfortable",
+                  "b": "national",
+                  "c": "helpful",
+                  "d": "dangerous",
+                  "e": "active",
+                  "f": "helpless"
+                }
+              },
               "explanation": "comfort takes -able, nation takes -al, help takes -ful or -less, danger takes -ous and act takes -ive. Two of the items are the same word on purpose: the suffix alone decides whether the quality is present (helpful) or missing (helpless).",
               "xp": 10
             },
@@ -600,7 +1077,12 @@
               "difficulty": "intermediate",
               "prompt": "help - add the adjective suffix that means full of help.",
               "instruction": "Write the adjective.",
-              "answer": { "type": "text", "values": ["helpful"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "helpful"
+                ]
+              },
               "explanation": "-ful turns the noun help into an adjective meaning full of help. The trap is confusing it with the adjective helpful, which is the same word, versus helpless, which needs -less and means without any help at all.",
               "xp": 10
             },
@@ -612,7 +1094,12 @@
               "difficulty": "intermediate",
               "prompt": "value - add the adjective suffix meaning of great worth.",
               "instruction": "Write the adjective.",
-              "answer": { "type": "text", "values": ["valuable"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "valuable"
+                ]
+              },
               "explanation": "value + -able gives valuable. Note the spelling: the e is kept here because -able needs the silent e to keep its own soft sound, which is why enjoy gives enjoyable but value gives valuable.",
               "xp": 10
             },
@@ -624,7 +1111,12 @@
               "difficulty": "intermediate",
               "prompt": "The instructions were very clear and usefull.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["The instructions were very clear and useful."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The instructions were very clear and useful."
+                ]
+              },
               "explanation": "useful has only one l because the word ends in a single -ful syllable; doubling the consonant would add an extra syllable. The same trap gives usefull, careful (correct) versus carefuly (wrong).",
               "xp": 10
             },
@@ -636,7 +1128,12 @@
               "difficulty": "advanced",
               "prompt": "Add the suffix that means full of danger: danger ___ .",
               "instruction": "Type the complete adjective.",
-              "answer": { "type": "text", "values": ["dangerous"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "dangerous"
+                ]
+              },
               "explanation": "danger + -ous changes the o to u, giving dangerous. The spelling shift is irregular and must be learned with the word; writing dangerous with an o is the usual mistake.",
               "xp": 10
             }
@@ -649,24 +1146,39 @@
           "items": [
             {
               "id": "wf-adj-d1",
-              "audio": { "kind": "speech", "text": "The road was icy and dangerous after the storm." },
-              "acceptedAnswers": ["The road was icy and dangerous after the storm."],
+              "audio": {
+                "kind": "speech",
+                "text": "The road was icy and dangerous after the storm."
+              },
+              "acceptedAnswers": [
+                "The road was icy and dangerous after the storm."
+              ],
               "hint": "danger plus -ous",
               "translation": "Con đường đầy băng và nguy hiểm sau cơn bão.",
               "xp": 15
             },
             {
               "id": "wf-adj-d2",
-              "audio": { "kind": "speech", "text": "We need a comfortable chair and a quiet room." },
-              "acceptedAnswers": ["We need a comfortable chair and a quiet room."],
+              "audio": {
+                "kind": "speech",
+                "text": "We need a comfortable chair and a quiet room."
+              },
+              "acceptedAnswers": [
+                "We need a comfortable chair and a quiet room."
+              ],
               "hint": "comfort plus -able",
               "translation": "Chúng ta cần một chiếc ghế thoải mái và một căn phòng yên tĩnh.",
               "xp": 15
             },
             {
               "id": "wf-adj-d3",
-              "audio": { "kind": "speech", "text": "Without help the old man was helpless." },
-              "acceptedAnswers": ["Without help the old man was helpless."],
+              "audio": {
+                "kind": "speech",
+                "text": "Without help the old man was helpless."
+              },
+              "acceptedAnswers": [
+                "Without help the old man was helpless."
+              ],
               "hint": "help plus -less",
               "translation": "Không có ai giúp, ông lão ấy bất lực.",
               "xp": 15
@@ -687,7 +1199,12 @@
               "difficulty": "intermediate",
               "prompt": "hope - add the adjective suffix -ful.",
               "instruction": "Write the adjective.",
-              "answer": { "type": "text", "values": ["hopeful"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "hopeful"
+                ]
+              },
               "explanation": "hope drops its final e before -ful, giving hopeful. The doubling trap from useful does not apply here: -ful keeps a single l because it is one syllable, and the base word decides the rest.",
               "xp": 10
             },
@@ -700,11 +1217,31 @@
               "prompt": "Which sentence is spelled correctly?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The results were not repeatable, so we changed the plan.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The results were not repeatble, so we changed the plan.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The results were not repeatible, so we changed the plan.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The results were not repeatable, so we changed the plan.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The results were not repeatble, so we changed the plan.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The results were not repeatible, so we changed the plan.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "repeat keeps the a before -able, giving repeatable. Repeatble drops the a and repeatible is the -ible variant of a different family, repeatable being the correct word here.",
               "xp": 10
             },
@@ -716,7 +1253,12 @@
               "difficulty": "advanced",
               "prompt": "His behaveior in the meeting was not acceptible to the other team.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["His behavior in the meeting was not acceptable to the other team."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "His behavior in the meeting was not acceptable to the other team."
+                ]
+              },
               "explanation": "Two spellings at once: behaviour is spelled with our, and accept takes -able with two a and two c, giving acceptable. Acceptible mixes the two suffixes and means nothing.",
               "xp": 10
             },
@@ -729,12 +1271,40 @@
               "prompt": "Match each base word with the adjective that has the opposite quality.",
               "instruction": "Pair every word with its opposite adjective.",
               "items": [
-                { "id": "a", "text": "possible", "isCorrect": null, "matchKey": "impossible" },
-                { "id": "b", "text": "agree", "isCorrect": null, "matchKey": "disagree" },
-                { "id": "c", "text": "careful", "isCorrect": null, "matchKey": "careless" },
-                { "id": "d", "text": "regular", "isCorrect": null, "matchKey": "irregular" }
+                {
+                  "id": "a",
+                  "text": "possible",
+                  "isCorrect": null,
+                  "matchKey": "impossible"
+                },
+                {
+                  "id": "b",
+                  "text": "agree",
+                  "isCorrect": null,
+                  "matchKey": "disagree"
+                },
+                {
+                  "id": "c",
+                  "text": "careful",
+                  "isCorrect": null,
+                  "matchKey": "careless"
+                },
+                {
+                  "id": "d",
+                  "text": "regular",
+                  "isCorrect": null,
+                  "matchKey": "irregular"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "impossible", "b": "disagree", "c": "careless", "d": "irregular" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "impossible",
+                  "b": "disagree",
+                  "c": "careless",
+                  "d": "irregular"
+                }
+              },
               "explanation": "Three different tools are at work: im- before p, dis- to reverse a verb, and -less to remove a quality. Knowing which tool a word uses is what stops you writing uncareful.",
               "xp": 10
             }
@@ -771,8 +1341,18 @@
               "statement": "For most adjectives, add -ly to make the adverb. Adjectives ending in -y change to -ily after a consonant.",
               "formula": "careful -> carefully, happy -> happily",
               "examples": [
-                { "id": "wf-v-ex1", "en": "Please drive carefully on the wet road.", "vi": "Vui lòng lái xe cẩn thận trên đường ướt.", "note": "careful + -ly" },
-                { "id": "wf-v-ex2", "en": "He smiled happily at the good news.", "vi": "Anh ấy mỉm cười vui vẻ với tin tốt.", "note": "happy changes y to i before -ly" }
+                {
+                  "id": "wf-v-ex1",
+                  "en": "Please drive carefully on the wet road.",
+                  "vi": "Vui lòng lái xe cẩn thận trên đường ướt.",
+                  "note": "careful + -ly"
+                },
+                {
+                  "id": "wf-v-ex2",
+                  "en": "He smiled happily at the good news.",
+                  "vi": "Anh ấy mỉm cười vui vẻ với tin tốt.",
+                  "note": "happy changes y to i before -ly"
+                }
               ]
             },
             {
@@ -780,8 +1360,18 @@
               "statement": "A few adjectives end in -ly but are not adjectives at all: friendly, lonely, lovely, silly, ugly. These take no extra -ly, and careless is one -ly adjective that does not describe quality.",
               "formula": "friendly (not friendlly), lonely (not lonelly)",
               "examples": [
-                { "id": "wf-v-ex3", "en": "The neighbours were friendly to everyone.", "vi": "Hàng xóm thân thiện với tất cả mọi người.", "note": "friendly, not friendlly" },
-                { "id": "wf-v-ex4", "en": "It was a lovely afternoon in the park.", "vi": "Đó là một buổi chiều tuyệt vời ở công viên.", "note": "lovely, not lovelly" }
+                {
+                  "id": "wf-v-ex3",
+                  "en": "The neighbours were friendly to everyone.",
+                  "vi": "Hàng xóm thân thiện với tất cả mọi người.",
+                  "note": "friendly, not friendlly"
+                },
+                {
+                  "id": "wf-v-ex4",
+                  "en": "It was a lovely afternoon in the park.",
+                  "vi": "Đó là một buổi chiều tuyệt vời ở công viên.",
+                  "note": "lovely, not lovelly"
+                }
               ]
             },
             {
@@ -789,8 +1379,18 @@
               "statement": "Adjectives of one or two syllables usually take -er and -est. Double the final consonant after a short vowel, as in big to bigger.",
               "formula": "tall -> taller -> tallest, big -> bigger -> biggest",
               "examples": [
-                { "id": "wf-v-ex5", "en": "This box is heavier than that one.", "vi": "Chiếc hộp này nặng hơn chiếc kia.", "note": "heavy keeps the y" },
-                { "id": "wf-v-ex6", "en": "Today is the hottest day of the year.", "vi": "Hôm nay là ngày nóng nhất trong năm.", "note": "hot doubles the t" }
+                {
+                  "id": "wf-v-ex5",
+                  "en": "This box is heavier than that one.",
+                  "vi": "Chiếc hộp này nặng hơn chiếc kia.",
+                  "note": "heavy keeps the y"
+                },
+                {
+                  "id": "wf-v-ex6",
+                  "en": "Today is the hottest day of the year.",
+                  "vi": "Hôm nay là ngày nóng nhất trong năm.",
+                  "note": "hot doubles the t"
+                }
               ]
             },
             {
@@ -798,8 +1398,18 @@
               "statement": "Adjectives of three syllables or more use more and most with no change to the word itself.",
               "formula": "more expensive, most expensive",
               "examples": [
-                { "id": "wf-v-ex7", "en": "The second flat is more expensive but more comfortable.", "vi": "Căn hộ thứ hai đắt hơn nhưng thoải mái hơn.", "note": "no -er on comfortable" },
-                { "id": "wf-v-ex8", "en": "That was the most difficult exam I have ever taken.", "vi": "Đó là bài thi khó nhất mà tôi từng làm.", "note": "most + three-syllable adjective" }
+                {
+                  "id": "wf-v-ex7",
+                  "en": "The second flat is more expensive but more comfortable.",
+                  "vi": "Căn hộ thứ hai đắt hơn nhưng thoải mái hơn.",
+                  "note": "no -er on comfortable"
+                },
+                {
+                  "id": "wf-v-ex8",
+                  "en": "That was the most difficult exam I have ever taken.",
+                  "vi": "Đó là bài thi khó nhất mà tôi từng làm.",
+                  "note": "most + three-syllable adjective"
+                }
               ]
             }
           ]
@@ -808,10 +1418,30 @@
           "id": "wf-adv-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-ve-1", "en": "She speaks English quite fluently.", "vi": "Cô ấy nói tiếng Anh khá trôi chảy.", "note": "fluent + -ly drops the e" },
-            { "id": "wf-ve-2", "en": "The results are better than last year.", "vi": "Kết quả tốt hơn năm ngoái.", "note": "good to better, irregular" },
-            { "id": "wf-ve-3", "en": "He answered the question angrily.", "vi": "Anh ấy trả lời câu hỏi một cách giận dữ.", "note": "angry changes y to i" },
-            { "id": "wf-ve-4", "en": "This is the most expensive restaurant in town.", "vi": "Đây là nhà hàng đắt nhất trong thị trấn.", "note": "four syllables, so most" }
+            {
+              "id": "wf-ve-1",
+              "en": "She speaks English quite fluently.",
+              "vi": "Cô ấy nói tiếng Anh khá trôi chảy.",
+              "note": "fluent + -ly drops the e"
+            },
+            {
+              "id": "wf-ve-2",
+              "en": "The results are better than last year.",
+              "vi": "Kết quả tốt hơn năm ngoái.",
+              "note": "good to better, irregular"
+            },
+            {
+              "id": "wf-ve-3",
+              "en": "He answered the question angrily.",
+              "vi": "Anh ấy trả lời câu hỏi một cách giận dữ.",
+              "note": "angry changes y to i"
+            },
+            {
+              "id": "wf-ve-4",
+              "en": "This is the most expensive restaurant in town.",
+              "vi": "Đây là nhà hàng đắt nhất trong thị trấn.",
+              "note": "four syllables, so most"
+            }
           ]
         },
         {
@@ -826,7 +1456,12 @@
               "difficulty": "intermediate",
               "prompt": "careful - add the suffix -ly to make the adverb.",
               "instruction": "Write the adverb.",
-              "answer": { "type": "text", "values": ["carefully"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "carefully"
+                ]
+              },
               "explanation": "careful + -ly gives carefully with no change to the base word. Careful adjectives that already end in -ly, such as friendly, must not take another -ly.",
               "xp": 10
             },
@@ -838,7 +1473,12 @@
               "difficulty": "intermediate",
               "prompt": "happy - add the suffix -ly to make the adverb.",
               "instruction": "Write the adverb.",
-              "answer": { "type": "text", "values": ["happily"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "happily"
+                ]
+              },
               "explanation": "When -ly follows a y after a consonant, the y changes to i: happily. The same rule gives easily, gently and family, but happily with a kept y is the classic error.",
               "xp": 10
             },
@@ -850,7 +1490,12 @@
               "difficulty": "intermediate",
               "prompt": "big - add the suffix for the comparative.",
               "instruction": "Write the comparative adjective.",
-              "answer": { "type": "text", "values": ["bigger"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "bigger"
+                ]
+              },
               "explanation": "A short vowel followed by a single consonant doubles that consonant before -er, so big becomes bigger. The same pattern gives hot to hotter and thin to thinner, but a word ending in two consonants such as small never doubles.",
               "xp": 10
             },
@@ -862,7 +1507,12 @@
               "difficulty": "intermediate",
               "prompt": "The children were playing friendlly in the garden.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["The children were playing friendly in the garden."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The children were playing friendly in the garden."
+                ]
+              },
               "explanation": "friendly is one of the few adjectives that already ends in -ly. Adding another -ly creates friendlly, which is not a word. Friendly here is an adverb describing how they played.",
               "xp": 10
             },
@@ -875,12 +1525,37 @@
               "prompt": "Which sentence uses the comparative form correctly?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "My new bag is more large than the old one.", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "My new bag is larger than the old one.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "My new bag is larger than an old one.", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "My new bag is the large than the old one.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "My new bag is more large than the old one.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "My new bag is larger than the old one.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "My new bag is larger than an old one.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "My new bag is the large than the old one.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "large already means big, so more large is wrong; the one-syllable adjective takes -er directly. The trap in the last option is the definite article the before a comparative, which needs a second object: larger than the old one.",
               "xp": 10
             }
@@ -893,24 +1568,39 @@
           "items": [
             {
               "id": "wf-adv-d1",
-              "audio": { "kind": "speech", "text": "The little boy ran quickly to catch the bus." },
-              "acceptedAnswers": ["The little boy ran quickly to catch the bus."],
+              "audio": {
+                "kind": "speech",
+                "text": "The little boy ran quickly to catch the bus."
+              },
+              "acceptedAnswers": [
+                "The little boy ran quickly to catch the bus."
+              ],
               "hint": "quick plus -ly",
               "translation": "Cậu bé chạy nhanh để kịp xe buýt.",
               "xp": 15
             },
             {
               "id": "wf-adv-d2",
-              "audio": { "kind": "speech", "text": "This is the most comfortable chair in the office." },
-              "acceptedAnswers": ["This is the most comfortable chair in the office."],
+              "audio": {
+                "kind": "speech",
+                "text": "This is the most comfortable chair in the office."
+              },
+              "acceptedAnswers": [
+                "This is the most comfortable chair in the office."
+              ],
               "hint": "most plus a long adjective",
               "translation": "Đây là chiếc ghế thoải mái nhất trong văn phòng.",
               "xp": 15
             },
             {
               "id": "wf-adv-d3",
-              "audio": { "kind": "speech", "text": "This street is much busier than the one behind the market." },
-              "acceptedAnswers": ["This street is much busier than the one behind the market."],
+              "audio": {
+                "kind": "speech",
+                "text": "This street is much busier than the one behind the market."
+              },
+              "acceptedAnswers": [
+                "This street is much busier than the one behind the market."
+              ],
               "hint": "two-syllable comparative with one y",
               "translation": "Con đường này đông hơn nhiều so với con đường sau chợ.",
               "xp": 15
@@ -931,7 +1621,12 @@
               "difficulty": "intermediate",
               "prompt": "quiet - add the suffix -ly to make the adverb.",
               "instruction": "Write the adverb.",
-              "answer": { "type": "text", "values": ["quietly"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "quietly"
+                ]
+              },
               "explanation": "quiet + -ly gives quietly, keeping the e. Many short adjectives simply take -ly after the e: nicely, safely, politely.",
               "xp": 10
             },
@@ -943,7 +1638,12 @@
               "difficulty": "advanced",
               "prompt": "This restaurant is more expensiver than the one near the station.",
               "instruction": "Rewrite the sentence with the correct form.",
-              "answer": { "type": "text", "values": ["This restaurant is more expensive than the one near the station."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "This restaurant is more expensive than the one near the station."
+                ]
+              },
               "explanation": "expensive already has three syllables, so it cannot take -er. The comparative is more expensive, and never more expensiver.",
               "xp": 10
             },
@@ -956,9 +1656,17 @@
               "prompt": "Adjectives ending in -y take -er and -est with the y unchanged when the y follows a vowel.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "In a word like grey or key the y is part of the vowel sound, so grey becomes greyer and not greyer. Only a y after a consonant changes: happy to happier.",
               "xp": 10
             },
@@ -971,12 +1679,40 @@
               "prompt": "Match each adjective with its comparative form.",
               "instruction": "Pair every adjective with the correct comparative.",
               "items": [
-                { "id": "a", "text": "hot", "isCorrect": null, "matchKey": "hotter" },
-                { "id": "b", "text": "beautiful", "isCorrect": null, "matchKey": "more beautiful" },
-                { "id": "c", "text": "thin", "isCorrect": null, "matchKey": "thinner" },
-                { "id": "d", "text": "difficult", "isCorrect": null, "matchKey": "more difficult" }
+                {
+                  "id": "a",
+                  "text": "hot",
+                  "isCorrect": null,
+                  "matchKey": "hotter"
+                },
+                {
+                  "id": "b",
+                  "text": "beautiful",
+                  "isCorrect": null,
+                  "matchKey": "more beautiful"
+                },
+                {
+                  "id": "c",
+                  "text": "thin",
+                  "isCorrect": null,
+                  "matchKey": "thinner"
+                },
+                {
+                  "id": "d",
+                  "text": "difficult",
+                  "isCorrect": null,
+                  "matchKey": "more difficult"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "hotter", "b": "more beautiful", "c": "thinner", "d": "more difficult" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "hotter",
+                  "b": "more beautiful",
+                  "c": "thinner",
+                  "d": "more difficult"
+                }
+              },
               "explanation": "hot and thin are one syllable with a short vowel and one consonant, so the consonant doubles. beautiful and difficult are three syllables, so they take more and never -er.",
               "xp": 10
             }
@@ -1013,8 +1749,18 @@
               "statement": "Most families contain a verb, a noun, an adjective and an adverb. The verb usually comes first, then the noun, then the adjective, then the adverb.",
               "formula": "decide -> decision -> decisive -> decisively",
               "examples": [
-                { "id": "wf-f-ex1", "en": "We must decide before the meeting ends.", "vi": "Chúng ta phải quyết định trước khi cuộc họp kết thúc.", "note": "the verb, no suffix" },
-                { "id": "wf-f-ex2", "en": "That was a decisive victory.", "vi": "Đó là một chiến thắng mang tính quyết định.", "note": "decide drops the e and adds -ive" }
+                {
+                  "id": "wf-f-ex1",
+                  "en": "We must decide before the meeting ends.",
+                  "vi": "Chúng ta phải quyết định trước khi cuộc họp kết thúc.",
+                  "note": "the verb, no suffix"
+                },
+                {
+                  "id": "wf-f-ex2",
+                  "en": "That was a decisive victory.",
+                  "vi": "Đó là một chiến thắng mang tính quyết định.",
+                  "note": "decide drops the e and adds -ive"
+                }
               ]
             },
             {
@@ -1022,8 +1768,18 @@
               "statement": "Build the adverb last, from the adjective of the same family. Never from the verb directly.",
               "formula": "decisive -> decisively",
               "examples": [
-                { "id": "wf-f-ex3", "en": "The team played decisively in the second half.", "vi": "Đội chơi rất dứt khoát trong hiệp hai.", "note": "decisive + -ly" },
-                { "id": "wf-f-ex4", "en": "She finished the report efficiently.", "vi": "Cô ấy hoàn thành báo cáo một cách hiệu quả.", "note": "efficient and efficiently both drop the e" }
+                {
+                  "id": "wf-f-ex3",
+                  "en": "The team played decisively in the second half.",
+                  "vi": "Đội chơi rất dứt khoát trong hiệp hai.",
+                  "note": "decisive + -ly"
+                },
+                {
+                  "id": "wf-f-ex4",
+                  "en": "She finished the report efficiently.",
+                  "vi": "Cô ấy hoàn thành báo cáo một cách hiệu quả.",
+                  "note": "efficient and efficiently both drop the e"
+                }
               ]
             },
             {
@@ -1031,8 +1787,18 @@
               "statement": "When the root changes spelling to take one suffix, the same change usually applies to the others. Learn the root once, not four words.",
               "formula": "decide (c -> s) -> decision, decisive",
               "examples": [
-                { "id": "wf-f-ex5", "en": "The success of the plan surprised everyone.", "vi": "Sự thành công của kế hoạch khiến mọi người ngạc nhiên.", "note": "succeed + -ion drops the double e" },
-                { "id": "wf-f-ex6", "en": "Her decision was brave and well argued.", "vi": "Quyết định của cô ấy rất dũng cảm và có lập luận chặt chẽ.", "note": "argue + -ment changes u to a" }
+                {
+                  "id": "wf-f-ex5",
+                  "en": "The success of the plan surprised everyone.",
+                  "vi": "Sự thành công của kế hoạch khiến mọi người ngạc nhiên.",
+                  "note": "succeed + -ion drops the double e"
+                },
+                {
+                  "id": "wf-f-ex6",
+                  "en": "Her decision was brave and well argued.",
+                  "vi": "Quyết định của cô ấy rất dũng cảm và có lập luận chặt chẽ.",
+                  "note": "argue + -ment changes u to a"
+                }
               ]
             },
             {
@@ -1040,8 +1806,18 @@
               "statement": "-er on a verb names the person, as in writer or driver. Do not confuse it with the comparative adjective: a faster driver is one who drives fast, a driver is simply a person who drives.",
               "formula": "teach -> teacher, but fast -> faster",
               "examples": [
-                { "id": "wf-f-ex7", "en": "He is a teacher and a good driver.", "vi": "Anh ấy là giáo viên và là một tài xế giỏi.", "note": "-er names a person here" },
-                { "id": "wf-f-ex8", "en": "She is a better driver than her brother.", "vi": "Cô ấy là tài xế giỏi hơn anh trai.", "note": "here -er is the comparative" }
+                {
+                  "id": "wf-f-ex7",
+                  "en": "He is a teacher and a good driver.",
+                  "vi": "Anh ấy là giáo viên và là một tài xế giỏi.",
+                  "note": "-er names a person here"
+                },
+                {
+                  "id": "wf-f-ex8",
+                  "en": "She is a better driver than her brother.",
+                  "vi": "Cô ấy là tài xế giỏi hơn anh trai.",
+                  "note": "here -er is the comparative"
+                }
               ]
             }
           ]
@@ -1050,10 +1826,30 @@
           "id": "wf-fam-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-fe-1", "en": "Their success surprised the whole team.", "vi": "Sự thành công của họ làm cả đội ngạc nhiên.", "note": "succeed, success, successful, successfully" },
-            { "id": "wf-fe-2", "en": "It was a careless mistake, not a bad decision.", "vi": "Đó là một sự sơ ý cẩu thả, không phải một quyết định tệ.", "note": "care (verb) to careless (adjective)" },
-            { "id": "wf-fe-3", "en": "The organisers apologised for the inconvenience.", "vi": "Ban tổ chức xin lỗi vì sự bất tiện này.", "note": "convenience is the noun of convenient" },
-            { "id": "wf-fe-4", "en": "Please state your requirements clearly.", "vi": "Vui lòng nói rõ yêu cầu của bạn.", "note": "requirement, require, required" }
+            {
+              "id": "wf-fe-1",
+              "en": "Their success surprised the whole team.",
+              "vi": "Sự thành công của họ làm cả đội ngạc nhiên.",
+              "note": "succeed, success, successful, successfully"
+            },
+            {
+              "id": "wf-fe-2",
+              "en": "It was a careless mistake, not a bad decision.",
+              "vi": "Đó là một sự sơ ý cẩu thả, không phải một quyết định tệ.",
+              "note": "care (verb) to careless (adjective)"
+            },
+            {
+              "id": "wf-fe-3",
+              "en": "The organisers apologised for the inconvenience.",
+              "vi": "Ban tổ chức xin lỗi vì sự bất tiện này.",
+              "note": "convenience is the noun of convenient"
+            },
+            {
+              "id": "wf-fe-4",
+              "en": "Please state your requirements clearly.",
+              "vi": "Vui lòng nói rõ yêu cầu của bạn.",
+              "note": "requirement, require, required"
+            }
           ]
         },
         {
@@ -1069,14 +1865,54 @@
               "prompt": "Match each verb with the adjective from the same word family.",
               "instruction": "Pair every verb with its adjective.",
               "items": [
-                { "id": "a", "text": "decide", "isCorrect": null, "matchKey": "decisive" },
-                { "id": "b", "text": "succeed", "isCorrect": null, "matchKey": "successful" },
-                { "id": "c", "text": "act", "isCorrect": null, "matchKey": "active" },
-                { "id": "d", "text": "help", "isCorrect": null, "matchKey": "helpful" },
-                { "id": "e", "text": "differ", "isCorrect": null, "matchKey": "different" },
-                { "id": "f", "text": "care", "isCorrect": null, "matchKey": "careless" }
+                {
+                  "id": "a",
+                  "text": "decide",
+                  "isCorrect": null,
+                  "matchKey": "decisive"
+                },
+                {
+                  "id": "b",
+                  "text": "succeed",
+                  "isCorrect": null,
+                  "matchKey": "successful"
+                },
+                {
+                  "id": "c",
+                  "text": "act",
+                  "isCorrect": null,
+                  "matchKey": "active"
+                },
+                {
+                  "id": "d",
+                  "text": "help",
+                  "isCorrect": null,
+                  "matchKey": "helpful"
+                },
+                {
+                  "id": "e",
+                  "text": "differ",
+                  "isCorrect": null,
+                  "matchKey": "different"
+                },
+                {
+                  "id": "f",
+                  "text": "care",
+                  "isCorrect": null,
+                  "matchKey": "careless"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "decisive", "b": "successful", "c": "active", "d": "helpful", "e": "different", "f": "careless" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "decisive",
+                  "b": "successful",
+                  "c": "active",
+                  "d": "helpful",
+                  "e": "different",
+                  "f": "careless"
+                }
+              },
               "explanation": "Every adjective shares the root of its verb: decide to decisive, succeed to successful, act to active, help to helpful, differ to different, care to careless. Notice that care becomes careless with -less, the only negative member of that family.",
               "xp": 10
             },
@@ -1088,7 +1924,12 @@
               "difficulty": "intermediate",
               "prompt": "From the adjective successful, write the adverb.",
               "instruction": "Type the complete adverb.",
-              "answer": { "type": "text", "values": ["successfully"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "successfully"
+                ]
+              },
               "explanation": "successful drops both the e and the l before -ly, giving successfully. Learners often keep the l and write successfullly, which is the double mistake of adding -ly twice.",
               "xp": 10
             },
@@ -1101,11 +1942,31 @@
               "prompt": "Complete the sentence with the correct word: The ___ of the meeting was that nothing was decided.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "failure", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "decide", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "decisive", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "failure",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "decide",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "decisive",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["failure"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "failure"
+                ]
+              },
               "explanation": "The sentence needs a noun after the definite article. decide is the verb and decisive is the adjective, so the noun of the same family is failure, formed with the prefix un- plus fail and the suffix -ure.",
               "xp": 10
             },
@@ -1117,7 +1978,12 @@
               "difficulty": "advanced",
               "prompt": "She did a very good job and finished it successfull.",
               "instruction": "Rewrite the sentence using the correct forms of successful.",
-              "answer": { "type": "text", "values": ["She did a very good job and finished it successfully."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She did a very good job and finished it successfully."
+                ]
+              },
               "explanation": "After the verb finished the sentence needs an adverb, and the adverb of the family is successfully. The adjective successfull is missing its -ly and is not a word; the same error appears in a successfull attempt.",
               "xp": 10
             }
@@ -1130,24 +1996,39 @@
           "items": [
             {
               "id": "wf-fam-d1",
-              "audio": { "kind": "speech", "text": "Their success was the result of careful planning." },
-              "acceptedAnswers": ["Their success was the result of careful planning."],
+              "audio": {
+                "kind": "speech",
+                "text": "Their success was the result of careful planning."
+              },
+              "acceptedAnswers": [
+                "Their success was the result of careful planning."
+              ],
               "hint": "one noun and one adjective from the same family",
               "translation": "Sự thành công của họ là kết quả của việc lên kế hoạch cẩn thận.",
               "xp": 15
             },
             {
               "id": "wf-fam-d2",
-              "audio": { "kind": "speech", "text": "He answered the question confidently and clearly." },
-              "acceptedAnswers": ["He answered the question confidently and clearly."],
+              "audio": {
+                "kind": "speech",
+                "text": "He answered the question confidently and clearly."
+              },
+              "acceptedAnswers": [
+                "He answered the question confidently and clearly."
+              ],
               "hint": "two adverbs from one family and another",
               "translation": "Anh ấy trả lời câu hỏi một cách tự tin và rõ ràng.",
               "xp": 15
             },
             {
               "id": "wf-fam-d3",
-              "audio": { "kind": "speech", "text": "The difference between the two designs is obvious." },
-              "acceptedAnswers": ["The difference between the two designs is obvious."],
+              "audio": {
+                "kind": "speech",
+                "text": "The difference between the two designs is obvious."
+              },
+              "acceptedAnswers": [
+                "The difference between the two designs is obvious."
+              ],
               "hint": "noun of differ",
               "translation": "Sự khác biệt giữa hai thiết kế là rõ ràng.",
               "xp": 15
@@ -1168,7 +2049,12 @@
               "difficulty": "intermediate",
               "prompt": "succeed - add the noun suffix -ion.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["success"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "success"
+                ]
+              },
               "explanation": "succeed drops both the final d and the e before -ion, giving success. successance would be the noun of the verb to succession, which is a different idea entirely.",
               "xp": 10
             },
@@ -1181,11 +2067,31 @@
               "prompt": "Which sentence uses the noun from the correct word family?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Her explanation of the plan was very clearer than mine.", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "Her explanation of the plan was much clearer than mine.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "Her explain of the plan was very clear than mine.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Her explanation of the plan was very clearer than mine.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Her explanation of the plan was much clearer than mine.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Her explain of the plan was very clear than mine.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "clear is already two syllables, so its comparative is clearer and never more clearer. Option c uses the bare verb explain after a possessive pronoun, which needs the noun explanation.",
               "xp": 10
             },
@@ -1197,7 +2103,12 @@
               "difficulty": "advanced",
               "prompt": "The manager gave us a very usefulful advice about the new plan.",
               "instruction": "Rewrite the sentence with the correct forms.",
-              "answer": { "type": "text", "values": ["The manager gave us a very useful piece of advice about the new plan."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The manager gave us a very useful piece of advice about the new plan."
+                ]
+              },
               "explanation": "Two errors: useful must not take a second -ful, and advice is uncountable, so it cannot be counted with a. The standard fix is a piece of advice.",
               "xp": 10
             },
@@ -1210,12 +2121,40 @@
               "prompt": "Match each word with the correct label.",
               "instruction": "Pair every word with its part of speech.",
               "items": [
-                { "id": "a", "text": "requirement", "isCorrect": null, "matchKey": "noun" },
-                { "id": "b", "text": "require", "isCorrect": null, "matchKey": "verb" },
-                { "id": "c", "text": "required", "isCorrect": null, "matchKey": "adjective" },
-                { "id": "d", "text": "quickly", "isCorrect": null, "matchKey": "adverb" }
+                {
+                  "id": "a",
+                  "text": "requirement",
+                  "isCorrect": null,
+                  "matchKey": "noun"
+                },
+                {
+                  "id": "b",
+                  "text": "require",
+                  "isCorrect": null,
+                  "matchKey": "verb"
+                },
+                {
+                  "id": "c",
+                  "text": "required",
+                  "isCorrect": null,
+                  "matchKey": "adjective"
+                },
+                {
+                  "id": "d",
+                  "text": "quickly",
+                  "isCorrect": null,
+                  "matchKey": "adverb"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "noun", "b": "verb", "c": "adjective", "d": "adverb" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "noun",
+                  "b": "verb",
+                  "c": "adjective",
+                  "d": "adverb"
+                }
+              },
               "explanation": "requirement takes -ment as a noun, require is the bare verb, required is the adjective used before a noun, and quickly is the adverb built on quick with -ly.",
               "xp": 10
             }
@@ -1252,8 +2191,18 @@
               "statement": "re- adds the idea of repetition. When the base word begins with a consonant, double it: plan to replan, but read to reread.",
               "formula": "re- + write = rewrite, re- + pair = repair",
               "examples": [
-                { "id": "wf-r2-ex1", "en": "Please rewrite the last paragraph more clearly.", "vi": "Vui lòng viết lại đoạn cuối cho rõ hơn.", "note": "w takes no doubling because the base starts with a vowel sound" },
-                { "id": "wf-r2-ex2", "en": "The engineers had to redesign the whole system.", "vi": "Các kỹ sư phải thiết kế lại toàn bộ hệ thống.", "note": "d doubles before re-" }
+                {
+                  "id": "wf-r2-ex1",
+                  "en": "Please rewrite the last paragraph more clearly.",
+                  "vi": "Vui lòng viết lại đoạn cuối cho rõ hơn.",
+                  "note": "w takes no doubling because the base starts with a vowel sound"
+                },
+                {
+                  "id": "wf-r2-ex2",
+                  "en": "The engineers had to redesign the whole system.",
+                  "vi": "Các kỹ sư phải thiết kế lại toàn bộ hệ thống.",
+                  "note": "d doubles before re-"
+                }
               ]
             },
             {
@@ -1261,8 +2210,18 @@
               "statement": "pre- marks something that happens earlier than the base word, and doubles a following consonant just like re-.",
               "formula": "pre- + view = preview, pre- + pay = prepay",
               "examples": [
-                { "id": "wf-r2-ex3", "en": "The preview gave a good idea of the new film.", "vi": "Phần giới thiệu cho một cái nhìn khá rõ về bộ phim mới.", "note": "pre + view, no doubling because v is a consonant sound" },
-                { "id": "wf-r2-ex4", "en": "You must prepay for the trip before Friday.", "vi": "Bạn phải trả trước cho chuyến đi trước thứ Sáu.", "note": "p doubles after pre-" }
+                {
+                  "id": "wf-r2-ex3",
+                  "en": "The preview gave a good idea of the new film.",
+                  "vi": "Phần giới thiệu cho một cái nhìn khá rõ về bộ phim mới.",
+                  "note": "pre + view, no doubling because v is a consonant sound"
+                },
+                {
+                  "id": "wf-r2-ex4",
+                  "en": "You must prepay for the trip before Friday.",
+                  "vi": "Bạn phải trả trước cho chuyến đi trước thứ Sáu.",
+                  "note": "p doubles after pre-"
+                }
               ]
             },
             {
@@ -1270,8 +2229,18 @@
               "statement": "mis- states that something was done badly or in the wrong way. It is very common on verbs.",
               "formula": "mis- + understand = misunderstand",
               "examples": [
-                { "id": "wf-r2-ex5", "en": "I misunderstood the question and answered too fast.", "vi": "Tôi hiểu sai câu hỏi và trả lời quá nhanh.", "note": "mis- goes on the verb, not on the noun" },
-                { "id": "wf-r2-ex6", "en": "The report was full of misinformation.", "vi": "Báo cáo đầy thông tin sai lệch.", "note": "mis- on the noun is also possible" }
+                {
+                  "id": "wf-r2-ex5",
+                  "en": "I misunderstood the question and answered too fast.",
+                  "vi": "Tôi hiểu sai câu hỏi và trả lời quá nhanh.",
+                  "note": "mis- goes on the verb, not on the noun"
+                },
+                {
+                  "id": "wf-r2-ex6",
+                  "en": "The report was full of misinformation.",
+                  "vi": "Báo cáo đầy thông tin sai lệch.",
+                  "note": "mis- on the noun is also possible"
+                }
               ]
             },
             {
@@ -1279,8 +2248,18 @@
               "statement": "over- means too much or finished, under- means not enough. They work on both verbs and adjectives.",
               "formula": "over- + sleep = oversleep, under- + stand = understand",
               "examples": [
-                { "id": "wf-r2-ex7", "en": "I overslept and missed the first train.", "vi": "Tôi ngủ quên và lỡ mất chuyến tàu sớm.", "note": "over- as a completed action on the verb sleep" },
-                { "id": "wf-r2-ex8", "en": "The estimate was too low, so we underestimated the cost.", "vi": "Ước tính quá thấp, nên chúng tôi đánh giá thấp chi phí.", "note": "under- + estimate = to value too low" }
+                {
+                  "id": "wf-r2-ex7",
+                  "en": "I overslept and missed the first train.",
+                  "vi": "Tôi ngủ quên và lỡ mất chuyến tàu sớm.",
+                  "note": "over- as a completed action on the verb sleep"
+                },
+                {
+                  "id": "wf-r2-ex8",
+                  "en": "The estimate was too low, so we underestimated the cost.",
+                  "vi": "Ước tính quá thấp, nên chúng tôi đánh giá thấp chi phí.",
+                  "note": "under- + estimate = to value too low"
+                }
               ]
             }
           ]
@@ -1289,10 +2268,30 @@
           "id": "wf-pre2-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-r2e-1", "en": "We had to postpone the trip because of the rain.", "vi": "Chúng tôi phải hoãn chuyến đi vì mưa.", "note": "post- is the opposite of pre-" },
-            { "id": "wf-r2e-2", "en": "She was upset about the misunderstanding.", "vi": "Cô ấy buồn vì sự hiểu lầm.", "note": "misunderstand and the noun misunderstanding" },
-            { "id": "wf-r2e-3", "en": "The company overestimated demand last year.", "vi": "Công ty đã đánh giá cao nhu cầu trong năm ngoái.", "note": "over- on a verb of estimation" },
-            { "id": "wf-r2e-4", "en": "Please proofread the letter before you send it.", "vi": "Xin hãy đọc lại và sửa lỗi chính tả thư trước khi gửi.", "note": "proof here means to check, not to prove" }
+            {
+              "id": "wf-r2e-1",
+              "en": "We had to postpone the trip because of the rain.",
+              "vi": "Chúng tôi phải hoãn chuyến đi vì mưa.",
+              "note": "post- is the opposite of pre-"
+            },
+            {
+              "id": "wf-r2e-2",
+              "en": "She was upset about the misunderstanding.",
+              "vi": "Cô ấy buồn vì sự hiểu lầm.",
+              "note": "misunderstand and the noun misunderstanding"
+            },
+            {
+              "id": "wf-r2e-3",
+              "en": "The company overestimated demand last year.",
+              "vi": "Công ty đã đánh giá cao nhu cầu trong năm ngoái.",
+              "note": "over- on a verb of estimation"
+            },
+            {
+              "id": "wf-r2e-4",
+              "en": "Please proofread the letter before you send it.",
+              "vi": "Xin hãy đọc lại và sửa lỗi chính tả thư trước khi gửi.",
+              "note": "proof here means to check, not to prove"
+            }
           ]
         },
         {
@@ -1307,7 +2306,12 @@
               "difficulty": "intermediate",
               "prompt": "write - add the prefix that means again.",
               "instruction": "Write the new verb.",
-              "answer": { "type": "text", "values": ["rewrite"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "rewrite"
+                ]
+              },
               "explanation": "re- + write gives rewrite with no doubled letter, because write begins with a consonant sound. Only a base beginning with a plain consonant doubles, as in replan.",
               "xp": 10
             },
@@ -1319,7 +2323,12 @@
               "difficulty": "intermediate",
               "prompt": "estimate - add the prefix that means to value too highly.",
               "instruction": "Write the verb.",
-              "answer": { "type": "text", "values": ["overestimate"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "overestimate"
+                ]
+              },
               "explanation": "over- + estimate gives overestimate. The same root also produces underestimate with under-, and this pair is one of the most tested opposites in English exams.",
               "xp": 10
             },
@@ -1331,7 +2340,12 @@
               "difficulty": "advanced",
               "prompt": "We have to prepair the meeting until next Monday.",
               "instruction": "Rewrite the sentence with the correct verb.",
-              "answer": { "type": "text", "values": ["We have to postpone the meeting until next Monday."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We have to postpone the meeting until next Monday."
+                ]
+              },
               "explanation": "postpone means to put something later, which matches until next Monday. prepair is not a word, and prepare would need an object (prepare the meeting), not until plus a date.",
               "xp": 10
             },
@@ -1344,12 +2358,40 @@
               "prompt": "Match each prefixed verb with its meaning.",
               "instruction": "Pair every verb with its correct meaning.",
               "items": [
-                { "id": "a", "text": "undergo", "isCorrect": null, "matchKey": "to experience something difficult" },
-                { "id": "b", "text": "predict", "isCorrect": null, "matchKey": "to say something will happen" },
-                { "id": "c", "text": "overcome", "isCorrect": null, "matchKey": "to succeed in dealing with a difficulty" },
-                { "id": "d", "text": "mismanage", "isCorrect": null, "matchKey": "to manage badly" }
+                {
+                  "id": "a",
+                  "text": "undergo",
+                  "isCorrect": null,
+                  "matchKey": "to experience something difficult"
+                },
+                {
+                  "id": "b",
+                  "text": "predict",
+                  "isCorrect": null,
+                  "matchKey": "to say something will happen"
+                },
+                {
+                  "id": "c",
+                  "text": "overcome",
+                  "isCorrect": null,
+                  "matchKey": "to succeed in dealing with a difficulty"
+                },
+                {
+                  "id": "d",
+                  "text": "mismanage",
+                  "isCorrect": null,
+                  "matchKey": "to manage badly"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "to experience something difficult", "b": "to say something will happen", "c": "to succeed in dealing with a difficulty", "d": "to manage badly" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "to experience something difficult",
+                  "b": "to say something will happen",
+                  "c": "to succeed in dealing with a difficulty",
+                  "d": "to manage badly"
+                }
+              },
               "explanation": "under- signals going through something, pre- signals saying in advance, over- signals getting past a difficulty, and mis- signals doing the job badly. Note that under- on a verb often means passing through, not falling short.",
               "xp": 10
             },
@@ -1361,7 +2403,12 @@
               "difficulty": "advanced",
               "prompt": "The team has not decided how to handle the situation, so it is overplaning every step.",
               "instruction": "Rewrite the sentence with the correct prefix.",
-              "answer": { "type": "text", "values": ["The team has not decided how to handle the situation, so it is overplanning every step."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The team has not decided how to handle the situation, so it is overplanning every step."
+                ]
+              },
               "explanation": "overplan needs the double consonant, so the noun is overplanning. A doubled consonant after a prefix is a real spelling change and dropping it is the most frequent mistake with re-, pre- and over-.",
               "xp": 10
             }
@@ -1374,24 +2421,39 @@
           "items": [
             {
               "id": "wf-pre2-d1",
-              "audio": { "kind": "speech", "text": "We had to postpone the wedding because of the storm." },
-              "acceptedAnswers": ["We had to postpone the wedding because of the storm."],
+              "audio": {
+                "kind": "speech",
+                "text": "We had to postpone the wedding because of the storm."
+              },
+              "acceptedAnswers": [
+                "We had to postpone the wedding because of the storm."
+              ],
               "hint": "post- means later",
               "translation": "Chúng tôi phải hoãn đám cưới vì bão.",
               "xp": 15
             },
             {
               "id": "wf-pre2-d2",
-              "audio": { "kind": "speech", "text": "Nobody can predict exactly how the market will change." },
-              "acceptedAnswers": ["Nobody can predict exactly how the market will change."],
+              "audio": {
+                "kind": "speech",
+                "text": "Nobody can predict exactly how the market will change."
+              },
+              "acceptedAnswers": [
+                "Nobody can predict exactly how the market will change."
+              ],
               "hint": "pre- plus dict",
               "translation": "Không ai có thể dự đoán chính xác thị trường sẽ thay đổi thế nào.",
               "xp": 15
             },
             {
               "id": "wf-pre2-d3",
-              "audio": { "kind": "speech", "text": "The factory had to stop production and overhaul the machines." },
-              "acceptedAnswers": ["The factory had to stop production and overhaul the machines."],
+              "audio": {
+                "kind": "speech",
+                "text": "The factory had to stop production and overhaul the machines."
+              },
+              "acceptedAnswers": [
+                "The factory had to stop production and overhaul the machines."
+              ],
               "hint": "over- plus haul",
               "translation": "Nhà máy phải dừng sản xuất và thay toàn bộ máy móc.",
               "xp": 15
@@ -1412,7 +2474,12 @@
               "difficulty": "intermediate",
               "prompt": "pay - add the prefix that means to pay before the due date.",
               "instruction": "Write the verb.",
-              "answer": { "type": "text", "values": ["prepay"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "prepay"
+                ]
+              },
               "explanation": "pre- plus pay doubles the p, giving prepay. The pattern is the same as in prepare and preview: the base begins with a plain consonant, so the consonant doubles.",
               "xp": 10
             },
@@ -1425,11 +2492,31 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The team will rebuild the wall next month.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The team will rebuildb the wall next month.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The team will rebuid the wall next month.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The team will rebuild the wall next month.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The team will rebuildb the wall next month.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The team will rebuid the wall next month.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "build already ends in a consonant, and the l follows a vowel sound, so nothing doubles: rebuild. The b doubles only after a short vowel, as in plan to replan.",
               "xp": 10
             },
@@ -1441,7 +2528,12 @@
               "difficulty": "advanced",
               "prompt": "I have been misereading your emails all morning.",
               "instruction": "Rewrite the sentence with the correct word.",
-              "answer": { "type": "text", "values": ["I have been misreading your emails all morning."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I have been misreading your emails all morning."
+                ]
+              },
               "explanation": "The base word is read, so the verb is misread and the continuous form is misreading. misereading has no base word at all and comes from confusing mis- with miser-.",
               "xp": 10
             },
@@ -1454,11 +2546,31 @@
               "prompt": "Complete the sentence with the correct verb: We must ___ the old system before we install the new one.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "overhaul", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "overhall", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "overhual", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "overhaul",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "overhall",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "overhual",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["overhaul"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "overhaul"
+                ]
+              },
               "explanation": "overhaul means to repair or renew something thoroughly, which is exactly what happens to an old system. Transposing the letters into overhall or overhual is the classic spelling trap for this word.",
               "xp": 10
             }
@@ -1495,8 +2607,18 @@
               "statement": "Some families contain both an -ive and an -ous word. The -ive form is usually an active quality; the -ous form describes a quality in general.",
               "formula": "explode / explosive, create / creative",
               "examples": [
-                { "id": "wf-x-ex1", "en": "The problem is explosive and needs a calm team.", "vi": "Vấn đề rất nhạy cảm và cần một đội ngũ bình tĩnh.", "note": "explosive means likely to explode, like a situation" },
-                { "id": "wf-x-ex2", "en": "She is creative and works best in the morning.", "vi": "Cô ấy sáng tạo và làm việc tốt nhất vào buổi sáng.", "note": "creative names a person, create is the verb" }
+                {
+                  "id": "wf-x-ex1",
+                  "en": "The problem is explosive and needs a calm team.",
+                  "vi": "Vấn đề rất nhạy cảm và cần một đội ngũ bình tĩnh.",
+                  "note": "explosive means likely to explode, like a situation"
+                },
+                {
+                  "id": "wf-x-ex2",
+                  "en": "She is creative and works best in the morning.",
+                  "vi": "Cô ấy sáng tạo và làm việc tốt nhất vào buổi sáng.",
+                  "note": "creative names a person, create is the verb"
+                }
               ]
             },
             {
@@ -1504,8 +2626,18 @@
               "statement": "When two suffix forms name people, they are not interchangeable: an editor and an editor differ in what they do, and -age usually names a place or an institution.",
               "formula": "edit -> editor, village -> village",
               "examples": [
-                { "id": "wf-x-ex3", "en": "The editor checked every line of the article.", "vi": "Biên tập viên đã kiểm tra từng dòng của bài báo.", "note": "editor prepares the text" },
-                { "id": "wf-x-ex4", "en": "The village has one small post office.", "vi": "Làng có một bưu điện nhỏ.", "note": "-age names a place" }
+                {
+                  "id": "wf-x-ex3",
+                  "en": "The editor checked every line of the article.",
+                  "vi": "Biên tập viên đã kiểm tra từng dòng của bài báo.",
+                  "note": "editor prepares the text"
+                },
+                {
+                  "id": "wf-x-ex4",
+                  "en": "The village has one small post office.",
+                  "vi": "Làng có một bưu điện nhỏ.",
+                  "note": "-age names a place"
+                }
               ]
             },
             {
@@ -1513,8 +2645,18 @@
               "statement": "-ness nouns are usually uncountable qualities; -ity nouns often name a specific feature and can be counted.",
               "formula": "with a darkness in it, but with three difficulties",
               "examples": [
-                { "id": "wf-x-ex5", "en": "There was a strange calmness in the room.", "vi": "Trong phòng có một sự bình tĩnh kỳ lạ.", "note": "no article in the usual sense; calmness is a quality" },
-                { "id": "wf-x-ex6", "en": "The road has two narrow sections and three difficulties.", "vi": "Con đường có hai đoạn hẹp và ba chỗ khó đi.", "note": "difficulties can be counted, difficulty in the abstract cannot easily be" }
+                {
+                  "id": "wf-x-ex5",
+                  "en": "There was a strange calmness in the room.",
+                  "vi": "Trong phòng có một sự bình tĩnh kỳ lạ.",
+                  "note": "no article in the usual sense; calmness is a quality"
+                },
+                {
+                  "id": "wf-x-ex6",
+                  "en": "The road has two narrow sections and three difficulties.",
+                  "vi": "Con đường có hai đoạn hẹp và ba chỗ khó đi.",
+                  "note": "difficulties can be counted, difficulty in the abstract cannot easily be"
+                }
               ]
             },
             {
@@ -1522,8 +2664,18 @@
               "statement": "If you are unsure, use a dictionary that lists word families and copy the ending exactly, spelling changes included.",
               "formula": "know -> knowing -> knowledge",
               "examples": [
-                { "id": "wf-x-ex7", "en": "Knowledge of first aid saved the child's life.", "vi": "Kiến thức sơ cứu đã cứu mạng đứa trẻ.", "note": "knowledge, not knowledgement" },
-                { "id": "wf-x-ex8", "en": "We are still learning about the dangers of the job.", "vi": "Chúng tôi vẫn đang tìm hiểu về những nguy hiểm của công việc này.", "note": "danger, dangerous, danger in the same family" }
+                {
+                  "id": "wf-x-ex7",
+                  "en": "Knowledge of first aid saved the child's life.",
+                  "vi": "Kiến thức sơ cứu đã cứu mạng đứa trẻ.",
+                  "note": "knowledge, not knowledgement"
+                },
+                {
+                  "id": "wf-x-ex8",
+                  "en": "We are still learning about the dangers of the job.",
+                  "vi": "Chúng tôi vẫn đang tìm hiểu về những nguy hiểm của công việc này.",
+                  "note": "danger, dangerous, danger in the same family"
+                }
               ]
             }
           ]
@@ -1532,10 +2684,30 @@
           "id": "wf-prec-examples",
           "type": "examples",
           "examples": [
-            { "id": "wf-xe-1", "en": "His success was due to hard work and good luck.", "vi": "Thành công của anh ấy là nhờ chăm chỉ và may mắn.", "note": "success, succeed, successful, successfully" },
-            { "id": "wf-xe-2", "en": "The manager was very helpful during the crisis.", "vi": "Quản lý rất hữu ích trong suốt cuộc khủng hoảng.", "note": "helpful before a noun" },
-            { "id": "wf-xe-3", "en": "The decision was controversial and widely discussed.", "vi": "Quyết định đó gây tranh cãi và được thảo luận rộng rãi.", "note": "controversy, controversial" },
-            { "id": "wf-xe-4", "en": "His behaviour was unacceptable in a public place.", "vi": "Hành vi của anh ấy là không thể chấp nhận ở nơi công cộng.", "note": "accept, acceptable, acceptance" }
+            {
+              "id": "wf-xe-1",
+              "en": "His success was due to hard work and good luck.",
+              "vi": "Thành công của anh ấy là nhờ chăm chỉ và may mắn.",
+              "note": "success, succeed, successful, successfully"
+            },
+            {
+              "id": "wf-xe-2",
+              "en": "The manager was very helpful during the crisis.",
+              "vi": "Quản lý rất hữu ích trong suốt cuộc khủng hoảng.",
+              "note": "helpful before a noun"
+            },
+            {
+              "id": "wf-xe-3",
+              "en": "The decision was controversial and widely discussed.",
+              "vi": "Quyết định đó gây tranh cãi và được thảo luận rộng rãi.",
+              "note": "controversy, controversial"
+            },
+            {
+              "id": "wf-xe-4",
+              "en": "His behaviour was unacceptable in a public place.",
+              "vi": "Hành vi của anh ấy là không thể chấp nhận ở nơi công cộng.",
+              "note": "accept, acceptable, acceptance"
+            }
           ]
         },
         {
@@ -1551,7 +2723,12 @@
               "prompt": "Quyết định của ban giám đốc gây tranh cãi.",
               "instruction": "Translate the sentence into English.",
               "translation": "Quyết định của ban giám đốc gây tranh cãi.",
-              "answer": { "type": "text", "values": ["The directors' decision was controversial."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The directors' decision was controversial."
+                ]
+              },
               "explanation": "The Vietnamese phrase gay tranh cai points to the adjective controversial, not to the noun controversy, because the sentence needs a word after cop. Controversial comes from controversy plus -al, and the a to e shift must be copied exactly.",
               "xp": 10
             },
@@ -1564,12 +2741,37 @@
               "prompt": "Which word names the person who prepares text for printing?",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "editor", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "editer", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "edition", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "editory", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "editor",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "editer",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "edition",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "editory",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "editor keeps the single t and names the person. edition is the printed version, and editer and editory do not exist in standard English.",
               "xp": 10
             },
@@ -1582,11 +2784,31 @@
               "prompt": "Complete the sentence with the noun form: There is a sense of ___ in the empty streets after the festival.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "emptiness", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "empty", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "emptyly", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "emptiness",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "empty",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "emptyly",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["emptiness"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "emptiness"
+                ]
+              },
               "explanation": "a sense of needs a noun naming a quality, so empty becomes emptiness with -ness. empty alone cannot follow of, and emptyly is an adverb of manner, which does not exist as a natural adverb here.",
               "xp": 10
             },
@@ -1598,7 +2820,12 @@
               "difficulty": "advanced",
               "prompt": "Type the noun of the family: the act of accepting or agreeing to something is an ___ .",
               "instruction": "Type the complete noun.",
-              "answer": { "type": "text", "values": ["acceptance"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "acceptance"
+                ]
+              },
               "explanation": "accept keeps both c letters and the t, then takes -ance, giving acceptance. The trap is dropping a letter from the base word, and the even commoner error is using the verb accept where the noun acceptance is needed.",
               "xp": 10
             },
@@ -1610,7 +2837,12 @@
               "difficulty": "advanced",
               "prompt": "His argument was so ___ that nobody could answer it.",
               "instruction": "Write the adjective that fits.",
-              "answer": { "type": "text", "values": ["convincing"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "convincing"
+                ]
+              },
               "explanation": "The sentence needs an adjective meaning strong enough that no one could reply, which is convincing. Other family members do not fit: convincing describes the argument, while convinced describes the person who is persuaded.",
               "xp": 10
             }
@@ -1623,24 +2855,39 @@
           "items": [
             {
               "id": "wf-prec-d1",
-              "audio": { "kind": "speech", "text": "The new policy proved unacceptable to the staff." },
-              "acceptedAnswers": ["The new policy proved unacceptable to the staff."],
+              "audio": {
+                "kind": "speech",
+                "text": "The new policy proved unacceptable to the staff."
+              },
+              "acceptedAnswers": [
+                "The new policy proved unacceptable to the staff."
+              ],
               "hint": "accept plus -able",
               "translation": "Chính sách mới chứng tỏ là không thể chấp nhận đối với nhân viên.",
               "xp": 15
             },
             {
               "id": "wf-prec-d2",
-              "audio": { "kind": "speech", "text": "His convincing speech changed the minds of the judges." },
-              "acceptedAnswers": ["His convincing speech changed the minds of the judges."],
+              "audio": {
+                "kind": "speech",
+                "text": "His convincing speech changed the minds of the judges."
+              },
+              "acceptedAnswers": [
+                "His convincing speech changed the minds of the judges."
+              ],
               "hint": "one c, then one n",
               "translation": "Bài phát biểu thuyết phục của anh ấy đã thay đổi ý kiến của các giám khảo.",
               "xp": 15
             },
             {
               "id": "wf-prec-d3",
-              "audio": { "kind": "speech", "text": "Knowledge of the local language opened many doors for her." },
-              "acceptedAnswers": ["Knowledge of the local language opened many doors for her."],
+              "audio": {
+                "kind": "speech",
+                "text": "Knowledge of the local language opened many doors for her."
+              },
+              "acceptedAnswers": [
+                "Knowledge of the local language opened many doors for her."
+              ],
               "hint": "the noun of know",
               "translation": "Kiến thức về ngôn ngữ địa phương đã mở ra nhiều cơ hội cho cô ấy.",
               "xp": 15
@@ -1661,7 +2908,12 @@
               "difficulty": "advanced",
               "prompt": "accept - add the noun suffix -ance.",
               "instruction": "Write the noun.",
-              "answer": { "type": "text", "values": ["acceptance"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "acceptance"
+                ]
+              },
               "explanation": "accept drops the second c and the t before -ance, giving acceptance. The same family gives acceptable, unacceptable and acceptance, and all of them drop letters before the suffix.",
               "xp": 10
             },
@@ -1673,7 +2925,12 @@
               "difficulty": "advanced",
               "prompt": "The road was closed becuase of the accident.",
               "instruction": "Rewrite the sentence with the correct spelling.",
-              "answer": { "type": "text", "values": ["The road was closed because of the accident."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The road was closed because of the accident."
+                ]
+              },
               "explanation": "because is spelled with an a, not the e that appears in the noun reason. The same confusion produces beacuse, becuase and the wrong form reason of.",
               "xp": 10
             },
@@ -1686,12 +2943,40 @@
               "prompt": "Match each adjective with the noun in the same family.",
               "instruction": "Pair every adjective with its noun.",
               "items": [
-                { "id": "a", "text": "controversial", "isCorrect": null, "matchKey": "controversy" },
-                { "id": "b", "text": "ambitious", "isCorrect": null, "matchKey": "ambition" },
-                { "id": "c", "text": "dangerous", "isCorrect": null, "matchKey": "danger" },
-                { "id": "d", "text": "successful", "isCorrect": null, "matchKey": "success" }
+                {
+                  "id": "a",
+                  "text": "controversial",
+                  "isCorrect": null,
+                  "matchKey": "controversy"
+                },
+                {
+                  "id": "b",
+                  "text": "ambitious",
+                  "isCorrect": null,
+                  "matchKey": "ambition"
+                },
+                {
+                  "id": "c",
+                  "text": "dangerous",
+                  "isCorrect": null,
+                  "matchKey": "danger"
+                },
+                {
+                  "id": "d",
+                  "text": "successful",
+                  "isCorrect": null,
+                  "matchKey": "success"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "controversy", "b": "ambition", "c": "danger", "d": "success" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "controversy",
+                  "b": "ambition",
+                  "c": "danger",
+                  "d": "success"
+                }
+              },
               "explanation": "Each adjective is the -al, -ous or -ive form of the noun, and the vowel change is part of the word: controversy, ambition, danger, success. You cannot derive the adjective by adding a suffix to these nouns.",
               "xp": 10
             },
@@ -1704,9 +2989,17 @@
               "prompt": "Because nouns ending in -ness are always uncountable, we say some darkness but never a darkness.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "Standard -ness nouns such as darkness, happiness and weakness are uncountable qualities, so no plural and no ordinary article. Countable alternatives exist when a noun is needed: a darkness in his voice, two weaknesses in the plan.",
               "xp": 10
             }

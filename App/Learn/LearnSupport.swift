@@ -10,6 +10,7 @@ enum LearnRoute: Hashable {
     case lesson(topicID: String, lessonID: String)
     case alphabet
     case alphabetListening
+    case methods
 }
 
 /// The horizontal level filter shown above the topic browser.

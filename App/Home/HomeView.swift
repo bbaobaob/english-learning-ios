@@ -16,15 +16,15 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: Spacing.xl) {
-                brandMesh()
-                    .frame(height: 0)
-                    .frame(maxWidth: .infinity)
-
                 header
 
-                ContinueLearningCard(model: model) { lessonID, topicID, stepIndex in
-                    open(lessonID: lessonID, topicID: topicID, stepIndex: stepIndex)
-                }
+                ContinueLearningCard(
+                    model: model,
+                    onOpen: { lessonID, topicID, stepIndex in
+                        open(lessonID: lessonID, topicID: topicID, stepIndex: stepIndex)
+                    },
+                    onOpenIELTS: { app.selectedTab = .ielts }
+                )
 
                 DailyGoalCard(model: model)
 

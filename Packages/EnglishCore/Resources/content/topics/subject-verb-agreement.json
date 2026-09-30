@@ -215,7 +215,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "Ending in s tells you nothing on its own. News, information, advice and furniture are all singular despite the s, and sheep and series are plural without it.",
               "xp": 10
@@ -646,7 +646,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Neither is always singular, so is is correct even though my parents is plural. This sentence is one of the standard agreement examples in English.",
               "xp": 10
@@ -1124,7 +1124,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Furniture is uncountable, so the verb is singular even though it means several pieces. If you want a plural, say 'three pieces of furniture are old'.",
               "xp": 10
@@ -1556,7 +1556,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Here the two rules happen to agree, because students is both plural and the nearest subject. The pair is treated as two subjects, so the verb is plural either way, which makes the sentence safe.",
               "xp": 10
@@ -2034,7 +2034,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "It is a dummy subject describing one situation, so the verb is is. The plural noun inside the prepositional phrase has no influence on the verb.",
               "xp": 10

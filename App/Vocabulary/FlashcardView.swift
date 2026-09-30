@@ -323,7 +323,7 @@ struct FlashcardView: View {
     }
 
     private func rate(_ session: FlashcardSession, _ option: GradeButton) {
-        Haptics.forGrade(option.grade)
+        option.fireHaptic()
         session.grade(option.grade)
         UIAccessibility.post(notification: .announcement, argument: "\(option.title). Next card.")
     }
@@ -338,12 +338,15 @@ struct FlashcardView: View {
             .onEnded { value in
                 guard abs(value.translation.width) > abs(value.translation.height) else { return }
                 if value.translation.width < 0 {
+                    // Left: the pessimistic read. Reveal first, then forget.
                     if session.isRevealed {
+                        GradeButton.again.fireHaptic()
                         session.grade(.again)
                     } else {
                         reveal(session)
                     }
                 } else if session.isRevealed {
+                    GradeButton.good.fireHaptic()
                     session.grade(.good)
                 } else {
                     reveal(session)
@@ -532,16 +535,16 @@ enum GradeButton: Int, CaseIterable, Identifiable {
         case .easy: .success
         }
     }
-}
 
-extension Haptics {
-    /// One haptic per rating, so the choice is felt as well as seen.
-    static func forGrade(_ grade: SpacedRepetition.Grade) {
-        switch grade {
+    /// One distinct haptic per rating, so the choice is felt as well as seen.
+    ///
+    /// Lives here rather than as an `extension Haptics` so this lane cannot
+    /// collide with a helper the design-system lane adds to the same type.
+    func fireHaptic() {
+        switch self {
         case .again: Haptics.failure()
         case .hard: Haptics.warning()
-        case .good: Haptics.success()
-        case .easy: Haptics.success()
+        case .good, .easy: Haptics.success()
         }
     }
 }

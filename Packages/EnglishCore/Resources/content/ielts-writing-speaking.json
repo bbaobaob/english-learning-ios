@@ -6,6 +6,7 @@
     {
       "id": "ielts-w-academic-t1-line",
       "title": "Academic Task 1 — Line Graph",
+      "skill": "writing",
       "band": "6.5",
       "minutes": 40,
       "prompt": "The graph below shows the number of mobile phones per 100 people in four countries between 1990 and 2020.\n\nThe data, as given in the graph: Australia recorded 20 phones per 100 people in 1990, 45 in 2000, 75 in 2010 and 92 in 2020. Japan recorded 10 in 1990, 35 in 2000, 80 in 2010 and 95 in 2020. Brazil recorded 2 in 1990, 15 in 2000, 55 in 2010 and 78 in 2020. Nigeria recorded under 1 in 1990, 3 in 2000, 25 in 2010 and 45 in 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
@@ -254,6 +255,7 @@
     {
       "id": "ielts-w-academic-t1-bar",
       "title": "Academic Task 1 — Bar Chart Comparison",
+      "skill": "writing",
       "band": "6.5",
       "minutes": 40,
       "prompt": "The bar chart below compares the average number of hours per week that four groups of people spend on cooking, on exercise and on commuting.\n\nThe data, as given in the chart: full-time workers spend 5 hours cooking, 2 hours exercising and 9 hours commuting. Part-time workers spend 6 hours cooking, 4 hours exercising and 4 hours commuting. Students spend 3 hours cooking, 6 hours exercising and 2 hours commuting. Retirees spend 8 hours cooking, 3 hours exercising and 1 hour commuting.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
@@ -502,6 +504,7 @@
     {
       "id": "ielts-w-academic-t1-process",
       "title": "Academic Task 1 — Process Diagram",
+      "skill": "writing",
       "band": "6.5",
       "minutes": 40,
       "prompt": "The diagram below shows the process by which glass bottles are recycled.\n\nThe stages, as shown in the diagram: Stage 1, empty bottles are collected from household waste and brought to a sorting plant by lorry. Stage 2, the bottles are sorted by colour and by type of glass. Stage 3, the labels, caps and any remaining liquid are removed. Stage 4, the clean bottles are crushed into small fragments, which are called cullet. Stage 5, the cullet is mixed with sand, soda ash and crushed limestone in fixed proportions. Stage 6, the mixture is heated in a furnace to about 1,500 degrees Celsius until it becomes molten glass. Stage 7, the molten glass is poured into moulds to produce new bottles. Stage 8, the new bottles are cooled, inspected and packed for delivery to shops and restaurants.\n\nSummarise the information by selecting and reporting the main features.\n\nWrite at least 150 words.",
@@ -750,6 +753,7 @@
     {
       "id": "ielts-w-academic-t1-table",
       "title": "Academic Task 1 — Table and Pie Chart",
+      "skill": "writing",
       "band": "6.5",
       "minutes": 40,
       "prompt": "The table below shows the average weekly household spending of a family in the United Kingdom in 2015 and in 2022, and the two pie charts show how that spending was divided between the five categories.\n\nThe table, as given: Housing, 180 pounds per week in 2015 and 245 in 2022. Food, 95 in 2015 and 120 in 2022. Transport, 60 in 2015 and 72 in 2022. Leisure, 55 in 2015 and 48 in 2022. Utilities, 40 in 2015 and 58 in 2022. Total spending was 430 pounds per week in 2015 and 543 in 2022.\n\nThe pie charts, as given: in 2015 the shares were Housing 42 per cent, Food 22 per cent, Transport 14 per cent, Leisure 13 per cent and Utilities 9 per cent. In 2022 the shares were Housing 45 per cent, Food 22 per cent, Transport 13 per cent, Leisure 9 per cent and Utilities 11 per cent.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
@@ -927,6 +931,7 @@
     {
       "id": "ielts-w-gt-t1",
       "title": "General Training Task 1 — Letter and Email",
+      "skill": "writing",
       "band": "6.0",
       "minutes": 40,
       "prompt": "The table below shows the number of visits per week to five community facilities in a town in 2010 and in 2025.\n\nThe table, as given: Public library, 1,200 visits in 2010 and 380 in 2025. Swimming pool, 900 and 1,450. Sports centre, 700 and 1,500. Community hall, 500 and 210. Library branch, 450 and 560. The total was 3,750 visits per week in 2010 and 4,100 in 2025.\n\nYou have read a notice in the local newspaper:\n\nTHE COUNCIL PROPOSES TO CLOSE THE PUBLIC LIBRARY AND CONVERT THE BUILDING INTO A FITNESS CENTRE. THE DECISION WILL BE MADE AFTER A PUBLIC VOTE NEXT MONTH.\n\nWrite a letter to the editor of the local newspaper. In your letter:\n• say what facilities the town has now, and how much each one is used;\n• say which facilities people use most and which they use least;\n• say whether you support the council's proposal, and explain why.\n\nWrite at least 150 words.",
@@ -1097,6 +1102,7 @@
     {
       "id": "ielts-w-gt-t2",
       "title": "Task 2 — Opinion Essay, Agree or Disagree",
+      "skill": "writing",
       "band": "6.5",
       "minutes": 40,
       "prompt": "Some people believe that the standard working week should be reduced to four days a week, with the same pay. Others argue that longer hours are necessary if a country's economy is to keep growing. To what extent do you agree or disagree?",
@@ -1268,6 +1274,7 @@
     {
       "id": "ielts-s-p1",
       "title": "Part 1 — Introduction and Interview",
+      "skill": "speaking",
       "band": "6.0",
       "minutes": 5,
       "prompt": "Part 1 Introduction and interview. The examiner introduces the test and the topic, then asks you a series of short questions about a familiar subject such as your hometown, your home, your studies or work, or your hobbies. You should answer in two or three sentences, giving a reason or an example rather than a single word.\n\nQuestions the examiner may ask:\n1. What sort of place do you live in?\n2. Do you like living there?\n3. What do you like most about your neighbourhood?\n4. Has your home changed much in recent years?\n5. What do you usually do at the weekend?\n6. Do you prefer spending your free time indoors or outdoors?\n7. How often do you go out with friends?\n8. Who do you usually spend your evenings with?\n9. What do people in your area usually do at night?\n10. Is there anything about your town that you would change if you could?",
@@ -1344,9 +1351,7 @@
           ],
           "answer": {
             "type": "boolean",
-            "values": [
-              false
-            ]
+            "values": true
           },
           "explanation": "False. A recited answer is recognised immediately, and the examiner will ask a follow-up to test whether you can actually speak. What helps is having the content ready, not the sentences: know that you moved there three years ago, that it is near a park, and that you know your neighbours, and you can build a fresh answer around that whenever it is asked.",
           "xp": 15
@@ -1484,6 +1489,7 @@
     {
       "id": "ielts-s-p1-sets",
       "title": "Part 1 — Hometown, Work or Study, Hobbies",
+      "skill": "speaking",
       "band": "6.0",
       "minutes": 5,
       "prompt": "Part 1 question sets. Part 1 is divided into three or four short topic blocks, usually hometown, work or study, and hobbies. Each block lasts about a minute and a half. The examiner moves between blocks and the topics are chosen at random.\n\nHometown: What is your hometown like? Do you like living there? What has changed most in your hometown in recent years? Would you like to live somewhere else?\n\nWork or study: Do you work, or are you a student? What subject are you studying? What made you choose that subject? Do you think you will use it in the future?\n\nHobbies and free time: What do you usually do in your free time? How did you first get into that? Do you prefer indoor or outdoor activities? Would you like to take up a new hobby in the future?",
@@ -1634,9 +1640,7 @@
           ],
           "answer": {
             "type": "boolean",
-            "values": [
-              true
-            ]
+            "values": true
           },
           "explanation": "True. The blocks are chosen at random and the examiner signals each change with a phrase such as 'let's talk about your hobbies'. Preparing all three or four sets is the standard Part 1 strategy, and it is why candidates who memorise only one topic run out of things to say four minutes into the test.",
           "xp": 15
@@ -1646,6 +1650,7 @@
     {
       "id": "ielts-s-p2",
       "title": "Part 2 — Long Turn, Cue Card: A Person You Admire",
+      "skill": "speaking",
       "band": "6.5",
       "minutes": 4,
       "prompt": "Part 2 Long turn. The examiner gives you a cue card. You have one minute to prepare and make notes. You then talk for one to two minutes. You may look at your notes, but you may not read a script.\n\nCue card:\n\nDescribe a person you admire who is older than you.\nYou should say:\n• who this person is\n• what this person does\n• what this person has done that you admire\n• and explain how this person has influenced your own life.\n\nUse your notes where necessary. You have one minute to prepare, and you should talk for one to two minutes.",
@@ -1773,9 +1778,7 @@
           ],
           "answer": {
             "type": "boolean",
-            "values": [
-              true
-            ]
+            "values": true
           },
           "explanation": "True. Bullet-point notes are explicitly allowed and are the reason the one minute is given. Reading a memorised paragraph is not allowed, and it also fails in practice: recited text is flat, the examiner recognises it, and the accuracy of a memorised script says nothing about your actual speaking ability.",
           "xp": 15
@@ -1833,6 +1836,7 @@
     {
       "id": "ielts-s-p2b",
       "title": "Part 2 — Long Turn, Cue Card: A Place or Event",
+      "skill": "speaking",
       "band": "6.5",
       "minutes": 4,
       "prompt": "Part 2 Long turn, second cue card. You have one minute to prepare, and you should talk for one to two minutes. The examiner may ask one short follow-up question afterwards.\n\nCue card:\n\nDescribe an event you attended that was organised for a large group of people in your city or town.\nYou should say:\n• what the event was\n• where and when it took place\n• who you went with\n• and explain how you felt about being in such a large crowd.\n\nFollow-up question: Would you go to a similar event again, and why?",
@@ -2015,6 +2019,7 @@
     {
       "id": "ielts-s-p3b",
       "title": "Part 3 — Two-way Discussion",
+      "skill": "speaking",
       "band": "7.0",
       "minutes": 5,
       "prompt": "Part 3 Two-way discussion. The examiner and you discuss ideas connected to the Part 2 topic, but at a more general and abstract level. The test lasts four to five minutes and you should speak for roughly two-thirds of that time. You must justify your opinions rather than simply stating them.\n\nDiscussion questions:\n1. Do people today have more freedom of choice than in the past, or less?\n2. Why do you think many people choose a career mainly because of the salary?\n3. Should governments limit the amount of money that professional athletes can earn?\n4. Is it more important to have a high income or to have plenty of free time?\n5. How has technology changed the way that people choose their jobs?\n6. Do you think people with an interesting hobby find it easier to get a job than people without one?\n7. In your country, is it common for young people to change their career more than once in their lives?",
@@ -2142,9 +2147,7 @@
           ],
           "answer": {
             "type": "boolean",
-            "values": [
-              true
-            ]
+            "values": true
           },
           "explanation": "True. Part 3 asks for general reasoning, not local knowledge, and hedged generalisation ('in large cities, people tend to ...') is exactly what the examiner wants to hear. What does not work is a personal story repeated from Part 2, because it keeps the discussion at the level of one person's experience and earns no marks for interaction.",
           "xp": 15

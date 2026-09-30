@@ -25,8 +25,18 @@
               "statement": "A group of words is a clause if it has a subject, a verb, and expresses a complete thought on its own. Words that only name a person or thing are phrases, not clauses.",
               "formula": "The girl / who is wearing a red hat / left early",
               "examples": [
-                { "id": "cl-id-ex1", "en": "The girl who is wearing a red hat left early.", "vi": "Cô gái đội mũ đỏ đã ra về sớm.", "note": "two clauses, each complete on its own" },
-                { "id": "cl-id-ex2", "en": "The tall building stands near the river.", "vi": "Tòa nhà cao nằm gần con sông.", "note": "the tall building is a phrase, not a clause, because there is no verb" }
+                {
+                  "id": "cl-id-ex1",
+                  "en": "The girl who is wearing a red hat left early.",
+                  "vi": "Cô gái đội mũ đỏ đã ra về sớm.",
+                  "note": "two clauses, each complete on its own"
+                },
+                {
+                  "id": "cl-id-ex2",
+                  "en": "The tall building stands near the river.",
+                  "vi": "Tòa nhà cao nằm gần con sông.",
+                  "note": "the tall building is a phrase, not a clause, because there is no verb"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "An independent or main clause has a subject, a verb and a complete meaning. It can end with a full stop.",
               "formula": "I called her. / She was at home.",
               "examples": [
-                { "id": "cl-id-ex3", "en": "I called her.", "vi": "Tôi đã gọi cô ấy.", "note": "complete: subject, verb, no more needed" },
-                { "id": "cl-id-ex4", "en": "The train was late because of the storm.", "vi": "Tàu đến muộn vì bão.", "note": "the first part is independent, the second is not" }
+                {
+                  "id": "cl-id-ex3",
+                  "en": "I called her.",
+                  "vi": "Tôi đã gọi cô ấy.",
+                  "note": "complete: subject, verb, no more needed"
+                },
+                {
+                  "id": "cl-id-ex4",
+                  "en": "The train was late because of the storm.",
+                  "vi": "Tàu đến muộn vì bão.",
+                  "note": "the first part is independent, the second is not"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "A dependent or subordinate clause has a subject and a verb but cannot stand alone. It usually starts with a linking word such as because, when, if, that or although.",
               "formula": "because of the storm / when I arrived / although she was tired",
               "examples": [
-                { "id": "cl-id-ex5", "en": "Because of the storm, the train was late.", "vi": "Vì bão, tàu đến muộn.", "note": "because of the storm alone means nothing" },
-                { "id": "cl-id-ex6", "en": "Although she was tired, she kept working.", "vi": "Mặc dù mệt, cô ấy vẫn tiếp tục làm việc.", "note": "although she was tired alone means nothing" }
+                {
+                  "id": "cl-id-ex5",
+                  "en": "Because of the storm, the train was late.",
+                  "vi": "Vì bão, tàu đến muộn.",
+                  "note": "because of the storm alone means nothing"
+                },
+                {
+                  "id": "cl-id-ex6",
+                  "en": "Although she was tired, she kept working.",
+                  "vi": "Mặc dù mệt, cô ấy vẫn tiếp tục làm việc.",
+                  "note": "although she was tired alone means nothing"
+                }
               ]
             },
             {
@@ -52,8 +82,18 @@
               "statement": "Everything between two verbs that belong to the same clause counts as one clause. Adding a phrase does not create a new clause.",
               "formula": "She left / early / last night / = one clause",
               "examples": [
-                { "id": "cl-id-ex7", "en": "She left early last night.", "vi": "Cô ấy rời đi sớm tối qua.", "note": "one clause with three adverbial elements" },
-                { "id": "cl-id-ex8", "en": "The teacher gave the students a very difficult question.", "vi": "Giáo viên đưa cho học sinh một câu hỏi rất khó.", "note": "one clause even though the sentence is long" }
+                {
+                  "id": "cl-id-ex7",
+                  "en": "She left early last night.",
+                  "vi": "Cô ấy rời đi sớm tối qua.",
+                  "note": "one clause with three adverbial elements"
+                },
+                {
+                  "id": "cl-id-ex8",
+                  "en": "The teacher gave the students a very difficult question.",
+                  "vi": "Giáo viên đưa cho học sinh một câu hỏi rất khó.",
+                  "note": "one clause even though the sentence is long"
+                }
               ]
             }
           ]
@@ -62,10 +102,30 @@
           "id": "cl-id-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-ide-1", "en": "I stayed home because I felt unwell.", "vi": "Tôi ở nhà vì cảm thấy không khỏe.", "note": "independent clause, then a dependent clause of reason" },
-            { "id": "cl-ide-2", "en": "After the meeting finished, everyone went to lunch.", "vi": "Sau khi cuộc họp kết thúc, mọi người đi ăn trưa.", "note": "the after-clause cannot stand alone" },
-            { "id": "cl-ide-3", "en": "The book that I borrowed was very long.", "vi": "Cuốn sách tôi mượn rất dài.", "note": "relative clause identified by that" },
-            { "id": "cl-ide-4", "en": "She speaks three languages, but I speak only one.", "vi": "Cô ấy nói ba thứ tiếng, còn tôi chỉ nói một.", "note": "two independent clauses joined by but" }
+            {
+              "id": "cl-ide-1",
+              "en": "I stayed home because I felt unwell.",
+              "vi": "Tôi ở nhà vì cảm thấy không khỏe.",
+              "note": "independent clause, then a dependent clause of reason"
+            },
+            {
+              "id": "cl-ide-2",
+              "en": "After the meeting finished, everyone went to lunch.",
+              "vi": "Sau khi cuộc họp kết thúc, mọi người đi ăn trưa.",
+              "note": "the after-clause cannot stand alone"
+            },
+            {
+              "id": "cl-ide-3",
+              "en": "The book that I borrowed was very long.",
+              "vi": "Cuốn sách tôi mượn rất dài.",
+              "note": "relative clause identified by that"
+            },
+            {
+              "id": "cl-ide-4",
+              "en": "She speaks three languages, but I speak only one.",
+              "vi": "Cô ấy nói ba thứ tiếng, còn tôi chỉ nói một.",
+              "note": "two independent clauses joined by but"
+            }
           ]
         },
         {
@@ -81,12 +141,37 @@
               "prompt": "Which group of words is a complete independent clause?",
               "instruction": "Choose the complete clause.",
               "items": [
-                { "id": "a", "text": "because the shop was closed", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "the shop on the corner", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "the shop was closed", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "when we arrived at the shop", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "because the shop was closed",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "the shop on the corner",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "the shop was closed",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "when we arrived at the shop",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
               "explanation": "Only the shop was closed has a subject, a verb and a complete meaning. The other groups are a dependent clause (because the shop was closed, when we arrived) and a phrase with no verb (the shop on the corner).",
               "xp": 10
             },
@@ -98,7 +183,14 @@
               "difficulty": "beginner",
               "prompt": "___ the road was flooded, we turned back.",
               "instruction": "Write the linking word.",
-              "answer": { "type": "text", "values": ["Because", "Since", "As"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Because",
+                  "Since",
+                  "As"
+                ]
+              },
               "explanation": "Because, since and as all introduce a dependent clause of reason here. The clause the road was flooded is incomplete on its own, so the sentence needs this link, and all three words are correct because they are listed as variants.",
               "xp": 10
             },
@@ -111,11 +203,31 @@
               "prompt": "Complete the sentence so that both parts are complete clauses: He missed the last bus, ___ he arrived home very late.",
               "instruction": "Complete the sentence with a joining word.",
               "items": [
-                { "id": "a", "text": "so", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "because of", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "which", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "so",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "because of",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "which",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["so"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "so"
+                ]
+              },
               "explanation": "Both halves already have a subject and a verb, so the two independent clauses are joined by a coordinator such as so, and, but, or or nor. because of would need a noun phrase after it, and which refers to a thing and not to a whole clause here.",
               "xp": 10
             },
@@ -127,7 +239,14 @@
               "difficulty": "intermediate",
               "prompt": "Type the word that turns this into a dependent clause of time: ___ I got home, the phone rang.",
               "instruction": "Type the complete linking word.",
-              "answer": { "type": "text", "values": ["When", "As soon as", "Before"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "When",
+                  "As soon as",
+                  "Before"
+                ]
+              },
               "explanation": "Each of these links introduces a dependent clause of time and changes the meaning: when is neutral, as soon as puts the phone call first, before implies the opposite order. All three are correct, which is why they are listed together.",
               "xp": 10
             },
@@ -140,9 +259,17 @@
               "prompt": "Every long sentence in English contains more than one clause.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "Length says nothing about clause count. The teacher gave the students a very difficult question is a long sentence with a single clause, because all the extra words are objects or adverbials, not separate subject and verb pairs.",
               "xp": 10
             }
@@ -155,24 +282,39 @@
           "items": [
             {
               "id": "cl-id-d1",
-              "audio": { "kind": "speech", "text": "Although she was tired, she kept working until the end." },
-              "acceptedAnswers": ["Although she was tired, she kept working until the end."],
+              "audio": {
+                "kind": "speech",
+                "text": "Although she was tired, she kept working until the end."
+              },
+              "acceptedAnswers": [
+                "Although she was tired, she kept working until the end."
+              ],
               "hint": "concession plus a main clause",
               "translation": "Mặc dù mệt, cô ấy vẫn làm việc đến cuối.",
               "xp": 15
             },
             {
               "id": "cl-id-d2",
-              "audio": { "kind": "speech", "text": "I stayed home because I felt unwell." },
-              "acceptedAnswers": ["I stayed home because I felt unwell."],
+              "audio": {
+                "kind": "speech",
+                "text": "I stayed home because I felt unwell."
+              },
+              "acceptedAnswers": [
+                "I stayed home because I felt unwell."
+              ],
               "hint": "reason after the main clause",
               "translation": "Tôi ở nhà vì cảm thấy không khỏe.",
               "xp": 15
             },
             {
               "id": "cl-id-d3",
-              "audio": { "kind": "speech", "text": "After the meeting finished, everyone went to lunch." },
-              "acceptedAnswers": ["After the meeting finished, everyone went to lunch."],
+              "audio": {
+                "kind": "speech",
+                "text": "After the meeting finished, everyone went to lunch."
+              },
+              "acceptedAnswers": [
+                "After the meeting finished, everyone went to lunch."
+              ],
               "hint": "time clause at the front",
               "translation": "Sau khi cuộc họp kết thúc, mọi người đi ăn trưa.",
               "xp": 15
@@ -194,11 +336,31 @@
               "prompt": "Which sentence contains two independent clauses?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "She called me and I called him back.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "She called me because I called him back.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The call that she made was very short.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She called me and I called him back.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She called me because I called him back.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The call that she made was very short.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "In option a both halves have a subject and a verb and each stands alone, joined by and. In b the second half is dependent on because, and in c the second part is a relative clause that cannot stand alone.",
               "xp": 10
             },
@@ -211,11 +373,32 @@
               "prompt": "Complete the sentence: ___ he studied so hard, he failed the test.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "Although", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Because", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "So", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Although",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Because",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "So",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["Although", "Though"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Although",
+                  "Though"
+                ]
+              },
               "explanation": "The two halves contradict each other, so this is a concession clause introduced by although. Because would reverse the logic and so would need an independent clause rather than he studied so hard on its own.",
               "xp": 10
             },
@@ -227,7 +410,12 @@
               "difficulty": "intermediate",
               "prompt": "Because the office was closed yesterday, so we could not send the form.",
               "instruction": "Rewrite the sentence with correct clause structure.",
-              "answer": { "type": "text", "values": ["Because the office was closed yesterday, we could not send the form."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Because the office was closed yesterday, we could not send the form."
+                ]
+              },
               "explanation": "A dependent clause introduced by because cannot be followed by so, because so already joins two independent clauses. Keep one linker: either because at the front, or so after two independent clauses.",
               "xp": 10
             },
@@ -240,9 +428,17 @@
               "prompt": "A dependent clause can be a complete sentence if it is followed by a comma.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "Punctuation cannot complete a thought. A dependent clause stays incomplete no matter how it is punctuated, and because the shop was closed followed by a full stop is still not a sentence.",
               "xp": 10
             }
@@ -279,8 +475,18 @@
               "statement": "Use who for people and which for things in defining relative clauses. that works for both.",
               "formula": "The man who called you is here. / The book which I bought is here.",
               "examples": [
-                { "id": "cl-rl-ex1", "en": "The man who called you this morning is my neighbour.", "vi": "Người đàn ông gọi cho bạn sáng nay là hàng xóm của tôi.", "note": "who for a person" },
-                { "id": "cl-rl-ex2", "en": "The book which I bought yesterday is very long.", "vi": "Cuốn sách tôi mua hôm qua rất dài.", "note": "which for a thing" }
+                {
+                  "id": "cl-rl-ex1",
+                  "en": "The man who called you this morning is my neighbour.",
+                  "vi": "Người đàn ông gọi cho bạn sáng nay là hàng xóm của tôi.",
+                  "note": "who for a person"
+                },
+                {
+                  "id": "cl-rl-ex2",
+                  "en": "The book which I bought yesterday is very long.",
+                  "vi": "Cuốn sách tôi mua hôm qua rất dài.",
+                  "note": "which for a thing"
+                }
               ]
             },
             {
@@ -288,8 +494,18 @@
               "statement": "Use where to replace in or at with a place, and when to replace in or at with a time.",
               "formula": "This is the town where I grew up. / I still remember the day when we met.",
               "examples": [
-                { "id": "cl-rl-ex3", "en": "This is the village where my grandmother was born.", "vi": "Đây là ngôi làng nơi bà tôi sinh ra.", "note": "where replaces in the village" },
-                { "id": "cl-rl-ex4", "en": "I still remember the day when we first met.", "vi": "Tôi vẫn nhớ ngày chúng tôi gặp nhau lần đầu.", "note": "when replaces on the day" }
+                {
+                  "id": "cl-rl-ex3",
+                  "en": "This is the village where my grandmother was born.",
+                  "vi": "Đây là ngôi làng nơi bà tôi sinh ra.",
+                  "note": "where replaces in the village"
+                },
+                {
+                  "id": "cl-rl-ex4",
+                  "en": "I still remember the day when we first met.",
+                  "vi": "Tôi vẫn nhớ ngày chúng tôi gặp nhau lần đầu.",
+                  "note": "when replaces on the day"
+                }
               ]
             },
             {
@@ -297,8 +513,18 @@
               "statement": "When the relative pronoun is the object of the clause, it can be dropped: the book which I read is the same as the book I read.",
               "formula": "The film (which) we saw last night was excellent.",
               "examples": [
-                { "id": "cl-rl-ex5", "en": "The film we saw last night was excellent.", "vi": "Bộ phim chúng tôi xem tối qua rất hay.", "note": "which is the object, so it can be omitted" },
-                { "id": "cl-rl-ex6", "en": "The film which we saw last night was excellent.", "vi": "Bộ phim mà chúng tôi xem tối qua rất hay.", "note": "the full form, correct but heavier" }
+                {
+                  "id": "cl-rl-ex5",
+                  "en": "The film we saw last night was excellent.",
+                  "vi": "Bộ phim chúng tôi xem tối qua rất hay.",
+                  "note": "which is the object, so it can be omitted"
+                },
+                {
+                  "id": "cl-rl-ex6",
+                  "en": "The film which we saw last night was excellent.",
+                  "vi": "Bộ phim mà chúng tôi xem tối qua rất hay.",
+                  "note": "the full form, correct but heavier"
+                }
               ]
             },
             {
@@ -306,8 +532,18 @@
               "statement": "Defining relative clauses sit tight against the noun and take no commas. If you can remove the clause and the sentence loses its meaning, it is defining.",
               "formula": "My sister, who lives in Hue, is a doctor. (not defining: commas)",
               "examples": [
-                { "id": "cl-rl-ex7", "en": "The students who live in the dormitory study every evening.", "vi": "Những sinh viên sống trong ký túc xá học vào mỗi tối.", "note": "no comma: it identifies which students" },
-                { "id": "cl-rl-ex8", "en": "All the students study every evening.", "vi": "Tất cả sinh viên đều học vào mỗi tối.", "note": "removing the clause changes the meaning completely" }
+                {
+                  "id": "cl-rl-ex7",
+                  "en": "The students who live in the dormitory study every evening.",
+                  "vi": "Những sinh viên sống trong ký túc xá học vào mỗi tối.",
+                  "note": "no comma: it identifies which students"
+                },
+                {
+                  "id": "cl-rl-ex8",
+                  "en": "All the students study every evening.",
+                  "vi": "Tất cả sinh viên đều học vào mỗi tối.",
+                  "note": "removing the clause changes the meaning completely"
+                }
               ]
             }
           ]
@@ -316,10 +552,30 @@
           "id": "cl-rl-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-rle-1", "en": "I know a restaurant which serves very cheap food.", "vi": "Tôi biết một nhà hàng phục vụ món ăn rất rẻ.", "note": "which defines the restaurant" },
-            { "id": "cl-rle-2", "en": "This is the room where I wrote my report.", "vi": "Đây là căn phòng nơi tôi viết báo cáo.", "note": "where with a place" },
-            { "id": "cl-rle-3", "en": "She is the kind of person who never forgets a name.", "vi": "Cô ấy là kiểu người không bao giờ quên một cái tên.", "note": "who after a person described by kind" },
-            { "id": "cl-rle-4", "en": "The train that we missed was the express.", "vi": "Chuyến tàu chúng tôi bỏ lỡ là tàu tốc hành.", "note": "that for a thing, common in speech" }
+            {
+              "id": "cl-rle-1",
+              "en": "I know a restaurant which serves very cheap food.",
+              "vi": "Tôi biết một nhà hàng phục vụ món ăn rất rẻ.",
+              "note": "which defines the restaurant"
+            },
+            {
+              "id": "cl-rle-2",
+              "en": "This is the room where I wrote my report.",
+              "vi": "Đây là căn phòng nơi tôi viết báo cáo.",
+              "note": "where with a place"
+            },
+            {
+              "id": "cl-rle-3",
+              "en": "She is the kind of person who never forgets a name.",
+              "vi": "Cô ấy là kiểu người không bao giờ quên một cái tên.",
+              "note": "who after a person described by kind"
+            },
+            {
+              "id": "cl-rle-4",
+              "en": "The train that we missed was the express.",
+              "vi": "Chuyến tàu chúng tôi bỏ lỡ là tàu tốc hành.",
+              "note": "that for a thing, common in speech"
+            }
           ]
         },
         {
@@ -334,7 +590,13 @@
               "difficulty": "beginner",
               "prompt": "The house ___ we rented last year needs a new roof.",
               "instruction": "Write the relative pronoun.",
-              "answer": { "type": "text", "values": ["which", "that"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "which",
+                  "that"
+                ]
+              },
               "explanation": "house is a thing, so which is correct and that is also standard in defining clauses. Because we is the object of the clause, the pronoun can also be dropped entirely, leaving the house we rented.",
               "xp": 10
             },
@@ -347,11 +609,31 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "This is the street where my grandfather used to live.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "This is the street which my grandfather used to live.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "This is the street in where my grandfather used to live.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "This is the street where my grandfather used to live.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "This is the street which my grandfather used to live.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "This is the street in where my grandfather used to live.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "In a defining relative clause where replaces in, so the street where he lived is correct. Using which with the preposition in embedded inside the clause, as in in which, is not standard for defining clauses, and in where doubles the preposition.",
               "xp": 10
             },
@@ -364,11 +646,31 @@
               "prompt": "Complete the sentence with the correct relative word: The project ___ I worked on last year has finished.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "that", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "where", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "when", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "that",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "where",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "when",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["that"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "that"
+                ]
+              },
               "explanation": "The clause needs an object for worked on, so it takes a relative pronoun. where would mean in the project, which is not sensible, and when would mean at the time, which also changes the meaning.",
               "xp": 10
             },
@@ -380,7 +682,12 @@
               "difficulty": "intermediate",
               "prompt": "The car, that my father bought last year, is very old now.",
               "instruction": "Rewrite the sentence as a defining relative clause.",
-              "answer": { "type": "text", "values": ["The car that my father bought last year is very old now."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The car that my father bought last year is very old now."
+                ]
+              },
               "explanation": "A defining relative clause must not have commas, because it identifies the car rather than adding extra information. With commas the clause describes all cars, so the sentence would need every or which means nothing wrong.",
               "xp": 10
             },
@@ -393,17 +700,75 @@
               "prompt": "Build the sentence: the woman / who / lives / next door / is / a / doctor",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "woman", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "who", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "lives", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "next", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "door", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "is", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "a", "isCorrect": null, "matchKey": null },
-                { "id": "w9", "text": "doctor", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "woman",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "who",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "lives",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "next",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "door",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "is",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "a",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w9",
+                  "text": "doctor",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["the", "woman", "who", "lives", "next", "door", "is", "a", "doctor"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "the",
+                  "woman",
+                  "who",
+                  "lives",
+                  "next",
+                  "door",
+                  "is",
+                  "a",
+                  "doctor"
+                ]
+              },
               "explanation": "The relative clause who lives next door must sit directly after the noun it describes, and the main clause the woman is a doctor keeps its subject and verb together around it. Placing the clause after the verb would break the defining relationship.",
               "xp": 10
             }
@@ -416,24 +781,39 @@
           "items": [
             {
               "id": "cl-rl-d1",
-              "audio": { "kind": "speech", "text": "The house where we grew up has been sold." },
-              "acceptedAnswers": ["The house where we grew up has been sold."],
+              "audio": {
+                "kind": "speech",
+                "text": "The house where we grew up has been sold."
+              },
+              "acceptedAnswers": [
+                "The house where we grew up has been sold."
+              ],
               "hint": "where for a place",
               "translation": "Ngôi nhà nơi chúng tôi lớn lên đã được bán.",
               "xp": 15
             },
             {
               "id": "cl-rl-d2",
-              "audio": { "kind": "speech", "text": "I know a woman who speaks six languages." },
-              "acceptedAnswers": ["I know a woman who speaks six languages."],
+              "audio": {
+                "kind": "speech",
+                "text": "I know a woman who speaks six languages."
+              },
+              "acceptedAnswers": [
+                "I know a woman who speaks six languages."
+              ],
               "hint": "who for a person",
               "translation": "Tôi biết một người phụ nữ nói sáu thứ tiếng.",
               "xp": 15
             },
             {
               "id": "cl-rl-d3",
-              "audio": { "kind": "speech", "text": "The film that we watched last night was excellent." },
-              "acceptedAnswers": ["The film that we watched last night was excellent."],
+              "audio": {
+                "kind": "speech",
+                "text": "The film that we watched last night was excellent."
+              },
+              "acceptedAnswers": [
+                "The film that we watched last night was excellent."
+              ],
               "hint": "that for a thing",
               "translation": "Bộ phim chúng tôi xem tối qua rất hay.",
               "xp": 15
@@ -455,11 +835,32 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The people who we invited have already left.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The people which we invited have already left.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The people whom we invited have already left.", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The people who we invited have already left.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The people which we invited have already left.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The people whom we invited have already left.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "who is correct in everyday English, and whom is the formal object form of who, so both are right. which is used for things, and people is a group of people rather than a thing.",
               "xp": 10
             },
@@ -471,7 +872,12 @@
               "difficulty": "intermediate",
               "prompt": "The teacher, that taught us grammar, has retired.",
               "instruction": "Rewrite the sentence as a defining relative clause.",
-              "answer": { "type": "text", "values": ["The teacher who taught us grammar has retired."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The teacher who taught us grammar has retired."
+                ]
+              },
               "explanation": "That has no commas in a defining clause, and a teacher is a person, so who is the natural pronoun. The commas here would wrongly mean all teachers have retired.",
               "xp": 10
             },
@@ -483,7 +889,13 @@
               "difficulty": "advanced",
               "prompt": "This is the reason ___ she left the company.",
               "instruction": "Write the relative word.",
-              "answer": { "type": "text", "values": ["why", "for which"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "why",
+                  "for which"
+                ]
+              },
               "explanation": "reason why is the standard phrase, and for which is the formal equivalent. reason which is not English, and the trap is forgetting that reason already carries the idea of cause.",
               "xp": 10
             },
@@ -496,11 +908,31 @@
               "prompt": "Complete the sentence: That is the house ___ I grew up, ___ has a small garden.",
               "instruction": "Complete the sentence with the two relative words.",
               "items": [
-                { "id": "a", "text": "where, which", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "which, that", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "what, it", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "where, which",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "which, that",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "what, it",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["where, which"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "where, which"
+                ]
+              },
               "explanation": "The first clause describes a place, so it needs where. The second clause describes the garden, which is a thing and not a place, so it needs which. Using what here would leave the first clause with no preposition and no location.",
               "xp": 10
             }
@@ -537,8 +969,18 @@
               "statement": "A non-defining clause is separated from the main clause by a pair of commas. Without the commas the sentence changes meaning completely.",
               "formula": "My brother, who is a doctor, lives in Hue.",
               "examples": [
-                { "id": "cl-nd-ex1", "en": "My brother, who is a doctor, lives in Hue.", "vi": "Anh trai tôi, là một bác sĩ, sống ở Huế.", "note": "remove the clause and the sentence still works: My brother lives in Hue" },
-                { "id": "cl-nd-ex2", "en": "My brother who is a doctor lives in Hue.", "vi": "Người anh trai làm bác sĩ của tôi sống ở Huế.", "note": "no commas: now it means only one brother, and the rest are excluded" }
+                {
+                  "id": "cl-nd-ex1",
+                  "en": "My brother, who is a doctor, lives in Hue.",
+                  "vi": "Anh trai tôi, là một bác sĩ, sống ở Huế.",
+                  "note": "remove the clause and the sentence still works: My brother lives in Hue"
+                },
+                {
+                  "id": "cl-nd-ex2",
+                  "en": "My brother who is a doctor lives in Hue.",
+                  "vi": "Người anh trai làm bác sĩ của tôi sống ở Huế.",
+                  "note": "no commas: now it means only one brother, and the rest are excluded"
+                }
               ]
             },
             {
@@ -546,8 +988,18 @@
               "statement": "You cannot add extra information about an unspecified person or thing. You may add it about a named person, a place or a time.",
               "formula": "Hue, which is a small city, is very old. / The car, which is red, is fast. (wrong)",
               "examples": [
-                { "id": "cl-nd-ex3", "en": "Da Nang, which is a coastal city, is growing fast.", "vi": "Đà Nẵng, là một thành phố ven biển, đang phát triển nhanh.", "note": "allowed: Da Nang is already identified" },
-                { "id": "cl-nd-ex4", "en": "A city, which is a coastal city, is growing fast.", "vi": "Một thành phố, là một thành phố ven biển, đang phát triển nhanh.", "note": "wrong: the extra clause repeats what the main clause says" }
+                {
+                  "id": "cl-nd-ex3",
+                  "en": "Da Nang, which is a coastal city, is growing fast.",
+                  "vi": "Đà Nẵng, là một thành phố ven biển, đang phát triển nhanh.",
+                  "note": "allowed: Da Nang is already identified"
+                },
+                {
+                  "id": "cl-nd-ex4",
+                  "en": "A city, which is a coastal city, is growing fast.",
+                  "vi": "Một thành phố, là một thành phố ven biển, đang phát triển nhanh.",
+                  "note": "wrong: the extra clause repeats what the main clause says"
+                }
               ]
             },
             {
@@ -555,8 +1007,18 @@
               "statement": "Use whose to show that the thing belongs to the person named in the clause, not which or who.",
               "formula": "Maria, whose brother is a pilot, called me.",
               "examples": [
-                { "id": "cl-nd-ex5", "en": "Maria, whose brother is a pilot, called me yesterday.", "vi": "Maria, người có anh trai là phi công, đã gọi cho tôi hôm qua.", "note": "whose replaces the and his" },
-                { "id": "cl-nd-ex6", "en": "The doctor, whose patient was late, waited an hour.", "vi": "Bác sĩ, người có bệnh nhân đến muộn, đã đợi một tiếng.", "note": "whose for a thing: the doctor's patient" }
+                {
+                  "id": "cl-nd-ex5",
+                  "en": "Maria, whose brother is a pilot, called me yesterday.",
+                  "vi": "Maria, người có anh trai là phi công, đã gọi cho tôi hôm qua.",
+                  "note": "whose replaces the and his"
+                },
+                {
+                  "id": "cl-nd-ex6",
+                  "en": "The doctor, whose patient was late, waited an hour.",
+                  "vi": "Bác sĩ, người có bệnh nhân đến muộn, đã đợi một tiếng.",
+                  "note": "whose for a thing: the doctor's patient"
+                }
               ]
             },
             {
@@ -564,8 +1026,18 @@
               "statement": "that is only for defining clauses. A non-defining clause uses who, which or whose, never that.",
               "formula": "My sister, who is a nurse, works at a hospital. (not that)",
               "examples": [
-                { "id": "cl-nd-ex7", "en": "My sister, who is a nurse, works in a hospital.", "vi": "Chị tôi, là một y tá, làm việc ở bệnh viện.", "note": "who, because the clause is not defining" },
-                { "id": "cl-nd-ex8", "en": "My sister that is a nurse works in a hospital.", "vi": "Chị tôi làm y tá làm việc ở bệnh viện.", "note": "no commas, so this is defining and means only one sister" }
+                {
+                  "id": "cl-nd-ex7",
+                  "en": "My sister, who is a nurse, works in a hospital.",
+                  "vi": "Chị tôi, là một y tá, làm việc ở bệnh viện.",
+                  "note": "who, because the clause is not defining"
+                },
+                {
+                  "id": "cl-nd-ex8",
+                  "en": "My sister that is a nurse works in a hospital.",
+                  "vi": "Chị tôi làm y tá làm việc ở bệnh viện.",
+                  "note": "no commas, so this is defining and means only one sister"
+                }
               ]
             }
           ]
@@ -574,10 +1046,30 @@
           "id": "cl-nd-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-nde-1", "en": "My father, who was a fisherman, never spoke about the sea.", "vi": "Bố tôi, từng là ngư phủ, không bao giờ nói về biển.", "note": "extra information about a known person" },
-            { "id": "cl-nde-2", "en": "The hotel, which stands on the beach, is fully booked.", "vi": "Khách sạn, nằm ngay trên bãi biển, đã kín chỗ.", "note": "which describes a named place" },
-            { "id": "cl-nde-3", "en": "Lan, whose English is excellent, gave the presentation.", "vi": "Lan, có tiếng Anh rất tốt, đã thuyết trình.", "note": "whose for possession" },
-            { "id": "cl-nde-4", "en": "That book, which I bought in Hanoi, is worth reading twice.", "vi": "Cuốn sách đó, mà tôi đã mua ở Hà Nội, đáng đọc hai lần.", "note": "an identifying expression plus a non-defining clause" }
+            {
+              "id": "cl-nde-1",
+              "en": "My father, who was a fisherman, never spoke about the sea.",
+              "vi": "Bố tôi, từng là ngư phủ, không bao giờ nói về biển.",
+              "note": "extra information about a known person"
+            },
+            {
+              "id": "cl-nde-2",
+              "en": "The hotel, which stands on the beach, is fully booked.",
+              "vi": "Khách sạn, nằm ngay trên bãi biển, đã kín chỗ.",
+              "note": "which describes a named place"
+            },
+            {
+              "id": "cl-nde-3",
+              "en": "Lan, whose English is excellent, gave the presentation.",
+              "vi": "Lan, có tiếng Anh rất tốt, đã thuyết trình.",
+              "note": "whose for possession"
+            },
+            {
+              "id": "cl-nde-4",
+              "en": "That book, which I bought in Hanoi, is worth reading twice.",
+              "vi": "Cuốn sách đó, mà tôi đã mua ở Hà Nội, đáng đọc hai lần.",
+              "note": "an identifying expression plus a non-defining clause"
+            }
           ]
         },
         {
@@ -593,11 +1085,31 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "My car, that I bought last year, has broken down.", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "My car, which I bought last year, has broken down.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "A car, which is very old, has broken down.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "My car, that I bought last year, has broken down.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "My car, which I bought last year, has broken down.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "A car, which is very old, has broken down.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "The clause is set off by commas, so it must use which and never that. Option c also fails on the second rule: you cannot add extra information about an unspecified car, especially when the clause only repeats what has just been said.",
               "xp": 10
             },
@@ -609,7 +1121,12 @@
               "difficulty": "intermediate",
               "prompt": "Minh, ___ car is electric, lives near the airport.",
               "instruction": "Write the relative pronoun.",
-              "answer": { "type": "text", "values": ["whose"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "whose"
+                ]
+              },
               "explanation": "whose shows possession and replaces and his. who and which would need a verb to say the same thing, and that is not allowed in a non-defining clause.",
               "xp": 10
             },
@@ -621,7 +1138,12 @@
               "difficulty": "intermediate",
               "prompt": "The students, who live in Hue, study English every day.",
               "instruction": "Rewrite the sentence so that it has only one student.",
-              "answer": { "type": "text", "values": ["The student who lives in Hue studies English every day."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The student who lives in Hue studies English every day."
+                ]
+              },
               "explanation": "With commas the sentence means all the students live in Hue, which is not what the writer intends. Remove the commas, singularise the nouns and add the s to study so the sentence identifies one particular student.",
               "xp": 10
             },
@@ -634,16 +1156,68 @@
               "prompt": "Build the sentence: Lan / whose / English / is / excellent / gave / the / presentation",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "Lan", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "whose", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "English", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "is", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "excellent", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "gave", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "presentation", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "Lan",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "whose",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "English",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "is",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "excellent",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "gave",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "presentation",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["Lan", "whose", "English", "is", "excellent", "gave", "the", "presentation"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "Lan",
+                  "whose",
+                  "English",
+                  "is",
+                  "excellent",
+                  "gave",
+                  "the",
+                  "presentation"
+                ]
+              },
               "explanation": "The non-defining clause whose English is excellent has to come immediately after Lan, and the main clause Lan gave the presentation follows. Moving the clause to the end of the sentence would leave it describing nothing, because gave the presentation has no noun for it to attach to.",
               "xp": 10
             }
@@ -656,24 +1230,39 @@
           "items": [
             {
               "id": "cl-nd-d1",
-              "audio": { "kind": "speech", "text": "My father, who was a fisherman, never spoke about the sea." },
-              "acceptedAnswers": ["My father, who was a fisherman, never spoke about the sea."],
+              "audio": {
+                "kind": "speech",
+                "text": "My father, who was a fisherman, never spoke about the sea."
+              },
+              "acceptedAnswers": [
+                "My father, who was a fisherman, never spoke about the sea."
+              ],
               "hint": "commas around extra information",
               "translation": "Bố tôi, từng là ngư phủ, không bao giờ nói về biển.",
               "xp": 15
             },
             {
               "id": "cl-nd-d2",
-              "audio": { "kind": "speech", "text": "Maria, whose brother is a pilot, called me yesterday." },
-              "acceptedAnswers": ["Maria, whose brother is a pilot, called me yesterday."],
+              "audio": {
+                "kind": "speech",
+                "text": "Maria, whose brother is a pilot, called me yesterday."
+              },
+              "acceptedAnswers": [
+                "Maria, whose brother is a pilot, called me yesterday."
+              ],
               "hint": "whose for possession",
               "translation": "Maria, người có anh trai là phi công, đã gọi cho tôi hôm qua.",
               "xp": 15
             },
             {
               "id": "cl-nd-d3",
-              "audio": { "kind": "speech", "text": "Da Nang, which is a coastal city, is growing very fast." },
-              "acceptedAnswers": ["Da Nang, which is a coastal city, is growing very fast."],
+              "audio": {
+                "kind": "speech",
+                "text": "Da Nang, which is a coastal city, is growing very fast."
+              },
+              "acceptedAnswers": [
+                "Da Nang, which is a coastal city, is growing very fast."
+              ],
               "hint": "which about a named place",
               "translation": "Đà Nẵng, là một thành phố ven biển, đang phát triển rất nhanh.",
               "xp": 15
@@ -695,11 +1284,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Hue, which is a small city, has a famous citadel.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Hue that is a small city has a famous citadel.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "A city, which is small, has a famous citadel.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Hue, which is a small city, has a famous citadel.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Hue that is a small city has a famous citadel.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "A city, which is small, has a famous citadel.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A named place may take extra information, and the comma pair signals that the clause is not defining, which requires which rather than that. The second rule again rules out option c.",
               "xp": 10
             },
@@ -711,7 +1320,12 @@
               "difficulty": "advanced",
               "prompt": "The report, that was written last week, has been approved.",
               "instruction": "Rewrite the sentence with the correct relative pronoun.",
-              "answer": { "type": "text", "values": ["The report, which was written last week, has been approved."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The report, which was written last week, has been approved."
+                ]
+              },
               "explanation": "that is not used with commas, because a comma clause is by definition non-defining. Replace it with which, which is a thing and takes the passive verb written without further change.",
               "xp": 10
             },
@@ -724,11 +1338,31 @@
               "prompt": "Complete the sentence with the correct possessive pronoun: Thu, ___ parents both work at the university, studies chemistry.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "whose", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "which", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "who", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "whose",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "which",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "who",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["whose"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "whose"
+                ]
+              },
               "explanation": "whose links the parents to Thu and replaces and her. who would need a verb, as in whose parents are, and which is for things rather than for possession.",
               "xp": 10
             },
@@ -741,12 +1375,40 @@
               "prompt": "Match each opening expression with the pronoun it needs in a non-defining clause.",
               "instruction": "Pair each expression with the correct relative pronoun.",
               "items": [
-                { "id": "a", "text": "My sister", "isCorrect": null, "matchKey": "who" },
-                { "id": "b", "text": "The company", "isCorrect": null, "matchKey": "which" },
-                { "id": "c", "text": "Bao", "isCorrect": null, "matchKey": "whose" },
-                { "id": "d", "text": "The film", "isCorrect": null, "matchKey": "which" }
+                {
+                  "id": "a",
+                  "text": "My sister",
+                  "isCorrect": null,
+                  "matchKey": "who"
+                },
+                {
+                  "id": "b",
+                  "text": "The company",
+                  "isCorrect": null,
+                  "matchKey": "which"
+                },
+                {
+                  "id": "c",
+                  "text": "Bao",
+                  "isCorrect": null,
+                  "matchKey": "whose"
+                },
+                {
+                  "id": "d",
+                  "text": "The film",
+                  "isCorrect": null,
+                  "matchKey": "which"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "who", "b": "which", "c": "whose", "d": "which" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "who",
+                  "b": "which",
+                  "c": "whose",
+                  "d": "which"
+                }
+              },
               "explanation": "People take who, things take which, and possession takes whose. That would be wrong in every case here because all of these clauses are non-defining and set off by commas.",
               "xp": 10
             }
@@ -783,8 +1445,18 @@
               "statement": "when marks a point in time, while marks a longer period, and as marks two things happening at the same time.",
               "formula": "when I arrived, while I was cooking, as the sun rose",
               "examples": [
-                { "id": "cl-av-ex1", "en": "Call me when you get home.", "vi": "Gọi cho tôi khi bạn về đến nhà.", "note": "when plus a simple future clause" },
-                { "id": "cl-av-ex2", "en": "While she was cooking, the phone rang.", "vi": "Trong khi cô ấy nấu ăn, điện thoại reo.", "note": "while for a continuous action" }
+                {
+                  "id": "cl-av-ex1",
+                  "en": "Call me when you get home.",
+                  "vi": "Gọi cho tôi khi bạn về đến nhà.",
+                  "note": "when plus a simple future clause"
+                },
+                {
+                  "id": "cl-av-ex2",
+                  "en": "While she was cooking, the phone rang.",
+                  "vi": "Trong khi cô ấy nấu ăn, điện thoại reo.",
+                  "note": "while for a continuous action"
+                }
               ]
             },
             {
@@ -792,8 +1464,18 @@
               "statement": "before and after mark order, until marks the end of a period, and since marks the start of one.",
               "formula": "before I left, after the meeting, until Friday, since March",
               "examples": [
-                { "id": "cl-av-ex3", "en": "Wait until I finish this sentence.", "vi": "Hãy đợi cho đến khi tôi nói xong câu này.", "note": "until plus a clause, no preposition needed" },
-                { "id": "cl-av-ex4", "en": "She has worked here since 2019.", "vi": "Cô ấy đã làm việc ở đây từ năm 2019.", "note": "since plus a point in time" }
+                {
+                  "id": "cl-av-ex3",
+                  "en": "Wait until I finish this sentence.",
+                  "vi": "Hãy đợi cho đến khi tôi nói xong câu này.",
+                  "note": "until plus a clause, no preposition needed"
+                },
+                {
+                  "id": "cl-av-ex4",
+                  "en": "She has worked here since 2019.",
+                  "vi": "Cô ấy đã làm việc ở đây từ năm 2019.",
+                  "note": "since plus a point in time"
+                }
               ]
             },
             {
@@ -801,8 +1483,18 @@
               "statement": "because is the strongest and most neutral reason link. since and as are weaker and usually introduce a reason that is already known.",
               "formula": "because it rained, since he was ill, as it was late",
               "examples": [
-                { "id": "cl-av-ex5", "en": "We stayed inside because it rained all day.", "vi": "Chúng tôi ở trong nhà vì trời mưa suốt ngày.", "note": "the strongest reason link" },
-                { "id": "cl-av-ex6", "en": "As it was late, we went home.", "vi": "Vì đã muộn, chúng tôi về nhà.", "note": "as is more formal and less direct" }
+                {
+                  "id": "cl-av-ex5",
+                  "en": "We stayed inside because it rained all day.",
+                  "vi": "Chúng tôi ở trong nhà vì trời mưa suốt ngày.",
+                  "note": "the strongest reason link"
+                },
+                {
+                  "id": "cl-av-ex6",
+                  "en": "As it was late, we went home.",
+                  "vi": "Vì đã muộn, chúng tôi về nhà.",
+                  "note": "as is more formal and less direct"
+                }
               ]
             },
             {
@@ -810,8 +1502,18 @@
               "statement": "Each clause has its own subject and verb. The main clause subject does not carry over into the adverb clause.",
               "formula": "When the bell rings, we leave the room. (we, not it)",
               "examples": [
-                { "id": "cl-av-ex7", "en": "When the bell rings, we leave the room.", "vi": "Khi chuông reo, chúng tôi rời khỏi phòng.", "note": "we is the subject of the main clause only" },
-                { "id": "cl-av-ex8", "en": "While I was out, my neighbour fed my cat.", "vi": "Khi tôi ra ngoài, hàng xóm đã cho mèo của tôi ăn.", "note": "my neighbour is a completely new subject" }
+                {
+                  "id": "cl-av-ex7",
+                  "en": "When the bell rings, we leave the room.",
+                  "vi": "Khi chuông reo, chúng tôi rời khỏi phòng.",
+                  "note": "we is the subject of the main clause only"
+                },
+                {
+                  "id": "cl-av-ex8",
+                  "en": "While I was out, my neighbour fed my cat.",
+                  "vi": "Khi tôi ra ngoài, hàng xóm đã cho mèo của tôi ăn.",
+                  "note": "my neighbour is a completely new subject"
+                }
               ]
             }
           ]
@@ -820,10 +1522,30 @@
           "id": "cl-av-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-ave-1", "en": "I will call you as soon as I land.", "vi": "Tôi sẽ gọi cho bạn ngay khi tôi hạ cánh.", "note": "as soon as plus a present simple clause" },
-            { "id": "cl-ave-2", "en": "Do not leave until I come back.", "vi": "Đừng rời đi cho đến khi tôi quay lại.", "note": "until plus a present simple" },
-            { "id": "cl-ave-3", "en": "Since he moved here, he has joined three clubs.", "vi": "Kể từ khi chuyển đến đây, anh ấy đã tham gia ba câu lạc bộ.", "note": "since with the present perfect" },
-            { "id": "cl-ave-4", "en": "Because the road was closed, we took the long way round.", "vi": "Vì con đường bị chặn, chúng tôi đi vòng đường dài.", "note": "reason clause first" }
+            {
+              "id": "cl-ave-1",
+              "en": "I will call you as soon as I land.",
+              "vi": "Tôi sẽ gọi cho bạn ngay khi tôi hạ cánh.",
+              "note": "as soon as plus a present simple clause"
+            },
+            {
+              "id": "cl-ave-2",
+              "en": "Do not leave until I come back.",
+              "vi": "Đừng rời đi cho đến khi tôi quay lại.",
+              "note": "until plus a present simple"
+            },
+            {
+              "id": "cl-ave-3",
+              "en": "Since he moved here, he has joined three clubs.",
+              "vi": "Kể từ khi chuyển đến đây, anh ấy đã tham gia ba câu lạc bộ.",
+              "note": "since with the present perfect"
+            },
+            {
+              "id": "cl-ave-4",
+              "en": "Because the road was closed, we took the long way round.",
+              "vi": "Vì con đường bị chặn, chúng tôi đi vòng đường dài.",
+              "note": "reason clause first"
+            }
           ]
         },
         {
@@ -838,7 +1560,14 @@
               "difficulty": "intermediate",
               "prompt": "___ we left early, we missed the last train.",
               "instruction": "Write the linking word.",
-              "answer": { "type": "text", "values": ["Because", "Since", "As"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Because",
+                  "Since",
+                  "As"
+                ]
+              },
               "explanation": "The clause gives the reason for leaving early, so because is the strongest choice. since and as are also grammatically possible and weaker, which is why all three are listed as correct.",
               "xp": 10
             },
@@ -851,11 +1580,31 @@
               "prompt": "Complete the sentence with the correct linking word: ___ I was reading, my brother came in.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "While", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "During", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "Since", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "While",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "During",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Since",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["While"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "While"
+                ]
+              },
               "explanation": "while joins two continuous actions happening at the same time. during is a preposition and would need a noun after it, not a clause, and since marks a starting point that would change the meaning.",
               "xp": 10
             },
@@ -867,7 +1616,12 @@
               "difficulty": "intermediate",
               "prompt": "During I was cooking, the phone rang.",
               "instruction": "Rewrite the sentence with the correct clause link.",
-              "answer": { "type": "text", "values": ["While I was cooking, the phone rang."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "While I was cooking, the phone rang."
+                ]
+              },
               "explanation": "during is a preposition, so it cannot introduce a clause with its own subject and verb. Use while or whilst, which are conjunctions and are designed for exactly this job.",
               "xp": 10
             },
@@ -880,15 +1634,61 @@
               "prompt": "Build the sentence: we / arrived / after / the / meeting / had / finished",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "we", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "arrived", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "after", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "meeting", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "had", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "finished", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "we",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "arrived",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "after",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "meeting",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "finished",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["we", "arrived", "after", "the", "meeting", "had", "finished"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "we",
+                  "arrived",
+                  "after",
+                  "the",
+                  "meeting",
+                  "had",
+                  "finished"
+                ]
+              },
               "explanation": "Both clauses keep their own subject and verb: we arrived, and the meeting had finished. Putting after in front of the whole sentence would make it a dangling modifier, which would then attach to arrived instead of to the time of arrival.",
               "xp": 10
             },
@@ -900,7 +1700,12 @@
               "difficulty": "advanced",
               "prompt": "Because the film was very long, we left early.",
               "instruction": "Rewrite the sentence so that it expresses the opposite relationship.",
-              "answer": { "type": "text", "values": ["Although the film was very long, we left early."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Although the film was very long, we left early."
+                ]
+              },
               "explanation": "The two clauses contradict each other, because a long film would normally keep an audience in their seats. Since the writer is conceding the first point and then giving a contrary one, although is the correct linker.",
               "xp": 10
             }
@@ -913,24 +1718,39 @@
           "items": [
             {
               "id": "cl-av-d1",
-              "audio": { "kind": "speech", "text": "We stayed inside because it rained all day." },
-              "acceptedAnswers": ["We stayed inside because it rained all day."],
+              "audio": {
+                "kind": "speech",
+                "text": "We stayed inside because it rained all day."
+              },
+              "acceptedAnswers": [
+                "We stayed inside because it rained all day."
+              ],
               "hint": "reason after the main clause",
               "translation": "Chúng tôi ở trong nhà vì trời mưa suốt ngày.",
               "xp": 15
             },
             {
               "id": "cl-av-d2",
-              "audio": { "kind": "speech", "text": "While she was cooking, the phone rang." },
-              "acceptedAnswers": ["While she was cooking, the phone rang."],
+              "audio": {
+                "kind": "speech",
+                "text": "While she was cooking, the phone rang."
+              },
+              "acceptedAnswers": [
+                "While she was cooking, the phone rang."
+              ],
               "hint": "while plus a continuous clause",
               "translation": "Trong khi cô ấy nấu ăn, điện thoại reo.",
               "xp": 15
             },
             {
               "id": "cl-av-d3",
-              "audio": { "kind": "speech", "text": "She has worked here since March." },
-              "acceptedAnswers": ["She has worked here since March."],
+              "audio": {
+                "kind": "speech",
+                "text": "She has worked here since March."
+              },
+              "acceptedAnswers": [
+                "She has worked here since March."
+              ],
               "hint": "since plus a present perfect",
               "translation": "Cô ấy đã làm việc ở đây từ tháng Ba.",
               "xp": 15
@@ -952,11 +1772,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Since he arrived, the room has been warm.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Since he arrived, the room is warm.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "During he arrived, the room has been warm.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Since he arrived, the room has been warm.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Since he arrived, the room is warm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "During he arrived, the room has been warm.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "since marks a period running from a past point to now, so the present perfect is required. A plain present would make the sentence look complete, and during cannot introduce a clause at all.",
               "xp": 10
             },
@@ -968,7 +1808,13 @@
               "difficulty": "intermediate",
               "prompt": "I will wait here ___ you come back.",
               "instruction": "Write the linking word.",
-              "answer": { "type": "text", "values": ["until", "till"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "until",
+                  "till"
+                ]
+              },
               "explanation": "until marks the end point of waiting and takes a clause directly, with no preposition. for would be wrong here because for marks a duration, not an ending point, and till is simply a shorter spelling.",
               "xp": 10
             },
@@ -980,7 +1826,12 @@
               "difficulty": "advanced",
               "prompt": "Although the road was busy, but we arrived on time.",
               "instruction": "Rewrite the sentence with correct clause structure.",
-              "answer": { "type": "text", "values": ["Although the road was busy, we arrived on time."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Although the road was busy, we arrived on time."
+                ]
+              },
               "explanation": "although already connects a dependent clause to a main clause, so adding but is redundant and ungrammatical in standard English. Choose one linker: although, or two independent clauses joined by but.",
               "xp": 10
             },
@@ -993,12 +1844,40 @@
               "prompt": "Match each linking word with the relationship it creates.",
               "instruction": "Pair each link with its relationship.",
               "items": [
-                { "id": "a", "text": "although", "isCorrect": null, "matchKey": "concession" },
-                { "id": "b", "text": "while", "isCorrect": null, "matchKey": "simultaneous action" },
-                { "id": "c", "text": "until", "isCorrect": null, "matchKey": "end of a period" },
-                { "id": "d", "text": "because", "isCorrect": null, "matchKey": "reason" }
+                {
+                  "id": "a",
+                  "text": "although",
+                  "isCorrect": null,
+                  "matchKey": "concession"
+                },
+                {
+                  "id": "b",
+                  "text": "while",
+                  "isCorrect": null,
+                  "matchKey": "simultaneous action"
+                },
+                {
+                  "id": "c",
+                  "text": "until",
+                  "isCorrect": null,
+                  "matchKey": "end of a period"
+                },
+                {
+                  "id": "d",
+                  "text": "because",
+                  "isCorrect": null,
+                  "matchKey": "reason"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "concession", "b": "simultaneous action", "c": "end of a period", "d": "reason" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "concession",
+                  "b": "simultaneous action",
+                  "c": "end of a period",
+                  "d": "reason"
+                }
+              },
               "explanation": "Matching the link to its function prevents the two common errors: using although with but, and using during where a conjunction is needed because during is a preposition.",
               "xp": 10
             }
@@ -1035,8 +1914,18 @@
               "statement": "if plus clause covers every condition. unless means if not and is followed by positive clauses only.",
               "formula": "If it rains, we stay home. / Unless it rains, we will go out.",
               "examples": [
-                { "id": "cl-cc-ex1", "en": "If you need help, just call me.", "vi": "Nếu bạn cần giúp đỡ, cứ gọi cho tôi.", "note": "if with any condition" },
-                { "id": "cl-cc-ex2", "en": "Unless you leave now, you will miss the train.", "vi": "Trừ khi bạn rời đi ngay, bạn sẽ lỡ mất tàu.", "note": "unless = if not, never if not" }
+                {
+                  "id": "cl-cc-ex1",
+                  "en": "If you need help, just call me.",
+                  "vi": "Nếu bạn cần giúp đỡ, cứ gọi cho tôi.",
+                  "note": "if with any condition"
+                },
+                {
+                  "id": "cl-cc-ex2",
+                  "en": "Unless you leave now, you will miss the train.",
+                  "vi": "Trừ khi bạn rời đi ngay, bạn sẽ lỡ mất tàu.",
+                  "note": "unless = if not, never if not"
+                }
               ]
             },
             {
@@ -1044,8 +1933,18 @@
               "statement": "All three mean in spite of. even though is the strongest and is common in speech. though cannot start a clause with a subject it does not share.",
               "formula": "Although it was late, we continued.",
               "examples": [
-                { "id": "cl-cc-ex3", "en": "Even though it was very late, we continued working.", "vi": "Mặc dù đã rất muộn, chúng tôi vẫn tiếp tục làm việc.", "note": "strongest concession link" },
-                { "id": "cl-cc-ex4", "en": "It was late, though we continued working.", "vi": "Đã muộn rồi, dù vậy chúng tôi vẫn tiếp tục làm việc.", "note": "though at the end is weaker and conversational" }
+                {
+                  "id": "cl-cc-ex3",
+                  "en": "Even though it was very late, we continued working.",
+                  "vi": "Mặc dù đã rất muộn, chúng tôi vẫn tiếp tục làm việc.",
+                  "note": "strongest concession link"
+                },
+                {
+                  "id": "cl-cc-ex4",
+                  "en": "It was late, though we continued working.",
+                  "vi": "Đã muộn rồi, dù vậy chúng tôi vẫn tiếp tục làm việc.",
+                  "note": "though at the end is weaker and conversational"
+                }
               ]
             },
             {
@@ -1053,8 +1952,18 @@
               "statement": "so that expresses purpose with a clause. in order to and to are followed by a verb, never by a subject and a verb.",
               "formula": "I wrote it down so that I would not forget.",
               "examples": [
-                { "id": "cl-cc-ex5", "en": "I wrote the number down so that I would not forget it.", "vi": "Tôi ghi số xuống để không quên.", "note": "so that plus clause" },
-                { "id": "cl-cc-ex6", "en": "She spoke slowly in order that everyone could understand.", "vi": "Cô ấy nói chậm để mọi người đều hiểu.", "note": "in order that plus clause, formal" }
+                {
+                  "id": "cl-cc-ex5",
+                  "en": "I wrote the number down so that I would not forget it.",
+                  "vi": "Tôi ghi số xuống để không quên.",
+                  "note": "so that plus clause"
+                },
+                {
+                  "id": "cl-cc-ex6",
+                  "en": "She spoke slowly in order that everyone could understand.",
+                  "vi": "Cô ấy nói chậm để mọi người đều hiểu.",
+                  "note": "in order that plus clause, formal"
+                }
               ]
             },
             {
@@ -1062,8 +1971,18 @@
               "statement": "A clause at the front is followed by a comma; a clause at the end is preceded by a comma only when the main clause has a subject.",
               "formula": "If it rains, we stay home. / We stay home if it rains.",
               "examples": [
-                { "id": "cl-cc-ex7", "en": "If the weather is bad, we will stay at home.", "vi": "Nếu thời tiết xấu, chúng tôi sẽ ở nhà.", "note": "front position always takes a comma" },
-                { "id": "cl-cc-ex8", "en": "We will cancel the trip, unless the airline agrees.", "vi": "Chúng tôi sẽ hủy chuyến đi, trừ khi hãng hàng không đồng ý.", "note": "end position, comma because the main clause has a subject" }
+                {
+                  "id": "cl-cc-ex7",
+                  "en": "If the weather is bad, we will stay at home.",
+                  "vi": "Nếu thời tiết xấu, chúng tôi sẽ ở nhà.",
+                  "note": "front position always takes a comma"
+                },
+                {
+                  "id": "cl-cc-ex8",
+                  "en": "We will cancel the trip, unless the airline agrees.",
+                  "vi": "Chúng tôi sẽ hủy chuyến đi, trừ khi hãng hàng không đồng ý.",
+                  "note": "end position, comma because the main clause has a subject"
+                }
               ]
             }
           ]
@@ -1072,10 +1991,30 @@
           "id": "cl-cc-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-cce-1", "en": "Take an umbrella in case it rains.", "vi": "Mang theo ô phòng khi trời mưa.", "note": "in case is not the same as if; it means just in case" },
-            { "id": "col-cce-2", "en": "Although the exam was hard, he passed easily.", "vi": "Mặc dù bài thi khó, anh ấy vẫn dễ dàng vượt qua.", "note": "concession" },
-            { "id": "col-cce-3", "en": "We left early so that we could catch the last bus.", "vi": "Chúng tôi rời đi sớm để kịp chuyến xe buýt cuối.", "note": "purpose with so that" },
-            { "id": "col-cce-4", "en": "Unless you book now, the flight will sell out.", "vi": "Trừ khi bạn đặt ngay, chuyến bay sẽ hết.", "note": "unless with a positive clause" }
+            {
+              "id": "col-cce-1",
+              "en": "Take an umbrella in case it rains.",
+              "vi": "Mang theo ô phòng khi trời mưa.",
+              "note": "in case is not the same as if; it means just in case"
+            },
+            {
+              "id": "col-cce-2",
+              "en": "Although the exam was hard, he passed easily.",
+              "vi": "Mặc dù bài thi khó, anh ấy vẫn dễ dàng vượt qua.",
+              "note": "concession"
+            },
+            {
+              "id": "col-cce-3",
+              "en": "We left early so that we could catch the last bus.",
+              "vi": "Chúng tôi rời đi sớm để kịp chuyến xe buýt cuối.",
+              "note": "purpose with so that"
+            },
+            {
+              "id": "col-cce-4",
+              "en": "Unless you book now, the flight will sell out.",
+              "vi": "Trừ khi bạn đặt ngay, chuyến bay sẽ hết.",
+              "note": "unless with a positive clause"
+            }
           ]
         },
         {
@@ -1091,11 +2030,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Unless you water the plants, they will die.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Unless you do not water the plants, they will die.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "Unless you water the plants, they will not die.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Unless you water the plants, they will die.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Unless you do not water the plants, they will die.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Unless you water the plants, they will not die.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "unless already means if not, so a second negation makes the meaning opposite to the intention. Option c reverses the result in the same way by adding a negative to the main clause.",
               "xp": 10
             },
@@ -1108,11 +2067,31 @@
               "prompt": "Complete the sentence with the correct purpose link: She repeated the address ___ I could write it down.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "so that", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "so as to", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "in order", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "so that",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "so as to",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "in order",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["so that"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "so that"
+                ]
+              },
               "explanation": "The following part has its own subject and verb, so it must be a clause, which means so that or in order that. so as to and in order to are infinitive links and would need to be followed by a bare verb.",
               "xp": 10
             },
@@ -1124,7 +2103,12 @@
               "difficulty": "advanced",
               "prompt": "Even though he was tired, but he finished the work.",
               "instruction": "Rewrite the sentence with correct clause structure.",
-              "answer": { "type": "text", "values": ["Even though he was tired, he finished the work."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Even though he was tired, he finished the work."
+                ]
+              },
               "explanation": "even though already connects a dependent clause to a main clause, so but is redundant. Keeping both makes the structure ungrammatical; you must choose either the conjunction or the coordinator.",
               "xp": 10
             },
@@ -1136,7 +2120,12 @@
               "difficulty": "advanced",
               "prompt": "Type the two-word link meaning if not: ___ you study, you will fail.",
               "instruction": "Type the complete link.",
-              "answer": { "type": "text", "values": ["Unless"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Unless"
+                ]
+              },
               "explanation": "unless replaces if not directly, so the clause after it stays positive: unless you study. Writing unless you do not study would give a double negative and reverse the meaning of the sentence.",
               "xp": 10
             }
@@ -1149,24 +2138,39 @@
           "items": [
             {
               "id": "cl-cc-d1",
-              "audio": { "kind": "speech", "text": "Unless you leave now, you will miss the last bus." },
-              "acceptedAnswers": ["Unless you leave now, you will miss the last bus."],
+              "audio": {
+                "kind": "speech",
+                "text": "Unless you leave now, you will miss the last bus."
+              },
+              "acceptedAnswers": [
+                "Unless you leave now, you will miss the last bus."
+              ],
               "hint": "unless means if not",
               "translation": "Trừ khi bạn rời đi ngay, bạn sẽ lỡ mất chuyến xe buýt cuối.",
               "xp": 15
             },
             {
               "id": "cl-cc-d2",
-              "audio": { "kind": "speech", "text": "We left early so that we could catch the last train." },
-              "acceptedAnswers": ["We left early so that we could catch the last train."],
+              "audio": {
+                "kind": "speech",
+                "text": "We left early so that we could catch the last train."
+              },
+              "acceptedAnswers": [
+                "We left early so that we could catch the last train."
+              ],
               "hint": "purpose with so that",
               "translation": "Chúng tôi rời đi sớm để kịp chuyến tàu cuối.",
               "xp": 15
             },
             {
               "id": "cl-cc-d3",
-              "audio": { "kind": "speech", "text": "Even though it was very late, we continued working." },
-              "acceptedAnswers": ["Even though it was very late, we continued working."],
+              "audio": {
+                "kind": "speech",
+                "text": "Even though it was very late, we continued working."
+              },
+              "acceptedAnswers": [
+                "Even though it was very late, we continued working."
+              ],
               "hint": "strong concession link",
               "translation": "Mặc dù đã rất muộn, chúng tôi vẫn tiếp tục làm việc.",
               "xp": 15
@@ -1188,11 +2192,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "He left early in order not to miss the train.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "He left early in order to not miss the train.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "He left early so that not to miss the train.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "He left early in order not to miss the train.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "He left early in order to not miss the train.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "He left early so that not to miss the train.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The negative goes before the infinitive, as in in order not to miss. Putting not after to is a translation of de kip, and so that needs a full clause with a subject and a verb, which not to miss is not.",
               "xp": 10
             },
@@ -1204,7 +2228,13 @@
               "difficulty": "intermediate",
               "prompt": "___ you study every day, you will not improve.",
               "instruction": "Write the linking word.",
-              "answer": { "type": "text", "values": ["Unless", "If"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Unless",
+                  "If"
+                ]
+              },
               "explanation": "Both unless and if fit the grammar, with unless meaning if not. Note the negative in the main clause: unless you study every day, you will not improve has one negation in each clause, which is what English requires.",
               "xp": 10
             },
@@ -1217,12 +2247,40 @@
               "prompt": "Match each situation with the link it needs.",
               "instruction": "Pair each situation with the correct link.",
               "items": [
-                { "id": "a", "text": "an action done for a reason", "isCorrect": null, "matchKey": "so that" },
-                { "id": "b", "text": "something done in spite of a difficulty", "isCorrect": null, "matchKey": "even though" },
-                { "id": "c", "text": "a condition expressed negatively", "isCorrect": null, "matchKey": "unless" },
-                { "id": "d", "text": "an unexpected result of a normal expectation", "isCorrect": null, "matchKey": "otherwise" }
+                {
+                  "id": "a",
+                  "text": "an action done for a reason",
+                  "isCorrect": null,
+                  "matchKey": "so that"
+                },
+                {
+                  "id": "b",
+                  "text": "something done in spite of a difficulty",
+                  "isCorrect": null,
+                  "matchKey": "even though"
+                },
+                {
+                  "id": "c",
+                  "text": "a condition expressed negatively",
+                  "isCorrect": null,
+                  "matchKey": "unless"
+                },
+                {
+                  "id": "d",
+                  "text": "an unexpected result of a normal expectation",
+                  "isCorrect": null,
+                  "matchKey": "otherwise"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "so that", "b": "even though", "c": "unless", "d": "otherwise" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "so that",
+                  "b": "even though",
+                  "c": "unless",
+                  "d": "otherwise"
+                }
+              },
               "explanation": "otherwise needs no clause of its own and expresses the result of not doing the condition: if you do not hurry, otherwise you will be late.",
               "xp": 10
             },
@@ -1234,7 +2292,12 @@
               "difficulty": "advanced",
               "prompt": "If you will arrive before six, please call me.",
               "instruction": "Rewrite the sentence with correct clause structure.",
-              "answer": { "type": "text", "values": ["If you arrive before six, please call me."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you arrive before six, please call me."
+                ]
+              },
               "explanation": "The if-clause uses the present simple for a future condition, never will. The will belongs in the main clause only, so write please call me, not please will call me.",
               "xp": 10
             }
@@ -1271,8 +2334,18 @@
               "statement": "and, but, or, nor, for, so, yet: FANBOYS. Use a comma before the coordinator when the two clauses are of similar importance.",
               "formula": "I was tired, but I finished the work.",
               "examples": [
-                { "id": "cl-co-ex1", "en": "The shop was closed, so we went home.", "vi": "Cửa hàng đã đóng, nên chúng tôi về nhà.", "note": "so joins two independent clauses" },
-                { "id": "cl-co-ex2", "en": "She did not want the job, yet she accepted it.", "vi": "Cô ấy không muốn công việc đó, dù vậy cô ấy vẫn nhận.", "note": "yet is a coordinator, not only an adverb of time" }
+                {
+                  "id": "cl-co-ex1",
+                  "en": "The shop was closed, so we went home.",
+                  "vi": "Cửa hàng đã đóng, nên chúng tôi về nhà.",
+                  "note": "so joins two independent clauses"
+                },
+                {
+                  "id": "cl-co-ex2",
+                  "en": "She did not want the job, yet she accepted it.",
+                  "vi": "Cô ấy không muốn công việc đó, dù vậy cô ấy vẫn nhận.",
+                  "note": "yet is a coordinator, not only an adverb of time"
+                }
               ]
             },
             {
@@ -1280,8 +2353,18 @@
               "statement": "Two independent clauses joined by a coordinator need a comma before it. Without the comma the result is a comma splice, the most common punctuation error in written English.",
               "formula": "I called her, she did not answer.",
               "examples": [
-                { "id": "cl-co-ex3", "en": "I called her, she did not answer.", "vi": "Tôi gọi cô ấy, cô ấy không trả lời.", "note": "comma splice: wrong" },
-                { "id": "cl-co-ex4", "en": "I called her, but she did not answer.", "vi": "Tôi gọi cô ấy, nhưng cô ấy không trả lời.", "note": "comma plus coordinator: correct" }
+                {
+                  "id": "cl-co-ex3",
+                  "en": "I called her, she did not answer.",
+                  "vi": "Tôi gọi cô ấy, cô ấy không trả lời.",
+                  "note": "comma splice: wrong"
+                },
+                {
+                  "id": "cl-co-ex4",
+                  "en": "I called her, but she did not answer.",
+                  "vi": "Tôi gọi cô ấy, nhưng cô ấy không trả lời.",
+                  "note": "comma plus coordinator: correct"
+                }
               ]
             },
             {
@@ -1289,8 +2372,18 @@
               "statement": "A short first clause can join and without a comma. A long or complex first clause always takes one, and a comma is never used between a subject and its verb.",
               "formula": "We waited an hour and the bus finally arrived.",
               "examples": [
-                { "id": "cl-co-ex5", "en": "We waited for an hour and the bus finally arrived.", "vi": "Chúng tôi chờ một tiếng rồi xe buýt mới đến.", "note": "short first clause, no comma needed" },
-                { "id": "cl-co-ex6", "en": "After waiting in the rain for almost an hour, the bus finally arrived.", "vi": "Sau khi chờ dưới mưa gần một tiếng, xe buýt mới đến.", "note": "long first clause, comma needed" }
+                {
+                  "id": "cl-co-ex5",
+                  "en": "We waited for an hour and the bus finally arrived.",
+                  "vi": "Chúng tôi chờ một tiếng rồi xe buýt mới đến.",
+                  "note": "short first clause, no comma needed"
+                },
+                {
+                  "id": "cl-co-ex6",
+                  "en": "After waiting in the rain for almost an hour, the bus finally arrived.",
+                  "vi": "Sau khi chờ dưới mưa gần một tiếng, xe buýt mới đến.",
+                  "note": "long first clause, comma needed"
+                }
               ]
             },
             {
@@ -1298,8 +2391,18 @@
               "statement": "Joining three independent clauses with commas only is not acceptable English. Turn one into a dependent clause, or use a conjunction such as and then, or else, because.",
               "formula": "I was tired, it was late, so I went to bed. (wrong)",
               "examples": [
-                { "id": "cl-co-ex7", "en": "I was tired and it was late, so I went to bed.", "vi": "Tôi mệt và đã muộn, nên tôi đi ngủ.", "note": "correct with a coordinator and a comma before so" },
-                { "id": "cl-co-ex8", "en": "Although I was tired, and it was late, I went to bed.", "vi": "Mặc dù mệt và đã muộn, tôi vẫn đi ngủ.", "note": "subordination makes a long chain readable" }
+                {
+                  "id": "cl-co-ex7",
+                  "en": "I was tired and it was late, so I went to bed.",
+                  "vi": "Tôi mệt và đã muộn, nên tôi đi ngủ.",
+                  "note": "correct with a coordinator and a comma before so"
+                },
+                {
+                  "id": "cl-co-ex8",
+                  "en": "Although I was tired, and it was late, I went to bed.",
+                  "vi": "Mặc dù mệt và đã muộn, tôi vẫn đi ngủ.",
+                  "note": "subordination makes a long chain readable"
+                }
               ]
             }
           ]
@@ -1308,10 +2411,30 @@
           "id": "cl-co-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-coe-1", "en": "He was hungry, so he cooked a big meal.", "vi": "Anh ấy đói, nên anh ấy nấu một bữa lớn.", "note": "result with so" },
-            { "id": "cl-coe-2", "en": "The hotel was expensive, but the room was excellent.", "vi": "Khách sạn đắt, nhưng căn phòng rất tuyệt vời.", "note": "contrast with but" },
-            { "id": "cl-coe-3", "en": "You can take the bus, or you can walk.", "vi": "Bạn có thể đi xe buýt, hoặc bạn có thể đi bộ.", "note": "alternative with or" },
-            { "id": "cl-coe-4", "en": "She was tired, yet she kept going.", "vi": "Cô ấy mệt, dù vậy cô ấy vẫn tiếp tục.", "note": "yet as a coordinator" }
+            {
+              "id": "cl-coe-1",
+              "en": "He was hungry, so he cooked a big meal.",
+              "vi": "Anh ấy đói, nên anh ấy nấu một bữa lớn.",
+              "note": "result with so"
+            },
+            {
+              "id": "cl-coe-2",
+              "en": "The hotel was expensive, but the room was excellent.",
+              "vi": "Khách sạn đắt, nhưng căn phòng rất tuyệt vời.",
+              "note": "contrast with but"
+            },
+            {
+              "id": "cl-coe-3",
+              "en": "You can take the bus, or you can walk.",
+              "vi": "Bạn có thể đi xe buýt, hoặc bạn có thể đi bộ.",
+              "note": "alternative with or"
+            },
+            {
+              "id": "cl-coe-4",
+              "en": "She was tired, yet she kept going.",
+              "vi": "Cô ấy mệt, dù vậy cô ấy vẫn tiếp tục.",
+              "note": "yet as a coordinator"
+            }
           ]
         },
         {
@@ -1327,11 +2450,31 @@
               "prompt": "Which sentence has no comma splice?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The road was blocked, so we took another way.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The road was blocked, we took another way.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The road was blocked we took another way.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The road was blocked, so we took another way.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The road was blocked, we took another way.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The road was blocked we took another way.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Two independent clauses need either a coordinator or a semicolon between them. Option b is a comma splice and option c has no mark at all, which makes the sentence hard to read.",
               "xp": 10
             },
@@ -1344,16 +2487,68 @@
               "prompt": "Build the sentence: I / was / tired / but / I / finished / the / work",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "I", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "was", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "tired", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "but", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "I", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "finished", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "work", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "tired",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "but",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "finished",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "work",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["I", "was", "tired", "but", "I", "finished", "the", "work"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "I",
+                  "was",
+                  "tired",
+                  "but",
+                  "I",
+                  "finished",
+                  "the",
+                  "work"
+                ]
+              },
               "explanation": "Both clauses keep their own subject and verb, and but sits between them with a comma before it. Reversing the clauses would change the logic, because but only makes sense when the tired contrast comes first.",
               "xp": 10
             },
@@ -1365,7 +2560,13 @@
               "difficulty": "advanced",
               "prompt": "I checked the schedule, the meeting had been moved to Friday.",
               "instruction": "Rewrite the sentence without a comma splice.",
-              "answer": { "type": "text", "values": ["I checked the schedule and found that the meeting had been moved to Friday.", "I checked the schedule, and the meeting had been moved to Friday."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I checked the schedule and found that the meeting had been moved to Friday.",
+                  "I checked the schedule, and the meeting had been moved to Friday."
+                ]
+              },
               "explanation": "Two independent clauses cannot be joined by a comma alone. Either add a coordinator, and, or make the second clause dependent by using found that, which is the safer choice when writing.",
               "xp": 10
             },
@@ -1377,7 +2578,12 @@
               "difficulty": "intermediate",
               "prompt": "Type the coordinator that shows a result: He ran fast, ___ he caught the bus.",
               "instruction": "Type the single coordinator.",
-              "answer": { "type": "text", "values": ["so"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "so"
+                ]
+              },
               "explanation": "The second clause is the result of the first, which is the job of so. but would show contrast and or would show a choice, neither of which fits a cause and effect pair.",
               "xp": 10
             },
@@ -1390,14 +2596,54 @@
               "prompt": "Match each coordinator with its relationship.",
               "instruction": "Pair every coordinator with its relationship.",
               "items": [
-                { "id": "a", "text": "and", "isCorrect": null, "matchKey": "addition" },
-                { "id": "b", "text": "but", "isCorrect": null, "matchKey": "contrast" },
-                { "id": "c", "text": "or", "isCorrect": null, "matchKey": "alternative" },
-                { "id": "d", "text": "so", "isCorrect": null, "matchKey": "result" },
-                { "id": "e", "text": "yet", "isCorrect": null, "matchKey": "contrast" },
-                { "id": "f", "text": "nor", "isCorrect": null, "matchKey": "negative addition" }
+                {
+                  "id": "a",
+                  "text": "and",
+                  "isCorrect": null,
+                  "matchKey": "addition"
+                },
+                {
+                  "id": "b",
+                  "text": "but",
+                  "isCorrect": null,
+                  "matchKey": "contrast"
+                },
+                {
+                  "id": "c",
+                  "text": "or",
+                  "isCorrect": null,
+                  "matchKey": "alternative"
+                },
+                {
+                  "id": "d",
+                  "text": "so",
+                  "isCorrect": null,
+                  "matchKey": "result"
+                },
+                {
+                  "id": "e",
+                  "text": "yet",
+                  "isCorrect": null,
+                  "matchKey": "contrast"
+                },
+                {
+                  "id": "f",
+                  "text": "nor",
+                  "isCorrect": null,
+                  "matchKey": "negative addition"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "addition", "b": "contrast", "c": "alternative", "d": "result", "e": "contrast", "f": "negative addition" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "addition",
+                  "b": "contrast",
+                  "c": "alternative",
+                  "d": "result",
+                  "e": "contrast",
+                  "f": "negative addition"
+                }
+              },
               "explanation": "but and yet both show contrast but with different force: yet is slightly more surprising. nor adds a negative idea, as in she did not call, nor did she write.",
               "xp": 10
             }
@@ -1410,24 +2656,39 @@
           "items": [
             {
               "id": "cl-co-d1",
-              "audio": { "kind": "speech", "text": "The hotel was expensive, but the room was excellent." },
-              "acceptedAnswers": ["The hotel was expensive, but the room was excellent."],
+              "audio": {
+                "kind": "speech",
+                "text": "The hotel was expensive, but the room was excellent."
+              },
+              "acceptedAnswers": [
+                "The hotel was expensive, but the room was excellent."
+              ],
               "hint": "but plus a comma",
               "translation": "Khách sạn đắt, nhưng căn phòng rất tuyệt vời.",
               "xp": 15
             },
             {
               "id": "cl-co-d2",
-              "audio": { "kind": "speech", "text": "You can take the bus, or you can walk to the station." },
-              "acceptedAnswers": ["You can take the bus, or you can walk to the station."],
+              "audio": {
+                "kind": "speech",
+                "text": "You can take the bus, or you can walk to the station."
+              },
+              "acceptedAnswers": [
+                "You can take the bus, or you can walk to the station."
+              ],
               "hint": "or between two options",
               "translation": "Bạn có thể đi xe buýt, hoặc bạn có thể đi bộ đến nhà ga.",
               "xp": 15
             },
             {
               "id": "cl-co-d3",
-              "audio": { "kind": "speech", "text": "She was tired, yet she kept going." },
-              "acceptedAnswers": ["She was tired, yet she kept going."],
+              "audio": {
+                "kind": "speech",
+                "text": "She was tired, yet she kept going."
+              },
+              "acceptedAnswers": [
+                "She was tired, yet she kept going."
+              ],
               "hint": "yet as a coordinator",
               "translation": "Cô ấy mệt, dù vậy cô ấy vẫn tiếp tục.",
               "xp": 15
@@ -1449,11 +2710,31 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "She did not call, nor did she write.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "She did not call, and nor she write.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "She did not call, neither she wrote.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She did not call, nor did she write.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She did not call, and nor she write.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She did not call, neither she wrote.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "After nor the second clause inverts its subject and auxiliary: nor did she write. Putting the coordinator after the verb, as in and nor she write, breaks the inverted pattern.",
               "xp": 10
             },
@@ -1465,7 +2746,12 @@
               "difficulty": "advanced",
               "prompt": "It was raining, we decided to stay at home.",
               "instruction": "Rewrite the sentence without a comma splice.",
-              "answer": { "type": "text", "values": ["It was raining, so we decided to stay at home."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It was raining, so we decided to stay at home."
+                ]
+              },
               "explanation": "The second clause explains the consequence of the first, so the coordinator so is the natural addition. A semicolon would also remove the splice, but so makes the relationship between the two ideas clear.",
               "xp": 10
             },
@@ -1478,11 +2764,31 @@
               "prompt": "Complete the sentence with the correct coordinator: I wanted to go out, ___ it was raining heavily.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "but", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "so", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "or", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "but",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "so",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "or",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["but"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "but"
+                ]
+              },
               "explanation": "Wanting to go out and heavy rain are two opposing facts, which is contrast, so but. so would reverse the order and make the rain the cause of the wish, and or would offer a choice, which is not the meaning here.",
               "xp": 10
             },
@@ -1495,9 +2801,17 @@
               "prompt": "A comma alone is enough to join two short independent clauses in informal writing.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "In any marked writing a comma alone joins two independent clauses incorrectly. Some informal styles allow it, but exams and professional writing always require a coordinator, a semicolon or subordination.",
               "xp": 10
             }
@@ -1534,8 +2848,18 @@
               "statement": "Keep the more important idea in the main clause and move the less important one into a dependent clause. The result is shorter and easier to follow.",
               "formula": "I was tired. I kept working. -> Although I was tired, I kept working.",
               "examples": [
-                { "id": "cl-cb-ex1", "en": "He was nervous. He answered the question quickly.", "vi": "Anh ấy rất căng thẳng, nhưng vẫn trả lời câu hỏi rất nhanh.", "note": "both parts are important, so a coordinator is used" },
-                { "id": "cl-cb-ex2", "en": "It began to rain. We went inside.", "vi": "Trời bắt đầu mưa, nên chúng tôi đi vào trong.", "note": "cause and effect, kept in order with so" }
+                {
+                  "id": "cl-cb-ex1",
+                  "en": "He was nervous. He answered the question quickly.",
+                  "vi": "Anh ấy rất căng thẳng, nhưng vẫn trả lời câu hỏi rất nhanh.",
+                  "note": "both parts are important, so a coordinator is used"
+                },
+                {
+                  "id": "cl-cb-ex2",
+                  "en": "It began to rain. We went inside.",
+                  "vi": "Trời bắt đầu mưa, nên chúng tôi đi vào trong.",
+                  "note": "cause and effect, kept in order with so"
+                }
               ]
             },
             {
@@ -1543,8 +2867,18 @@
               "statement": "When two sentences share a noun, the second one can use a relative clause instead of repeating it. This is the single biggest gain in concision.",
               "formula": "I met a writer. She had won a prize. -> I met a writer who had won a prize.",
               "examples": [
-                { "id": "cl-cb-ex3", "en": "I met a writer who had won a national prize.", "vi": "Tôi gặp một nhà văn từng đoạt giải quốc gia.", "note": "one sentence instead of two" },
-                { "id": "cl-cb-ex4", "en": "The house we looked at was too far from the station.", "vi": "Ngôi nhà chúng tôi xem quá xa ga tàu.", "note": "the relative pronoun can be dropped when it is the object" }
+                {
+                  "id": "cl-cb-ex3",
+                  "en": "I met a writer who had won a national prize.",
+                  "vi": "Tôi gặp một nhà văn từng đoạt giải quốc gia.",
+                  "note": "one sentence instead of two"
+                },
+                {
+                  "id": "cl-cb-ex4",
+                  "en": "The house we looked at was too far from the station.",
+                  "vi": "Ngôi nhà chúng tôi xem quá xa ga tàu.",
+                  "note": "the relative pronoun can be dropped when it is the object"
+                }
               ]
             },
             {
@@ -1552,8 +2886,18 @@
               "statement": "A phrase at the start of a sentence must describe the subject that follows it. If it describes something else, the sentence dangles.",
               "formula": "Walking to school, my bag was stolen. (dangling)",
               "examples": [
-                { "id": "cl-cb-ex5", "en": "Walking to school, my bag was stolen.", "vi": "Đang đi bộ đến trường thì túi của tôi bị mất.", "note": "the bag cannot walk: dangling modifier" },
-                { "id": "cl-cb-ex6", "en": "While I was walking to school, my bag was stolen.", "vi": "Khi tôi đi bộ đến trường, túi của tôi bị mất.", "note": "adding a subject clause fixes the sentence" }
+                {
+                  "id": "cl-cb-ex5",
+                  "en": "Walking to school, my bag was stolen.",
+                  "vi": "Đang đi bộ đến trường thì túi của tôi bị mất.",
+                  "note": "the bag cannot walk: dangling modifier"
+                },
+                {
+                  "id": "cl-cb-ex6",
+                  "en": "While I was walking to school, my bag was stolen.",
+                  "vi": "Khi tôi đi bộ đến trường, túi của tôi bị mất.",
+                  "note": "adding a subject clause fixes the sentence"
+                }
               ]
             },
             {
@@ -1561,8 +2905,18 @@
               "statement": "Combining sentences must not change the relationship between the ideas. If one sentence was a cause and the other an effect, the joined sentence must keep that order.",
               "formula": "I studied hard. I failed. (two facts) -> I studied hard but still failed.",
               "examples": [
-                { "id": "cl-cb-ex7", "en": "I studied hard but still failed the test.", "vi": "Tôi đã học rất chăm chỉ nhưng vẫn thi trượt.", "note": "but shows the disappointing contrast" },
-                { "id": "cl-cb-ex8", "en": "Because I studied hard, I passed the test.", "vi": "Vì tôi học chăm chỉ, tôi đã đỗ bài kiểm tra.", "note": "because shows the positive cause" }
+                {
+                  "id": "cl-cb-ex7",
+                  "en": "I studied hard but still failed the test.",
+                  "vi": "Tôi đã học rất chăm chỉ nhưng vẫn thi trượt.",
+                  "note": "but shows the disappointing contrast"
+                },
+                {
+                  "id": "cl-cb-ex8",
+                  "en": "Because I studied hard, I passed the test.",
+                  "vi": "Vì tôi học chăm chỉ, tôi đã đỗ bài kiểm tra.",
+                  "note": "because shows the positive cause"
+                }
               ]
             }
           ]
@@ -1571,10 +2925,30 @@
           "id": "cl-cb-examples",
           "type": "examples",
           "examples": [
-            { "id": "cl-cbe-1", "en": "The restaurant, which we found by chance, was excellent.", "vi": "Nhà hàng, mà chúng tôi tình cờ gặp, rất tuyệt vời.", "note": "one sentence carrying two facts" },
-            { "id": "cl-cbe-2", "en": "Having read the report, she wrote a short summary.", "vi": "Sau khi đọc báo cáo, cô ấy viết một bản tóm tắt ngắn.", "note": "a perfect participle clause, subject kept" },
-            { "id": "cl-cbe-3", "en": "Although the plan looked good, it cost too much.", "vi": "Mặc dù kế hoạch trông tốt, nhưng nó tốn quá nhiều tiền.", "note": "subordination keeps the evaluation in the main clause" },
-            { "id": "cl-cbe-4", "en": "Hiking in the rain, we finally reached the summit.", "vi": "Đi bộ trong mưa, cuối cùng chúng tôi cũng lên đến đỉnh.", "note": "the modifier describes we, so it is not dangling" }
+            {
+              "id": "cl-cbe-1",
+              "en": "The restaurant, which we found by chance, was excellent.",
+              "vi": "Nhà hàng, mà chúng tôi tình cờ gặp, rất tuyệt vời.",
+              "note": "one sentence carrying two facts"
+            },
+            {
+              "id": "cl-cbe-2",
+              "en": "Having read the report, she wrote a short summary.",
+              "vi": "Sau khi đọc báo cáo, cô ấy viết một bản tóm tắt ngắn.",
+              "note": "a perfect participle clause, subject kept"
+            },
+            {
+              "id": "cl-cbe-3",
+              "en": "Although the plan looked good, it cost too much.",
+              "vi": "Mặc dù kế hoạch trông tốt, nhưng nó tốn quá nhiều tiền.",
+              "note": "subordination keeps the evaluation in the main clause"
+            },
+            {
+              "id": "cl-cbe-4",
+              "en": "Hiking in the rain, we finally reached the summit.",
+              "vi": "Đi bộ trong mưa, cuối cùng chúng tôi cũng lên đến đỉnh.",
+              "note": "the modifier describes we, so it is not dangling"
+            }
           ]
         },
         {
@@ -1589,7 +2963,12 @@
               "difficulty": "advanced",
               "prompt": "Reading the instructions, the machine was started by my brother.",
               "instruction": "Rewrite the sentence so that the modifier has a subject.",
-              "answer": { "type": "text", "values": ["While reading the instructions, my brother started the machine."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "While reading the instructions, my brother started the machine."
+                ]
+              },
               "explanation": "A machine cannot read, so the participle has no subject and dangles. Give the reading to a person by using while reading and put my brother at the head of the main clause.",
               "xp": 10
             },
@@ -1601,7 +2980,12 @@
               "difficulty": "advanced",
               "prompt": "I met a teacher. She had written three books.",
               "instruction": "Combine the two sentences into one.",
-              "answer": { "type": "text", "values": ["I met a teacher who had written three books."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I met a teacher who had written three books."
+                ]
+              },
               "explanation": "A relative clause removes the repeated noun teacher and keeps the past perfect that shows the books came first. Using who is that would be wrong here because a teacher is a person and the clause is not set off by commas.",
               "xp": 10
             },
@@ -1614,18 +2998,82 @@
               "prompt": "Build the corrected sentence: I / was / walking / to / school / when / my / bag / was / stolen",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "I", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "was", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "walking", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "to", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "school", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "when", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "my", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "bag", "isCorrect": null, "matchKey": null },
-                { "id": "w9", "text": "was", "isCorrect": null, "matchKey": null },
-                { "id": "w10", "text": "stolen", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "walking",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "to",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "school",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "when",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "my",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "bag",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w9",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w10",
+                  "text": "stolen",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["I", "was", "walking", "to", "school", "when", "my", "bag", "was", "stolen"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "I",
+                  "was",
+                  "walking",
+                  "to",
+                  "school",
+                  "when",
+                  "my",
+                  "bag",
+                  "was",
+                  "stolen"
+                ]
+              },
               "explanation": "The subject I has to be in the clause that carries walking, and when introduces the main clause about the bag. Leaving the subject out, as in walking to school my bag was stolen, produces the dangling modifier this lesson warns about.",
               "xp": 10
             },
@@ -1638,11 +3086,31 @@
               "prompt": "Complete the sentence with the correct relative pronoun: The student who sits by the window always answers first, and she is the one ___ sits by the window.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "who", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "which", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "what", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "who",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "which",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "what",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["who"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "who"
+                ]
+              },
               "explanation": "The word after the gap is a verb, so the relative clause needs a subject, and that subject is a person: who. which is for things and what cannot introduce a clause at all, only a noun phrase.",
               "xp": 10
             }
@@ -1655,24 +3123,39 @@
           "items": [
             {
               "id": "cl-cb-d1",
-              "audio": { "kind": "speech", "text": "I met a writer who had won a national prize." },
-              "acceptedAnswers": ["I met a writer who had won a national prize."],
+              "audio": {
+                "kind": "speech",
+                "text": "I met a writer who had won a national prize."
+              },
+              "acceptedAnswers": [
+                "I met a writer who had won a national prize."
+              ],
               "hint": "a defining relative clause",
               "translation": "Tôi gặp một nhà văn từng đoạt giải quốc gia.",
               "xp": 15
             },
             {
               "id": "cl-cb-d2",
-              "audio": { "kind": "speech", "text": "While I was walking to school, my bag was stolen." },
-              "acceptedAnswers": ["While I was walking to school, my bag was stolen."],
+              "audio": {
+                "kind": "speech",
+                "text": "While I was walking to school, my bag was stolen."
+              },
+              "acceptedAnswers": [
+                "While I was walking to school, my bag was stolen."
+              ],
               "hint": "a subject clause fixes the modifier",
               "translation": "Khi tôi đi bộ đến trường, túi của tôi bị mất.",
               "xp": 15
             },
             {
               "id": "cl-cb-d3",
-              "audio": { "kind": "speech", "text": "Having read the report, she wrote a short summary." },
-              "acceptedAnswers": ["Having read the report, she wrote a short summary."],
+              "audio": {
+                "kind": "speech",
+                "text": "Having read the report, she wrote a short summary."
+              },
+              "acceptedAnswers": [
+                "Having read the report, she wrote a short summary."
+              ],
               "hint": "perfect participle clause",
               "translation": "Sau khi đọc báo cáo, cô ấy viết một bản tóm tắt ngắn.",
               "xp": 15
@@ -1694,11 +3177,31 @@
               "prompt": "Choose the sentence with no dangling modifier.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Driving in the rain, her car skidded off the road.", "isCorrect": false, "matchKey": null },
-                { "id": "b", "text": "While driving in the rain, her car skidded off the road.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "While driving in the rain, she skidded off the road.", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Driving in the rain, her car skidded off the road.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "While driving in the rain, her car skidded off the road.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "While driving in the rain, she skidded off the road.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
               "explanation": "The person doing the driving must be the subject that follows the modifier. A car cannot drive in the rain, so options a and b both dangle, and adding while alone does not fix the problem unless the subject is changed to she.",
               "xp": 10
             },
@@ -1710,7 +3213,12 @@
               "difficulty": "advanced",
               "prompt": "The exam was difficult, and many students did not finish it.",
               "instruction": "Combine the sentences into one without changing the meaning.",
-              "answer": { "type": "text", "values": ["The exam was so difficult that many students did not finish it."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The exam was so difficult that many students did not finish it."
+                ]
+              },
               "explanation": "The result structure so plus adjective plus that plus clause compresses two sentences into one and keeps the cause and effect in the right order. Joining them with and would also be grammatical but longer and less elegant.",
               "xp": 10
             },
@@ -1723,12 +3231,40 @@
               "prompt": "Match each pair of sentences with the technique that joins them.",
               "instruction": "Pair each pair with the correct technique.",
               "items": [
-                { "id": "a", "text": "Two sentences sharing a noun", "isCorrect": null, "matchKey": "a relative clause" },
-                { "id": "b", "text": "A reason and a result", "isCorrect": null, "matchKey": "because or so" },
-                { "id": "c", "text": "A modifier with the wrong subject", "isCorrect": null, "matchKey": "a subject clause" },
-                { "id": "d", "text": "Two facts of equal weight", "isCorrect": null, "matchKey": "a coordinator" }
+                {
+                  "id": "a",
+                  "text": "Two sentences sharing a noun",
+                  "isCorrect": null,
+                  "matchKey": "a relative clause"
+                },
+                {
+                  "id": "b",
+                  "text": "A reason and a result",
+                  "isCorrect": null,
+                  "matchKey": "because or so"
+                },
+                {
+                  "id": "c",
+                  "text": "A modifier with the wrong subject",
+                  "isCorrect": null,
+                  "matchKey": "a subject clause"
+                },
+                {
+                  "id": "d",
+                  "text": "Two facts of equal weight",
+                  "isCorrect": null,
+                  "matchKey": "a coordinator"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "a relative clause", "b": "because or so", "c": "a subject clause", "d": "a coordinator" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "a relative clause",
+                  "b": "because or so",
+                  "c": "a subject clause",
+                  "d": "a coordinator"
+                }
+              },
               "explanation": "Each pair of sentences points at one tool. Choosing the wrong tool is what produces dangling modifiers and comma splices, so identifying the relationship first is the useful habit.",
               "xp": 10
             },
@@ -1741,9 +3277,17 @@
               "prompt": "Combining two sentences never changes the meaning if both are joined correctly.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "The relationship between the ideas can easily be reversed. Joining He studied hard. He failed. with because would claim that the studying caused the failure, so the link has to be chosen to match what the two sentences actually mean.",
               "xp": 10
             }

@@ -73,12 +73,33 @@ struct LearnHomeView: View {
 
                     let methods = app.library.allTopics.filter { $0.kind == .methods }
                     if !methods.isEmpty {
-                        VStack(alignment: .leading, spacing: Spacing.sm) {
-                            SectionHeader(title: "Methods", subtitle: "How to study, not what to study")
-                            ForEach(methods) { topic in
-                                card(for: topic, subtitleOverride: nil)
+                        NavigationLink(value: LearnRoute.methods) {
+                            HStack(spacing: Spacing.md) {
+                                Image(systemName: methods.first?.icon ?? "lightbulb")
+                                    .font(.title2)
+                                    .foregroundStyle(.white)
+                                    .frame(width: 48, height: 48)
+                                    .background(Color.brand, in: .rect(cornerRadius: Radius.chip))
+                                    .accessibilityHidden(true)
+                                VStack(alignment: .leading, spacing: Spacing.xs) {
+                                    Text("Methods")
+                                        .font(.headline)
+                                        .foregroundStyle(.primary)
+                                    Text("Ten ways to study English that actually stick.")
+                                        .font(.subheadline)
+                                        .foregroundStyle(.secondary)
+                                        .multilineTextAlignment(.leading)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                }
+                                Spacer(minLength: 0)
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.tertiary)
+                                    .accessibilityHidden(true)
                             }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .cardStyle()
                         }
+                        .buttonStyle(.plain)
                     }
 
                     LevelFilterBar(filter: $filter)
@@ -136,6 +157,8 @@ struct LearnHomeView: View {
             AlphabetView()
         case .alphabetListening:
             AlphabetListeningView()
+        case .methods:
+            MethodsView()
         }
     }
 
@@ -202,14 +225,24 @@ struct LearnHomeView: View {
     private var personalSections: some View {
         if showsPersonalSections, let topic = startHere {
             VStack(alignment: .leading, spacing: Spacing.sm) {
-                SectionHeader(title: "Start here", subtitle: "The first unfinished beginner topic")
+                SectionHeader(
+                    title: "Start here",
+                    subtitle: "The first unfinished beginner topic",
+                    actionTitle: nil,
+                    action: nil
+                )
                 card(for: topic, subtitleOverride: nil)
             }
         }
 
         if showsPersonalSections, !inProgress.isEmpty {
             VStack(alignment: .leading, spacing: Spacing.sm) {
-                SectionHeader(title: "In progress", subtitle: "Pick up where you stopped")
+                SectionHeader(
+                    title: "In progress",
+                    subtitle: "Pick up where you stopped",
+                    actionTitle: nil,
+                    action: nil
+                )
                 ForEach(inProgress) { topic in
                     card(for: topic, subtitleOverride: nextLessonLine(for: topic))
                 }
@@ -223,7 +256,7 @@ struct LearnHomeView: View {
             let topics = visibleTopics.filter { $0.level == level }
             if !topics.isEmpty {
                 VStack(alignment: .leading, spacing: Spacing.sm) {
-                    SectionHeader(title: level.shortTitle, subtitle: nil)
+                    SectionHeader(title: level.shortTitle, subtitle: nil, actionTitle: nil, action: nil)
                     ForEach(topics) { topic in
                         card(for: topic, subtitleOverride: nil)
                     }

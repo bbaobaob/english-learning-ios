@@ -25,7 +25,12 @@
               "statement": "Every word in a sentence belongs to at least one word class, and the class is what determines its position and the words it combines with.",
               "formula": "noun, verb, adjective, adverb, pronoun, preposition, conjunction, determiner",
               "examples": [
-                { "id": "two-r1e1", "en": "The tall student answered the question quickly.", "vi": "Học sinh cao lớn đã trả lời câu hỏi thật nhanh.", "note": "noun: student, question; verb: answered; adjective: tall; adverb: quickly" }
+                {
+                  "id": "two-r1e1",
+                  "en": "The tall student answered the question quickly.",
+                  "vi": "Học sinh cao lớn đã trả lời câu hỏi thật nhanh.",
+                  "note": "noun: student, question; verb: answered; adjective: tall; adverb: quickly"
+                }
               ]
             },
             {
@@ -33,7 +38,12 @@
               "statement": "A noun can be pluralised and takes a determiner, a verb takes a tense ending, an adjective has a comparative form, and an adverb usually ends in -ly.",
               "formula": "book → books | work → works | quick → quicker | quick → quickly",
               "examples": [
-                { "id": "two-r2e1", "en": "This is a quicker solution.", "vi": "Đây là một cách giải quyết nhanh hơn.", "note": "quick takes the comparative -er to become quicker" }
+                {
+                  "id": "two-r2e1",
+                  "en": "This is a quicker solution.",
+                  "vi": "Đây là một cách giải quyết nhanh hơn.",
+                  "note": "quick takes the comparative -er to become quicker"
+                }
               ]
             },
             {
@@ -41,7 +51,12 @@
               "statement": "Many English words move between classes without any change in spelling, so the surrounding words decide the label.",
               "formula": "fast (adjective / adverb) | light (noun / verb / adjective) | round (noun / verb / adjective / adverb)",
               "examples": [
-                { "id": "two-r3e1", "en": "That was a fast train, and it ran fast.", "vi": "Đó là một tàu nhanh, và nó chạy nhanh.", "note": "the same word is an adjective in the first slot and an adverb in the second" }
+                {
+                  "id": "two-r3e1",
+                  "en": "That was a fast train, and it ran fast.",
+                  "vi": "Đó là một tàu nhanh, và nó chạy nhanh.",
+                  "note": "the same word is an adjective in the first slot and an adverb in the second"
+                }
               ]
             }
           ]
@@ -50,11 +65,36 @@
           "id": "two-examples",
           "type": "examples",
           "examples": [
-            { "id": "two-ex1", "en": "Nouns name: Hanoi, freedom, honesty.", "vi": "Danh từ chỉ tên nơi chốn, sự tự do, sự trung thực.", "note": "abstract and proper nouns count as nouns too" },
-            { "id": "two-ex2", "en": "Verbs act or state: run, build, believe.", "vi": "Động từ nói về hành động hoặc trạng thái.", "note": "verbs are the only words that carry tense" },
-            { "id": "two-ex3", "en": "Adjectives describe: a narrow street, a careless driver.", "vi": "Tính từ miêu tả: con đường hẹp, một tài xế cẩu thả.", "note": "adjectives usually sit before a noun or after a linking verb" },
-            { "id": "two-ex4", "en": "Adverbs modify: she sings beautifully.", "vi": "Trạng từ bổ nghĩa: cô ấy hát rất hay.", "note": "most adverbs end in -ly" },
-            { "id": "two-ex5", "en": "Function words hold the sentence together: the, of, and, but.", "vi": "Từ chức năng giữ câu lại: the, of, and, but.", "note": "a small closed set with no descriptive meaning of its own" }
+            {
+              "id": "two-ex1",
+              "en": "Nouns name: Hanoi, freedom, honesty.",
+              "vi": "Danh từ chỉ tên nơi chốn, sự tự do, sự trung thực.",
+              "note": "abstract and proper nouns count as nouns too"
+            },
+            {
+              "id": "two-ex2",
+              "en": "Verbs act or state: run, build, believe.",
+              "vi": "Động từ nói về hành động hoặc trạng thái.",
+              "note": "verbs are the only words that carry tense"
+            },
+            {
+              "id": "two-ex3",
+              "en": "Adjectives describe: a narrow street, a careless driver.",
+              "vi": "Tính từ miêu tả: con đường hẹp, một tài xế cẩu thả.",
+              "note": "adjectives usually sit before a noun or after a linking verb"
+            },
+            {
+              "id": "two-ex4",
+              "en": "Adverbs modify: she sings beautifully.",
+              "vi": "Trạng từ bổ nghĩa: cô ấy hát rất hay.",
+              "note": "most adverbs end in -ly"
+            },
+            {
+              "id": "two-ex5",
+              "en": "Function words hold the sentence together: the, of, and, but.",
+              "vi": "Từ chức năng giữ câu lại: the, of, and, but.",
+              "note": "a small closed set with no descriptive meaning of its own"
+            }
           ]
         },
         {
@@ -70,13 +110,42 @@
               "prompt": "Match each word to its word class in the sentence 'The careful driver stopped suddenly.'",
               "instruction": "Pair every word with the correct class.",
               "items": [
-                { "id": "w1", "text": "driver", "matchKey": "noun" },
-                { "id": "w2", "text": "stopped", "matchKey": "verb" },
-                { "id": "w3", "text": "careful", "matchKey": "adjective" },
-                { "id": "w4", "text": "suddenly", "matchKey": "adverb" },
-                { "id": "w5", "text": "The", "matchKey": "determiner" }
+                {
+                  "id": "w1",
+                  "text": "driver",
+                  "matchKey": "noun"
+                },
+                {
+                  "id": "w2",
+                  "text": "stopped",
+                  "matchKey": "verb"
+                },
+                {
+                  "id": "w3",
+                  "text": "careful",
+                  "matchKey": "adjective"
+                },
+                {
+                  "id": "w4",
+                  "text": "suddenly",
+                  "matchKey": "adverb"
+                },
+                {
+                  "id": "w5",
+                  "text": "The",
+                  "matchKey": "determiner"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "w1": "noun", "w2": "verb", "w3": "adjective", "w4": "adverb", "w5": "determiner" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "w1": "noun",
+                  "w2": "verb",
+                  "w3": "adjective",
+                  "w4": "adverb",
+                  "w5": "determiner"
+                }
+              },
               "explanation": "Driver names a person, stopped is the action, careful describes the driver, suddenly modifies stopped, and The is a determiner that introduces the noun phrase. Together they show that one noun phrase carries a determiner, a noun and an adjective, followed by a verb phrase with a verb and an adverb.",
               "xp": 10
             },
@@ -89,12 +158,33 @@
               "prompt": "In 'She sings beautifully', what class is 'beautifully'?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "adjective", "isCorrect": false },
-                { "id": "b", "text": "adverb", "isCorrect": true },
-                { "id": "c", "text": "noun", "isCorrect": false },
-                { "id": "d", "text": "verb", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "adjective",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "adverb",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "noun",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "verb",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "Beautifully modifies the verb sings, and any word that modifies a verb is an adverb. The -ly ending is a strong clue, since it is the standard way English forms adverbs of manner from adjectives.",
               "xp": 10
             },
@@ -107,9 +197,16 @@
               "prompt": "Only verbs carry tense information such as past, present and future in English.",
               "instruction": "Decide whether the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "The statement is true. Nouns, adjectives and adverbs do not change with time, which is why a sentence like she sings and she sang differ in exactly one word. A learner who tries to conjugate a noun is looking for a pattern that English does not have.",
               "xp": 10
             },
@@ -121,7 +218,12 @@
               "difficulty": "intermediate",
               "prompt": "The class that includes the, a and an is the ___ class.",
               "instruction": "Write one word.",
-              "answer": { "type": "text", "values": ["determiner"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "determiner"
+                ]
+              },
               "explanation": "The, a and an are determiners: they point at a noun and fix whether it is singular or plural. They are function words, because their job is grammatical rather than descriptive.",
               "xp": 10
             }
@@ -134,16 +236,26 @@
           "items": [
             {
               "id": "two-d1",
-              "audio": { "kind": "speech", "text": "The polite guide answered every question clearly." },
-              "acceptedAnswers": ["The polite guide answered every question clearly."],
+              "audio": {
+                "kind": "speech",
+                "text": "The polite guide answered every question clearly."
+              },
+              "acceptedAnswers": [
+                "The polite guide answered every question clearly."
+              ],
               "hint": "determiner + adjective + noun + verb + noun + adverb",
               "translation": "Người hướng dẫn lịch sự đã trả lời mọi câu hỏi một cách rõ ràng.",
               "xp": 15
             },
             {
               "id": "two-d2",
-              "audio": { "kind": "speech", "text": "Honesty matters more than talent in the long run." },
-              "acceptedAnswers": ["Honesty matters more than talent in the long run."],
+              "audio": {
+                "kind": "speech",
+                "text": "Honesty matters more than talent in the long run."
+              },
+              "acceptedAnswers": [
+                "Honesty matters more than talent in the long run."
+              ],
               "hint": "abstract nouns on both sides of a comparative",
               "translation": "Sự trung thực quan trọng hơn tài năng trong dài hạn.",
               "xp": 15
@@ -164,12 +276,33 @@
               "prompt": "Which word is an adjective in this sentence? 'The old bridge was built quickly.'",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "old", "isCorrect": true },
-                { "id": "b", "text": "bridge", "isCorrect": false },
-                { "id": "c", "text": "built", "isCorrect": false },
-                { "id": "d", "text": "quickly", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "old",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "bridge",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "built",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "quickly",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Old describes the bridge, so it is an adjective. Bridge is the noun, built is the verb, and quickly is an adverb because it modifies how the bridge was built rather than what kind of bridge it was.",
               "xp": 10
             },
@@ -181,7 +314,12 @@
               "difficulty": "intermediate",
               "prompt": "Complete the sentence so that the classes are correct: 'The children played ___ in the garden.'",
               "instruction": "Write one word.",
-              "answer": { "type": "text", "values": ["happily"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "happily"
+                ]
+              },
               "explanation": "The blank comes after the verb played, so it must be an adverb saying how the children played. An adjective such as happy cannot stand there without a linking verb, because English does not put an adjective straight after an action verb.",
               "xp": 10
             },
@@ -193,7 +331,12 @@
               "difficulty": "intermediate",
               "prompt": "Give the adjective form of the noun 'patience'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["patient"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "patient"
+                ]
+              },
               "explanation": "The adjective is patient, spelled exactly like the noun but used in a different slot: a patient person, and be patient. This kind of overlap is common in English and is why the surrounding words decide the class.",
               "xp": 10
             }
@@ -231,8 +374,18 @@
               "statement": "Countable nouns can be counted and have a plural. Uncountable nouns cannot be counted directly, so they take a quantifier instead of a or a number.",
               "formula": "three books | some information, a piece of information",
               "examples": [
-                { "id": "twn-r1e1", "en": "I need three tickets for tonight's show.", "vi": "Tôi cần ba vé cho buổi tối nay.", "note": "tickets is countable and plural" },
-                { "id": "twn-r1e2", "en": "I need some information about the course.", "vi": "Tôi cần một ít thông tin về khóa học.", "note": "information is uncountable, so some replaces three" }
+                {
+                  "id": "twn-r1e1",
+                  "en": "I need three tickets for tonight's show.",
+                  "vi": "Tôi cần ba vé cho buổi tối nay.",
+                  "note": "tickets is countable and plural"
+                },
+                {
+                  "id": "twn-r1e2",
+                  "en": "I need some information about the course.",
+                  "vi": "Tôi cần một ít thông tin về khóa học.",
+                  "note": "information is uncountable, so some replaces three"
+                }
               ]
             },
             {
@@ -240,7 +393,12 @@
               "statement": "Most nouns add -s. Nouns ending in -s, -x, -ch and -sh add -es, and nouns ending in a consonant plus y change the y to i and add -es.",
               "formula": "book → books, box → boxes, city → cities",
               "examples": [
-                { "id": "twn-r2e1", "en": "The students answered three questions.", "vi": "Các học sinh đã trả lời ba câu hỏi.", "note": "question → questions" }
+                {
+                  "id": "twn-r2e1",
+                  "en": "The students answered three questions.",
+                  "vi": "Các học sinh đã trả lời ba câu hỏi.",
+                  "note": "question → questions"
+                }
               ]
             },
             {
@@ -248,7 +406,12 @@
               "statement": "Some nouns have an irregular plural, some never change, and only a few have a distinct plural form used for a single object.",
               "formula": "man → men, child → children | sheep, fish | knife → knives, foot → feet",
               "examples": [
-                { "id": "twn-r3e1", "en": "Three sheep were grazing near the fence.", "vi": "Ba con cừu đang ăn cỏ gần hàng rào.", "note": "sheep has the same form in singular and plural" }
+                {
+                  "id": "twn-r3e1",
+                  "en": "Three sheep were grazing near the fence.",
+                  "vi": "Ba con cừu đang ăn cỏ gần hàng rào.",
+                  "note": "sheep has the same form in singular and plural"
+                }
               ]
             }
           ]
@@ -257,11 +420,36 @@
           "id": "twn-examples",
           "type": "examples",
           "examples": [
-            { "id": "twn-ex1", "en": "There is a lot of traffic this morning.", "vi": "Sáng nay giao thông rất dày đặc.", "note": "traffic is uncountable" },
-            { "id": "twn-ex2", "en": "I bought two loaves of bread on the way home.", "vi": "Trên đường về nhà tôi mua hai ổ bánh mì.", "note": "uncountable noun with the unit loaves" },
-            { "id": "twn-ex3", "en": "The children were playing in the garden.", "vi": "Lũ trẻ đang chơi trong vườn.", "note": "child → children, an irregular plural" },
-            { "id": "twn-ex4", "en": "Hanoi is the capital of Vietnam.", "vi": "Hà Nội là thủ đô của Việt Nam.", "note": "a proper noun, always capitalised" },
-            { "id": "twn-ex5", "en": "Could you give me some advice about the exam?", "vi": "Bạn cho tôi một ít lời khuyên về kỳ thi được không?", "note": "advice is uncountable and takes some, not a" }
+            {
+              "id": "twn-ex1",
+              "en": "There is a lot of traffic this morning.",
+              "vi": "Sáng nay giao thông rất dày đặc.",
+              "note": "traffic is uncountable"
+            },
+            {
+              "id": "twn-ex2",
+              "en": "I bought two loaves of bread on the way home.",
+              "vi": "Trên đường về nhà tôi mua hai ổ bánh mì.",
+              "note": "uncountable noun with the unit loaves"
+            },
+            {
+              "id": "twn-ex3",
+              "en": "The children were playing in the garden.",
+              "vi": "Lũ trẻ đang chơi trong vườn.",
+              "note": "child → children, an irregular plural"
+            },
+            {
+              "id": "twn-ex4",
+              "en": "Hanoi is the capital of Vietnam.",
+              "vi": "Hà Nội là thủ đô của Việt Nam.",
+              "note": "a proper noun, always capitalised"
+            },
+            {
+              "id": "twn-ex5",
+              "en": "Could you give me some advice about the exam?",
+              "vi": "Bạn cho tôi một ít lời khuyên về kỳ thi được không?",
+              "note": "advice is uncountable and takes some, not a"
+            }
           ]
         },
         {
@@ -276,7 +464,12 @@
               "difficulty": "beginner",
               "prompt": "I need two informations about the trip.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I need two pieces of information about the trip."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I need two pieces of information about the trip."
+                ]
+              },
               "explanation": "Information is uncountable, so it has no plural form and cannot be counted with two. English counts it with a unit noun: two pieces of information, or you can rephrase it as I need two items of information.",
               "xp": 10
             },
@@ -288,7 +481,12 @@
               "difficulty": "beginner",
               "prompt": "The plural of 'child' is ___.",
               "instruction": "Write one word.",
-              "answer": { "type": "text", "values": ["children"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "children"
+                ]
+              },
               "explanation": "Child has the irregular plural children, and the form is identical whether it takes a singular or a plural verb in meaning: the child is here, the children are here. There is no regular -s version in modern English.",
               "xp": 10
             },
@@ -300,7 +498,12 @@
               "difficulty": "intermediate",
               "prompt": "friend",
               "instruction": "Write the plural of this noun.",
-              "answer": { "type": "text", "values": ["friends"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "friends"
+                ]
+              },
               "explanation": "Friend is regular, so the plural is simply friends with -s. Regular nouns are the large majority, which is why the -s form should always be your first guess before you look for an exception.",
               "xp": 10
             },
@@ -313,12 +516,33 @@
               "prompt": "Which noun is uncountable?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "equipment", "isCorrect": true },
-                { "id": "b", "text": "apple", "isCorrect": false },
-                { "id": "c", "text": "chair", "isCorrect": false },
-                { "id": "d", "text": "problem", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "equipment",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "apple",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "chair",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "problem",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Equipment is uncountable, so the sentence is some equipment or a piece of equipment, never equipments in the ordinary sense. The other three are ordinary countable nouns with regular plurals.",
               "xp": 10
             }
@@ -331,16 +555,26 @@
           "items": [
             {
               "id": "twn-d1",
-              "audio": { "kind": "speech", "text": "The library bought three new dictionaries last month." },
-              "acceptedAnswers": ["The library bought three new dictionaries last month."],
+              "audio": {
+                "kind": "speech",
+                "text": "The library bought three new dictionaries last month."
+              },
+              "acceptedAnswers": [
+                "The library bought three new dictionaries last month."
+              ],
               "hint": "dictionary ends in -y, so the plural is -ies",
               "translation": "Thư viện đã mua ba cuốn từ điển mới tháng trước.",
               "xp": 15
             },
             {
               "id": "twn-d2",
-              "audio": { "kind": "speech", "text": "We need some advice about choosing a major." },
-              "acceptedAnswers": ["We need some advice about choosing a major."],
+              "audio": {
+                "kind": "speech",
+                "text": "We need some advice about choosing a major."
+              },
+              "acceptedAnswers": [
+                "We need some advice about choosing a major."
+              ],
               "hint": "advice is uncountable and takes some",
               "translation": "Chúng tôi cần một ít lời khuyên về việc chọn ngành học.",
               "xp": 15
@@ -360,7 +594,12 @@
               "difficulty": "intermediate",
               "prompt": "She gave me some good advices about my career.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She gave me some good advice about my career."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She gave me some good advice about my career."
+                ]
+              },
               "explanation": "Advice is uncountable in standard English, so it has no plural form and stays singular: some good advice. Speakers of some languages add a plural to abstract nouns, but English does not.",
               "xp": 10
             },
@@ -373,12 +612,36 @@
               "prompt": "Match each noun to the way it behaves with numbers.",
               "instruction": "Pair every noun with the correct behaviour.",
               "items": [
-                { "id": "n1", "text": "book", "matchKey": "countable" },
-                { "id": "n2", "text": "water", "matchKey": "uncountable" },
-                { "id": "n3", "text": "apple", "matchKey": "countable" },
-                { "id": "n4", "text": "luggage", "matchKey": "uncountable" }
+                {
+                  "id": "n1",
+                  "text": "book",
+                  "matchKey": "countable"
+                },
+                {
+                  "id": "n2",
+                  "text": "water",
+                  "matchKey": "uncountable"
+                },
+                {
+                  "id": "n3",
+                  "text": "apple",
+                  "matchKey": "countable"
+                },
+                {
+                  "id": "n4",
+                  "text": "luggage",
+                  "matchKey": "uncountable"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "n1": "countable", "n2": "uncountable", "n3": "countable", "n4": "uncountable" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "n1": "countable",
+                  "n2": "uncountable",
+                  "n3": "countable",
+                  "n4": "uncountable"
+                }
+              },
               "explanation": "A book and an apple can each be counted and have plurals, while water and luggage are measured rather than counted, so they take some or a piece of. Countability, not the meaning of the word, decides which group it falls into.",
               "xp": 10
             },
@@ -390,7 +653,12 @@
               "difficulty": "intermediate",
               "prompt": "Write the plural of the noun 'knife'.",
               "instruction": "Type one word.",
-              "answer": { "type": "text", "values": ["knives"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "knives"
+                ]
+              },
               "explanation": "The plural of knife is knives, because the final f becomes v in the plural. The same change gives leaf → leaves and half → halves, and it is one of the few regular-looking patterns left in English plurals.",
               "xp": 10
             }
@@ -428,8 +696,18 @@
               "statement": "Action verbs report a physical or mental activity. State verbs report a condition, a feeling or a possession, and they are usually not used in the continuous.",
               "formula": "build, write, run | believe, own, belong, resemble",
               "examples": [
-                { "id": "twv-r1e1", "en": "They are building a new bridge.", "vi": "Họ đang xây một cây cầu mới.", "note": "an action verb, so the continuous is natural" },
-                { "id": "twv-r1e2", "en": "This bag belongs to my sister.", "vi": "Chiếc túi này thuộc về chị tôi.", "note": "a state verb, normally only in the simple form" }
+                {
+                  "id": "twv-r1e1",
+                  "en": "They are building a new bridge.",
+                  "vi": "Họ đang xây một cây cầu mới.",
+                  "note": "an action verb, so the continuous is natural"
+                },
+                {
+                  "id": "twv-r1e2",
+                  "en": "This bag belongs to my sister.",
+                  "vi": "Chiếc túi này thuộc về chị tôi.",
+                  "note": "a state verb, normally only in the simple form"
+                }
               ]
             },
             {
@@ -437,7 +715,12 @@
               "statement": "A main verb carries the main meaning of the predicate. An auxiliary verb helps to build tense, the negative, the question or the passive, and it carries no meaning on its own.",
               "formula": "be, have, do | will, can, must, would",
               "examples": [
-                { "id": "twv-r2e1", "en": "She has finished the work.", "vi": "Cô ấy đã xong phần việc.", "note": "has is the auxiliary, finished is the main verb" }
+                {
+                  "id": "twv-r2e1",
+                  "en": "She has finished the work.",
+                  "vi": "Cô ấy đã xong phần việc.",
+                  "note": "has is the auxiliary, finished is the main verb"
+                }
               ]
             },
             {
@@ -445,7 +728,12 @@
               "statement": "A transitive verb needs an object, and an intransitive verb does not. Linking verbs are a third group, joining the subject to a word that renames or describes it.",
               "formula": "She opened the window. | The flowers smell sweet. | He seems tired.",
               "examples": [
-                { "id": "twv-r3e1", "en": "The soup tastes delicious.", "vi": "Món súp này nếm rất ngon.", "note": "a linking verb, not a transitive verb with a missing object" }
+                {
+                  "id": "twv-r3e1",
+                  "en": "The soup tastes delicious.",
+                  "vi": "Món súp này nếm rất ngon.",
+                  "note": "a linking verb, not a transitive verb with a missing object"
+                }
               ]
             }
           ]
@@ -454,11 +742,36 @@
           "id": "twv-examples",
           "type": "examples",
           "examples": [
-            { "id": "twv-ex1", "en": "We must protect the environment.", "vi": "Chúng ta phải bảo vệ môi trường.", "note": "must is the auxiliary, protect is the main verb" },
-            { "id": "twv-ex2", "en": "The children ran across the field.", "vi": "Lũ trẻ chạy qua bãi cỏ.", "note": "an intransitive action verb with no object" },
-            { "id": "twv-ex3", "en": "He wrote a long letter to his friend.", "vi": "Anh ấy đã viết một lá thư dài cho bạn.", "note": "a transitive verb with the object a long letter" },
-            { "id": "twv-ex4", "en": "The results are already known.", "vi": "Kết quả đã được biết đến rồi.", "note": "are is the auxiliary of the passive and known is the participle" },
-            { "id": "twv-ex5", "en": "I didn't understand the question.", "vi": "Tôi đã không hiểu câu hỏi.", "note": "did is the auxiliary and understand is the base form main verb" }
+            {
+              "id": "twv-ex1",
+              "en": "We must protect the environment.",
+              "vi": "Chúng ta phải bảo vệ môi trường.",
+              "note": "must is the auxiliary, protect is the main verb"
+            },
+            {
+              "id": "twv-ex2",
+              "en": "The children ran across the field.",
+              "vi": "Lũ trẻ chạy qua bãi cỏ.",
+              "note": "an intransitive action verb with no object"
+            },
+            {
+              "id": "twv-ex3",
+              "en": "He wrote a long letter to his friend.",
+              "vi": "Anh ấy đã viết một lá thư dài cho bạn.",
+              "note": "a transitive verb with the object a long letter"
+            },
+            {
+              "id": "twv-ex4",
+              "en": "The results are already known.",
+              "vi": "Kết quả đã được biết đến rồi.",
+              "note": "are is the auxiliary of the passive and known is the participle"
+            },
+            {
+              "id": "twv-ex5",
+              "en": "I didn't understand the question.",
+              "vi": "Tôi đã không hiểu câu hỏi.",
+              "note": "did is the auxiliary and understand is the base form main verb"
+            }
           ]
         },
         {
@@ -474,12 +787,36 @@
               "prompt": "Match each verb to its type.",
               "instruction": "Pair every verb with the correct type.",
               "items": [
-                { "id": "v1", "text": "build", "matchKey": "action" },
-                { "id": "v2", "text": "believe", "matchKey": "state" },
-                { "id": "v3", "text": "write", "matchKey": "action" },
-                { "id": "v4", "text": "own", "matchKey": "state" }
+                {
+                  "id": "v1",
+                  "text": "build",
+                  "matchKey": "action"
+                },
+                {
+                  "id": "v2",
+                  "text": "believe",
+                  "matchKey": "state"
+                },
+                {
+                  "id": "v3",
+                  "text": "write",
+                  "matchKey": "action"
+                },
+                {
+                  "id": "v4",
+                  "text": "own",
+                  "matchKey": "state"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "v1": "action", "v2": "state", "v3": "action", "v4": "state" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "v1": "action",
+                  "v2": "state",
+                  "v3": "action",
+                  "v4": "state"
+                }
+              },
               "explanation": "Build and write report something you do, so they are action verbs and accept the continuous: She is writing. Believe and own report a condition, so they are state verbs and stay in the simple form.",
               "xp": 10
             },
@@ -491,7 +828,12 @@
               "difficulty": "intermediate",
               "prompt": "decision",
               "instruction": "Write the base verb related to this noun.",
-              "answer": { "type": "text", "values": ["decide"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "decide"
+                ]
+              },
               "explanation": "The verb is decide and the noun is decision, connected by the suffix -ion. Learning words in families of three, base, verb and noun, is a faster route to vocabulary than learning each item separately.",
               "xp": 10
             },
@@ -504,9 +846,16 @@
               "prompt": "Auxiliary verbs such as have, do and can carry the main meaning of the sentence on their own.",
               "instruction": "Decide whether the statement is true or false.",
               "items": [
-                { "id": "a", "text": "False", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "False",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "The statement is false. Auxiliaries only support tense, negation, questions and the passive, so they need a main verb: she can, she can swim. A sentence that ends with an auxiliary is incomplete unless another verb follows.",
               "xp": 10
             },
@@ -519,12 +868,33 @@
               "prompt": "Which sentence contains a transitive verb?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She opened the window.", "isCorrect": true },
-                { "id": "b", "text": "The baby slept.", "isCorrect": false },
-                { "id": "c", "text": "The children played.", "isCorrect": false },
-                { "id": "d", "text": "He laughed loudly.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She opened the window.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "The baby slept.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "The children played.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "He laughed loudly.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Opened takes the object the window, so it is transitive. The other three verbs take no object; loudly in option d is an adverb, not an object, which is a very common confusion.",
               "xp": 10
             }
@@ -537,16 +907,26 @@
           "items": [
             {
               "id": "twv-d1",
-              "audio": { "kind": "speech", "text": "The committee has not yet published its report." },
-              "acceptedAnswers": ["The committee has not yet published its report."],
+              "audio": {
+                "kind": "speech",
+                "text": "The committee has not yet published its report."
+              },
+              "acceptedAnswers": [
+                "The committee has not yet published its report."
+              ],
               "hint": "has is the auxiliary, published is the main verb",
               "translation": "Ủy ban chưa công bố báo cáo của mình.",
               "xp": 15
             },
             {
               "id": "twv-d2",
-              "audio": { "kind": "speech", "text": "This soup smells wonderful." },
-              "acceptedAnswers": ["This soup smells wonderful."],
+              "audio": {
+                "kind": "speech",
+                "text": "This soup smells wonderful."
+              },
+              "acceptedAnswers": [
+                "This soup smells wonderful."
+              ],
               "hint": "smell here is a linking verb",
               "translation": "Món súp này có mùi rất thơm.",
               "xp": 15
@@ -566,7 +946,12 @@
               "difficulty": "intermediate",
               "prompt": "She is own a very expensive car.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She owns a very expensive car."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She owns a very expensive car."
+                ]
+              },
               "explanation": "Own is a state verb, and state verbs do not take the continuous, so the sentence is owns. This is the standard test: if the -ing form sounds odd, the verb is a state verb and the simple form is the only option.",
               "xp": 10
             },
@@ -579,12 +964,36 @@
               "prompt": "Match each verb to its role in the sentence.",
               "instruction": "Pair every verb with the correct role.",
               "items": [
-                { "id": "r1", "text": "have", "matchKey": "auxiliary" },
-                { "id": "r2", "text": "think", "matchKey": "main verb" },
-                { "id": "r3", "text": "was", "matchKey": "auxiliary" },
-                { "id": "r4", "text": "need", "matchKey": "main verb" }
+                {
+                  "id": "r1",
+                  "text": "have",
+                  "matchKey": "auxiliary"
+                },
+                {
+                  "id": "r2",
+                  "text": "think",
+                  "matchKey": "main verb"
+                },
+                {
+                  "id": "r3",
+                  "text": "was",
+                  "matchKey": "auxiliary"
+                },
+                {
+                  "id": "r4",
+                  "text": "need",
+                  "matchKey": "main verb"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "r1": "auxiliary", "r2": "main verb", "r3": "auxiliary", "r4": "main verb" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "r1": "auxiliary",
+                  "r2": "main verb",
+                  "r3": "auxiliary",
+                  "r4": "main verb"
+                }
+              },
               "explanation": "Have and was support the tense when a main verb such as finished or written follows, so they are auxiliaries here. Think and need carry the meaning of the clause on their own, so they are main verbs. The same word can change role between sentences.",
               "xp": 10
             },
@@ -596,7 +1005,12 @@
               "difficulty": "intermediate",
               "prompt": "successful",
               "instruction": "Write the base verb related to this adjective.",
-              "answer": { "type": "text", "values": ["succeed"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "succeed"
+                ]
+              },
               "explanation": "The base verb is succeed, and the -ful suffix turns it into the adjective successful. The noun of the same family is success, so one root covers all three word classes.",
               "xp": 10
             }
@@ -634,8 +1048,18 @@
               "statement": "An adjective goes before the noun it describes, or after a linking verb when it describes the subject. A small set of fixed expressions puts it after the noun.",
               "formula": "a narrow street | the street is narrow | the people present",
               "examples": [
-                { "id": "twaa-r1e1", "en": "The room was small.", "vi": "Căn phòng nhỏ.", "note": "predicative position after the linking verb was" },
-                { "id": "twaa-r1e2", "en": "The results were disappointing.", "vi": "Kết quả rất đáng thất vọng.", "note": "the noun is the subject, so the adjective follows the verb" }
+                {
+                  "id": "twaa-r1e1",
+                  "en": "The room was small.",
+                  "vi": "Căn phòng nhỏ.",
+                  "note": "predicative position after the linking verb was"
+                },
+                {
+                  "id": "twaa-r1e2",
+                  "en": "The results were disappointing.",
+                  "vi": "Kết quả rất đáng thất vọng.",
+                  "note": "the noun is the subject, so the adjective follows the verb"
+                }
               ]
             },
             {
@@ -643,7 +1067,12 @@
               "statement": "Adverbs of manner say how, adverbs of place say where, adverbs of time says when, and adverbs of degree say how much.",
               "formula": "She spoke softly. (manner) | He waited outside. (place) | They arrived early. (time) | It is extremely cold. (degree)",
               "examples": [
-                { "id": "twaa-r2e1", "en": "The children played noisily in the garden.", "vi": "Lũ trẻ chơi ồn ào trong vườn.", "note": "noisily answers how they played, so it is an adverb of manner" }
+                {
+                  "id": "twaa-r2e1",
+                  "en": "The children played noisily in the garden.",
+                  "vi": "Lũ trẻ chơi ồn ào trong vườn.",
+                  "note": "noisily answers how they played, so it is an adverb of manner"
+                }
               ]
             },
             {
@@ -651,7 +1080,12 @@
               "statement": "When several adjectives describe one noun, English normally puts them in a fixed order: opinion, size, age, shape, colour, origin, material, purpose.",
               "formula": "a lovely small old round brown Italian wooden coffee table",
               "examples": [
-                { "id": "twaa-r3e1", "en": "She bought a beautiful small black leather bag.", "vi": "Cô ấy mua một chiếc túi da đen nhỏ xinh đẹp.", "note": "opinion, size, colour, material" }
+                {
+                  "id": "twaa-r3e1",
+                  "en": "She bought a beautiful small black leather bag.",
+                  "vi": "Cô ấy mua một chiếc túi da đen nhỏ xinh đẹp.",
+                  "note": "opinion, size, colour, material"
+                }
               ]
             },
             {
@@ -659,7 +1093,12 @@
               "statement": "An adjective and the adverb made from it share one degree system, so quick gives quicker, quickest, and quickly gives more quickly, most quickly.",
               "formula": "quick → quicker / quickly → more quickly",
               "examples": [
-                { "id": "twaa-r4e1", "en": "This is a faster road than the old one.", "vi": "Đây là con đường nhanh hơn con đường cũ.", "note": "faster is the comparative of the adjective fast" }
+                {
+                  "id": "twaa-r4e1",
+                  "en": "This is a faster road than the old one.",
+                  "vi": "Đây là con đường nhanh hơn con đường cũ.",
+                  "note": "faster is the comparative of the adjective fast"
+                }
               ]
             }
           ]
@@ -668,11 +1107,36 @@
           "id": "twaa-examples",
           "type": "examples",
           "examples": [
-            { "id": "twaa-ex1", "en": "The soup is very hot.", "vi": "Món súp này rất nóng.", "note": "an adjective after the linking verb is" },
-            { "id": "twaa-ex2", "en": "She explained the rule clearly.", "vi": "Cô ấy đã giải thích quy tắc một cách rõ ràng.", "note": "an adverb of manner modifying the verb explained" },
-            { "id": "twaa-ex3", "en": "The film was boring, so we left early.", "vi": "Bộ phim chán nên chúng tôi ra về sớm.", "note": "early modifies the verb left, so it is an adverb of time" },
-            { "id": "twaa-ex4", "en": "It is extremely difficult to explain.", "vi": "Điều đó giải thích cực kỳ khó.", "note": "extremely is an adverb of degree modifying the adjective difficult" },
-            { "id": "twaa-ex5", "en": "The new Japanese car is much more reliable.", "vi": "Chiếc xe Nhật mới đáng tin hơn nhiều.", "note": "more reliable compares the adjective, so the noun is reliable" }
+            {
+              "id": "twaa-ex1",
+              "en": "The soup is very hot.",
+              "vi": "Món súp này rất nóng.",
+              "note": "an adjective after the linking verb is"
+            },
+            {
+              "id": "twaa-ex2",
+              "en": "She explained the rule clearly.",
+              "vi": "Cô ấy đã giải thích quy tắc một cách rõ ràng.",
+              "note": "an adverb of manner modifying the verb explained"
+            },
+            {
+              "id": "twaa-ex3",
+              "en": "The film was boring, so we left early.",
+              "vi": "Bộ phim chán nên chúng tôi ra về sớm.",
+              "note": "early modifies the verb left, so it is an adverb of time"
+            },
+            {
+              "id": "twaa-ex4",
+              "en": "It is extremely difficult to explain.",
+              "vi": "Điều đó giải thích cực kỳ khó.",
+              "note": "extremely is an adverb of degree modifying the adjective difficult"
+            },
+            {
+              "id": "twaa-ex5",
+              "en": "The new Japanese car is much more reliable.",
+              "vi": "Chiếc xe Nhật mới đáng tin hơn nhiều.",
+              "note": "more reliable compares the adjective, so the noun is reliable"
+            }
           ]
         },
         {
@@ -687,7 +1151,12 @@
               "difficulty": "intermediate",
               "prompt": "The children are playing very noise in the garden.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["The children are playing very noisily in the garden."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The children are playing very noisily in the garden."
+                ]
+              },
               "explanation": "Noise is a noun, so it cannot modify the verb playing. The word that answers how the children played is the adverb noisily, and the -ly suffix is the standard marker that turns the adjective noisy into that adverb.",
               "xp": 10
             },
@@ -699,7 +1168,12 @@
               "difficulty": "intermediate",
               "prompt": "She sings ___ (beauty) than her sister.",
               "instruction": "Write the correct form of the word in brackets.",
-              "answer": { "type": "text", "values": ["beautifully"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "beautifully"
+                ]
+              },
               "explanation": "The blank modifies the verb sings, so it needs the adverb beautifully. Writing beautiful would describe a noun, and English does not put an adjective straight after an action verb without a linking verb.",
               "xp": 10
             },
@@ -712,13 +1186,37 @@
               "prompt": "Put the words in the correct order.",
               "instruction": "Build the noun phrase.",
               "items": [
-                { "id": "w1", "text": "a" },
-                { "id": "w2", "text": "wooden" },
-                { "id": "w3", "text": "small" },
-                { "id": "w4", "text": "table" },
-                { "id": "w5", "text": "old" }
+                {
+                  "id": "w1",
+                  "text": "a"
+                },
+                {
+                  "id": "w2",
+                  "text": "wooden"
+                },
+                {
+                  "id": "w3",
+                  "text": "small"
+                },
+                {
+                  "id": "w4",
+                  "text": "table"
+                },
+                {
+                  "id": "w5",
+                  "text": "old"
+                }
               ],
-              "answer": { "type": "order", "values": ["a", "small", "old", "wooden", "table"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "a",
+                  "small",
+                  "old",
+                  "wooden",
+                  "table"
+                ]
+              },
               "explanation": "The order is size, age, material, purpose, so the phrase is a small old wooden table. The determiner always comes first and the head noun always comes last, and in between the adjectives follow the fixed English sequence.",
               "xp": 10
             },
@@ -731,12 +1229,33 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "The meeting finished very quick.", "isCorrect": false },
-                { "id": "b", "text": "The meeting finished very quickly.", "isCorrect": true },
-                { "id": "c", "text": "The meeting finished very quicker.", "isCorrect": false },
-                { "id": "d", "text": "The meeting finished very quickful.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "The meeting finished very quick.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "The meeting finished very quickly.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "c",
+                  "text": "The meeting finished very quicker.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "The meeting finished very quickful.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
               "explanation": "The word modifies the verb finished, so it must be the adverb quickly. Quick would describe a noun, quicker is a comparative and needs a than phrase, and quickful is not a word in English.",
               "xp": 10
             }
@@ -749,16 +1268,26 @@
           "items": [
             {
               "id": "twaa-d1",
-              "audio": { "kind": "speech", "text": "The instructions were written very clearly." },
-              "acceptedAnswers": ["The instructions were written very clearly."],
+              "audio": {
+                "kind": "speech",
+                "text": "The instructions were written very clearly."
+              },
+              "acceptedAnswers": [
+                "The instructions were written very clearly."
+              ],
               "hint": "adverb of manner after a passive verb",
               "translation": "Hướng dẫn được viết rất rõ ràng.",
               "xp": 15
             },
             {
               "id": "twaa-d2",
-              "audio": { "kind": "speech", "text": "It was an unusually cold winter this year." },
-              "acceptedAnswers": ["It was an unusually cold winter this year."],
+              "audio": {
+                "kind": "speech",
+                "text": "It was an unusually cold winter this year."
+              },
+              "acceptedAnswers": [
+                "It was an unusually cold winter this year."
+              ],
               "hint": "adverb of degree before an adjective",
               "translation": "Mùa đông năm nay lạnh bất thường.",
               "xp": 15
@@ -779,12 +1308,33 @@
               "prompt": "Which word is an adverb in this sentence? 'The train arrived late again.'",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "train", "isCorrect": false },
-                { "id": "b", "text": "arrived", "isCorrect": false },
-                { "id": "c", "text": "late", "isCorrect": true },
-                { "id": "d", "text": "again", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "train",
+                  "isCorrect": false
+                },
+                {
+                  "id": "b",
+                  "text": "arrived",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "late",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "again",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "c"
+                ]
+              },
               "explanation": "Late answers the question when the train arrived, so it modifies the verb and is an adverb. Again also modifies the verb, but the intended target here is the first time word, and both are functioning as adverbs of time.",
               "xp": 10
             },
@@ -796,7 +1346,12 @@
               "difficulty": "intermediate",
               "prompt": "careful",
               "instruction": "Write the adverb related to this adjective.",
-              "answer": { "type": "text", "values": ["carefully"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "carefully"
+                ]
+              },
               "explanation": "Careful takes the -ly ending to give carefully, which describes how an action is performed. The suffix is the regular way English turns most adjectives into adverbs, and the same root also gives the noun carefulness.",
               "xp": 10
             },
@@ -808,7 +1363,12 @@
               "difficulty": "advanced",
               "prompt": "She speaks English more good than her brother.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["She speaks English more well than her brother."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She speaks English more well than her brother."
+                ]
+              },
               "explanation": "The word modifies the verb speaks, so it needs the adverb well, and the comparative of well is better. Writing good uses the adjective where the adverb is required, and writing gooder is not a comparative because good already has the irregular form better.",
               "xp": 10
             }
@@ -846,7 +1406,12 @@
               "statement": "Function words are a fixed list that is effectively closed. Content words are open and grow all the time, and they are mostly nouns, verbs, adjectives and adverbs.",
               "formula": "the, a, an, of, in, on, at, to, for, and, or, but, is, was, do, have | run, hospital, quick, quietly",
               "examples": [
-                { "id": "twfc-r1e1", "en": "The children quietly left the room.", "vi": "Lũ trẳm lặng rời khỏi căn phòng.", "note": "the, of the, is a function word; children, quietly and left are content words" }
+                {
+                  "id": "twfc-r1e1",
+                  "en": "The children quietly left the room.",
+                  "vi": "Lũ trẳm lặng rời khỏi căn phòng.",
+                  "note": "the, of the, is a function word; children, quietly and left are content words"
+                }
               ]
             },
             {
@@ -854,7 +1419,12 @@
               "statement": "Function words carry the relationships in a sentence: who did what to whom, and when. Remove them and the content words lose their grammar.",
               "formula": "I saw her. → I saw her / I saw her and him",
               "examples": [
-                { "id": "twfc-r2e1", "en": "She gave the book to him.", "vi": "Cô ấy đưa cuốn sách cho anh ấy.", "note": "to him is entirely function words and pronouns, and it carries the direction" }
+                {
+                  "id": "twfc-r2e1",
+                  "en": "She gave the book to him.",
+                  "vi": "Cô ấy đưa cuốn sách cho anh ấy.",
+                  "note": "to him is entirely function words and pronouns, and it carries the direction"
+                }
               ]
             },
             {
@@ -862,7 +1432,12 @@
               "statement": "The auxiliary verbs be, do and have only count as function words when they support the grammar. As a main verb, be is a content word because it has a meaning of its own.",
               "formula": "She is here. (be = main verb, content word) | She is working. (be = auxiliary, function word)",
               "examples": [
-                { "id": "twfc-r3e1", "en": "The book is on the table.", "vi": "Cuốn sách nằm trên bàn.", "note": "here is is a linking verb with a meaning of its own" }
+                {
+                  "id": "twfc-r3e1",
+                  "en": "The book is on the table.",
+                  "vi": "Cuốn sách nằm trên bàn.",
+                  "note": "here is is a linking verb with a meaning of its own"
+                }
               ]
             }
           ]
@@ -871,11 +1446,36 @@
           "id": "twfc-examples",
           "type": "examples",
           "examples": [
-            { "id": "twfc-ex1", "en": "Although it was cheap, the phone broke after a month.", "vi": "Mặc dù rẻ, chiếc điện thoại hỏng sau một tháng.", "note": "although and but are both function words expressing contrast" },
-            { "id": "twfc-ex2", "en": "She works at a hospital near the river.", "vi": "Cô ấy làm việc ở một bệnh viện gần sông.", "note": "at, a and near are structural; hospital and river carry the meaning" },
-            { "id": "twfc-ex3", "en": "I couldn't find it, so I asked again.", "vi": "Tôi không tìm thấy nó, nên tôi hỏi lại.", "note": "couldn't, so and again do little or no lexical work" },
-            { "id": "twfc-ex4", "en": "The conference will be held in Da Nang next March.", "vi": "Hội nghị sẽ được tổ chức ở Đà Nẵng vào tháng Ba tới.", "note": "will be holds the tense and the passive, not a meaning" },
-            { "id": "twfc-ex5", "en": "Few people understand quantum computing.", "vi": "Ít người hiểu lĩnh vực điện toán lượng tử.", "note": "content words can be brand new; the grammar around them is fixed" }
+            {
+              "id": "twfc-ex1",
+              "en": "Although it was cheap, the phone broke after a month.",
+              "vi": "Mặc dù rẻ, chiếc điện thoại hỏng sau một tháng.",
+              "note": "although and but are both function words expressing contrast"
+            },
+            {
+              "id": "twfc-ex2",
+              "en": "She works at a hospital near the river.",
+              "vi": "Cô ấy làm việc ở một bệnh viện gần sông.",
+              "note": "at, a and near are structural; hospital and river carry the meaning"
+            },
+            {
+              "id": "twfc-ex3",
+              "en": "I couldn't find it, so I asked again.",
+              "vi": "Tôi không tìm thấy nó, nên tôi hỏi lại.",
+              "note": "couldn't, so and again do little or no lexical work"
+            },
+            {
+              "id": "twfc-ex4",
+              "en": "The conference will be held in Da Nang next March.",
+              "vi": "Hội nghị sẽ được tổ chức ở Đà Nẵng vào tháng Ba tới.",
+              "note": "will be holds the tense and the passive, not a meaning"
+            },
+            {
+              "id": "twfc-ex5",
+              "en": "Few people understand quantum computing.",
+              "vi": "Ít người hiểu lĩnh vực điện toán lượng tử.",
+              "note": "content words can be brand new; the grammar around them is fixed"
+            }
           ]
         },
         {
@@ -891,13 +1491,40 @@
               "prompt": "Which words in 'The book is on the desk' are function words? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "a", "text": "the", "isCorrect": true },
-                { "id": "b", "text": "book", "isCorrect": false },
-                { "id": "c", "text": "is", "isCorrect": true },
-                { "id": "d", "text": "on", "isCorrect": true },
-                { "id": "e", "text": "desk", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "the",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "book",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "is",
+                  "isCorrect": true
+                },
+                {
+                  "id": "d",
+                  "text": "on",
+                  "isCorrect": true
+                },
+                {
+                  "id": "e",
+                  "text": "desk",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c", "d"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c",
+                  "d"
+                ]
+              },
               "explanation": "The, is and on are the structure of the sentence: they show which noun, build the tense and give the position. Book and desk are the content words, and they are the part a listener must actually understand.",
               "xp": 10
             },
@@ -910,12 +1537,36 @@
               "prompt": "Match each word to the group it belongs to.",
               "instruction": "Pair every word with the correct group.",
               "items": [
-                { "id": "c1", "text": "because", "matchKey": "function word" },
-                { "id": "c2", "text": "quickly", "matchKey": "content word" },
-                { "id": "c3", "text": "with", "matchKey": "function word" },
-                { "id": "c4", "text": "happiness", "matchKey": "content word" }
+                {
+                  "id": "c1",
+                  "text": "because",
+                  "matchKey": "function word"
+                },
+                {
+                  "id": "c2",
+                  "text": "quickly",
+                  "matchKey": "content word"
+                },
+                {
+                  "id": "c3",
+                  "text": "with",
+                  "matchKey": "function word"
+                },
+                {
+                  "id": "c4",
+                  "text": "happiness",
+                  "matchKey": "content word"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "c1": "function word", "c2": "content word", "c3": "function word", "c4": "content word" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "c1": "function word",
+                  "c2": "content word",
+                  "c3": "function word",
+                  "c4": "content word"
+                }
+              },
               "explanation": "Because and with connect and relate, which is grammar rather than meaning, so they are function words. Quickly and happiness carry lexical content, and English could survive without them in a sentence but not without the connectors.",
               "xp": 10
             },
@@ -928,9 +1579,16 @@
               "prompt": "Function words are a fixed set, while content words can be added to English over time.",
               "instruction": "Decide whether the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "The statement is true. The function word list is effectively closed, whereas new content words enter English constantly, and any new noun or verb can be built from existing suffixes. That is why English can describe a new invention without rebuilding its grammar.",
               "xp": 10
             },
@@ -942,7 +1600,12 @@
               "difficulty": "intermediate",
               "prompt": "The conference will held in Da Nang.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["The conference will be held in Da Nang."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The conference will be held in Da Nang."
+                ]
+              },
               "explanation": "The passive needs both halves: the auxiliary will and be, then the participle held. Dropping the auxiliary leaves the sentence with no tense, which is why learners who leave out will must also add be.",
               "xp": 10
             }
@@ -955,16 +1618,26 @@
           "items": [
             {
               "id": "twfc-d1",
-              "audio": { "kind": "speech", "text": "Although the ticket was expensive, we enjoyed the concert." },
-              "acceptedAnswers": ["Although the ticket was expensive, we enjoyed the concert."],
+              "audio": {
+                "kind": "speech",
+                "text": "Although the ticket was expensive, we enjoyed the concert."
+              },
+              "acceptedAnswers": [
+                "Although the ticket was expensive, we enjoyed the concert."
+              ],
               "hint": "function words open the clause and mark the contrast",
               "translation": "Mặc dù vé đắt, chúng tôi vẫn rất thích buổi hòa nhạc.",
               "xp": 15
             },
             {
               "id": "twfc-d2",
-              "audio": { "kind": "speech", "text": "They have already moved into the new apartment." },
-              "acceptedAnswers": ["They have already moved into the new apartment."],
+              "audio": {
+                "kind": "speech",
+                "text": "They have already moved into the new apartment."
+              },
+              "acceptedAnswers": [
+                "They have already moved into the new apartment."
+              ],
               "hint": "have is an auxiliary, not a main verb",
               "translation": "Họ đã chuyển vào căn hộ mới rồi.",
               "xp": 15
@@ -985,12 +1658,33 @@
               "prompt": "Which group contains only function words?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "of, the, and, is", "isCorrect": true },
-                { "id": "b", "text": "of, the, quickly, is", "isCorrect": false },
-                { "id": "c", "text": "the, and, hospital, is", "isCorrect": false },
-                { "id": "d", "text": "because, the, build, is", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "of, the, and, is",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "of, the, quickly, is",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "the, and, hospital, is",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "because, the, build, is",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Of, the, and and is all do grammatical work and none of them carries an independent meaning. The other options each sneak in a content word, which is the usual way this question is set: the trap is a list that looks purely structural until you read it properly.",
               "xp": 10
             },
@@ -1002,7 +1696,12 @@
               "difficulty": "advanced",
               "prompt": "The results have announced yesterday.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["The results were announced yesterday."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The results were announced yesterday."
+                ]
+              },
               "explanation": "Results cannot announce anything, so the sentence needs the passive: were announced, which uses the past auxiliary were plus the participle. The original uses have with a base verb after it, which is the shape English never produces.",
               "xp": 10
             },
@@ -1014,7 +1713,12 @@
               "difficulty": "advanced",
               "prompt": "reliable",
               "instruction": "Write the noun formed from this adjective.",
-              "answer": { "type": "text", "values": ["reliability"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "reliability"
+                ]
+              },
               "explanation": "The suffix -ity turns the adjective reliable into the noun reliability. The untrustworthy opposite is unreliability, and the same suffixes build whole families of content words from one root.",
               "xp": 10
             }
@@ -1052,7 +1756,12 @@
               "statement": "Many words such as light, water, book, name and answer work as both. The slot decides: a determiner before it usually means noun, while a subject or a tense ending usually means verb.",
               "formula": "a light bulb (noun) | light the room (verb)",
               "examples": [
-                { "id": "twp-r1e1", "en": "Please water the plants while we are away.", "vi": "Xin bạn tưới cây trong lúc chúng tôi vắng mặt.", "note": "water as a verb, taking the object the plants" }
+                {
+                  "id": "twp-r1e1",
+                  "en": "Please water the plants while we are away.",
+                  "vi": "Xin bạn tưới cây trong lúc chúng tôi vắng mặt.",
+                  "note": "water as a verb, taking the object the plants"
+                }
               ]
             },
             {
@@ -1060,7 +1769,12 @@
               "statement": "A small group of words serves both classes with no change in form. The presence of a verb to modify makes the adverb reading likely.",
               "formula": "drive slowly (adverb) | a slow drive (adjective)",
               "examples": [
-                { "id": "twp-r2e1", "en": "He works hard and plays hard too.", "vi": "Anh ấy làm việc chăm chỉ và cũng chơi hết mình.", "note": "hard modifies the verbs works and plays, so both are adverbs" }
+                {
+                  "id": "twp-r2e1",
+                  "en": "He works hard and plays hard too.",
+                  "vi": "Anh ấy làm việc chăm chỉ và cũng chơi hết mình.",
+                  "note": "hard modifies the verbs works and plays, so both are adverbs"
+                }
               ]
             },
             {
@@ -1068,7 +1782,12 @@
               "statement": "The -ing form is a noun when it names an activity and a verb when it is part of a larger clause, and the test is whether you can put a determiner in front of it.",
               "formula": "Swimming is good exercise. (noun) | She is swimming. (verb)",
               "examples": [
-                { "id": "twp-r3e1", "en": "Reading before bed helps me relax.", "vi": "Đọc sách trước khi ngủ giúp tôi thư giãn.", "note": "a determiner could be placed before reading, so it is a noun here" }
+                {
+                  "id": "twp-r3e1",
+                  "en": "Reading before bed helps me relax.",
+                  "vi": "Đọc sách trước khi ngủ giúp tôi thư giãn.",
+                  "note": "a determiner could be placed before reading, so it is a noun here"
+                }
               ]
             }
           ]
@@ -1077,11 +1796,36 @@
           "id": "twp-examples",
           "type": "examples",
           "examples": [
-            { "id": "twp-ex1", "en": "The book is on the shelf; I read it last night.", "vi": "Cuốn sách nằm trên kệ, tôi đã đọc nó đêm qua.", "note": "book is a noun in the first clause and a verb in the second" },
-            { "id": "twp-ex2", "en": "She sings beautifully in three languages.", "vi": "Cô ấy hát rất hay bằng ba thứ tiếng.", "note": "the adverb and the numeral modifier both work" },
-            { "id": "twp-ex3", "en": "He answered the question with a single word.", "vi": "Anh ấy trả lời câu hỏi bằng một từ duy nhất.", "note": "answer as a verb and word as a noun" },
-            { "id": "twp-ex4", "en": "Locking the door takes only a second.", "vi": "Việc khóa cửa chỉ mất một giây.", "note": "locking is the subject noun, so the verb takes the singular form" },
-            { "id": "twp-ex5", "en": "A light dinner is enough for me.", "vi": "Một bữa tối nhẹ là đủ với tôi.", "note": "light as an adjective describing the dinner" }
+            {
+              "id": "twp-ex1",
+              "en": "The book is on the shelf; I read it last night.",
+              "vi": "Cuốn sách nằm trên kệ, tôi đã đọc nó đêm qua.",
+              "note": "book is a noun in the first clause and a verb in the second"
+            },
+            {
+              "id": "twp-ex2",
+              "en": "She sings beautifully in three languages.",
+              "vi": "Cô ấy hát rất hay bằng ba thứ tiếng.",
+              "note": "the adverb and the numeral modifier both work"
+            },
+            {
+              "id": "twp-ex3",
+              "en": "He answered the question with a single word.",
+              "vi": "Anh ấy trả lời câu hỏi bằng một từ duy nhất.",
+              "note": "answer as a verb and word as a noun"
+            },
+            {
+              "id": "twp-ex4",
+              "en": "Locking the door takes only a second.",
+              "vi": "Việc khóa cửa chỉ mất một giây.",
+              "note": "locking is the subject noun, so the verb takes the singular form"
+            },
+            {
+              "id": "twp-ex5",
+              "en": "A light dinner is enough for me.",
+              "vi": "Một bữa tối nhẹ là đủ với tôi.",
+              "note": "light as an adjective describing the dinner"
+            }
           ]
         },
         {
@@ -1097,12 +1841,36 @@
               "prompt": "Match each word to the class it has in the sentence given.",
               "instruction": "Pair every word with the correct class.",
               "items": [
-                { "id": "m1", "text": "light (in 'a light dinner')", "matchKey": "adjective" },
-                { "id": "m2", "text": "light (in 'light the room')", "matchKey": "verb" },
-                { "id": "m3", "text": "answer (in 'the right answer')", "matchKey": "noun" },
-                { "id": "m4", "text": "answer (in 'answer the question')", "matchKey": "verb" }
+                {
+                  "id": "m1",
+                  "text": "light (in 'a light dinner')",
+                  "matchKey": "adjective"
+                },
+                {
+                  "id": "m2",
+                  "text": "light (in 'light the room')",
+                  "matchKey": "verb"
+                },
+                {
+                  "id": "m3",
+                  "text": "answer (in 'the right answer')",
+                  "matchKey": "noun"
+                },
+                {
+                  "id": "m4",
+                  "text": "answer (in 'answer the question')",
+                  "matchKey": "verb"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "m1": "adjective", "m2": "verb", "m3": "noun", "m4": "verb" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "m1": "adjective",
+                  "m2": "verb",
+                  "m3": "noun",
+                  "m4": "verb"
+                }
+              },
               "explanation": "The same spelling can carry different classes and the neighbouring words decide. In a light dinner the determiner a and the noun dinner make light an adjective, while light the room has an object, which only a verb can take.",
               "xp": 10
             },
@@ -1114,7 +1882,12 @@
               "difficulty": "advanced",
               "prompt": "success",
               "instruction": "Write the base verb related to this noun.",
-              "answer": { "type": "text", "values": ["succeed"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "succeed"
+                ]
+              },
               "explanation": "The verb is succeed, the noun is success and the adjective is successful, built with the -ion and -ful suffixes. A word family is the fastest way to acquire several word classes at once, and the suffix tells you which class you are holding.",
               "xp": 10
             },
@@ -1127,14 +1900,42 @@
               "prompt": "Put the words in the correct order.",
               "instruction": "Build the sentence.",
               "items": [
-                { "id": "w1", "text": "learnt" },
-                { "id": "w2", "text": "She" },
-                { "id": "w3", "text": "quickly" },
-                { "id": "w4", "text": "to" },
-                { "id": "w5", "text": "English" },
-                { "id": "w6", "text": "has" }
+                {
+                  "id": "w1",
+                  "text": "learnt"
+                },
+                {
+                  "id": "w2",
+                  "text": "She"
+                },
+                {
+                  "id": "w3",
+                  "text": "quickly"
+                },
+                {
+                  "id": "w4",
+                  "text": "to"
+                },
+                {
+                  "id": "w5",
+                  "text": "English"
+                },
+                {
+                  "id": "w6",
+                  "text": "has"
+                }
               ],
-              "answer": { "type": "order", "values": ["She", "has", "quickly", "learnt", "to", "English"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "She",
+                  "has",
+                  "quickly",
+                  "learnt",
+                  "to",
+                  "English"
+                ]
+              },
               "explanation": "The order is subject, auxiliary, adverb, main verb, then the prepositional phrase to English. The adverb has to come before the main verb, not after the whole clause, which is the point this exercise tests.",
               "xp": 10
             },
@@ -1146,7 +1947,12 @@
               "difficulty": "advanced",
               "prompt": "Swimming are good exercise for the heart.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Swimming is good exercise for the heart."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Swimming is good exercise for the heart."
+                ]
+              },
               "explanation": "The -ing form is a noun here because it names an activity and a determiner could stand in front of it, and a gerund subject is singular, so the verb is is. Reading is a good exercise would be the alternative if you wanted to keep the plural.",
               "xp": 10
             },
@@ -1159,12 +1965,34 @@
               "prompt": "Which words can work as a verb in some sentence? Select all that apply.",
               "instruction": "Select every correct option.",
               "items": [
-                { "id": "s1", "text": "light", "isCorrect": true },
-                { "id": "s2", "text": "careful", "isCorrect": false },
-                { "id": "s3", "text": "water", "isCorrect": true },
-                { "id": "s4", "text": "beautiful", "isCorrect": false }
+                {
+                  "id": "s1",
+                  "text": "light",
+                  "isCorrect": true
+                },
+                {
+                  "id": "s2",
+                  "text": "careful",
+                  "isCorrect": false
+                },
+                {
+                  "id": "s3",
+                  "text": "water",
+                  "isCorrect": true
+                },
+                {
+                  "id": "s4",
+                  "text": "beautiful",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["s1", "s3"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "s1",
+                  "s3"
+                ]
+              },
               "explanation": "Light and water are both nouns and verbs, so you can light the room and water the plants. Careful and beautiful are adjectives only, which is why they can never appear in a subject position before a verb.",
               "xp": 10
             }
@@ -1177,16 +2005,26 @@
           "items": [
             {
               "id": "twp-d1",
-              "audio": { "kind": "speech", "text": "Please water the plants before you leave the flat." },
-              "acceptedAnswers": ["Please water the plants before you leave the flat."],
+              "audio": {
+                "kind": "speech",
+                "text": "Please water the plants before you leave the flat."
+              },
+              "acceptedAnswers": [
+                "Please water the plants before you leave the flat."
+              ],
               "hint": "water as a verb with the object the plants",
               "translation": "Xin bạn tưới cây trước khi rời khỏi căn hộ.",
               "xp": 15
             },
             {
               "id": "twp-d2",
-              "audio": { "kind": "speech", "text": "Learning a new language takes patience more than talent." },
-              "acceptedAnswers": ["Learning a new language takes patience more than talent."],
+              "audio": {
+                "kind": "speech",
+                "text": "Learning a new language takes patience more than talent."
+              },
+              "acceptedAnswers": [
+                "Learning a new language takes patience more than talent."
+              ],
               "hint": "a gerund noun as the subject, so the verb is singular",
               "translation": "Học ngôn ngữ mới cần sự kiên nhẫn hơn là tài năng.",
               "xp": 15
@@ -1207,12 +2045,33 @@
               "prompt": "Which sentence uses 'round' as a verb?",
               "instruction": "Pick one option.",
               "items": [
-                { "id": "a", "text": "She rounded the number to the nearest ten.", "isCorrect": true },
-                { "id": "b", "text": "It was a round table.", "isCorrect": false },
-                { "id": "c", "text": "He arrived round about eight.", "isCorrect": false },
-                { "id": "d", "text": "The wheel is round.", "isCorrect": false }
+                {
+                  "id": "a",
+                  "text": "She rounded the number to the nearest ten.",
+                  "isCorrect": true
+                },
+                {
+                  "id": "b",
+                  "text": "It was a round table.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "c",
+                  "text": "He arrived round about eight.",
+                  "isCorrect": false
+                },
+                {
+                  "id": "d",
+                  "text": "The wheel is round.",
+                  "isCorrect": false
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Option a gives round an object, the number, which only a verb can take. In option b and option d round describes a noun, and in option c it modifies the numeral as an adverb of approximation.",
               "xp": 10
             },
@@ -1224,7 +2083,12 @@
               "difficulty": "advanced",
               "prompt": "He is a very carefully driver, but his brother drives more careless.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He is a very careful driver, but his brother drives more carelessly."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He is a very careful driver, but his brother drives more carelessly."
+                ]
+              },
               "explanation": "Carefully is an adverb and cannot describe the noun driver, so the adjective careful is needed before it. After the verb drives the word must be the adverb carelessly, and the comparative of carelessly is formed with more.",
               "xp": 10
             },
@@ -1236,7 +2100,12 @@
               "difficulty": "advanced",
               "prompt": "help",
               "instruction": "Write the adjective related to this verb.",
-              "answer": { "type": "text", "values": ["helpful"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "helpful"
+                ]
+              },
               "explanation": "Helpful is the adjective, formed with the -ful suffix, and the noun helpfulness belongs to the same family. The class of the word changes with the suffix, and the suffix tells you which class you have built.",
               "xp": 10
             }

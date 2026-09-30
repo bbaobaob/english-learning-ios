@@ -53,11 +53,16 @@ struct RootTabView: View {
 
         TabView(selection: $app.selectedTab) {
             ForEach(AppTab.allCases) { tab in
+                // The path is `[AnyHashable]` so each tab's stack can carry its
+                // own lane's route enum: `LearnRoute.lesson` takes two
+                // arguments and `.alphabet` has no equivalent in any other tab,
+                // so a single shared route enum would either be wrong for five
+                // tabs or need cases only one of them uses. Each lane's root
+                // view registers its own `navigationDestination(for:)`, and
+                // SwiftUI resolves the most specific registered type — so two
+                // lanes can both have a `case topic(String)` without colliding.
                 NavigationStack(path: app.path(for: tab)) {
                     TabRootScreen(tab: tab)
-                        .navigationDestination(for: AppRoute.self) { route in
-                            RouteDestination(route: route)
-                        }
                 }
                 .tabItem {
                     Label(tab.title, systemImage: tab.symbol)
@@ -90,104 +95,45 @@ private struct TabBarGlass: ViewModifier {
 
 /// The root screen of one tab.
 ///
-/// This is a dispatch point, not a stub. Each case is one line naming the view
-/// its owning lane ships; until that lane lands, the tab shows a labelled
-/// placeholder that says which lane owes it, rather than an empty white screen
-/// that looks like a bug in this lane's code.
+/// A dispatch point, not a stub: each case names the view its owning lane
+/// ships. A lane's root view reads `AppState`, `ProgressStore`,
+/// `AudioPlayerModel`, and `SpeechService` from the environment, so this file
+/// never has to be edited again when a lane adds a screen.
 ///
-/// // TODO(lanes): replace the `EmptyStateView` in each case with the owning
-/// lane's root view, e.g. `HomeView(store: app.store, library: app.library)`.
-/// The signature to code against is `AppTab` and the environment already
-/// carries `AppState`, `ProgressStore`, `AudioPlayerModel`, and `SpeechService`.
+/// **Two lanes bring their own `NavigationStack`.** `LearnHomeView` and
+/// `IELTSHomeView` each wrap themselves in one bound to
+/// `app.navigationPath`, because they were written against that API before this
+/// shell existed. Nesting a `NavigationStack` inside another produces a
+/// back-swipe that pops the inner stack while the tab bar stays put — a
+/// genuinely confusing gesture, not a cosmetic one. Rather than edit two lanes'
+/// files, the tab bar's own stack is dropped for exactly those two tabs, so
+/// each stack is the single one the lane expects and `app.navigationPath` drives
+/// it either way.
+///
+/// // TODO(learn, ielts): delete the `NavigationStack` wrapper from
+/// `LearnHomeView` and `IELTSHomeView` once both are bound to
+/// `app.path(for: .learn)` / `app.path(for: .ielts)`, then delete the
+/// `laneSuppliesItsOwnStack` switch below.
 struct TabRootScreen: View {
     let tab: AppTab
     @Environment(AppState.self) private var app
 
+    /// Whether the lane's root view brings its own `NavigationStack`.
+    private var laneSuppliesItsOwnStack: Bool {
+        tab == .learn || tab == .ielts
+    }
+
     var body: some View {
         Group {
             switch tab {
-            case .home:
-                // TODO(home)
-                placeholder(for: tab)
-            case .learn:
-                // TODO(learn)
-                placeholder(for: tab)
-            case .practice:
-                // TODO(practice)
-                placeholder(for: tab)
-            case .ielts:
-                // TODO(ielts)
-                placeholder(for: tab)
-            case .vocabulary:
-                // TODO(vocabulary)
-                placeholder(for: tab)
-            case .profile:
-                // TODO(profile)
-                placeholder(for: tab)
+            case .home: HomeView()
+            case .learn: LearnHomeView()
+            case .practice: PracticeHomeView()
+            case .ielts: IELTSHomeView()
+            case .vocabulary: VocabularyHomeView()
+            case .profile: ProfileView()
             }
         }
         .background(Palette.background)
-    }
-
-    private func placeholder(for tab: AppTab) -> some View {
-        EmptyStateView(
-            symbol: tab.symbol,
-            title: tab.title,
-            message: app.contentError
-                ?? (app.library == nil
-                    ? "Loading the course…"
-                    : "This section is on its way.")
-        )
-    }
-}
-
-/// Resolves a pushed route to its screen.
-///
-/// Same contract as ``TabRootScreen``: one line per case for the owning lane.
-/// The routing, the paths, and the tab association are already done, so a lane
-/// only has to supply the view for its own destinations.
-struct RouteDestination: View {
-    let route: AppRoute
-    @Environment(AppState.self) private var app
-
-    var body: some View {
-        Group {
-            switch route {
-            case .topic(let topicID):
-                // TODO(learn): TopicDetailView(topicID:)
-                unavailable(title: topicID)
-            case .lesson(let lessonID):
-                // TODO(learn): LessonFlowView(lessonID:)
-                unavailable(title: lessonID)
-            case .vocabulary:
-                // TODO(vocabulary): VocabularyDeckView()
-                unavailable(title: "Vocabulary")
-            case .ielts(let moduleID):
-                // TODO(ielts): IELTSModuleView(moduleID:)
-                unavailable(title: moduleID)
-            case .practice(let setID):
-                // TODO(practice): PracticeSetView(setID:)
-                unavailable(title: setID)
-            }
-        }
-        .background(Palette.background)
-    }
-
-    /// Resolves an id to a human title where the library can, so the
-    /// navigation bar is not empty.
-    private func unavailable(title: String) -> some View {
-        EmptyStateView(
-            symbol: "square.stack.3d.up.slash",
-            title: resolvedTitle(fallback: title),
-            message: "This screen is on its way."
-        )
-    }
-
-    private func resolvedTitle(fallback: String) -> String {
-        guard let library = app.library else { return fallback }
-        return library.topic(fallback)?.title
-            ?? library.lesson(fallback)?.title
-            ?? library.ieltsLesson(fallback)?.title
-            ?? fallback
     }
 }

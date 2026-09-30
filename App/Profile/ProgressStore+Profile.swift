@@ -14,7 +14,6 @@ import EnglishStore
 struct StudyDay: Hashable, Identifiable {
     let day: Date
     let minutes: Int
-    let xp: Int
     var id: Date { day }
 }
 
@@ -104,18 +103,17 @@ extension ProgressStore {
     /// - Complexity: O(n + d) in session rows and days.
     func studyDays(from start: Date, through end: Date) -> [StudyDay] {
         var minutesByDay: [Date: Int] = [:]
-        var xpByDay: [Date: Int] = [:]
         for session in studySessions() {
-            let day = session.endedAt.startOfDay
-            minutesByDay[day, default: 0] += session.minutes
-            xpByDay[day, default: 0] += session.xpEarned
+            minutesByDay[session.endedAt.startOfDay, default: 0] += session.minutes
         }
 
         var days: [StudyDay] = []
         var cursor = start
+        // Bounded so a bad range cannot spin: 400 days covers any two-month
+        // window with room to spare.
         var guardCounter = 0
         while cursor <= end, guardCounter < 400 {
-            days.append(StudyDay(day: cursor, minutes: minutesByDay[cursor] ?? 0, xp: xpByDay[cursor] ?? 0))
+            days.append(StudyDay(day: cursor, minutes: minutesByDay[cursor] ?? 0))
             guard let next = cursor.adding(days: 1) else { break }
             cursor = next
             guardCounter += 1

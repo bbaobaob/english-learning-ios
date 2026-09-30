@@ -25,8 +25,18 @@
               "statement": "Use the present simple in both clauses. No will and no past tense, because the situation is a general truth rather than an event in time.",
               "formula": "if + subject + present simple, subject + present simple",
               "examples": [
-                { "id": "cd-0-ex1", "en": "If you heat ice, it melts.", "vi": "Nếu bạn nung nóng băng, nó tan ra.", "note": "a physical law, always true" },
-                { "id": "cd-0-ex2", "en": "If you press this button, the machine stops.", "vi": "Nếu bạn nhấn nút này, máy sẽ dừng.", "note": "the result always follows the condition" }
+                {
+                  "id": "cd-0-ex1",
+                  "en": "If you heat ice, it melts.",
+                  "vi": "Nếu bạn nung nóng băng, nó tan ra.",
+                  "note": "a physical law, always true"
+                },
+                {
+                  "id": "cd-0-ex2",
+                  "en": "If you press this button, the machine stops.",
+                  "vi": "Nếu bạn nhấn nút này, máy sẽ dừng.",
+                  "note": "the result always follows the condition"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "The zero conditional is also used for habits, routines and standing instructions, where the general form is more natural than a specific future.",
               "formula": "If the alarm rings, I leave the office.",
               "examples": [
-                { "id": "cd-0-ex3", "en": "If the alarm rings, I leave the office.", "vi": "Nếu chuông báo thức reo, tôi rời văn phòng.", "note": "a routine, not a single event" },
-                { "id": "cd-0-ex4", "en": "If you smoke, you harm your health.", "vi": "Nếu bạn hút thuốc, bạn sẽ hại sức khỏe.", "note": "a general warning" }
+                {
+                  "id": "cd-0-ex3",
+                  "en": "If the alarm rings, I leave the office.",
+                  "vi": "Nếu chuông báo thức reo, tôi rời văn phòng.",
+                  "note": "a routine, not a single event"
+                },
+                {
+                  "id": "cd-0-ex4",
+                  "en": "If you smoke, you harm your health.",
+                  "vi": "Nếu bạn hút thuốc, bạn sẽ hại sức khỏe.",
+                  "note": "a general warning"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "Unless is a shorter form of if not. The clause after it stays positive, so never write unless plus a negative verb.",
               "formula": "Unless you study, you fail. (= If you do not study, you fail.)",
               "examples": [
-                { "id": "cd-0-ex5", "en": "If you do not water the plants, they die.", "vi": "Nếu bạn không tưới cây, chúng sẽ chết.", "note": "the negative lives inside the if-clause" },
-                { "id": "cd-0-ex6", "en": "Unless you water the plants, they die.", "vi": "Trừ khi bạn tưới cây, chúng sẽ chết.", "note": "the same meaning, positive clause" }
+                {
+                  "id": "cd-0-ex5",
+                  "en": "If you do not water the plants, they die.",
+                  "vi": "Nếu bạn không tưới cây, chúng sẽ chết.",
+                  "note": "the negative lives inside the if-clause"
+                },
+                {
+                  "id": "cd-0-ex6",
+                  "en": "Unless you water the plants, they die.",
+                  "vi": "Trừ khi bạn tưới cây, chúng sẽ chết.",
+                  "note": "the same meaning, positive clause"
+                }
               ]
             },
             {
@@ -52,8 +82,18 @@
               "statement": "Zero conditional states a rule; first conditional talks about one particular future situation. If you change one verb to will, you have changed the meaning.",
               "formula": "If you heat water, it boils. (always) / If you heat water, it will boil. (this time)",
               "examples": [
-                { "id": "cd-0-ex7", "en": "If you mix blue and yellow, you get green.", "vi": "Nếu bạn trộn xanh dương và vàng, bạn sẽ được màu xanh lá.", "note": "a rule" },
-                { "id": "cd-0-ex8", "en": "If you mix blue and yellow now, you will get green.", "vi": "Nếu bạn trộn ngay bây giờ, bạn sẽ được màu xanh lá.", "note": "one particular occasion" }
+                {
+                  "id": "cd-0-ex7",
+                  "en": "If you mix blue and yellow, you get green.",
+                  "vi": "Nếu bạn trộn xanh dương và vàng, bạn sẽ được màu xanh lá.",
+                  "note": "a rule"
+                },
+                {
+                  "id": "cd-0-ex8",
+                  "en": "If you mix blue and yellow now, you will get green.",
+                  "vi": "Nếu bạn trộn ngay bây giờ, bạn sẽ được màu xanh lá.",
+                  "note": "one particular occasion"
+                }
               ]
             }
           ]
@@ -62,10 +102,30 @@
           "id": "cd-0-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-0e-1", "en": "If you drop a stone into water, it sinks.", "vi": "Nếu bạn thả một viên sỏi xuống nước, nó sẽ chìm.", "note": "physics, always true" },
-            { "id": "cd-0e-2", "en": "If the temperature falls below zero, the lake freezes.", "vi": "Nếu nhiệt độ xuống dưới không, hồ sẽ đóng băng.", "note": "a natural rule" },
-            { "id": "cd-0e-3", "en": "If the machine makes a strange noise, call the technician.", "vi": "Nếu máy phát ra tiếng động lạ, hãy gọi kỹ thuật viên.", "note": "a standing instruction" },
-            { "id": "cd-0e-4", "en": "If my sister works late, she usually eats at the office.", "vi": "Nếu chị tôi làm việc muộn, cô ấy thường ăn ở văn phòng.", "note": "a general habit" }
+            {
+              "id": "cd-0e-1",
+              "en": "If you drop a stone into water, it sinks.",
+              "vi": "Nếu bạn thả một viên sỏi xuống nước, nó sẽ chìm.",
+              "note": "physics, always true"
+            },
+            {
+              "id": "cd-0e-2",
+              "en": "If the temperature falls below zero, the lake freezes.",
+              "vi": "Nếu nhiệt độ xuống dưới không, hồ sẽ đóng băng.",
+              "note": "a natural rule"
+            },
+            {
+              "id": "cd-0e-3",
+              "en": "If the machine makes a strange noise, call the technician.",
+              "vi": "Nếu máy phát ra tiếng động lạ, hãy gọi kỹ thuật viên.",
+              "note": "a standing instruction"
+            },
+            {
+              "id": "cd-0e-4",
+              "en": "If my sister works late, she usually eats at the office.",
+              "vi": "Nếu chị tôi làm việc muộn, cô ấy thường ăn ở văn phòng.",
+              "note": "a general habit"
+            }
           ]
         },
         {
@@ -81,12 +141,37 @@
               "prompt": "Complete the zero conditional: If you mix red and blue, you ___ purple.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "get", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "will get", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "would get", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "got", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "get",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "will get",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "would get",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "got",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["get"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "get"
+                ]
+              },
               "explanation": "The zero conditional uses the present simple in both clauses, so the main clause is get and never will get. Adding will moves the sentence into the first conditional, which is about one particular future occasion rather than a rule.",
               "xp": 10
             },
@@ -98,7 +183,13 @@
               "difficulty": "beginner",
               "prompt": "If you burn plastic, it ___ harmful gas.",
               "instruction": "Write the correct verb form.",
-              "answer": { "type": "text", "values": ["produces", "produces "] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "produces",
+                  "produces "
+                ]
+              },
               "explanation": "Both clauses take the present simple, and the subject it is third person singular, so the verb takes the s. This is a general chemical fact rather than a single event, which is why the simple present is right.",
               "xp": 10
             },
@@ -110,7 +201,12 @@
               "difficulty": "intermediate",
               "prompt": "Unless you don't wear a helmet, you will be fined.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Unless you wear a helmet, you will be fined."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Unless you wear a helmet, you will be fined."
+                ]
+              },
               "explanation": "unless already means if not, so the negative must not appear again. Unless you do not wear creates a double negative that reverses the meaning to the exact opposite of what the writer intended.",
               "xp": 10
             },
@@ -123,11 +219,31 @@
               "prompt": "Which sentence is a zero conditional?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If you touch the wire, you get an electric shock.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If you touch the wire, you would get an electric shock.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If you had touched the wire, you would have got an electric shock.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If you touch the wire, you get an electric shock.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If you touch the wire, you would get an electric shock.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If you had touched the wire, you would have got an electric shock.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A zero conditional has present simple on both sides. Option b uses the unreal present of the second conditional and option c uses the third, which describes a past event.",
               "xp": 10
             },
@@ -140,9 +256,17 @@
               "prompt": "In a zero conditional, a comma is required between the two clauses.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "An if-clause at the front of a sentence is followed by a comma only when there are several clauses. In a simple zero conditional, If you heat ice it melts is written with no comma, because the two clauses belong together.",
               "xp": 10
             }
@@ -155,24 +279,39 @@
           "items": [
             {
               "id": "cd-0-d1",
-              "audio": { "kind": "speech", "text": "If you heat ice, it melts into water." },
-              "acceptedAnswers": ["If you heat ice, it melts into water."],
+              "audio": {
+                "kind": "speech",
+                "text": "If you heat ice, it melts into water."
+              },
+              "acceptedAnswers": [
+                "If you heat ice, it melts into water."
+              ],
               "hint": "a general law",
               "translation": "Nếu bạn nung nóng băng, nó sẽ tan thành nước.",
               "xp": 15
             },
             {
               "id": "cd-0-d2",
-              "audio": { "kind": "speech", "text": "Unless you water the plants, they will die." },
-              "acceptedAnswers": ["Unless you water the plants, they will die."],
+              "audio": {
+                "kind": "speech",
+                "text": "Unless you water the plants, they will die."
+              },
+              "acceptedAnswers": [
+                "Unless you water the plants, they will die."
+              ],
               "hint": "unless means if not",
               "translation": "Trừ khi bạn tưới cây, chúng sẽ chết.",
               "xp": 15
             },
             {
               "id": "cd-0-d3",
-              "audio": { "kind": "speech", "text": "If the alarm rings, I leave the office at once." },
-              "acceptedAnswers": ["If the alarm rings, I leave the office at once."],
+              "audio": {
+                "kind": "speech",
+                "text": "If the alarm rings, I leave the office at once."
+              },
+              "acceptedAnswers": [
+                "If the alarm rings, I leave the office at once."
+              ],
               "hint": "a standing routine",
               "translation": "Nếu chuông báo thức reo, tôi rời văn phòng ngay lập tức.",
               "xp": 15
@@ -194,11 +333,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If you divide by zero, you get an error.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If you will divide by zero, you get an error.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If you divide by zero, you would get an error.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If you divide by zero, you get an error.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If you will divide by zero, you get an error.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If you divide by zero, you would get an error.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A zero conditional has the present simple in both clauses and no future auxiliary in the condition, so option a is correct. Option b puts will in the if-clause, which is never possible, and would get in option c describes an imagined situation rather than a maths fact.",
               "xp": 10
             },
@@ -210,7 +369,12 @@
               "difficulty": "intermediate",
               "prompt": "If you will touch the wire, you get a shock.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If you touch the wire, you get a shock."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you touch the wire, you get a shock."
+                ]
+              },
               "explanation": "The if-clause never takes will, in any conditional type. A future auxiliary in that position turns the clause into an error, which is one of the most frequent mistakes in written English.",
               "xp": 10
             },
@@ -223,12 +387,40 @@
               "prompt": "Match each beginning of a sentence with its ending.",
               "instruction": "Pair each opening with the correct ending.",
               "items": [
-                { "id": "a", "text": "If you touch the flame,", "isCorrect": null, "matchKey": "you feel heat." },
-                { "id": "b", "text": "If you make a mistake,", "isCorrect": null, "matchKey": "you correct it and learn." },
-                { "id": "c", "text": "If it rains tomorrow,", "isCorrect": null, "matchKey": "the match may be cancelled." },
-                { "id": "d", "text": "If a plant gets no light,", "isCorrect": null, "matchKey": "it stops growing." }
+                {
+                  "id": "a",
+                  "text": "If you touch the flame,",
+                  "isCorrect": null,
+                  "matchKey": "you feel heat."
+                },
+                {
+                  "id": "b",
+                  "text": "If you make a mistake,",
+                  "isCorrect": null,
+                  "matchKey": "you correct it and learn."
+                },
+                {
+                  "id": "c",
+                  "text": "If it rains tomorrow,",
+                  "isCorrect": null,
+                  "matchKey": "the match may be cancelled."
+                },
+                {
+                  "id": "d",
+                  "text": "If a plant gets no light,",
+                  "isCorrect": null,
+                  "matchKey": "it stops growing."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "you feel heat.", "b": "you correct it and learn.", "c": "the match may be cancelled.", "d": "it stops growing." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "you feel heat.",
+                  "b": "you correct it and learn.",
+                  "c": "the match may be cancelled.",
+                  "d": "it stops growing."
+                }
+              },
               "explanation": "Items a, b and d are all zero conditionals about general facts and habits. Item c is about tomorrow, so it belongs to the first conditional and needs will be cancelled, which is why it is the trap in this set.",
               "xp": 10
             },
@@ -241,9 +433,17 @@
               "prompt": "Unless is used in the same way as if not, so the clause after it stays positive.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "unless equals if not, so unless you call means if you do not call. Adding a second negative gives unless you do not call, which means if you call and reverses the meaning.",
               "xp": 10
             }
@@ -280,8 +480,18 @@
               "statement": "The if-clause uses the present simple even though it is about the future, and the main clause uses will plus the base form of the verb.",
               "formula": "if + present simple, subject + will + base verb",
               "examples": [
-                { "id": "cd-1-ex1", "en": "If it rains tomorrow, we will stay at home.", "vi": "Nếu ngày mai trời mưa, chúng tôi sẽ ở nhà.", "note": "present in the condition, will in the result" },
-                { "id": "cd-1-ex2", "en": "If you help me, I will help you.", "vi": "Nếu bạn giúp tôi, tôi sẽ giúp bạn.", "note": "a promise, so this is a real condition" }
+                {
+                  "id": "cd-1-ex1",
+                  "en": "If it rains tomorrow, we will stay at home.",
+                  "vi": "Nếu ngày mai trời mưa, chúng tôi sẽ ở nhà.",
+                  "note": "present in the condition, will in the result"
+                },
+                {
+                  "id": "cd-1-ex2",
+                  "en": "If you help me, I will help you.",
+                  "vi": "Nếu bạn giúp tôi, tôi sẽ giúp bạn.",
+                  "note": "a promise, so this is a real condition"
+                }
               ]
             },
             {
@@ -289,8 +499,18 @@
               "statement": "The if-clause never takes will, will not or any other future auxiliary. This is not a style preference; it is ungrammatical.",
               "formula": "not If you will come, but If you come",
               "examples": [
-                { "id": "cd-1-ex3", "en": "If you come early, we will have time to talk.", "vi": "Nếu bạn đến sớm, chúng ta sẽ có thời gian để nói chuyện.", "note": "come, not will come" },
-                { "id": "cd-1-ex4", "en": "She will call you if you arrive early.", "vi": "Cô ấy sẽ gọi cho bạn nếu bạn đến sớm.", "note": "when the if-clause comes last, the comma is optional" }
+                {
+                  "id": "cd-1-ex3",
+                  "en": "If you come early, we will have time to talk.",
+                  "vi": "Nếu bạn đến sớm, chúng ta sẽ có thời gian để nói chuyện.",
+                  "note": "come, not will come"
+                },
+                {
+                  "id": "cd-1-ex4",
+                  "en": "She will call you if you arrive early.",
+                  "vi": "Cô ấy sẽ gọi cho bạn nếu bạn đến sớm.",
+                  "note": "when the if-clause comes last, the comma is optional"
+                }
               ]
             },
             {
@@ -298,8 +518,18 @@
               "statement": "When the if-clause asks for something, the main clause is an imperative with no subject and no will.",
               "formula": "If you are tired, go to bed early.",
               "examples": [
-                { "id": "cd-1-ex5", "en": "If you are tired, go to bed early.", "vi": "Nếu bạn mệt, hãy đi ngủ sớm.", "note": "imperative main clause" },
-                { "id": "cd-1-ex6", "en": "If the parcel does not arrive, let me know.", "vi": "Nếu bưu kiện không đến, hãy báo cho tôi biết.", "note": "let me know is an imperative with a follow-up object" }
+                {
+                  "id": "cd-1-ex5",
+                  "en": "If you are tired, go to bed early.",
+                  "vi": "Nếu bạn mệt, hãy đi ngủ sớm.",
+                  "note": "imperative main clause"
+                },
+                {
+                  "id": "cd-1-ex6",
+                  "en": "If the parcel does not arrive, let me know.",
+                  "vi": "Nếu bưu kiện không đến, hãy báo cho tôi biết.",
+                  "note": "let me know is an imperative with a follow-up object"
+                }
               ]
             },
             {
@@ -307,8 +537,18 @@
               "statement": "The main clause may use going to, the present continuous or the present simple for timetabled events, as long as the meaning stays possible.",
               "formula": "If we hurry, we are going to miss the train.",
               "examples": [
-                { "id": "cd-1-ex7", "en": "If we leave now, we are going to miss the train.", "vi": "Nếu chúng ta rời đi ngay, chúng ta sẽ lỡ mất tàu.", "note": "going to for a prediction based on present evidence" },
-                { "id": "cd-1-ex8", "en": "If you call the hotel, they will tell you the price.", "vi": "Nếu bạn gọi khách sạn, họ sẽ nói cho bạn giá phòng.", "note": "simple statement about a likely future" }
+                {
+                  "id": "cd-1-ex7",
+                  "en": "If we leave now, we are going to miss the train.",
+                  "vi": "Nếu chúng ta rời đi ngay, chúng ta sẽ lỡ mất tàu.",
+                  "note": "going to for a prediction based on present evidence"
+                },
+                {
+                  "id": "cd-1-ex8",
+                  "en": "If you call the hotel, they will tell you the price.",
+                  "vi": "Nếu bạn gọi khách sạn, họ sẽ nói cho bạn giá phòng.",
+                  "note": "simple statement about a likely future"
+                }
               ]
             }
           ]
@@ -317,10 +557,30 @@
           "id": "cd-1-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-1e-1", "en": "If you heat the soup too much, it will taste too salty.", "vi": "Nếu bạn hâm món súp quá lâu, nó sẽ mặn quá.", "note": "a likely result" },
-            { "id": "cd-1e-2", "en": "If I win the scholarship, I will study in Canada.", "vi": "Nếu tôi giành được học bổng, tôi sẽ học ở Canada.", "note": "a real future plan" },
-            { "id": "cd-1e-3", "en": "If she passes the interview, they will offer her the job.", "vi": "Nếu cô ấy vượt qua phỏng vấn, họ sẽ cho cô ấy công việc.", "note": "a prediction with real evidence" },
-            { "id": "cd-1e-4", "en": "If the road is blocked, take the other route.", "vi": "Nếu đường bị chặn, hãy đi tuyến khác.", "note": "imperative main clause" }
+            {
+              "id": "cd-1e-1",
+              "en": "If you heat the soup too much, it will taste too salty.",
+              "vi": "Nếu bạn hâm món súp quá lâu, nó sẽ mặn quá.",
+              "note": "a likely result"
+            },
+            {
+              "id": "cd-1e-2",
+              "en": "If I win the scholarship, I will study in Canada.",
+              "vi": "Nếu tôi giành được học bổng, tôi sẽ học ở Canada.",
+              "note": "a real future plan"
+            },
+            {
+              "id": "cd-1e-3",
+              "en": "If she passes the interview, they will offer her the job.",
+              "vi": "Nếu cô ấy vượt qua phỏng vấn, họ sẽ cho cô ấy công việc.",
+              "note": "a prediction with real evidence"
+            },
+            {
+              "id": "cd-1e-4",
+              "en": "If the road is blocked, take the other route.",
+              "vi": "Nếu đường bị chặn, hãy đi tuyến khác.",
+              "note": "imperative main clause"
+            }
           ]
         },
         {
@@ -336,12 +596,37 @@
               "prompt": "Complete the first conditional: If you study hard, you ___ pass the exam.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "will", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "would", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "would have", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "are going to", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "will",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "would",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "would have",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "are going to",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["will"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "will"
+                ]
+              },
               "explanation": "The first conditional needs will plus the base form in the main clause. would belongs to the second conditional, which describes an imagined rather than a likely situation, and would have describes an imagined past.",
               "xp": 10
             },
@@ -353,7 +638,12 @@
               "difficulty": "intermediate",
               "prompt": "Type the full verb phrase: If you phone me tonight, I ___ call you back.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["will call"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "will call"
+                ]
+              },
               "explanation": "The main clause of a first conditional is will plus the base form, with no to in between. will to call is a common error, and I call back would describe a habit rather than this single future event.",
               "xp": 10
             },
@@ -365,7 +655,12 @@
               "difficulty": "intermediate",
               "prompt": "If you will study every evening, your English will improve.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If you study every evening, your English will improve."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you study every evening, your English will improve."
+                ]
+              },
               "explanation": "The if-clause takes the present simple, never will. Remove will from the condition and keep it in the result, which is the normal shape of the first conditional.",
               "xp": 10
             },
@@ -378,11 +673,31 @@
               "prompt": "Which sentence uses the first conditional correctly with an imperative main clause?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If you feel ill, stay in bed.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If you will feel ill, stay in bed.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If you would feel ill, you stay in bed.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If you feel ill, stay in bed.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If you will feel ill, stay in bed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If you would feel ill, you stay in bed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "When the speaker is asking or advising, the main clause is an imperative with no subject and no auxiliary. The if-clause still uses the present simple, so feel is correct.",
               "xp": 10
             },
@@ -395,17 +710,75 @@
               "prompt": "Build the first conditional: if / you / lock / the / door / , / nobody / will / come / in",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "if", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "you", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "lock", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "door", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "nobody", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "will", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "come", "isCorrect": null, "matchKey": null },
-                { "id": "w9", "text": "in", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "if",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "you",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "lock",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "door",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "nobody",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "will",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "come",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w9",
+                  "text": "in",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["if", "you", "lock", "the", "door", "nobody", "will", "come", "in"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "if",
+                  "you",
+                  "lock",
+                  "the",
+                  "door",
+                  "nobody",
+                  "will",
+                  "come",
+                  "in"
+                ]
+              },
               "explanation": "The condition comes first in its full if + subject + verb order, then the main clause. Putting will into the first group, as in if you will lock, is the trap that this ordering exercise trains you to avoid.",
               "xp": 10
             }
@@ -418,32 +791,52 @@
           "items": [
             {
               "id": "cd-1-d1",
-              "audio": { "kind": "speech", "text": "If it rains tomorrow, we will stay at home." },
-              "acceptedAnswers": ["If it rains tomorrow, we will stay at home."],
+              "audio": {
+                "kind": "speech",
+                "text": "If it rains tomorrow, we will stay at home."
+              },
+              "acceptedAnswers": [
+                "If it rains tomorrow, we will stay at home."
+              ],
               "hint": "present in the condition, will in the result",
               "translation": "Nếu ngày mai trời mưa, chúng tôi sẽ ở nhà.",
               "xp": 15
             },
             {
               "id": "cd-1-d2",
-              "audio": { "kind": "speech", "text": "If you help me, I will help you." },
-              "acceptedAnswers": ["If you help me, I will help you."],
+              "audio": {
+                "kind": "speech",
+                "text": "If you help me, I will help you."
+              },
+              "acceptedAnswers": [
+                "If you help me, I will help you."
+              ],
               "hint": "a promise",
               "translation": "Nếu bạn giúp tôi, tôi sẽ giúp bạn.",
               "xp": 15
             },
             {
               "id": "cd-1-d3",
-              "audio": { "kind": "speech", "text": "If the road is blocked, take the other route." },
-              "acceptedAnswers": ["If the road is blocked, take the other route."],
+              "audio": {
+                "kind": "speech",
+                "text": "If the road is blocked, take the other route."
+              },
+              "acceptedAnswers": [
+                "If the road is blocked, take the other route."
+              ],
               "hint": "imperative main clause",
               "translation": "Nếu đường bị chặn, hãy đi tuyến khác.",
               "xp": 15
             },
             {
               "id": "cd-1-d4",
-              "audio": { "kind": "speech", "text": "She will call you if you arrive before six." },
-              "acceptedAnswers": ["She will call you if you arrive before six."],
+              "audio": {
+                "kind": "speech",
+                "text": "She will call you if you arrive before six."
+              },
+              "acceptedAnswers": [
+                "She will call you if you arrive before six."
+              ],
               "hint": "the if-clause comes last",
               "translation": "Cô ấy sẽ gọi cho bạn nếu bạn đến trước sáu giờ.",
               "xp": 15
@@ -465,11 +858,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If she does not arrive soon, we will start without her.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If she will not arrive soon, we will start without her.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If she did not arrive soon, we started without her.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If she does not arrive soon, we will start without her.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If she will not arrive soon, we will start without her.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If she did not arrive soon, we started without her.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The negated if-clause takes does not, not will not, because the condition is present in form. Option c is the third conditional about a past event.",
               "xp": 10
             },
@@ -481,7 +894,12 @@
               "difficulty": "advanced",
               "prompt": "If we will hurry, we will catch the last train.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If we hurry, we will catch the last train."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If we hurry, we will catch the last train."
+                ]
+              },
               "explanation": "Both clauses cannot take will. The condition uses the present simple hurry and the result keeps will catch, which is the only arrangement the first conditional allows.",
               "xp": 10
             },
@@ -494,12 +912,40 @@
               "prompt": "Match each if-clause with its most likely main clause.",
               "instruction": "Pair each condition with the correct result.",
               "items": [
-                { "id": "a", "text": "If you leave now,", "isCorrect": null, "matchKey": "you will catch the bus." },
-                { "id": "b", "text": "If he calls,", "isCorrect": null, "matchKey": "tell him I am busy." },
-                { "id": "c", "text": "If the prices rise,", "isCorrect": null, "matchKey": "we will buy less." },
-                { "id": "d", "text": "If I win the prize,", "isCorrect": null, "matchKey": "I will buy a new car." }
+                {
+                  "id": "a",
+                  "text": "If you leave now,",
+                  "isCorrect": null,
+                  "matchKey": "you will catch the bus."
+                },
+                {
+                  "id": "b",
+                  "text": "If he calls,",
+                  "isCorrect": null,
+                  "matchKey": "tell him I am busy."
+                },
+                {
+                  "id": "c",
+                  "text": "If the prices rise,",
+                  "isCorrect": null,
+                  "matchKey": "we will buy less."
+                },
+                {
+                  "id": "d",
+                  "text": "If I win the prize,",
+                  "isCorrect": null,
+                  "matchKey": "I will buy a new car."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "you will catch the bus.", "b": "tell him I am busy.", "c": "we will buy less.", "d": "I will buy a new car." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "you will catch the bus.",
+                  "b": "tell him I am busy.",
+                  "c": "we will buy less.",
+                  "d": "I will buy a new car."
+                }
+              },
               "explanation": "Each result is a plausible future consequence of its condition. Option b uses an imperative, which is the shape you want when giving an instruction rather than making a prediction.",
               "xp": 10
             },
@@ -512,11 +958,31 @@
               "prompt": "Complete the sentence: If the shop ___ in your size, they will order it for you.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "does not have it", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "will not have it", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "did not have it", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "does not have it",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "will not have it",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "did not have it",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["does not have it"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "does not have it"
+                ]
+              },
               "explanation": "The if-clause takes the present simple, so a negative becomes does not have. will not have is the common error here, and did not have would place the whole sentence in the past.",
               "xp": 10
             }
@@ -553,8 +1019,18 @@
               "statement": "The if-clause takes a past tense, usually the past simple, and the main clause takes would plus the base form of the verb.",
               "formula": "if + past simple, subject + would + base verb",
               "examples": [
-                { "id": "cd-2-ex1", "en": "If I had more time, I would learn another language.", "vi": "Nếu tôi có nhiều thời gian hơn, tôi sẽ học thêm một ngôn ngữ.", "note": "the present situation is not true" },
-                { "id": "cd-2-ex2", "en": "If he lived nearer, he would walk to work.", "vi": "Nếu anh ấy sống gần hơn, anh ấy sẽ đi bộ đi làm.", "note": "a hypothetical arrangement" }
+                {
+                  "id": "cd-2-ex1",
+                  "en": "If I had more time, I would learn another language.",
+                  "vi": "Nếu tôi có nhiều thời gian hơn, tôi sẽ học thêm một ngôn ngữ.",
+                  "note": "the present situation is not true"
+                },
+                {
+                  "id": "cd-2-ex2",
+                  "en": "If he lived nearer, he would walk to work.",
+                  "vi": "Nếu anh ấy sống gần hơn, anh ấy sẽ đi bộ đi làm.",
+                  "note": "a hypothetical arrangement"
+                }
               ]
             },
             {
@@ -562,8 +1038,18 @@
               "statement": "In the second conditional use were for I, he, she and it as well as for you, they and we. This is subjunctive form and it is not optional at exam level.",
               "formula": "If I were you, I would take the job.",
               "examples": [
-                { "id": "cd-2-ex3", "en": "If I were you, I would apologise immediately.", "vi": "Nếu tôi là bạn, tôi sẽ xin lỗi ngay lập tức.", "note": "the classic advice formula" },
-                { "id": "cd-2-ex4", "en": "If she were here, she would know what to do.", "vi": "Nếu cô ấy ở đây, cô ấy sẽ biết phải làm gì.", "note": "were instead of was" }
+                {
+                  "id": "cd-2-ex3",
+                  "en": "If I were you, I would apologise immediately.",
+                  "vi": "Nếu tôi là bạn, tôi sẽ xin lỗi ngay lập tức.",
+                  "note": "the classic advice formula"
+                },
+                {
+                  "id": "cd-2-ex4",
+                  "en": "If she were here, she would know what to do.",
+                  "vi": "Nếu cô ấy ở đây, cô ấy sẽ biết phải làm gì.",
+                  "note": "were instead of was"
+                }
               ]
             },
             {
@@ -571,8 +1057,18 @@
               "statement": "would rather compares two options and takes a base verb: I would rather walk than take a taxi.",
               "formula": "If only I had asked her! / I would rather stay at home.",
               "examples": [
-                { "id": "cd-2-ex5", "en": "If only I had asked her earlier.", "vi": "Giá mà tôi đã hỏi bà ấy sớm hơn.", "note": "an unmet wish about the present" },
-                { "id": "cd-2-ex6", "en": "I would rather walk than take a taxi in this rain.", "vi": "Tôi thà đi bộ còn hơn bắt xe taxi trong cơn mưa này.", "note": "preference, base verb after would rather" }
+                {
+                  "id": "cd-2-ex5",
+                  "en": "If only I had asked her earlier.",
+                  "vi": "Giá mà tôi đã hỏi bà ấy sớm hơn.",
+                  "note": "an unmet wish about the present"
+                },
+                {
+                  "id": "cd-2-ex6",
+                  "en": "I would rather walk than take a taxi in this rain.",
+                  "vi": "Tôi thà đi bộ còn hơn bắt xe taxi trong cơn mưa này.",
+                  "note": "preference, base verb after would rather"
+                }
               ]
             },
             {
@@ -580,8 +1076,18 @@
               "statement": "What if opens a question about a situation that might happen. It is followed by the second conditional pattern.",
               "formula": "What if we lost the job?",
               "examples": [
-                { "id": "cd-2-ex7", "en": "What if we lost our jobs tomorrow?", "vi": "Lỡ may ra ngày mai chúng ta mất việc thì sao?", "note": "past simple even though the situation is future" },
-                { "id": "cd-2-ex8", "en": "What if the meeting was cancelled?", "vi": "Lỡ cuộc họp bị hủy thì sao?", "note": "the second conditional form inside the question" }
+                {
+                  "id": "cd-2-ex7",
+                  "en": "What if we lost our jobs tomorrow?",
+                  "vi": "Lỡ may ra ngày mai chúng ta mất việc thì sao?",
+                  "note": "past simple even though the situation is future"
+                },
+                {
+                  "id": "cd-2-ex8",
+                  "en": "What if the meeting was cancelled?",
+                  "vi": "Lỡ cuộc họp bị hủy thì sao?",
+                  "note": "the second conditional form inside the question"
+                }
               ]
             }
           ]
@@ -590,10 +1096,30 @@
           "id": "cd-2-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-2e-1", "en": "If I were the mayor, I would build more parks.", "vi": "Nếu tôi làm thị trưởng, tôi sẽ xây nhiều công viên hơn.", "note": "hypothetical role" },
-            { "id": "cd-2e-2", "en": "She would look after my cat if I asked her nicely.", "vi": "Cô ấy sẽ trông nom mèo của tôi nếu tôi nhờ lịch sự.", "note": "a likely but conditional promise" },
-            { "id": "cd-2e-3", "en": "If we drove faster, we would arrive earlier.", "vi": "Nếu chúng ta lái nhanh hơn, chúng ta sẽ đến sớm hơn.", "note": "an imagined change" },
-            { "id": "cd-2e-4", "en": "If he asked me, I would say yes.", "vi": "Nếu anh ấy hỏi tôi, tôi sẽ nói có.", "note": "a conditional answer" }
+            {
+              "id": "cd-2e-1",
+              "en": "If I were the mayor, I would build more parks.",
+              "vi": "Nếu tôi làm thị trưởng, tôi sẽ xây nhiều công viên hơn.",
+              "note": "hypothetical role"
+            },
+            {
+              "id": "cd-2e-2",
+              "en": "She would look after my cat if I asked her nicely.",
+              "vi": "Cô ấy sẽ trông nom mèo của tôi nếu tôi nhờ lịch sự.",
+              "note": "a likely but conditional promise"
+            },
+            {
+              "id": "cd-2e-3",
+              "en": "If we drove faster, we would arrive earlier.",
+              "vi": "Nếu chúng ta lái nhanh hơn, chúng ta sẽ đến sớm hơn.",
+              "note": "an imagined change"
+            },
+            {
+              "id": "cd-2e-4",
+              "en": "If he asked me, I would say yes.",
+              "vi": "Nếu anh ấy hỏi tôi, tôi sẽ nói có.",
+              "note": "a conditional answer"
+            }
           ]
         },
         {
@@ -609,12 +1135,38 @@
               "prompt": "Complete the second conditional: If I ___ you, I would accept the offer.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "were", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "was", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "am", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "will be", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "were",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "was",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "am",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "will be",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["were", "was"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were",
+                  "was"
+                ]
+              },
               "explanation": "were is the preferred subjunctive form for every person, and was is widely accepted in speech and informal writing. am and will be do not belong to the second conditional.",
               "xp": 10
             },
@@ -626,7 +1178,13 @@
               "difficulty": "intermediate",
               "prompt": "Type the complete verb phrase: If we had a car, we ___ not need a taxi.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["would not need", "wouldn't need"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would not need",
+                  "wouldn't need"
+                ]
+              },
               "explanation": "The main clause of a second conditional uses would, which takes the negative not after it: would not need. Putting not before would is only correct with a contracted form and a different structure, and would to need is never possible.",
               "xp": 10
             },
@@ -638,7 +1196,12 @@
               "difficulty": "advanced",
               "prompt": "If I will have more time, I would learn to play the guitar.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If I had more time, I would learn to play the guitar."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If I had more time, I would learn to play the guitar."
+                ]
+              },
               "explanation": "The second conditional if-clause takes a past tense, not a future one. Two things were wrong here: will in the condition and will instead of had in the past form of have.",
               "xp": 10
             },
@@ -651,12 +1214,40 @@
               "prompt": "Match each if-clause with its main clause.",
               "instruction": "Pair every if-clause with the correct main clause.",
               "items": [
-                { "id": "a", "text": "If I were you,", "isCorrect": null, "matchKey": "I would apologise at once." },
-                { "id": "b", "text": "If we had a bigger flat,", "isCorrect": null, "matchKey": "we could host the family." },
-                { "id": "c", "text": "If he studied more,", "isCorrect": null, "matchKey": "he would pass the exam." },
-                { "id": "d", "text": "If she asked me,", "isCorrect": null, "matchKey": "I would lend her my notes." }
+                {
+                  "id": "a",
+                  "text": "If I were you,",
+                  "isCorrect": null,
+                  "matchKey": "I would apologise at once."
+                },
+                {
+                  "id": "b",
+                  "text": "If we had a bigger flat,",
+                  "isCorrect": null,
+                  "matchKey": "we could host the family."
+                },
+                {
+                  "id": "c",
+                  "text": "If he studied more,",
+                  "isCorrect": null,
+                  "matchKey": "he would pass the exam."
+                },
+                {
+                  "id": "d",
+                  "text": "If she asked me,",
+                  "isCorrect": null,
+                  "matchKey": "I would lend her my notes."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "I would apologise at once.", "b": "we could host the family.", "c": "he would pass the exam.", "d": "I would lend her my notes." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "I would apologise at once.",
+                  "b": "we could host the family.",
+                  "c": "he would pass the exam.",
+                  "d": "I would lend her my notes."
+                }
+              },
               "explanation": "Each main clause uses would or could plus the base form, which is the second conditional shape. A past tense in any main clause here would make the sentence a third conditional instead.",
               "xp": 10
             },
@@ -669,9 +1260,17 @@
               "prompt": "In the second conditional, was is correct with every subject except I and you.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "were is the form used for all persons in formal written English, and only the plural pronouns and you commonly keep was in everyday speech. The statement gets the pattern backwards.",
               "xp": 10
             }
@@ -684,32 +1283,52 @@
           "items": [
             {
               "id": "cd-2-d1",
-              "audio": { "kind": "speech", "text": "If I were you, I would apologise immediately." },
-              "acceptedAnswers": ["If I were you, I would apologise immediately."],
+              "audio": {
+                "kind": "speech",
+                "text": "If I were you, I would apologise immediately."
+              },
+              "acceptedAnswers": [
+                "If I were you, I would apologise immediately."
+              ],
               "hint": "were for I",
               "translation": "Nếu tôi là bạn, tôi sẽ xin lỗi ngay lập tức.",
               "xp": 15
             },
             {
               "id": "cd-2-d2",
-              "audio": { "kind": "speech", "text": "If we had more time, we would visit the old town." },
-              "acceptedAnswers": ["If we had more time, we would visit the old town."],
+              "audio": {
+                "kind": "speech",
+                "text": "If we had more time, we would visit the old town."
+              },
+              "acceptedAnswers": [
+                "If we had more time, we would visit the old town."
+              ],
               "hint": "had more time",
               "translation": "Nếu chúng ta có nhiều thời gian hơn, chúng ta sẽ ghé phố cổ.",
               "xp": 15
             },
             {
               "id": "cd-2-d3",
-              "audio": { "kind": "speech", "text": "She would look after my cat if I asked her." },
-              "acceptedAnswers": ["She would look after my cat if I asked her."],
+              "audio": {
+                "kind": "speech",
+                "text": "She would look after my cat if I asked her."
+              },
+              "acceptedAnswers": [
+                "She would look after my cat if I asked her."
+              ],
               "hint": "main clause first",
               "translation": "Cô ấy sẽ trông nom mèo của tôi nếu tôi nhờ cô ấy.",
               "xp": 15
             },
             {
               "id": "cd-2-d4",
-              "audio": { "kind": "speech", "text": "I would rather walk than take a taxi." },
-              "acceptedAnswers": ["I would rather walk than take a taxi."],
+              "audio": {
+                "kind": "speech",
+                "text": "I would rather walk than take a taxi."
+              },
+              "acceptedAnswers": [
+                "I would rather walk than take a taxi."
+              ],
               "hint": "preference between two options",
               "translation": "Tôi thà đi bộ còn hơn đi xe taxi.",
               "xp": 15
@@ -731,11 +1350,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If I was a bird, I would fly south every winter.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If I were a bird, I will fly south every winter.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If I am a bird, I would fly south every winter.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If I was a bird, I would fly south every winter.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If I were a bird, I will fly south every winter.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If I am a bird, I would fly south every winter.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Both were and was are acceptable with I, and the main clause must be would fly. will in the main clause turns it into a statement of fact and am in the if-clause is not the second conditional shape.",
               "xp": 10
             },
@@ -747,7 +1386,12 @@
               "difficulty": "advanced",
               "prompt": "If you would live here, you would complain about the noise.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If you lived here, you would complain about the noise."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you lived here, you would complain about the noise."
+                ]
+              },
               "explanation": "No conditional type ever puts would in the if-clause. The second conditional uses a past tense there, so lived replaces would live.",
               "xp": 10
             },
@@ -760,11 +1404,32 @@
               "prompt": "Complete the second conditional: What if the shop ___ open on Sundays?",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "were", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "was", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "will be", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "were",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "was",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "will be",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["were", "was"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were",
+                  "was"
+                ]
+              },
               "explanation": "What if takes the second conditional pattern, so the verb is a past form even though the situation is in the future. were is preferred and was is accepted.",
               "xp": 10
             },
@@ -777,9 +1442,17 @@
               "prompt": "The second conditional is used for situations that are true but the speaker prefers to imagine otherwise.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "The second conditional describes something untrue or unlikely now. Situations that are true are expressed with the zero or first conditional, so the statement describes a use the second conditional does not have.",
               "xp": 10
             }
@@ -816,8 +1489,18 @@
               "statement": "The if-clause uses had plus the past participle and the main clause uses would have plus the past participle.",
               "formula": "if + had + past participle, subject + would have + past participle",
               "examples": [
-                { "id": "cd-3-ex1", "en": "If I had known about the meeting, I would have come.", "vi": "Nếu tôi biết về cuộc họp, tôi đã đến rồi.", "note": "the information did not reach me" },
-                { "id": "cd-3-ex2", "en": "If she had left earlier, she would have caught the bus.", "vi": "Nếu cô ấy rời đi sớm hơn, cô ấy đã kịp xe buýt.", "note": "she left too late" }
+                {
+                  "id": "cd-3-ex1",
+                  "en": "If I had known about the meeting, I would have come.",
+                  "vi": "Nếu tôi biết về cuộc họp, tôi đã đến rồi.",
+                  "note": "the information did not reach me"
+                },
+                {
+                  "id": "cd-3-ex2",
+                  "en": "If she had left earlier, she would have caught the bus.",
+                  "vi": "Nếu cô ấy rời đi sớm hơn, cô ấy đã kịp xe buýt.",
+                  "note": "she left too late"
+                }
               ]
             },
             {
@@ -825,8 +1508,18 @@
               "statement": "The third conditional refers to a time before now. You cannot use it for a future situation, however far away.",
               "formula": "not If I will have left, but If I had left",
               "examples": [
-                { "id": "cd-3-ex3", "en": "If he had studied, he would have passed.", "vi": "Nếu anh ấy đã học, anh ấy đã vượt qua rồi.", "note": "past situation" },
-                { "id": "cd-3-ex4", "en": "If she had not fallen, she would not have broken her arm.", "vi": "Nếu cô ấy không ngã, cô ấy đã không gãy tay.", "note": "negative in both clauses" }
+                {
+                  "id": "cd-3-ex3",
+                  "en": "If he had studied, he would have passed.",
+                  "vi": "Nếu anh ấy đã học, anh ấy đã vượt qua rồi.",
+                  "note": "past situation"
+                },
+                {
+                  "id": "cd-3-ex4",
+                  "en": "If she had not fallen, she would not have broken her arm.",
+                  "vi": "Nếu cô ấy không ngã, cô ấy đã không gãy tay.",
+                  "note": "negative in both clauses"
+                }
               ]
             },
             {
@@ -834,8 +1527,18 @@
               "statement": "If can be left out when the subject of the if-clause and the main clause are the same: Had I known, I would have called.",
               "formula": "Had I known about it, I would have called you.",
               "examples": [
-                { "id": "cd-3-ex5", "en": "Had I known about the delay, I would have taken another train.", "vi": "Giá mà tôi biết chuyện hoãn, tôi đã đi tàu khác.", "note": "the if is omitted, the order is inverted" },
-                { "id": "cd-3-ex6", "en": "Had she asked me, I would have helped her.", "vi": "Nếu cô ấy hỏi tôi, tôi đã giúp cô ấy rồi.", "note": "formal written English" }
+                {
+                  "id": "cd-3-ex5",
+                  "en": "Had I known about the delay, I would have taken another train.",
+                  "vi": "Giá mà tôi biết chuyện hoãn, tôi đã đi tàu khác.",
+                  "note": "the if is omitted, the order is inverted"
+                },
+                {
+                  "id": "cd-3-ex6",
+                  "en": "Had she asked me, I would have helped her.",
+                  "vi": "Nếu cô ấy hỏi tôi, tôi đã giúp cô ấy rồi.",
+                  "note": "formal written English"
+                }
               ]
             },
             {
@@ -843,8 +1546,18 @@
               "statement": "A short answer drops the if-clause: If you had told me, I would have helped. You would have, would you not?",
               "formula": "I would have helped you, but you did not ask.",
               "examples": [
-                { "id": "cd-3-ex7", "en": "You would have passed, but you did not revise.", "vi": "Bạn đã có thể vượt qua, nhưng bạn đã không ôn tập.", "note": "the second clause is a criticism in the present" },
-                { "id": "cd-3-ex8", "en": "If they had asked us, we would have said yes immediately.", "vi": "Nếu họ hỏi chúng tôi, chúng tôi đã đồng ý ngay lập tức.", "note": "a regret about something that did not happen" }
+                {
+                  "id": "cd-3-ex7",
+                  "en": "You would have passed, but you did not revise.",
+                  "vi": "Bạn đã có thể vượt qua, nhưng bạn đã không ôn tập.",
+                  "note": "the second clause is a criticism in the present"
+                },
+                {
+                  "id": "cd-3-ex8",
+                  "en": "If they had asked us, we would have said yes immediately.",
+                  "vi": "Nếu họ hỏi chúng tôi, chúng tôi đã đồng ý ngay lập tức.",
+                  "note": "a regret about something that did not happen"
+                }
               ]
             }
           ]
@@ -853,10 +1566,30 @@
           "id": "cd-3-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-3e-1", "en": "If I had known about the delay, I would have caught the earlier train.", "vi": "Nếu tôi biết chuyện hoãn, tôi đã kịp chuyến tàu sớm hơn.", "note": "the full third conditional" },
-            { "id": "cd-3e-2", "en": "Had we booked earlier, the rooms would have been cheaper.", "vi": "Giá mà chúng ta đặt sớm hơn, phòng đã rẻ hơn.", "note": "had without if" },
-            { "id": "cd-3e-3", "en": "She would have told you, if you had asked her.", "vi": "Cô ấy đã nói cho bạn biết, nếu bạn hỏi cô ấy.", "note": "if-clause at the end with a comma" },
-            { "id": "cd-3e-4", "en": "We would have helped, but nobody told us.", "vi": "Chúng tôi đã giúp được, nhưng không ai báo chúng tôi.", "note": "a regret about something that did not happen" }
+            {
+              "id": "cd-3e-1",
+              "en": "If I had known about the delay, I would have caught the earlier train.",
+              "vi": "Nếu tôi biết chuyện hoãn, tôi đã kịp chuyến tàu sớm hơn.",
+              "note": "the full third conditional"
+            },
+            {
+              "id": "cd-3e-2",
+              "en": "Had we booked earlier, the rooms would have been cheaper.",
+              "vi": "Giá mà chúng ta đặt sớm hơn, phòng đã rẻ hơn.",
+              "note": "had without if"
+            },
+            {
+              "id": "cd-3e-3",
+              "en": "She would have told you, if you had asked her.",
+              "vi": "Cô ấy đã nói cho bạn biết, nếu bạn hỏi cô ấy.",
+              "note": "if-clause at the end with a comma"
+            },
+            {
+              "id": "cd-3e-4",
+              "en": "We would have helped, but nobody told us.",
+              "vi": "Chúng tôi đã giúp được, nhưng không ai báo chúng tôi.",
+              "note": "a regret about something that did not happen"
+            }
           ]
         },
         {
@@ -872,12 +1605,37 @@
               "prompt": "Complete the third conditional: If they had left earlier, they ___ the flight.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "would have caught", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "would catch", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "will have caught", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "had caught", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "would have caught",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "would catch",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "will have caught",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "had caught",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["would have caught"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would have caught"
+                ]
+              },
               "explanation": "The main clause of the third conditional is would have plus the past participle. would catch belongs to the second conditional and had caught would put the whole sentence in the if-clause.",
               "xp": 10
             },
@@ -889,7 +1647,12 @@
               "difficulty": "advanced",
               "prompt": "Type the complete verb phrase: If I had seen the message, I ___ replied.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["would have replied"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would have replied"
+                ]
+              },
               "explanation": "would have plus the past participle replied is the third conditional result. A bare would replied is ungrammatical, and would have to reply is another frequent error from translating the Vietnamese da.",
               "xp": 10
             },
@@ -901,7 +1664,12 @@
               "difficulty": "advanced",
               "prompt": "If I would have known, I would have called you sooner.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If I had known, I would have called you sooner."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If I had known, I would have called you sooner."
+                ]
+              },
               "explanation": "would is never used in an if-clause, so the condition must be had known. The result keeps would have called, which is the correct third conditional shape.",
               "xp": 10
             },
@@ -913,7 +1681,12 @@
               "difficulty": "advanced",
               "prompt": "Had you locked the door, nothing would have happened.",
               "instruction": "Rewrite the sentence without the omitted if.",
-              "answer": { "type": "text", "values": ["If you had locked the door, nothing would have happened."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you had locked the door, nothing would have happened."
+                ]
+              },
               "explanation": "Inverting the subject and had is only correct when the if is left out. Adding the word if back requires normal word order, so you would not write If you had had locked the door.",
               "xp": 10
             },
@@ -926,12 +1699,40 @@
               "prompt": "Match each if-clause with the main clause that completes the third conditional.",
               "instruction": "Pair every if-clause with the correct main clause.",
               "items": [
-                { "id": "a", "text": "If he had asked me,", "isCorrect": null, "matchKey": "I would have lent him the book." },
-                { "id": "b", "text": "If you had warned me,", "isCorrect": null, "matchKey": "I would have brought an umbrella." },
-                { "id": "c", "text": "If they had checked the map,", "isCorrect": null, "matchKey": "they would not have got lost." },
-                { "id": "d", "text": "If we had left earlier,", "isCorrect": null, "matchKey": "we would have seen the show." }
+                {
+                  "id": "a",
+                  "text": "If he had asked me,",
+                  "isCorrect": null,
+                  "matchKey": "I would have lent him the book."
+                },
+                {
+                  "id": "b",
+                  "text": "If you had warned me,",
+                  "isCorrect": null,
+                  "matchKey": "I would have brought an umbrella."
+                },
+                {
+                  "id": "c",
+                  "text": "If they had checked the map,",
+                  "isCorrect": null,
+                  "matchKey": "they would not have got lost."
+                },
+                {
+                  "id": "d",
+                  "text": "If we had left earlier,",
+                  "isCorrect": null,
+                  "matchKey": "we would have seen the show."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "I would have lent him the book.", "b": "I would have brought an umbrella.", "c": "they would not have got lost.", "d": "we would have seen the show." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "I would have lent him the book.",
+                  "b": "I would have brought an umbrella.",
+                  "c": "they would not have got lost.",
+                  "d": "we would have seen the show."
+                }
+              },
               "explanation": "Every main clause uses would have plus the past participle, and the negative form is would not have. Reading the pair aloud makes the regret in each one obvious, which is the tone the third conditional always carries.",
               "xp": 10
             }
@@ -944,32 +1745,52 @@
           "items": [
             {
               "id": "cd-3-d1",
-              "audio": { "kind": "speech", "text": "If I had known about the meeting, I would have come." },
-              "acceptedAnswers": ["If I had known about the meeting, I would have come."],
+              "audio": {
+                "kind": "speech",
+                "text": "If I had known about the meeting, I would have come."
+              },
+              "acceptedAnswers": [
+                "If I had known about the meeting, I would have come."
+              ],
               "hint": "had known plus would have come",
               "translation": "Nếu tôi biết về cuộc họp, tôi đã đến rồi.",
               "xp": 15
             },
             {
               "id": "cd-3-d2",
-              "audio": { "kind": "speech", "text": "Had we booked earlier, the rooms would have been cheaper." },
-              "acceptedAnswers": ["Had we booked earlier, the rooms would have been cheaper."],
+              "audio": {
+                "kind": "speech",
+                "text": "Had we booked earlier, the rooms would have been cheaper."
+              },
+              "acceptedAnswers": [
+                "Had we booked earlier, the rooms would have been cheaper."
+              ],
               "hint": "had without if",
               "translation": "Giá mà chúng ta đặt sớm hơn, phòng đã rẻ hơn.",
               "xp": 15
             },
             {
               "id": "cd-3-d3",
-              "audio": { "kind": "speech", "text": "She would have told you, if you had asked her." },
-              "acceptedAnswers": ["She would have told you, if you had asked her."],
+              "audio": {
+                "kind": "speech",
+                "text": "She would have told you, if you had asked her."
+              },
+              "acceptedAnswers": [
+                "She would have told you, if you had asked her."
+              ],
               "hint": "main clause first",
               "translation": "Cô ấy đã nói cho bạn biết, nếu bạn đã hỏi cô ấy.",
               "xp": 15
             },
             {
               "id": "cd-3-d4",
-              "audio": { "kind": "speech", "text": "We would have helped, but nobody told us." },
-              "acceptedAnswers": ["We would have helped, but nobody told us."],
+              "audio": {
+                "kind": "speech",
+                "text": "We would have helped, but nobody told us."
+              },
+              "acceptedAnswers": [
+                "We would have helped, but nobody told us."
+              ],
               "hint": "a regret",
               "translation": "Chúng tôi đã giúp được, nhưng không ai báo chúng tôi.",
               "xp": 15
@@ -991,11 +1812,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If we had left earlier, we would have caught the show.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If we had left earlier, we would caught the show.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If we left earlier, we would have caught the show.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If we had left earlier, we would have caught the show.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If we had left earlier, we would caught the show.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If we left earlier, we would have caught the show.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "Both halves of a third conditional need the perfect forms: had left in the condition and would have caught in the result. Mixing a simple past with a perfect is the most common error in this pattern.",
               "xp": 10
             },
@@ -1007,7 +1848,12 @@
               "difficulty": "advanced",
               "prompt": "If she had not been tired, she would have come to the party.",
               "instruction": "Rewrite the sentence with a negative result instead of a negative condition.",
-              "answer": { "type": "text", "values": ["If she had been tired, she would not have come to the party."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If she had been tired, she would not have come to the party."
+                ]
+              },
               "explanation": "Moving the negation from the condition to the result reverses the meaning. This is a genuinely useful exercise because it shows that the position of not in a conditional changes what the sentence says.",
               "xp": 10
             },
@@ -1020,11 +1866,33 @@
               "prompt": "Match each regret with the sentence that expresses it.",
               "instruction": "Pair each situation with the correct conditional sentence.",
               "items": [
-                { "id": "a", "text": "You did not study, so you failed.", "isCorrect": null, "matchKey": "If you had studied, you would not have failed." },
-                { "id": "b", "text": "Nobody warned her, so she was late.", "isCorrect": null, "matchKey": "If she had been warned, she would not have been late." },
-                { "id": "c", "text": "He arrived late, so he missed the bus.", "isCorrect": null, "matchKey": "If he had arrived earlier, he would not have missed the bus." }
+                {
+                  "id": "a",
+                  "text": "You did not study, so you failed.",
+                  "isCorrect": null,
+                  "matchKey": "If you had studied, you would not have failed."
+                },
+                {
+                  "id": "b",
+                  "text": "Nobody warned her, so she was late.",
+                  "isCorrect": null,
+                  "matchKey": "If she had been warned, she would not have been late."
+                },
+                {
+                  "id": "c",
+                  "text": "He arrived late, so he missed the bus.",
+                  "isCorrect": null,
+                  "matchKey": "If he had arrived earlier, he would not have missed the bus."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "If you had studied, you would not have failed.", "b": "If she had been warned, she would not have been late.", "c": "If he had arrived earlier, he would not have missed the bus." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "If you had studied, you would not have failed.",
+                  "b": "If she had been warned, she would not have been late.",
+                  "c": "If he had arrived earlier, he would not have missed the bus."
+                }
+              },
               "explanation": "The third conditional rewrites a real past failure as an imagined change in the past, so the result becomes negative. Each pair keeps the same time reference, which is what makes the regret work.",
               "xp": 10
             },
@@ -1037,9 +1905,17 @@
               "prompt": "The third conditional can describe a future situation that has not happened yet.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "The third conditional always looks back at a time before now. A future situation belongs to the first or second conditional, and looking forward to a past event uses would plus a bare infinitive, as in I would do it again tomorrow.",
               "xp": 10
             }
@@ -1076,8 +1952,18 @@
               "statement": "The most common mixed conditional has had plus past participle in the if-clause and would plus base verb in the main clause. The cause is in the past, the result is now.",
               "formula": "If + had + past participle, subject + would + base verb",
               "examples": [
-                { "id": "cd-mx-ex1", "en": "If I had studied medicine, I would be working in a hospital now.", "vi": "Nếu tôi đã học y, tôi đang làm việc ở bệnh viện rồi.", "note": "past study, present result" },
-                { "id": "cd-mx-ex2", "en": "If she had taken the job in Hue, she would be living abroad now.", "vi": "Nếu cô ấy đã nhận công việc ở Huế, cô ấy đang sống ở nước ngoài rồi.", "note": "a past decision, a present situation" }
+                {
+                  "id": "cd-mx-ex1",
+                  "en": "If I had studied medicine, I would be working in a hospital now.",
+                  "vi": "Nếu tôi đã học y, tôi đang làm việc ở bệnh viện rồi.",
+                  "note": "past study, present result"
+                },
+                {
+                  "id": "cd-mx-ex2",
+                  "en": "If she had taken the job in Hue, she would be living abroad now.",
+                  "vi": "Nếu cô ấy đã nhận công việc ở Huế, cô ấy đang sống ở nước ngoài rồi.",
+                  "note": "a past decision, a present situation"
+                }
               ]
             },
             {
@@ -1085,8 +1971,18 @@
               "statement": "The other mixed conditional runs the other way: the if-clause is a general truth or a present habit, and the main clause talks about the past with would have plus the past participle.",
               "formula": "if + present simple, subject + would have + past participle",
               "examples": [
-                { "id": "cd-mx-ex3", "en": "If I were more careful, I would not have made that mistake.", "vi": "Nếu tôi cẩn thận hơn, tôi đã không mắc sai lầm đó.", "note": "a general quality now, a specific past error" },
-                { "id": "cd-mx-ex4", "en": "If this road were wider, they would not have had an accident there.", "vi": "Nếu con đường này rộng hơn, họ đã không xảy ra tai nạn ở đó.", "note": "a present fact about the road, a past accident" }
+                {
+                  "id": "cd-mx-ex3",
+                  "en": "If I were more careful, I would not have made that mistake.",
+                  "vi": "Nếu tôi cẩn thận hơn, tôi đã không mắc sai lầm đó.",
+                  "note": "a general quality now, a specific past error"
+                },
+                {
+                  "id": "cd-mx-ex4",
+                  "en": "If this road were wider, they would not have had an accident there.",
+                  "vi": "Nếu con đường này rộng hơn, họ đã không xảy ra tai nạn ở đó.",
+                  "note": "a present fact about the road, a past accident"
+                }
               ]
             },
             {
@@ -1094,8 +1990,18 @@
               "statement": "In a present-cause mixed conditional the if-clause often uses were even for plural and second person subjects, because the situation is unreal rather than true.",
               "formula": "If we were richer, we would have travelled more.",
               "examples": [
-                { "id": "cd-mx-ex5", "en": "If we were richer, we would have travelled much more.", "vi": "Nếu chúng ta giàu hơn, chúng ta đã đi du lịch nhiều hơn nhiều.", "note": "were for we, showing an unreal situation" },
-                { "id": "cd-mx-ex6", "en": "If they were more careful, they would not have lost the money.", "vi": "Nếu họ cẩn thận hơn, họ đã không mất tiền.", "note": "were for they" }
+                {
+                  "id": "cd-mx-ex5",
+                  "en": "If we were richer, we would have travelled much more.",
+                  "vi": "Nếu chúng ta giàu hơn, chúng ta đã đi du lịch nhiều hơn nhiều.",
+                  "note": "were for we, showing an unreal situation"
+                },
+                {
+                  "id": "cd-mx-ex6",
+                  "en": "If they were more careful, they would not have lost the money.",
+                  "vi": "Nếu họ cẩn thận hơn, họ đã không mất tiền.",
+                  "note": "were for they"
+                }
               ]
             },
             {
@@ -1103,8 +2009,18 @@
               "statement": "Ask two questions: is the cause past or present, and is the result past or present. The answer gives you the pattern, with the same time allowed in both clauses.",
               "formula": "past cause + present result, present cause + past result",
               "examples": [
-                { "id": "cd-mx-ex7", "en": "If you had taken my advice, you would not be in trouble now.", "vi": "Nếu bạn đã nghe lời tôi, bây giờ bạn đã không gặp rắc rối.", "note": "past advice, present trouble" },
-                { "id": "cd-mx-ex8", "en": "If the alarm had not rung, we would have missed the bus.", "vi": "Nếu chuông báo thức không reo, chúng tôi đã lỡ mất xe buýt.", "note": "an ordinary third conditional, both halves in the past" }
+                {
+                  "id": "cd-mx-ex7",
+                  "en": "If you had taken my advice, you would not be in trouble now.",
+                  "vi": "Nếu bạn đã nghe lời tôi, bây giờ bạn đã không gặp rắc rối.",
+                  "note": "past advice, present trouble"
+                },
+                {
+                  "id": "cd-mx-ex8",
+                  "en": "If the alarm had not rung, we would have missed the bus.",
+                  "vi": "Nếu chuông báo thức không reo, chúng tôi đã lỡ mất xe buýt.",
+                  "note": "an ordinary third conditional, both halves in the past"
+                }
               ]
             }
           ]
@@ -1113,10 +2029,30 @@
           "id": "cd-mx-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-mxe-1", "en": "If he had accepted the offer, he would be working in London now.", "vi": "Nếu anh ấy đã nhận lời mời, anh ấy đang làm việc ở London rồi.", "note": "past cause, present result" },
-            { "id": "cd-mxe-2", "en": "If the hotel were cheaper, I would have stayed a second night.", "vi": "Nếu khách sạn rẻ hơn, tôi đã ở lại thêm một đêm.", "note": "present price, past decision" },
-            { "id": "cd-mxe-3", "en": "If she had not missed the last bus, she would not be stuck here now.", "vi": "Nếu cô ấy đã không lỡ chuyến xe cuối, cô ấy đã không bị kẹt ở đây.", "note": "a past event causing a present problem" },
-            { "id": "cd-mxe-4", "en": "If I were you, I would have accepted the offer.", "vi": "Nếu tôi là bạn, tôi đã nhận lời mời rồi.", "note": "second conditional condition with a third conditional result" }
+            {
+              "id": "cd-mxe-1",
+              "en": "If he had accepted the offer, he would be working in London now.",
+              "vi": "Nếu anh ấy đã nhận lời mời, anh ấy đang làm việc ở London rồi.",
+              "note": "past cause, present result"
+            },
+            {
+              "id": "cd-mxe-2",
+              "en": "If the hotel were cheaper, I would have stayed a second night.",
+              "vi": "Nếu khách sạn rẻ hơn, tôi đã ở lại thêm một đêm.",
+              "note": "present price, past decision"
+            },
+            {
+              "id": "cd-mxe-3",
+              "en": "If she had not missed the last bus, she would not be stuck here now.",
+              "vi": "Nếu cô ấy đã không lỡ chuyến xe cuối, cô ấy đã không bị kẹt ở đây.",
+              "note": "a past event causing a present problem"
+            },
+            {
+              "id": "cd-mxe-4",
+              "en": "If I were you, I would have accepted the offer.",
+              "vi": "Nếu tôi là bạn, tôi đã nhận lời mời rồi.",
+              "note": "second conditional condition with a third conditional result"
+            }
           ]
         },
         {
@@ -1132,12 +2068,37 @@
               "prompt": "Complete the mixed conditional: If I had bought that house, I ___ living there now.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "would be", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "would have been", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "will be", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "had been", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "would be",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "would have been",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "will be",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "had been",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["would be"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would be"
+                ]
+              },
               "explanation": "The cause is in the past, so the condition uses had bought, and the result is about now, so the main clause uses would be living. would have been would put both halves in the past, which is a third conditional.",
               "xp": 10
             },
@@ -1149,7 +2110,12 @@
               "difficulty": "advanced",
               "prompt": "Type the complete verb phrase: If they had left earlier, they ___ the last bus.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["would have caught"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would have caught"
+                ]
+              },
               "explanation": "Both clauses refer to the same past evening, so this is an ordinary third conditional with would have caught. It is included here because it is the pattern that students most often confuse with a mixed conditional.",
               "xp": 10
             },
@@ -1161,7 +2127,12 @@
               "difficulty": "advanced",
               "prompt": "If she had taken the scholarship, she would be studying in Canada now.",
               "instruction": "Rewrite the sentence so that the result is in the past rather than the present.",
-              "answer": { "type": "text", "values": ["If she had taken the scholarship, she would have studied in Canada."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If she had taken the scholarship, she would have studied in Canada."
+                ]
+              },
               "explanation": "The original is a mixed conditional with a present result. To make the result past, change would be studying to would have studied, which leaves a third conditional about the same decision.",
               "xp": 10
             },
@@ -1174,12 +2145,40 @@
               "prompt": "Match each if-clause with the main clause that makes the pair a correct mixed conditional.",
               "instruction": "Pair each if-clause with the correct main clause.",
               "items": [
-                { "id": "a", "text": "If I had studied medicine,", "isCorrect": null, "matchKey": "I would be working in a hospital now." },
-                { "id": "b", "text": "If you had taken my advice,", "isCorrect": null, "matchKey": "you would not be in trouble now." },
-                { "id": "c", "text": "If she were more patient,", "isCorrect": null, "matchKey": "she would not have shouted at the child." },
-                { "id": "d", "text": "If the road were closed,", "isCorrect": null, "matchKey": "we would not have seen the accident." }
+                {
+                  "id": "a",
+                  "text": "If I had studied medicine,",
+                  "isCorrect": null,
+                  "matchKey": "I would be working in a hospital now."
+                },
+                {
+                  "id": "b",
+                  "text": "If you had taken my advice,",
+                  "isCorrect": null,
+                  "matchKey": "you would not be in trouble now."
+                },
+                {
+                  "id": "c",
+                  "text": "If she were more patient,",
+                  "isCorrect": null,
+                  "matchKey": "she would not have shouted at the child."
+                },
+                {
+                  "id": "d",
+                  "text": "If the road were closed,",
+                  "isCorrect": null,
+                  "matchKey": "we would not have seen the accident."
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "I would be working in a hospital now.", "b": "you would not be in trouble now.", "c": "she would not have shouted at the child.", "d": "we would not have seen the accident." } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "I would be working in a hospital now.",
+                  "b": "you would not be in trouble now.",
+                  "c": "she would not have shouted at the child.",
+                  "d": "we would not have seen the accident."
+                }
+              },
               "explanation": "Items a and b have a past cause and a present result. Items c and d have a general present quality and a past event, which is the other mixed type. Getting the times to agree is the whole skill.",
               "xp": 10
             },
@@ -1191,7 +2190,12 @@
               "difficulty": "advanced",
               "prompt": "If you were not so careless, you would not lost your keys again.",
               "instruction": "Rewrite the sentence with correct tenses.",
-              "answer": { "type": "text", "values": ["If you were not so careless, you would not have lost your keys again."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you were not so careless, you would not have lost your keys again."
+                ]
+              },
               "explanation": "The carelessness is a present general quality, so the if-clause uses were, and the losing of the keys is a past event, so the result needs would not have lost. would not lost has no past participle at all.",
               "xp": 10
             },
@@ -1204,20 +2208,96 @@
               "prompt": "Build the mixed conditional: if / she / had / taken / the / job / , / she / would / be / living / abroad / now",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "if", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "she", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "had", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "taken", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "the", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "job", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "she", "isCorrect": null, "matchKey": null },
-                { "id": "w8", "text": "would", "isCorrect": null, "matchKey": null },
-                { "id": "w9", "text": "be", "isCorrect": null, "matchKey": null },
-                { "id": "w10", "text": "living", "isCorrect": null, "matchKey": null },
-                { "id": "w11", "text": "abroad", "isCorrect": null, "matchKey": null },
-                { "id": "w12", "text": "now", "isCorrect": null, "matchKey": null }
+                {
+                  "id": "w1",
+                  "text": "if",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w2",
+                  "text": "she",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w3",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w4",
+                  "text": "taken",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w5",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w6",
+                  "text": "job",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w7",
+                  "text": "she",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w8",
+                  "text": "would",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w9",
+                  "text": "be",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w10",
+                  "text": "living",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w11",
+                  "text": "abroad",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w12",
+                  "text": "now",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "order", "values": ["if", "she", "had", "taken", "the", "job", "she", "would", "be", "living", "abroad", "now"] },
+              "answer": {
+                "type": "order",
+                "values": [
+                  "if",
+                  "she",
+                  "had",
+                  "taken",
+                  "the",
+                  "job",
+                  "she",
+                  "would",
+                  "be",
+                  "living",
+                  "abroad",
+                  "now"
+                ]
+              },
               "explanation": "Each clause repeats its own subject, so the word she appears twice, once inside if she had taken and once as the subject of the main clause. Now must go at the end because it marks the present time of the result.",
               "xp": 10
             }
@@ -1230,32 +2310,52 @@
           "items": [
             {
               "id": "cd-mx-d1",
-              "audio": { "kind": "speech", "text": "If I had studied medicine, I would be working in a hospital now." },
-              "acceptedAnswers": ["If I had studied medicine, I would be working in a hospital now."],
+              "audio": {
+                "kind": "speech",
+                "text": "If I had studied medicine, I would be working in a hospital now."
+              },
+              "acceptedAnswers": [
+                "If I had studied medicine, I would be working in a hospital now."
+              ],
               "hint": "past cause, present result",
               "translation": "Nếu tôi đã học y, tôi đang làm việc ở bệnh viện rồi.",
               "xp": 15
             },
             {
               "id": "cd-mx-d2",
-              "audio": { "kind": "speech", "text": "If you had taken my advice, you would not be in trouble now." },
-              "acceptedAnswers": ["If you had taken my advice, you would not be in trouble now."],
+              "audio": {
+                "kind": "speech",
+                "text": "If you had taken my advice, you would not be in trouble now."
+              },
+              "acceptedAnswers": [
+                "If you had taken my advice, you would not be in trouble now."
+              ],
               "hint": "had taken plus would not be",
               "translation": "Nếu bạn đã nghe lời tôi, bây giờ bạn đã không gặp rắc rối.",
               "xp": 15
             },
             {
               "id": "cd-mx-d3",
-              "audio": { "kind": "speech", "text": "If the hotel were cheaper, I would have stayed a second night." },
-              "acceptedAnswers": ["If the hotel were cheaper, I would have stayed a second night."],
+              "audio": {
+                "kind": "speech",
+                "text": "If the hotel were cheaper, I would have stayed a second night."
+              },
+              "acceptedAnswers": [
+                "If the hotel were cheaper, I would have stayed a second night."
+              ],
               "hint": "present quality, past result",
               "translation": "Nếu khách sạn rẻ hơn, tôi đã ở lại thêm một đêm.",
               "xp": 15
             },
             {
               "id": "cd-mx-d4",
-              "audio": { "kind": "speech", "text": "If she had not missed the last bus, she would not be stuck here now." },
-              "acceptedAnswers": ["If she had not missed the last bus, she would not be stuck here now."],
+              "audio": {
+                "kind": "speech",
+                "text": "If she had not missed the last bus, she would not be stuck here now."
+              },
+              "acceptedAnswers": [
+                "If she had not missed the last bus, she would not be stuck here now."
+              ],
               "hint": "a past event causing a present problem",
               "translation": "Nếu cô ấy đã không lỡ chuyến xe buýt cuối, cô ấy đã không bị kẹt ở đây.",
               "xp": 15
@@ -1277,11 +2377,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "If he had studied, he would be a doctor now.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If he had studied, he would have been a doctor now.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "If he studied, he would be a doctor now.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "If he had studied, he would be a doctor now.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If he had studied, he would have been a doctor now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If he studied, he would be a doctor now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The condition is a past event and the result is his present profession, so had studied pairs with would be. Option b puts both halves in the past and option c puts the condition in the present.",
               "xp": 10
             },
@@ -1293,7 +2413,12 @@
               "difficulty": "advanced",
               "prompt": "If he had not forgotten his umbrella, he will not be wet now.",
               "instruction": "Rewrite the sentence with the correct main clause tense.",
-              "answer": { "type": "text", "values": ["If he had not forgotten his umbrella, he would not be wet now."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If he had not forgotten his umbrella, he would not be wet now."
+                ]
+              },
               "explanation": "Because the result describes how he is now, the main clause must use would not be rather than will not be. The condition stays in the past perfect because the forgetting happened yesterday.",
               "xp": 10
             },
@@ -1306,11 +2431,31 @@
               "prompt": "Complete the mixed conditional: If I had bought the flat in 2020, I ___ a lower monthly payment now.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "would be paying", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "would have paid", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "will be paying", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "would be paying",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "would have paid",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "will be paying",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["would be paying"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would be paying"
+                ]
+              },
               "explanation": "The payment is being made every month now, so the present continuous inside would describes an ongoing result. would have paid would place the whole thing in the past.",
               "xp": 10
             },
@@ -1323,9 +2468,17 @@
               "prompt": "A mixed conditional can pair a third conditional clause with a second conditional clause.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "The two common forms are had plus participle with would plus base verb, and were plus base verb with would have plus participle. Both pair the perfect form of one clause with the simple form of the other.",
               "xp": 10
             }
@@ -1362,8 +2515,18 @@
               "statement": "Wish about something untrue now takes past simple in the that-clause and would plus base verb in the main clause.",
               "formula": "I wish + past simple, I would + base verb",
               "examples": [
-                { "id": "cd-ws-ex1", "en": "I wish I lived nearer my parents.", "vi": "Giá mà tôi sống gần bố mẹ hơn.", "note": "past simple in the wish-clause, no would" },
-                { "id": "cd-ws-ex2", "en": "I wish I could speak three languages.", "vi": "Giá mà tôi nói được ba thứ tiếng.", "note": "could replaces the past form of can" }
+                {
+                  "id": "cd-ws-ex1",
+                  "en": "I wish I lived nearer my parents.",
+                  "vi": "Giá mà tôi sống gần bố mẹ hơn.",
+                  "note": "past simple in the wish-clause, no would"
+                },
+                {
+                  "id": "cd-ws-ex2",
+                  "en": "I wish I could speak three languages.",
+                  "vi": "Giá mà tôi nói được ba thứ tiếng.",
+                  "note": "could replaces the past form of can"
+                }
               ]
             },
             {
@@ -1371,8 +2534,18 @@
               "statement": "Wish about something that did not happen takes had plus past participle and would have plus past participle. This is the same pair as the third conditional.",
               "formula": "I wish + had + past participle, I would have + past participle",
               "examples": [
-                { "id": "cd-ws-ex3", "en": "I wish I had asked her earlier.", "vi": "Giá mà tôi đã hỏi bà ấy sớm hơn.", "note": "a regret about the past" },
-                { "id": "cd-ws-ex4", "en": "I wish we had booked the tickets in advance.", "vi": "Giá mà chúng ta đã đặt vé trước.", "note": "had booked replaces the simple past" }
+                {
+                  "id": "cd-ws-ex3",
+                  "en": "I wish I had asked her earlier.",
+                  "vi": "Giá mà tôi đã hỏi bà ấy sớm hơn.",
+                  "note": "a regret about the past"
+                },
+                {
+                  "id": "cd-ws-ex4",
+                  "en": "I wish we had booked the tickets in advance.",
+                  "vi": "Giá mà chúng ta đã đặt vé trước.",
+                  "note": "had booked replaces the simple past"
+                }
               ]
             },
             {
@@ -1380,8 +2553,18 @@
               "statement": "Wish about the future takes would, and if only expresses regret about something that did not happen, usually with the same tenses as wish.",
               "formula": "I wish you would come. / If only I had listened to you.",
               "examples": [
-                { "id": "cd-ws-ex5", "en": "I wish you would call me tonight.", "vi": "Giá mà bạn gọi cho tôi tối nay.", "note": "would because the situation is in the future" },
-                { "id": "cd-ws-ex6", "en": "If only I had listened to my brother.", "vi": "Giá mà tôi đã nghe lời anh trai.", "note": "strong regret, same tense as wish about the past" }
+                {
+                  "id": "cd-ws-ex5",
+                  "en": "I wish you would call me tonight.",
+                  "vi": "Giá mà bạn gọi cho tôi tối nay.",
+                  "note": "would because the situation is in the future"
+                },
+                {
+                  "id": "cd-ws-ex6",
+                  "en": "If only I had listened to my brother.",
+                  "vi": "Giá mà tôi đã nghe lời anh trai.",
+                  "note": "strong regret, same tense as wish about the past"
+                }
               ]
             },
             {
@@ -1389,8 +2572,18 @@
               "statement": "would rather is followed by the bare infinitive of both options, with no to and no subject in the first option.",
               "formula": "I would rather walk than take a taxi. / She would rather not go.",
               "examples": [
-                { "id": "cd-ws-ex7", "en": "I would rather stay at home than go to that party.", "vi": "Tôi thà ở nhà còn hơn đi dự bữa tiệc đó.", "note": "no to before stay" },
-                { "id": "cd-ws-ex8", "en": "He would rather not talk about it.", "vi": "Anh ấy không muốn nói về chuyện đó.", "note": "not goes after would rather" }
+                {
+                  "id": "cd-ws-ex7",
+                  "en": "I would rather stay at home than go to that party.",
+                  "vi": "Tôi thà ở nhà còn hơn đi dự bữa tiệc đó.",
+                  "note": "no to before stay"
+                },
+                {
+                  "id": "cd-ws-ex8",
+                  "en": "He would rather not talk about it.",
+                  "vi": "Anh ấy không muốn nói về chuyện đó.",
+                  "note": "not goes after would rather"
+                }
               ]
             }
           ]
@@ -1399,10 +2592,30 @@
           "id": "cd-ws-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-wse-1", "en": "I wish I were taller.", "vi": "Giá mà tôi cao hơn.", "note": "present wish with were" },
-            { "id": "cd-wse-2", "en": "I wish you would stop shouting.", "vi": "Giá mà bạn ngừng la hét đi.", "note": "future wish with would" },
-            { "id": "cd-wse-3", "en": "I wish I had taken your advice.", "vi": "Giá mà tôi đã nghe lời khuyên của bạn.", "note": "past wish with had taken" },
-            { "id": "cd-wse-4", "en": "I would rather eat at home tonight.", "vi": "Tối nay tôi thà ăn ở nhà hơn.", "note": "preference with a bare infinitive" }
+            {
+              "id": "cd-wse-1",
+              "en": "I wish I were taller.",
+              "vi": "Giá mà tôi cao hơn.",
+              "note": "present wish with were"
+            },
+            {
+              "id": "cd-wse-2",
+              "en": "I wish you would stop shouting.",
+              "vi": "Giá mà bạn ngừng la hét đi.",
+              "note": "future wish with would"
+            },
+            {
+              "id": "cd-wse-3",
+              "en": "I wish I had taken your advice.",
+              "vi": "Giá mà tôi đã nghe lời khuyên của bạn.",
+              "note": "past wish with had taken"
+            },
+            {
+              "id": "cd-wse-4",
+              "en": "I would rather eat at home tonight.",
+              "vi": "Tối nay tôi thà ăn ở nhà hơn.",
+              "note": "preference with a bare infinitive"
+            }
           ]
         },
         {
@@ -1418,12 +2631,37 @@
               "prompt": "Complete the wish about the past: I wish I ___ the invitation.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "had accepted", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "accepted", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "would accept", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "will accept", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "had accepted",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "accepted",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "would accept",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "will accept",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["had accepted"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had accepted"
+                ]
+              },
               "explanation": "A wish about something that did not happen takes had plus the past participle. A plain past is used for a wish about something untrue now, and would accept would change the sentence into a request.",
               "xp": 10
             },
@@ -1435,7 +2673,13 @@
               "difficulty": "advanced",
               "prompt": "Type the complete verb phrase: I wish you ___ me tomorrow.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["would call", "would phone"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would call",
+                  "would phone"
+                ]
+              },
               "explanation": "A wish about the future uses would plus the base form. will call would be a prediction rather than a wish, and calling me would leave the sentence without a verb at all.",
               "xp": 10
             },
@@ -1447,7 +2691,12 @@
               "difficulty": "advanced",
               "prompt": "I wish I would have known about the change.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I wish I had known about the change."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I wish I had known about the change."
+                ]
+              },
               "explanation": "A wish about the past takes had plus the past participle with no would in the that-clause. would have known is the result clause of a third conditional, and a wish cannot combine the two.",
               "xp": 10
             },
@@ -1459,7 +2708,12 @@
               "difficulty": "advanced",
               "prompt": "I would rather to stay at home than to go out.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I would rather stay at home than go out."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I would rather stay at home than go out."
+                ]
+              },
               "explanation": "would rather is followed by the bare infinitive with no to, in both halves of the comparison. This is the same pattern as would rather not go, and it is one of the last places where the infinitive marker is dropped.",
               "xp": 10
             },
@@ -1472,9 +2726,17 @@
               "prompt": "If only uses the same tenses as wish for the same situation.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "If only I had known means I wish I had known, and if only I were taller means I wish I were taller. The only difference is the emotion: if only expresses a stronger regret than a neutral wish.",
               "xp": 10
             }
@@ -1487,32 +2749,52 @@
           "items": [
             {
               "id": "cd-ws-d1",
-              "audio": { "kind": "speech", "text": "I wish I had taken your advice." },
-              "acceptedAnswers": ["I wish I had taken your advice."],
+              "audio": {
+                "kind": "speech",
+                "text": "I wish I had taken your advice."
+              },
+              "acceptedAnswers": [
+                "I wish I had taken your advice."
+              ],
               "hint": "wish about the past",
               "translation": "Giá mà tôi đã nghe lời khuyên của bạn.",
               "xp": 15
             },
             {
               "id": "cd-ws-d2",
-              "audio": { "kind": "speech", "text": "If only I had listened to my brother." },
-              "acceptedAnswers": ["If only I had listened to my brother."],
+              "audio": {
+                "kind": "speech",
+                "text": "If only I had listened to my brother."
+              },
+              "acceptedAnswers": [
+                "If only I had listened to my brother."
+              ],
               "hint": "if only plus had",
               "translation": "Giá mà tôi đã nghe lời anh trai.",
               "xp": 15
             },
             {
               "id": "cd-ws-d3",
-              "audio": { "kind": "speech", "text": "I would rather stay at home than go to that party." },
-              "acceptedAnswers": ["I would rather stay at home than go to that party."],
+              "audio": {
+                "kind": "speech",
+                "text": "I would rather stay at home than go to that party."
+              },
+              "acceptedAnswers": [
+                "I would rather stay at home than go to that party."
+              ],
               "hint": "would rather with no to",
               "translation": "Tôi thà ở nhà còn hơn đi dự bữa tiệc đó.",
               "xp": 15
             },
             {
               "id": "cd-ws-d4",
-              "audio": { "kind": "speech", "text": "I wish you would stop shouting at the children." },
-              "acceptedAnswers": ["I wish you would stop shouting at the children."],
+              "audio": {
+                "kind": "speech",
+                "text": "I wish you would stop shouting at the children."
+              },
+              "acceptedAnswers": [
+                "I wish you would stop shouting at the children."
+              ],
               "hint": "wish about the future",
               "translation": "Giá mà bạn ngừng la hét với lũ trẻ.",
               "xp": 15
@@ -1534,11 +2816,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "I wish I was at home now.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "I wish I would be at home now.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "I wish I had been at home now.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "I wish I was at home now.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I wish I would be at home now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I wish I had been at home now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A wish about the present takes the past simple, so was is correct and would be is used for a future wish. had been would move the wish into the past, which is not what now means here.",
               "xp": 10
             },
@@ -1550,7 +2852,13 @@
               "difficulty": "advanced",
               "prompt": "If only I had more time, I would learn the guitar.",
               "instruction": "Rewrite the sentence as a wish.",
-              "answer": { "type": "text", "values": ["I wish I had more time. I would learn the guitar.", "I wish I had more time to learn the guitar."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I wish I had more time. I would learn the guitar.",
+                  "I wish I had more time to learn the guitar."
+                ]
+              },
               "explanation": "The two sentences are already a third conditional about the present, so If only can be replaced by I wish. Notice that with I wish the would goes in the main clause, not inside the that-clause.",
               "xp": 10
             },
@@ -1562,7 +2870,12 @@
               "difficulty": "advanced",
               "prompt": "He would rather to stay in the city than to move.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["He would rather stay in the city than move."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He would rather stay in the city than move."
+                ]
+              },
               "explanation": "Neither half of a would rather comparison takes to. The pattern is would rather plus bare infinitive, twice, which is identical to the structure of rather than.",
               "xp": 10
             },
@@ -1575,12 +2888,40 @@
               "prompt": "Match each wish with the tense it needs.",
               "instruction": "Pair each wish with the correct verb form.",
               "items": [
-                { "id": "a", "text": "I wish I knew the answer now.", "isCorrect": null, "matchKey": "knew" },
-                { "id": "b", "text": "I wish I had known the answer yesterday.", "isCorrect": null, "matchKey": "had known" },
-                { "id": "c", "text": "I wish you would understand tomorrow.", "isCorrect": null, "matchKey": "would understand" },
-                { "id": "d", "text": "I wish I could drive.", "isCorrect": null, "matchKey": "could drive" }
+                {
+                  "id": "a",
+                  "text": "I wish I knew the answer now.",
+                  "isCorrect": null,
+                  "matchKey": "knew"
+                },
+                {
+                  "id": "b",
+                  "text": "I wish I had known the answer yesterday.",
+                  "isCorrect": null,
+                  "matchKey": "had known"
+                },
+                {
+                  "id": "c",
+                  "text": "I wish you would understand tomorrow.",
+                  "isCorrect": null,
+                  "matchKey": "would understand"
+                },
+                {
+                  "id": "d",
+                  "text": "I wish I could drive.",
+                  "isCorrect": null,
+                  "matchKey": "could drive"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "knew", "b": "had known", "c": "would understand", "d": "could drive" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "knew",
+                  "b": "had known",
+                  "c": "would understand",
+                  "d": "could drive"
+                }
+              },
               "explanation": "Present wishes take the past simple or could, past wishes take had plus the participle, and future wishes take would. Reading now, yesterday and tomorrow in the sentences tells you which one you need.",
               "xp": 10
             }
@@ -1617,8 +2958,18 @@
               "statement": "If only has the same tense patterns as wish: past simple for the present, had plus participle for the past, would for the future. It is followed by no subject and no main clause.",
               "formula": "If only I were taller! / If only I had asked!",
               "examples": [
-                { "id": "cd-wr-ex1", "en": "If only I were better at maths.", "vi": "Giá mà tôi giỏi toán hơn.", "note": "present regret, same tense as wish" },
-                { "id": "cd-wr-ex2", "en": "If only we had left ten minutes earlier.", "vi": "Giá mà chúng ta rời đi sớm mười phút.", "note": "past regret, had plus participle" }
+                {
+                  "id": "cd-wr-ex1",
+                  "en": "If only I were better at maths.",
+                  "vi": "Giá mà tôi giỏi toán hơn.",
+                  "note": "present regret, same tense as wish"
+                },
+                {
+                  "id": "cd-wr-ex2",
+                  "en": "If only we had left ten minutes earlier.",
+                  "vi": "Giá mà chúng ta rời đi sớm mười phút.",
+                  "note": "past regret, had plus participle"
+                }
               ]
             },
             {
@@ -1626,8 +2977,18 @@
               "statement": "I hope plus that plus subject and verb covers situations you think are possible. I hope plus noun or gerund is used for things, not for events with a subject and a verb.",
               "formula": "I hope that you feel better. / I hope for a quiet weekend.",
               "examples": [
-                { "id": "cd-wr-ex3", "en": "I hope that the weather stays dry.", "vi": "Tôi hy vọng thời tiết vẫn khô ráo.", "note": "that plus subject and verb" },
-                { "id": "cd-wr-ex4", "en": "I hope for an early answer.", "vi": "Tôi hy vọng nhận được câu trả lời sớm.", "note": "hope for plus a noun phrase" }
+                {
+                  "id": "cd-wr-ex3",
+                  "en": "I hope that the weather stays dry.",
+                  "vi": "Tôi hy vọng thời tiết vẫn khô ráo.",
+                  "note": "that plus subject and verb"
+                },
+                {
+                  "id": "cd-wr-ex4",
+                  "en": "I hope for an early answer.",
+                  "vi": "Tôi hy vọng nhận được câu trả lời sớm.",
+                  "note": "hope for plus a noun phrase"
+                }
               ]
             },
             {
@@ -1635,8 +2996,18 @@
               "statement": "would rather compares two actions and takes a bare infinitive. prefer takes a noun or a gerund, and rather than does the same comparison.",
               "formula": "I would rather walk than drive. / I prefer walking to driving.",
               "examples": [
-                { "id": "cd-wr-ex5", "en": "I would rather wait until Friday than send it today.", "vi": "Tôi thà đợi đến thứ Sáu còn hơn gửi hôm nay.", "note": "two bare infinitives" },
-                { "id": "cd-wr-ex6", "en": "I prefer reading to watching television.", "vi": "Tôi thích đọc hơn xem truyền hình.", "note": "prefer plus gerund, then a noun for the second option" }
+                {
+                  "id": "cd-wr-ex5",
+                  "en": "I would rather wait until Friday than send it today.",
+                  "vi": "Tôi thà đợi đến thứ Sáu còn hơn gửi hôm nay.",
+                  "note": "two bare infinitives"
+                },
+                {
+                  "id": "cd-wr-ex6",
+                  "en": "I prefer reading to watching television.",
+                  "vi": "Tôi thích đọc hơn xem truyền hình.",
+                  "note": "prefer plus gerund, then a noun for the second option"
+                }
               ]
             },
             {
@@ -1644,8 +3015,18 @@
               "statement": "Negative goes after would rather: would rather not go. In the second option the subject and verb are needed because the subject changes.",
               "formula": "I would rather not drive. / I would rather she drove.",
               "examples": [
-                { "id": "cd-wr-ex7", "en": "I would rather not talk about it now.", "vi": "Tôi không muốn nói về chuyện đó lúc này.", "note": "not directly after would rather" },
-                { "id": "cd-wr-ex8", "en": "I would rather my brother drove us home.", "vi": "Tôi thà anh trai tôi lái xe chở tôi về hơn.", "note": "the second option needs a subject of its own" }
+                {
+                  "id": "cd-wr-ex7",
+                  "en": "I would rather not talk about it now.",
+                  "vi": "Tôi không muốn nói về chuyện đó lúc này.",
+                  "note": "not directly after would rather"
+                },
+                {
+                  "id": "cd-wr-ex8",
+                  "en": "I would rather my brother drove us home.",
+                  "vi": "Tôi thà anh trai tôi lái xe chở tôi về hơn.",
+                  "note": "the second option needs a subject of its own"
+                }
               ]
             }
           ]
@@ -1654,10 +3035,30 @@
           "id": "cd-wr-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-wre-1", "en": "If only the train had been on time.", "vi": "Giá mà tàu đến đúng giờ.", "note": "a regret about the past" },
-            { "id": "cd-wre-2", "en": "I hope that you are feeling better today.", "vi": "Tôi hy vọng hôm nay bạn thấy khoẻ hơn.", "note": "hope plus that-clause" },
-            { "id": "cd-wre-3", "en": "I would rather stay in tonight.", "vi": "Tối nay tôi thà ở lại nhà.", "note": "would rather plus a bare infinitive" },
-            { "id": "cd-wre-4", "en": "I would rather she handled the customers.", "vi": "Tôi thà cô ấy phụ trách khách hàng hơn.", "note": "the second option has its own subject" }
+            {
+              "id": "cd-wre-1",
+              "en": "If only the train had been on time.",
+              "vi": "Giá mà tàu đến đúng giờ.",
+              "note": "a regret about the past"
+            },
+            {
+              "id": "cd-wre-2",
+              "en": "I hope that you are feeling better today.",
+              "vi": "Tôi hy vọng hôm nay bạn thấy khoẻ hơn.",
+              "note": "hope plus that-clause"
+            },
+            {
+              "id": "cd-wre-3",
+              "en": "I would rather stay in tonight.",
+              "vi": "Tối nay tôi thà ở lại nhà.",
+              "note": "would rather plus a bare infinitive"
+            },
+            {
+              "id": "cd-wre-4",
+              "en": "I would rather she handled the customers.",
+              "vi": "Tôi thà cô ấy phụ trách khách hàng hơn.",
+              "note": "the second option has its own subject"
+            }
           ]
         },
         {
@@ -1672,7 +3073,12 @@
               "difficulty": "advanced",
               "prompt": "Type the complete verb phrase: I would rather ___ than take a taxi.",
               "instruction": "Type the complete verb phrase.",
-              "answer": { "type": "text", "values": ["walk"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "walk"
+                ]
+              },
               "explanation": "would rather is followed by the bare infinitive, so walk carries no to and no does. The comparison needs both options in the same form, which is why take also has no to.",
               "xp": 10
             },
@@ -1685,11 +3091,31 @@
               "prompt": "Complete the sentence with the correct structure: I hope ___ the report is finished by Friday.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "that", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "for", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "to", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "that",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "for",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "to",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["that"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "that"
+                ]
+              },
               "explanation": "The following part has its own subject the report and verb is finished, so it must be a that-clause. hope for takes a noun such as I hope for an early reply, and hope to takes an infinitive such as I hope to finish soon.",
               "xp": 10
             },
@@ -1701,7 +3127,12 @@
               "difficulty": "advanced",
               "prompt": "If only I would have known the answer before the test.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If only I had known the answer before the test."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If only I had known the answer before the test."
+                ]
+              },
               "explanation": "If only takes the same tense as wish, so a regret about the past needs had known. If only I would have known mixes a present wish form with a past result and is not a possible construction.",
               "xp": 10
             },
@@ -1713,7 +3144,12 @@
               "difficulty": "advanced",
               "prompt": "I would rather to stay at home than to go to the party.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I would rather stay at home than go to the party."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I would rather stay at home than go to the party."
+                ]
+              },
               "explanation": "Neither option in a would rather comparison takes the infinitive marker to. Both are bare infinitives, which is the one place in English where the marker is deliberately left out.",
               "xp": 10
             },
@@ -1726,12 +3162,40 @@
               "prompt": "Match each structure with its meaning.",
               "instruction": "Pair every structure with its correct meaning.",
               "items": [
-                { "id": "a", "text": "If only I had spoken earlier.", "isCorrect": null, "matchKey": "regret about the past" },
-                { "id": "b", "text": "I hope that the plan works.", "isCorrect": null, "matchKey": "expectation about the future" },
-                { "id": "c", "text": "I would rather not drive tonight.", "isCorrect": null, "matchKey": "preference against an option" },
-                { "id": "d", "text": "I wish I were at home.", "isCorrect": null, "matchKey": "a present situation that is not true" }
+                {
+                  "id": "a",
+                  "text": "If only I had spoken earlier.",
+                  "isCorrect": null,
+                  "matchKey": "regret about the past"
+                },
+                {
+                  "id": "b",
+                  "text": "I hope that the plan works.",
+                  "isCorrect": null,
+                  "matchKey": "expectation about the future"
+                },
+                {
+                  "id": "c",
+                  "text": "I would rather not drive tonight.",
+                  "isCorrect": null,
+                  "matchKey": "preference against an option"
+                },
+                {
+                  "id": "d",
+                  "text": "I wish I were at home.",
+                  "isCorrect": null,
+                  "matchKey": "a present situation that is not true"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "regret about the past", "b": "expectation about the future", "c": "preference against an option", "d": "a present situation that is not true" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "regret about the past",
+                  "b": "expectation about the future",
+                  "c": "preference against an option",
+                  "d": "a present situation that is not true"
+                }
+              },
               "explanation": "Regret and a wished-for present situation both use the past, expectation uses that plus a present form, and preference uses a bare infinitive. Naming the function first makes the form much easier to choose.",
               "xp": 10
             }
@@ -1744,32 +3208,52 @@
           "items": [
             {
               "id": "cd-wr-d1",
-              "audio": { "kind": "speech", "text": "If only the train had been on time." },
-              "acceptedAnswers": ["If only the train had been on time."],
+              "audio": {
+                "kind": "speech",
+                "text": "If only the train had been on time."
+              },
+              "acceptedAnswers": [
+                "If only the train had been on time."
+              ],
               "hint": "regret with had been",
               "translation": "Giá mà tàu đến đúng giờ.",
               "xp": 15
             },
             {
               "id": "cd-wr-d2",
-              "audio": { "kind": "speech", "text": "I hope that you are feeling better today." },
-              "acceptedAnswers": ["I hope that you are feeling better today."],
+              "audio": {
+                "kind": "speech",
+                "text": "I hope that you are feeling better today."
+              },
+              "acceptedAnswers": [
+                "I hope that you are feeling better today."
+              ],
               "hint": "hope plus a that-clause",
               "translation": "Tôi hy vọng hôm nay bạn thấy khoẻ hơn.",
               "xp": 15
             },
             {
               "id": "cd-wr-d3",
-              "audio": { "kind": "speech", "text": "I would rather stay in tonight." },
-              "acceptedAnswers": ["I would rather stay in tonight."],
+              "audio": {
+                "kind": "speech",
+                "text": "I would rather stay in tonight."
+              },
+              "acceptedAnswers": [
+                "I would rather stay in tonight."
+              ],
               "hint": "would rather plus a bare infinitive",
               "translation": "Tối nay tôi thà ở lại nhà.",
               "xp": 15
             },
             {
               "id": "cd-wr-d4",
-              "audio": { "kind": "speech", "text": "I would rather my brother drove us home." },
-              "acceptedAnswers": ["I would rather my brother drove us home."],
+              "audio": {
+                "kind": "speech",
+                "text": "I would rather my brother drove us home."
+              },
+              "acceptedAnswers": [
+                "I would rather my brother drove us home."
+              ],
               "hint": "the second option has its own subject",
               "translation": "Tôi thà anh trai tôi lái xe chở tôi về hơn.",
               "xp": 15
@@ -1791,11 +3275,31 @@
               "prompt": "Choose the correct sentence.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "I would rather not pay the deposit now.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "I would rather not to pay the deposit now.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "I would rather don't pay the deposit now.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "I would rather not pay the deposit now.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I would rather not to pay the deposit now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I would rather don't pay the deposit now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "The negation goes directly after would rather and the verb stays a bare infinitive. would rather not to pay keeps the infinitive marker, and rather don't pay replaces the infinitive with a negative auxiliary.",
               "xp": 10
             },
@@ -1807,7 +3311,13 @@
               "difficulty": "advanced",
               "prompt": "I hope the manager to reply to my email today.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["I hope the manager will reply to my email today.", "I hope that the manager will reply to my email today."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I hope the manager will reply to my email today.",
+                  "I hope that the manager will reply to my email today."
+                ]
+              },
               "explanation": "hope takes either that plus a clause or an infinitive, never an object followed by an infinitive. Both the plain and the that-clause version are accepted, and the future needs will because the reply has not happened yet.",
               "xp": 10
             },
@@ -1820,12 +3330,37 @@
               "prompt": "Complete the sentence: If only I ___ the earlier train.",
               "instruction": "Complete the sentence with the correct verb form.",
               "items": [
-                { "id": "a", "text": "had taken", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "have taken", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "would take", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "take", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "had taken",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "have taken",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "would take",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "take",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["had taken"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had taken"
+                ]
+              },
               "explanation": "If only follows the wish pattern, so a regret about something that did not happen needs had plus the past participle. have taken is a present perfect and would take is impossible after If only.",
               "xp": 10
             },
@@ -1838,9 +3373,17 @@
               "prompt": "would rather is followed by a bare infinitive, with no to.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": true },
+              "answer": {
+                "type": "boolean",
+                "values": true
+              },
               "explanation": "I would rather wait, never I would rather to wait. This is the same bare infinitive pattern as let somebody do and had better do.",
               "xp": 10
             }
@@ -1877,8 +3420,18 @@
               "statement": "For a first conditional about a specific future time, when or as soon as is more natural than if, because the condition is a point in time rather than a possibility.",
               "formula": "When you arrive, we will start. (not If you arrive, as a point in time)",
               "examples": [
-                { "id": "cd-ad-ex1", "en": "When the results come out, I will call you.", "vi": "Khi kết quả được công bố, tôi sẽ gọi cho bạn.", "note": "a certain time rather than a chance" },
-                { "id": "cd-ad-ex2", "en": "As soon as I finish this report, I will send it.", "vi": "Ngay khi xong báo cáo này, tôi sẽ gửi nó đi.", "note": "as soon as for the earliest possible moment" }
+                {
+                  "id": "cd-ad-ex1",
+                  "en": "When the results come out, I will call you.",
+                  "vi": "Khi kết quả được công bố, tôi sẽ gọi cho bạn.",
+                  "note": "a certain time rather than a chance"
+                },
+                {
+                  "id": "cd-ad-ex2",
+                  "en": "As soon as I finish this report, I will send it.",
+                  "vi": "Ngay khi xong báo cáo này, tôi sẽ gửi nó đi.",
+                  "note": "as soon as for the earliest possible moment"
+                }
               ]
             },
             {
@@ -1886,8 +3439,18 @@
               "statement": "When the main clause describes a decided arrangement rather than a spontaneous reaction, the present continuous is used instead of will.",
               "formula": "When you arrive, I will be waiting at the gate.",
               "examples": [
-                { "id": "cd-ad-ex3", "en": "When you arrive, I will be waiting at the gate.", "vi": "Khi bạn đến, tôi sẽ đang đợi ở cổng.", "note": "planned in advance" },
-                { "id": "cd-ad-ex4", "en": "I will probably call you tonight when I get home.", "vi": "Tôi có lẽ sẽ gọi cho bạn tối nay khi về đến nhà.", "note": "probably with will for a prediction" }
+                {
+                  "id": "cd-ad-ex3",
+                  "en": "When you arrive, I will be waiting at the gate.",
+                  "vi": "Khi bạn đến, tôi sẽ đang đợi ở cổng.",
+                  "note": "planned in advance"
+                },
+                {
+                  "id": "cd-ad-ex4",
+                  "en": "I will probably call you tonight when I get home.",
+                  "vi": "Tôi có lẽ sẽ gọi cho bạn tối nay khi về đến nhà.",
+                  "note": "probably with will for a prediction"
+                }
               ]
             },
             {
@@ -1895,8 +3458,18 @@
               "statement": "Formal and written English uses provided that or as long as for a condition, and in case for precaution. in case never means if.",
               "formula": "You may borrow it provided that you return it.",
               "examples": [
-                { "id": "cd-ad-ex5", "en": "You may borrow the notes provided that you return them tomorrow.", "vi": "Bạn có thể mượn tập tài liệu với điều kiện là trả lại ngày mai.", "note": "provided that is formal and often placed after the main clause" },
-                { "id": "cd-ad-ex6", "en": "Take an umbrella in case it rains later.", "vi": "Mang theo ô phòng khi trời mưa sau này.", "note": "in case means just in case, a precaution" }
+                {
+                  "id": "cd-ad-ex5",
+                  "en": "You may borrow the notes provided that you return them tomorrow.",
+                  "vi": "Bạn có thể mượn tập tài liệu với điều kiện là trả lại ngày mai.",
+                  "note": "provided that is formal and often placed after the main clause"
+                },
+                {
+                  "id": "cd-ad-ex6",
+                  "en": "Take an umbrella in case it rains later.",
+                  "vi": "Mang theo ô phòng khi trời mưa sau này.",
+                  "note": "in case means just in case, a precaution"
+                }
               ]
             },
             {
@@ -1904,8 +3477,18 @@
               "statement": "Advice and warnings are usually stated in the zero conditional or with an imperative, because they describe what always works.",
               "formula": "If you take an umbrella, you will not get wet.",
               "examples": [
-                { "id": "cd-ad-ex7", "en": "If you leave the fridge door open, the food will spoil.", "vi": "Nếu bạn để cửa tủ lạnh mở, thức ăn sẽ hỏng.", "note": "a general warning" },
-                { "id": "cd-ad-ex8", "en": "If the smoke alarm rings, leave the building immediately.", "vi": "Nếu báo động khói reo, hãy rời khỏi tòa nhà ngay lập tức.", "note": "imperative main clause in an instruction" }
+                {
+                  "id": "cd-ad-ex7",
+                  "en": "If you leave the fridge door open, the food will spoil.",
+                  "vi": "Nếu bạn để cửa tủ lạnh mở, thức ăn sẽ hỏng.",
+                  "note": "a general warning"
+                },
+                {
+                  "id": "cd-ad-ex8",
+                  "en": "If the smoke alarm rings, leave the building immediately.",
+                  "vi": "Nếu báo động khói reo, hãy rời khỏi tòa nhà ngay lập tức.",
+                  "note": "imperative main clause in an instruction"
+                }
               ]
             }
           ]
@@ -1914,10 +3497,30 @@
           "id": "cd-ad-examples",
           "type": "examples",
           "examples": [
-            { "id": "cd-ade-1", "en": "If you have any questions, please ask me.", "vi": "Nếu bạn có thắc mắc gì, hãy hỏi tôi.", "note": "an open offer, zero conditional" },
-            { "id": "cd-ade-2", "en": "Provided that you pay today, we will deliver tomorrow.", "vi": "Với điều kiện là bạn thanh toán hôm nay, chúng tôi sẽ giao ngày mai.", "note": "formal first conditional" },
-            { "id": "cd-ade-3", "en": "If I were you, I would check the figures once more.", "vi": "Nếu tôi là bạn, tôi sẽ kiểm tra các con số thêm một lần nữa.", "note": "advice in the second conditional" },
-            { "id": "cd-ade-4", "en": "If we had checked earlier, this problem would have been solved.", "vi": "Nếu chúng ta kiểm tra sớm hơn, vấn đề này đã được giải quyết rồi.", "note": "third conditional advice" }
+            {
+              "id": "cd-ade-1",
+              "en": "If you have any questions, please ask me.",
+              "vi": "Nếu bạn có thắc mắc gì, hãy hỏi tôi.",
+              "note": "an open offer, zero conditional"
+            },
+            {
+              "id": "cd-ade-2",
+              "en": "Provided that you pay today, we will deliver tomorrow.",
+              "vi": "Với điều kiện là bạn thanh toán hôm nay, chúng tôi sẽ giao ngày mai.",
+              "note": "formal first conditional"
+            },
+            {
+              "id": "cd-ade-3",
+              "en": "If I were you, I would check the figures once more.",
+              "vi": "Nếu tôi là bạn, tôi sẽ kiểm tra các con số thêm một lần nữa.",
+              "note": "advice in the second conditional"
+            },
+            {
+              "id": "cd-ade-4",
+              "en": "If we had checked earlier, this problem would have been solved.",
+              "vi": "Nếu chúng ta kiểm tra sớm hơn, vấn đề này đã được giải quyết rồi.",
+              "note": "third conditional advice"
+            }
           ]
         },
         {
@@ -1933,11 +3536,32 @@
               "prompt": "Complete the sentence: You may use the library ___ you return the books on time.",
               "instruction": "Complete the sentence with the correct link.",
               "items": [
-                { "id": "a", "text": "provided that", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "in case", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "so that", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "provided that",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "in case",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "so that",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["provided that", "as long as"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "provided that",
+                  "as long as"
+                ]
+              },
               "explanation": "provided that and as long as both express a condition in formal English. in case means just in case, a precaution rather than a condition, and so that expresses purpose.",
               "xp": 10
             },
@@ -1950,11 +3574,31 @@
               "prompt": "Choose the sentence that makes the most sense in formal writing.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "When the meeting finishes, we will go for coffee.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Unless the meeting finishes, we will go for coffee.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "When the meeting will finish, we will go for coffee.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "When the meeting finishes, we will go for coffee.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Unless the meeting finishes, we will go for coffee.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "When the meeting will finish, we will go for coffee.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "When the meeting finishes is natural because the finishing is a certain time. Unless would mean we go for coffee whether or not the meeting ends, which is not the intended meaning, and a time clause never takes will.",
               "xp": 10
             },
@@ -1966,7 +3610,12 @@
               "difficulty": "advanced",
               "prompt": "Take your umbrella in case it will rain later.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["Take your umbrella in case it rains later."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Take your umbrella in case it rains later."
+                ]
+              },
               "explanation": "The clause after in case takes the present simple, so it rains. in case it will rain is a double future form that native speakers immediately notice as non-native.",
               "xp": 10
             },
@@ -1978,7 +3627,13 @@
               "difficulty": "advanced",
               "prompt": "Type the complete link: You will fail the course ___ you do not attend the lectures.",
               "instruction": "Type the complete link.",
-              "answer": { "type": "text", "values": ["unless", "if"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "unless",
+                  "if"
+                ]
+              },
               "explanation": "unless means if not and if is the neutral alternative, so both are correct. unless you do not attend would give a double negative and mean that you fail as long as you do attend.",
               "xp": 10
             },
@@ -1991,9 +3646,17 @@
               "prompt": "In case and if can be used interchangeably in formal English.",
               "instruction": "Decide if the statement is true or false.",
               "items": [
-                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "boolean", "value": false },
+              "answer": {
+                "type": "boolean",
+                "values": false
+              },
               "explanation": "in case is a precaution, not a condition: take an umbrella in case it rains means in case it happens. If you rain is not a sentence, so the two words are never interchangeable.",
               "xp": 10
             }
@@ -2006,32 +3669,52 @@
           "items": [
             {
               "id": "cd-ad-d1",
-              "audio": { "kind": "speech", "text": "Provided that you pay today, we will deliver the order tomorrow." },
-              "acceptedAnswers": ["Provided that you pay today, we will deliver the order tomorrow."],
+              "audio": {
+                "kind": "speech",
+                "text": "Provided that you pay today, we will deliver the order tomorrow."
+              },
+              "acceptedAnswers": [
+                "Provided that you pay today, we will deliver the order tomorrow."
+              ],
               "hint": "formal condition link",
               "translation": "Với điều kiện là bạn thanh toán hôm nay, chúng tôi sẽ giao đơn hàng ngày mai.",
               "xp": 15
             },
             {
               "id": "cd-ad-d2",
-              "audio": { "kind": "speech", "text": "When you arrive, I will be waiting at the gate." },
-              "acceptedAnswers": ["When you arrive, I will be waiting at the gate."],
+              "audio": {
+                "kind": "speech",
+                "text": "When you arrive, I will be waiting at the gate."
+              },
+              "acceptedAnswers": [
+                "When you arrive, I will be waiting at the gate."
+              ],
               "hint": "a planned arrangement",
               "translation": "Khi bạn đến, tôi sẽ đang đợi ở cổng.",
               "xp": 15
             },
             {
               "id": "cd-ad-d3",
-              "audio": { "kind": "speech", "text": "Take an umbrella in case it rains later." },
-              "acceptedAnswers": ["Take an umbrella in case it rains later."],
+              "audio": {
+                "kind": "speech",
+                "text": "Take an umbrella in case it rains later."
+              },
+              "acceptedAnswers": [
+                "Take an umbrella in case it rains later."
+              ],
               "hint": "a precaution",
               "translation": "Mang theo ô phòng khi trời mưa sau này.",
               "xp": 15
             },
             {
               "id": "cd-ad-d4",
-              "audio": { "kind": "speech", "text": "If I were you, I would check the figures once more." },
-              "acceptedAnswers": ["If I were you, I would check the figures once more."],
+              "audio": {
+                "kind": "speech",
+                "text": "If I were you, I would check the figures once more."
+              },
+              "acceptedAnswers": [
+                "If I were you, I would check the figures once more."
+              ],
               "hint": "advice with were",
               "translation": "Nếu tôi là bạn, tôi sẽ kiểm tra các con số thêm một lần nữa.",
               "xp": 15
@@ -2053,11 +3736,31 @@
               "prompt": "Choose the correct sentence for formal written advice.",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "You should submit the form provided that you attach a copy.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "You should submit the form in case you attach a copy.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "You should submit the form so that you attach a copy.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "You should submit the form provided that you attach a copy.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "You should submit the form in case you attach a copy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "You should submit the form so that you attach a copy.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "provided that states a requirement, which is what formal advice needs. in case is a precaution and so that is a purpose, so neither can introduce a condition.",
               "xp": 10
             },
@@ -2069,7 +3772,12 @@
               "difficulty": "advanced",
               "prompt": "When you will arrive at the station, please call me.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["When you arrive at the station, please call me."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "When you arrive at the station, please call me."
+                ]
+              },
               "explanation": "Time clauses never take will, in the same way that if-clauses never take will. Use the present simple in the time clause and keep will only in the main clause if it is needed.",
               "xp": 10
             },
@@ -2081,7 +3789,12 @@
               "difficulty": "advanced",
               "prompt": "If I would be you, I would read the contract twice.",
               "instruction": "Rewrite the sentence correctly.",
-              "answer": { "type": "text", "values": ["If I were you, I would read the contract twice."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If I were you, I would read the contract twice."
+                ]
+              },
               "explanation": "No conditional type puts would in the if-clause. The fixed advice formula is If I were you, which is also the reason were is required for the pronoun I.",
               "xp": 10
             },
@@ -2094,12 +3807,40 @@
               "prompt": "Match each conditional meaning with its structure.",
               "instruction": "Pair each meaning with the correct structure.",
               "items": [
-                { "id": "a", "text": "a true general rule", "isCorrect": null, "matchKey": "if + present simple, present simple" },
-                { "id": "b", "text": "a likely future event", "isCorrect": null, "matchKey": "if + present simple, will" },
-                { "id": "c", "text": "an imagined present situation", "isCorrect": null, "matchKey": "if + past simple, would" },
-                { "id": "d", "text": "an imagined past situation", "isCorrect": null, "matchKey": "if + had + participle, would have + participle" }
+                {
+                  "id": "a",
+                  "text": "a true general rule",
+                  "isCorrect": null,
+                  "matchKey": "if + present simple, present simple"
+                },
+                {
+                  "id": "b",
+                  "text": "a likely future event",
+                  "isCorrect": null,
+                  "matchKey": "if + present simple, will"
+                },
+                {
+                  "id": "c",
+                  "text": "an imagined present situation",
+                  "isCorrect": null,
+                  "matchKey": "if + past simple, would"
+                },
+                {
+                  "id": "d",
+                  "text": "an imagined past situation",
+                  "isCorrect": null,
+                  "matchKey": "if + had + participle, would have + participle"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "if + present simple, present simple", "b": "if + present simple, will", "c": "if + past simple, would", "d": "if + had + participle, would have + participle" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "if + present simple, present simple",
+                  "b": "if + present simple, will",
+                  "c": "if + past simple, would",
+                  "d": "if + had + participle, would have + participle"
+                }
+              },
               "explanation": "These four structures cover the vast majority of conditionals you meet. Mixed and wish forms are variations on them, so learning these four as a set makes the rest much easier to place.",
               "xp": 10
             }

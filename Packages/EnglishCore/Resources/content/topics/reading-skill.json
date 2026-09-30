@@ -162,7 +162,7 @@
               "instruction": "Decide whether the statement matches the passage. Check the time expression before you decide.",
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "'For twenty years' and 'two decades' are the same period written differently, which is exactly the substitution a reading question expects. The tempting error is to read 'last spring' as the start of the car park's use rather than the start of the closure, and then to think the statement conflicts. A reliable method is to convert both the text and the statement into the same unit before comparing: twenty years and two decades match; the dates do not.",
               "xp": 10
@@ -514,7 +514,7 @@
               "instruction": "Decide whether the statement matches the passage. Be precise about who claims what.",
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "The company said the events were 'unrelated' and the regulator called that claim unsubstantiated, so nobody admits a link. The statement uses 'admits', which would require the company to accept a connection; asserting one is not admitting one. When a question turns on a reporting verb, find the sentence that names the speaker and read only that clause — the rest of the paragraph tells you the writer's opinion, not the company's position.",
               "xp": 10
@@ -867,7 +867,7 @@
               "instruction": "Decide whether the statement matches the passage's position. Look at the concession signals before you decide.",
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "The passage qualifies the finding but supports it: 'suggestive rather than conclusive' is a hedge, and 'Even so' introduces evidence for it rather than against it, with a further limit at the end. A hedge is not a rejection, and reading a qualified finding as a dismissal is the most common advanced-level error. When a passage has one reservation and four supporting sentences, the writer's position is 'qualified support', and your statement must match that, not the loudest-sounding clause.",
               "xp": 10

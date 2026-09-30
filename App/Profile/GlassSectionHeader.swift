@@ -51,22 +51,4 @@ extension View {
             self.background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
         }
     }
-
-    /// A large soft radial wash used behind screen headers.
-    ///
-    /// Decorative only, so it is hidden from assistive technology.
-    func brandMesh() -> some View {
-        ZStack {
-            Circle()
-                .fill(Color.brand.opacity(0.35))
-                .frame(width: 320, height: 320)
-                .blur(radius: 70)
-            Circle()
-                .fill(Color.xp.opacity(0.25))
-                .frame(width: 240, height: 240)
-                .blur(radius: 80)
-                .offset(x: 180, y: 120)
-        }
-        .accessibilityHidden(true)
-    }
 }

@@ -178,7 +178,13 @@ description — must not use the word "IELTS".
 |---|---|---|
 | `multipleChoice` | options, one `isCorrect: true` | `choice` → `values: ["<item id>"]` |
 | `multiSelect` | options, several `isCorrect: true` | `choice` → values = sorted ids |
-| `trueFalse` | one option | `boolean` |
+| `trueFalse` | one option | `boolean` → `{"type": "boolean", "values": true}` |
+
+**A boolean answer's payload key is `values` and its type is a real JSON boolean.** This has bitten
+the bundle twice: content authored as `value:` decoded to `false` for *every* True/False question,
+and content authored as `["true"]` threw a type mismatch that removed the entire file — and with it
+the whole topic — from the library. `Answer.decodeBoolean` now tolerates both spellings and both
+string forms, so a future slip degrades instead of silently inverting the answer.
 | `fillInTheBlank` | optional hint items | `text` |
 | `typeTheAnswer` | — | `text` |
 | `dictation` | — | `text` (single canonical sentence) |

@@ -37,8 +37,8 @@ struct ProfileView: View {
                     }
 
                     streakSection
-                        .id(Self.goalAnchor)
                     goalSection
+                        .id(Self.goalAnchor)
                     skillSection
                     weakAreaSection
                     achievementSection
@@ -60,7 +60,8 @@ struct ProfileView: View {
                 withAnimation { proxy.scrollTo(Self.goalAnchor, anchor: .top) }
                 goalFocus = false
             }
-            .onChange(of: appearance) { _, _ in applyAppearance() }
+            .onChange(of: model.weakSort) { _, _ in model.resortWeakAreas() }
+            .preferredColorScheme(preferredScheme)
             .alert("Reset all progress?", isPresented: $isConfirmingReset) {
                 Button("Reset", role: .destructive) {
                     model.reset(store: app.store, library: app.library)
@@ -127,6 +128,14 @@ struct ProfileView: View {
             Button("Save") { model.updateName(nameDraft, store: app.store) }
             Button("Cancel", role: .cancel) {}
         }
+    }
+
+    /// Lifetime study time, formatted once so every card reads the same way.
+    private var studyTimeText: String {
+        let minutes = model.studyMinutes
+        guard minutes >= 60 else { return "\(minutes)m" }
+        let hours = minutes / 60
+        return minutes % 60 == 0 ? "\(hours)h" : "\(hours)h \(minutes % 60)m"
     }
 
     private var nameLine: String {
@@ -212,6 +221,36 @@ struct ProfileView: View {
             .padding(.vertical, Spacing.xs)
             .cardStyle()
 
+            HStack(spacing: Spacing.sm) {
+                StatCard(
+                    title: "Study time",
+                    value: studyTimeText,
+                    caption: "total",
+                    symbol: "clock.fill",
+                    tint: .brand
+                )
+                StatCard(
+                    title: "Accuracy",
+                    value: "\(Int((model.accuracy * 100).rounded()))%",
+                    caption: "lifetime",
+                    symbol: "scope",
+                    tint: .accuracy
+                )
+                StatCard(
+                    title: "Lessons",
+                    value: "\(model.lessonsCompleted)",
+                    caption: "finished",
+                    symbol: "book.fill",
+                    tint: .success
+                )
+            }
+
+            Text("\(model.wordsMastered) words mastered · \(model.reviewsDone) reviews done · \(model.ieltsCompleted) IELTS modules started")
+                .font(AppFont.display(.footnote, weight: .regular))
+                .foregroundStyle(.secondary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, Spacing.xs)
+
             if model.last14Days.contains(where: { $0.minutes > 0 }) {
                 Last14DaysChart(days: model.last14Days)
             } else {
@@ -245,7 +284,13 @@ struct ProfileView: View {
                 .cardStyle()
             } else {
                 VStack(alignment: .leading, spacing: Spacing.sm) {
-                    Picker("Sort weak areas", selection: Bindable(model).weakSort) {
+                    Picker(
+                        "Sort weak areas",
+                        selection: Binding(
+                            get: { model.weakSort },
+                            set: { model.weakSort = $0 }
+                        )
+                    ) {
                         ForEach(ProfileModel.WeakSort.allCases) { option in
                             Text(option.rawValue).tag(option)
                         }
@@ -406,10 +451,12 @@ struct ProfileView: View {
         reloadPrefs()
 
         guard enabled else {
-            // TODO(design-system-lane): only cancelAll() is in the contract, so
-            // switching one kind off drops every schedule. Replace with
-            // cancel(_:) once NotificationService exposes a per-kind cancel.
-            notifications.cancelAll()
+            // Only `cancelAll()` is in the frozen contract, so dropping the last
+            // enabled kind is the only safe call: with others still on, the
+            // schedule is left alone and the next reschedule of those kinds
+            // keeps them alive.
+            let stillEnabled = prefs.values.contains { $0.enabled }
+            if !stillEnabled { notifications.cancelAll() }
             return
         }
 
@@ -420,6 +467,8 @@ struct ProfileView: View {
                     notificationError = "Notifications are turned off for this app in iOS Settings."
                     return
                 }
+                // TODO(design-system-lane): `reschedule(_:)` is assumed to take the kind and
+                // re-read the preference from the store, making it idempotent.
                 notifications.reschedule(kind)
                 notificationError = nil
             } catch {
@@ -484,10 +533,18 @@ struct ProfileView: View {
         .ignoresSafeArea()
     }
 
-    private func applyAppearance() {
-        // The Root lane owns the window-level override; persisting the choice is
-        // this screen's half of the contract.
-        // TODO(design-system-lane): confirm the Root lane observes "appearance" and applies the override.
+    /// The colour scheme this screen renders in.
+    ///
+    /// `nil` means "follow the system", which is what a `preferredColorScheme`
+    /// of `nil` means too — so the picker needs no special case.
+    // TODO(design-system-lane): the Root lane should apply this to the whole
+    // window; until it does, this override is scoped to the Profile screen.
+    private var preferredScheme: ColorScheme? {
+        switch Appearance(rawValue: appearance) {
+        case .light: .light
+        case .dark: .dark
+        default: nil
+        }
     }
 
     private func reload() {

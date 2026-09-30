@@ -306,13 +306,7 @@ final class HomeModel {
                 // worse than recommending in course order.
                 return row.accuracy < average - 0.05
             }) {
-                let missed = store.topicProgress()[optionalTopicID(for: weak, in: library) ?? ""]?.exercisesDone ?? 0
-                return make(
-                    weak,
-                    reason: missed > 0
-                        ? "You are below your average on this topic."
-                        : "This topic needs attention."
-                )
+                return make(weak, reason: "You are below your own average on this topic.")
             }
         }
 

@@ -15,6 +15,7 @@ struct LessonView: View {
     let lessonID: String
 
     @Environment(AppState.self) private var app
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// Index of the step on screen; seeded from the store, then owned here.
     @State private var index: Int = 0
@@ -58,10 +59,6 @@ struct LessonView: View {
         }
     }
 
-    private var isSummaryStep: Bool {
-        currentStep?.type == .summary
-    }
-
     private var lessonXP: Int { lesson?.xp ?? 0 }
 
     // MARK: - Body
@@ -80,8 +77,13 @@ struct LessonView: View {
                     .padding(.bottom, Spacing.sm)
                     .floatingGlass()
 
-                    content(for: step, lesson: lesson)
+                    content(for: step)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        // One movement per step change, and none at all when the
+                        // learner has asked for reduced motion.
+                        .id(step.id)
+                        .transition(reduceMotion ? .identity : .opacity)
+                        .animation(reduceMotion ? nil : .easeOut(duration: 0.18), value: step.id)
 
                     if case .summary = step {
                         summaryFooter(lesson: lesson)
@@ -94,6 +96,23 @@ struct LessonView: View {
                 .background(Color.brand.opacity(0.03).ignoresSafeArea())
                 .navigationTitle(lesson.title)
                 .navigationBarTitleDisplayMode(.inline)
+                // The summary's "Next lesson" link needs somewhere to go.
+                .navigationDestination(for: LearnRoute.self) { route in
+                    switch route {
+                    case .lesson(let nextTopicID, let nextLessonID):
+                        LessonView(topicID: nextTopicID, lessonID: nextLessonID)
+                    case .topic(let id):
+                        if let next = app.library.topic(id) {
+                            TopicDetailView(topic: next)
+                        }
+                    case .alphabet:
+                        AlphabetView()
+                    case .alphabetListening:
+                        AlphabetListeningView()
+                    case .methods:
+                        MethodsView()
+                    }
+                }
                 .task { restoreOnce() }
             } else {
                 EmptyStateView(
@@ -333,7 +352,7 @@ struct LessonView: View {
     // MARK: - Step content
 
     @ViewBuilder
-    private func content(for step: LessonStep, lesson: Lesson) -> some View {
+    private func content(for step: LessonStep) -> some View {
         switch step {
         case .theory(let theory):
             TheoryStepView(step: theory)
@@ -342,7 +361,7 @@ struct LessonView: View {
         case .audio(let audio):
             ScrollView {
                 VStack(alignment: .leading, spacing: Spacing.md) {
-                    SectionHeader(title: audio.title ?? "Listen", subtitle: nil)
+                    SectionHeader(title: audio.title ?? "Listen", subtitle: nil, actionTitle: nil, action: nil)
                     // TODO(design-system-lane): replace with the shared App/Audio
                     // player view — replay, loop, shuffle, speed and slow. Its
                     // init is not in the contract yet; this lane ships the
@@ -471,6 +490,11 @@ struct StepRail: View {
         steps.indices.contains(currentIndex) ? steps[currentIndex].type : nil
     }
 
+    /// Steps up to and including `reached` count as visited.
+    private var visitedCount: Int {
+        min(reached + 1, steps.count)
+    }
+
     private var label: String {
         guard let currentType else { return "" }
         let number = min(currentIndex + 1, steps.count)
@@ -534,7 +558,6 @@ struct StepRail: View {
 struct TheoryStepView: View {
 
     let step: TheoryStep
-    @Environment(AppState.self) private var app
 
     var body: some View {
         ScrollView {
@@ -716,6 +739,30 @@ struct FormulaBlock: View {
     }
 }
 
+/// The examples step: every example as a tappable row.
+struct ExamplesStepView: View {
+
+    let examples: [Example]
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: Spacing.md) {
+                SectionHeader(
+                    title: "Examples",
+                    subtitle: "Tap any sentence to hear it",
+                    actionTitle: nil,
+                    action: nil
+                )
+                ForEach(examples) { example in
+                    ExampleRow(example: example)
+                        .cardStyle()
+                }
+            }
+            .padding(Spacing.md)
+        }
+    }
+}
+
 /// One bilingual example. The Vietnamese reads as a gloss under the English, and
 /// tapping the English speaks it.
 struct ExampleRow: View {
@@ -781,7 +828,7 @@ struct SummaryStepView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.lg) {
-                SectionHeader(title: "What you learned", subtitle: nil)
+                SectionHeader(title: "What you learned", subtitle: nil, actionTitle: nil, action: nil)
 
                 VStack(alignment: .leading, spacing: Spacing.md) {
                     ForEach(Array(step.takeaways.enumerated()), id: \.offset) { _, takeaway in
@@ -849,7 +896,7 @@ struct QuizScoreView: View {
                     .padding(.horizontal, Spacing.md)
 
                 if !result.wrongIDs.isEmpty {
-                    SectionHeader(title: "Review these", subtitle: nil)
+                    SectionHeader(title: "Review these", subtitle: nil, actionTitle: nil, action: nil)
                     VStack(alignment: .leading, spacing: Spacing.md) {
                         ForEach(result.wrongIDs, id: \.self) { id in
                             VStack(alignment: .leading, spacing: Spacing.xs) {
@@ -872,7 +919,7 @@ struct QuizScoreView: View {
                     EmptyStateView(
                         symbol: "hand.thumbsup",
                         title: "Nothing to review",
-                        message: "Every question was right first time.",
+                        message: "You got every question in this quiz right.",
                         actionTitle: nil,
                         action: nil
                     )

@@ -63,10 +63,6 @@ final class WritingDraftStore {
 
     func secondsSpent(for lessonID: String) -> Int { drafts[lessonID]?.secondsSpent ?? 0 }
 
-    func hasDraft(_ lessonID: String) -> Bool {
-        !(drafts[lessonID]?.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? true)
-    }
-
     // MARK: - Write
 
     /// Called on every keystroke by the editor; writes straight through.

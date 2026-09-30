@@ -474,7 +474,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "Arrive is intransitive: it cannot take a direct object, so there is nothing to move into the subject slot and no passive is possible. The correct sentence is 'The guests arrived at the hotel.'",
               "xp": 10
@@ -689,7 +689,7 @@
               ],
               "answer": {
                 "type": "choice",
-                  "values": [
+                "values": [
                   "a"
                 ]
               },
@@ -862,7 +862,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "Pave is a regular verb: pave, paved, paved. The third form is identical to the second, so was paved is the correct passive.",
               "xp": 10
@@ -1317,7 +1317,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "The negative sits directly after the modal and before be: must not be signed. English does not allow 'must be not signed'.",
               "xp": 10
@@ -1759,7 +1759,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "A by-phrase is only useful when the agent adds information. In routine and scientific passives it adds noise, and with intransitive verbs such as happen or occur it is impossible: 'The meeting was happened by' is never correct.",
               "xp": 10
@@ -2368,7 +2368,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": false
+                "values": false
               },
               "explanation": "Transformation is meaning-preserving. If the active subject is nobody, nobody or an unnamed someone, the passive simply omits the by-phrase; inventing an agent would change what the sentence claims.",
               "xp": 10
@@ -2794,7 +2794,7 @@
               ],
               "answer": {
                 "type": "boolean",
-                "value": true
+                "values": true
               },
               "explanation": "A present simple fact with a known agent is exactly what the present simple passive is for: is + written + by him. Note that the pronoun after by takes the objective form him, not he.",
               "xp": 10

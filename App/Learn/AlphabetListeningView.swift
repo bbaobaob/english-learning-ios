@@ -53,7 +53,7 @@ struct ListeningItem: Identifiable, Hashable {
 ///   - library: the loaded content.
 ///   - lettersOnly: when true only the 26 letter items, otherwise the word items
 ///     too. The full set is 52 items, which is a long sitting.
-static func listeningItems(
+func listeningItems(
     from library: ContentLibrary,
     lettersOnly: Bool
 ) -> [ListeningItem] {
@@ -159,16 +159,10 @@ final class ListeningSession {
         current.map { attempts[$0.id, default: 0] } ?? 0
     }
 
-    func attempts(for item: ListeningItem) -> Int { attempts[item.id, default: 0] }
-    func replayCount(for item: ListeningItem) -> Int { replays[item.id, default: 0] }
-
     /// Items answered right at least once.
     var passedCount: Int { resolved.count }
     /// Items answered right on the first submission.
     var firstTryCount: Int { firstTry.count }
-    /// Items still in front of the learner, including the current one.
-    var remainingCount: Int { max(items.count - index, 0) }
-
     var totalReplays: Int {
         items.reduce(0) { $0 + replays[$1.id, default: 0] }
     }
@@ -351,6 +345,12 @@ struct AlphabetListeningView: View {
 
             actionArea(item: item, session: session)
         }
+        .id(item.id)
+        .onAppear {
+            // The keyboard is the whole interaction here, so it comes up with
+            // the prompt rather than making the learner tap the field first.
+            inputFocused = true
+        }
         .padding(.horizontal, Spacing.md)
         .padding(.bottom, Spacing.md)
     }
@@ -523,7 +523,9 @@ struct AlphabetListeningView: View {
                 title: "Check",
                 symbol: "checkmark",
                 isEnabled: !input.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
-                action: { check(item: item, session: session) }
+                action: {
+                    check(item: item, session: session)
+                }
             )
         case .wrong:
             VStack(spacing: Spacing.sm) {

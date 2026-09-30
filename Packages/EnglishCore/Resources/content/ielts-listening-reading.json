@@ -6,6 +6,7 @@
     {
       "id": "ielts-l-sec1",
       "title": "Section 1 — Accommodation Enquiry",
+      "skill": "listening",
       "band": "5.5",
       "minutes": 12,
       "transcript": [
@@ -215,6 +216,7 @@
     {
       "id": "ielts-l-sec2",
       "title": "Section 2 — Campus Orientation",
+      "skill": "listening",
       "band": "6.0",
       "minutes": 14,
       "transcript": [
@@ -505,6 +507,7 @@
     {
       "id": "ielts-l-sec3",
       "title": "Section 3 — Student Project Discussion",
+      "skill": "listening",
       "band": "6.5",
       "minutes": 15,
       "transcript": [
@@ -802,6 +805,7 @@
     {
       "id": "ielts-l-sec4",
       "title": "Section 4 — Urban Ecology Lecture",
+      "skill": "listening",
       "band": "7.0",
       "minutes": 16,
       "transcript": [
@@ -1037,6 +1041,7 @@
     {
       "id": "ielts-r-p1",
       "title": "Reading Passage 1 — The 15-Minute City",
+      "skill": "reading",
       "band": "6.0",
       "minutes": 14,
       "items": [
@@ -1296,6 +1301,7 @@
     {
       "id": "ielts-r-p2",
       "title": "Reading Passage 2 — Learning After the Crisis",
+      "skill": "reading",
       "band": "6.5",
       "minutes": 15,
       "items": [
@@ -1527,6 +1533,7 @@
     {
       "id": "ielts-r-p3",
       "title": "Reading Passage 3 — Working Less, Working Better",
+      "skill": "reading",
       "band": "7.0",
       "minutes": 16,
       "items": [

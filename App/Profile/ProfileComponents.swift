@@ -165,7 +165,7 @@ struct Last14DaysChart: View {
                             .animation(reduceMotion ? nil : .spring(response: 0.45, dampingFraction: 0.8), value: day.minutes)
 
                         Text(day.day.formatted(.dateTime.day()))
-                            .font(AppFont.mono(.system(size: 9), weight: .regular))
+                            .font(AppFont.mono(.caption2, weight: .regular))
                             .foregroundStyle(.secondary)
                     }
                     .accessibilityElement()
@@ -287,8 +287,27 @@ struct NotificationRow: View {
     let minute: Int
     let onChange: (Bool, Int, Int) -> Void
 
-    @State private var enabled: Bool = false
-    @State private var time: Date = Date()
+    /// Seeded from the stored preference in `init`, not in `onAppear`: an
+    /// `onAppear` assignment would fire `onChange` and ask for notification
+    /// permission the moment the screen appeared, which the contract forbids.
+    @State private var enabled: Bool
+    @State private var time: Date
+
+    init(
+        kind: NotificationKind,
+        isEnabled: Bool,
+        hour: Int,
+        minute: Int,
+        onChange: @escaping (Bool, Int, Int) -> Void
+    ) {
+        self.kind = kind
+        self.isEnabled = isEnabled
+        self.hour = hour
+        self.minute = minute
+        self.onChange = onChange
+        _enabled = State(initialValue: isEnabled)
+        _time = State(initialValue: Self.date(hour: hour, minute: minute))
+    }
 
     var body: some View {
         VStack(spacing: Spacing.sm) {
@@ -312,7 +331,8 @@ struct NotificationRow: View {
             .onChange(of: enabled) { _, newValue in
                 // Fires only from a tap, never on appear, so permission is
                 // requested in direct response to the learner.
-                onChange(newValue, hour, minute)
+                let parts = Calendar.current.dateComponents([.hour, .minute], from: time)
+                onChange(newValue, parts.hour ?? hour, parts.minute ?? minute)
             }
 
             if enabled {
@@ -332,10 +352,6 @@ struct NotificationRow: View {
         }
         .padding(.horizontal, Spacing.lg)
         .padding(.vertical, Spacing.md)
-        .onAppear {
-            enabled = isEnabled
-            time = Self.date(hour: hour, minute: minute)
-        }
     }
 
     private static func date(hour: Int, minute: Int) -> Date {
@@ -376,12 +392,8 @@ struct TopicPracticePlaceholder: View {
     let title: String
     let topicID: String
 
-    @Environment(AppState.self) private var app
-
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.lg) {
-            SectionHeader(title: title, subtitle: nil, actionTitle: nil, action: nil)
-
             EmptyStateView(
                 symbol: "square.and.pencil",
                 title: "Practice screen pending",
