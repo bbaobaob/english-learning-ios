@@ -69,8 +69,11 @@ struct XPProgressBar: View {
 
     private var timelineBody: some View {
         TimelineView(.animation) { context in
-            let phase = phase(at: context.date)
-            bar(phase: phase)
+            // Named apart from phase(at:) on purpose: a local called `phase`
+            // shadows the method for the calls below it, and the closure then
+            // fails to type-check as a whole.
+            let currentPhase = phase(at: context.date)
+            bar(phase: currentPhase)
                 .onChange(of: context.date) { _, now in
                     clockPhase = phase(at: now)
                 }
