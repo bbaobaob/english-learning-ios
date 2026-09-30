@@ -191,7 +191,8 @@ enum SpeechFileRenderer {
             bufferQueue.sync {
                 guard !settled else { return }
 
-                if buffer.frameLength == 0 {
+                // Length lives on the PCM subclass; anything else ends the render.
+                if ((buffer as? AVAudioPCMBuffer)?.frameLength ?? 0) == 0 {
                     // End of utterance. An utterance that produced no audio at
                     // all — a voice with nothing for this text, or a synthesis
                     // that failed silently — is a failure, not a zero-byte

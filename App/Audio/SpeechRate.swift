@@ -23,13 +23,13 @@ enum SpeechRate {
     /// Read through the typed `AVSpeechUtterance` spelling rather than the
     /// `AVSpeechUtteranceDefaultSpeechRate` global, which is what Swift exposes
     /// to this framework version.
-    static var normal: Float { AVSpeechUtterance.defaultSpeakingRate }
+    static var normal: Float { AVSpeechUtteranceDefaultSpeechRate }
 
     /// The slowest rate the system will honour.
-    static var minimum: Float { AVSpeechUtterance.minimumSpeechRate }
+    static var minimum: Float { AVSpeechUtteranceMinimumSpeechRate }
 
     /// The fastest rate the system will honour.
-    static var maximum: Float { AVSpeechUtterance.maximumSpeechRate }
+    static var maximum: Float { AVSpeechUtteranceMaximumSpeechRate }
 
     /// `normal` scaled by `multiple`, clamped to the observed bounds.
     ///

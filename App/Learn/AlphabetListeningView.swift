@@ -597,7 +597,7 @@ struct AlphabetListeningView: View {
                         }
                     )
                     Button {
-                        session = nil
+                        self.session = nil
                         input = ""
                     } label: {
                         Text("Change the item set").font(AppFont.body(.subheadline, weight: .semibold))

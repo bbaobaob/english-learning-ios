@@ -92,10 +92,10 @@ struct WritingTaskView: View {
 
     private func scheduleSave() {
         saveTask?.cancel()
-        saveTask = Task { [weak self] in
+        saveTask = Task {
             try? await Task.sleep(nanoseconds: 600_000_000)
             guard !Task.isCancelled else { return }
-            await self?.saveDraft()
+            self.saveDraft()
         }
     }
 
@@ -545,16 +545,18 @@ private struct TaskTextBlock: View {
             .padding(.vertical, 4)
             .padding(.horizontal, 8)
             .background(Color.examRed.opacity(0.08), in: .rect(cornerRadius: Radius.chip))
+            .fixedSize(horizontal: false, vertical: true)
         case .instruction:
             Text(text)
                 .font(.examBody(15, weight: .medium))
                 .foregroundStyle(Color.examInk)
+                .fixedSize(horizontal: false, vertical: true)
         case .body:
             Text(text)
                 .font(.examBody(15))
                 .foregroundStyle(Color.examInk)
+                .fixedSize(horizontal: false, vertical: true)
         }
-        .fixedSize(horizontal: false, vertical: true)
     }
 
     private var bullets: [String] {

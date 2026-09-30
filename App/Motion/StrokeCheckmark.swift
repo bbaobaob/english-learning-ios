@@ -200,8 +200,8 @@ extension CheckmarkShape {
         let elbow = CGPoint(x: 40, y: 78)
         let end = CGPoint(x: 86, y: 24)
 
-        assert(path(progress: 0, in: rect).isEmpty, "progress 0 must draw nothing")
-        assert(path(progress: -3, in: rect).isEmpty, "a negative progress draws nothing")
+        assert(CheckmarkShape(progress: 0).path(in: rect).isEmpty, "progress 0 must draw nothing")
+        assert(CheckmarkShape(progress: -3).path(in: rect).isEmpty, "a negative progress draws nothing")
 
         // Full progress lands exactly on the end of the mark.
         let full = point(at: 1, in: rect)

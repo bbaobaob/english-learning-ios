@@ -161,7 +161,7 @@ enum AppFont {
 
     /// Tabular figures, for elapsed/total time, XP, and step counters.
     static func mono(_ style: Font.TextStyle, weight: Font.Weight = .semibold) -> Font {
-        Font.system(style, design: .monospacedDigit).weight(weight)
+        Font.system(style, design: .monospaced).weight(weight)
     }
 
     /// Point-size overloads for the fixed-size sites (badges, captions, hero
@@ -176,7 +176,7 @@ enum AppFont {
     }
 
     static func mono(_ size: CGFloat, weight: Font.Weight = .semibold) -> Font {
-        Font.system(size: size, weight: weight, design: .monospacedDigit)
+        Font.system(size: size, weight: weight, design: .monospaced)
     }
 
     /// `weight:`-labeled twins of the above. Both spellings already exist in
@@ -192,7 +192,7 @@ enum AppFont {
     }
 
     static func mono(_ size: CGFloat, _ weight: Font.Weight = .semibold) -> Font {
-        Font.system(size: size, weight: weight, design: .monospacedDigit)
+        Font.system(size: size, weight: weight, design: .monospaced)
     }
 }
 

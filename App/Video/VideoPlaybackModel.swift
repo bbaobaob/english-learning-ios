@@ -87,9 +87,11 @@ final class VideoPlaybackModel {
     deinit {
         // `timeObserver` and `endObserver` are the only things that outlive a
         // deinit; the player itself is released with the model.
-        if let timeObserver {
-            player?.removeTimeObserver(timeObserver)
-        }
+        // NB: the time observer cannot be removed here — `player` is
+        // MainActor-isolated and deinit is nonisolated. Both are created
+        // together in init and released together here; the observer block
+        // captures this model weakly, so the worst case is a no-op tick, not
+        // a crash. Removal of a replaced player happens on the load path.
         if let endObserver {
             NotificationCenter.default.removeObserver(endObserver)
         }

@@ -133,7 +133,7 @@ struct GlassControl: ViewModifier {
             // On iOS 26 the system material already honours Reduce
             // Transparency, so there is nothing to flatten by hand here.
             if isInteractive {
-                content.glassEffect(.regular.interactive, in: .rect(cornerRadius: Radius.card))
+                content.glassEffect(.regular.interactive(), in: .rect(cornerRadius: Radius.card))
             } else {
                 content.glassEffect(.regular, in: .rect(cornerRadius: Radius.card))
             }

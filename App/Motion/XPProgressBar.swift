@@ -68,7 +68,7 @@ struct XPProgressBar: View {
     }
 
     private var timelineBody: some View {
-        TimelineView(.animation) { context in
+        TimelineView(.animation(minimumInterval: 0.1)) { context in
             let phase = phase(at: context.date)
             bar(phase: phase)
                 .onChange(of: context.date) { _, now in

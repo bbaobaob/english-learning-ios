@@ -141,7 +141,7 @@ struct AlphabetView: View {
                     Text(letter.uppercased()).font(AppFont.body(.largeTitle, weight: .bold))
                         .foregroundStyle(Color.brand)
                     Text(letter.lowercased()).font(AppFont.body(.title2, weight: .medium))
-                        .foregroundStyle(.brand.opacity(0.75))
+                        .foregroundStyle(Color.brand.opacity(0.75))
                     Spacer(minLength: 0)
                     if isComplete {
                         Image(systemName: "checkmark.circle.fill")

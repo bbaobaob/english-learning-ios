@@ -179,7 +179,7 @@ struct TopicDetailView: View {
             )
             HStack(spacing: Spacing.md) {
                 Image(systemName: isWeak ? "exclamationmark.triangle.fill" : "arrow.triangle.2.circlepath").font(AppFont.body(.title2))
-                    .foregroundStyle(isWeak ? .warning : .brand)
+                    .foregroundStyle(isWeak ? Color.warning : Color.brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(isWeak
@@ -225,7 +225,7 @@ struct TopicDetailView: View {
                     Spacer(minLength: 0)
                     if state.isComplete {
                         Image(systemName: "checkmark.circle.fill")
-                            .foregroundStyle(.success)
+                            .foregroundStyle(Color.success)
                             .accessibilityHidden(true)
                     }
                     XPBadge(xp: lesson.xp)

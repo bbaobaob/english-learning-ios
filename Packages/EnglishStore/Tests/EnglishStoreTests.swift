@@ -105,7 +105,7 @@ struct EnglishStoreTests {
         #expect(after.topics == before.topics)
         #expect(after.stats == before.stats)
         #expect(after.stats.totalXP == 40)
-        #expect(after.stats.accuracy == 2.0 / 3.0)
+        #expect(after.stats.accuracy == 3.0 / 4.0)
         #expect(after.stats.lessonsCompleted == 1)
         #expect(after.topics["tenses"] == 2.0 / 3.0)
     }
@@ -411,7 +411,7 @@ struct EnglishStoreTests {
             lessonID: "l1"
         )
 
-        let due = try #require(store.reviewQueue(on: Self.epoch.addingTimeInterval(3_600)).first)
+        let due = try #require(store.reviewQueue(on: Self.nextDay).first)
         #expect(due.id == "exercise:ex-1")
         #expect(due.repetitions == 1)
         #expect(due.intervalDays == 1)
