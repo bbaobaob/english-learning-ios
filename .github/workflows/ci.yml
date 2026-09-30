@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 env:
-  SWIFT_VERSION: "5.10"
+  SWIFT_VERSION: "6.0"
 
 jobs:
   # The engine is Foundation-only, so it builds and tests on a cheap Linux

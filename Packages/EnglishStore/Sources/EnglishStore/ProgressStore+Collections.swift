@@ -89,7 +89,8 @@ extension ProgressStore {
         }
         // `createdAt` is not a column; `reviewItem(on:)` infers the rest and uses
         // this only for the created date, which no caller of this method reads.
-        return row?.reviewItem(on: row.dueDate)
+        guard let row else { return nil }
+        return row.reviewItem(on: row.dueDate)
     }
 
     /// Inserts or updates the persisted schedule of one review item.
