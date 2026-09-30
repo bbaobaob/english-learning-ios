@@ -47,7 +47,7 @@ struct VocabularyHomeView: View {
 
     // MARK: - Derived numbers
 
-    private var words: [VocabWord] { appState.library.allVocabulary }
+    private var words: [VocabWord] { appState.library?.allVocabulary ?? [] }
 
     private var states: [String: VocabState] { appState.store.vocabularyStates() }
 
@@ -221,7 +221,7 @@ struct VocabularyHomeView: View {
 
     /// The content loader's diagnostics, shown only when it found real problems.
     private var libraryBanner: String? {
-        let problems = appState.library.libraryDiagnostics
+        let problems = appState.library?.libraryDiagnostics ?? []
         guard !problems.isEmpty else { return nil }
         return problems.prefix(3).joined(separator: " ")
     }
@@ -251,7 +251,7 @@ struct VocabularyHomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: Spacing.md) {
                         ForEach(weakWords) { item in
-                            if let word = appState.library.vocabWord(item.refID) {
+                            if let word = appState.library?.vocabWord(item.refID) {
                                 weakCard(item, word)
                             }
                         }

@@ -262,7 +262,7 @@ struct AudioPlayerView: View {
                 } label: {
                     // The checkmark is what communicates "this is the current
                     // speed"; the label alone would not.
-                    let label = SpeechRate.label(forMultiple: speed)
+                    let label = SpeechRate.label(forMultiple: Double(speed))
                     if player.playbackRate == speed {
                         Label(label, systemImage: "checkmark")
                     } else {
@@ -272,14 +272,14 @@ struct AudioPlayerView: View {
             }
         } label: {
             Label(
-                SpeechRate.label(forMultiple: player.playbackRate),
+                SpeechRate.label(forMultiple: Double(player.playbackRate)),
                 systemImage: "speedometer"
             )
             .font(AppFont.body(.caption, weight: .semibold))
             .foregroundStyle(Palette.textSecondary)
             .frame(minHeight: Metric.controlHeight)
         }
-        .accessibilityLabel(Text(verbatim: "Playback speed, \(SpeechRate.label(forMultiple: player.playbackRate))"))
+        .accessibilityLabel(Text(verbatim: "Playback speed, \(SpeechRate.label(forMultiple: Double(player.playbackRate)))"))
         .accessibilityHint(Text(verbatim: "Double tap to choose from half speed to one and a half times."))
     }
 

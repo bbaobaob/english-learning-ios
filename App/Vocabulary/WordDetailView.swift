@@ -20,7 +20,7 @@ struct WordDetailView: View {
 
     // MARK: - Data
 
-    private var word: VocabWord? { appState.library.vocabWord(wordID) }
+    private var word: VocabWord? { appState.library?.vocabWord(wordID) }
 
     private var state: VocabState? { appState.store.vocabularyStates()[wordID] }
 
@@ -42,7 +42,7 @@ struct WordDetailView: View {
     private var relatedWords: [RelatedWord] {
         guard let word else { return [] }
         let byHeadword = Dictionary(
-            appState.library.allVocabulary.map { ($0.word.lowercased(), $0) },
+            (appState.library?.allVocabulary ?? []).map { ($0.word.lowercased(), $0) },
             uniquingKeysWith: { first, _ in first }
         )
         var seen: Set<String> = [wordID]
@@ -96,10 +96,10 @@ struct WordDetailView: View {
             case .review:
                 FlashcardView()
             case .hearType(let wordIDs):
-                HearTypeView(words: appState.library.allVocabulary.filter { wordIDs.contains($0.id) }, title: "Hear → Type")
+                HearTypeView(words: (appState.library?.allVocabulary ?? []).filter { wordIDs.contains($0.id) }, title: "Hear → Type")
             case .freeHearType:
                 HearTypeView(
-                    words: Array(appState.library.allVocabulary.shuffled().prefix(VocabPace.freePracticeLimit)),
+                    words: Array((appState.library?.allVocabulary ?? []).shuffled().prefix(VocabPace.freePracticeLimit)),
                     title: "Free practice"
                 )
             case .focusedReview(let wordIDs):

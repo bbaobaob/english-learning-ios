@@ -184,30 +184,10 @@ struct AmbientBackdrop: View {
     }
 
     @available(iOS 18, *)
-    private var meshColors: [SIMD3<Float>] {
-        // `MeshGradient` takes linear SIMD3 floats, not `Color`, so the accent
-        // has to be resolved to components. Done once per body evaluation, not
-        // per frame — the timeline closure only reads the array.
-        [brandRGB, brandSoftRGB, clearRGB]
-    }
-
-    private var brandRGB: SIMD3<Float> { rgb(from: Palette.brand) }
-    private var brandSoftRGB: SIMD3<Float> { rgb(from: Palette.brandSoft) }
-    private var clearRGB: SIMD3<Float> { SIMD3<Float>(0, 0, 0) }
-
-    /// `Color` → linear RGB for `MeshGradient`.
-    ///
-    /// Uses the resolved `UIColor`, so this follows Dark Mode and Increase
-    /// Contrast exactly as the rest of the palette does. No hand-entered
-    /// constants — that is what would have made the mesh drift out of sync with
-    /// the accent in Dark Mode.
-    private func rgb(from color: Color) -> SIMD3<Float> {
-        guard let components = color.rgba(of: color) else { return SIMD3<Float>(0, 0, 0) }
-        return SIMD3<Float>(
-            Float(components.r * components.a),
-            Float(components.g * components.a),
-            Float(components.b * components.a)
-        )
+    private var meshColors: [Color] {
+        // `MeshGradient` takes `Color`, not SIMD floats, so the palette is
+        // passed through directly and follows Dark Mode for free.
+        [Palette.brand, Palette.brandSoft, .clear]
     }
 
     /// iOS 17: a `Canvas` with soft radial blobs. Two draws rather than nine
@@ -217,16 +197,18 @@ struct AmbientBackdrop: View {
             Canvas { canvas, size in
                 let t = drift(at: context.date)
                 let edge = max(size.width, size.height)
-                let driftLength = style.drift * Double(edge)
+                let driftLength = CGFloat(style.drift) * edge
 
                 for (index, origin) in style.blobOrigins.enumerated() {
                     // Counter-phase per blob, so they never move in lockstep and
                     // the result never looks like a single translating layer.
+                    // All in CGFloat: the drift clock is Double, the geometry is
+                    // CGFloat, and mixing them does not compile.
                     let phase = t + Double(index) * 0.5
                     let angle = phase * 2 * .pi
-                    let cx = origin.x * Double(size.width) + cos(angle) * driftLength
-                    let cy = origin.y * Double(size.height) + sin(angle) * driftLength
-                    let radius = edge * (0.55 + 0.05 * sin(angle))
+                    let cx = origin.x * size.width + CGFloat(cos(angle)) * driftLength
+                    let cy = origin.y * size.height + CGFloat(sin(angle)) * driftLength
+                    let radius = edge * CGFloat(0.55 + 0.05 * sin(angle))
 
                     let rect = CGRect(
                         x: cx - radius,
@@ -270,7 +252,7 @@ struct AmbientBackdrop: View {
 
     /// Wrapped drift position, `-1...1`, so the motion is symmetric about the
     /// origin and never accumulates drift over a long session.
-    private func drift(at date: Date) -> Float {
+    private func drift(at date: Date) -> Double {
         let period = Self.driftPeriod
         guard period > 0 else { return 0 }
         let interval = date.timeIntervalSinceReferenceDate
@@ -279,7 +261,7 @@ struct AmbientBackdrop: View {
         // A raised cosine: it eases to a stop at each end of the cycle, which is
         // what makes the backdrop feel like a slow breath rather than an
         // oscillation.
-        return Float(cos(phase * 2 * .pi))
+        return cos(phase * 2 * .pi)
     }
 }
 
@@ -309,8 +291,8 @@ extension Color {
     /// one), so it is handled explicitly rather than assumed — a backdrop that
     /// silently falls back to black in Dark Mode would be a real bug, and this
     /// is the cheapest way to make it visible in a test instead.
-    /// Internal rather than private so ``rgb(from:)`` in `AmbientBackdrop` — in
-    /// this same file — can share it. Not exposed publicly on purpose.
+    /// Internal rather than private so the blend helper above can share it.
+    /// Not exposed publicly on purpose.
     func rgba(of color: Color) -> (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat)? {
         let resolved = UIColor(color)
         var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0

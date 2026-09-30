@@ -67,7 +67,7 @@ func listeningComprehension() {
 
 @Test("multiSelect needs an exact set, and a partial selection is not a pass")
 func multiSelect() {
-    let exercise = choiceExercise(kind: .multiSelect, answer: ["a", "c"], isCorrectFlags: [true, false, true])
+    let exercise = choiceExercise(kind: .multiSelect, answer: ["a", "b", "c"], isCorrectFlags: [true, false, true])
 
     let partial = engine.check(exercise, response: .choice(["a"]))
     #expect(!partial.isCorrect, "one of two correct options is not a pass")

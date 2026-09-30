@@ -175,6 +175,9 @@ struct HomeView: View {
     }
 
     private func reload() {
-        model.load(store: app.store, library: app.library)
+        // The library loads asynchronously; a nil library means content is not
+        // ready yet, and the dashboard keeps its previous state meanwhile.
+        guard let library = app.library else { return }
+        model.load(store: app.store, library: library)
     }
 }

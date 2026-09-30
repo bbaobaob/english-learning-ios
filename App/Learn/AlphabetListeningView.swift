@@ -232,7 +232,8 @@ struct AlphabetListeningView: View {
     @FocusState private var inputFocused: Bool
 
     private var items: [ListeningItem] {
-        listeningItems(from: app.library, lettersOnly: lettersOnly)
+        guard let library = app.library else { return [] }
+        return listeningItems(from: library, lettersOnly: lettersOnly)
     }
 
     var body: some View {

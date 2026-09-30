@@ -404,11 +404,11 @@ struct SkillView: View {
     private func headline(for item: ReviewItem) -> String {
         switch item.source {
         case .exercise:
-            appState.library.exercise(item.refID)?.prompt ?? item.refID
+            appState.library?.exercise(item.refID)?.prompt ?? item.refID
         case .vocabulary:
-            appState.library.vocabWord(item.refID)?.word ?? item.refID
+            appState.library?.vocabWord(item.refID)?.word ?? item.refID
         case .lesson:
-            appState.library.lesson(item.refID)?.title ?? item.refID
+            appState.library?.lesson(item.refID)?.title ?? item.refID
         }
     }
 }

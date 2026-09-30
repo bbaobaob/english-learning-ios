@@ -747,40 +747,40 @@ public final class AudioPlayerModel {
 
         commands.playCommand.addTarget { [weak self] _ in
             Task { @MainActor [weak self] in
-                guard let self, self.clip != nil else { return .commandFailed }
+                guard let self, self.clip != nil else { return }
                 self.resume()
-                return .success
             }
+            return .success
         }
         commands.pauseCommand.addTarget { [weak self] _ in
             Task { @MainActor [weak self] in
-                guard let self, self.clip != nil else { return .commandFailed }
+                guard let self, self.clip != nil else { return }
                 self.pause()
-                return .success
             }
+            return .success
         }
         commands.togglePlayPauseCommand.addTarget { [weak self] _ in
             Task { @MainActor [weak self] in
-                guard let self, self.clip != nil else { return .commandFailed }
+                guard let self, self.clip != nil else { return }
                 self.togglePlayback()
-                return .success
             }
+            return .success
         }
         commands.skipForwardCommand.preferredIntervals = [10]
         commands.skipForwardCommand.addTarget { [weak self] _ in
             Task { @MainActor [weak self] in
-                guard let self, self.player != nil else { return .commandFailed }
+                guard let self, self.player != nil else { return }
                 self.skip(by: 10)
-                return .success
             }
+            return .success
         }
         commands.skipBackwardCommand.preferredIntervals = [10]
         commands.skipBackwardCommand.addTarget { [weak self] _ in
             Task { @MainActor [weak self] in
-                guard let self, self.player != nil else { return .commandFailed }
+                guard let self, self.player != nil else { return }
                 self.skip(by: -10)
-                return .success
             }
+            return .success
         }
         commands.changePlaybackPositionCommand.addTarget { [weak self] event in
             Task { @MainActor [weak self] in
@@ -788,10 +788,10 @@ public final class AudioPlayerModel {
                     let self,
                     self.player != nil,
                     let event = event as? MPChangePlaybackPositionCommandEvent
-                else { return .commandFailed }
+                else { return }
                 self.seek(to: event.positionTime)
-                return .success
             }
+            return .success
         }
     }
 

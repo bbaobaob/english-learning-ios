@@ -12,7 +12,7 @@ struct LearnHomeView: View {
     @State private var query: String = ""
 
     private var grammarTopics: [Topic] {
-        app.library.allTopics.filter { $0.kind == .grammar }
+        (app.library?.allTopics ?? []).filter { $0.kind == .grammar }
     }
 
     /// Grammar topics after the level filter and the search text.
@@ -71,7 +71,7 @@ struct LearnHomeView: View {
                 LazyVStack(alignment: .leading, spacing: Spacing.xl) {
                     summaryHeader
 
-                    let methods = app.library.allTopics.filter { $0.kind == .methods }
+                    let methods = (app.library?.allTopics ?? []).filter { $0.kind == .methods }
                     if !methods.isEmpty {
                         NavigationLink(value: LearnRoute.methods) {
                             HStack(spacing: Spacing.md) {
@@ -137,7 +137,7 @@ struct LearnHomeView: View {
     private func destination(for route: LearnRoute) -> some View {
         switch route {
         case .topic(let id):
-            if let topic = app.library.topic(id) {
+            if let topic = app.library?.topic(id) {
                 TopicDetailView(topic: topic)
             } else {
                 EmptyStateView(

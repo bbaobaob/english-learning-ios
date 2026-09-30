@@ -66,7 +66,8 @@ struct ProfileView: View {
             // onboarding ignored it entirely.
             .alert("Reset all progress?", isPresented: $isConfirmingReset) {
                 Button("Reset", role: .destructive) {
-                    model.reset(store: app.store, library: app.library)
+                    guard let library = app.library else { return }
+                    model.reset(store: app.store, library: library)
                 }
                 Button("Cancel", role: .cancel) {}
             } message: {
@@ -186,7 +187,8 @@ struct ProfileView: View {
                     value: Binding(
                         get: { model.dailyGoalXP },
                         set: { newValue in
-                            model.updateDailyGoal(newValue, store: app.store, library: app.library)
+                            guard let library = app.library else { return }
+                            model.updateDailyGoal(newValue, store: app.store, library: library)
                         }
                     ),
                     in: 10...500,
@@ -512,7 +514,8 @@ struct ProfileView: View {
 
     private func export() {
         do {
-            let data = try ProgressExporter.json(store: app.store, library: app.library)
+            guard let library = app.library else { return }
+            let data = try ProgressExporter.json(store: app.store, library: library)
             let name = "english-progress-\(Date().formatted(.iso8601.year().month().day())).json"
             let url = FileManager.default.temporaryDirectory.appendingPathComponent(name)
             try data.write(to: url, options: .atomic)
@@ -536,7 +539,8 @@ struct ProfileView: View {
     }
 
     private func reload() {
-        model.load(store: app.store, library: app.library)
+        guard let library = app.library else { return }
+        model.load(store: app.store, library: library)
         reloadPrefs()
     }
 }

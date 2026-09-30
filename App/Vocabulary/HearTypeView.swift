@@ -110,7 +110,7 @@ struct HearTypeView: View {
                 HearTypeView(words: words.filter { wordIDs.contains($0.id) }, title: "Hear → Type")
             case .freeHearType:
                 HearTypeView(
-                    words: Array(appState.library.allVocabulary.shuffled().prefix(VocabPace.freePracticeLimit)),
+                    words: Array((appState.library?.allVocabulary ?? []).shuffled().prefix(VocabPace.freePracticeLimit)),
                     title: "Free practice"
                 )
             case .focusedReview(let wordIDs):

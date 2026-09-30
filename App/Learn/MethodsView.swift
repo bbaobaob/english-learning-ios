@@ -11,7 +11,7 @@ struct MethodsView: View {
 
     @Environment(AppState.self) private var app
 
-    private var topic: Topic? { app.library.topic("methods") }
+    private var topic: Topic? { app.library?.topic("methods") }
 
     private var lessons: [Lesson] { topic?.lessons ?? [] }
 
@@ -76,7 +76,7 @@ struct MethodsView: View {
             case .methods:
                 MethodsView()
             case .topic(let id):
-                if let next = app.library.topic(id) {
+                if let next = app.library?.topic(id) {
                     TopicDetailView(topic: next)
                 }
             }

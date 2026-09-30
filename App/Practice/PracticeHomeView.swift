@@ -345,7 +345,7 @@ struct PracticeHomeView: View {
     // MARK: - Derived reads
 
     private func topic(for skill: CoreSkill) -> Topic? {
-        appState.library.allTopics.first { $0.kind == skill.kind }
+        appState.library?.allTopics.first { $0.kind == skill.kind }
     }
 
     /// Everything the store says is reviewable right now.
@@ -366,14 +366,14 @@ struct PracticeHomeView: View {
     private var dictationDueCount: Int {
         reviewQueue.dueToday(on: Date()).filter { item in
             guard item.source == .exercise else { return false }
-            return appState.library.exercise(item.refID)?.kind == .dictation
+            return appState.library?.exercise(item.refID)?.kind == .dictation
         }.count
     }
 
     private var recommendation: WeakestSkill? {
         WeakestSkill.derive(
             skills: CoreSkill.allCases,
-            topics: appState.library.allTopics,
+            topics: appState.library?.allTopics ?? [],
             rollups: appState.store.topicProgress(),
             lessonRows: appState.store.lessonProgress()
         )

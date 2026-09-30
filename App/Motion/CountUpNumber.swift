@@ -69,8 +69,8 @@ struct CountUpNumber: View {
             .accessibilityElement(children: .ignore)
             .accessibilityLabel(Text(verbatim: labelText))
             .onAppear(perform: settleFromAppearance)
-            .onChange(of: value) { _, _ in roll(to: value) }
-            .onChange(of: settings.reduceMotion) { _, _ in roll(to: value) }
+            .onChange(of: value) { _, _ in roll(to: Double(value)) }
+            .onChange(of: settings.reduceMotion) { _, _ in roll(to: Double(value)) }
     }
 
     // MARK: Rendering
@@ -99,7 +99,7 @@ struct CountUpNumber: View {
             return
         }
         displayed = 0
-        withAnimation(Motion.Curve.spring(response: 0.7, dampingFraction: 0.85)) {
+        withAnimation(Motion.spring(response: 0.7, dampingFraction: 0.85)) {
             displayed = Double(value)
         }
     }
@@ -115,7 +115,7 @@ struct CountUpNumber: View {
             return
         }
 
-        withAnimation(Motion.Curve.spring(response: rollDuration(for: newValue), dampingFraction: 0.9)) {
+        withAnimation(Motion.spring(response: rollDuration(for: newValue), dampingFraction: 0.9)) {
             displayed = newValue
         }
     }

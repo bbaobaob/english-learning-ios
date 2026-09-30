@@ -163,6 +163,37 @@ enum AppFont {
     static func mono(_ style: Font.TextStyle, weight: Font.Weight = .semibold) -> Font {
         Font.system(style, design: .monospacedDigit).weight(weight)
     }
+
+    /// Point-size overloads for the fixed-size sites (badges, captions, hero
+    /// numbers). Same faces as above via `Font.system(size:weight:design:)`;
+    /// everything else stays on the `Font.TextStyle` versions for Dynamic Type.
+    static func display(_ size: CGFloat, weight: Font.Weight = .bold) -> Font {
+        Font.system(size: size, weight: weight, design: .serif)
+    }
+
+    static func body(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        Font.system(size: size, weight: weight, design: .default)
+    }
+
+    static func mono(_ size: CGFloat, weight: Font.Weight = .semibold) -> Font {
+        Font.system(size: size, weight: weight, design: .monospacedDigit)
+    }
+
+    /// `weight:`-labeled twins of the above. Both spellings already exist in
+    /// the tree (`display(24, .bold)` vs `mono(20, weight: .medium)`), so both
+    /// must resolve; normalizing every call site instead would touch lanes
+    /// that are not broken.
+    static func display(_ size: CGFloat, _ weight: Font.Weight = .bold) -> Font {
+        Font.system(size: size, weight: weight, design: .serif)
+    }
+
+    static func body(_ size: CGFloat, _ weight: Font.Weight = .regular) -> Font {
+        Font.system(size: size, weight: weight, design: .default)
+    }
+
+    static func mono(_ size: CGFloat, _ weight: Font.Weight = .semibold) -> Font {
+        Font.system(size: size, weight: weight, design: .monospacedDigit)
+    }
 }
 
 // MARK: - Motion

@@ -185,23 +185,23 @@ struct ReviewView: View {
     }
 
     private var title: String {
-        guard let topicID, let topic = appState.library.topic(topicID) else { return "Review" }
+        guard let topicID, let topic = appState.library?.topic(topicID) else { return "Review" }
         return "Review · \(topic.title)"
     }
 
     private func headline(for item: ReviewItem) -> String {
         switch item.source {
         case .exercise:
-            appState.library.exercise(item.refID)?.prompt ?? item.refID
+            appState.library?.exercise(item.refID)?.prompt ?? item.refID
         case .vocabulary:
-            appState.library.vocabWord(item.refID)?.word ?? item.refID
+            appState.library?.vocabWord(item.refID)?.word ?? item.refID
         case .lesson:
-            appState.library.lesson(item.refID)?.title ?? item.refID
+            appState.library?.lesson(item.refID)?.title ?? item.refID
         }
     }
 
     private func detail(for item: ReviewItem) -> String {
-        let origin = item.topicID.flatMap { appState.library.topic($0)?.title } ?? "Mixed content"
+        let origin = item.topicID.flatMap { appState.library?.topic($0)?.title } ?? "Mixed content"
         return origin + " · interval " + PracticeFormat.phrase(item.intervalDays, "day", "days")
     }
 

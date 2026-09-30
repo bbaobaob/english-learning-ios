@@ -425,7 +425,7 @@ struct SpeakingDrillView: View {
     /// supply a target sentence with a structural hint. Both are real content, and both
     /// are speakable, so the model answer is simply the prompt spoken aloud.
     private var cards: [SpeakingCue] {
-        guard let topic = appState.library.allTopics.first(where: { $0.kind == .speaking }) else {
+        guard let topic = appState.library?.allTopics.first(where: { $0.kind == .speaking }) else {
             return []
         }
         var result: [SpeakingCue] = []

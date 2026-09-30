@@ -13,7 +13,7 @@ struct AlphabetView: View {
 
     private let columns = [GridItem(.adaptive(minimum: 104), spacing: Spacing.md)]
 
-    private var topic: Topic? { app.library.topic("alphabet") }
+    private var topic: Topic? { app.library?.topic("alphabet") }
 
     private var lessons: [Lesson] { topic?.lessons ?? [] }
 
@@ -65,7 +65,7 @@ struct AlphabetView: View {
             case .alphabet:
                 AlphabetView()
             case .topic(let id):
-                if let next = app.library.topic(id) {
+                if let next = app.library?.topic(id) {
                     TopicDetailView(topic: next)
                 }
             }

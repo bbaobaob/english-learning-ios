@@ -35,8 +35,8 @@ struct LessonView: View {
 
     // MARK: - Content
 
-    private var topic: Topic? { app.library.topic(topicID) }
-    private var lesson: Lesson? { app.library.lesson(lessonID, in: topicID) }
+    private var topic: Topic? { app.library?.topic(topicID) }
+    private var lesson: Lesson? { app.library?.lesson(lessonID, in: topicID) }
 
     private var steps: [LessonStep] { lesson?.steps ?? [] }
 
@@ -103,7 +103,7 @@ struct LessonView: View {
                     case .lesson(let nextTopicID, let nextLessonID):
                         LessonView(topicID: nextTopicID, lessonID: nextLessonID)
                     case .topic(let id):
-                        if let next = app.library.topic(id) {
+                        if let next = app.library?.topic(id) {
                             TopicDetailView(topic: next)
                         }
                     case .alphabet:
@@ -314,7 +314,7 @@ struct LessonView: View {
     /// Prefers the summary's own `nextLessonID`, then the content order.
     private func nextLessonID(in lesson: Lesson) -> String? {
         if case .summary(let summaryStep) = lesson.steps.last, let next = summaryStep.nextLessonID,
-           app.library.lesson(next, in: topicID) != nil {
+           app.library?.lesson(next, in: topicID) != nil {
             return next
         }
         guard let current = topic, let at = current.lessons.firstIndex(where: { $0.id == lesson.id }),
@@ -383,7 +383,7 @@ struct LessonView: View {
     /// Resolves a practice step's exercise ids through the content library.
     private func practiceItems(for step: PracticeStep) -> [SessionItem] {
         step.exerciseIDs.compactMap { id in
-            app.library.exercise(id).map { SessionItem.exercise($0) }
+            app.library?.exercise(id).map { SessionItem.exercise($0) }
         }
     }
 

@@ -124,9 +124,10 @@ struct AudioPlayerCard: View {
 
     private func play() {
         guard !text.isEmpty else { return }
-        appState.speech.speak(text, rate: rate) { [weak self] in
+        appState.speech.speak(text, rate: rate) {
             // The protocol's completion is not documented as main-actor; hop explicitly.
-            Task { @MainActor in self?.isPlaying = false }
+            // No weak capture: this is a struct, so there is no retain cycle to break.
+            Task { @MainActor in isPlaying = false }
         }
         isPlaying = true
         Haptics.selection()

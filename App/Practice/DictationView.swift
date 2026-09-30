@@ -99,9 +99,10 @@ struct DictationLandingView: View {
 
     /// Every dictation set the library offers, flattened per lesson.
     private var sets: [DictationSet] {
+        guard let library = appState.library else { return [] }
         let dueByTopic = dueCountsByTopic
         var result: [DictationSet] = []
-        for topic in appState.library.allTopics {
+        for topic in library.allTopics {
             for lesson in topic.lessons {
                 for step in lesson.steps {
                     guard case .dictation(let dictation) = step, !dictation.items.isEmpty else { continue }

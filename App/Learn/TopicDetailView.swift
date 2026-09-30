@@ -88,7 +88,7 @@ struct TopicDetailView: View {
             case .methods:
                 MethodsView()
             case .topic(let id):
-                if let next = app.library.topic(id), next.id != topic.id {
+                if let next = app.library?.topic(id), next.id != topic.id {
                     TopicDetailView(topic: next)
                 }
             }

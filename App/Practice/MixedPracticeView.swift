@@ -117,7 +117,7 @@ struct MixedPracticeView: View {
                                 Image(systemName: "exclamationmark.circle.fill")
                                     .foregroundStyle(Color.danger)
                                     .accessibilityHidden(true)
-                                Text(appState.library.exercise(id)?.prompt ?? id)
+                                Text(appState.library?.exercise(id)?.prompt ?? id)
                                     .font(AppFont.display(14, .regular))
                                     .fixedSize(horizontal: false, vertical: true)
                             }
@@ -157,7 +157,7 @@ struct MixedPracticeView: View {
 
     private func resumeOrStart() {
         guard session == nil else { return }
-        guard let topic = appState.library.topic(topicID) else { return }
+        guard let topic = appState.library?.topic(topicID) else { return }
         let items = topic.exercises(at: level)
 
         session = PracticeSessionStore.shared.session(slot) {

@@ -38,7 +38,7 @@ struct ReviewItemView: View {
 
     @ViewBuilder
     private var exerciseBody: some View {
-        if let exercise = appState.library.exercise(item.refID) {
+        if let exercise = appState.library?.exercise(item.refID) {
             VStack(spacing: 0) {
                 headerStrip
 
@@ -116,7 +116,7 @@ struct ReviewItemView: View {
 
     @ViewBuilder
     private var vocabularyBody: some View {
-        if let word = appState.library.vocabWord(item.refID) {
+        if let word = appState.library?.vocabWord(item.refID) {
             ScrollView {
                 VStack(alignment: .leading, spacing: Spacing.lg) {
                     VStack(alignment: .leading, spacing: Spacing.sm) {
@@ -207,7 +207,7 @@ struct ReviewItemView: View {
 
     @ViewBuilder
     private var lessonBody: some View {
-        if let lesson = appState.library.lesson(item.refID) {
+        if let lesson = appState.library?.lesson(item.refID) {
             ScrollView {
                 VStack(alignment: .leading, spacing: Spacing.lg) {
                     VStack(alignment: .leading, spacing: Spacing.sm) {
@@ -269,7 +269,7 @@ struct ReviewItemView: View {
 
     /// The lesson's closing `summary` step, which is where its takeaways live.
     private var takeaways: [String] {
-        guard let lesson = appState.library.lesson(item.refID) else { return [] }
+        guard let lesson = appState.library?.lesson(item.refID) else { return [] }
         for step in lesson.steps {
             if case .summary(let summary) = step { return summary.takeaways }
         }
@@ -301,7 +301,7 @@ struct ReviewItemView: View {
     }
 
     private var sourceLabel: String {
-        item.topicID.flatMap { appState.library.topic($0)?.title } ?? "Mixed content"
+        item.topicID.flatMap { appState.library?.topic($0)?.title } ?? "Mixed content"
     }
 
     private var missingContent: some View {
