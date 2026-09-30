@@ -1,0 +1,1466 @@
+{
+  "id": "adjective",
+  "title": "Adjectives",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Adjectives describe nouns and pronouns. Learn where they go, the order of several adjectives, the difference between -ed and -ing, and how to strengthen them.",
+  "icon": "paintbrush.pointed",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "adjective-what-is-an-adjective",
+      "title": "What Is an Adjective?",
+      "summary": "Describing words and the two jobs they do.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l1-theory",
+          "type": "theory",
+          "heading": "What Is an Adjective?",
+          "body": "An adjective describes a noun or a pronoun, or tells you more about a verb. It answers questions such as which one, what kind and how many. Adjectives can come in two groups. Attributive adjectives stand directly before the noun they describe: a beautiful garden, a blue bag, two heavy boxes. Predicative adjectives follow a linking verb such as be, seem, look, feel, become, get, taste, smell, sound, stay and remain: the garden is beautiful, the soup tastes good, she seems tired. Some adjectives can do both jobs, but others cannot. Words like beautiful, little, blue and main can only come before the noun, so we say a little car but not the car is little. Others, like late, wrong, ill and well, only come after a linking verb: he arrived late, the child is ill, but a late child is not English. In the negative, a common mistake is to place an adjective after not, as in She is not happy enough for help. The correct position is before the word that limits it: She is not happy enough, or She is not happy to help. Colour, shape, size, age, origin, material and purpose adjectives all work in both positions when they are short and neutral.",
+          "rules": [
+            {
+              "title": "Attributive and predicative",
+              "statement": "An attributive adjective comes before the noun. A predicative adjective follows a linking verb.",
+              "formula": "a beautiful garden / the garden is beautiful",
+              "examples": [
+                { "id": "adjective-l1-r1-e1", "en": "We walked through a quiet park on Sunday afternoon.", "vi": "Chúng tôi đi dạo qua một công viên yên tĩnh vào chiều Chủ nhật.", "note": "quiet is attributive, before the noun park" },
+                { "id": "adjective-l1-r1-e2", "en": "The park was quiet and almost empty.", "vi": "Công viên yên tĩnh và gần như trống trải.", "note": "quiet is predicative, after the linking verb was" }
+              ]
+            },
+            {
+              "title": "Some adjectives have only one position",
+              "statement": "Many adjectives such as beautiful, main and little can only come before the noun. Others such as late, wrong and ill can only follow a linking verb.",
+              "formula": "a little car (correct) / the car is little (wrong)",
+              "examples": [
+                { "id": "adjective-l1-r2-e1", "en": "The film was boring, so the room became boring too.", "vi": "Bộ phim chán nên cả phòng trở nên chán nảy.", "note": "boring is predicative here" },
+                { "id": "adjective-l1-r2-e2", "en": "The bus was late, and a late bus meant a late dinner.", "vi": "Xe buýt đến muộn, và xe buýt muộn nghĩa là bữa tối muộn.", "note": "late cannot be used before the noun in the attributive sense here" }
+              ]
+            },
+            {
+              "title": "Position of not and the limiting word",
+              "statement": "A negative goes before the adjective or adverb that limits it, not after it.",
+              "formula": "not good enough / not tall enough / not late enough",
+              "examples": [
+                { "id": "adjective-l1-r2-e3", "en": "He is not tall enough to reach the top shelf.", "vi": "Anh ấy không cao đủ để với tới kệ trên cùng.", "note": "enough follows the adjective, and not comes before the pair" },
+                { "id": "adjective-l1-r2-e4", "en": "The instructions were not clear enough for beginners.", "vi": "Hướng dẫn không rõ ràng đủ cho người mới bắt đầu.", "note": "not clear, not clear enough" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l1-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l1-ex1", "en": "The children were noisy during the film.", "vi": "Lũ trẻ ồn ào trong suốt bộ phim.", "note": "predicative after were" },
+            { "id": "adjective-l1-ex2", "en": "A thick fog covered the hills all morning.", "vi": "Sương mù dày phủ khắp các ngọn núi suốt buổi sáng.", "note": "attributive before fog" },
+            { "id": "adjective-l1-ex3", "en": "The milk tastes strange, so we did not drink it.", "vi": "Sữa có vị lạ nên chúng tôi không uống.", "note": "taste is a linking verb, so strange is predicative" },
+            { "id": "adjective-l1-ex4", "en": "My brother is an honest driver and a careful one.", "vi": "Anh tôi là một tài xế trung thực và cẩn thận.", "note": "one replaces a repeated noun after an adjective" },
+            { "id": "adjective-l1-ex5", "en": "The room felt cold and the window was stiff.", "vi": "Căn phòng có vẻ lạnh và cửa sổ bị cứng.", "note": "two linking verbs, feel and was" }
+          ]
+        },
+        {
+          "id": "adjective-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l1-ex1",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "Which word is the adjective in The old wooden door was heavy?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "door", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "was", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "wooden", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "old", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["d"] },
+              "explanation": "Both old and wooden describe the noun door, so both are adjectives. The question allows only one, and old comes first in the natural adjective order before the material adjective wooden.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-ex2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "He is not enough old to drive a car.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He is not old enough to drive a car."] },
+              "explanation": "enough follows the adjective it limits, so old enough is the unit, and the negative goes in front of it: not old enough. Writing enough old reverses the required order.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "The soup ___ (taste) delicious, so everybody wanted some.",
+              "instruction": "Write the correct adjective.",
+              "items": [
+                { "id": "h1", "text": "adjective after a linking verb", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["tastes delicious"] },
+              "explanation": "taste is a linking verb when it describes a quality, so it is followed by an adjective and not by an adverb. The whole answer is tastes delicious, because taste itself also needs the -s for the singular subject.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-ex4",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "In The film was boring, boring is an attributive adjective.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. boring comes after the linking verb was, so it is predicative. An attributive adjective would stand before a noun, as in a boring film.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l1-d1",
+              "audio": { "kind": "speech", "text": "The tiny bakery on the corner sells excellent bread." },
+              "hint": "size adjective plus an opinion adjective",
+              "translation": "Tiệm bánh nhỏ ở góc đường bán bánh rất ngon.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l1-d2",
+              "audio": { "kind": "speech", "text": "Her English is not good enough for the interview yet." },
+              "hint": "not plus adjective plus enough",
+              "translation": "Tiếng Anh của cô ấy chưa đủ tốt cho cuộc phỏng vấn.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l1-d3",
+              "audio": { "kind": "speech", "text": "The weather was lovely, so we stayed outside all evening." },
+              "hint": "linking verb plus predicative adjective",
+              "translation": "Thời tiết rất đẹp nên chúng tôi ở ngoài suốt buổi tối.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l1-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "Which adjective is predicative in The children were quiet during the lesson?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "quiet", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "the", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "lesson", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "were", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "quiet follows the linking verb were and describes the children, so it is predicative. lesson is a noun, were is a verb and the is a determiner.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-q2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "The instructions were not enough clear for me.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The instructions were not clear enough for me."] },
+              "explanation": "enough follows the adjective it limits, so clear enough, not enough clear. The same pattern applies to good enough, old enough and big enough.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "beginner",
+              "prompt": "He is a ___ (careful) driver, and he always drives slowly.",
+              "instruction": "Write the correct adjective form.",
+              "items": [],
+              "answer": { "type": "text", "values": ["careful"] },
+              "explanation": "The adjective is used before the noun driver, so it stays in its base form. Adding -ly would make it an adverb, which modifies drives rather than driver.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l1-q4",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-what-is-an-adjective",
+              "difficulty": "intermediate",
+              "prompt": "The word beautiful can be used both before a noun and after the verb be.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. We say a beautiful garden and the garden is beautiful. The adjectives that cannot move are extreme ones such as main, lovely and little, plus the predicative-only ones like ill and wrong.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "An attributive adjective comes before the noun; a predicative adjective follows a linking verb.",
+            "Some adjectives only work in one position: a little car, but the car is ill, not the car is little.",
+            "Linking verbs include be, seem, look, feel, become, get, taste, smell, sound, stay and remain.",
+            "The negative goes before the limited word: not good enough, not enough good is wrong."
+          ],
+          "nextLessonID": "adjective-ed-and-ing"
+        }
+      ]
+    },
+    {
+      "id": "adjective-ed-and-ing",
+      "title": "-ed and -ing Adjectives",
+      "summary": "Describing a state or an experience, and describing the person.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l2-theory",
+          "type": "theory",
+          "heading": "-ed and -ing Adjectives",
+          "body": "Verbs describing feelings and perceptions can become adjectives in two ways, and the difference is who is involved. An -ing adjective describes the person or thing having the experience, and it is always followed by a preposition. An -ed adjective describes the person or thing that the experience happened to, and it is always followed by by or something similar. I am bored describes my own state, while I am bored with the film means the film made me bored. She is interesting means she holds the listener's attention, while she is interested means she is paying attention. The film is interesting, but she is interested in the film. A very common error is to confuse the two: I am interesting to meet you should be I am pleased to meet you, and I am boring to wait for should be I am bored while waiting. The same split happens with surprise, confuse, exhaust, bore, excite, frighten, tire and amaze. Two more details matter. The -ing form needs no extra -ing after an -ing verb, so we say the film is interesting rather than the film is interestinging. And with certain verbs the two adjectives take different prepositions: bored with, bored of; tired of; frightened of, frightened by; surprised at, surprised by. The safest rule is to ask whether the word is describing the doer of the action or the receiver of it.",
+          "rules": [
+            {
+              "title": "-ing describes the person having the experience",
+              "statement": "An -ing adjective describes the subject and is followed by a preposition: interested in, worried about, excited about.",
+              "formula": "She is interested in history.",
+              "examples": [
+                { "id": "adjective-l2-r1-e1", "en": "We were talking about the trip and everybody was excited.", "vi": "Chúng tôi đang nói về chuyến đi và ai cũng hào hứng.", "note": "excited describes the people, so it is the -ing form" },
+                { "id": "adjective-l2-r1-e2", "en": "He is worried about the exam next week.", "vi": "Anh ấy lo lắng về kỳ thi tuần sau.", "note": "worried about, never worried of" }
+              ]
+            },
+            {
+              "title": "-ed describes the receiver of the experience",
+              "statement": "An -ed adjective describes the subject as the one affected, and it is followed by by, at, with or another preposition.",
+              "formula": "She is bored by the film. / He was surprised at the news.",
+              "examples": [
+                { "id": "adjective-l2-r1-e2", "en": "The children were bored by the long film.", "vi": "Lũ trẻ chán vì bộ phim dài lê thê.", "note": "the children are the ones affected" },
+                { "id": "adjective-l2-r1-e3", "en": "I was surprised at how quickly she answered.", "vi": "Tôi rất ngạc nhiên về tốc độ cô ấy trả lời.", "note": "surprised at, because something surprising happened to the speaker" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l2-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l2-ex1", "en": "The lecture was interesting, and the students were interested.", "vi": "Bài giảng rất thú vị và sinh viên rất quan tâm.", "note": "the thing is interesting, the people are interested" },
+            { "id": "adjective-l2-ex2", "en": "It was a tiring day, but I was not tired.", "vi": "Đó là một ngày mệt mỏi, nhưng tôi không mệt.", "note": "the day causes the tiredness, I do not feel it" },
+            { "id": "adjective-l2-ex3", "en": "The news was surprising and we were surprised by it.", "vi": "Tin đó rất đáng ngạc nhiên và chúng tôi rất ngạc nhiên vì nó.", "note": "the same split, subject by subject" },
+            { "id": "adjective-l2-ex4", "en": "She was confused by the instructions, and her face was confusing.", "vi": "Cô ấy bối rối vì hướng dẫn, và khuôn mặt cô ấy rất khó hiểu.", "note": "confusing describes the instructions, confused describes her" },
+            { "id": "adjective-l2-ex5", "en": "The children were frightened by the noise from the street.", "vi": "Lũ trẻ hoảng sợ vì tiếng ồn từ đường.", "note": "frightened by for a source that is not a person" }
+          ]
+        },
+        {
+          "id": "adjective-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l2-ex1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "beginner",
+              "prompt": "She was boring with the long lecture yesterday.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She was bored with the long lecture yesterday."] },
+              "explanation": "She is the one who felt bored, so the -ed form is needed: she was bored with. Boring with would mean the lecture is uninteresting, which is the opposite meaning.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-ex2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "beginner",
+              "prompt": "The weather was interesting, so everyone was interested.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The weather was boring, so everyone was bored."] },
+              "explanation": "Weather cannot be interesting, so the intended pair is boring and bored: the thing is boring, the people are bored. The exercise fixes both halves of the same underlying confusion at once.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "beginner",
+              "prompt": "The book is very ___(bore), and I finished it in one day.",
+              "instruction": "Write the correct adjective form in the blank.",
+              "items": [
+                { "id": "h1", "text": "-ed or -ing?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["boring"] },
+              "explanation": "The book makes the reader feel bored, so the adjective describing the book is boring. The -ed form would describe the reader: I was bored.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-ex4",
+              "kind": "multiSelect",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "intermediate",
+              "prompt": "Which sentences are correct?",
+              "instruction": "Select all the correct options.",
+              "items": [
+                { "id": "a", "text": "He is interested in history.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "History is interesting to him.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "He is interesting in history.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "He is interesting of history.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a", "b"] },
+              "explanation": "interested in describes him and interesting to describes the subject. He is interesting cannot be followed by in, and interesting of is not a pattern in English at all.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-ex5",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct preposition: I was surprised ___ the good news.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "at", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "about", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "of", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "from", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Surprised at is the standard pattern: surprised at the news, surprised at how fast he ran. Surprised about is only correct when something is going to be done about it, as in I was surprised about the delay.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l2-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l2-d1",
+              "audio": { "kind": "speech", "text": "The concert was amazing, and all the fans were excited." },
+              "hint": "the thing is amazing, the people are excited",
+              "translation": "Buổi hòa nhạc thật tuyệt vời và tất cả người hâm mộc đều phấn khích.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l2-d2",
+              "audio": { "kind": "speech", "text": "I was disappointed by the ending of the novel." },
+              "hint": "ed adjective plus by",
+              "translation": "Tôi thất vọng về kết thúc của cuốn tiểu thuyết.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l2-d3",
+              "audio": { "kind": "speech", "text": "It was a long and tiring journey, but nobody complained." },
+              "hint": "two ing adjectives joined by and",
+              "translation": "Đó là một chuyến đi dài và mệt mỏi, nhưng không ai than phiền.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l2-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l2-q1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "beginner",
+              "prompt": "The situation was confusing and I was confusing by it.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The situation was confusing and I was confused by it."] },
+              "explanation": "The situation is the thing doing the confusing, so confusing is right for it. I am the one affected, so the -ed form confused is needed. Swapping them reverses both meanings.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "beginner",
+              "prompt": "We were ___ (excite) about the school trip to Dalat.",
+              "instruction": "Write the correct adjective form.",
+              "items": [
+                { "id": "h1", "text": "-ed or -ing?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["excited"] },
+              "explanation": "We are the people feeling the excitement, so the -ed form excited is correct. The trip itself is exciting: The trip to Dalat is exciting.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-q3",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "intermediate",
+              "prompt": "In The children were frightened, the children are the ones who received the frightening experience.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. The frightening thing was the noise, and the children were the receivers, so frightened is the -ed form. The -ing form would describe the noise: the noise was frightening.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l2-q4",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-ed-and-ing",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The instructions were confusing to me.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "The instructions were confused to me.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "The instructions were confusing for me.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The instructions were confused for me.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The instructions do the confusing, so confusing is right, and to me is the standard pattern for a thing. Confused would describe a person, as in I was confused.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "The -ing adjective describes the person or thing having the experience: she is interesting.",
+            "The -ed adjective describes the one affected: she is interested in history.",
+            "Both forms are followed by a preposition, and the two prepositions often differ: bored with, surprised at.",
+            "Never add -ing to a word that already ends in -ing: interesting, not interestinging."
+          ],
+          "nextLessonID": "adjective-order"
+        }
+      ]
+    },
+    {
+      "id": "adjective-order",
+      "title": "Order of Adjectives",
+      "summary": "Opinion, size, age, shape, colour, origin, material, purpose.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l3-theory",
+          "type": "theory",
+          "heading": "Order of Adjectives",
+          "body": "When several adjectives describe the same noun, English expects them in a fixed order, and native speakers feel it instinctively even when they cannot explain it. The order is opinion, size, age, shape, colour, origin, material and purpose, and the usual way to remember it is the long mnemonic osascomp. Opinion includes lovely, terrible and wonderful. Size covers big, small and huge. Age covers old, young and new. Shape covers round, square and rectangular. Colour covers red, blue and dark. Origin covers French, Vietnamese and Japanese. Material covers wooden, iron and cotton. Purpose covers walking, running and sleeping, as in a walking stick or a sleeping bag. In practice speakers rarely use more than two adjectives in this order, and a good writer uses even fewer, because long strings of adjectives sound heavy. When you use three or more, put a comma before the last one and add and or or: a tall, thin, and rather old man. Some pairs are so fixed that they behave as a single unit and never reorder: a new car, the prime minister, a main course, a freezer bag, a high street, a university professor. Learn those as one vocabulary item rather than as two adjectives, because the order is not open to choice for them.",
+          "rules": [
+            {
+              "title": "The order is opinion, size, age, shape, colour, origin, material, purpose",
+              "statement": "Adjectives of these eight categories follow a fixed sequence. Deviating from it sounds wrong to a native ear.",
+              "formula": "a lovely small old round brown Italian wooden coffee table",
+              "examples": [
+                { "id": "adjective-l3-r1-e1", "en": "She bought a beautiful small round wooden table.", "vi": "Cô ấy đã mua một cái bàn xinh xắn, nhỏ, tròn, bằng gỗ.", "note": "opinion, size, shape, material" },
+                { "id": "adjective-l3-r1-e2", "en": "He is a tall thin old man with a wise face.", "vi": "Ông ấy là một người đàn ông cao, gầy, lớn tuổi với khuôn mặt uyên bác.", "note": "size, size, age, then the opinion on the face" }
+              ]
+            },
+            {
+              "title": "Three or more adjectives take a comma and and",
+              "statement": "When you use three or more adjectives, separate the last one with a comma and a conjunction, and the sentence sounds natural rather than heavy.",
+              "formula": "a new, expensive, and imported car",
+              "examples": [
+                { "id": "adjective-l3-r2-e1", "en": "The house was a small, white, and very old building.", "vi": "Ngôi nhà là một tòa nhà nhỏ, trắng và rất cũ.", "note": "size, colour, age" },
+                { "id": "adjective-l3-r2-e2", "en": "We passed grey, cold, and windy streets.", "vi": "Chúng tôi đi qua những con phố xám, lạnh và gió mạnh.", "note": "colour then two weather adjectives" }
+              ]
+            },
+            {
+              "title": "Fixed pairs never reorder",
+              "statement": "Some adjective and noun pairs are fixed and are learned as one unit: a new car, a main course, a university professor.",
+              "formula": "new car, not car new; a sleeping bag, not a bag sleeping",
+              "examples": [
+                { "id": "adjective-l3-r2-e3", "en": "She was reading a very long French novel.", "vi": "Cô ấy đang đọc một tiểu thuyết Pháp rất dài.", "note": "opinion, size, origin" },
+                { "id": "adjective-l3-r2-e4", "en": "We need a new computer and a pair of walking boots.", "vi": "Chúng ta cần một chiếc máy tính mới và một đôi giày đi bộ.", "note": "fixed pairs, learned as single items" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l3-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l3-ex1", "en": "The police found a small black leather bag near the station.", "vi": "Cảnh sát tìm thấy một chiếc túi da đen nhỏ gần nhà ga.", "note": "size, colour, material" },
+            { "id": "adjective-l3-ex2", "en": "They stayed in a charming old village in northern Japan.", "vi": "Họ ở lại một ngôi lành cổ dễ thương ở miền Bắc Nhật Bản.", "note": "opinion, age, origin" },
+            { "id": "adjective-l3-ex3", "en": "I bought a warm brown winter coat yesterday.", "vi": "Tôi đã mua một chiếc áo khoác mùa đông nâu ấm hôm qua.", "note": "opinion, colour, purpose; purpose adjectives come last" },
+            { "id": "adjective-l3-ex4", "en": "The teacher praised a bright, careful, and very young student.", "vi": "Giáo viên đã khen một học sinh thông minh, cẩn thận và rất trẻ.", "note": "three adjectives with a comma and and" },
+            { "id": "adjective-l3-ex5", "en": "He carried two heavy bags of rice to the kitchen.", "vi": "Anh ấy mang hai túi gạo nặng vào bếp.", "note": "size and weight before the noun" }
+          ]
+        },
+        {
+          "id": "adjective-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l3-ex1",
+              "kind": "rearrangeWords",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "Put the words in the correct order of adjectives.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "a", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "wooden", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "small", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "French", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "table", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["a", "small", "French", "wooden", "table"]] },
+              "explanation": "Small is size, French is origin and wooden is material, and that is the order the sequence requires: size before origin before material. Wooden table would be understood, but small French wooden table is the full sequence.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-ex2",
+              "kind": "rearrangeWords",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "Put the words in the correct order of adjectives.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "a", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "lovely", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "red", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "Japanese", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "car", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["a", "lovely", "red", "Japanese", "car"]] },
+              "explanation": "Lovely is opinion, red is colour and Japanese is origin, so the order is opinion before colour before origin. A red Japanese lovely car is grammatical in the sense that nothing is ungrammatical, but it sounds wrong to a native speaker.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-ex3",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "She lives in a beautiful old house wooden near the river.",
+              "instruction": "Rewrite the sentence with the adjectives in the natural order.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She lives in a beautiful old wooden house near the river."] },
+              "explanation": "Material adjectives describe the noun directly, so wooden goes immediately before house. The full sequence is opinion beautiful, age old, material wooden.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-ex4",
+              "kind": "multiSelect",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "advanced",
+              "prompt": "Which adjective orders are correct?",
+              "instruction": "Select all the correct options.",
+              "items": [
+                { "id": "a", "text": "a small old Italian car", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "a red big box", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "a new red sports car", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "a wooden beautiful table", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a", "c"] },
+              "explanation": "a small old Italian car is size, age, origin, which follows the sequence. a red big box puts colour before size, and a wooden beautiful table puts material before opinion, so both are out of order.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-ex5",
+              "kind": "rearrangeWords",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "advanced",
+              "prompt": "Put the words in the correct order of adjectives.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "a", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "tall", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "thin", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "and", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "rather", "isCorrect": null, "matchKey": null },
+                { "id": "t6", "text": "old", "isCorrect": null, "matchKey": null },
+                { "id": "t7", "text": "man", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["a", "tall", "thin", "and", "rather", "old", "man"]] },
+              "explanation": "The adjectives come before the noun, and rather is a degree modifier that sits immediately in front of the adjective it modifies, so rather old is one unit. With three adjectives the last one is joined by and.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l3-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l3-d1",
+              "audio": { "kind": "speech", "text": "The old brown wooden desk was too heavy to move." },
+              "hint": "age, colour, material",
+              "translation": "Chiếc bàn gỗ màu nâu cũ quá nặng để di chuyển.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l3-d2",
+              "audio": { "kind": "speech", "text": "She carried a small, black, and very old suitcase." },
+              "hint": "three adjectives with a comma and and",
+              "translation": "Cô ấy mang một chiếc vali nhỏ, đen và rất cũ.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l3-d3",
+              "audio": { "kind": "speech", "text": "They bought a round Italian coffee table for the kitchen." },
+              "hint": "shape, origin, purpose",
+              "translation": "Họ đã mua một chiếc bàn cà phê tròn kiểu Ý cho nhà bếp.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l3-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "Which adjective order is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "a lovely small old round brown Italian wooden table", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "a wooden Italian small brown round old lovely table", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "a brown round old small Italian wooden lovely table", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "an old lovely small Italian brown round wooden table", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Option a walks through the whole sequence: opinion lovely, size small, age old, shape round, colour brown, origin Italian, material wooden, then the noun. Every other option breaks at least one link in that chain.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-q2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "He bought a new computer portable for his studies.",
+              "instruction": "Rewrite the sentence with the fixed pair in its natural form.",
+              "items": [
+                { "id": "w1", "text": "computer portable", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["He bought a new portable computer for his studies."] },
+              "explanation": "Portable is a purpose adjective here, and purpose adjectives go last, immediately before the noun: a new portable computer. The two words are also a fixed pair that is best learned as one unit.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-q3",
+              "kind": "rearrangeWords",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "Put the words in the correct order of adjectives.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "a", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "cotton", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "blue", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "shirt", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["a", "blue", "cotton", "shirt"]] },
+              "explanation": "Blue is colour and cotton is material, and colour always comes before material. A cotton blue shirt reverses the sequence and sounds wrong.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l3-q4",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-order",
+              "difficulty": "intermediate",
+              "prompt": "Purpose adjectives come last, just before the noun: a walking stick.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. Purpose describes what the object is for, so it sits closest to the noun: a sleeping bag, a running shoe, an oil painting. It comes after colour, origin and material.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "The order is opinion, size, age, shape, colour, origin, material, purpose.",
+            "With three or more adjectives, put a comma and and before the last one.",
+            "Purpose adjectives sit closest to the noun: a walking stick, a sleeping bag.",
+            "Some pairs are fixed and never reorder: a new car, a main course, a university professor."
+          ],
+          "nextLessonID": "adjective-degree-modifiers"
+        }
+      ]
+    },
+    {
+      "id": "adjective-degree-modifiers",
+      "title": "Degree Modifiers and Comparatives",
+      "summary": "How to make an adjective stronger, and how to compare.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l4-theory",
+          "type": "theory",
+          "heading": "Degree Modifiers",
+          "body": "A degree modifier tells you how strong a quality is, and the English scale runs from absolute to nothing at all. The strongest are absolute and totally, then extreme and utterly, then very and really, then quite and fairly, then rather and slightly, and finally a little and a bit. A small difference matters: very big is strong, quite big is moderate, a bit big is slight. Some modifiers are informal and only safe in speech: really, pretty, dead, absolutely, so. Others are formal: exceedingly, exceedingly rare, remarkably, notably. English has almost no intensifier for weak enough, because an intensifier plus already means the opposite: very strong means strong, while very weak means almost not strong at all, which native speakers hear as odd. The standard sequence is absolutely extremely very quite rather slightly, and anything out of that order is ungrammatical: extremely very is not possible. A few modifiers cannot be used at all with certain adjectives. Non-gradable adjectives such as perfect, unique, dead, impossible, total, empty, married and pregnant do not take a degree modifier, because they already mean the maximum. This is a very unique design is wrong, since unique is either unique or it is not. Words like blue, pink, square and rectangular do not take very either, because colours and shapes are not a matter of degree. English also dislikes stacked intensifiers before a single adjective, so extremely very good is wrong; but extremely, very good is fine, because the second phrase modifies the whole clause.",
+          "rules": [
+            {
+              "title": "The intensifier scale",
+              "statement": "Modifiers form a scale: absolutely and totally for the maximum, then extreme, then very, then quite and fairly, then rather and slightly, then a little and a bit.",
+              "formula": "absolutely > extremely > very > quite > rather > slightly > a bit",
+              "examples": [
+                { "id": "adjective-l4-r1-e1", "en": "The traffic was absolutely terrible this morning.", "vi": "Giao thông sáng nay thật sự kinh khủng.", "note": "absolute intensity" },
+                { "id": "adjective-l4-r1-e2", "en": "It was quite cold, but only a bit windy.", "vi": "Trời khá lạnh, nhưng chỉ hơi có gió.", "note": "quite is moderate, a bit is slight" }
+              ]
+            },
+            {
+              "title": "Non-gradable adjectives take no modifier",
+              "statement": "Adjectives that already mean the maximum or a fixed state, such as perfect, unique, dead, married, empty and pregnant, cannot be modified by very or extremely.",
+              "formula": "very perfect (wrong), absolutely perfect (correct)",
+              "examples": [
+                { "id": "adjective-l4-r1-e3", "en": "The report was absolutely perfect and everyone was pleased.", "vi": "Báo cáo hoàn hảo một cách tuyệt đối và ai cũng hài lòng.", "note": "perfect is non-gradable, so use absolutely" },
+                { "id": "adjective-l4-r1-e4", "en": "She gave me some useful advice that was quite unique.", "vi": "Cô ấy cho tôi lời khuyên hữu ích khá độc đáo.", "note": "unique is unusual with a modifier; that is unique is safer" }
+              ]
+            },
+            {
+              "title": "One intensifier at a time",
+              "statement": "Do not stack two intensifiers directly before one adjective. Stacking is only possible when the second phrase modifies the whole clause.",
+              "formula": "extremely very good (wrong) / extremely, very good, actually (acceptable)",
+              "examples": [
+                { "id": "adjective-l4-r1-e5", "en": "The task was extremely difficult, very stressful indeed.", "vi": "Nhiệm vụ cực kỳ khó, thực sự rất căng thẳng.", "note": "indeed separates the two modifiers and makes each one modify a clause" },
+                { "id": "adjective-l4-r1-e6", "en": "The book is extremely very long.", "vi": "Cuốn sách dài kinh khủng.", "note": "This is not natural English; use extremely long or very long" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l4-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l4-ex1", "en": "The soup was rather bland, so she added some salt.", "vi": "Món súp khá nhạt, nên cô ấy thêm chút muối.", "note": "rather means a little more than average" },
+            { "id": "adjective-l4-ex2", "en": "His English is considerably better than mine.", "vi": "Tiếng Anh của anh ấy tốt hơn của tôi đáng kể.", "note": "a formal intensifier for comparatives" },
+            { "id": "adjective-l4-ex3", "en": "It was slightly colder than yesterday, but not much.", "vi": "Hôm nay lạnh hơn hôm qua một chút, nhưng không nhiều.", "note": "slightly plus a comparative" },
+            { "id": "adjective-l4-ex4", "en": "The instructions were exceedingly clear.", "vi": "Hướng dẫn rõ ràng đến mức khó tin.", "note": "exceedingly is formal and stronger than very" },
+            { "id": "adjective-l4-ex5", "en": "The room is absolutely empty, not even a chair.", "vi": "Căn phòng hoàn toàn trống, không cả một chiếc ghế.", "note": "empty is non-gradable but takes absolute modifiers" }
+          ]
+        },
+        {
+          "id": "adjective-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l4-ex1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "intermediate",
+              "prompt": "This is a very unique opportunity and you should take it.",
+              "instruction": "Rewrite the sentence naturally.",
+              "items": [
+                { "id": "w1", "text": "very unique", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["This is a unique opportunity and you should take it."] },
+              "explanation": "unique is non-gradable: a thing is unique or it is not, so very unique is not natural. Just drop the modifier, or use an absolute one such as absolutely unique if you need emphasis.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-ex2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "intermediate",
+              "prompt": "The film was extremely very long and we left early.",
+              "instruction": "Rewrite the sentence naturally.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The film was extremely long and we left early."] },
+              "explanation": "Two intensifiers cannot sit directly in front of one adjective. Keep the stronger one, extremely long, or separate them so that each modifies a different part: The film was extremely long, and we were very tired afterwards.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "beginner",
+              "prompt": "The exam was ___ (slight / difficult), not extremely hard.",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "intensifier", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["slightly"] },
+              "explanation": "Slightly is the natural way to say a little, and the contrast with extremely hard in the second half confirms the weak end of the scale. Slight on its own would not fit the blank, which needs the modifier.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-ex4",
+              "kind": "multiSelect",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "advanced",
+              "prompt": "Which adjectives are non-gradable and cannot normally take very?",
+              "instruction": "Select all the correct options.",
+              "items": [
+                { "id": "a", "text": "perfect", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "important", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "dead", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "married", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a", "c", "d"] },
+              "explanation": "perfect, dead and married describe states that are either true or false, so they take absolute modifiers such as absolutely perfect instead of very. important is fully gradable: a very important meeting is completely normal.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-ex5",
+              "kind": "sentenceCompletion",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "advanced",
+              "prompt": "Complete with a suitable modifier: The house was ___ cold, so we closed all the windows.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "h1", "text": "degree modifier", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["absolutely", "extremely", "terribly", "really"] },
+              "explanation": "The consequence clause shows the temperature is at an extreme, so a strong modifier is needed. Absolutely cold, extremely cold and terribly cold all work here, while slightly cold and a bit cold contradict the reaction.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l4-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l4-d1",
+              "audio": { "kind": "speech", "text": "The instructions were absolutely useless, so we asked for help." },
+              "hint": "absolute modifier before useless",
+              "translation": "Hướng dẫn vô dụng một cách tuyệt đối nên chúng tôi phải đi hỏi.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l4-d2",
+              "audio": { "kind": "speech", "text": "This restaurant is quite good, and the prices are reasonable." },
+              "hint": "moderating modifier",
+              "translation": "Nhà hàng này khá ngon và giá cả hợp lý.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l4-d3",
+              "audio": { "kind": "speech", "text": "The noise in the flat was slightly worse than usual." },
+              "hint": "weak modifier before a comparative",
+              "translation": "Tiếng ồn trong căn hộ tệ hơn bình thường một chút.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l4-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l4-q1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "advanced",
+              "prompt": "She is very married and has three children.",
+              "instruction": "Rewrite the sentence naturally.",
+              "items": [
+                { "id": "w1", "text": "very married", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is happily married and has three children."] },
+              "explanation": "married is non-gradable, so you cannot be more married than married. Add an adverb to say what you actually mean, here happily married, which is the natural fix rather than simply deleting the modifier.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-q2",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "intermediate",
+              "prompt": "Which modifier pair is in the strongest to weakest order?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "absolutely, extremely, very, quite, slightly", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "slightly, quite, very, extremely, absolutely", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "very, absolutely, quite, extremely, slightly", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "quite, very, absolutely, slightly, extremely", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The English scale runs from the absolute maximum down to the slight: absolutely cold, extremely cold, very cold, quite cold, slightly cold. Two modifiers from the same band, such as slightly quite cold, are also not natural.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-q3",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "intermediate",
+              "prompt": "Extremely very good is natural English.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. Stacking two intensifiers directly in front of one adjective is not natural, so extremely very good fails. Extremely, very good actually is fine, because there the second very has a clause to modify.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l4-q4",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-degree-modifiers",
+              "difficulty": "advanced",
+              "prompt": "The evidence was ___ (remark) clear to everybody in the room.",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "adverb form", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["remarkably"] },
+              "explanation": "Some modifiers only exist as adverbs, and remark is one of them: remarkably, exceedingly, notably, particularly. There is no remarkly, so the adverb form is required before the adjective clear.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "The scale is absolutely, extremely, very, quite, rather, slightly, a bit.",
+            "Do not stack two modifiers directly before one adjective.",
+            "Non-gradable adjectives such as perfect, dead, married and unique do not take very.",
+            "Some modifiers exist only as adverbs: remarkably, exceedingly, notably."
+          ],
+          "nextLessonID": "adjective-prepositional-patterns"
+        }
+      ]
+    },
+    {
+      "id": "adjective-prepositional-patterns",
+      "title": "Adjectives with Prepositions",
+      "summary": "Fixed pairings such as good at, full of and responsible for.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l5-theory",
+          "type": "theory",
+          "heading": "Adjectives with Prepositions",
+          "body": "A large group of English adjectives always takes a fixed preposition, and the pairing is decided by the adjective, not by the meaning of the sentence. The group of at covers good at, bad at, an expert at, hopeless at, quick at and slow at, as in She is quick at maths. The group of in covers interested in, good in, skilled in, involved in, successful in, as in He was involved in the project. Of covers afraid of, aware of, capable of, full of, jealous of, proud of, suspicious of, tired of. For covers famous for, known for, responsible for, sorry for, suitable for. With covers angry with, bored with, busy with, familiar with, happy with, pleased with. On covers keen on, depend on, insist on. From covers different from, far from, free from. To covers similar to, superior to, inferior to, addicted to, committed to, devoted to. Several of these verbs and adjectives have two prepositions with a difference in meaning. be responsible for means being the person who must do something, while responsible to means answering to a person. proud of means pleased about a possession or achievement, while proud to do means pleased to have the chance. A few adjectives change preposition with a change of meaning: bored with a person, bored of a thing, tired of a routine, tired with a person. When you are unsure, the most efficient method is to store the pair as one unit, exactly as you store a phrasal verb, and to learn a small number of adjectives with a high frequency of use: good at, interested in, different from, similar to, full of, famous for, ready for.",
+          "rules": [
+            {
+              "title": "The adjective fixes the preposition",
+              "statement": "Each adjective has one standard preposition. You cannot choose it freely, and there is usually no logical reason for the choice.",
+              "formula": "good at, interested in, full of, famous for, similar to",
+              "examples": [
+                { "id": "adjective-l5-r1-e1", "en": "She is very good at languages and interested in history.", "vi": "Cô ấy rất giỏi ngoại ngữ và quan tâm đến lịch sử.", "note": "good at and interested in, two different prepositions for two similar meanings" },
+                { "id": "adjective-l5-r1-e2", "en": "The room was full of books and the bag was full of rice.", "vi": "Căn phòng đầy sách và cái túi đầy gạo.", "note": "full of works for both things and spaces" }
+              ]
+            },
+            {
+              "title": "Two prepositions, two meanings",
+              "statement": "A few adjectives take two prepositions and change meaning between them: responsible for and responsible to, proud of and proud to, bored with and bored of.",
+              "formula": "responsible for the task / responsible to the manager",
+              "examples": [
+                { "id": "adjective-l5-r1-e3", "en": "She is responsible for the project and responsible to the director.", "vi": "Cô ấy phụ trách dự án và chịu trách nhiệm với giám đốc.", "note": "for the thing, to the person" },
+                { "id": "adjective-l5-r1-e4", "en": "He is proud of his team and proud to work with them.", "vi": "Anh ấy tự hào về đội của mình và tự hào khi được làm việc cùng họ.", "note": "proud of a possession, proud to do something" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l5-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l5-ex1", "en": "This answer is different from the one in the book.", "vi": "Câu trả lời này khác với câu trong sách.", "note": "different from" },
+            { "id": "adjective-l5-ex2", "en": "The two designs are similar to each other.", "vi": "Hai thiết kế này giống nhau.", "note": "similar to" },
+            { "id": "adjective-l5-ex3", "en": "Hue is famous for its ancient citadel.", "vi": "Huế nổi tiếng vì thành cổ cổ xa của mình.", "note": "famous for a quality or thing" },
+            { "id": "adjective-l5-ex4", "en": "We are keen on learning new skills this year.", "vi": "Chúng tôi hào hứng học kỹ năng mới trong năm nay.", "note": "keen on" },
+            { "id": "adjective-l5-ex5", "en": "He is angry with his brother and angry about the broken vase.", "vi": "Anh ấy tức giận với anh trai và giận về cái bình vỡ.", "note": "angry with a person, angry about a thing" }
+          ]
+        },
+        {
+          "id": "adjective-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l5-ex1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "beginner",
+              "prompt": "She is very good in mathematics and speaks two languages.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "good in mathematics", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is very good at mathematics and speaks two languages."] },
+              "explanation": "The adjective is good, and good at is the fixed pairing for skill. Good in exists but is rare and sounds marked to most speakers, so at is the safe choice.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-ex2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "intermediate",
+              "prompt": "My new phone is different of my old one in many ways.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "different of", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["My new phone is different from my old one in many ways."] },
+              "explanation": "different takes from: different from, far from. The preposition is chosen by the adjective, not by any logic about the sentence, which is why it has to be learned as a fixed unit.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-ex3",
+              "kind": "matching",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "intermediate",
+              "prompt": "Match each adjective to its fixed preposition.",
+              "instruction": "Drag each adjective onto the right preposition.",
+              "items": [
+                { "id": "m1", "text": "full", "isCorrect": true, "matchKey": "of" },
+                { "id": "m2", "text": "keen", "isCorrect": true, "matchKey": "on" },
+                { "id": "m3", "text": "proud", "isCorrect": true, "matchKey": "of" },
+                { "id": "m4", "text": "similar", "isCorrect": true, "matchKey": "to" },
+                { "id": "m5", "text": "famous", "isCorrect": true, "matchKey": "for" },
+                { "id": "m6", "text": "capable", "isCorrect": true, "matchKey": "of" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "of", "m2": "on", "m3": "of", "m4": "to", "m5": "for", "m6": "of" } },
+              "explanation": "full of, keen on, proud of, similar to, famous for and capable of are the standard pairings. The most frequent learner error is to reach for one preposition for all of them, such as full in or keen of, which is why these are worth storing as single units.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-ex4",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "advanced",
+              "prompt": "The manager is responsible to the project and the team to the deadline.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The manager is responsible for the project and the team to the deadline."] },
+              "explanation": "responsible for names the task, and responsible to names the person. The original swapped them, and the result is the double mistake that this exercise is built to expose.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-ex5",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "intermediate",
+              "prompt": "I am not afraid ___ flying, but I am nervous about the first landing.",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "at / of / from", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["of"] },
+              "explanation": "afraid of is the fixed pairing, and nervous about follows the same pattern of adjective plus preposition plus noun. Afraid at and nervous of the landing would both be wrong.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l5-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l5-d1",
+              "audio": { "kind": "speech", "text": "She is responsible for the training of new staff." },
+              "hint": "adjective plus fixed preposition",
+              "translation": "Cô ấy phụ trách đào tạo nhân viên mới.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l5-d2",
+              "audio": { "kind": "speech", "text": "His answer was completely different from mine." },
+              "hint": "different from",
+              "translation": "Câu trả lời của anh ấy hoàn toàn khác với của tôi.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l5-d3",
+              "audio": { "kind": "speech", "text": "We were disappointed by the result, but not surprised at all." },
+              "hint": "ed and ing adjectives with different prepositions",
+              "translation": "Chúng tôi thất vọng về kết quả nhưng hoàn toàn không ngạc nhiên.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l5-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l5-q1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "intermediate",
+              "prompt": "He is very familiar to that kind of music, but she is not familiar with it.",
+              "instruction": "Rewrite the sentence consistently.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He is very familiar with that kind of music, but she is not familiar with it."] },
+              "explanation": "Familiarity is described with with or of, not to: familiar with, familiar of. Both halves of the sentence have to use with for the point to be made.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-q2",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The box is full with old books.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "The box is full of old books.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "The box is full in old books.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The box is full from old books.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "full of is the standard pattern for both containers and people: full of books, full of energy, full of hope. Full with appears only in a few fixed expressions such as full with regret.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-q3",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "advanced",
+              "prompt": "She is proud for her son and grateful for the help.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "proud for", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is proud of her son and grateful for the help."] },
+              "explanation": "proud takes of: proud of her son, proud of the result, proud to be here. For belongs with grateful, which is why the original sentence mixed the two pairings and had to be separated.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l5-q4",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-prepositional-patterns",
+              "difficulty": "advanced",
+              "prompt": "There is usually a logical reason why an adjective takes one preposition rather than another.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. The pairings are historical and have to be learned, like vocabulary. Similar to and different from look like opposites but do not share a preposition, which shows the choice is not logical.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "The adjective chooses the preposition: good at, interested in, full of, similar to, famous for.",
+            "Two prepositions can mean two things: responsible for the task, responsible to the manager.",
+            "Store the pair as one unit, exactly like a phrasal verb, instead of guessing from meaning.",
+            "Highest-value items to memorise are good at, interested in, different from, full of and ready for."
+          ],
+          "nextLessonID": "adjective-advanced-usage"
+        }
+      ]
+    },
+    {
+      "id": "adjective-advanced-usage",
+      "title": "Adjectives in Advanced Use",
+      "summary": "Adjectives that change meaning with position, and idiomatic colours and shapes.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "adjective-l6-theory",
+          "type": "theory",
+          "heading": "Adjectives in Advanced Use",
+          "body": "A few very common adjectives change their meaning when you move them. The pair most worth knowing is the opposite of the one you would guess. An adjective meaning angry, commonly bastard, changes with the position: He is a bastard son means he is the son of an unmarried mother, while He is a son of a bastard means he is a cruel or unpleasant man. Similar pairs exist with elder and older, the adjective proud and the adverb proudly, and with the words little, small and big when they are used idiomatically: a little money means some money, but money is little means the amount is small. Big has a second meaning of important or popular in big business and big news. Similar idiomatic shifts appear with colour and shape words. Black can mean illegal money, as in black money, and can mean death in the black market of the phrase. White means honest and clean, as in whitewashing the walls, but a white lie is a lie. Red means danger or warning, as in red alert, but out of the red means no longer in debt. The verb-like adjective neat in American English means clean and tidy, which is not the same as the neat idea of a solution. A particularly important pattern for advanced writing is the cumulative construction with a series of these adjectives: The room was dark, dusty, and utterly lifeless. Each adjective adds a new piece of information rather than repeating the same one, and the list is closed with a comma and and before the final item. Finally, remember that a strong adjective is not always a long one: big, bad and hot are shorter than enormous, terrible and scorching, and in speech the short forms are far more common.",
+          "rules": [
+            {
+              "title": "Position can change the meaning",
+              "statement": "Some adjectives have a different sense before the noun and after the verb, so the position carries part of the meaning.",
+              "formula": "He is a bastard son (son of an unmarried mother) / He is a son of a bastard (unpleasant man)",
+              "examples": [
+                { "id": "adjective-l6-r1-e1", "en": "A little effort every day is better than none at all.", "vi": "Một chút nỗ lực mỗi ngày tốt hơn là không nỗ lực gì.", "note": "a little before the noun means some; a little after a verb means a small amount" },
+                { "id": "adjective-l6-r1-e2", "en": "He is a little cold, but the water is cold.", "vi": "Anh ấy hơi lạnh, nhưng nước thì lạnh thật.", "note": "the same word, two senses depending on position" }
+              ]
+            },
+            {
+              "title": "Idiomatic colours and short strong adjectives",
+              "statement": "Colour words carry idiomatic meanings in fixed phrases, and the strongest short adjectives such as big, bad and hot are more natural in speech than their long forms.",
+              "formula": "black money, white lie, out of the red; big news, bad weather",
+              "examples": [
+                { "id": "adjective-l6-r1-e3", "en": "The company made a profit and is out of the red.", "vi": "Công ty đã lãi và không còn thâm lỗ nữa.", "note": "red in this idiom means debt" },
+                { "id": "adjective-l6-r1-e4", "en": "The weather was bad, so we stayed at home and watched TV.", "vi": "Thời tiết tệ nên chúng tôi ở nhà xem truyền hình.", "note": "bad is stronger and shorter than terrible" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adjective-l6-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "adjective-l6-ex1", "en": "The report is big news for the whole industry.", "vi": "Báo cáo này là tin lớn cho toàn ngành.", "note": "big means important here, not large" },
+            { "id": "adjective-l6-ex2", "en": "The kitchen was small, but the living room was large.", "vi": "Nhà bếp nhỏ, nhưng phòng khách lớn.", "note": "two size adjectives on opposite ends of the scale" },
+            { "id": "adjective-l6-ex3", "en": "He is a small business owner, but a big fan of football.", "vi": "Anh ấy là chủ doanh nghiệp nhỏ, nhưng là người hâm mộc bóng đá lớn.", "note": "small as modest, big as enthusiastic" },
+            { "id": "adjective-l6-ex4", "en": "The flat was dark, dusty and completely lifeless.", "vi": "Căn hộ tối, bụi bặm và hoàn toàn vô sinh.", "note": "a cumulative list of three different qualities" },
+            { "id": "adjective-l6-ex5", "en": "He told a white lie to keep the peace.", "vi": "Anh ấy đã nói một lời nói dối trắng trơn để giữ hòa khí.", "note": "white means a small, harmless untruth" }
+          ]
+        },
+        {
+          "id": "adjective-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "adjective-l6-ex1",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "He told a white lie, and his boss was very black about it.",
+              "instruction": "Rewrite the sentence using the idiomatic meanings correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He told a white lie, and his boss was furious about it."] },
+              "explanation": "white lie is the correct idiom, but black does not mean angry. Black carries meanings such as illegal, as in black money, or in the phrase in the black meaning financially solvent. Use furious for the anger.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-ex2",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "In The news of the accident was big, big means which of these?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "large in physical size", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "important", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "angry", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "expensive", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "In big news and big business, big means important, prominent or popular, not physically large. A physical measurement would be expressed differently, as in the accident was big in terms of damage.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-ex3",
+              "kind": "rearrangeWords",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "Put the words in order to make a natural sentence.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "The", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "room", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "was", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "dark", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "dusty", "isCorrect": null, "matchKey": null },
+                { "id": "t6", "text": "and", "isCorrect": null, "matchKey": null },
+                { "id": "t7", "text": "lifeless", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["The", "room", "was", "dark", "dusty", "and", "lifeless"]] },
+              "explanation": "The adjectives follow the linking verb was as a cumulative list, each adding a new piece of information, and the list is closed with and before the final item. No commas are used with a simple list of this kind unless the items are long.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-ex4",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "intermediate",
+              "prompt": "The stronger adjectives in English are always the longer ones, so enormous is better than big.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. The short forms are the strong everyday ones: big, bad, hot, cold, great. Very big, not very enormous, is the natural phrase, and enormous is a deliberate exaggeration rather than a simple upgrade.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-ex5",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "The company has been in the red for two years and sells white goods.",
+              "instruction": "Rewrite the sentence so each adjective phrase is idiomatic.",
+              "items": [
+                { "id": "w1", "text": "white goods", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The company has been in the red for two years and sells white goods such as fridges and washing machines."] },
+              "explanation": "in the red is the correct idiom for being in debt, and white goods is a real technical term for large household appliances. Without an example, white goods is easy to misread, so the fixed phrase is best taught with its meaning attached.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "adjective-l6-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "adjective-l6-d1",
+              "audio": { "kind": "speech", "text": "The election result was big news across the country." },
+              "hint": "big as important",
+              "translation": "Kết quả bầu cử là tin lớn trên cả nước.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l6-d2",
+              "audio": { "kind": "speech", "text": "A little practice every day makes a real difference." },
+              "hint": "a little as some",
+              "translation": "Một chút luyện tập mỗi ngày tạo nên sự khác biệt thật sự.",
+              "xp": 15
+            },
+            {
+              "id": "adjective-l6-d3",
+              "audio": { "kind": "speech", "text": "The office was cramped, noisy and badly lit." },
+              "hint": "three cumulative adjectives",
+              "translation": "Văn phòng chật, ồn ào và thiếu ánh sáng.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "adjective-l6-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "adjective-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "Which sentence uses the adjectives idiomatically?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The company is in the black and has made a profit.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "The company is in the red and has made a profit.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "The company is in the black and has lost money.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The company is in the white and has made a profit.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "In the black means financially solvent, so it matches made a profit. In the red means in debt, and in the white is not an idiom, although out of the red is the common way of saying a company has recovered.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "She is a very little child, and the room is very little too.",
+              "instruction": "Rewrite the second clause so the meaning is natural.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She is a very little child, and the room is very small too."] },
+              "explanation": "Before a noun, little means small in age or size, so a very little child is correct. After the verb, little means a small amount, so the room is very little would mean the room has a small amount of something rather than being small. Use small for the size of a space.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-q3",
+              "kind": "trueFalse",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "intermediate",
+              "prompt": "A cumulative list of adjectives, such as dark, dusty and lifeless, is closed with and before the last item.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. In a list of three or more adjectives each one adds new information, and English closes the list with a comma and and: cold, wet and windy. Two adjectives need no conjunction: cold and wet.",
+              "xp": 10
+            },
+            {
+              "id": "adjective-l6-q4",
+              "kind": "fillInTheBlank",
+              "topicID": "adjective",
+              "lessonID": "adjective-advanced-usage",
+              "difficulty": "advanced",
+              "prompt": "The word little changes meaning: ___ money means a small amount, and money is little means the amount is small.",
+              "instruction": "Write the first word of the sentence in the blank.",
+              "items": [
+                { "id": "h1", "text": "one word", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["A"] },
+              "explanation": "The two positions carry different senses: A little money means some money, but the money is little means the amount of money is small. Position alone decides which meaning applies.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "adjective-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "Position can change an adjective's meaning: a little money and the money is little.",
+            "Idiomatic colours carry fixed meanings: black money, white lie, in the red, in the black.",
+            "A cumulative list of three or more adjectives closes with and: dark, dusty and lifeless.",
+            "Short strong adjectives are the natural everyday choice: very big, not very enormous."
+          ]
+        }
+      ]
+    }
+  ]
+}

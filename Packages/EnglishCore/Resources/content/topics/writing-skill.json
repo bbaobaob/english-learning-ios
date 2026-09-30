@@ -210,7 +210,13 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["Each", "student", "needs", "a", "dictionary"]
+                "values": [
+                  "Each",
+                  "student",
+                  "needs",
+                  "a",
+                  "dictionary"
+                ]
               },
               "explanation": "The order is determiner, noun, verb, determiner, noun: Each student needs a dictionary. Two determiner-noun pairs are involved, and in English the determiner always precedes its noun. The verb 'needs' takes -s because 'each student' is singular, and the article 'a' appears because a dictionary is a countable singular noun in its first mention. Learners who write word-for-word from Vietnamese often place the number or the classifier after the noun; checking determiner-noun pairs in order catches that immediately.",
               "xp": 10
@@ -316,8 +322,7 @@
             "A time word in the sentence fixes the tense for the whole clause, including verbs after a conjunction.",
             "Article test, in order: is it countable and singular, has it been mentioned before, and can the listener already identify it?",
             "Check the subject in front of every verb. He, she, it, each, every and singular nouns take -s; I, you, we, they and plurals do not.",
-            "Learn verb plus preposition as fixed pairs: interested in, worried about, good at, depend on, consist of.",
-            "Fix your most frequent error family first. One habit removed is worth more than five styles attempted."
+            "Learn verb plus preposition as fixed pairs: interested in, worried about, good at, depend on, consist of."
           ],
           "nextLessonID": "writing-skill-intermediate"
         }
@@ -508,7 +513,10 @@
               "instruction": "Write the adjective that completes the sentence. Add the right prefix or suffix.",
               "answer": {
                 "type": "text",
-                "values": ["helpful", "unhelpful"]
+                "values": [
+                  "helpful",
+                  "unhelpful"
+                ]
               },
               "explanation": "Two suffixes turn the noun help into adjectives: -ful gives 'helpful', meaning it does assist, and the negative prefix un- gives 'unhelpful'. Both fit the blank grammatically, so the context decides: 'to nobody' describes a result that assisted no one, which is 'unhelpful'. The general method is to identify the part of speech the blank needs first (here, after 'were' and before 'to nobody', so an adjective), then choose the affix. Getting the part of speech right does most of the work; the affix is the last step.",
               "xp": 10
@@ -545,7 +553,13 @@
               "items": [
                 {
                   "id": "w1",
-                  "text": "The scheme",
+                  "text": "The",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "w1b",
+                  "text": "scheme",
                   "isCorrect": null,
                   "matchKey": null
                 },
@@ -576,7 +590,14 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["The", "scheme", "is expensive,", "but", "it", "works."]
+                "values": [
+                  "The",
+                  "scheme",
+                  "is expensive,",
+                  "but",
+                  "it",
+                  "works."
+                ]
               },
               "explanation": "A concession belongs at the end of an English sentence when it carries the real point. Here the expense is the expected objection and 'it works' is the verdict, so the sentence closes on the verdict. Putting 'but it works' first would produce a sentence that sounds like a complaint ending on a concession, which reverses the emphasis entirely. A useful general rule: put the information you want remembered in the final clause, because that is what the reader keeps.",
               "xp": 10
@@ -664,8 +685,7 @@
             "One paragraph is one idea. Write a topic sentence, and apply the one-sentence test before you move on.",
             "Put the information you want remembered in the final clause; that is what the reader keeps.",
             "Hedging keeps a proposal actionable. A cautious sentence should still tell the reader what to do.",
-            "Register is a choice about how much you assume and how much distance you want, and it should stay consistent within one piece.",
-            "'Not X but Y' needs two parts of the same kind, usually nouns. 'Rather than' is the safe alternative when you are unsure."
+            "Register is a choice about how much you assume and how much distance you want, and it should stay consistent within one piece."
           ],
           "nextLessonID": "writing-skill-advanced"
         }
@@ -828,7 +848,9 @@
               "instruction": "Write the noun. Watch the required suffixes: one for the person, one for the thing.",
               "answer": {
                 "type": "text",
-                "values": ["decision"]
+                "values": [
+                  "decision"
+                ]
               },
               "explanation": "The blank is after an article and before 'on the proposal', so it is a noun, and the sentence needs the thing rather than the act or the person. Decide becomes decision with the suffix -ion; the person would be a decision-maker, and the act is deciding or a decision-making process. The reliable method is to write the part of speech into the gap first and only then choose the suffix — most word-formation errors are part-of-speech errors wearing a suffix error's clothes. As a check, the noun should still make sense if you replace 'a' with 'the'.",
               "xp": 10
@@ -909,7 +931,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The topic sentences are the plan, and writing them first fixes the order of your ideas before the clock runs out on an introduction you will rewrite. Option (b) is a proofreading activity and belongs in the final fifth of the time, when there is something to proofread. Option (c) is the classic trap: introductions written first tend to promise a structure you do not end up following. After the topic sentences, spend two minutes on vocabulary — list six or seven words you know you can use correctly, and stay inside that set for the rest of the task.",
               "xp": 10
@@ -996,8 +1020,7 @@
             "Drafting and proofreading are different modes. Do not check commas while you are still deciding what the paragraph says.",
             "In a timed task, write the topic sentences first, list the vocabulary you will use, and keep the final fifth of the time for one proofreading pass.",
             "An evidence paragraph needs four moves: a topic, a concession, a synthesis of what the evidence shows, and a qualification. The synthesis is the one most often missing.",
-            "Stay inside the vocabulary you control. A precise mid-range word beats an ambitious word used in the wrong sense.",
-            "Store collocations, not rare words. 'Draw a conclusion', 'meet a deadline', 'pose a risk' is where native fluency is heard."
+            "Stay inside the vocabulary you control. A precise mid-range word beats an ambitious word used in the wrong sense."
           ]
         }
       ]

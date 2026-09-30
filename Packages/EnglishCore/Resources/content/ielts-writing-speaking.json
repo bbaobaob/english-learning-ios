@@ -53,7 +53,7 @@
             { "id": "c", "text": "Paraphrase what is being compared and name the period covered.", "isCorrect": null, "matchKey": "3" },
             { "id": "d", "text": "Report the most important feature in full detail, with the exact figures it contains.", "isCorrect": null, "matchKey": "4" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "1", "b": "2", "c": "3", "d": "4" } },
+          "answer": { "type": "pairs", "values": { "1": "a", "2": "b", "3": "c", "4": "d" } },
           "explanation": "The order is fixed and the examiner expects it: paragraph 1 introduces, paragraph 2 gives the overview, and paragraphs 3 and 4 develop the body, most important feature first. Body figures that the overview never mentions read as a list of numbers rather than a summary, which caps Task Achievement and Coherence.",
           "xp": 15
         },
@@ -164,13 +164,13 @@
           "prompt": "Match each observation from a candidate answer to the group of people it actually describes.",
           "instruction": "Use each group once.",
           "items": [
-            { "id": "a", "text": "This group had the shortest time on all activities except cooking, where it had the longest.", "isCorrect": null, "matchKey": "Students" },
+            { "id": "a", "text": "This group spent more time exercising than on cooking and commuting combined.", "isCorrect": null, "matchKey": "Students" },
             { "id": "b", "text": "This group had the highest figure for commuting and the lowest for exercise.", "isCorrect": null, "matchKey": "Full-time workers" },
-            { "id": "c", "text": "This group recorded identical figures for cooking and commuting.", "isCorrect": null, "matchKey": "Part-time workers" },
-            { "id": "d", "text": "This group's total time on the three activities was the lowest of the four groups.", "isCorrect": null, "matchKey": "Retirees" }
+            { "id": "c", "text": "This group recorded the same figure for exercise as for commuting.", "isCorrect": null, "matchKey": "Part-time workers" },
+            { "id": "d", "text": "This group had the highest figure for cooking and, at the same time, the lowest for commuting.", "isCorrect": null, "matchKey": "Retirees" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "Students", "b": "Full-time workers", "c": "Part-time workers", "d": "Retirees" } },
-          "explanation": "Checking each sentence against the figures before you write it catches the mismatches that look fluent but are wrong: retirees have the longest cooking time (8 hours) and the shortest commute (1 hour), and part-time workers sit at 6 hours for both cooking and commuting. Unverified comparison sentences are the most common source of Task Achievement penalties.",
+          "answer": { "type": "pairs", "values": { "Students": "a", "Full-time workers": "b", "Part-time workers": "c", "Retirees": "d" } },
+          "explanation": "Checking each sentence against the figures before you write it catches the mismatches that look fluent but are wrong: students exercise for 6 hours, which is more than cooking and commuting together (3 plus 2), part-time workers sit at 4 hours for both exercise and commuting, and retirees have the longest cooking time (8 hours) with the shortest commute (1 hour). Unverified comparison sentences are the most common source of Task Achievement penalties.",
           "xp": 15
         },
         {
@@ -309,7 +309,7 @@
             { "id": "c", "text": "The finished items are checked and packed for shops and restaurants.", "isCorrect": null, "matchKey": "8" },
             { "id": "d", "text": "Sand, soda ash and limestone are added to the crushed glass in fixed amounts.", "isCorrect": null, "matchKey": "5" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "6", "b": "3", "c": "8", "d": "5" } },
+          "answer": { "type": "pairs", "values": { "6": "a", "3": "b", "8": "c", "5": "d" } },
           "explanation": "Numbering the stages before you write stops the most common process error, which is reporting two stages in the wrong order. It also lets the body paragraphs share stages instead of duplicating them, which keeps the word count honest.",
           "xp": 15
         },
@@ -419,8 +419,8 @@
           "difficulty": "intermediate",
           "prompt": "Housing spending in 2022 was more higher than food spending and it was almost as three times as large as the figure for leisure.",
           "instruction": "Rewrite the sentence with correct comparatives.",
-          "answer": { "type": "text", "values": ["Housing spending in 2022 was higher than food spending, and the figure for housing was almost three times as large as that for leisure."] },
-          "explanation": "'More higher' mixes the two comparative forms; once you use 'higher' the 'more' must go. 'Almost as three times' needs the frame 'almost three times as large as'. Fixing comparative frames matters here because band 6 and band 7 answers are often separated by nothing more than comparison accuracy.",
+          "answer": { "type": "text", "values": ["Housing spending in 2022 was higher than food spending, and the figure for housing was more than three times as large as that for transport."] },
+          "explanation": "'More higher' mixes the two comparative forms; once you use 'higher' the 'more' must go. 'Almost as three times' needs the frame 'more than three times as large as', and the figures have to fit it: 245 pounds against 72 pounds is just over three times, so the word 'almost' would be wrong. Fixing comparative frames matters because band 6 and band 7 answers are often separated by nothing more than comparison accuracy.",
           "xp": 15
         },
         {
@@ -437,7 +437,7 @@
             { "id": "c", "text": "This category kept exactly the same share of the budget in 2015 and in 2022.", "isCorrect": null, "matchKey": "Food" },
             { "id": "d", "text": "Spending on this category rose by 18 pounds a week, the smallest rise of the three.", "isCorrect": null, "matchKey": "Transport" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "Leisure", "b": "Housing", "c": "Food", "d": "Transport" } },
+          "answer": { "type": "pairs", "values": { "Leisure": "a", "Housing": "b", "Food": "c", "Transport": "d" } },
           "explanation": "Verifying each comparison against the figures before writing catches the errors that sound fluent but are wrong: food held at 22 per cent, and transport rose by 12 pounds (60 to 72) while utilities rose by 18. Every inaccurate comparison is a Task Achievement penalty, however well written the sentence around it is.",
           "xp": 15
         },
@@ -504,7 +504,7 @@
             { "id": "b", "text": "Introduce yourself, say why you are writing, and put the proposal in your own words.", "isCorrect": null, "matchKey": "1" },
             { "id": "c", "text": "Report the five facilities and their figures for both years, and name the most and least used.", "isCorrect": null, "matchKey": "2" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "3", "b": "1", "c": "2" } },
+          "answer": { "type": "pairs", "values": { "3": "a", "1": "b", "2": "c" } },
           "explanation": "A Task 1 letter is planned from the bullet points, in the order they are given, and that order is also the order that lets you write the fastest. Covering two bullets in one paragraph and leaving the third to the last minute is the single most common reason GT Task 1 answers lose Task Response marks.",
           "xp": 15
         },
@@ -607,7 +607,7 @@
             { "id": "b", "text": "Restate the position in new words and add a final thought about what follows from it.", "isCorrect": null, "matchKey": "Conclusion" },
             { "id": "c", "text": "Paraphrase both sides of the issue and state which side the writer supports.", "isCorrect": null, "matchKey": "Introduction" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "Body", "b": "Conclusion", "c": "Introduction" } },
+          "answer": { "type": "pairs", "values": { "Body": "a", "Conclusion": "b", "Introduction": "c" } },
           "explanation": "The label 'agree or disagree' decides the plan. Because you are asked for your own view, the other side gets a short, clearly subordinate treatment in the body, not a full symmetric paragraph; giving both sides equal space and never choosing is the classic reason Task Response stalls at band 5.",
           "xp": 15
         },
@@ -749,10 +749,10 @@
             { "id": "a", "text": "Do you prefer spending your free time indoors or outdoors?", "isCorrect": null, "matchKey": "Part 1" },
             { "id": "b", "text": "Describe a place you would like to visit, saying where it is and what you would do there.", "isCorrect": null, "matchKey": "Part 2" },
             { "id": "c", "text": "Do you think people today are better at making friends than in the past?", "isCorrect": null, "matchKey": "Part 3" },
-            { "id": "d", "text": "Why do you think people find it harder to form close friendships nowadays?", "isCorrect": null, "matchKey": "Part 3" }
+            { "id": "d", "text": "Can you tell me your full name, and which city are you from?", "isCorrect": null, "matchKey": "Before the test" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "Part 1", "b": "Part 2", "c": "Part 3", "d": "Part 3" } },
-          "explanation": "A short question about your own habits is Part 1. A cue card with bullet points is Part 2. C and D are abstract and general, which is the definition of Part 3; Part 3 always follows the Part 2 topic but lifts it to a societal level, and it is where most candidates lose marks by slipping back into personal anecdote.",
+          "answer": { "type": "pairs", "values": { "Part 1": "a", "Part 2": "b", "Part 3": "c", "Before the test": "d" } },
+          "explanation": "A short question about your own habits is Part 1. A cue card with bullet points is Part 2. C is abstract and general, which is the definition of Part 3; Part 3 always follows the Part 2 topic but lifts it to a societal level, and it is where most candidates lose marks by slipping back into personal anecdote. D is asked before the scored parts begin, and it is also the moment to check that the examiner has written your name down correctly.",
           "xp": 15
         },
         {
@@ -1076,7 +1076,7 @@
             { "id": "c", "text": "what the event was", "isCorrect": null, "matchKey": "1" },
             { "id": "d", "text": "how you felt about being in such a large crowd", "isCorrect": null, "matchKey": "4" }
           ],
-          "answer": { "type": "pairs", "values": { "a": "3", "b": "2", "c": "1", "d": "4" } },
+          "answer": { "type": "pairs", "values": { "3": "a", "2": "b", "1": "c", "4": "d" } },
           "explanation": "Answering in the printed order is fastest and safest, because the examiner is following a checklist and will notice a missing bullet. Note the trap in the second bullet: 'where' and 'when' need two pieces of information in one short section, and candidates routinely spend their whole preparation on the place and run out of time for the feeling.",
           "xp": 15
         },

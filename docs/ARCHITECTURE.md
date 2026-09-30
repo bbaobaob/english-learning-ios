@@ -161,7 +161,7 @@ worse than `none`.
 | `fillInTheBlank` | optional hint items | `text` |
 | `typeTheAnswer` | — | `text` |
 | `dictation` | — | `text` (single canonical sentence) |
-| `matching` | options, `matchKey` groups | `pairs` → `values: {"a":"x","b":"y"}` |
+| `matching` | two shapes — see **Matching answers** below | `pairs` |
 | `rearrangeWords` | all tokens, `isCorrect: null` | `order` → `values: ["in","the","morning"]` |
 | `sentenceCompletion` | optional word-bank items | `text` |
 | `errorCorrection` | the faulty sentence in `prompt` | `text` |
@@ -174,6 +174,30 @@ worse than `none`.
 `listening`, `typeTheAnswer`, `trueFalse`, `matching`, `rearrangeWords`, `sentenceCompletion`,
 `errorCorrection`, `wordFormation`, `translation`, `reading`, `listeningComprehension`,
 `grammarCorrection`.
+
+### Matching answers (`Answer.pairs`)
+
+`Answer.pairs` has **two** legal shapes. Both are used by shipped content; the engine and the UI
+must handle both, and both require an exact key-set match.
+
+1. **Item-based** — `items` is non-empty and every item carries a `matchKey`. The answer maps
+   **`item.id` → `item.matchKey`**, and every `matchKey` group is used exactly once.
+   ```jsonc
+   "items": [ { "id": "v1", "text": "verb", "matchKey": "g1" },
+              { "id": "n1", "text": "noun", "matchKey": "g2" } ],
+   "answer": { "type": "pairs", "values": { "v1": "g1", "n1": "g2" } }
+   ```
+   The learner's `UserResponse.pairs` uses the **same orientation**: `{ itemID: matchKey }`.
+2. **Domain-keyed** — `items` is absent or empty. The keys are domain labels (map positions `A`–`D`,
+   question numbers `1`–`4`, paragraph letters, option letters) and the values are the correct
+   labels. Compared literally, key for key.
+   ```jsonc
+   "answer": { "type": "pairs", "values": { "A": "1", "B": "2", "C": "3", "D": "4" } }
+   ```
+
+Do not attempt to infer an orientation from the JSON — branch on whether `items` carries
+`matchKey` values. Grading is `isCorrect` only when the maps are equal (a partial match is wrong);
+the UI needs to know *which* pairs were wrong, so surface them rather than returning a bare false.
 
 ### DictationItem
 

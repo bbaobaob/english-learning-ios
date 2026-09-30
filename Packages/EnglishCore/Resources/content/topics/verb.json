@@ -1,0 +1,1481 @@
+{
+  "id": "verb",
+  "title": "Verbs",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Verbs show actions and states. Learn the main verb and the helping verbs, the five forms every verb has, and how transitivity and phrasal verbs change meaning.",
+  "icon": "figure.walk.motion",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "verb-main-and-helping",
+      "title": "Main Verbs and Helping Verbs",
+      "summary": "The verb that carries the meaning, and the verbs that support it.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l1-theory",
+          "type": "theory",
+          "heading": "Main Verbs and Helping Verbs",
+          "body": "Every English clause needs a verb, and that verb is either a main verb or a helping verb. A main verb carries the meaning of the clause: eat, go, think, become. It is the part that tells you what happens. A helping verb, also called an auxiliary, adds grammar rather than meaning. It comes before the main verb and helps with tense, questions, negatives and the passive. The verb be is the most important helping verb, with five forms: am, is, are, was, were. The others are have, with forms have, has, had, and do, with forms do, does, did. Two common tenses cannot be built without them: the present perfect uses have or has plus the past participle, as in She has finished, and the present continuous of be uses am, is or are plus the -ing form, as in They are waiting. Modal verbs such as can, must, should, may and will are a third group: they have only one form, they never take an -s, and they are always followed by the bare infinitive, so we say She can swim and not She cans swim. A modal is never followed by to or by an -ing form.",
+          "rules": [
+            {
+              "title": "Main versus helping verb",
+              "statement": "A main verb carries the meaning of the clause. A helping verb supports the main verb and carries tense, negation or the passive.",
+              "formula": "They have finished the report.",
+              "examples": [
+                { "id": "verb-l1-r1-e1", "en": "The children were playing in the garden.", "vi": "Lũ trẻ đang chơi trong vườn.", "note": "were is a helping verb, playing is the main verb" },
+                { "id": "verb-l1-r1-e2", "en": "She has already eaten her lunch.", "vi": "Cô ấy đã ăn trưa rồi.", "note": "has is a helping verb, eaten is the main verb" }
+              ]
+            },
+            {
+              "title": "The three helping verb groups",
+              "statement": "English has be with am, is, are, was, were; have with have, has, had; and do with do, does, did. Modal verbs are a separate group with one form each.",
+              "formula": "be + -ing, have + past participle, do + base for questions and negatives",
+              "examples": [
+                { "id": "verb-l1-r1-e3", "en": "I do not know the answer, and he does not either.", "vi": "Tôi không biết câu trả lời, và anh ấy cũng không biết.", "note": "do and does build the negative without a main verb change" },
+                { "id": "verb-l1-r1-e4", "en": "You must submit the form before Friday.", "vi": "Bạn phải nộp đơn trước thứ Sáu.", "note": "must is a modal and takes the bare form submit, not to submit" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l1-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l1-ex1", "en": "We have visited that museum three times.", "vi": "Chúng tôi đã ghé bảo tàng đó ba lần.", "note": "have + past participle" },
+            { "id": "verb-l1-ex2", "en": "He is studying for the final exam.", "vi": "Anh ấy đang ôn thi cuối kỳ.", "note": "is + -ing" },
+            { "id": "verb-l1-ex3", "en": "The children do not like cold weather.", "vi": "Lũ trẻ không thích thời tiết lạnh.", "note": "do + not + base form" },
+            { "id": "verb-l1-ex4", "en": "She cannot drive in heavy rain.", "vi": "Cô ấy không thể lái xe khi trời mưa lớn.", "note": "modal + bare infinitive" },
+            { "id": "verb-l1-ex5", "en": "They were late because the train had been delayed.", "vi": "Họ đến muộn vì tàu bị hoãn.", "note": "two helping verbs in one sentence" }
+          ]
+        },
+        {
+          "id": "verb-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l1-ex1",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "beginner",
+              "prompt": "In She has written two emails, which word is the main verb?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "has", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "written", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "emails", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "two", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "written carries the meaning, so it is the main verb. has is only there to build the present perfect, emails is a noun and two is a number, so none of them can be the main verb.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-ex2",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "beginner",
+              "prompt": "She cans swim very well.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She can swim very well."] },
+              "explanation": "Modal verbs never take an -s, even when the subject is she or he, so cans is wrong. The correct negative would be She cannot swim, with cannot as one word.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "beginner",
+              "prompt": "They ___ (not / work) on Sunday.",
+              "instruction": "Write the correct negative form of the verb.",
+              "items": [
+                { "id": "h1", "text": "present simple", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["do not work", "don't work"] },
+              "explanation": "In the present simple the negative uses do not with the bare infinitive, not works. A learner who forgets this often writes do not works, which is wrong because the -s already appears in the question form.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-ex4",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "intermediate",
+              "prompt": "You should to arrive before nine o'clock.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["You should arrive before nine o'clock."] },
+              "explanation": "A modal verb is followed by the bare infinitive, so should to arrive is wrong. This also applies to can, must, may, might, will, would and shall, which never take to.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l1-d1",
+              "audio": { "kind": "speech", "text": "The students have already finished their homework." },
+              "hint": "present perfect with have",
+              "translation": "Các học sinh đã làm xong bài tập rồi.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l1-d2",
+              "audio": { "kind": "speech", "text": "She does not work at the hospital any more." },
+              "hint": "negative present simple with does not",
+              "translation": "Cô ấy không còn làm việc ở bệnh viện nữa.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l1-d3",
+              "audio": { "kind": "speech", "text": "They must wear a uniform at the office." },
+              "hint": "modal plus bare infinitive",
+              "translation": "Họ phải mặc đồng phục ở văn phòng.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l1-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "beginner",
+              "prompt": "Which word is a helping verb in The baby is sleeping?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "baby", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "is", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "sleeping", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "the", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "is is a form of be used to build the present continuous, so it supports the main verb sleeping. baby is a noun and the is a determiner.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-q2",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "beginner",
+              "prompt": "The verb have is used as a helping verb in the present perfect.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. have, has and had combine with the past participle to build the perfect tenses: She has gone, They had left. When have is the main verb on its own, as in They have a car, it does not need a participle.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-q3",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "intermediate",
+              "prompt": "He must to pay the fee before the end of the month.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He must pay the fee before the end of the month."] },
+              "explanation": "Modals take the bare infinitive without to, so must to pay is wrong. Remember that the -s of he and she also disappears after a modal: He must pay, not He musts pay.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l1-q4",
+              "kind": "sentenceCompletion",
+              "topicID": "verb",
+              "lessonID": "verb-main-and-helping",
+              "difficulty": "intermediate",
+              "prompt": "Complete with the right form of be: The weather ___ (be) lovely today.",
+              "instruction": "Write one word.",
+              "items": [],
+              "answer": { "type": "text", "values": ["is"] },
+              "explanation": "In the present simple the form of be depends on the subject, and the singular noun the weather takes is. Saying The weather are is a common error because weather looks plural but is singular.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "A main verb carries meaning; a helping verb carries tense, negation or the passive.",
+            "The three helping verb groups are be, have and do; modals are a fourth, separate group.",
+            "Present perfect needs have or has plus the past participle: She has finished.",
+            "Modal verbs never take -s and never take to: He can swim, not He cans to swim."
+          ],
+          "nextLessonID": "verb-five-forms"
+        }
+      ]
+    },
+    {
+      "id": "verb-five-forms",
+      "title": "The Five Forms of a Verb",
+      "summary": "base, third person, -ing, past and past participle.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l2-theory",
+          "type": "theory",
+          "heading": "The Five Forms of a Verb",
+          "body": "Most English verbs have five forms, and each tense or structure selects a different one. The base form, also called the infinitive, is the form in the dictionary: work. The third person singular form adds -s, or -es after s, sh, ch, x and z, and takes y to i: he works, she watches, he studies. The -ing form is used for continuous tenses and for the gerund: I am working, Working hard pays off. The past form ends in -ed for regular verbs and is irregular for many others: worked, ate, wrote. The past participle ends in -ed for regular verbs and matches the past form for most irregular verbs, but the two split for a group of about ten verbs: go, went, gone; write, wrote, written; take, took, taken; see, saw, seen; do, did, done; eat, ate, eaten; speak, spoke, spoken; break, broke, broken; choose, chose, chosen; forget, forgot, forgotten. The past form is the one used for finished time: yesterday, last week, in 2020. The past participle is the one used after have, has, had and after passive be. Learners who use went where gone is needed, as in She has went, have made this same mistake for generations.",
+          "rules": [
+            {
+              "title": "The five forms",
+              "statement": "Base, third person singular, -ing, past and past participle. Regular verbs take -s, -ing, -ed and -ed; irregular verbs must be learned.",
+              "formula": "work / works / working / worked / worked",
+              "examples": [
+                { "id": "verb-l2-r1-e1", "en": "She works on the project every day.", "vi": "Cô ấy làm việc với dự án mỗi ngày.", "note": "third person singular, base plus -s" },
+                { "id": "verb-l2-r1-e2", "en": "They are working late tonight.", "vi": "Tối nay họ làm việc muộn.", "note": "be plus the -ing form" },
+                { "id": "verb-l2-r1-e3", "en": "He has worked here for five years.", "vi": "Anh ấy đã làm việc ở đây năm năm rồi.", "note": "past participle after has" }
+              ]
+            },
+            {
+              "title": "Past and past participle are not always the same",
+              "statement": "For regular verbs the two forms are identical. For about ten common irregular verbs they are different, and the participle is the one after have or has.",
+              "formula": "go -> went -> gone; write -> wrote -> written",
+              "examples": [
+                { "id": "verb-l2-r2-e1", "en": "She went to Hanoi last summer and has gone to Hue this month.", "vi": "Cô ấy đã đi Hà Nội mùa hè năm ngoái và đã đi Huế trong tháng này.", "note": "went is past, gone is past participle" },
+                { "id": "verb-l2-r2-e2", "en": "He wrote three emails and has written another one.", "vi": "Anh ấy đã viết ba email và đã viết thêm một cái nữa.", "note": "wrote and written are both irregular" }
+              ]
+            },
+            {
+              "title": "Spelling of the -s and -ed endings",
+              "statement": "Add -es after s, sh, ch, x and z, and after a consonant plus y. For -ed, double a final consonant after a short stressed vowel, and change y to i.",
+              "formula": "watch -> watches; stop -> stopped; study -> studied; carry -> carried",
+              "examples": [
+                { "id": "verb-l2-r2-e3", "en": "The coach watches every match carefully.", "vi": "Huấn luyện viên theo dõi từng trận đấu cẩn thận.", "note": "-es after -ch" },
+                { "id": "verb-l2-r2-e4", "en": "They carried heavy boxes up the stairs.", "vi": "Họ mang những chiếc hộp nặng lên cầu thang.", "note": "-ied after a consonant plus y" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l2-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l2-ex1", "en": "He teaches maths and his sister teaches physics.", "vi": "Anh ấy dạy toán và chị anh ấy dạy vật lý.", "note": "third person singular with -es" },
+            { "id": "verb-l2-ex2", "en": "They ate at a small restaurant and have eaten there again.", "vi": "Họ đã ăn ở một nhà hàng nhỏ và lại ăn ở đó nữa.", "note": "ate is past, eaten is participle" },
+            { "id": "verb-l2-ex3", "en": "I saw him yesterday but I have not seen him today.", "vi": "Tôi đã gặp anh ấy hôm qua nhưng hôm nay tôi chưa gặp.", "note": "saw for finished time, seen after have" },
+            { "id": "verb-l2-ex4", "en": "The baby slept well and has slept well every night.", "vi": "Em bé ngủ tốt và đã ngủ tốt mỗi đêm.", "note": "regular verb, past and participle are both slept" },
+            { "id": "verb-l2-ex5", "en": "Do you know when the results will come out?", "vi": "Bạn có biết khi nào kết quả sẽ công bố không?", "note": "do for the question plus a future with will" }
+          ]
+        },
+        {
+          "id": "verb-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l2-ex1",
+              "kind": "matching",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "intermediate",
+              "prompt": "Match each verb to its past participle form.",
+              "instruction": "Drag each verb onto the correct participle.",
+              "items": [
+                { "id": "m1", "text": "go", "isCorrect": true, "matchKey": "gone" },
+                { "id": "m2", "text": "write", "isCorrect": true, "matchKey": "written" },
+                { "id": "m3", "text": "take", "isCorrect": true, "matchKey": "taken" },
+                { "id": "m4", "text": "see", "isCorrect": true, "matchKey": "seen" },
+                { "id": "m5", "text": "choose", "isCorrect": true, "matchKey": "chosen" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "gone", "m2": "written", "m3": "taken", "m4": "seen", "m5": "chosen" } },
+              "explanation": "These five verbs are the ones where the past and the past participle differ, and only the participle is used after have, has or had: She has gone, He has written. Their past forms are went, wrote, took, saw and chose, so matching them to the past instead is the trap.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-ex2",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "intermediate",
+              "prompt": "She has went to Da Nang three times so far.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She has gone to Da Nang three times so far."] },
+              "explanation": "After has you need the past participle, not the past form, and go takes gone. Went is the past form and is only correct with a finished time expression, as in She went to Da Nang last year.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "beginner",
+              "prompt": "My brother ___ (study) medicine at Hanoi Medical University.",
+              "instruction": "Write the third person singular form.",
+              "items": [
+                { "id": "h1", "text": "studies / studys", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["studies"] },
+              "explanation": "study ends in a consonant plus y, so the y becomes i and -es is added: studies. Adding a plain -s would give studys, which English does not use.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-ex4",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "intermediate",
+              "prompt": "They have saw the film twice, and they liked it very much.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["They have seen the film twice, and they liked it very much."] },
+              "explanation": "have needs the participle seen, not the past form saw. liked is already correct, because after an auxiliary like have the second verb reverts to its past form.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-ex5",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "beginner",
+              "prompt": "We ___ (plan) the trip for months, but we ___ (not / book) anything yet.",
+              "instruction": "Write the correct form of each verb.",
+              "items": [],
+              "answer": { "type": "text", "values": ["have planned, have not booked", "have planned, haven't booked"] },
+              "explanation": "For months and yet both point to unfinished time, so both verbs take have plus the participle: planned and booked. The participle of book is doubled: booked.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l2-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l2-d1",
+              "audio": { "kind": "speech", "text": "She has finished her report and submitted it to the manager." },
+              "hint": "two past participles after has",
+              "translation": "Cô ấy đã hoàn thành báo cáo và gửi nó cho quản lý.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l2-d2",
+              "audio": { "kind": "speech", "text": "He wrote three pages last night and is writing more today." },
+              "hint": "irregular past plus a present participle",
+              "translation": "Đêm qua anh ấy đã viết ba trang và hôm nay đang viết thêm.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l2-d3",
+              "audio": { "kind": "speech", "text": "The children watched a film and then played outside." },
+              "hint": "third person singular plus a past form",
+              "translation": "Lũ trẻ đã xem phim rồi ra ngoài chơi.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l2-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "She has broke her phone.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "She has broken her phone.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "She is break her phone.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "She have broke her phone.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "has plus the participle broken is correct. She is break would need the -ing form breaking, and has agrees with she, not have. Broke is the past form and belongs with a finished time.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "beginner",
+              "prompt": "The shop ___ (open) at eight every morning.",
+              "instruction": "Write the third person singular form.",
+              "items": [
+                { "id": "h1", "text": "opens / open", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["opens"] },
+              "explanation": "The singular subject the shop takes the -s ending in the present simple: opens. This is the same rule that gives watches and teaches.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-q3",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "beginner",
+              "prompt": "The past and the past participle of stop are both stopped.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. stop is regular, so the two forms are identical, and the final consonant doubles because the stress falls on the last syllable. Only irregular verbs like go and write split the two forms.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l2-q4",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-five-forms",
+              "difficulty": "advanced",
+              "prompt": "He has chose the wrong route and we have lost two hours.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He has chosen the wrong route and we have lost two hours."] },
+              "explanation": "choose is one of the irregular verbs that change their participle, and the participle is chosen: he has chosen. lost is already the right form because lose is irregular in the same way.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "Every verb has five forms: base, third person singular, -ing, past and past participle.",
+            "Regular verbs use -ed for both past forms; about ten irregular verbs have two different forms.",
+            "Finished time takes the past form; have, has and had take the participle.",
+            "After do, does or did the main verb returns to its base form: She does not work."
+          ],
+          "nextLessonID": "verb-transitive-and-intransitive"
+        }
+      ]
+    },
+    {
+      "id": "verb-transitive-and-intransitive",
+      "title": "Transitive and Intransitive Verbs",
+      "summary": "When a verb needs an object and when it does not.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l3-theory",
+          "type": "theory",
+          "heading": "Transitive and Intransitive Verbs",
+          "body": "A transitive verb needs an object, a noun or pronoun that receives the action. Give the book to me is transitive because the book receives the action. An intransitive verb does not take an object and the sentence is complete without one. She laughed is intransitive. Some verbs are both, and they change meaning depending on whether an object follows. He ran for an hour is intransitive and describes activity, while he ran a marathon is transitive and describes a result. Water boils is intransitive, but we boil water is transitive. The distinction matters because a missing object is one of the most common errors in learner writing, especially with verbs that look complete but are not. Many verbs that appear intransitive are actually transitive in some senses: laugh, sleep, run, swim, sit, lie, look and arrive. Notice also that the preposition is not an object: She arrived at the station is intransitive, because at the station is a prepositional phrase, not a noun that receives the action. Some verbs are naturally intransitive because they name actions of the body or states: fall, rise, lie, sit, die, occur and happen take no object in standard English. Saying I slept a bed is not English; you sleep, or you sleep in a bed.",
+          "rules": [
+            {
+              "title": "Transitive verbs need an object",
+              "statement": "A transitive verb passes the action to a noun or pronoun: verb + object. Without the object the sentence is incomplete.",
+              "formula": "She wrote a letter. / They invited him.",
+              "examples": [
+                { "id": "verb-l3-r1-e1", "en": "The committee rejected our proposal without reading it.", "vi": "Ủy ban đã bác từ chối đề xuất của chúng tôi mà không đọc.", "note": "proposal is the object of rejected" },
+                { "id": "verb-l3-r1-e2", "en": "Please hand me the keys when you come home.", "vi": "Xin hãy đưa tôi chìa khóa khi bạn về nhà.", "note": "a double object construction, verb plus two nouns" }
+              ]
+            },
+            {
+              "title": "Intransitive verbs are complete on their own",
+              "statement": "An intransitive verb does not receive an object. A prepositional phrase after it is still not an object.",
+              "formula": "The baby slept. / The train arrived at six.",
+              "examples": [
+                { "id": "verb-l3-r2-e1", "en": "The children laughed loudly at the funny clown.", "vi": "Lũ trẻ cười lớn về chú hề vui nhộn.", "note": "laughed is intransitive, at the funny clown is a prepositional phrase" },
+                { "id": "verb-l3-r2-e2", "en": "Everyone arrived early and nobody complained.", "vi": "Mọi người đến sớm và không ai phàn nàn.", "note": "arrived and complained are both intransitive" }
+              ]
+            },
+            {
+              "title": "Some verbs work both ways",
+              "statement": "Many verbs can be transitive with one meaning and intransitive with another, and the object tells you which meaning applies.",
+              "formula": "He ran for an hour (intransitive) / He ran a marathon (transitive)",
+              "examples": [
+                { "id": "verb-l3-r2-e3", "en": "The team played well, and then it played a second match.", "vi": "Đội đã chơi tốt, rồi họ đá trận thứ hai.", "note": "no object means the sense of taking part; with an object it means competing in it" },
+                { "id": "verb-l3-r2-e4", "en": "He changed his mind and he changed the schedule.", "vi": "Anh ấy đã đổi ý và đã đổi lịch.", "note": "a change in opinion and a change in a thing" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l3-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l3-ex1", "en": "The storm damaged three houses in the old quarter.", "vi": "Cơn bão đã làm hỏng ba ngôi nhà ở khu phố cổ.", "note": "damaged is transitive" },
+            { "id": "verb-l3-ex2", "en": "Nobody knows what will happen next year.", "vi": "Không ai biết chuyện gì sẽ xảy ra năm sau.", "note": "happened is intransitive" },
+            { "id": "verb-l3-ex3", "en": "She sings beautifully, and she sings folk songs at the festival.", "vi": "Cô ấy hát hay, và cô ấy hát dân ca ở lễ hội.", "note": "one verb, two senses" },
+            { "id": "verb-l3-ex4", "en": "The baby slept for three hours without waking up.", "vi": "Em bé ngủ ba tiếng mà không tỉnh dậy.", "note": "slept is intransitive; sleep a bed is not English" },
+            { "id": "verb-l3-ex5", "en": "The manager explained the plan twice to the whole team.", "vi": "Quản lý đã giải thích kế hoạch hai lần cho cả nhóm.", "note": "explained takes an object, and can also take a second one" }
+          ]
+        },
+        {
+          "id": "verb-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l3-ex1",
+              "kind": "matching",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "intermediate",
+              "prompt": "Match each verb to its use: Transitive (needs an object) or Intransitive (no object).",
+              "instruction": "Drag each verb onto the right label.",
+              "items": [
+                { "id": "m1", "text": "reject", "isCorrect": true, "matchKey": "transitive" },
+                { "id": "m2", "text": "arrive", "isCorrect": true, "matchKey": "intransitive" },
+                { "id": "m3", "text": "mention", "isCorrect": true, "matchKey": "transitive" },
+                { "id": "m4", "text": "disappear", "isCorrect": true, "matchKey": "intransitive" },
+                { "id": "m5", "text": "celebrate", "isCorrect": true, "matchKey": "transitive" },
+                { "id": "m6", "text": "hesitate", "isCorrect": true, "matchKey": "intransitive" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "transitive", "m2": "intransitive", "m3": "transitive", "m4": "intransitive", "m5": "transitive", "m6": "intransitive" } },
+              "explanation": "reject, mention and celebrate all ask the question what or whom, so they need an object: reject the offer, mention the price, celebrate the result. arrive, disappear and hesitate are complete on their own, and any phrase that follows is a prepositional phrase rather than an object.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-ex2",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "intermediate",
+              "prompt": "She slept a very comfortable bed last night.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She slept in a very comfortable bed last night."] },
+              "explanation": "sleep is intransitive in this sense, so it cannot take a bed as an object. English puts the place in a prepositional phrase: she slept in a bed, or she slept on a sofa.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-ex3",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The whole class discussed about the new schedule.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "The whole class discussed the new schedule.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "The whole class discussed.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The whole class discusses the new schedule yesterday.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "discuss is transitive and is not normally followed by about, so discussed about is wrong. It also needs an object, and yesterday needs the past form discussed, not discusses.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-ex4",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "advanced",
+              "prompt": "The team has improved their performance a lot this season.",
+              "instruction": "Rewrite the sentence so the verb and object agree.",
+              "items": [
+                { "id": "w1", "text": "improved their performance", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The team has improved its performance a lot this season."] },
+              "explanation": "In British and formal English a team takes the singular pronoun its, because the verb is has. Teamwork and other activity words follow the same pattern: The class has done its best.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l3-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l3-d1",
+              "audio": { "kind": "speech", "text": "The teacher explained the grammar rule clearly to her students." },
+              "hint": "transitive verb with a double object",
+              "translation": "Giáo viên đã giải thích quy tắc ngữ pháp rõ ràng cho học sinh của mình.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l3-d2",
+              "audio": { "kind": "speech", "text": "The bus arrived late and all the passengers waited." },
+              "hint": "two intransitive verbs",
+              "translation": "Xe buýt đến muộn và tất cả hành khách đều phải chờ.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l3-d3",
+              "audio": { "kind": "speech", "text": "She never mentions her problems to her parents." },
+              "hint": "transitive verb followed by a prepositional phrase",
+              "translation": "Cô ấy không bao giờ nói về vấn đề của mình với bố mẹ.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l3-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l3-q1",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "intermediate",
+              "prompt": "He arrived to the airport at six in the morning.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He arrived at the airport at six in the morning."] },
+              "explanation": "arrive takes the preposition at, not to: arrive at a small place, arrive in a city. Using to is a habit borrowed from other languages and is the standard error this exercise targets.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-q2",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "beginner",
+              "prompt": "Which verb is intransitive?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "carry", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "buy", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "vanish", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "describe", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["c"] },
+              "explanation": "vanish needs no object, so the magic disappeared is correct. carry, buy and describe all ask what, so they are transitive: carry a bag, buy rice, describe the view.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-q3",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "intermediate",
+              "prompt": "In The children laughed at the clown, at the clown is the object of laughed.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. laughed is intransitive, and at the clown is a prepositional phrase, not an object. A real object stands directly after the verb with no preposition, as in She wrote a letter.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l3-q4",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-transitive-and-intransitive",
+              "difficulty": "advanced",
+              "prompt": "The government have announced a new policy on Monday morning.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "have announced", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The government has announced a new policy on Monday morning."] },
+              "explanation": "The government is treated as a single body, so in careful English it takes the singular has, not have. The rest of the sentence is already correct: announced is transitive, so a new policy is its object.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "A transitive verb needs an object: reject the offer, mention the price.",
+            "An intransitive verb is complete on its own, and a prepositional phrase is not an object.",
+            "Some verbs work both ways and change meaning: He ran for an hour, He ran a marathon.",
+            "Body and state verbs such as sleep, fall, die and arrive never take a direct object."
+          ],
+          "nextLessonID": "verb-phrasal-verbs"
+        }
+      ]
+    },
+    {
+      "id": "verb-phrasal-verbs",
+      "title": "Phrasal Verbs",
+      "summary": "Verb plus particle, and why the particle sometimes matters as much as the verb.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l4-theory",
+          "type": "theory",
+          "heading": "Phrasal Verbs",
+          "body": "A phrasal verb is a verb plus a particle, a short word such as up, out, off, in, on, over, away, back or through, and the pair behaves as one unit. Turn off the light, pick it up, find out, give up, look after, put on. The particle often carries an idiomatic meaning that is quite different from the two words alone. Look is about using your eyes, but look after means to take care of, and look up a word means to find it in a dictionary. Some phrasal verbs are separable, which means a noun object can sit between the verb and the particle: turn off the light, but turn the light off. A pronoun object, however, must always go in the middle: turn it off, never turn off it. With a separable verb and a noun object, position changes the emphasis, because the thing you put last carries the focus: I pushed the door and I pushed the door down are not the same. Some particles are adverbial rather than part of the verb, and then the two words are not a unit at all: He turned the page and he turned off the light belong to different patterns. Phrasal verbs are common in speech and informal writing, while formal English often prefers a single verb: find out becomes discover or determine, give up becomes abandon, put off becomes postpone. In dictionaries, phrasal verbs are written with a dot, as in look.after, or given in the entry of the main verb.",
+          "rules": [
+            {
+              "title": "Verb plus particle is one unit",
+              "statement": "A phrasal verb is a verb plus a particle with its own meaning. The pair is usually learned and stored together.",
+              "formula": "look after = take care of, find out = discover, put off = postpone",
+              "examples": [
+                { "id": "verb-l4-r1-e1", "en": "Could you look after my cat while I am away?", "vi": "Bạn có thể trông nom mèo của tôi khi tôi đi vắng không?", "note": "look after means take care of, not simply look" },
+                { "id": "verb-l4-r1-e2", "en": "I need to find out whether the office is open on Sunday.", "vi": "Tôi cần biết văn phòng có mở cửa vào Chủ nhật không.", "note": "find out is not the same as find" }
+              ]
+            },
+            {
+              "title": "Separable and inseparable objects",
+              "statement": "A noun object can go between the verb and the particle. A pronoun object, or any word group, must go in the middle.",
+              "formula": "turn off the light (separable) / turn it off (inseparable)",
+              "examples": [
+                { "id": "verb-l4-r1-e3", "en": "Please pick up your bag and put the boxes down.", "vi": "Xin hãy cầm túi lên và đặt các thùng xuống.", "note": "noun objects can be separated: pick your bag up" },
+                { "id": "verb-l4-r1-e4", "en": "Please pick it up and put them down.", "vi": "Xin hãy cầm nó lên và đặt chúng xuống.", "note": "pronouns must stay in the middle: pick it up, never pick up it" }
+              ]
+            },
+            {
+              "title": "Particles carry idiomatic meaning",
+              "statement": "up, out, off, through and away change the meaning of a verb, so the particle is as important as the verb itself.",
+              "formula": "give up = abandon, get through = finish, burn down = destroy completely",
+              "examples": [
+                { "id": "verb-l4-r1-e5", "en": "He gave up smoking three years ago.", "vi": "Anh ấy đã bỏ thuốc lá ba năm trước.", "note": "give up plus a -ing form, meaning abandon" },
+                { "id": "verb-l4-r1-e6", "en": "She got through the report before the deadline.", "vi": "Cô ấy đã hoàn thành báo cáo trước thời hạn.", "note": "get through means finish something difficult" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l4-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l4-ex1", "en": "Please switch off the lights when you leave the room.", "vi": "Xin hãy tắt đèn khi bạn rời khỏi phòng.", "note": "switch off is a phrasal verb with a noun object" },
+            { "id": "verb-l4-ex2", "en": "Our team worked through the whole list in an hour.", "vi": "Nhóm chúng tôi xử lý hết danh sách trong một tiếng.", "note": "work through means finish the whole of something" },
+            { "id": "verb-l4-ex3", "en": "She turned down the offer, so they hired someone else.", "vi": "Cô ấy đã từ chối lời mời, nên họ thuê người khác.", "note": "turn down an offer, not reject a person" },
+            { "id": "verb-l4-ex4", "en": "He ran out of milk and had to go to the shop.", "vi": "Anh ấy hết sữa và phải đi đến cửa hàng.", "note": "run out of means to have no more left" },
+            { "id": "verb-l4-ex5", "en": "The old tree fell down in the storm last night.", "vi": "Cây cũ đã đổ trong cơn bão đêm qua.", "note": "fell down has an idiomatic particle" }
+          ]
+        },
+        {
+          "id": "verb-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l4-ex1",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "Please turn off it before you leave.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["Please turn it off before you leave."] },
+              "explanation": "A pronoun object must go between the verb and the particle. Only a noun object can be separated, as in turn off the light, so turn off it is not possible in standard English.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-ex2",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "She gave up to smoke when she was twenty.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She gave up smoking when she was twenty."] },
+              "explanation": "The verb give up takes a gerund, not an infinitive: give up smoking, give up learning, give up arguing. Some other particles do take an infinitive, such as give in to doing nothing, so the particle decides the pattern.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-ex3",
+              "kind": "rearrangeWords",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "beginner",
+              "prompt": "Put the words in order to make a sentence.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "Please", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "turn", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "off", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "the", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "lights", "isCorrect": null, "matchKey": null },
+                { "id": "t6", "text": "when", "isCorrect": null, "matchKey": null },
+                { "id": "t7", "text": "you", "isCorrect": null, "matchKey": null },
+                { "id": "t8", "text": "leave", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["Please", "turn", "off", "the", "lights", "when", "you", "leave"]] },
+              "explanation": "The phrasal verb turn off comes first as a unit, then its noun object the lights, then the time clause when you leave. English puts the time clause at the end unless it refers to a time that has already passed.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-ex4",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "We ran out ___ milk, so we went to buy some.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "of", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "in", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "at", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "about", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "run out of is a complete phrasal pattern meaning to have no more of something left. We ran out of milk means the milk is finished, which is different from running out of time, where the of is left out.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-ex5",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "advanced",
+              "prompt": "I need to discuss about the problem with my manager tomorrow.",
+              "instruction": "Rewrite the sentence in a more natural way.",
+              "items": [],
+              "answer": { "type": "text", "values": ["I need to discuss the problem with my manager tomorrow."] },
+              "explanation": "discuss is transitive and is not followed by about, so the preposition is redundant. The object the problem sits directly after the verb, and with comes after the noun.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l4-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l4-d1",
+              "audio": { "kind": "speech", "text": "Could you please turn the lights off when you leave?" },
+              "hint": "separable phrasal verb with a noun object",
+              "translation": "Bạn có thể tắt đèn khi bạn rời đi không?",
+              "xp": 15
+            },
+            {
+              "id": "verb-l4-d2",
+              "audio": { "kind": "speech", "text": "She gave up her job to study in another country." },
+              "hint": "phrasal verb with a noun object",
+              "translation": "Cô ấy đã bỏ việc để đi học ở một nước khác.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l4-d3",
+              "audio": { "kind": "speech", "text": "I need to find out when the results come out." },
+              "hint": "two phrasal verbs in one sentence",
+              "translation": "Tôi cần biết khi nào kết quả công bố.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l4-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l4-q1",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "Look after the baby on you when I am at the office.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "Look after the baby on you", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["Look after the baby when I am at the office."] },
+              "explanation": "look after is a phrasal verb meaning take care of, and its object sits directly after the particle: look after the baby. The extra on you is wrong because the baby is the one being cared for, not the person doing the caring.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-q2",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "The police are looking ___ the man who stole the bike.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "after", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "for", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "up", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "into", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "look for someone means to try to find them, which is the same as look for a lost cat. look after means to take care of, look up means to check in a dictionary or raise, and look into means to investigate, so none of them fits.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-q3",
+              "kind": "rearrangeWords",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "Put the words in order to make a sentence.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "You", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "should", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "take", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "off", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "your", "isCorrect": null, "matchKey": null },
+                { "id": "t6", "text": "coat", "isCorrect": null, "matchKey": null },
+                { "id": "t7", "text": "now", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["You", "should", "take", "off", "your", "coat", "now"]] },
+              "explanation": "A modal is followed by the bare infinitive take, then the phrasal verb take off, then the noun object your coat. The place adverb now goes at the end, where adverbs of time and place normally sit.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l4-q4",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-phrasal-verbs",
+              "difficulty": "intermediate",
+              "prompt": "In a separable phrasal verb, a pronoun object can go between the verb and the particle: pick it up.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True, and this is exactly the rule: a pronoun must go in the middle, pick it up, and never pick up it. A noun object is the one that may be separated, as in pick the book up.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "A phrasal verb is a verb plus a particle, and the two work as one unit with an idiomatic meaning.",
+            "Noun objects can be separated: turn off the light. Pronoun objects cannot: turn it off.",
+            "Particles carry meaning: look after, find out, run out of, give up.",
+            "Formal English often prefers a single verb: postpone for put off, discover for find out."
+          ],
+          "nextLessonID": "verb-tense-and-agreement"
+        }
+      ]
+    },
+    {
+      "id": "verb-tense-and-agreement",
+      "title": "Verb Choices and Subject-Verb Agreement",
+      "summary": "Why the same verb changes shape with tense, and why the subject decides the form.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l5-theory",
+          "type": "theory",
+          "heading": "Verb Choices and Subject-Verb Agreement",
+          "body": "Choosing the right verb form is a matter of three questions: how much time is the sentence about, who the subject is, and whether the action is finished. For tense, a finished time such as yesterday, in 2019, last month or when I was a child requires the past form. Time that touches the present and has a result now uses the present perfect: I have lost my keys, so I cannot get in. An unfinished habit, a fact or a timetable uses the present simple. An action in progress now uses the present continuous, and a past action still going on uses the past continuous. For the verb form itself, the subject decides. The present simple adds -s in the third person singular, but the -s disappears after do, does and did, and after a modal: He works, but He does not work and He must work. A singular noun takes a singular verb even when it ends in a plural word: The news is, the list is, mathematics is. Collective nouns follow the sense: a team is a single group, but the team are the players. The word everyone and each takes a singular verb, as does nobody, somebody and something, while both, few, many and several take a plural. Some verbs are simply irregular and must be stored whole, with no pattern: go, gone, went; eat, eaten, ate; buy, bought, bought. In careful writing it is better to use one tense per paragraph than to shift between the present perfect and the past for no reason.",
+          "rules": [
+            {
+              "title": "Time decides the tense",
+              "statement": "Finished time takes the past. Present relevance takes the present perfect. Habits, facts and timetables take the present simple. Action in progress takes a continuous form.",
+              "formula": "yesterday -> past, for three years -> present perfect, every day -> present simple, now -> present continuous",
+              "examples": [
+                { "id": "verb-l5-r1-e1", "en": "I finished the report yesterday, and I have not submitted it yet.", "vi": "Tôi đã xong báo cáo hôm qua, và tôi vẫn chưa nộp.", "note": "finished for the finished time, have not submitted for the present situation" },
+                { "id": "verb-l5-r1-e2", "en": "The train leaves at seven and always leaves from platform three.", "vi": "Tàu khởi hành lúc bảy giờ và luôn khởi hành từ sân ba.", "note": "timetable facts use the present simple" }
+              ]
+            },
+            {
+              "title": "The subject decides the -s",
+              "statement": "The third person singular takes -s in the present simple, but the -s disappears after do, does, did and after every modal.",
+              "formula": "She works. She does not work. She must work.",
+              "examples": [
+                { "id": "verb-l5-r1-e3", "en": "He does not smoke, but his brother smokes every day.", "vi": "Anh ấy không hút thuốc, nhưng anh trai anh ấy hút mỗi ngày.", "note": "no -s after does, but -s with the plain third person subject" },
+                { "id": "verb-l5-r1-e4", "en": "The list is on the table and the keys are in my bag.", "vi": "Danh sách nằm trên bàn và chìa khóa trong túi tôi.", "note": "singular list with is, plural keys with are" }
+              ]
+            },
+            {
+              "title": "Indefinite pronouns and collective nouns",
+              "statement": "everyone, somebody, nobody, something and each take a singular verb; both, few and several take a plural verb. Collective nouns follow the sense.",
+              "formula": "Everyone is ready. Both are ready. The team is ready. The team are playing well.",
+              "examples": [
+                { "id": "verb-l5-r1-e5", "en": "Everyone was late, and nobody knew why.", "vi": "Ai cũng đến muộn, và không ai biết tại sao.", "note": "everyone and nobody are singular" },
+                { "id": "verb-l5-r1-e6", "en": "The committee has approved the plan after a long discussion.", "vi": "Ủy ban đã phê duyệt kế hoạch sau một cuộc thảo luận dài.", "note": "the committee as one body takes a singular verb" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l5-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l5-ex1", "en": "We have known each other for ten years.", "vi": "Chúng tôi quen nhau mười năm rồi.", "note": "present perfect with a length of time" },
+            { "id": "verb-l5-ex2", "en": "He was cooking when the phone rang.", "vi": "Anh ấy đang nấu ăn thì điện thoại reo.", "note": "past continuous interrupted by a past simple event" },
+            { "id": "verb-l5-ex3", "en": "Water boils at one hundred degrees at sea level.", "vi": "Nước sôi ở một trăm độ ở mực biển.", "note": "a fact, so the present simple" },
+            { "id": "verb-l5-ex4", "en": "Both of my parents are teachers in the same school.", "vi": "Cả bố và mẹ tôi đều là giáo viên ở cùng một trường.", "note": "both takes a plural verb" },
+            { "id": "verb-l5-ex5", "en": "The class is taking a field trip to the museum on Friday.", "vi": "Lớp đang đi tham quan bảo tàng vào thứ Sáu.", "note": "an arranged future, so the present continuous" }
+          ]
+        },
+        {
+          "id": "verb-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l5-ex1",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "beginner",
+              "prompt": "She does not goes to work by train every day.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She does not go to work by train every day."] },
+              "explanation": "After does the main verb returns to its base form, so does not goes is wrong. The -s already appears in does itself, and adding it twice is the classic error.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-ex2",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "intermediate",
+              "prompt": "Everyone in my class are very friendly to me.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["Everyone in my class is very friendly to me."] },
+              "explanation": "Everyone is grammatically singular, so it takes is, even though it means many people. The same applies to somebody, nobody, each and every.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "beginner",
+              "prompt": "He ___ (not / finish) his homework yesterday.",
+              "instruction": "Write the correct negative form.",
+              "items": [
+                { "id": "h1", "text": "past simple", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["did not finish", "didn't finish"] },
+              "explanation": "Yesterday is finished time, so the past is needed, and a negative past uses did not plus the base form. Writing did not finished adds a form that the structure does not allow.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-ex4",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "intermediate",
+              "prompt": "Choose the best sentence: I ___ in this city since 2019.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "live", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "lived", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "have lived", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "am living", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["c"] },
+              "explanation": "since 2019 marks a period of time that began in the past and is still true now, which needs the present perfect: have lived. Lived would imply the situation has ended, and am living suggests a temporary arrangement.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-ex5",
+              "kind": "multiSelect",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "advanced",
+              "prompt": "Which subjects take a singular verb?",
+              "instruction": "Select all the correct options.",
+              "items": [
+                { "id": "a", "text": "The news", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "Mathematics", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "The scissors", "isCorrect": true, "matchKey": null },
+                { "id": "d", "text": "These people", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a", "b", "c"] },
+              "explanation": "news, mathematics and scissors all look plural but are treated as singular in standard English: The news is, Mathematics is, These scissors are on the desk. Only These people is genuinely plural.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l5-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l5-d1",
+              "audio": { "kind": "speech", "text": "The meeting has already started, so please be quiet." },
+              "hint": "present perfect for a present result",
+              "translation": "Cuộc họp đã bắt đầu, vậy xin hãy yên lặng.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l5-d2",
+              "audio": { "kind": "speech", "text": "Neither of the two answers was correct." },
+              "hint": "neither takes a singular verb",
+              "translation": "Cả hai câu trả lời đều không đúng.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l5-d3",
+              "audio": { "kind": "speech", "text": "She does not eat meat, but she eats fish every week." },
+              "hint": "two present simple forms with one negative",
+              "translation": "Cô ấy không ăn thịt, nhưng cô ấy ăn cá mỗi tuần.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l5-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l5-q1",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "intermediate",
+              "prompt": "The informations on the website are out of date.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "informations", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The information on the website is out of date."] },
+              "explanation": "Two linked fixes. information is uncountable, so there is no -s, and because the singular word takes a singular verb, the sentence needs is. Writing informations are gives the verb a plural subject that does not exist.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-q2",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "beginner",
+              "prompt": "In a negative past sentence, the verb after did not keeps its -ed ending.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. After did not the verb returns to its base form: I did not go, She did not arrive. The tense lives in did, so the main verb loses its ending.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-q3",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct verb: The committee ___ divided over the proposal.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "is", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "are", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "have been", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "were being", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A committee acting as one body takes a singular verb: The committee is divided. In British English a committee acting as individuals can take are, but the default in careful writing is the singular.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l5-q4",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-tense-and-agreement",
+              "difficulty": "intermediate",
+              "prompt": "We ___ (know) each other since we were students.",
+              "instruction": "Write the correct verb form.",
+              "items": [
+                { "id": "h1", "text": "present perfect", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["have known"] },
+              "explanation": "Since we were students marks a period that is still true, so the present perfect is needed. The past form knew would suggest the friendship has ended.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Finished time takes the past; a period still continuing takes the present perfect.",
+            "The subject decides the -s, but the -s drops after do, does, did and after modals.",
+            "everyone, somebody and each take a singular verb; both, few and several take a plural.",
+            "Words like news, information, mathematics and scissors look plural but take a singular verb."
+          ],
+          "nextLessonID": "verb-advanced-patterns"
+        }
+      ]
+    },
+    {
+      "id": "verb-advanced-patterns",
+      "title": "Verbs in Fixed Patterns",
+      "summary": "Verbs that insist on a particular partner word.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "verb-l6-theory",
+          "type": "theory",
+          "heading": "Verbs in Fixed Patterns",
+          "body": "Many English verbs are not free. They have a fixed pattern, and the pattern is decided by the verb, not by meaning. Some verbs need a preposition and take nothing else: depend on, belong to, consist of, refer to. Some verbs take a preposition plus a gerund: insist on doing, apologize for doing, object to doing, succeed in doing. Some verbs take a preposition plus an infinitive with to: agree to do, plan to do, refuse to do, manage to do, and also the pattern offer, promise and threaten plus to do. Two of the most common learner errors come from crossing these patterns: the difference between apologize for being late and apologize to someone for being late, and the difference between insist on doing and insist that somebody does. A few verbs reverse the usual order: put off, take off, turn off and set up all mean postpone when the object is a meeting, but the word off or up is mandatory. Modal and structural verbs also have patterns. Used to describes a habit in the past and is followed by the bare infinitive: I used to work at night. Be used to describes being accustomed and is followed by a noun or a gerund: I am used to working at night. Notice also the reported pattern: suggest, recommend, insist and warn are followed by that plus a clause, and never by to: She suggested that we leave early.",
+          "rules": [
+            {
+              "title": "Preposition plus gerund, preposition plus infinitive",
+              "statement": "Many verbs fix their own pattern. Insist on, apologize for, object to and succeed in take a gerund; agree, plan, refuse, manage, offer, promise and threaten take a to-infinitive.",
+              "formula": "insist on doing / agree to do",
+              "examples": [
+                { "id": "verb-l6-r1-e1", "en": "He apologized for arriving late and insisted on explaining why.", "vi": "Anh ấy xin lỗi vì đến muộn và nhất quyết giải thích lý do.", "note": "apologize for doing and insist on doing" },
+                { "id": "verb-l6-r1-e2", "en": "She refused to sign the contract and agreed to meet us again.", "vi": "Cô ấy từ chối ký hợp đồng và đồng ý gặp lại chúng tôi.", "note": "refuse to do and agree to do, never refuse doing" }
+              ]
+            },
+            {
+              "title": "used to and be used to",
+              "statement": "Used to describes a habit in the past and takes the bare infinitive. Be used to describes being accustomed and takes a noun or a gerund.",
+              "formula": "I used to work at night. / I am used to working at night.",
+              "examples": [
+                { "id": "verb-l6-r1-e3", "en": "I used to play the guitar, but I am used to running now.", "vi": "Tôi từng chơi đàn guitar, nhưng giờ tôi quen chạy bộ rồi.", "note": "the past habit takes the bare form, the present habit takes a gerund" },
+                { "id": "verb-l6-r1-e4", "en": "He is used to getting up at five, so he is never tired.", "vi": "Anh ấy quen dậy lúc năm giờ, nên anh ấy không bao giờ mệt.", "note": "be used to doing, not be used to do" }
+              ]
+            },
+            {
+              "title": "Suggest, recommend and insist take a clause",
+              "statement": "These verbs are followed by that plus a subject and a verb, or by an -ing form. They are never followed by a to-infinitive with a subject of their own.",
+              "formula": "She suggested that we leave early. / She suggested leaving early.",
+              "examples": [
+                { "id": "verb-l6-r1-e5", "en": "The doctor recommended that he stop drinking coffee at night.", "vi": "Bác sĩ khuyên anh ấy nên ngừng uống cà phê vào ban đêm.", "note": "that plus a clause, with the base form stop" },
+                { "id": "verb-l6-r1-e6", "en": "She recommended taking a taxi because the trains had stopped.", "vi": "Cô ấy khuyên nên đi taxi vì tàu đã ngừng chạy.", "note": "recommend plus -ing, never recommend to take" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verb-l6-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "verb-l6-ex1", "en": "The two courses depend on the same reading list.", "vi": "Hai khóa học này phụ thuộc vào cùng một danh sách đọc.", "note": "depend on + noun" },
+            { "id": "verb-l6-ex2", "en": "She succeeded in passing the exam the first time.", "vi": "Cô ấy đã thành công vượt qua kỳ thi ngay lần đầu.", "note": "succeed in + gerund" },
+            { "id": "verb-l6-ex3", "en": "They threatened to call the police if the noise continued.", "vi": "Họ đe dọa sẽ gọi cảnh sát nếu tiếng ồn vẫn tiếp diễn.", "note": "threaten to do" },
+            { "id": "verb-l6-ex4", "en": "We used to cycle to school, and now we used to the bus.", "vi": "Trước đây chúng tôi đạp xe đến trường, còn giờ chúng tôi đã quen với xe buýt.", "note": "used to for the past habit, are used to for the present state" },
+            { "id": "verb-l6-ex5", "en": "He objected to being treated like a child.", "vi": "Anh ấy phản đối việc bị đối xử như trẻ con.", "note": "object to + gerund" }
+          ]
+        },
+        {
+          "id": "verb-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "verb-l6-ex1",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "He insisted to pay the bill even though we offered to help.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["He insisted on paying the bill even though we offered to help."] },
+              "explanation": "insist takes the preposition on plus a gerund: insist on doing. offered takes a to-infinitive, so the two verbs in one sentence need different patterns, which is exactly the trap here.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-ex2",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "I am used to get up early, but my sister is not used to it.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "used to get up", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["I am used to getting up early, but my sister is not used to it."] },
+              "explanation": "Be used to describes an accustomed state, so it needs a gerund: used to getting up. The bare infinitive belongs with used to for a habit in the past, as in I used to get up at six.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-ex3",
+              "kind": "errorCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "intermediate",
+              "prompt": "The manager apologized to the customer to the delay.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "apologized to the customer to the delay", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The manager apologized to the customer for the delay."] },
+              "explanation": "apologize to somebody is the person, and apologize for something is the reason. The two prepositions do different jobs, so this sentence needs to the customer and for the delay.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-ex4",
+              "kind": "rearrangeWords",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "intermediate",
+              "prompt": "Put the words in order to make a sentence.",
+              "instruction": "Tap the words in the correct order.",
+              "items": [
+                { "id": "t1", "text": "They", "isCorrect": null, "matchKey": null },
+                { "id": "t2", "text": "succeeded", "isCorrect": null, "matchKey": null },
+                { "id": "t3", "text": "in", "isCorrect": null, "matchKey": null },
+                { "id": "t4", "text": "finishing", "isCorrect": null, "matchKey": null },
+                { "id": "t5", "text": "the", "isCorrect": null, "matchKey": null },
+                { "id": "t6", "text": "project", "isCorrect": null, "matchKey": null },
+                { "id": "t7", "text": "on", "isCorrect": null, "matchKey": null },
+                { "id": "t8", "text": "time", "isCorrect": null, "matchKey": null }
+              ],
+              "answer": { "type": "order", "values": [["They", "succeeded", "in", "finishing", "the", "project", "on", "time"]] },
+              "explanation": "succeed takes the preposition in plus a gerund, so succeeded in finishing is the unit. The gerund then takes its own object, the project, and the time phrase on time closes the sentence.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-ex5",
+              "kind": "matching",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "Match each verb to the pattern it requires.",
+              "instruction": "Drag each verb onto the right pattern.",
+              "items": [
+                { "id": "m1", "text": "insist", "isCorrect": true, "matchKey": "on + gerund" },
+                { "id": "m2", "text": "agree", "isCorrect": true, "matchKey": "to + infinitive" },
+                { "id": "m3", "text": "succeed", "isCorrect": true, "matchKey": "in + gerund" },
+                { "id": "m4", "text": "threaten", "isCorrect": true, "matchKey": "to + infinitive" },
+                { "id": "m5", "text": "apologize", "isCorrect": true, "matchKey": "for + gerund" },
+                { "id": "m6", "text": "object", "isCorrect": true, "matchKey": "to + gerund" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "on + gerund", "m2": "to + infinitive", "m3": "in + gerund", "m4": "to + infinitive", "m5": "for + gerund", "m6": "to + gerund" } },
+              "explanation": "The pattern belongs to the verb, not to the meaning. insist needs on doing and object needs to doing, while agree and threaten both need to do. Mixing the two families, such as insist to do or object doing, is the standard error.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-ex6",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "She suggested to meet at eight.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "She suggested meeting at eight.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "She suggested meet at eight.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "She suggests to meet at eight.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "suggest never takes a to-infinitive. It takes a gerund, suggested meeting, or a that-clause, suggested that we meet. Suggest to meet is a very frequent error among speakers of other languages.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "verb-l6-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "verb-l6-d1",
+              "audio": { "kind": "speech", "text": "She apologized to her teacher for forgetting the homework." },
+              "hint": "to somebody for something",
+              "translation": "Cô ấy xin lỗi giáo viên vì quên bài tập.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l6-d2",
+              "audio": { "kind": "speech", "text": "I am used to getting up early, but my cousin is not." },
+              "hint": "gerund after be used to",
+              "translation": "Tôi quen dậy sớm, nhưng em họ tôi thì không.",
+              "xp": 15
+            },
+            {
+              "id": "verb-l6-d3",
+              "audio": { "kind": "speech", "text": "The doctor recommended taking more exercise and giving up smoking." },
+              "hint": "gerund after recommend",
+              "translation": "Bác sĩ khuyên nên tập thể dục nhiều hơn và bỏ thuốc lá.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "verb-l6-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "verb-l6-q1",
+              "kind": "grammarCorrection",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "The student insisted to study harder, although his parents advised to rest.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": { "type": "text", "values": ["The student insisted on studying harder, although his parents advised him to rest."] },
+              "explanation": "Two patterns to fix. insist takes on plus a gerund, insisted on studying. Advise someone to do something needs both the object and to: advised him to rest. Advise to rest with no object is incomplete.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-q2",
+              "kind": "trueFalse",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "intermediate",
+              "prompt": "The verb succeed is followed by the preposition in.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. succeed in doing and succeed in something are the standard patterns, as in She succeeded in passing the exam. Succeed to do is not English.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "Complete with the right form: He promised ___ finish the work by Friday.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "h1", "text": "to", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["to"] },
+              "explanation": "promise is one of the verbs that takes a to-infinitive: promise to do, offer to do, threaten to do, refuse to do, agree to do, manage to do. It does not take a gerund, so promised finishing would be wrong.",
+              "xp": 10
+            },
+            {
+              "id": "verb-l6-q4",
+              "kind": "multipleChoice",
+              "topicID": "verb",
+              "lessonID": "verb-advanced-patterns",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "I use to work at night when I was a student.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "I used to work at night when I was a student.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "I used working at night when I was a student.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "I am used to work at night when I was a student.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "used to plus the bare infinitive describes a habit in the past, and when I was a student confirms the past. To be accustomed is be used to, which needs a gerund: I am used to working at night.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "verb-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "The verb, not the meaning, decides the pattern: insist on doing but agree to do.",
+            "apologize to somebody for something and depend on something keep their prepositions.",
+            "used to do is a past habit; be used to doing is being accustomed now.",
+            "suggest, recommend and insist take a gerund or a that-clause, never a to-infinitive."
+          ]
+        }
+      ]
+    }
+  ]
+}

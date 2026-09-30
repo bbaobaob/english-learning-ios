@@ -1,0 +1,2949 @@
+{
+  "id": "inversion",
+  "title": "Inversion",
+  "kind": "grammar",
+  "level": "advanced",
+  "summary": "Put the emphasis at the front and the sentence has to turn itself inside out: the auxiliary jumps ahead of the subject, and the result is never, no sooner, hardly, so, such, only and nor all stand at the start of the clause.",
+  "icon": "arrow.up.arrow.down",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "iv-l1",
+      "title": "Negative Adverbials and Inversion",
+      "summary": "Never, rarely, seldom, little and not once move to the front, and the verb jumps in front of the subject.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "iv-l1-theory",
+          "type": "theory",
+          "heading": "The adverbial leads, the auxiliary follows",
+          "body": "A fronted negative adverbial such as never, rarely, seldom, little or not once says that the speaker expected the opposite. To make that expectation explicit, English inverts the verb and the subject: the auxiliary comes first, the subject comes second. There is no inversion when the adverbial stays in the middle of the sentence, and no inversion when the verb has no auxiliary, because in that case do or does is supplied.",
+          "rules": [
+            {
+              "title": "The basic pattern",
+              "statement": "Fronted negative adverbial plus auxiliary plus subject plus the rest. With a simple present or past verb, do, does or did is inserted.",
+              "formula": "Never / Rarely / Seldom + have/has/had/was/does/did + subject + V",
+              "examples": [
+                {
+                  "id": "iv-l1-r1-e1",
+                  "en": "Never have I seen such courage.",
+                  "vi": "Tôi chưa bao giờ thấy lòng dũng nào như vậy.",
+                  "note": "Have comes before I, and the subject follows the auxiliary."
+                },
+                {
+                  "id": "iv-l1-r1-e2",
+                  "en": "Rarely does she complain about the workload.",
+                  "vi": "Hiếm khi cô ấy phàn nàn về khối lượng công việc.",
+                  "note": "There is no auxiliary in the simple present, so does is supplied to carry the inversion."
+                },
+                {
+                  "id": "iv-l1-r1-e3",
+                  "en": "Little did the audience realise how long the wait would be.",
+                  "vi": "Khán giả không hề hay biết thời gian chờ sẽ dài như vậy.",
+                  "note": "Little here means hardly anything, not a small quantity, so it behaves as a negative and triggers inversion."
+                }
+              ]
+            },
+            {
+              "title": "Negative meaning versus negative form",
+              "statement": "Not and hardly are not the same thing. A fronted not inverts; a fronted hardly or scarcely also inverts, but a hardly placed inside the sentence does not.",
+              "formula": "Not only did he arrive; Hardly had he arrived.",
+              "examples": [
+                {
+                  "id": "iv-l1-r2-e1",
+                  "en": "Not once did they complain.",
+                  "vi": "Không một lần nào họ phàn nàn.",
+                  "note": "Not once is a strong negative, and did inverts in front of they."
+                },
+                {
+                  "id": "iv-l1-r2-e2",
+                  "en": "He hardly ever goes to the cinema, but he does not miss a film festival.",
+                  "vi": "Anh ấy hiếm khi đi xem phim, nhưng anh ấy không bỏ lỡ lễ hội phim nào.",
+                  "note": "Here hardly is in the middle of the sentence and no inversion happens, because the focus is not on the negative meaning."
+                }
+              ]
+            },
+            {
+              "title": "What may not be inverted",
+              "statement": "Three situations block inversion: the adverbial is not at the front of the clause, the subject has already appeared before the verb, or the clause contains a relative pronoun that carries the grammatical subject.",
+              "formula": "He never saw her.  (no fronted negative)  |  Never have I a doubt. (a doubt is the subject)",
+              "examples": [
+                {
+                  "id": "iv-l1-r3-e1",
+                  "en": "She has never been to Berlin.",
+                  "vi": "Cô ấy chưa bao giờ đến Berlin.",
+                  "note": "Never is not at the front, so the order stays normal."
+                },
+                {
+                  "id": "iv-l1-r3-e2",
+                  "en": "Never have I a doubt about your honesty.",
+                  "vi": "Tôi không bao giờ nghi ngờ sự trung thành của bạn.",
+                  "note": "The subject a doubt follows the inverted auxiliary, so the inversion is possible. With a person as subject, such as never have I doubted, the same structure works too."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l1-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l1-ex1",
+              "en": "Seldom have I enjoyed a concert as much as that one.",
+              "vi": "Hiếm khi tôi nào được thưởng thức một buổi hòa nhạc nhiều như buổi đó.",
+              "note": "Seldom is the most literary of the frequency negatives; rarely is the everyday one."
+            },
+            {
+              "id": "iv-l1-ex2",
+              "en": "Rarely does a book sell so well in its first week.",
+              "vi": "Rất hiếm khi một cuốn sách bán chạy như vậy trong tuần đầu tiên.",
+              "note": "Does is supplied because sell has no auxiliary of its own."
+            },
+            {
+              "id": "iv-l1-ex3",
+              "en": "Not until the last minute did the results arrive.",
+              "vi": "Không phải cho đến phút cuối cùng mà kết quả mới đến.",
+              "note": "Not until is a strong fronted negative and always inverts."
+            },
+            {
+              "id": "iv-l1-ex4",
+              "en": "Little does he realise how much the project depends on him.",
+              "vi": "Anh ấy không hề hay biết dự án phụ thuộc vào anh ấy nhiều như thế nào.",
+              "note": "Little meaning hardly anything behaves as a negative adverbial."
+            }
+          ]
+        },
+        {
+          "id": "iv-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l1-e1",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Invert the sentence: 'I have never seen a more beautiful sunset.'",
+              "instruction": "Arrange the words into the inverted order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "Never",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "have",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "seen",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "a",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "more",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "beautiful",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "sunset",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "Never",
+                    "have",
+                    "I",
+                    "seen",
+                    "a",
+                    "more",
+                    "beautiful",
+                    "sunset"
+                  ]
+                ]
+              },
+              "explanation": "The fronted negative never comes first, then the auxiliary have, then the subject I. The rest of the sentence is unchanged, so the only movement is the swap of have and I.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-e2",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "I have rarely seen such a professional performance.",
+              "instruction": "Rewrite the sentence with the emphasis inverted.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "Rarely",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Rarely have I seen such a professional performance."
+                ]
+              },
+              "explanation": "Once rarely is placed at the front of the clause, it counts as a negative, and the present perfect inverts: have before I. In normal word order the sentence is perfectly correct, which is why this is a matter of emphasis rather than grammar.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-e3",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence uses inversion correctly?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Rarely does he arrive before nine.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Rarely he does arrive before nine.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Does rarely he arrive before nine.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Rarely arrives he before nine.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The auxiliary does must sit between the fronted negative and the subject he, and the base form arrive follows the subject. Option b separates the auxiliary from the subject, and option d has no auxiliary at all.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Not until the following morning ___ (realise) how serious the problem was.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "did"
+                ]
+              },
+              "explanation": "Not until is a fronted negative, so the simple past inverts with did. The subject, in this case I, follows the auxiliary, and the main verb keeps its base form: did I realise.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "advanced",
+              "prompt": "Type the sentence: 'She has seldom eaten a better meal.' → 'Seldom ___ a better meal.'",
+              "instruction": "Type the rest of the sentence after the inverted opening.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "has she eaten"
+                ]
+              },
+              "explanation": "With the present perfect, the auxiliary has moves in front of the subject she, and eaten stays as the past participle. Rarely and seldom work identically here.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-e6",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Never before have I been so nervous before a performance.",
+              "instruction": "Rewrite the sentence without repeating the meaning.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Never before have I been so nervous about a performance."
+                ]
+              },
+              "explanation": "The inversion in the original is already correct. The problem is the word before, which appears twice and says the same thing twice: never before and before a performance. Rephrasing with about fixes it.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l1-dictation",
+          "type": "dictation",
+          "title": "Listen for the inverted auxiliary",
+          "items": [
+            {
+              "id": "iv-l1-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Never have I worked with a more patient teacher."
+              },
+              "hint": "have before the subject",
+              "translation": "Tôi chưa bao giờ làm việc với một người thầy kiên nhẫn hơn thế.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l1-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Rarely does he mention his own difficulties."
+              },
+              "hint": "does before the subject",
+              "translation": "Hiếm khi anh ấy nhắc đến khó khăn của chính mình.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l1-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Seldom have I had a better offer."
+              },
+              "hint": "negative plus present perfect",
+              "translation": "Hiếm khi tôi có được một lời đề nghị tốt hơn thế.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l1-quiz",
+          "type": "quiz",
+          "title": "Negative adverbials and inversion",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct inverted sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Seldom had he read such a long report.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Selcomed he had read such a long report.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Seldom he had read such a long report.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Had seldom he read such a long report.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The fronted negative comes first, then the auxiliary had, then the subject he, and read keeps its participle form. Options c and d put the auxiliary in the wrong position.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "Little ___ (know) anyone in the building when I first arrived.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "did"
+                ]
+              },
+              "explanation": "Little here means hardly anything, so it counts as a negative and the simple past inverts with did. The subject anyone follows, and know keeps its base form: did I know.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-q3",
+              "kind": "trueFalse",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "intermediate",
+              "prompt": "'He never eats meat' can be inverted to 'Never he eats meat'.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "The correct inversion is 'Never does he eat meat', because a simple present verb has no auxiliary and do or does must be supplied. The auxiliary always comes before the subject.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l1-q4",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l1",
+              "difficulty": "advanced",
+              "prompt": "Rarely have I seen such a committed group of volunteers, and never have they let the team down.",
+              "instruction": "Rewrite so that both halves use inversion correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "never",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Rarely have I seen such a committed group of volunteers, and they have never let the team down."
+                ]
+              },
+              "explanation": "The second half is the problem: never has been moved to the front but the auxiliary have has not followed it, leaving two subjects and no inverted verb. Either invert properly, with never have they let the team down, or keep never in normal position, which is what the answer does.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "A fronted negative adverbial is followed by the auxiliary and then the subject.",
+            "With a verb that has no auxiliary, do, does or did is supplied for the inversion.",
+            "Not, never, rarely, seldom, little and not once invert; hardly and scarcely invert only when they are truly fronted.",
+            "If the negative stays in the middle of the clause, no inversion happens."
+          ],
+          "nextLessonID": "iv-l2"
+        }
+      ]
+    },
+    {
+      "id": "iv-l2",
+      "title": "So, Such, Only and Nor",
+      "summary": "Four more fronted words that force the verb to move: intensity words, only, and neither and nor.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "iv-l2-theory",
+          "type": "theory",
+          "heading": "Emphasis words that are not negative",
+          "body": "So, such, only, neither and nor all front themselves for emphasis, and each one changes the structure of the clause that follows. So and such measure intensity, only limits, and neither and nor add a negative. In every case the verb is placed in front of the subject, and the rule is easiest to remember as one pattern: fronted word, auxiliary, subject.",
+          "rules": [
+            {
+              "title": "So and such",
+              "statement": "So plus an adjective or an adverb inverts, as does such before a noun phrase or after a verb. So does and so do are the short forms for agreeing with a previous statement.",
+              "formula": "So + adj + auxiliary + subject  |  So + auxiliary + subject",
+              "examples": [
+                {
+                  "id": "iv-l2-r1-e1",
+                  "en": "So little did he know about the change.",
+                  "vi": "Anh ấy biết quá ít về thay đổi đó.",
+                  "note": "So little is a fronted quantity, and did inverts in front of he."
+                },
+                {
+                  "id": "iv-l2-r1-e2",
+                  "en": "Such was the noise that the neighbours complained.",
+                  "vi": "Tiếng ồn ầm ĩ đến mức hàng xóm phải than phiền.",
+                  "note": "Such before was is the inversion of the more usual 'The noise was so great that'."
+                },
+                {
+                  "id": "iv-l2-r1-e3",
+                  "en": "So do I, and so does my brother.",
+                  "vi": "Tôi cũng vậy, và anh trai tôi cũng vậy.",
+                  "note": "The short answer form: auxiliary before the subject, agreeing with the earlier statement."
+                }
+              ]
+            },
+            {
+              "title": "Only",
+              "statement": "Only inverts when it limits something other than the subject. If it modifies the subject itself, the order stays normal.",
+              "formula": "Only + auxiliary + subject  |  Only one person + verb (no inversion)",
+              "examples": [
+                {
+                  "id": "iv-l2-r2-e1",
+                  "en": "Only then did he understand the problem.",
+                  "vi": "Chỉ đến lúc đó anh ấy mới hiểu vấn đề.",
+                  "note": "Only then is a fronted time phrase, so did inverts."
+                },
+                {
+                  "id": "iv-l2-r2-e2",
+                  "en": "Only one person knew the answer.",
+                  "vi": "Chỉ có một người biết câu trả lời.",
+                  "note": "Here only modifies the subject, so no inversion takes place."
+                },
+                {
+                  "id": "iv-l2-r2-e3",
+                  "en": "Only after the interview did she get the offer.",
+                  "vi": "Chỉ sau buổi phỏng vấn cô ấy mới nhận được lời mời.",
+                  "note": "Only after plus a clause inverts with did, and the main verb stays in the base form."
+                }
+              ]
+            },
+            {
+              "title": "Neither and nor",
+              "statement": "Neither used on its own inverts like a negative, and nor adds a further negative to what came before. The form is neither plus auxiliary plus subject, or nor plus auxiliary plus subject.",
+              "formula": "Nor + auxiliary + subject  |  Neither + auxiliary + subject",
+              "examples": [
+                {
+                  "id": "iv-l2-r3-e1",
+                  "en": "Nor did I realise how late it was.",
+                  "vi": "Tôi cũng không hề hay biết đã muộn đến mức nào.",
+                  "note": "Nor adds a second negative, so did inverts in front of I."
+                },
+                {
+                  "id": "iv-l2-r3-e2",
+                  "en": "Neither answer was convincing.",
+                  "vi": "Không câu trả lời nào thuyết phục cả.",
+                  "note": "Neither is a singular subject here, so the verb is was and no inversion is needed."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l2-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l2-ex1",
+              "en": "So expensive was the car that we changed our plans.",
+              "vi": "Chiếc xe đắt đến mức chúng tôi phải đổi kế hoạch.",
+              "note": "So + adjective inverts with was, and the that-clause shows the result."
+            },
+            {
+              "id": "iv-l2-ex2",
+              "en": "Only on weekdays is the library open at the weekend.",
+              "vi": "Chỉ vào ngày trong tuần thư viện mới mở cửa.",
+              "note": "Only on weekdays fronts a prepositional phrase, so is moves in front of the subject."
+            },
+            {
+              "id": "iv-l2-ex3",
+              "en": "Such were the words of the old teacher.",
+              "vi": "Đó là những lời của người thầy ấy.",
+              "note": "A literary pattern that places such before the verb for emphasis."
+            },
+            {
+              "id": "iv-l2-ex4",
+              "en": "Nor will the shop open at the weekend, I'm afraid.",
+              "vi": "Xin lỗi, cửa hàng cũng sẽ không mở vào cuối tuần.",
+              "note": "Nor plus will inverts, and a tag such as I'm afraid softens the bad news."
+            }
+          ]
+        },
+        {
+          "id": "iv-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l2-e1",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Invert the sentence: 'She was so tired that she fell asleep at once.'",
+              "instruction": "Arrange the words into the inverted order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "So",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "tired",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "was",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "she",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "that",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "she",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "fell",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "asleep",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t9",
+                  "text": "at",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t10",
+                  "text": "once",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "So",
+                    "tired",
+                    "was",
+                    "she",
+                    "that",
+                    "she",
+                    "fell",
+                    "asleep",
+                    "at",
+                    "once"
+                  ]
+                ]
+              },
+              "explanation": "The fronted phrase is So tired, then the verb was comes before the subject she. The result clause after that is untouched, which is the usual shape of a so-inversion: emphasis, then consequence.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-e2",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "I only understood the instructions after the third reading.",
+              "instruction": "Rewrite the sentence with fronted emphasis.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "Only",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Only after the third reading did I understand the instructions."
+                ]
+              },
+              "explanation": "Once only is fronted with a following clause, the past simple inverts: did I understand. The word after is also a signal: only after, only then and only when all invert.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-e3",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Only the head of the department signed the form.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Only did the head of the department signed the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Only the head of the department did signed the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Only the head of the department signed only the form.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Here only modifies the subject, so the clause keeps its normal order and the singular verb is signed. Inversion is only possible when only limits the verb, the object or an adverbial.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "So ridiculous ___ the story that nobody believed a word of it.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was"
+                ]
+              },
+              "explanation": "So plus an adjective inverts the copula: was moves in front of the subject the story. The result clause introduced by that is unchanged.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Type the inverted opening: 'She didn't come, and I didn't either.' → '___ did I.'",
+              "instruction": "Type the single missing word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Nor"
+                ]
+              },
+              "explanation": "Nor adds a further negative to the previous statement, and the pattern is Nor plus auxiliary plus subject: Nor did I. Neither did I would also work, but nor matches the structure more closely.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-e6",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "advanced",
+              "prompt": "So much the prices have risen that many families cannot afford them.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "So much have the prices risen that many families cannot afford them."
+                ]
+              },
+              "explanation": "The word order inside the fronted phrase is wrong. It is so much + auxiliary + subject: so much have the prices risen. The that-clause is already correct and stays as it is.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l2-dictation",
+          "type": "dictation",
+          "title": "So, such, only and nor",
+          "items": [
+            {
+              "id": "iv-l2-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "So quickly did the minutes change that nobody kept up."
+              },
+              "hint": "so plus adverb inverts",
+              "translation": "Biên bản thay đổi nhanh đến mức không ai theo kịp.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l2-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Only after the deadline did we receive the good news."
+              },
+              "hint": "only after inverts with did",
+              "translation": "Chỉ sau hạn chót chúng tôi mới nhận được tin vui.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l2-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Nor could I hear the music from the balcony."
+              },
+              "hint": "nor plus could inverts",
+              "translation": "Tôi cũng không thể nghe được âm nhạc từ ban công.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l2-quiz",
+          "type": "quiz",
+          "title": "So, such, only and nor",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Only then did the truth come out.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Only then the truth did come out.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Did only then the truth come out.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Only then came out the truth.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The fronted only then is followed by the auxiliary did and then the subject the truth. Option d is a literary inversion that is not natural with this verb, and options b and c scramble the order of the auxiliary and the subject.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Such was the noise ___ we had to close all the windows.",
+              "instruction": "Type the missing word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "that"
+                ]
+              },
+              "explanation": "With such plus was, the result is normally introduced by that: such was the noise that we had to close the windows. Without that the sentence is incomplete.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-q3",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "intermediate",
+              "prompt": "Only she understood what the teacher meant.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Only she understood what the teacher meant."
+                ]
+              },
+              "explanation": "This sentence is already correct. Only modifies the subject she, and a subject-modifying only never causes inversion. Rewriting it as 'Only did she understand' would be wrong, because did would have nothing to contrast with.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l2-q4",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l2",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "So few people came that we had to cancel the second session.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "So few people did came that we had to cancel the second session.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "So few people came did that we had to cancel the second session.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "So few did people come that we had to cancel the second session.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "d"
+                ]
+              },
+              "explanation": "Both a and d invert correctly: in a the verb came simply follows the plural subject people, and in d did is supplied and the base form come follows. Options b and c are the classic errors of a doubled past form and a misplaced auxiliary.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "So plus adjective or adverb inverts, and so do the short forms so do I and so did I.",
+            "Such inverts after the verb, as in such was the noise that we complained.",
+            "Only inverts when it limits the verb or an adverbial, never when it modifies the subject.",
+            "Nor and neither, used on their own, invert with the auxiliary before the subject."
+          ],
+          "nextLessonID": "iv-l3"
+        }
+      ]
+    },
+    {
+      "id": "iv-l3",
+      "title": "No Sooner and Hardly",
+      "summary": "The two correlative pairs that demand the past perfect.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "iv-l3-theory",
+          "type": "theory",
+          "heading": "Two past events, one right after the other",
+          "body": "No sooner and hardly describe two events so close together that the second interrupts the first. English gives them their own rigid grammar: the first clause uses the past perfect with inversion, the second uses a simple past, and the two are joined by than and when rather than by a normal conjunction.",
+          "rules": [
+            {
+              "title": "No sooner plus than",
+              "statement": "No sooner plus had plus subject plus participle, then the simple past follows after than.",
+              "formula": "No sooner + had + subject + V-ed + than + subject + V-ed",
+              "examples": [
+                {
+                  "id": "iv-l3-r1-e1",
+                  "en": "No sooner had we sat down than the phone rang.",
+                  "vi": "Chúng tôi vừa ngồi xuống thì điện thoại reo.",
+                  "note": "Had we sat down inverts, and the second clause is the simple past with no inversion at all."
+                },
+                {
+                  "id": "iv-l3-r1-e2",
+                  "en": "No sooner did she arrive than she began to complain.",
+                  "vi": "Cô ấy vừa đến đã lập tức phàn nàn.",
+                  "note": "With did, the first clause uses the base form arrive, and the pattern is the same."
+                }
+              ]
+            },
+            {
+              "title": "Hardly and scarcely plus when",
+              "statement": "The first clause uses the past perfect with inversion, and the second uses the simple past after when. Both words are the same here.",
+              "formula": "Hardly / Scarcely + had + subject + V-ed + when + subject + V-ed",
+              "examples": [
+                {
+                  "id": "iv-l3-r2-e1",
+                  "en": "Hardly had I closed the door when the storm broke.",
+                  "vi": "Tôi vừa đóng cửa thì bão vỡ.",
+                  "note": "Hardly had I closed, then when the storm broke."
+                },
+                {
+                  "id": "iv-l3-r2-e2",
+                  "en": "Scarcely had the meeting begun when the fire alarm went off.",
+                  "vi": "Cuộc họp vừa bắt đầu thì báo động cháy reo.",
+                  "note": "Scarcely works exactly like hardly in this construction."
+                }
+              ]
+            },
+            {
+              "title": "Bar, hardly, scarcely without a second clause",
+              "statement": "Without the correlating than or when, the past perfect still inverts, and the result is usually left implicit.",
+              "formula": "Hardly + had + subject + V-ed. (no when clause)",
+              "examples": [
+                {
+                  "id": "iv-l3-r3-e1",
+                  "en": "Hardly had she finished washing up when the guests arrived.",
+                  "vi": "Cô ấy vừa rửa bát xong thì khách đã đến.",
+                  "note": "The two-clause version is the normal one; a single-clause version such as 'Hardly had she noticed' relies on the context to supply the rest."
+                },
+                {
+                  "id": "iv-l3-r3-e2",
+                  "en": "No sooner had the results come in than the press called.",
+                  "vi": "Kết quả vừa có thì báo chí đã gọi điện.",
+                  "note": "The idiom keeps its fixed pair, so than is not optional in a finished sentence."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l3-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l3-ex1",
+              "en": "No sooner had the plane landed than the passengers were asked to remain seated.",
+              "vi": "Máy bay vừa hạ cánh thì hành khách được yêu cầu ngồi yên.",
+              "note": "Two clauses with different tenses and only the first one inverted."
+            },
+            {
+              "id": "iv-l3-ex2",
+              "en": "Hardly had we reached the top when the fog lifted.",
+              "vi": "Chúng tôi vừa lên đến đỉnh thì sương mù tan.",
+              "note": "The past perfect in the first clause, the past simple in the second."
+            },
+            {
+              "id": "iv-l3-ex3",
+              "en": "Scarcely had the lecture begun when the projector failed.",
+              "vi": "Bài giảng vừa bắt đầu thì máy chiếu hỏng.",
+              "note": "Scarcely and hardly are interchangeable in this structure."
+            },
+            {
+              "id": "iv-l3-ex4",
+              "en": "No sooner had the letter arrived than he opened it.",
+              "vi": "Thư vừa đến là anh ấy mở ra đọc.",
+              "note": "The idiom can also be written with a comma instead of than in some literary texts, but than is the safe form."
+            }
+          ]
+        },
+        {
+          "id": "iv-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l3-e1",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Build the sentence: 'we had no sooner sat down / the / doorbell / rang / than / had'.",
+              "instruction": "Arrange the words into the correct order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "No",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "sooner",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "we",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "sat",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "down",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "than",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t9",
+                  "text": "doorbell",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t10",
+                  "text": "rang",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "No",
+                    "sooner",
+                    "had",
+                    "we",
+                    "sat",
+                    "down",
+                    "than",
+                    "the",
+                    "doorbell",
+                    "rang"
+                  ]
+                ]
+              },
+              "explanation": "No sooner comes first, then the past perfect in the inverted order had we sat down, then than, and only after that the ordinary past simple the doorbell rang.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-e2",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Hardly I had opened the book when the phone rang.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Hardly had I opened the book when the phone rang."
+                ]
+              },
+              "explanation": "The auxiliary has to come before the subject in this inversion, so 'Hardly I had' must become 'Hardly had I'. This is the same rule as in a fronted negative adverbial.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-e3",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "No sooner ___ the sun set than the temperature dropped sharply.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had"
+                ]
+              },
+              "explanation": "The first clause of the idiom is a past perfect, so had comes first: had the sun set. The subject the sun follows the auxiliary.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-e4",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Scarcely had the taxi started when the engine failed.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Scarcely the taxi had started when the engine failed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Scarcely had the taxi started the engine failed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Scarcely did the taxi started when the engine failed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Scarcely had the taxi started is the past perfect in inverted order, and when introduces the second clause. Option d adds both did and the past form started, which is a doubled tense.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-e5",
+              "kind": "typeTheAnswer",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "advanced",
+              "prompt": "Type the correlating word that must follow a hardly plus past perfect clause: 'Hardly had we left the house ___ the lights went out.'",
+              "instruction": "Type the single word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "when"
+                ]
+              },
+              "explanation": "Hardly pairs with when, while no sooner pairs with than. Mixing the two, as in 'no sooner when', is the standard error in these idioms.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-e6",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "advanced",
+              "prompt": "No sooner had the class ended than all the students left the hall.",
+              "instruction": "Rewrite so that the two clauses show the relationship the idiom requires.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "had",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "No sooner had the class ended than all the students left the hall."
+                ]
+              },
+              "explanation": "This sentence is already correct, and the exercise exists to train you to accept it. The first clause is an inverted past perfect and the second is a simple past, which is the only combination the idiom allows.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l3-dictation",
+          "type": "dictation",
+          "title": "No sooner and hardly",
+          "items": [
+            {
+              "id": "iv-l3-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "No sooner had we reached the station than the train pulled out."
+              },
+              "hint": "had we reached, then than",
+              "translation": "Chúng tôi vừa tới ga thì tàu đã chạy.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l3-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Hardly had I sat down when the baby started crying."
+              },
+              "hint": "hardly had I, then when",
+              "translation": "Tôi vừa ngồi xuống thì đứa trẻ bắt đầu khóc.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l3-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Scarcely had the film ended than the lights came on."
+              },
+              "hint": "scarcely is the same as hardly",
+              "translation": "Phim vừa kết thúc thì đèn bật lên.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l3-quiz",
+          "type": "quiz",
+          "title": "No sooner and hardly",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "No sooner did the bell ring than the class began.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "No sooner the bell rang than the class began.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "No sooner did the bell rang than the class began.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "No sooner had the bell rang than the class began.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "With did in the first clause, the main verb must be the base form ring: did the bell ring. Option c adds the -ed of the past, and option d mixes did and had.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Hardly ___ the chairman taken his seat when the applause began.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had"
+                ]
+              },
+              "explanation": "The first clause of the idiom is a past perfect, so had comes before the subject the chairman: had the chairman taken his seat.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-q3",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "Scarcely I had reached the summit than the weather turned.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Scarcely had I reached the summit than the weather turned."
+                ]
+              },
+              "explanation": "The auxiliary had must precede the subject, and the correlating word with scarcely is when, not than: 'Scarcely had I reached the summit when the weather turned.'",
+              "xp": 10
+            },
+            {
+              "id": "iv-l3-q4",
+              "kind": "trueFalse",
+              "topicID": "inversion",
+              "lessonID": "iv-l3",
+              "difficulty": "intermediate",
+              "prompt": "'No sooner' can be followed by 'when' in the same way as 'hardly'.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "The pairs are fixed: no sooner with than, hardly and scarcely with when. Swapping them, for example no sooner when the bell rang, is a recognisable error in speech and in writing.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "No sooner plus had plus subject plus participle, then than and the past simple.",
+            "Hardly and scarcely plus had plus subject plus participle, then when and the past simple.",
+            "The auxiliary always comes before the subject in the first clause.",
+            "With did in the first clause, the main verb takes the base form: no sooner did the bell ring."
+          ],
+          "nextLessonID": "iv-l4"
+        }
+      ]
+    },
+    {
+      "id": "iv-l4",
+      "title": "Question Inversion",
+      "summary": "Direct and indirect questions, exclamations, and the structures that sound like questions without being ones.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "iv-l4-theory",
+          "type": "theory",
+          "heading": "When the verb moves to the front",
+          "body": "Inversion is not only about negatives. English inverts whenever the speaker puts something other than the subject at the front: a question word, a negative, an expression of surprise, or a request turned into a question. Learning to see inversion as a result of fronting makes all of these patterns one idea instead of six.",
+          "rules": [
+            {
+              "title": "Direct and echo questions",
+              "statement": "In a direct question the auxiliary comes before the subject, and in an echo question, which repeats what someone just said, the structure is identical.",
+              "formula": "Do you know where the file is?  /  You do what?",
+              "examples": [
+                {
+                  "id": "iv-l4-r1-e1",
+                  "en": "Have you finished the report yet?",
+                  "vi": "Bạn đã xong báo cáo chưa?",
+                  "note": "Have in front of you, the normal order of an English question."
+                },
+                {
+                  "id": "iv-l4-r1-e2",
+                  "en": "So you are leaving tomorrow?",
+                  "vi": "Vậy là ngày mai bạn sẽ đi?",
+                  "note": "An echo question repeats the information to check it, and it uses the same inversion."
+                }
+              ]
+            },
+            {
+              "title": "Embedded questions",
+              "statement": "After a verb of asking or wondering, the embedded question returns to statement order, exactly as in reported speech.",
+              "formula": "Could you tell me + what + subject + verb?",
+              "examples": [
+                {
+                  "id": "iv-l4-r2-e1",
+                  "en": "Do you know what time the film starts?",
+                  "vi": "Bạn có biết phim chiếu lúc mấy giờ không?",
+                  "note": "The outer question is inverted, but what time the film starts is a statement."
+                },
+                {
+                  "id": "iv-l4-r2-e2",
+                  "en": "I wonder whether they have finished.",
+                  "vi": "Tôi tự hỏi liệu họ đã xong chưa.",
+                  "note": "Whether stands where a question word would, and the clause that follows is not inverted."
+                }
+              ]
+            },
+            {
+              "title": "Exclamations and rhetorical questions",
+              "statement": "An exclamation that begins with a negative or an evaluative expression inverts, and a rhetorical question can invert for emphasis even when no answer is expected.",
+              "formula": "What a mess it is!  |  How beautifully she sings!",
+              "examples": [
+                {
+                  "id": "iv-l4-r3-e1",
+                  "en": "What a beautiful morning it is!",
+                  "vi": "Buổi sáng đẹp quá!",
+                  "note": "What a plus adjective plus noun plus subject plus verb, with no auxiliary in between."
+                },
+                {
+                  "id": "iv-l4-r3-e2",
+                  "en": "Isn't it cold in here?",
+                  "vi": "Trong này lạnh quá, phải không?",
+                  "note": "A tag question contracts the negative and inverts, and it expects agreement rather than information."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l4-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l4-ex1",
+              "en": "Can you tell me where the station is?",
+              "vi": "Bạn có thể cho tôi biết ga ở đâu không?",
+              "note": "Can you is inverted, where the station is is not."
+            },
+            {
+              "id": "iv-l4-ex2",
+              "en": "How long have you been learning English?",
+              "vi": "Bạn học tiếng Anh được bao lâu rồi?",
+              "note": "The question word comes first, then the auxiliary, then the subject."
+            },
+            {
+              "id": "iv-l4-ex3",
+              "en": "What a relief it was to finish on time!",
+              "vi": "Hoàn thành đúng hạn thật là nhẹ nhõm!",
+              "note": "An exclamation built on What a plus noun plus it was."
+            },
+            {
+              "id": "iv-l4-ex4",
+              "en": "Would you believe it?",
+              "vi": "Anh tin được không?",
+              "note": "Would you believe it is an echo question, and it works only with a listener who has heard the story already."
+            }
+          ]
+        },
+        {
+          "id": "iv-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l4-e1",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Build the question: 'you / know / do / what / time / the / bank / closes'.",
+              "instruction": "Arrange the words into the correct order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "Do",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "you",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "know",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "what",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "time",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "bank",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "closes",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "Do",
+                    "you",
+                    "know",
+                    "what",
+                    "time",
+                    "the",
+                    "bank",
+                    "closes"
+                  ]
+                ]
+              },
+              "explanation": "The outer question is Do you know, and the embedded question is what time the bank closes, which keeps statement order. Inverting inside the embedded clause is the single most common error here.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-e2",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Could you tell me where is the nearest pharmacy?",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Could you tell me where the nearest pharmacy is?"
+                ]
+              },
+              "explanation": "The embedded question after could you tell me is a statement, so the subject the nearest pharmacy goes before the verb is. Only the outer clause is inverted.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-e3",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct exclamation.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "What a beautiful morning it is!",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "What beautiful morning is it!",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "How a beautiful morning it is!",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "What a beautiful morning is it!",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The pattern is What a plus adjective plus singular noun plus subject plus verb: what a beautiful morning it is. How is used with an adjective plus adverb, as in how beautiful the morning is.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "I was wondering ___ they had sent the invoice.",
+              "instruction": "Type the missing conjunction.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "whether"
+                ]
+              },
+              "explanation": "The invoice is an unknown piece of information, so a yes/no question is embedded and whether is needed. If is not used before a past tense here, because it would need a past form of the auxiliary.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-e5",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Would you mind if I sat here?",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Would you mind if I sat down here?"
+                ]
+              },
+              "explanation": "The question is not the problem; the verb is. After if in a polite request about the present, English uses the past simple sat down, which softens the question. Would you mind if I sat down here is the standard form.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "advanced",
+              "prompt": "Type the second half of the echo question: 'You are taking the early flight, ___?'",
+              "instruction": "Type the echo question.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are you"
+                ]
+              },
+              "explanation": "An echo question repeats the auxiliary and the subject to check the information: 'You are taking the early flight, are you?' It is a fragment by design, so no question mark alone would be right.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l4-dictation",
+          "type": "dictation",
+          "title": "Questions that invert",
+          "items": [
+            {
+              "id": "iv-l4-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Could you tell me when the library opens?"
+              },
+              "hint": "the embedded clause does not invert",
+              "translation": "Bạn có thể cho tôi biết thư viện mở cửa lúc nào không?",
+              "xp": 15
+            },
+            {
+              "id": "iv-l4-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "What a wonderful evening it has been!"
+              },
+              "hint": "what a plus noun plus subject plus verb",
+              "translation": "Tối nay thật là tuyệt vời!",
+              "xp": 15
+            },
+            {
+              "id": "iv-l4-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Has anyone seen my glasses anywhere?"
+              },
+              "hint": "auxiliary before the subject",
+              "translation": "Có ai nhìn thấy kính của tôi ở đâu chưa?",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l4-quiz",
+          "type": "quiz",
+          "title": "Question inversion",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l4-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Do you know where the meeting was moved to?",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Do you know where was the meeting moved?",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "You know where the meeting was moved to?",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Where the meeting was moved to do you know?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The outer clause is inverted with Do you, and the embedded question where the meeting was moved to is a statement. Options b and d invert inside the clause, and option c loses the inversion of the main question.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-q2",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "Would you like to see where the new office is?",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Would you like to see where the new office is?"
+                ]
+              },
+              "explanation": "This sentence is already correct, and the exercise is about recognising a right answer. The clause after see is not inverted because it is not a question, it is an object of the verb see.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "intermediate",
+              "prompt": "How long ___ you been waiting?",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "have"
+                ]
+              },
+              "explanation": "In a question the auxiliary moves in front of the subject: have you. The present perfect is required here because the waiting started in the past and is still going on.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l4-q4",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l4",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is a well-formed echo question?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "You are going to the conference, aren't you?",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "You are going to the conference, are you?",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Going to the conference, you are?",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "So going to the conference?",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b"
+                ]
+              },
+              "explanation": "An echo question repeats the auxiliary and the subject in normal question order. Option a is a tag question, which asks for agreement, and options c and d do not repeat enough of the original to be understood as echoes.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Fronting something other than the subject puts the auxiliary before the subject.",
+            "Embedded questions after a verb of asking return to statement order.",
+            "What a plus adjective plus noun plus subject plus verb builds an exclamation; how takes an adjective plus adverb.",
+            "Echo questions repeat the auxiliary and subject, and they are different from tag questions."
+          ],
+          "nextLessonID": "iv-l5"
+        }
+      ]
+    },
+    {
+      "id": "iv-l5",
+      "title": "Conditional and Concessive Inversion",
+      "summary": "Unless, even if, no matter and only if, and what happens when the condition comes first.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "iv-l5-theory",
+          "type": "theory",
+          "heading": "Conditions and concessions at the front of the clause",
+          "body": "Conditionals and concessions normally put the subject before the verb, because the clause opens with a word like if, when or although. Front that opening phrase, and English has to restore question order: the auxiliary moves in front of the subject. This is why unless you leave cannot be inverted, and why only if you pay requires inversion.",
+          "rules": [
+            {
+              "title": "Unless and if",
+              "statement": "Unless means if not, and a fronted unless-clause inverts with the auxiliary. A fronted if-clause inverts in literary style and in questions, but in ordinary statements it usually does not.",
+              "formula": "Unless + auxiliary + subject, + main clause",
+              "examples": [
+                {
+                  "id": "iv-l5-r1-e1",
+                  "en": "Unless you leave now, you will miss the last bus.",
+                  "vi": "Nếu bạn không ra đi ngay, bạn sẽ lỡ chuyến xe cuối.",
+                  "note": "The ordinary order: subject you before the auxiliary will."
+                },
+                {
+                  "id": "iv-l5-r1-e2",
+                  "en": "Unless the government acts now, the crisis will get worse.",
+                  "vi": "Nếu chính phủ không hành động ngay, khủng hoảng sẽ trầm trọng hơn.",
+                  "note": "Writing 'Unless will the government act now' is never correct, because the main clause is not inverted with it."
+                }
+              ]
+            },
+            {
+              "title": "Only if, if and only if, even if",
+              "statement": "Only if and even if must be followed by the auxiliary when the clause is fronted, because the emphasis falls on the condition. A non-fronted even if-clause keeps the normal order.",
+              "formula": "Only if + auxiliary + subject + will/can + main clause",
+              "examples": [
+                {
+                  "id": "iv-l5-r2-e1",
+                  "en": "Only if you pay in advance will you receive a confirmation.",
+                  "vi": "Chỉ khi bạn trả trước mới nhận được xác nhận.",
+                  "note": "The main clause is inverted too, because only if restricts what is possible."
+                },
+                {
+                  "id": "iv-l5-r2-e2",
+                  "en": "Even if you apologise, she will not change her mind.",
+                  "vi": "Dù bạn có xin lỗi, cô ấy cũng sẽ không đổi ý.",
+                  "note": "Even if in the middle of the clause does not invert: subject you comes before apologise."
+                }
+              ]
+            },
+            {
+              "title": "No matter, whatever and however",
+              "statement": "These are followed by a statement-order clause, never by an inverted one. They do not invert, and they are not questions.",
+              "formula": "no matter what + subject + verb  |  however + adj + subject + verb",
+              "examples": [
+                {
+                  "id": "iv-l5-r3-e1",
+                  "en": "No matter how hard she works, she never complains.",
+                  "vi": "Dù cố gắng làm việc chăm chỉ đến đâu, cô ấy cũng không bao giờ than phiền.",
+                  "note": "No matter how hard + subject + verb: the subject she comes before works."
+                },
+                {
+                  "id": "iv-l5-r3-e2",
+                  "en": "However difficult the task is, we will finish it on time.",
+                  "vi": "Dù nhiệm vụ khó đến đâu, chúng tôi cũng sẽ hoàn thành đúng hạn.",
+                  "note": "However plus adjective plus a normal clause, with no inversion anywhere."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l5-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l5-ex1",
+              "en": "If only I had noticed the message earlier, everything would be different.",
+              "vi": "Giá mà tôi đã chú ý đến tin nhắn sớm hơn, mọi chuyện sẽ khác đi.",
+              "note": "If only expresses regret, and it does not invert in normal speech."
+            },
+            {
+              "id": "iv-l5-ex2",
+              "en": "Only when the results are published will we know the truth.",
+              "vi": "Chỉ khi kết quả được công bố chúng ta mới biết sự thật.",
+              "note": "A fronted only when-clause inverts, and the main clause inverts with it."
+            },
+            {
+              "id": "iv-l5-ex3",
+              "en": "Not until the meeting ended did she mention the problem.",
+              "vi": "Không phải đến khi cuộc họp kết thúc cô ấy mới nhắc vấn đề đó.",
+              "note": "A fronted negative condition inverts in the main clause."
+            },
+            {
+              "id": "iv-l5-ex4",
+              "en": "Whatever the cost, we must go ahead with the repair.",
+              "vi": "Dù tốn kém đến đâu, chúng ta cũng phải tiến hành sửa chữa.",
+              "note": "Whatever introduces a concession and takes a normal clause."
+            }
+          ]
+        },
+        {
+          "id": "iv-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l5-e1",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "intermediate",
+              "prompt": "Not until she apologised did he forgive her.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Not until she apologised did he forgive her."
+                ]
+              },
+              "explanation": "This sentence is already correct: the fronted negative not until inverts the main clause, with did before he. The exercise is here to confirm that a right answer can be a right answer.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-e2",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "advanced",
+              "prompt": "Build the sentence: 'you / only / will / if / pay / now / get / a / refund'.",
+              "instruction": "Arrange the words into the correct order.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "Only",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "if",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "you",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "pay",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "now",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "will",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "you",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "get",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t9",
+                  "text": "a",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t10",
+                  "text": "refund",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "Only",
+                    "if",
+                    "you",
+                    "pay",
+                    "now",
+                    "will",
+                    "you",
+                    "get",
+                    "a",
+                    "refund"
+                  ]
+                ]
+              },
+              "explanation": "Only if restricts the condition, so the main clause is inverted: will you get. The if-clause itself keeps the normal order you pay now.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-e3",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "No matter how difficult the exam is, she will manage.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "No matter how difficult is the exam, she will manage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "However the exam is difficult, she will manage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "However difficult the exam is, will she manage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "No matter and however introduce a concession, and the clause that follows is an ordinary statement with the subject before the verb. Nothing inverts here, because there is no fronted negative or restrictive word.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "advanced",
+              "prompt": "Only after the results ___ (announce) can we decide anything.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are"
+                ]
+              },
+              "explanation": "The fronted only after-clause inverts the main clause, so the auxiliary are comes before the subject we. The passive participle announced is unchanged.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-e5",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "advanced",
+              "prompt": "Unless you do not hurry up, you will not catch the morning flight.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "If",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If you do not hurry up, you will not catch the morning flight."
+                ]
+              },
+              "explanation": "Unless already means if not, so adding do not gives a double negative that reverses the meaning. Choose either unless with a positive verb, or if with not, and the answer uses the second.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "intermediate",
+              "prompt": "Type the negative adverb that inverts the clause: '___ did she arrive.'",
+              "instruction": "Type the single word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Hardly"
+                ]
+              },
+              "explanation": "Hardly and scarcely both invert when they are fronted: hardly did she arrive. The sentence is also standard with but and a second clause, such as 'Hardly had she arrived when the phone rang'.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l5-dictation",
+          "type": "dictation",
+          "title": "Conditions and concessions",
+          "items": [
+            {
+              "id": "iv-l5-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Only if the weather improves will we cancel the trip."
+              },
+              "hint": "only if inverts the main clause",
+              "translation": "Chỉ khi thời tiết thuận lợi hơn chúng ta mới hủy chuyến đi.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l5-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "However tired he was, he finished the shift."
+              },
+              "hint": "however plus adjective, no inversion",
+              "translation": "Dù mệt mỏi đến đâu, anh ấy vẫn hoàn thành ca làm.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l5-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Not until the data are checked will we publish the report."
+              },
+              "hint": "not until inverts the main clause",
+              "translation": "Không phải đến khi dữ liệu được kiểm tra chúng ta mới công bố báo cáo.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l5-quiz",
+          "type": "quiz",
+          "title": "Conditional and concessive inversion",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Only if you check the figures will you notice the error.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Only if you will check the figures you will notice the error.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Only if you check the figures you notice the error.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "If only you check the figures you will notice the error.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Only if restricts the condition, so the main clause inverts with will you. The if-clause itself keeps the normal order, and if only means something quite different, expressing regret.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "intermediate",
+              "prompt": "No matter how many times I explain it, he ___ (not understand).",
+              "instruction": "Type the complete verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "does not understand"
+                ]
+              },
+              "explanation": "No matter how many times introduces a concession and takes a normal statement clause, with the subject he before the auxiliary. Nothing inverts here.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-q3",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "advanced",
+              "prompt": "Only when the manager returns will the office be able to open.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Only when the manager returns will the office be able to open."
+                ]
+              },
+              "explanation": "This is already correct: the fronted only when-clause inverts the main clause, with will before the subject the office, and the passive be able to open is untouched.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l5-q4",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l5",
+              "difficulty": "advanced",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Whatever the cost, the repair must be done now.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Whatever the cost is, the repair must be done now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Whatever the cost, must the repair be done now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Whatever is the cost, the repair must be done now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Whatever plus a noun phrase is followed by a comma and then an ordinary clause, and it never inverts the main verb. The verb phrase must be done now keeps its modal and passive intact.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Unless already means if not, so never combine it with another negative.",
+            "Only if, only when and not until invert the main clause.",
+            "No matter, whatever and however take a normal statement clause and never invert.",
+            "Fronting a condition is not the same as fronting a negative: only if inverts, even if usually does not."
+          ],
+          "nextLessonID": "iv-l6"
+        }
+      ]
+    },
+    {
+      "id": "iv-l6",
+      "title": "Inversion in Formal and Literary English",
+      "summary": "Fronted objects, fronted prepositions, such and poetic patterns, and the ones worth learning.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "iv-l6-theory",
+          "type": "theory",
+          "heading": "The patterns that survive only in writing",
+          "body": "English has a set of inversions that are not triggered by a negative or a restrictive word but by fronting itself: a long object, a prepositional phrase, an expression such as such or so glad. Most of them sound dated in conversation and would be marked down in an exam. Knowing them still matters, because they appear in headlines, in older literature and in the formal register of essays.",
+          "rules": [
+            {
+              "title": "Object fronting and verb subject fronting",
+              "statement": "A long, marked object or a prepositional phrase can be fronted for emphasis. The subject then follows the verb, and the sentence is separated by a comma.",
+              "formula": "Object + verb + subject.  |  Prepositional phrase + verb + subject.",
+              "examples": [
+                {
+                  "id": "iv-l6-r1-e1",
+                  "en": "This much we can agree on.",
+                  "vi": "Chừng này thì chúng ta có thể đồng ý.",
+                  "note": "The object this much is fronted and the subject we follows the verb can agree on."
+                },
+                {
+                  "id": "iv-l6-r1-e2",
+                  "en": "Down came the rain, heavier than expected.",
+                  "vi": "Cơn mưa rơi xuống, nặng hơn dự kiến.",
+                  "note": "An inverted adverb, then the verb, then the subject. This is literary English, not spoken English."
+                }
+              ]
+            },
+            {
+              "title": "So glad, such a relief and similar patterns",
+              "statement": "Expressions of emotion fronted with so or such invert the copula, and the pattern is common in informal writing and in speech.",
+              "formula": "So + adj + auxiliary + subject  |  Such + be + subject",
+              "examples": [
+                {
+                  "id": "iv-l6-r1b-e1",
+                  "en": "So glad am I to see you again.",
+                  "vi": "Tôi vui mừng thật sự khi được gặp lại bạn.",
+                  "note": "A formal and slightly literary inversion of I am so glad."
+                },
+                {
+                  "id": "iv-l6-r1b-e2",
+                  "en": "Such was the confusion that nobody spoke.",
+                  "vi": "Hỗn loạn như vậy nên không ai nói được.",
+                  "note": "Such before was, followed by a that-clause with the consequence."
+                }
+              ]
+            },
+            {
+              "title": "Newspapers and headlines",
+              "statement": "Headlines drop articles and invert freely, because brevity rules. Never copy headline grammar into ordinary sentences.",
+              "formula": "Headline: Government to raise taxes.  (Not: To raise taxes the government.)",
+              "examples": [
+                {
+                  "id": "iv-l6-r2-e1",
+                  "en": "Storm warning issued for the southern coast.",
+                  "vi": "Cảnh báo bão được ban hành cho bờ biển phía nam.",
+                  "note": "Fronting a prepositional phrase for emphasis; acceptable in a headline or a report."
+                },
+                {
+                  "id": "iv-l6-r2-e2",
+                  "en": "Talks continue between the two governments.",
+                  "vi": "Các cuộc đàm phán tiếp tục giữa hai chính phủ.",
+                  "note": "Headline order: noun, verb, then the prepositional phrase that would normally come first."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-l6-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "iv-l6-ex1",
+              "en": "Only then did the truth come out.",
+              "vi": "Chỉ đến lúc đó sự thật mới lộ ra.",
+              "note": "A fronted only then inverts, and it is safe in every register."
+            },
+            {
+              "id": "iv-l6-ex2",
+              "en": "Gone are the days when a phone call cost money.",
+              "vi": "Thời của những cuộc gọi có phí đã qua rồi.",
+              "note": "A literary fronting of gone, common in formal speeches and essays."
+            },
+            {
+              "id": "iv-l6-ex3",
+              "en": "So dramatic was the fall in sales that the board met twice in one week.",
+              "vi": "Doanh số giảm mạnh đến mức ban giám đốc phải họp hai lần trong một tuần.",
+              "note": "So plus adjective inverts with was, and the that-clause shows the result."
+            },
+            {
+              "id": "iv-l6-ex4",
+              "en": "Rarely has a museum received so much public interest.",
+              "vi": "Hiếm khi một bảo tàng lại đón được nhiều sự quan tâm như vậy.",
+              "note": "Fronted negative plus the present perfect: a formal but very common pattern."
+            }
+          ]
+        },
+        {
+          "id": "iv-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "iv-l6-e1",
+              "kind": "grammarCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Such a relief it was when the news finally arrived.",
+              "instruction": "Rewrite the sentence in natural modern English.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "It",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It was such a relief when the news finally arrived."
+                ]
+              },
+              "explanation": "Fronting such a relief and placing the subject after the verb works in literary English, but the modern equivalent puts the subject first: It was such a relief when the news finally arrived. Both are correct; the first is literary.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-e2",
+              "kind": "rearrangeWords",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Invert for emphasis: 'A strange bronze object stood on the table.'",
+              "instruction": "Arrange the words so the prepositional phrase comes first and the subject follows the verb.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "On",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "table",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "stood",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "a",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "strange",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "bronze",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "object",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "On",
+                    "the",
+                    "table",
+                    "stood",
+                    "a",
+                    "strange",
+                    "bronze",
+                    "object"
+                  ]
+                ]
+              },
+              "explanation": "The prepositional phrase is already fronted in the given sentence, so the required order places the verb stood before the subject a strange bronze object. This is the verb subject pattern that headlines and narrative prose use.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-e3",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Choose the sentence that is natural in modern spoken English.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Rarely do I regret hiring that team.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Do rarely I regret hiring that team.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Rarely I do regret hiring that team.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "I rarely do regret hiring that team.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The fronted negative goes first, the auxiliary do comes next, then the subject I: rarely do I. Option d would only be right if the speaker were actually regretting it, since normally do not appears when a verb is not negated.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-e4",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Gone ___ the days when a letter took a week to arrive.",
+              "instruction": "Type the missing verb.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "are"
+                ]
+              },
+              "explanation": "The fronted participle gone is followed by the verb, and then the subject the days, which is plural. This is a rhetorical inversion that appears in formal speeches and in journalism.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-e5",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Down the stairs fell the heavy wooden cupboard.",
+              "instruction": "Rewrite the sentence so that it reads as natural modern English.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The heavy wooden cupboard fell down the stairs."
+                ]
+              },
+              "explanation": "The literary inversion is grammatical, so the correction is about register rather than accuracy. In neutral English the subject comes first, which is also safer in an exam.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-e6",
+              "kind": "sentenceCompletion",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Complete: So extraordinary was the discovery that ____.",
+              "instruction": "Type a natural continuation of at least four words.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "it made the front page of every newspaper",
+                  "the story reached the international press within a day",
+                  "researchers returned to the site the following spring"
+                ]
+              },
+              "explanation": "The pattern is so plus adjective plus was plus subject, followed by a that-clause giving the consequence. Any plausible result clause completes the sentence, as long as the that-clause follows and the verb agreement inside it is correct.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l6-dictation",
+          "type": "dictation",
+          "title": "Inversion in formal writing",
+          "items": [
+            {
+              "id": "iv-l6-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Rarely has a small gallery attracted so many visitors."
+              },
+              "hint": "has before the subject, formal register",
+              "translation": "Hiếm khi một phòng tranh nhỏ lại thu hút nhiều khách tham quan như vậy.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l6-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Gone are the days of the weekly family cinema."
+              },
+              "hint": "fronted participle then verb then subject",
+              "translation": "Thời của rạp chiếu phim gia đình hằng tuần đã qua.",
+              "xp": 15
+            },
+            {
+              "id": "iv-l6-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "So complex was the application that we needed a whole afternoon."
+              },
+              "hint": "so plus adjective inverts with was",
+              "translation": "Đơn ứng tuyển phức tạp đến mức chúng tôi phải mất cả buổi chiều.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "iv-l6-quiz",
+          "type": "quiz",
+          "title": "Inversion in formal and literary English",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "iv-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct inverted sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Beyond the ridge lay a narrow valley.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Beyond the ridge a narrow valley laid.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Beyond the ridge did a narrow valley lay.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Beyond the ridge laid a narrow valley.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "d"
+                ]
+              },
+              "explanation": "Both a and d are correct: the fronted prepositional phrase is followed by the verb and then the subject, either present tense with lay or past tense with laid. Option c wrongly adds an auxiliary to a simple past verb.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "So cold was the wind that the children went inside immediately.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "So cold was the wind that the children went inside immediately."
+                ]
+              },
+              "explanation": "The sentence is already correct: so plus adjective inverts with was, and the that-clause gives the consequence. The exercise trains you to verify rather than assume a fault.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Not once ___ the museum been so busy on a weekday morning.",
+              "instruction": "Type the missing auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "has"
+                ]
+              },
+              "explanation": "A fronted negative inverts the present perfect, so has comes before the subject the museum, and been keeps its participle form.",
+              "xp": 10
+            },
+            {
+              "id": "iv-l6-q4",
+              "kind": "trueFalse",
+              "topicID": "inversion",
+              "lessonID": "iv-l6",
+              "difficulty": "advanced",
+              "prompt": "Newspaper headlines frequently use inversion and omit articles, so headline word order can be copied into ordinary sentences.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": false
+              },
+              "explanation": "Headline style is a deliberate simplification for space. Writing 'Minister to open new hospital' in a letter or an exam answer looks wrong; write 'The minister will open the new hospital' instead.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "iv-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "Fronting a long object or a prepositional phrase puts the subject after the verb: On the table stood a bronze object.",
+            "So plus adjective and such plus be invert the copula and are common in formal English.",
+            "Headline inversion omits articles and should not be copied into ordinary sentences.",
+            "The safe inversions for everyday use are the negative adverbials, so, such, only, nor and the no sooner and hardly pairs."
+          ]
+        }
+      ]
+    }
+  ]
+}

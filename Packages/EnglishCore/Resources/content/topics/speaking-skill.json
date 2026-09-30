@@ -145,7 +145,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The information structure of the sentence is 'I need X, not Y': the correction of what the listener assumed is new, so the peak belongs on the corrected item. Option (b) stresses the given subject instead, which wastes your loudest syllable and hides the contrast. Option (c) is the mirror image — it is the right pattern if you were correcting a different assumption, so context decides, not a fixed rule. The test that works: after you speak, could your partner write down exactly which object you meant? If yes, the stress is right.",
               "xp": 10
@@ -198,7 +200,14 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["I", "need", "three", "tickets", "for", "Saturday"]
+                "values": [
+                  "I",
+                  "need",
+                  "three",
+                  "tickets",
+                  "for",
+                  "Saturday"
+                ]
               },
               "explanation": "English order is subject, verb, then object, and the numeral sits between the verb and the noun: I need three tickets. Learners who translate word-for-word from Vietnamese sometimes push the number to the end, producing 'I need tickets three', which is not English. Say the finished sentence out loud as a check: if it sounds like a phrase you have heard in real English, the order is probably right.",
               "xp": 10
@@ -324,8 +333,7 @@
             "One stress peak per sentence, placed on the word that carries the new information; everything else can shrink.",
             "Say every -ed after t or d as a separate syllable, and check every noun that follows a number for a plural s.",
             "Fluency is not speed. A clear sentence with good stress is easier to follow than a fast, flat one.",
-            "Repair openly and briefly: a softener plus 'could you say that again' beats silence or a bare 'What?'",
-            "Test any sentence you speak by asking whether your partner could write down exactly what you meant."
+            "Repair openly and briefly: a softener plus 'could you say that again' beats silence or a bare 'What?'."
           ],
           "nextLessonID": "speaking-skill-intermediate"
         }
@@ -476,7 +484,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "The sentence corrects a wrong assumption, and the correction is the new information, so the peak goes on Friday. Option (a) stresses the givens and leaves the real information flat, so the listener cannot tell what you are correcting. Option (c) is the mirror pattern and would be right in a different context. Judge with a test rather than an impression: after you speak, ask your partner which day you said. If they hesitate, your peak is in the wrong place.",
               "xp": 10
@@ -511,7 +521,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "English joins consonant-final to vowel-initial: 'pick it' and 'put it' each become a single flow with a silent k and a silent t at the joins. Option (b) breaks those joins with a pause, which is how careful word-by-word speech sounds to a native ear. Option (c) is a real, natural sentence but it adds information the exercise did not give you, so it is not the target here. Practise linking by saying the sentence without any pause at all, then open your eyes and notice you could not say where the words started.",
               "xp": 10
@@ -602,7 +614,14 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["The", "meeting", "is", "past", "half", "at"]
+                "values": [
+                  "The",
+                  "meeting",
+                  "is",
+                  "past",
+                  "half",
+                  "at"
+                ]
               },
               "explanation": "The information order is: topic first, verb, then the new time information at the end, where the pitch rise can carry the emphasis. 'Half at' is a fixed pair that must stay together, and it belongs after 'past' because past already takes the phrase as its object. Say it in one breath with the stress on PAST — the ending is a statement, so the pitch falls on 'half at' rather than rising.",
               "xp": 10
@@ -691,8 +710,7 @@
             "Use falling intonation to state and rising intonation to check, and move the pitch only on the last few words.",
             "Keep four repair frames as reflexes: 'sorry, what I meant was', 'let me start again', 'how do you say', 'give me a second'.",
             "Repair forward: acknowledge, name the shift, deliver the new version. Never retread the whole sentence or apologise twice.",
-            "Check the two-part verb list: look after, listen to, wait for, agree with. Everything else usually takes its object directly.",
-            "Three seconds of silence at the start of an answer feels far longer to your listener than it feels to you."
+            "Check the two-part verb list: look after, listen to, wait for, agree with. Everything else usually takes its object directly."
           ],
           "nextLessonID": "speaking-skill-advanced"
         }
@@ -843,7 +861,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The second clause is the point of the sentence, and English marks the end of a complete thought with a falling contour. Option (b) is a real pattern, but it converts the statement into a check, which changes the meaning — a speaker using it is asking whether Friday works rather than announcing it. Option (c) is the most common advanced-level error: volume cannot replace pitch movement, and a level tone on two clauses leaves the listener guessing which part is asserted. Record yourself and check whether the last word drops.",
               "xp": 10
@@ -952,7 +972,14 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["I", "support", "the", "plan", "but", "not the timeline"]
+                "values": [
+                  "I",
+                  "support",
+                  "the",
+                  "plan",
+                  "but",
+                  "not the timeline"
+                ]
               },
               "explanation": "The clause you want your listener to remember goes last, because English intonation falls at the end of a unit and a falling end is what sounds like a decision. 'but not the timeline' therefore carries the peak and the fall together. Putting the objection first and the agreement last inverts the emphasis and makes the sentence sound like a concession — the opposite of the intent. Say it aloud: the rise before 'not' and the fall on 'timeline' is the whole effect.",
               "xp": 10
@@ -993,7 +1020,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "The dash plus 'sorry' is the substitution signal, and everything before it is withdrawn. A listener who records the abandoned version has heard a date the speaker explicitly rejected — a real risk in meetings, which is why fluent speakers substitute in place instead of starting again. Say this yourself and copy the rhythm: three beats for the wrong version, a short beat, then the correction at the same pitch. The correction is not an apology and must not be said more quietly.",
               "xp": 10
@@ -1060,8 +1089,7 @@
             "Learn confusables as pairs in minimal sentences — ship/sheep, historic/historical, effect/affect, loan/lend, economical/economic — and never one word at a time.",
             "Range means choosing deliberately between a formal and an informal version, a direct and a softened version, a short and a fuller clause.",
             "Substitute in place rather than restarting: one wrong word costs half a second, one restarted sentence costs a whole thought.",
-            "Park a topic and promise the return. Managing the order of a conversation is as much a part of speaking skill as managing content.",
-            "Your accent is not an error. Judge your speech on one question only: could your listener act on your message?"
+            "Park a topic and promise the return. Managing the order of a conversation is as much a part of speaking skill as managing content."
           ]
         }
       ]

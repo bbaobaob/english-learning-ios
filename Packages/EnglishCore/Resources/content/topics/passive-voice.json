@@ -1595,34 +1595,34 @@
                   "id": "a",
                   "text": "The case was solved",
                   "isCorrect": null,
-                  "matchKey": "x"
+                  "matchKey": "by two detectives from the city force"
                 },
                 {
                   "id": "b",
                   "text": "The wheat is grown",
                   "isCorrect": null,
-                  "matchKey": "w"
+                  "matchKey": "by farmers along the river valley"
                 },
                 {
                   "id": "c",
                   "text": "The song was recorded",
                   "isCorrect": null,
-                  "matchKey": "r"
+                  "matchKey": "by a small independent studio"
                 },
                 {
                   "id": "d",
                   "text": "The prize was awarded",
                   "isCorrect": null,
-                  "matchKey": "p"
+                  "matchKey": "by the national jury last Friday"
                 }
               ],
               "answer": {
                 "type": "pairs",
                 "values": {
-                  "a": "x",
-                  "b": "w",
-                  "c": "r",
-                  "d": "p"
+                  "a": "by two detectives from the city force",
+                  "b": "by farmers along the river valley",
+                  "c": "by a small independent studio",
+                  "d": "by the national jury last Friday"
                 }
               },
               "explanation": "Each verb attracts the kind of agent that naturally performs it: a detective or the police solve a case, farmers grow wheat, a singer or a studio records a song, and a jury or a committee awards a prize. Picking an agent that cannot do the action is what makes a by-phrase sound wrong.",
@@ -2162,34 +2162,34 @@
                   "id": "a",
                   "text": "The students organised the conference.",
                   "isCorrect": null,
-                  "matchKey": "p1"
+                  "matchKey": "The conference was organised by the students."
                 },
                 {
                   "id": "b",
                   "text": "The police arrested two suspects.",
                   "isCorrect": null,
-                  "matchKey": "p2"
+                  "matchKey": "Two suspects were arrested by the police."
                 },
                 {
                   "id": "c",
                   "text": "Nobody expected such a result.",
                   "isCorrect": null,
-                  "matchKey": "p3"
+                  "matchKey": "Such a result was not expected."
                 },
                 {
                   "id": "d",
                   "text": "The heat cracked the mirror.",
                   "isCorrect": null,
-                  "matchKey": "p4"
+                  "matchKey": "The mirror was cracked by the heat."
                 }
               ],
               "answer": {
                 "type": "pairs",
                 "values": {
-                  "a": "p1",
-                  "b": "p2",
-                  "c": "p3",
-                  "d": "p4"
+                  "a": "The conference was organised by the students.",
+                  "b": "Two suspects were arrested by the police.",
+                  "c": "Such a result was not expected.",
+                  "d": "The mirror was cracked by the heat."
                 }
               },
               "explanation": "Each transformation moves exactly one element into the subject slot: the conference, two suspects, such a result, the mirror. The by-agents that the originals name are the students, the police, nobody and the heat, and the negations in c and d must travel with the auxiliary.",
@@ -2490,48 +2490,13 @@
           ]
         },
         {
-          "id": "pv-l6-exercises",
-          "type": "exercises",
+          "id": "pv-l6-listening",
+          "type": "listening",
+          "title": "Listen to the airport announcement",
           "exercises": [
             {
-              "id": "pv-l6-e1",
-              "kind": "errorCorrection",
-              "topicID": "passive-voice",
-              "lessonID": "pv-l6",
-              "difficulty": "advanced",
-              "prompt": "It is believed that the population has been reduced by nearly half in the last ten years.",
-              "instruction": "Rewrite with correct word order.",
-              "items": [],
-              "answer": {
-                "type": "text",
-                "values": [
-                  "It is believed that the population has been reduced by nearly half in the last ten years."
-                ]
-              },
-              "explanation": "This sentence is already correct, and that is the point of the item: it forces you to check the two-part frame. A passive clause cannot follow a reporting passive directly, so the reduction is reported in a separate that-clause, with the population as the subject of the inner passive.",
-              "xp": 10
-            },
-            {
-              "id": "pv-l6-e2",
-              "kind": "sentenceCompletion",
-              "topicID": "passive-voice",
-              "lessonID": "pv-l6",
-              "difficulty": "advanced",
-              "prompt": "Complete: The old factory ______ (demolish) last month after thirty years of disuse.",
-              "instruction": "Type the passive verb phrase.",
-              "items": [],
-              "answer": {
-                "type": "text",
-                "values": [
-                  "was demolished"
-                ]
-              },
-              "explanation": "Last month forces the past simple, so the passive is was demolished. News reports prefer the passive here because the demolition is the event and the owner is not the story.",
-              "xp": 10
-            },
-            {
               "id": "pv-l6-e3",
-              "kind": "listening",
+              "kind": "listeningComprehension",
               "topicID": "passive-voice",
               "lessonID": "pv-l6",
               "difficulty": "advanced",
@@ -2574,6 +2539,48 @@
                 ]
               },
               "explanation": "The announcement says the flight has been delayed by two hours and gives a new departure time of 4:45, which is later, not earlier. Gate 12 is where passengers should go, not a new permanent gate, and the flight is not cancelled.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "pv-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "pv-l6-e1",
+              "kind": "errorCorrection",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "It is believed that the population has been reduced by nearly half in the last ten years.",
+              "instruction": "Rewrite with correct word order.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It is believed that the population has been reduced by nearly half in the last ten years."
+                ]
+              },
+              "explanation": "This sentence is already correct, and that is the point of the item: it forces you to check the two-part frame. A passive clause cannot follow a reporting passive directly, so the reduction is reported in a separate that-clause, with the population as the subject of the inner passive.",
+              "xp": 10
+            },
+            {
+              "id": "pv-l6-e2",
+              "kind": "sentenceCompletion",
+              "topicID": "passive-voice",
+              "lessonID": "pv-l6",
+              "difficulty": "advanced",
+              "prompt": "Complete: The old factory ______ (demolish) last month after thirty years of disuse.",
+              "instruction": "Type the passive verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "was demolished"
+                ]
+              },
+              "explanation": "Last month forces the past simple, so the passive is was demolished. News reports prefer the passive here because the demolition is the event and the owner is not the story.",
               "xp": 10
             },
             {

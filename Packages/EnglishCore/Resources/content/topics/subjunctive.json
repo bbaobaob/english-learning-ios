@@ -1,0 +1,2581 @@
+{
+  "id": "subjunctive",
+  "title": "The Subjunctive",
+  "kind": "grammar",
+  "level": "advanced",
+  "summary": "The mood English uses for things that are not facts: proposals, unreal situations, wishes, polite demands, and the as if constructions that make people sound polite or distant.",
+  "icon": "wand.and.stars",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "sj-l1",
+      "title": "Proposals: Suggest, Insist, Demand",
+      "summary": "After a verb of proposing, insisting or demanding, the that-clause takes the bare base form.",
+      "level": "beginner",
+      "steps": [
+        {
+          "id": "sj-l1-theory",
+          "type": "theory",
+          "heading": "Say what should happen, not what does",
+          "body": "The subjunctive is a verb mood, not a tense. It does not tell you when something happens; it tells you the speaker's attitude to what is being said. After a verb such as suggest, insist, demand or recommend, the content of the that-clause is a proposal rather than a fact, so English uses the bare base form and adds no -s at all.",
+          "rules": [
+            {
+              "title": "Verbs that trigger the base form",
+              "statement": "Suggest, insist, demand, recommend, propose, require, request, urge and order all take that plus the base form of the verb when they are reporting a proposal.",
+              "formula": "verb of proposal + that + subject + BASE FORM",
+              "examples": [
+                {
+                  "id": "sj-l1-r1-e1",
+                  "en": "The doctor suggested that he stop smoking.",
+                  "vi": "Bác sĩ khuyên anh ấy nên ngừng hút thuốc.",
+                  "note": "Stop, not stops. The proposal is not a fact, so the third person -s disappears."
+                },
+                {
+                  "id": "sj-l1-r1-e2",
+                  "en": "The manager insisted that the report be finished by Friday.",
+                  "vi": "Quản lý nhấn mạnh rằng báo cáo phải hoàn thành trước thứ Sáu.",
+                  "note": "Be finished, not is finished. Notice that insist makes the proposal sound obligatory."
+                },
+                {
+                  "id": "sj-l1-r1-e3",
+                  "en": "The tenants demanded that the landlord repair the roof.",
+                  "vi": "Người thuê nhà yêu cầu chủ nhà sửa mái nhà.",
+                  "note": "Repair, not repairs. Demand is the strongest of these verbs."
+                }
+              ]
+            },
+            {
+              "title": "Two patterns, one meaning",
+              "statement": "Many of these verbs have a second pattern that carries the same idea. Choose the one that fits your sentence, and remember that the two are not interchangeable in every context.",
+              "formula": "suggest that + BASE FORM  |  suggest + gerund  |  suggest + to infinitive",
+              "examples": [
+                {
+                  "id": "sj-l1-r2-e1",
+                  "en": "He suggested that we leave early.  /  He suggested leaving early.",
+                  "vi": "Anh ấy gợi ý rằng chúng ta nên đi sớm. / Anh ấy gợi ý nên đi sớm.",
+                  "note": "The that-clause excludes the speaker; the gerund includes him."
+                },
+                {
+                  "id": "sj-l1-r2-e2",
+                  "en": "The board demanded that the budget be cut.",
+                  "vi": "Ban giám đốc yêu cầu cắt giảm ngân sách.",
+                  "note": "Demand plus gerund is possible in American English, but the subjunctive is the safe form in any variety."
+                }
+              ]
+            },
+            {
+              "title": "Everyday settings for the subjunctive",
+              "statement": "You will also meet the base form after it is vital that, it is important that, in order that and so that in formal writing.",
+              "formula": "It is vital that + subject + BASE FORM",
+              "examples": [
+                {
+                  "id": "sj-l1-r3-e1",
+                  "en": "It is essential that every application arrive before the deadline.",
+                  "vi": "Điều cốt yếu là mọi đơn ứng tuyển phải đến trước hạn chót.",
+                  "note": "Arrive, not arrives. Formal registers use this pattern a great deal."
+                },
+                {
+                  "id": "sj-l1-r3-e2",
+                  "en": "She spoke slowly so that everyone could understand.",
+                  "vi": "Cô ấy nói chậm rãi để mọi người đều hiểu được.",
+                  "note": "So that here expresses purpose, and the base form could replaces should in a very formal style."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l1-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l1-ex1",
+              "en": "I suggest that you book the room earlier.",
+              "vi": "Tôi đề nghị bạn đặt phòng sớm hơn.",
+              "note": "Book, not books, after suggest that."
+            },
+            {
+              "id": "sj-l1-ex2",
+              "en": "The technician insisted that the power be switched off first.",
+              "vi": "Kỹ thuật viên nhấn mạnh phải tắt nguồn điện trước tiên.",
+              "note": "Be plus participle in the base form, in the passive."
+            },
+            {
+              "id": "sj-l1-ex3",
+              "en": "Our union has demanded that the shift be shortened.",
+              "vi": "Công đoàn đã yêu cầu rút ngắn ca làm.",
+              "note": "A strong demand is still a proposal, so the base form is used."
+            },
+            {
+              "id": "sj-l1-ex4",
+              "en": "It is highly desirable that the report be submitted in English.",
+              "vi": "Rất mong muốn rằng báo cáo được nộp bằng tiếng Anh.",
+              "note": "Formal but standard: the same base form after a phrase beginning with it is."
+            }
+          ]
+        },
+        {
+          "id": "sj-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l1-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "beginner",
+              "prompt": "The doctor suggested that she ___ (take) a short holiday.",
+              "instruction": "Type the verb in the subjunctive form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "take"
+                ]
+              },
+              "explanation": "After suggest that, the verb is the bare base form even with a third person subject, so take and not takes. The subjunctive is a mood, not a tense, so it has no -s form at all.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-e2",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "beginner",
+              "prompt": "The landlord demanded that the tenants pay the rent in advance.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The landlord demanded that the tenants pay the rent in advance."
+                ]
+              },
+              "explanation": "This sentence is already correct: pay has the same base form and the learners' instinct to add -s must be resisted. The subjunctive makes the content of the clause sound like a condition rather than a report of what happened.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-e3",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "The board recommended that the plan be reviewed.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The board recommended that the plan is reviewed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The board recommended the plan being reviewed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The board recommended that the plan were reviewed.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "After recommend that, the passive is be plus participle: be reviewed. Option b uses the indicative, option c uses a gerund, and option d wrongly invents a past form.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "intermediate",
+              "prompt": "Type the full verb: 'It is important that every member ___ (notify) the change.'",
+              "instruction": "Type the verb only, in the subjunctive.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "notify"
+                ]
+              },
+              "explanation": "The subject is every member, which is singular, and the pattern is that plus base form, so the verb is notify with no -s. Both rules push in the same direction here, which is why this construction is a reliable test of understanding.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "intermediate",
+              "prompt": "Complete the proposal: We suggested that the meeting ___ (postpone) until Friday.",
+              "instruction": "Type the verb in the subjunctive form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "be postponed"
+                ]
+              },
+              "explanation": "Two pieces of subjunctive grammar at once: be in the base form, and postponed in the passive. The pattern is that + subject + be + past participle.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-e6",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "intermediate",
+              "prompt": "The staff insists that everyone were present at the safety briefing.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "be",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The staff insists that everyone be present at the safety briefing."
+                ]
+              },
+              "explanation": "After insists that, the verb must be the base form be, not were. The subjunctive ignores the number of the subject, which is exactly why everyone takes be and not are.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l1-dictation",
+          "type": "dictation",
+          "title": "Proposals in the subjunctive",
+          "items": [
+            {
+              "id": "sj-l1-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "The doctor suggested that he give up smoking."
+              },
+              "hint": "base form after suggest that",
+              "translation": "Bác sĩ khuyên anh ấy nên bỏ thuốc lá.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l1-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "The tenants demanded that the deposit be returned immediately."
+              },
+              "hint": "be plus participle after demand that",
+              "translation": "Người thuê nhà yêu cầu trả lại tiền đặt cọc ngay lập tức.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l1-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "It is essential that the data be checked twice."
+              },
+              "hint": "it is essential that plus base form",
+              "translation": "Điều cốt yếu là dữ liệu phải được kiểm tra hai lần.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l1-quiz",
+          "type": "quiz",
+          "title": "Proposals and the base form",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l1-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "beginner",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She insisted that he pay at once.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She insisted that he pays at once.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She insisted that he paid at once.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She insisted him to pay at once.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Insist that takes a that-clause with the base form, so pay. Option b is the ordinary present indicative, option c is the past, and option d wrongly uses an infinitive after insist, which is not a pattern in English.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "beginner",
+              "prompt": "The police demanded that the driver ___ (produce) his licence.",
+              "instruction": "Type the verb in the subjunctive form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "produce"
+                ]
+              },
+              "explanation": "Demand that introduces an instruction, so the verb is the base form produce. The -s form is the single most common error in this whole pattern, because the subjunctive ignores subject-verb agreement.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-q3",
+              "kind": "trueFalse",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "intermediate",
+              "prompt": "The subjunctive can be used in the past: 'She suggested that he be present at the meeting.'",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "The subjunctive has no tense of its own. In a proposal it uses the base form regardless of when the proposal is made, which is why the same sentence can sit in a past or a future report unchanged.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l1-q4",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l1",
+              "difficulty": "intermediate",
+              "prompt": "I suggest you to book the tickets earlier next time.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I suggest that you book the tickets earlier next time."
+                ]
+              },
+              "explanation": "Suggest never takes an object plus a to-infinitive in standard English. Use suggest that plus the base form, or simply suggest booking, which is the most common everyday pattern.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "After suggest, insist, demand, recommend, request, require and order, that-clauses take the base form.",
+            "The subjunctive has no -s, no -ed and no tense: it is a mood, not a tense.",
+            "The passive still works inside the subjunctive: be finished, be reviewed.",
+            "It is vital, it is essential and it is important that are the formal everyday triggers."
+          ],
+          "nextLessonID": "sj-l2"
+        }
+      ]
+    },
+    {
+      "id": "sj-l2",
+      "title": "Unreal Present: If with the Past",
+      "summary": "Talking about a situation that is not true now, in the present or near future.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "sj-l2-theory",
+          "type": "theory",
+          "heading": "If this were true, that would happen",
+          "body": "The second conditional describes a situation that is not true at the moment of speaking. The if-clause is in the past simple, the main clause uses would plus the base form, and neither part asserts anything as real. This is where the subjunctive earns its keep, because English uses the past form to mean the present.",
+          "rules": [
+            {
+              "title": "The second conditional",
+              "statement": "If plus the past simple, would plus the base form. Used for unreal present situations, polite advice and quiet criticism.",
+              "formula": "If + PAST SIMPLE, + would + BASE FORM",
+              "examples": [
+                {
+                  "id": "sj-l2-r1-e1",
+                  "en": "If I were you, I would accept the offer.",
+                  "vi": "Nếu là tôi, tôi sẽ nhận lời đề nghị đó.",
+                  "note": "Were is the past subjunctive of be and is slightly more formal than was."
+                },
+                {
+                  "id": "sj-l2-r1-e2",
+                  "en": "If the weather were better, we would walk to the park.",
+                  "vi": "Nếu thời tiết tốt hơn, chúng tôi sẽ đi bộ tới công viên.",
+                  "note": "Were agrees with the subject even in the plural, which is the mark of the subjunctive."
+                }
+              ]
+            },
+            {
+              "title": "What if and even if",
+              "statement": "What if asks about an imaginary situation, and even if introduces one that is definitely not true, so the past is used for emphasis and not for time.",
+              "formula": "What if + PAST SIMPLE?  |  Even if + PAST SIMPLE, + would",
+              "examples": [
+                {
+                  "id": "sj-l2-r2-e1",
+                  "en": "What if nobody came to the meeting?",
+                  "vi": "Nếu không ai đến cuộc họp thì sao?",
+                  "note": "An open question about the future, so the past simple plus would follows."
+                },
+                {
+                  "id": "sj-l2-r2-e2",
+                  "en": "Even if I apologised, she would not change her mind.",
+                  "vi": "Dù tôi có xin lỗi, cô ấy cũng sẽ không đổi ý.",
+                  "note": "Even if makes it clear the apology is not a real plan, so the past tense is used to stress that."
+                }
+              ]
+            },
+            {
+              "title": "The difference from the first conditional",
+              "statement": "The first conditional is about a real, possible future. The second is about an imaginary one. Mixing the tenses of the two is the classic error.",
+              "formula": "If it rains, I will stay. (real)  /  If it rained, I would stay. (imagined)",
+              "examples": [
+                {
+                  "id": "sj-l2-r3-e1",
+                  "en": "If I had more time, I would learn another language.",
+                  "vi": "Nếu tôi có nhiều thời gian hơn, tôi sẽ học thêm một ngoại ngữ.",
+                  "note": "The speaker does not have the time, so the if-clause is past and the main clause uses would."
+                },
+                {
+                  "id": "sj-l2-r3-e2",
+                  "en": "If I have enough time tonight, I will call you.",
+                  "vi": "Nếu tối nay tôi có đủ thời gian, tôi sẽ gọi cho bạn.",
+                  "note": "This one is real: present simple in the if-clause and will in the main clause."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l2-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l2-ex1",
+              "en": "If I lived closer to the office, I would cycle to work.",
+              "vi": "Nếu tôi sống gần văn phòng hơn, tôi sẽ đi xe đạp đi làm.",
+              "note": "Unreal present, so lived and would cycle."
+            },
+            {
+              "id": "sj-l2-ex2",
+              "en": "If the alarm worked properly, we would not have missed the train.",
+              "vi": "Nếu cái báo động hoạt động tốt, chúng tôi đã không bỏ lỡ tàu.",
+              "note": "The alarm does not work properly, which is why the past is used."
+            },
+            {
+              "id": "sj-l2-ex3",
+              "en": "If we invested more in public transport, the city would be quieter.",
+              "vi": "Nếu chúng ta đầu tư nhiều hơn vào giao thông công cộng, thành phố sẽ yên tĩnh hơn.",
+              "note": "A general argument about a situation that is not the case."
+            },
+            {
+              "id": "sj-l2-ex4",
+              "en": "If I were you, I would read the contract twice.",
+              "vi": "Nếu là tôi, tôi sẽ đọc hợp đồng hai lần.",
+              "note": "The classic formula of advice; were is the past subjunctive of be."
+            }
+          ]
+        },
+        {
+          "id": "sj-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l2-e1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct second conditional.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "If I were you, I would take the job.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If I was you, I will take the job.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If I am you, I would take the job.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "If I will be you, I would take the job.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "The unreal present needs the past subjunctive were plus would plus the base form. Option b mixes the first and second conditional, and option c uses the present, which would claim the speaker really is the listener.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-e2",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "If the road would be closed, we would have to take another route.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If the road were closed, we would have to take another route."
+                ]
+              },
+              "explanation": "There is no would in the if-clause of a second conditional. The condition is expressed with the past subjunctive were, and the would belongs only to the main clause.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-e3",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "If she ___ (speak) better English, she would get the job.",
+              "instruction": "Type the verb in the past form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "spoke"
+                ]
+              },
+              "explanation": "The if-clause of the second conditional takes the past simple, so spoke. Using speaks would turn the sentence into a statement about a real, uncertain future.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "Type the past subjunctive form of 'be' for the subject 'the children': 'If the children ___ were late, we would start without them.'",
+              "instruction": "Type the form of 'be' only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "In the subjunctive, were is used for every number: if he were, if she were, if they were. This is the clearest single sign that you are looking at a subjunctive rather than an ordinary past.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "Complete: What if nobody ___ (come) to the ceremony?",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "came"
+                ]
+              },
+              "explanation": "A What if question is an open question about an imaginary future, so the past simple came is used, and the rest of the sentence would follow: 'What if nobody came? We would have to cancel.'",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-e6",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "advanced",
+              "prompt": "If the committee will approve the budget, we can start the project in June.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "approves",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If the committee approves the budget, we can start the project in June."
+                ]
+              },
+              "explanation": "This is a first conditional, not a second one, because the committee really will decide and the plan is real. The if-clause therefore takes the present simple approves, and the main clause keeps can.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l2-dictation",
+          "type": "dictation",
+          "title": "Unreal present conditions",
+          "items": [
+            {
+              "id": "sj-l2-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "If I had more time, I would learn to play the piano."
+              },
+              "hint": "if plus past, would plus base form",
+              "translation": "Nếu tôi có nhiều thời gian hơn, tôi sẽ học chơi đàn piano.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l2-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Even if she apologised, he would not change his mind."
+              },
+              "hint": "even if stresses the unreal condition",
+              "translation": "Dù cô ấy có xin lỗi, anh ấy cũng sẽ không đổi ý.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l2-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "If the trains were cheaper, more people would travel by rail."
+              },
+              "hint": "were in the plural too",
+              "translation": "Nếu tàu rẻ hơn, nhiều người sẽ đi tàu hơn.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l2-quiz",
+          "type": "quiz",
+          "title": "Unreal present",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l2-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "If I were taller, I would play basketball professionally.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If I am taller, I would play basketball professionally.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If I will be taller, I would play basketball professionally.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "If I was taller, I would play basketball professionally.",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "d"
+                ]
+              },
+              "explanation": "Both a and d are correct: if I were and if I was are both standard in the second conditional, with were simply more formal. The errors are in b and c, which use the present and the future of a condition that is not real.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "If the bus ___ (arrive) on time, we would catch the flight.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "arrived"
+                ]
+              },
+              "explanation": "The bus does not reliably arrive on time, which is the unreal part, so the if-clause takes the past simple arrived. The main clause stays with would catch.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-q3",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "If I would have more money, I would travel around the world.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If I had more money, I would travel around the world."
+                ]
+              },
+              "explanation": "Never put would in the if-clause of a second conditional, and never use the third conditional form had there either. The unreal present condition uses the simple past: if I had more money.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l2-q4",
+              "kind": "trueFalse",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l2",
+              "difficulty": "intermediate",
+              "prompt": "In a second conditional, the if-clause is normally followed by would in the main clause.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "That is the standard pair: past in the condition, would in the result. The rare alternative, if I were you, you took the job, sounds old-fashioned and is not used in modern English.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "The second conditional pairs a past simple if-clause with would plus the base form.",
+            "Were is used for every number in the subjunctive: if he were, if they were.",
+            "What if and even if use the same pattern because the situation is not real.",
+            "The past here describes the present, not the past: use had plus participle only for a real past regret."
+          ],
+          "nextLessonID": "sj-l3"
+        }
+      ]
+    },
+    {
+      "id": "sj-l3",
+      "title": "Inversion: Were, Had and Should",
+      "summary": "The formal inversion of the conditional clause, and the situations that require it.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "sj-l3-theory",
+          "type": "theory",
+          "heading": "When the if-clause comes first",
+          "body": "English allows the conditional clause to move to the front for emphasis, and when it does, it must invert: no if, and the auxiliary jumps in front of the subject. This is not a stylistic whim. In the if-clause, the words if, were, had and should are a single set of forms, and inverting them is the only way to keep the sentence grammatical.",
+          "rules": [
+            {
+              "title": "The three inverted conditionals",
+              "statement": "Were for the second conditional, had for the third, should for the first. Drop the if and put the helper in front of the subject.",
+              "formula": "If + subject + were/had/should + ...  →  Were/Should/Had + subject + ...",
+              "examples": [
+                {
+                  "id": "sj-l3-r1-e1",
+                  "en": "Were I in your position, I would accept.",
+                  "vi": "Nếu ở vị trí của bạn, tôi sẽ đồng ý.",
+                  "note": "Were I and not If I were. The inversion replaces the if-clause opening, it does not add a new clause."
+                },
+                {
+                  "id": "sj-l3-r1-e2",
+                  "en": "Had I known about the delay, I would have booked earlier.",
+                  "vi": "Nếu tôi biết về chuyện chậm trễ, tôi đã đặt sớm hơn.",
+                  "note": "Had I known replaces if I had known: the third conditional inverted."
+                },
+                {
+                  "id": "sj-l3-r1-e3",
+                  "en": "Should you need anything, please call the office.",
+                  "vi": "Nếu bạn cần gì, xin gọi cho văn phòng.",
+                  "note": "Should you is a formal alternative to if you should, common in written instructions."
+                }
+              ]
+            },
+            {
+              "title": "Unreal past with had and the past perfect",
+              "statement": "The third conditional describes a regret about the past. Inversion is only possible when the if-clause comes first, and the main clause keeps had plus participle.",
+              "formula": "Had + subject + V-ed, + subject + would have + V-ed",
+              "examples": [
+                {
+                  "id": "sj-l3-r2-e1",
+                  "en": "Had we booked earlier, we would have got cheaper flights.",
+                  "vi": "Nếu chúng ta đặt sớm hơn, chúng ta đã có vé rẻ hơn.",
+                  "note": "Two had plus participle forms, one in each half of the sentence."
+                },
+                {
+                  "id": "sj-l3-r2-e2",
+                  "en": "If I had studied medicine, I would be working in a hospital now.",
+                  "vi": "Nếu tôi học y, bây giờ tôi sẽ làm việc ở bệnh viện.",
+                  "note": "Inversion is impossible here, because the if-clause is not first. This is the third conditional mixed with a result in the present."
+                }
+              ]
+            },
+            {
+              "title": "Was, were and without an if",
+              "statement": "The inversion also appears after other words that open a hypothetical: as if, as though, as if in a wish, and in the fixed phrases wish and suppose.",
+              "formula": "as if + subject + were  |  Wish + subject + were",
+              "examples": [
+                {
+                  "id": "sj-l3-r3-e1",
+                  "en": "He behaves as if he were the owner.",
+                  "vi": "Anh ấy cư xử như thể anh ấy là chủ sở hữu.",
+                  "note": "As if requires the subjunctive were, even when the subject is he."
+                },
+                {
+                  "id": "sj-l3-r3-e2",
+                  "en": "Wish I were twenty years younger.",
+                  "vi": "Ước gì tôi được hai mươi tuổi trẻ hơn.",
+                  "note": "An inverted wish, common in wishes and in quite informal speech."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l3-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l3-ex1",
+              "en": "Should you need a lift, just give me a call.",
+              "vi": "Nếu bạn cần được chở, cứ gọi cho tôi.",
+              "note": "Formal, polite and still very common in business English."
+            },
+            {
+              "id": "sj-l3-ex2",
+              "en": "Had the weather been better, the flight would not have been delayed.",
+              "vi": "Nếu thời tiết tốt hơn, chuyến bay đã không bị hoãn.",
+              "note": "Had the weather been is the inverted third conditional."
+            },
+            {
+              "id": "sj-l3-ex3",
+              "en": "Were the tickets cheaper, we would go more often.",
+              "vi": "Nếu vé rẻ hơn, chúng tôi sẽ đi thường xuyên hơn.",
+              "note": "Were agrees with a plural subject here, which is impossible in ordinary past usage."
+            },
+            {
+              "id": "sj-l3-ex4",
+              "en": "Had anyone complained, we would have changed the plan.",
+              "vi": "Nếu có ai phàn nàn, chúng tôi đã thay đổi kế hoạch.",
+              "note": "Inversion works with indefinite pronouns too, and negative forms follow the same pattern."
+            }
+          ]
+        },
+        {
+          "id": "sj-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l3-e1",
+              "kind": "rearrangeWords",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "Invert the conditional: 'If I were you, I would take the offer.'",
+              "instruction": "Arrange the words into the inverted form.",
+              "items": [
+                {
+                  "id": "t1",
+                  "text": "Were",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t2",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t3",
+                  "text": "you",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t4",
+                  "text": "I",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t5",
+                  "text": "would",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t6",
+                  "text": "take",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t7",
+                  "text": "the",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "t8",
+                  "text": "offer",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "order",
+                "values": [
+                  [
+                    "Were",
+                    "I",
+                    "you",
+                    "I",
+                    "would",
+                    "take",
+                    "the",
+                    "offer"
+                  ]
+                ]
+              },
+              "explanation": "The word if disappears and were moves in front of the subject. The main clause is untouched, and the two I's mean different things: the first is the speaker, the second is the person being addressed.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-e2",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "If had I known the answer, I would have told you.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Had I known the answer, I would have told you."
+                ]
+              },
+              "explanation": "In an inverted conditional the if is dropped entirely. You cannot keep it and invert, so 'If had I known' must become 'Had I known'.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-e3",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "___ you need any further information, please contact the office.",
+              "instruction": "Type the correct opening word.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Should"
+                ]
+              },
+              "explanation": "Should you need is a formal inverted first conditional, a polite and very common opening in letters and instructions: it avoids the everyday 'If you need'.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-e4",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct inverted sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Were I rich, I would travel around the world.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If were I rich, I would travel around the world.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If I were rich, I would travel around the world",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Was I rich, I would travel around the world.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Were + subject is the only legal order for an inverted second conditional. Option b keeps the if, and option d uses was, which cannot invert because it is not an auxiliary form.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "advanced",
+              "prompt": "Complete the inversion: ___ the manager approved it, we would have started in May.",
+              "instruction": "Type the opening auxiliary.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Had"
+                ]
+              },
+              "explanation": "Approved in the if-clause refers to a real past event, so this is a third conditional and its inversion begins with Had, not If had or Should.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-e6",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "Type the subjunctive form of 'be' after 'as if' with the subject 'they': 'They talk as if ___ the experts.'",
+              "instruction": "Type the verb only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "As if and as though always take the past subjunctive, so were is used for a plural subject as well. There is no tense shift of meaning here: the people are pretending, not reporting an older fact.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l3-dictation",
+          "type": "dictation",
+          "title": "Inverted conditionals",
+          "items": [
+            {
+              "id": "sj-l3-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "Were I you, I would ask for a written agreement."
+              },
+              "hint": "were + subject, no if",
+              "translation": "Nếu là tôi, tôi sẽ yêu cầu một thỏa thuận bằng văn bản.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l3-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "Should the weather improve, we will finish on Friday."
+              },
+              "hint": "should + subject, no if",
+              "translation": "Nếu thời tiết thuận lợi hơn, chúng tôi sẽ hoàn thành vào thứ Sáu.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l3-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "Had she read the contract, she would have noticed the penalty."
+              },
+              "hint": "had + subject plus participle",
+              "translation": "Nếu cô ấy đã đọc hợp đồng, cô ấy đã nhận ra khoản phạt.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l3-quiz",
+          "type": "quiz",
+          "title": "Were, had and should inversion",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l3-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct inverted conditional.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "Had we left earlier, we would have caught the train.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If had we left earlier, we would have caught the train.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Have we left earlier, we would have caught the train.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "Did we left earlier, we would have caught the train.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Had + subject + participle is the inverted third conditional, and the if is dropped. Option b keeps the if, option c uses a present perfect auxiliary, and option d has a doubled past form.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "If I ___ (be) honest, I would have admitted the mistake long ago.",
+              "instruction": "Type the correct form of 'be'.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "The if-clause is not inverted here, so the sentence must be complete with the past subjunctive were. In the subjunctive, were never changes with the number of the subject, which is why if I were and if they were are both normal.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-q3",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "advanced",
+              "prompt": "If would you like a copy, please let me know today.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "Should",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Should you like a copy, please let me know today."
+                ]
+              },
+              "explanation": "You cannot invert with would, because would is not one of the three helpers that can open an if-clause. The only options are were, had and should.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l3-q4",
+              "kind": "trueFalse",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l3",
+              "difficulty": "intermediate",
+              "prompt": "An inverted conditional must be followed by a comma before the main clause.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "When the conditional clause comes first it is set off by a comma: 'Were I you, I would go.' That is standard punctuation for a fronted subordinate clause.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Only were, had and should can open an inverted conditional clause.",
+            "Inversion is only possible when the conditional clause comes first.",
+            "The if is always dropped in the inverted form.",
+            "As if and as though also take the past subjunctive were, with no if at all."
+          ],
+          "nextLessonID": "sj-l4"
+        }
+      ]
+    },
+    {
+      "id": "sj-l4",
+      "title": "Wish, Hope and Regret",
+      "summary": "Wish for what is not so, and the difference between a wish and a hope.",
+      "level": "intermediate",
+      "steps": [
+        {
+          "id": "sj-l4-theory",
+          "type": "theory",
+          "heading": "What we would like to be true",
+          "body": "Wish looks backwards or sideways at a situation the speaker does not accept. The verb after wish changes to show how far reality is from the wish: the present uses the past subjunctive, and a past regret uses the past perfect. Hope does the opposite, because hope points forwards to something still possible, so it uses ordinary indicative tenses.",
+          "rules": [
+            {
+              "title": "Wish about the present",
+              "statement": "Wish plus a past tense, usually the past subjunctive were for be.",
+              "formula": "wish + subject + PAST / were",
+              "examples": [
+                {
+                  "id": "sj-l4-r1-e1",
+                  "en": "I wish I were taller.",
+                  "vi": "Ước gì tôi cao hơn.",
+                  "note": "The speaker is not tall now, so the wish uses were."
+                },
+                {
+                  "id": "sj-l4-r1-e2",
+                  "en": "She wishes she lived nearer the sea.",
+                  "vi": "Cô ấy ước cô ấy sống gần biển hơn.",
+                  "note": "Lived is the past form standing for a present situation, which is why the wish sounds distant."
+                }
+              ]
+            },
+            {
+              "title": "Wish about the past",
+              "statement": "To regret a real past situation, wish takes the past perfect, or could have plus participle when you blame yourself or someone else.",
+              "formula": "wish + subject + had + participle",
+              "examples": [
+                {
+                  "id": "sj-l4-r2-e1",
+                  "en": "I wish I had taken that job.",
+                  "vi": "Ước gì tôi đã nhận công việc đó.",
+                  "note": "A regret about a real past event, so the past perfect is used."
+                },
+                {
+                  "id": "sj-l4-r2-e2",
+                  "en": "I wish you could have come to the party.",
+                  "vi": "Ước gì bạn đã có thể đến dự tiệc.",
+                  "note": "Could have come expresses regret about what was possible but did not happen."
+                }
+              ]
+            },
+            {
+              "title": "Wish for someone else, and hope",
+              "statement": "Wish plus an object pronoun takes would for a polite wish about another person. Hope is not subjunctive: it uses the present or future because the outcome is still open.",
+              "formula": "I wish you would + base form  |  I hope (that) + indicative",
+              "examples": [
+                {
+                  "id": "sj-l4-r3-e1",
+                  "en": "I wish you would come and see us.",
+                  "vi": "Ước gì bạn ghé thăm chúng tôi.",
+                  "note": "Wish you would is a gentle request as well as a wish."
+                },
+                {
+                  "id": "sj-l4-r3-e2",
+                  "en": "I hope the weather improves tomorrow.",
+                  "vi": "Tôi hy vọng thời tiết sẽ tốt hơn vào ngày mai.",
+                  "note": "Hope takes the ordinary present, because the situation has not happened yet. The past forms are reserved for wish."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l4-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l4-ex1",
+              "en": "He wishes he had asked for help earlier.",
+              "vi": "Anh ấy ước mình đã hỏi cầu cứu sớm hơn.",
+              "note": "Past regret, so had asked."
+            },
+            {
+              "id": "sj-l4-ex2",
+              "en": "I wish the report did not have so many errors.",
+              "vi": "Ước gì báo cáo không có nhiều lỗi như vậy.",
+              "note": "A wish about the present, so the past did not."
+            },
+            {
+              "id": "sj-l4-ex3",
+              "en": "I hope they finish the project on time.",
+              "vi": "Tôi hy vọng họ hoàn thành dự án đúng hạn.",
+              "note": "Hope takes the present, not the past subjunctive."
+            },
+            {
+              "id": "sj-l4-ex4",
+              "en": "We wish you a safe journey.",
+              "vi": "Chúc bạn có hành trình an toàn.",
+              "note": "A set phrase: wish someone something with no verb at all."
+            }
+          ]
+        },
+        {
+          "id": "sj-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l4-e1",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "I wish I ___ (know) the answer.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "knew"
+                ]
+              },
+              "explanation": "A wish about the present uses the past form, so knew. Using know would turn the wish into a statement of fact, which defeats the purpose of the sentence.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-e2",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "I hope I was taller when I was a student.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I wish I was taller when I was a student."
+                ]
+              },
+              "explanation": "Hope looks forwards and takes ordinary indicative tenses, so it cannot take the past form was to describe a past situation. When the wish is about the past, the verb must be wish, and the tense then decides between was and had been.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-e3",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence expressing regret about the past.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I wish I had reserved a table earlier.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I wish I reserved a table earlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I wish I would have reserved a table earlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "I wish I have reserved a table earlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Past regret uses the past perfect, had reserved. Option b suggests a habitual past action, and options c and d use auxiliaries that do not belong in a wish clause.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "Type the correct form: 'I wish you ___ (call) me when you arrive.'",
+              "instruction": "Type the verb only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "would call"
+                ]
+              },
+              "explanation": "When the subject of the wish is a person being addressed, would plus the base form is used. Wish I would call would be impossible, because the speaker cannot wish for their own action in that way.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "advanced",
+              "prompt": "Complete: She wishes she ___ (not have) said that in the meeting.",
+              "instruction": "Type the verb phrase.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "had not said"
+                ]
+              },
+              "explanation": "A regret about a real past action takes the past perfect, and the negative goes between had and the participle: had not said, never had not said.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-e6",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "advanced",
+              "prompt": "I hope you were able to finish the report on time.",
+              "instruction": "Rewrite the sentence so that it correctly expresses a wish.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "wish",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I wish you had been able to finish the report on time."
+                ]
+              },
+              "explanation": "Hope is fine if the speaker only hopes, but once were is used the sentence is describing a past situation the speaker now regrets, and then the verb must be wish with the past perfect had been able.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l4-dictation",
+          "type": "dictation",
+          "title": "Wishes and regrets",
+          "items": [
+            {
+              "id": "sj-l4-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "I wish I had studied harder at school."
+              },
+              "hint": "past perfect after wish",
+              "translation": "Ước gì thời cấp ba tôi đã học chăm hơn.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l4-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "I wish you would call me when you get home."
+              },
+              "hint": "wish you would plus base form",
+              "translation": "Ước gì bạn gọi cho tôi khi về đến nhà.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l4-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "She wishes she lived closer to her parents."
+              },
+              "hint": "wish about the present",
+              "translation": "Cô ấy ước mình sống gần bố mẹ hơn.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l4-quiz",
+          "type": "quiz",
+          "title": "Wish and hope",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l4-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I wish our neighbours were friendlier.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I wish our neighbours are friendlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I wish our neighbours be friendlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "I wish our neighbours will be friendlier.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "A wish about the present takes the past subjunctive, so were. Option b would claim the neighbours already are friendly, and options c and d use patterns that do not exist after wish.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "We wish you ___ (enjoy) your stay in Hanoi.",
+              "instruction": "Type the correct verb form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "enjoy"
+                ]
+              },
+              "explanation": "Wish you plus the base form is the standard formula for a good wish, as in we wish you a happy birthday. It is not the past form, and it does not take would in this fixed phrase.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-q3",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "He wishes he will have studied medicine before now.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He wishes he had studied medicine before now."
+                ]
+              },
+              "explanation": "Before now makes this a regret about the past, so the verb is the past perfect had studied. The future will have studied would point forward and contradicts before now.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l4-q4",
+              "kind": "trueFalse",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l4",
+              "difficulty": "intermediate",
+              "prompt": "I hope the manager will approve the request.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "Hope is followed by ordinary indicative tenses, because the outcome is still possible. No -s after he, and the base form after to is also correct: 'I hope the manager approves' or 'to approve'.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Wish about the present takes the past tense; wish about the past takes the past perfect.",
+            "Wish you would plus base form is a gentle wish or request aimed at someone else.",
+            "Hope takes ordinary indicative tenses, because the outcome is still open.",
+            "Wish you a safe journey and similar fixed phrases contain no verb at all."
+          ],
+          "nextLessonID": "sj-l5"
+        }
+      ]
+    },
+    {
+      "id": "sj-l5",
+      "title": "It Is Time That and Would Rather",
+      "summary": "Urgency expressed with the subjunctive, and the preference structures built on it.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "sj-l5-theory",
+          "type": "theory",
+          "heading": "It is time, and I would rather",
+          "body": "Two very common structures depend on the subjunctive. It is time that plus a clause expresses something overdue, and the clause takes the base form or the past subjunctive because the speaker is describing what should be done now, not what someone has decided. Would rather compares two preferences and is followed by the bare base form of the other option.",
+          "rules": [
+            {
+              "title": "It is time that",
+              "statement": "The that-clause takes the base form, and with the third person singular the ungrammatical-looking s appears: it is time that he leaves. In formal writing the past subjunctive is also common.",
+              "formula": "It is (high) time that + subject + BASE FORM",
+              "examples": [
+                {
+                  "id": "sj-l5-r1-e1",
+                  "en": "It is time that we left for the airport.",
+                  "vi": "Đã đến lúc chúng ta nên xuất phát ra sân bay.",
+                  "note": "Left in the subjunctive reads as a recommendation, not a record of the past."
+                },
+                {
+                  "id": "sj-l5-r1-e2",
+                  "en": "It is high time we started looking for a new flat.",
+                  "vi": "Đã đến lúc chúng ta nên bắt đầu tìm căn hộ mới.",
+                  "note": "It is high time that is the strongest version, used when the delay has gone on long enough."
+                }
+              ]
+            },
+            {
+              "title": "Would rather and would rather not",
+              "statement": "Would rather is followed by the base form, with no to. The two options are normally linked by than, and not goes directly after rather.",
+              "formula": "would rather + BASE FORM + than + BASE FORM",
+              "examples": [
+                {
+                  "id": "sj-l5-r2-e1",
+                  "en": "I would rather stay at home tonight.",
+                  "vi": "Tôi thà ở nhà tối nay còn hơn.",
+                  "note": "No to after rather: would rather stay, never would rather to stay."
+                },
+                {
+                  "id": "sj-l5-r2-e2",
+                  "en": "I would rather not talk about it now.",
+                  "vi": "Tôi không muốn nói chuyện về điều đó lúc này.",
+                  "note": "The negative not sits between rather and the base form."
+                }
+              ]
+            },
+            {
+              "title": "Would rather for someone else",
+              "statement": "To express a preference about another person's behaviour, would rather takes a past subjunctive: I would rather you did not tell anyone. Would rather you told would be wrong.",
+              "formula": "would rather + subject + PAST SUBJUNCTIVE",
+              "examples": [
+                {
+                  "id": "sj-l5-r3-e1",
+                  "en": "I would rather you did not mention it.",
+                  "vi": "Tôi thà bạn không nhắc đến chuyện đó.",
+                  "note": "Did not is the past subjunctive, and it is not interchangeable with told here."
+                },
+                {
+                  "id": "sj-l5-r3-e2",
+                  "en": "I would rather he handled the clients himself.",
+                  "vi": "Tôi thà anh ấy tự xử lý khách hàng.",
+                  "note": "Handled, not handles, because the clause is subjunctive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l5-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l5-ex1",
+              "en": "It is time that we replaced the old equipment.",
+              "vi": "Đã đến lúc chúng ta nên thay thiết bị cũ.",
+              "note": "Replaced in the subjunctive after it is time that."
+            },
+            {
+              "id": "sj-l5-ex2",
+              "en": "She would rather walk than take the bus.",
+              "vi": "Cô ấy thà đi bộ còn hơn đi xe buýt.",
+              "note": "Both options take the base form, and than links them."
+            },
+            {
+              "id": "sj-l5-ex3",
+              "en": "I would rather you did not repeat that story.",
+              "vi": "Tôi thà bạn đừng kể lại chuyện đó.",
+              "note": "Past subjunctive after would rather with another subject."
+            },
+            {
+              "id": "sj-l5-ex4",
+              "en": "It is about time that the deadline was moved.",
+              "vi": "Đã đến lúc nên dời hạn chót rồi.",
+              "note": "A less common variant of it is time that, with the past tense for the recommendation."
+            }
+          ]
+        },
+        {
+          "id": "sj-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l5-e1",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "I would rather to stay here than go back to the office.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I would rather stay here than go back to the office."
+                ]
+              },
+              "explanation": "Would rather is never followed by to. The structure is would rather plus the bare base form, in both halves of the comparison.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "It is high time that we ___ (move) to a smaller office.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "move"
+                ]
+              },
+              "explanation": "After it is high time that, the verb is the base form, so move. The speaker is recommending action now, not describing something that already happened.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-e3",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I would rather you did not wait for me.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I would rather you do not wait for me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I would rather you did not to wait for me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "I would rather you not waited for me.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "With another subject, would rather takes the past subjunctive, so did not wait. The base form do not would belong to an ordinary request, and there is never a to before wait in this pattern.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "advanced",
+              "prompt": "Type the correct verb: 'We would rather she ___ (explain) it herself.'",
+              "instruction": "Type the verb only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "explain",
+                  "explained"
+                ]
+              },
+              "explanation": "Two registers are correct. With the base form, would rather reads as a preference the speaker hopes will happen; with explained it is a formal past subjunctive. The third person -s form explains is never right here.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "Complete: It is about time that the company ___ (announce) a decision.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "announced"
+                ]
+              },
+              "explanation": "With the verb announce in the past form, the sentence means the company should announce something now. Announce in the base form would also be possible, but the past form is the standard choice with a company that has still said nothing.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-e6",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "advanced",
+              "prompt": "It is time that the manager makes a decision, and we would rather he not delay it any longer.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "delayed",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "It is time that the manager made a decision, and we would rather he did not delay it any longer."
+                ]
+              },
+              "explanation": "Both halves are subjunctive. After it is time that the past form made is the standard recommendation form, and after would rather with another subject the past subjunctive did not is required, not the base form not delay.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l5-dictation",
+          "type": "dictation",
+          "title": "It is time and would rather",
+          "items": [
+            {
+              "id": "sj-l5-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "It is time that we updated the old records."
+              },
+              "hint": "it is time that plus base form",
+              "translation": "Đã đến lúc chúng ta nên cập nhật những hồ sơ cũ.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l5-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "I would rather not take the motorway at this hour."
+              },
+              "hint": "would rather not plus base form",
+              "translation": "Tôi không muốn đi cao tốc vào giờ này.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l5-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "We would rather she handled the paperwork herself."
+              },
+              "hint": "would rather with another subject",
+              "translation": "Chúng tôi thà cô ấy tự xử lý giấy tờ.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l5-quiz",
+          "type": "quiz",
+          "title": "It is time that and would rather",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l5-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "I would rather not pay by card.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "I would rather not to pay by card.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "I would rather not paying by card.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "I would rather didn't pay by card.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Would rather not takes the bare base form: not pay. Neither a to-infinitive, a gerund nor an auxiliary appears in this structure.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-q2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "intermediate",
+              "prompt": "It is time that we ___ (do) something about the noise.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "do"
+                ]
+              },
+              "explanation": "The clause after it is time that is a recommendation, so it takes the base form do. Anything else would change the sentence into a statement about a time that has already passed.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-q3",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "advanced",
+              "prompt": "I would rather you don't tell anyone about the result.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "I would rather you did not tell anyone about the result."
+                ]
+              },
+              "explanation": "Because the subject changes from I to you, the clause becomes subjunctive, and the past form did not is used. The base form do not belongs to an ordinary request, not to a preference.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l5-q4",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l5",
+              "difficulty": "advanced",
+              "prompt": "In 'It is high time that the government ______', which form is standard?",
+              "instruction": "Pick the standard form.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "acts",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "act",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "acted",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "will act",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "b",
+                  "c"
+                ]
+              },
+              "explanation": "Both act and acted are standard here: the base form is the plain recommendation, and the past form is the traditional formal style. What is wrong is the third person -s, because the subjunctive ignores agreement, and the future will act.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "It is time that and it is high time that take a recommendation, so the verb is the base form or the past tense, never the -s form.",
+            "Would rather is followed by the bare base form, with no to.",
+            "Would rather not plus base form is the standard way to decline something politely.",
+            "With another subject, would rather takes the past subjunctive: I would rather you did not tell."
+          ],
+          "nextLessonID": "sj-l6"
+        }
+      ]
+    },
+    {
+      "id": "sj-l6",
+      "title": "As If, As Though and Mixed Sequences",
+      "summary": "The final corner of the subjunctive: pretending, politeness, and strings of hypothetical tenses.",
+      "level": "advanced",
+      "steps": [
+        {
+          "id": "sj-l6-theory",
+          "type": "theory",
+          "heading": "Pretending, and moving through unreal time",
+          "body": "As if and as though describe an unreal comparison, so they take the past tense, past perfect or would depending on how far the comparison is from reality. And because the subjunctive is a mood rather than a tense, the hypothetical forms can be stacked: a real past condition, an unreal past result, and a present consequence all in one sentence.",
+          "rules": [
+            {
+              "title": "As if and as though",
+              "statement": "These describe a comparison that is not true, so the verb goes into the past: were, knew, had left. The negative not is inserted before the verb, not before as if.",
+              "formula": "as if / as though + subject + PAST SUBJUNCTIVE",
+              "examples": [
+                {
+                  "id": "sj-l6-r1-e1",
+                  "en": "He talks as if he knew everything.",
+                  "vi": "Anh ấy nói chuyện như thể biết tất cả.",
+                  "note": "Knew, not knows: the comparison is unreal."
+                },
+                {
+                  "id": "sj-l6-r1-e2",
+                  "en": "She looked as if she had not heard the news.",
+                  "vi": "Cô ấy trông như thể chưa nghe tin này.",
+                  "note": "Had not heard: the comparison is set before another past event."
+                },
+                {
+                  "id": "sj-l6-r1-e3",
+                  "en": "It looks as if it will rain.",
+                  "vi": "Trông như thể trời sẽ mưa.",
+                  "note": "A real future probability, so will is used and the comparison is not purely hypothetical."
+                }
+              ]
+            },
+            {
+              "title": "Politeness with the subjunctive",
+              "statement": "The past subjunctive in as if and as though also softens an assertion, because it frames a statement as a comparison rather than a fact.",
+              "formula": "It seems as if + past form, for a tentative judgement",
+              "examples": [
+                {
+                  "id": "sj-l6-r2-e1",
+                  "en": "It seems as if nobody had told him anything.",
+                  "vi": "Có vẻ như không ai đã nói gì với anh ấy.",
+                  "note": "A tactful way of saying he is clearly badly informed."
+                },
+                {
+                  "id": "sj-l6-r2-e2",
+                  "en": "You seem as if you have been there before.",
+                  "vi": "Bạn có vẻ như đã từng đến đó trước đây.",
+                  "note": "The past perfect softens a guess that is really quite confident."
+                }
+              ]
+            },
+            {
+              "title": "Stacking the hypothetical tenses",
+              "statement": "When the conditions and the results sit at different distances from reality, each one takes the tense that matches its own distance. Work from the if-clause outwards.",
+              "formula": "If + had + V-ed, would have + V-ed, would be + V-ing now",
+              "examples": [
+                {
+                  "id": "sj-l6-r3-e1",
+                  "en": "If she had studied medicine, she would be working in a hospital now.",
+                  "vi": "Nếu cô ấy đã học y, bây giờ cô ấy sẽ đang làm việc ở bệnh viện.",
+                  "note": "Had studied is a real past event, would be working is the present consequence of it."
+                },
+                {
+                  "id": "sj-l6-r3-e2",
+                  "en": "If I were you, I would have taken the scholarship without hesitating.",
+                  "vi": "Nếu là tôi, tôi đã nhận học bổng mà không do dự.",
+                  "note": "Were in the present condition, would have taken in the past result: two different tenses in one sentence."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sj-l6-examples",
+          "type": "examples",
+          "examples": [
+            {
+              "id": "sj-l6-ex1",
+              "en": "She answered as if the question were trivial.",
+              "vi": "Cô ấy trả lời như thể câu hỏi đó chỉ là chuyện nhỏ.",
+              "note": "The past subjunctive were in an as if-clause."
+            },
+            {
+              "id": "sj-l6-ex2",
+              "en": "He walked as if he had never seen snow.",
+              "vi": "Anh ấy đi như thể chưa từng thấy tuyết.",
+              "note": "Had never seen: a comparison set before another past event."
+            },
+            {
+              "id": "sj-l6-ex3",
+              "en": "If the company had not gone bankrupt, it would have expanded into Asia.",
+              "vi": "Nếu công ty không phá sản, nó đã mở rộng sang châu Á.",
+              "note": "Two had plus participle forms: a real past fact and an unreal past result."
+            },
+            {
+              "id": "sj-l6-ex4",
+              "en": "If I were braver, I would have spoken to her years ago.",
+              "vi": "Nếu tôi dũng cảm hơn, tôi đã nói chuyện với cô ấy nhiều năm trước.",
+              "note": "A present quality against a past action, which is a common and natural combination."
+            }
+          ]
+        },
+        {
+          "id": "sj-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "sj-l6-e1",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "intermediate",
+              "prompt": "He behaved as if he was the only person in the room.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He behaved as if he were the only person in the room."
+                ]
+              },
+              "explanation": "After as if the comparison is unreal, so the past subjunctive were is required. The present was would turn the comparison into a statement of fact and lose the meaning entirely.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-e2",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "intermediate",
+              "prompt": "She looked as if she ___ (not understand) a word.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "did not understand"
+                ]
+              },
+              "explanation": "The comparison is hypothetical, so the verb is the past, and the negative not goes between did and understand: did not understand, not not did understand.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-e3",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "If she had taken the job, she would be living abroad now.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "If she would have taken the job, she would be living abroad now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "If she has taken the job, she would be living abroad now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "If she had taken the job, she would live abroad now.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "Had taken sets a real past condition and would be living states the present consequence. Option b puts would in the if-clause, option c uses the present perfect, and option d uses would live, which describes a possible present rather than a consequence of the past.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-e4",
+              "kind": "typeTheAnswer",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "Type the correct verb: 'It seems as if nobody ___ (tell) him the truth.'",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "told"
+                ]
+              },
+              "explanation": "In an as if-clause about a past situation the past tense is used, so told. This construction is also a way of softening a criticism, because the speaker frames it as an impression.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-e5",
+              "kind": "sentenceCompletion",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "Complete: If I ___ (be) ten years younger, I would have joined the expedition.",
+              "instruction": "Type the form of 'be' only.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "were"
+                ]
+              },
+              "explanation": "A present counterfactual condition takes the past subjunctive were, while the past consequence takes would have joined. Mixing were with a past result is completely standard.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-e6",
+              "kind": "grammarCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "If the machine had not broken down, the results would have been ready two days ago.",
+              "instruction": "Rewrite so that the sentence is fully grammatical and natural.",
+              "items": [
+                {
+                  "id": "w1",
+                  "text": "would",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If the machine had not broken down, the results would have been ready two days ago."
+                ]
+              },
+              "explanation": "This sentence is already correct, which is the point of the item: it checks that you can see both halves of a third conditional at once. The if-clause has had not broken down, and the result clause has would have been ready.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l6-dictation",
+          "type": "dictation",
+          "title": "As if and mixed tenses",
+          "items": [
+            {
+              "id": "sj-l6-d1",
+              "audio": {
+                "kind": "speech",
+                "text": "He smiled as if he had won the argument."
+              },
+              "hint": "past perfect after as if",
+              "translation": "Anh ấy mỉm cười như thể đã thắng cuộc tranh luận.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l6-d2",
+              "audio": {
+                "kind": "speech",
+                "text": "If he had studied law, he would be working in a firm now."
+              },
+              "hint": "past condition, present result",
+              "translation": "Nếu anh ấy đã học luật, bây giờ anh ấy sẽ làm việc trong một công ty luật.",
+              "xp": 15
+            },
+            {
+              "id": "sj-l6-d3",
+              "audio": {
+                "kind": "speech",
+                "text": "It looked as if the whole plan had fallen apart."
+              },
+              "hint": "had fallen in an as if-clause",
+              "translation": "Trông như thể cả kế hoạch đã sụp đổ.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "sj-l6-quiz",
+          "type": "quiz",
+          "title": "As if, as though and mixed sequences",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "sj-l6-q1",
+              "kind": "multipleChoice",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Pick the correct option.",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "She sings as though she were on a concert stage.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She sings as though she is on a concert stage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She sings as if she is be on a concert stage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "She sings as though she was be on a concert stage.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
+              "explanation": "As though takes the past subjunctive, so were. Options c and d wrongly mix the base form be with a finite verb, which the subjunctive never allows after as if.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "If the alarm had not rung, we would have missed the last train.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "If the alarm had not rung, we would have missed the last train."
+                ]
+              },
+              "explanation": "This sentence is already correct, so the exercise tests whether you can accept a right answer instead of hunting for a fault. Both halves of the third conditional are present and correctly placed.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "intermediate",
+              "prompt": "He talks about the project as if he ___ (own) the company.",
+              "instruction": "Type the verb in the correct form.",
+              "items": [],
+              "answer": {
+                "type": "text",
+                "values": [
+                  "owned"
+                ]
+              },
+              "explanation": "The comparison is unreal, so the past tense owned is used. The speaker means he behaves as an owner without actually being one.",
+              "xp": 10
+            },
+            {
+              "id": "sj-l6-q4",
+              "kind": "trueFalse",
+              "topicID": "subjunctive",
+              "lessonID": "sj-l6",
+              "difficulty": "advanced",
+              "prompt": "In a sentence such as 'If I had known, I would have acted', the if-clause describes an unreal past situation.",
+              "instruction": "True or false?",
+              "items": [
+                {
+                  "id": "a",
+                  "text": "True",
+                  "isCorrect": null,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "False",
+                  "isCorrect": null,
+                  "matchKey": null
+                }
+              ],
+              "answer": {
+                "type": "boolean",
+                "value": true
+              },
+              "explanation": "The third conditional is about the past and the result did not happen, which is what makes it hypothetical. Contrast the mixed sequence 'If she had studied medicine, she would be working there now', where the condition is real and only the consequence is counterfactual.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "sj-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "As if and as though take the past tense or the past perfect, because the comparison is not real.",
+            "The negative goes inside the clause: as if he did not know, not as if not he knew.",
+            "It looks as if plus a future is used for a real probability, not a hypothetical one.",
+            "Hypothetical tenses can be stacked: each clause takes the tense that matches its own distance from reality."
+          ]
+        }
+      ]
+    }
+  ]
+}

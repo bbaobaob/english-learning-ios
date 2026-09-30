@@ -145,7 +145,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "Locate the second sentence of the third paragraph: shopkeepers 'first worried about losing customers, but footfall has since increased'. The two halves of that sentence map exactly onto the two halves of option (a), which is the signature of a correct paraphrase answer. Option (b) invents a reason that appears nowhere. Option (c) is a quantifier trap: the text says 'the only complaint now comes from residents who want evening lighting', which describes a group with a request, not 'all residents' wanting it.",
               "xp": 10
@@ -221,7 +223,12 @@
               "instruction": "Type only the number. Do not write a full sentence.",
               "answer": {
                 "type": "text",
-                "values": ["40", "forty", "40 trees", "forty trees"]
+                "values": [
+                  "40",
+                  "forty",
+                  "40 trees",
+                  "forty trees"
+                ]
               },
               "explanation": "This is a scanning question: find the line about planting and take the first number. The passage lists three figures in one sentence — forty trees, six benches, one rain garden — so reading to the end of the list risks carrying the wrong number into your answer. Type the number on its own; extra words such as 'trees were planted' are counted as extra words when your response is checked.",
               "xp": 10
@@ -308,8 +315,7 @@
             "Skim by stopping at the title, the first line after a heading, any line with numbers, and the first and last sentence of each paragraph.",
             "Never search for a keyword. Translate the question into the text's own words and then look for that.",
             "A correct answer is supported by a sentence, not by a shared word. If an option quotes a figure the text never gives, it is invented.",
-            "Hedges are answers: 'few', 'plans', 'reported', 'mostly' and 'last spring' are where the real information usually lives.",
-            "One passage, one read for gist, then targeted re-reads. Re-reading everything is what makes reading feel slow."
+            "Hedges are answers: 'few', 'plans', 'reported', 'mostly' and 'last spring' are where the real information usually lives."
           ],
           "nextLessonID": "reading-skill-intermediate"
         }
@@ -454,7 +460,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The supporting sentence says the increase 'was concentrated almost entirely among visitors under thirty', and 'concentrated among' is a direct paraphrase of 'mainly came from younger visitors'. Option (b) invents a cause that appears nowhere in the passage. Option (c) reverses the last sentence: the city 'has postponed a decision', which is a refusal to decide yet, not a promise to extend. Note that the question can be answered without reading the middle of the passage, so skim first, then read closely only around the phrase 'concentrated'.",
               "xp": 10
@@ -489,7 +497,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "Two sentences carry this: the company 'says both events were unrelated to the pricing' and the regulator 'has described' that claim as unsubstantiated. 'Disagree about whether the problems are related' is exactly what a company asserting no link and a regulator calling the assertion unsupported amounts to. Option (b) reverses the sequence in the text, where sales rose before the closures. Option (c) turns a stated absence of comment into an accusation, which is a common trap in texts that end on a hedge.",
               "xp": 10
@@ -658,8 +668,7 @@
             "Separate explicit from implicit: every inference must rest on a sentence you can point to, and combining two sentences is a legitimate way to build one.",
             "Watch reporting verbs: 'says', 'attributes to', 'claims' and 'describes as' tell you whose opinion you are reading, not what is true.",
             "A word that blocks you is rarely the word carrying the meaning. Find the part of speech and the sentence verb, and read around the word.",
-            "Target about 100 to 200 words per minute for close reading tasks; scanning for a specific string is faster but fails the moment the text paraphrases.",
-            "Questions that ask 'why' are usually answered by the last sentence, where the text puts its reasons."
+            "Target about 100 to 200 words per minute for close reading tasks; scanning for a specific string is faster but fails the moment the text paraphrases."
           ],
           "nextLessonID": "reading-skill-advanced"
         }
@@ -804,7 +813,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The final clause states the limit twice: the result 'remains untested' outside large firms and the authors 'are careful not to claim it does', which paraphrases directly to option (a). Option (b) shifts 'two countries' into four and turns a pattern that held into a confirmed test. Option (c) inverts the passage: the conscientiousness is a possible alternative explanation offered by the authors, not a finding. The hedge 'is suggestive rather than conclusive' applies to the whole paragraph, so read the options against a text that is deliberately careful.",
               "xp": 10
@@ -839,7 +850,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The reservation is stated in the second sentence: managers who log interruptions 'may simply be more conscientious to begin with', which is an alternative explanation, i.e. self-selection rather than a measured cause. Option (a) is the same point in a more analytical register, which is what a correct paraphrase looks like at this level. Option (b) describes the study's design, not the writer's doubt, and the text explicitly uses the intervention as support, not as a weakness. Option (c) invents a criticism the author never makes — the author treats four sectors and two countries as a strength, introduced by 'Even so'.",
               "xp": 10
@@ -1008,8 +1021,7 @@
             "A concession is not the argument. The clause after the concession signal is the writer's real position.",
             "Keep the hedge. 'Suggest', 'at best', 'may', 'in principle' set the degree of commitment, and dropping them changes the claim.",
             "Distinguish a hedge from a limit: a hedge is uncertainty about confidence, a limit is a stated boundary of where the claim holds.",
-            "Examples and citations are evidence for a claim, never the claim itself; if you can only quote an example, you have stopped reading the structure.",
-            "Aim for about 300 words per minute to map an argument, and about 100 to 150 for a close analysis you intend to defend."
+            "Examples and citations are evidence for a claim, never the claim itself; if you can only quote an example, you have stopped reading the structure."
           ]
         }
       ]
