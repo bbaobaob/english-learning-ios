@@ -49,6 +49,11 @@ final class ProfileModel {
     /// The message shown under the Data section after a reset or an export.
     var dataMessage: String?
 
+    /// The learner-facing name for a topic id, falling back to the raw id.
+    func topicTitle(_ topicID: String) -> String? {
+        weakAreas.first { $0.id == topicID }?.title ?? topicID
+    }
+
     /// Sort order for the weak-area list.
     var weakSort: WeakSort = .accuracy
 
@@ -153,30 +158,37 @@ final class ProfileModel {
 
     // MARK: - Weak areas
 
+    /// Re-sorts the weak-area list after the sort picker changes.
+    func resortWeakAreas() {
+        weakAreas = sorted(store: ProgressStore?, unsorted: weakAreas)
+        weakAreas = weakAreas.sorted { lhs, rhs in
+            switch weakSort {
+            case .accuracy:
+                return lhs.accuracy == rhs.accuracy ? lhs.missed > rhs.missed : lhs.accuracy < rhs.accuracy
+            case .missed:
+                return lhs.missed == rhs.missed ? lhs.accuracy < rhs.accuracy : lhs.missed > rhs.missed
+            case .newest:
+                return lhs.done == rhs.done ? lhs.accuracy < rhs.accuracy : lhs.done < rhs.done
+            }
+        }
+    }
+
     private func loadWeakAreas(store: ProgressStore, library: ContentLibrary) {
         let rows = store.topicProgress().filter { $0.value.exercisesDone > 0 }
-        weakAreas = rows
-            .map { id, row in
-                WeakArea(
-                    id: id,
-                    title: library.topic(id)?.title ?? id,
-                    symbol: library.topic(id)?.icon ?? "questionmark",
-                    accuracy: row.accuracy,
-                    missed: max(0, row.exercisesDone - row.correctCount),
-                    done: row.exercisesDone
-                )
-            }
-            .sorted { lhs, rhs in
-                switch weakSort {
-                case .accuracy:
-                    return lhs.accuracy == rhs.accuracy ? lhs.missed > rhs.missed : lhs.accuracy < rhs.accuracy
-                case .missed:
-                    return lhs.missed == rhs.missed ? lhs.accuracy < rhs.accuracy : lhs.missed > rhs.missed
-                case .newest:
-                    return lhs.done == rhs.done ? lhs.accuracy < rhs.accuracy : lhs.done < rhs.done
-                }
-            }
+        let mapped = rows.map { id, row in
+            WeakArea(
+                id: id,
+                title: library.topic(id)?.title ?? id,
+                symbol: library.topic(id)?.icon ?? "questionmark",
+                accuracy: row.accuracy,
+                missed: max(0, row.exercisesDone - row.correctCount),
+                done: row.exercisesDone
+            )
+        }
+        weakAreas = sorted(store: store, unsorted: mapped)
     }
+
+    private func sorted(store: ProgressStore?, unsorted: [WeakArea]) -> [WeakArea] {
 
     // MARK: - Skills
 
@@ -198,22 +210,22 @@ final class ProfileModel {
             return (Double(correct) / Double(done), "\(correct) of \(done) correct")
         }
 
-        func sessionSkill(_ kind: StudyKind, symbol: String) -> (Double?, String) {
-            let minutes = sessions.filter { $0.kind == kind }.reduce(0) { $0 + $1.minutes }
-            let count = sessions.filter { $0.kind == kind }.count
-            guard count > 0 else { return (nil, "Not practised yet") }
-            let total = max(1, skillsTotalMinutes)
-            return (min(1, Double(minutes) / Double(total)), "\(minutes) min over \(count) session\(count == 1 ? "" : "s")")
+        func sessionSkill(_ kind: StudyKind) -> (Double?, String) {
+            let matching = sessions.filter { $0.kind == kind }
+            let minutes = matching.reduce(0) { $0 + $1.minutes }
+            guard !matching.isEmpty else { return (nil, "Not practised yet") }
+            let share = min(1, Double(minutes) / Double(skillsTotalMinutes))
+            return (share, "\(minutes) min over \(matching.count) session\(matching.count == 1 ? "" : "s")")
         }
 
         let grammar = topicAccuracy(kinds: [.grammar, .alphabet])
         let vocabulary = topicAccuracy(kinds: [.vocabulary])
-        let dictation = sessionSkill(.dictation, symbol: "pencil.and.outline")
-        let listening = sessionSkill(.listening, symbol: "headphones")
-        let speaking = sessionSkill(.speaking, symbol: "mic")
-        let reading = sessionSkill(.reading, symbol: "text.book")
-        let writing = sessionSkill(.writing, symbol: "pencil.tip")
-        let ielts = sessionSkill(.ielts, symbol: "globe")
+        let dictation = sessionSkill(.dictation)
+        let listening = sessionSkill(.listening)
+        let speaking = sessionSkill(.speaking)
+        let reading = sessionSkill(.reading)
+        let writing = sessionSkill(.writing)
+        let ielts = sessionSkill(.ielts)
 
         skills = [
             SkillProgress(id: "grammar", title: "Grammar", symbol: "textformat", progress: grammar.0, detail: grammar.1),

@@ -121,11 +121,6 @@ struct HearTypeCard: Identifiable {
     let word: VocabWord
     /// The text the learner has to produce.
     var expected: String { word.word }
-    /// Clip spoken when the drill uses the example sentence rather than the word.
-    var exampleClip: AudioClip? {
-        guard let example = word.example else { return nil }
-        return AudioClip(id: "\(word.id)-example", kind: .speech, text: example, title: example)
-    }
 
     var id: String { word.id }
 }
@@ -166,9 +161,12 @@ final class HearTypeSession {
     var usesExample = false
     /// How many times the current card has been heard.
     private(set) var replays = 0
-    /// Word ids that were missed at least once and are still worth practising.
+    /// Word ids missed at least once, so the summary can point at them.
     private(set) var shaky: [String] = []
-    private(set) var passedCount = 0
+    /// How many Check presses the engine has graded.
+    private(set) var attempts = 0
+    /// How many of those the engine accepted.
+    private(set) var passes = 0
 
     private let engine = DictationEngine()
 
@@ -195,11 +193,16 @@ final class HearTypeSession {
     /// The card label shown in the progress line, e.g. `"3 of 8"`.
     var positionLabel: String { "\(min(index + 1, total)) of \(total)" }
 
-    /// The share of answered cards the engine accepted, in `0...1`.
+    /// The share of graded answers the engine accepted, in `0...1`.
+    ///
+    /// Counts every Check press, so a retry after a mistake counts as an
+    /// attempt too — which is exactly what the learner experienced.
     var accuracy: Double {
-        let answered = passedCount + shaky.count
-        return answered == 0 ? 0 : Double(passedCount) / Double(answered)
+        attempts == 0 ? 0 : Double(passes) / Double(attempts)
     }
+
+    /// How many words were spelled correctly on the very first Check.
+    var firstTryCount: Int { cards.count - shaky.count }
 
     /// What is being spoken for the current card, or `nil` once finished.
     var spokenText: String? {
@@ -216,10 +219,11 @@ final class HearTypeSession {
     /// - Returns: The verdict, so a caller can drive haptics without re-reading state.
     func check() -> HearTypeAnswer {
         guard let card = current else { return .typing }
-        let result = engine.evaluate(userInput: input, expected: card.expected)
+        let result = engine.evaluate(userInput: input, expected: expected(for: card))
+        attempts += 1
         if result.isCorrect {
             answer = .correct
-            passedCount += 1
+            passes += 1
         } else {
             answer = .wrong(result)
             if !shaky.contains(card.id) { shaky.append(card.id) }
@@ -227,10 +231,14 @@ final class HearTypeSession {
         return answer
     }
 
-    /// Whether the drill is waiting on the learner to move past a correct answer.
-    var isAwaitingAdvance: Bool {
-        if case .correct = answer { return true }
-        return false
+    /// What the learner has to produce for this card.
+    ///
+    /// In example mode the prompt *is* the example sentence, so that is what is
+    /// expected back — speaking the sentence and grading against the bare
+    /// headword would be unanswerable.
+    private func expected(for card: HearTypeCard) -> String {
+        if usesExample, let example = card.word.example { return example }
+        return card.expected
     }
 
     /// Clears the typed text and verdict for the next card.

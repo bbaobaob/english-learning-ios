@@ -49,7 +49,12 @@
           "difficulty": "beginner",
           "prompt": "Enquiry form — Westfield Halls\nWhere to get help: Student Union building, Room _______",
           "instruction": "Questions 1–4: complete the enquiry form below. Question 1 — write the room number.",
-          "answer": { "type": "text", "values": ["214"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "214"
+            ]
+          },
           "explanation": "The officer gives the location as Room 214. The number is read out digit by digit (two one four), so write digits, not words.",
           "xp": 15
         },
@@ -61,7 +66,12 @@
           "difficulty": "beginner",
           "prompt": "Enquiry form — Westfield Halls\nDate by which the online form must be completed: _______",
           "instruction": "Questions 1–4: complete the enquiry form below. Question 2 — write the date.",
-          "answer": { "type": "text", "values": ["30 September"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "30 September"
+            ]
+          },
           "explanation": "He says the form must be completed by the thirtieth of September. Write it as 30 September; 30/09 is also accepted. Do not write 30th June — the transcript never mentions June.",
           "xp": 15
         },
@@ -73,7 +83,12 @@
           "difficulty": "beginner",
           "prompt": "Enquiry form — Westfield Halls\nRefundable deposit to pay: £ _______",
           "instruction": "Questions 1–4: complete the enquiry form below. Question 3 — write the amount in figures.",
-          "answer": { "type": "text", "values": ["150"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "150"
+            ]
+          },
           "explanation": "One hundred and fifty pounds is the deposit, so the answer is 150. Ignore 11 p.m. and six o'clock — those are times, not money, and the form asks for a sum in pounds.",
           "xp": 15
         },
@@ -85,7 +100,12 @@
           "difficulty": "beginner",
           "prompt": "Enquiry form — Westfield Halls\nType of room recommended for first-year students: _______",
           "instruction": "Questions 1–4: complete the enquiry form below. Question 4 — write ONE word.",
-          "answer": { "type": "text", "values": ["single"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "single"
+            ]
+          },
           "explanation": "Shared rooms exist, but he says I would recommend a single and that all first-year students are in single rooms. The form asks for the room he recommends, so single, not shared.",
           "xp": 15
         },
@@ -98,12 +118,33 @@
           "prompt": "What must the student bring to the room viewing on Friday?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "A printed copy of the offer letter", "isCorrect": true },
-            { "id": "b", "text": "A form of identification only", "isCorrect": false },
-            { "id": "c", "text": "Her luggage", "isCorrect": false },
-            { "id": "d", "text": "The completed online form", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "A printed copy of the offer letter",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "A form of identification only",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Her luggage",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The completed online form",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "He says please bring a printed copy of your offer letter — we cannot show you a room without it. Option B is the second item on the list, not the essential one, and option C is explicitly ruled out (no need to bring your luggage).",
           "xp": 15
         },
@@ -116,12 +157,33 @@
           "prompt": "According to the officer, what is the main advantage of Westfield Halls?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "The reception desk is staffed 24 hours a day in term", "isCorrect": true },
-            { "id": "b", "text": "It is only ten minutes from the science block", "isCorrect": false },
-            { "id": "c", "text": "Every floor has its own laundry room", "isCorrect": false },
-            { "id": "d", "text": "The rooms are the cheapest in the city", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "The reception desk is staffed 24 hours a day in term",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "It is only ten minutes from the science block",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Every floor has its own laundry room",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The rooms are the cheapest in the city",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The officer says the real advantage, though, is that the reception desk is staffed twenty-four hours a day. The ten-minute walk (B) and the laundry rooms (C) are true details that he adds afterwards, so they are distractors: true facts, but not the advantage asked for.",
           "xp": 15
         },
@@ -133,7 +195,12 @@
           "difficulty": "intermediate",
           "prompt": "Enquiry notes — Westfield Halls\nMain entrance locked at _______ p.m.; use the night entrance after that.",
           "instruction": "Questions 5–7: answer the questions about the enquiry. Question 7 — write the hour in figures.",
-          "answer": { "type": "text", "values": ["11"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "11"
+            ]
+          },
           "explanation": "The porter locks the main door at 11 p.m. The other time given, six o'clock, is when you should arrive on moving-in day, so it belongs to a different detail and is a trap for inattentive listeners.",
           "xp": 15
         }
@@ -186,12 +253,36 @@
           "prompt": "Campus map labels A–D",
           "instruction": "Questions 1–4: match each place on the map to the correct building. Write the number of the building next to the letter.\n1 Students' Union\n2 Main library\n3 Sports centre\n4 Language laboratory",
           "items": [
-            { "id": "mapA", "matchKey": "A", "text": "A — the building opposite the main gate" },
-            { "id": "mapB", "matchKey": "B", "text": "B — the building at the north end of the map" },
-            { "id": "mapC", "matchKey": "C", "text": "C — the building just east of the library" },
-            { "id": "mapD", "matchKey": "D", "text": "D — the building behind the car park" }
+            {
+              "id": "mapA",
+              "matchKey": "A",
+              "text": "A — the building opposite the main gate"
+            },
+            {
+              "id": "mapB",
+              "matchKey": "B",
+              "text": "B — the building at the north end of the map"
+            },
+            {
+              "id": "mapC",
+              "matchKey": "C",
+              "text": "C — the building just east of the library"
+            },
+            {
+              "id": "mapD",
+              "matchKey": "D",
+              "text": "D — the building behind the car park"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "A": "1", "B": "2", "C": "3", "D": "4" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "mapA": "1",
+              "mapB": "2",
+              "mapC": "3",
+              "mapD": "4"
+            }
+          },
           "explanation": "Each label is introduced with a location cue followed by the name: A is the Students' Union, B the main library, C the sports centre, D the language laboratory. Distractors come from the position words — the sports centre is east of the library, not the other way round, and the language lab is behind the car park, not opposite the gate.",
           "xp": 15
         },
@@ -204,12 +295,33 @@
           "prompt": "What is the main purpose of today's orientation session?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "To show students where the key services are", "isCorrect": true },
-            { "id": "b", "text": "To explain the exam regulations", "isCorrect": false },
-            { "id": "c", "text": "To sell sports centre memberships", "isCorrect": false },
-            { "id": "d", "text": "To introduce the IT support desk", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "To show students where the key services are",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "To explain the exam regulations",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "To sell sports centre memberships",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "To introduce the IT support desk",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "He says today I am going to show you where the services you will need are, and nothing more. Nothing in the talk covers exams, memberships or the IT desk, so those options are invented to fill the space.",
           "xp": 15
         },
@@ -222,12 +334,33 @@
           "prompt": "What must students do before Friday?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Book a place on the campus safety tour", "isCorrect": true },
-            { "id": "b", "text": "Pay a deposit for a locker", "isCorrect": false },
-            { "id": "c", "text": "Complete an online induction questionnaire", "isCorrect": false },
-            { "id": "d", "text": "Collect their student card", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Book a place on the campus safety tour",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Pay a deposit for a locker",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Complete an online induction questionnaire",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Collect their student card",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The only thing he describes as compulsory is the safety tour, and the reason is that groups are limited to fifteen people. The other options sound like plausible university admin but are never mentioned — guessing from general knowledge instead of the talk is the usual trap here.",
           "xp": 15
         },
@@ -240,12 +373,33 @@
           "prompt": "Which facility is open at weekends?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "The sports centre", "isCorrect": true },
-            { "id": "b", "text": "The main library", "isCorrect": false },
-            { "id": "c", "text": "The Students' Union", "isCorrect": false },
-            { "id": "d", "text": "The language laboratory", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "The sports centre",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "The main library",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "The Students' Union",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The language laboratory",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The sports centre is the only building that stays open at weekends; everything else closes at six on weekdays. The library is the most attractive distractor because he describes it in detail, but detail is not evidence — only the closing-hours sentence answers the question.",
           "xp": 15
         },
@@ -258,12 +412,33 @@
           "prompt": "What does the speaker say about the library study rooms?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Group rooms must be booked online in advance", "isCorrect": true },
-            { "id": "b", "text": "The library is open twenty-four hours", "isCorrect": false },
-            { "id": "c", "text": "There are no printing facilities", "isCorrect": false },
-            { "id": "d", "text": "The library is closing next year", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Group rooms must be booked online in advance",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "The library is open twenty-four hours",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "There are no printing facilities",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The library is closing next year",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "You must book a group study room online at least a day before you want it. The talk never mentions 24-hour opening, printing or closure, so those options can be eliminated on evidence rather than preference.",
           "xp": 15
         },
@@ -276,12 +451,29 @@
           "prompt": "Fees are paid at the _______ office, on the ground floor of the Union.",
           "instruction": "Questions 6–7: complete the notes below. Question 6 — choose from the list of words A, B, C or D.\nA maintenance   B finance   C admissions   D international",
           "items": [
-            { "id": "a", "text": "maintenance" },
-            { "id": "b", "text": "finance" },
-            { "id": "c", "text": "admissions" },
-            { "id": "d", "text": "international" }
+            {
+              "id": "a",
+              "text": "maintenance"
+            },
+            {
+              "id": "b",
+              "text": "finance"
+            },
+            {
+              "id": "c",
+              "text": "admissions"
+            },
+            {
+              "id": "d",
+              "text": "international"
+            }
           ],
-          "answer": { "type": "text", "values": ["finance"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "finance"
+            ]
+          },
           "explanation": "Fees are paid at the finance office. The gap is followed by the word office, so only finance makes sense; maintenance, admissions and international are word-bank traps. The required word is the one before office, not the full phrase finance office.",
           "xp": 15
         },
@@ -293,7 +485,12 @@
           "difficulty": "intermediate",
           "prompt": "Orientation notes\nComputers in the language laboratory: _______",
           "instruction": "Questions 6–7: complete the notes below. Question 7 — write the number in figures.",
-          "answer": { "type": "text", "values": ["30"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "30"
+            ]
+          },
           "explanation": "The language laboratory has 30 computers. Fifteen, the safety-tour group limit, is the number to reject: it belongs to a different sentence and sounds plausible because it is a real number in the talk.",
           "xp": 15
         }
@@ -353,12 +550,36 @@
           "prompt": "Student project topics",
           "instruction": "Questions 1–4: match each student to the project topic the tutor assigns. Write the correct number next to the name.\n1 Water consumption in student accommodation\n2 Food waste in the canteen\n3 Digital privacy\n4 Cycling to the university",
           "items": [
-            { "id": "stu-nina", "matchKey": "Nina", "text": "Nina" },
-            { "id": "stu-pedro", "matchKey": "Pedro", "text": "Pedro" },
-            { "id": "stu-marcus", "matchKey": "Marcus", "text": "Marcus" },
-            { "id": "stu-tom", "matchKey": "Tom", "text": "Tom" }
+            {
+              "id": "stu-nina",
+              "matchKey": "Nina",
+              "text": "Nina"
+            },
+            {
+              "id": "stu-pedro",
+              "matchKey": "Pedro",
+              "text": "Pedro"
+            },
+            {
+              "id": "stu-marcus",
+              "matchKey": "Marcus",
+              "text": "Marcus"
+            },
+            {
+              "id": "stu-tom",
+              "matchKey": "Tom",
+              "text": "Tom"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "Nina": "1", "Pedro": "2", "Marcus": "3", "Tom": "4" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "stu-nina": "1",
+              "stu-pedro": "2",
+              "stu-marcus": "3",
+              "stu-tom": "4"
+            }
+          },
           "explanation": "The tutor states the assignments in a fixed order: Nina on water consumption, Pedro on canteen food waste, Marcus on digital privacy, Tom on cycling. The trap is the swap: Marcus originally wanted cycling, and Tom had asked for water, so the topics people ask for are not the topics they are given. Match what is assigned, not what is requested.",
           "xp": 15
         },
@@ -371,12 +592,33 @@
           "prompt": "Why has the tutor moved the deadline?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Three of the students are away on a field trip", "isCorrect": true },
-            { "id": "b", "text": "The reading list was too long", "isCorrect": false },
-            { "id": "c", "text": "The survey results are not ready", "isCorrect": false },
-            { "id": "d", "text": "The room booked for week eight is unavailable", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Three of the students are away on a field trip",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "The reading list was too long",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "The survey results are not ready",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The room booked for week eight is unavailable",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "Student C mentions the field trip in week six and the tutor replies that is exactly why I have moved it, to the end of week nine. The reading list is a separate change (C), and D is invented — the tutor's only stated reason is the trip.",
           "xp": 15
         },
@@ -389,12 +631,33 @@
           "prompt": "What does the tutor say about the reading list?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Only three marked articles are required", "isCorrect": true },
-            { "id": "b", "text": "All forty pages must be read each week", "isCorrect": false },
-            { "id": "c", "text": "The list has been replaced by a textbook", "isCorrect": false },
-            { "id": "d", "text": "Students may read nothing at all", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Only three marked articles are required",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "All forty pages must be read each week",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "The list has been replaced by a textbook",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Students may read nothing at all",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "He says he has cut the list down because forty pages per week was unrealistic, and that only the three articles he marked are required. Option B inverts the sentence (the forty pages are what he cut), and D overreads everything else is optional.",
           "xp": 15
         },
@@ -407,12 +670,33 @@
           "prompt": "What is Speaker C's main concern?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Recruiting enough people to answer the survey", "isCorrect": true },
-            { "id": "b", "text": "Reaching the target of 300 responses", "isCorrect": false },
-            { "id": "c", "text": "Writing the script for the presentation", "isCorrect": false },
-            { "id": "d", "text": "Finishing the slides before the deadline", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Recruiting enough people to answer the survey",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Reaching the target of 300 responses",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Writing the script for the presentation",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Finishing the slides before the deadline",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "Speaker C says my worry is recruiting people, not counting them, so the number of responses is explicitly not the concern. The script worry (C) is raised by Speaker B a moment later, which is exactly why two speakers must be tracked separately in Section 3.",
           "xp": 15
         },
@@ -425,12 +709,33 @@
           "prompt": "What does the tutor say the group may survey?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Up to 300 students in their own department", "isCorrect": true },
-            { "id": "b", "text": "The whole university, in two stages", "isCorrect": false },
-            { "id": "c", "text": "Only students who post on the forum", "isCorrect": false },
-            { "id": "d", "text": "Canteen staff, instead of students", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Up to 300 students in their own department",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "The whole university, in two stages",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Only students who post on the forum",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Canteen staff, instead of students",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The tutor limits them to their own department and up to 300 students in it. The forum post is his suggestion for recruiting (C), not a restriction on who may be surveyed, so the two ideas must not be merged.",
           "xp": 15
         },
@@ -442,7 +747,12 @@
           "difficulty": "intermediate",
           "prompt": "Project plan notes\nMaximum number of students the group may survey: _______",
           "instruction": "Questions 6–7: complete the notes below. Question 6 — write the number in figures.",
-          "answer": { "type": "text", "values": ["300"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "300"
+            ]
+          },
           "explanation": "The tutor says up to 300 students in it. The other figures in the discussion are week six, week eight, week nine and ten minutes; none of them is a headcount, so check the unit before writing.",
           "xp": 15
         },
@@ -455,12 +765,29 @@
           "prompt": "The group agreed to cover _______ in the survey, since Marcus had already read four articles on it.",
           "instruction": "Questions 6–7: complete the notes below. Question 7 — choose from the list A, B, C or D.\nA climate change   B public transport   C data privacy   D water supply",
           "items": [
-            { "id": "a", "text": "climate change" },
-            { "id": "b", "text": "public transport" },
-            { "id": "c", "text": "data privacy" },
-            { "id": "d", "text": "water supply" }
+            {
+              "id": "a",
+              "text": "climate change"
+            },
+            {
+              "id": "b",
+              "text": "public transport"
+            },
+            {
+              "id": "c",
+              "text": "data privacy"
+            },
+            {
+              "id": "d",
+              "text": "water supply"
+            }
           ],
-          "answer": { "type": "text", "values": ["data privacy"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "data privacy"
+            ]
+          },
           "explanation": "Marcus is assigned digital privacy because the tutor wants somebody who reads the news carefully, so the group's topic is data privacy. Climate change and public transport never appear, and water supply is close to water consumption but is not the assigned topic.",
           "xp": 15
         }
@@ -518,7 +845,12 @@
           "difficulty": "intermediate",
           "prompt": "Lecture notes — Urban Ecology, Lecture 6\nMethod: the study counted ______ rather than individual bees.",
           "instruction": "Questions 1–3: complete the lecture notes below. Question 1 — write ONE word.",
-          "answer": { "type": "text", "values": ["colonies"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "colonies"
+            ]
+          },
           "explanation": "She says it counted colonies rather than individual bees, and explains why: a nest is a fixed point on a map. Count, survey and species are wrong — they are the things the study worked around, not the things it measured.",
           "xp": 15
         },
@@ -530,7 +862,12 @@
           "difficulty": "advanced",
           "prompt": "Lecture notes — Urban Ecology, Lecture 6\nLocation of wild colonies in the city: buildings _______ per cent.",
           "instruction": "Questions 1–3: complete the lecture notes below. Question 2 — write the figure.",
-          "answer": { "type": "text", "values": ["40"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "40"
+            ]
+          },
           "explanation": "Roughly 40 per cent of wild colonies were inside buildings, in roof spaces, wall cavities and chimneys. The lecturer deliberately spends a whole paragraph warning that newspapers print the 30 per cent roadside figure instead; listening for the correction is exactly what this question tests.",
           "xp": 15
         },
@@ -542,7 +879,12 @@
           "difficulty": "advanced",
           "prompt": "Lecture notes — Urban Ecology, Lecture 6\nCheapest cooling measure: keep ______ closed during the day, open the windows at night.",
           "instruction": "Questions 1–3: complete the lecture notes below. Question 3 — write ONE word.",
-          "answer": { "type": "text", "values": ["shutters"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "shutters"
+            ]
+          },
           "explanation": "Her final advice is to keep its shutters closed until the evening and open the windows at night. Curtains and blinds are the natural distractors, but she names shutters specifically and describes the same habit for flats and houses.",
           "xp": 15
         },
@@ -555,12 +897,33 @@
           "prompt": "What does the lecturer say about the reported 30 per cent figure?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "It is real but is reported because it is easier to photograph", "isCorrect": true },
-            { "id": "b", "text": "It is a mistake made by the researchers", "isCorrect": false },
-            { "id": "c", "text": "It refers to managed colonies only", "isCorrect": false },
-            { "id": "d", "text": "It was withdrawn by the city council", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "It is real but is reported because it is easier to photograph",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "It is a mistake made by the researchers",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "It refers to managed colonies only",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "It was withdrawn by the city council",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "She says it is a good illustration of how statistics get simplified: the figure is correct for street trees and hedges, but newspaper chose it because those colonies are easier to photograph. The research is not wrong, which is why options B and D fail.",
           "xp": 15
         },
@@ -573,12 +936,33 @@
           "prompt": "Which limitation of the study does the lecturer highlight first?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Wild bees could not be separated from managed colonies", "isCorrect": true },
-            { "id": "b", "text": "The heatwave data was collected on only one day", "isCorrect": false },
-            { "id": "c", "text": "The city covered was too small to generalise", "isCorrect": false },
-            { "id": "d", "text": "Hedgerows were mapped incorrectly", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Wild bees could not be separated from managed colonies",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "The heatwave data was collected on only one day",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "The city covered was too small to generalise",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Hedgerows were mapped incorrectly",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The first limitation is that they could not separate wild bees from the managed colonies kept by local beekeepers. Option C inverts her wording: she describes the city as medium-sized and presents it as sufficient, so size is a detail, not a stated weakness.",
           "xp": 15
         },
@@ -591,12 +975,33 @@
           "prompt": "Why does the lecturer say honeybees are a poor subject for city wildlife research?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "They are livestock, not a wild species", "isCorrect": true },
-            { "id": "b", "text": "They are too small to be counted", "isCorrect": false },
-            { "id": "c", "text": "They are endangered across the city", "isCorrect": false },
-            { "id": "d", "text": "They do not visit roof spaces", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "They are livestock, not a wild species",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "They are too small to be counted",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "They are endangered across the city",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "They do not visit roof spaces",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "Honeybees are not a wild species at all; they are livestock, kept in hives, and therefore they tell you nothing about the wild pollinators the city depends on. Being well studied (because beekeepers keep records) is a fact she mentions, but it is not the reason they are the wrong subject.",
           "xp": 15
         },
@@ -608,8 +1013,16 @@
           "difficulty": "advanced",
           "prompt": "Write exactly what the lecturer says.",
           "instruction": "Question 7: listen and write the sentence the lecturer emphasises.",
-          "audio": { "kind": "speech", "text": "When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?" },
-          "answer": { "type": "text", "values": ["When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?"] },
+          "audio": {
+            "kind": "speech",
+            "text": "When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?"
+          },
+          "answer": {
+            "type": "text",
+            "values": [
+              "When a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees?"
+            ]
+          },
           "explanation": "This is the sentence the lecturer pauses around, so it is worth writing in full: when a lecture or an article tells you what bees are doing in a city, ask a simple question: which bees. Punctuation is not marked, but every word must be there in order.",
           "xp": 15
         }
@@ -637,11 +1050,28 @@
           "instruction": "Questions 1–7: read the passage and decide whether each statement is True, False or Not Given. Question 1 is given with the passage above; Questions 2–7 follow below.",
           "translation": "Thành phố 15 phút",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": false },
-            { "id": "false", "text": "False", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": true }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": false
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": true
+            }
           ],
-          "answer": { "type": "choice", "values": ["ng"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "ng"
+            ]
+          },
           "explanation": "The passage says every new residential district must contain shops, a school and a small green space. It never mentions a market, so you cannot confirm or deny one. That is Not Given: the statement is neither contradicted nor supported. Do not assume that shops means market.",
           "xp": 15
         },
@@ -655,11 +1085,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Người dân sống trong khu vực 15 phút bắt buộc phải sở hữu xe đạp.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": false },
-            { "id": "false", "text": "False", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": true }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": false
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": true
+            }
           ],
-          "answer": { "type": "choice", "values": ["ng"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "ng"
+            ]
+          },
           "explanation": "The passage mentions walking and cycling as the means of travel and says nothing about owning a bicycle. Obligation is never mentioned, so the statement cannot be called False either. Not Given is correct whenever the passage simply does not deal with the point.",
           "xp": 15
         },
@@ -673,11 +1120,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Yêu cầu quy hoạch được ghi vào luật để các nhà phát triển có thể bỏ bớt tiện ích sau này.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": false },
-            { "id": "false", "text": "False", "isCorrect": true },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": false
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": true
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["false"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "false"
+            ]
+          },
           "explanation": "The passage says the requirement is written into the planning code so developers cannot phase out the amenities in later years. The statement reverses the reason, so it is False. This is a wording trap: the fact is true, the consequence is inverted.",
           "xp": 15
         },
@@ -691,11 +1155,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Một khu phố được thiết kế xoay quanh việc đi bộ tốn khoảng một phần ba chi phí đường hơn so với khu ngoại ô thông thường.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": true },
-            { "id": "false", "text": "False", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": true
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["true"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "true"
+            ]
+          },
           "explanation": "The passage states that such a district needs about a third less money on roads than a conventional suburb of the same size. The figures match exactly, so True.",
           "xp": 15
         },
@@ -709,11 +1190,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Lưu lượng giao thông trung tâm giảm khoảng một nửa sau khi những con đường đầu tiên bị đóng.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": false },
-            { "id": "false", "text": "False", "isCorrect": true },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": false
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": true
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["false"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "false"
+            ]
+          },
           "explanation": "The passage gives a fall of roughly a third, not a half. Numbers that are close but not identical turn True into False, so match the figure, not the direction of the change.",
           "xp": 15
         },
@@ -727,11 +1225,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Các công ty bất động sản đã đưa hội đồng thành phố ra tòa vì quy chuẩn quy hoạch.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": true },
-            { "id": "false", "text": "False", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": true
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["true"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "true"
+            ]
+          },
           "explanation": "Several property companies have appealed against the planning code in the administrative court. An appeal is exactly taking the case to court, so True. Watching the legal vocabulary is the point of this item.",
           "xp": 15
         },
@@ -745,11 +1260,28 @@
           "instruction": "Questions 1–7: choose True, False or Not Given.",
           "translation": "Người thuê nhà có xu hướng ủng hộ kế hoạch hơn chủ sở hữu.",
           "items": [
-            { "id": "true", "text": "True", "isCorrect": false },
-            { "id": "false", "text": "False", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": true }
+            {
+              "id": "true",
+              "text": "True",
+              "isCorrect": false
+            },
+            {
+              "id": "false",
+              "text": "False",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": true
+            }
           ],
-          "answer": { "type": "choice", "values": ["ng"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "ng"
+            ]
+          },
           "explanation": "The survey found that the majority of residents welcomed the change, but the passage never divides residents into tenants and owners. Since no comparison of the two groups is made, the statement is Not Given, not False.",
           "xp": 15
         }
@@ -777,11 +1309,28 @@
           "instruction": "Questions 1–5: read the passage and decide whether each statement is Yes, No or Not Given. The passage is given with Question 1 below; Questions 2–5 follow.",
           "translation": "Học tập sau khủng hoảng",
           "items": [
-            { "id": "yes", "text": "Yes", "isCorrect": true },
-            { "id": "no", "text": "No", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "yes",
+              "text": "Yes",
+              "isCorrect": true
+            },
+            {
+              "id": "no",
+              "text": "No",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["yes"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "yes"
+            ]
+          },
           "explanation": "Paragraph A says the majority of students now submit their coursework online. The word now matches the statement, and submit is the same act as submit, so Yes.",
           "xp": 15
         },
@@ -795,11 +1344,28 @@
           "instruction": "Questions 1–5: choose Yes, No or Not Given.",
           "translation": "Giảng viên được trả thêm tiền để làm tài liệu ghi hình.",
           "items": [
-            { "id": "yes", "text": "Yes", "isCorrect": false },
-            { "id": "no", "text": "No", "isCorrect": true },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "yes",
+              "text": "Yes",
+              "isCorrect": false
+            },
+            {
+              "id": "no",
+              "text": "No",
+              "isCorrect": true
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["no"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "no"
+            ]
+          },
           "explanation": "The passage says the universities did not pay anyone extra and that workload agreements had to be renegotiated, which implies the work was unpaid. The statement contradicts the text, so No.",
           "xp": 15
         },
@@ -813,11 +1379,28 @@
           "instruction": "Questions 1–5: choose Yes, No or Not Given.",
           "translation": "Sinh viên xem lại bản ghi trong vòng một ngày có nhiều khả năng đỗ khóa học hơn.",
           "items": [
-            { "id": "yes", "text": "Yes", "isCorrect": true },
-            { "id": "no", "text": "No", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "yes",
+              "text": "Yes",
+              "isCorrect": true
+            },
+            {
+              "id": "no",
+              "text": "No",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["yes"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "yes"
+            ]
+          },
           "explanation": "The passage states that students who watched the recording in the first twenty-four hours were far more likely to pass. Twenty-four hours is a day, so Yes — the paraphrase is exact.",
           "xp": 15
         },
@@ -831,11 +1414,28 @@
           "instruction": "Questions 1–5: choose Yes, No or Not Given.",
           "translation": "Các đoạn video ngắn giúp sinh viên nhớ bài tốt hơn.",
           "items": [
-            { "id": "yes", "text": "Yes", "isCorrect": true },
-            { "id": "no", "text": "No", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": false }
+            {
+              "id": "yes",
+              "text": "Yes",
+              "isCorrect": true
+            },
+            {
+              "id": "no",
+              "text": "No",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["yes"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "yes"
+            ]
+          },
           "explanation": "Short clips of about ten minutes produced noticeably better recall than a full lecture. The statement omits the comparison but keeps the direction, which is still Yes.",
           "xp": 15
         },
@@ -849,11 +1449,28 @@
           "instruction": "Questions 1–5: choose Yes, No or Not Given.",
           "translation": "Gói cấp phép trực tuyến hiện tại của các trường sẽ hết hạn sau hai năm.",
           "items": [
-            { "id": "yes", "text": "Yes", "isCorrect": false },
-            { "id": "no", "text": "No", "isCorrect": false },
-            { "id": "ng", "text": "Not Given", "isCorrect": true }
+            {
+              "id": "yes",
+              "text": "Yes",
+              "isCorrect": false
+            },
+            {
+              "id": "no",
+              "text": "No",
+              "isCorrect": false
+            },
+            {
+              "id": "ng",
+              "text": "Not Given",
+              "isCorrect": true
+            }
           ],
-          "answer": { "type": "choice", "values": ["ng"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "ng"
+            ]
+          },
           "explanation": "The passage never gives a licence period. Not Given is required: no date at all appears, so the statement is neither supported nor contradicted.",
           "xp": 15
         },
@@ -866,12 +1483,36 @@
           "prompt": "Matching Headings — paragraphs A–D of the passage above",
           "instruction": "Questions 6–9: match each paragraph, A to D, with the correct heading. Choose the correct number and write it next to the letter. Use each number once only.\ni Short lessons, hard assignments\nii What happened once the emergency ended\niii A study carried out in real classrooms\niv A tool designed around the teacher\nv The cost of new hardware\nvi Parents' mixed reactions",
           "items": [
-            { "id": "paraA", "matchKey": "A", "text": "A — the shift to online teaching in 2020" },
-            { "id": "paraB", "matchKey": "B", "text": "B — recording a lecture and publishing it" },
-            { "id": "paraC", "matchKey": "C", "text": "C — how much content a student can absorb" },
-            { "id": "paraD", "matchKey": "D", "text": "D — the platforms themselves" }
+            {
+              "id": "paraA",
+              "matchKey": "A",
+              "text": "A — the shift to online teaching in 2020"
+            },
+            {
+              "id": "paraB",
+              "matchKey": "B",
+              "text": "B — recording a lecture and publishing it"
+            },
+            {
+              "id": "paraC",
+              "matchKey": "C",
+              "text": "C — how much content a student can absorb"
+            },
+            {
+              "id": "paraD",
+              "matchKey": "D",
+              "text": "D — the platforms themselves"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "A": "ii", "B": "iii", "C": "i", "D": "iv" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "paraA": "ii",
+              "paraB": "iii",
+              "paraC": "i",
+              "paraD": "iv"
+            }
+          },
           "explanation": "A describes the emergency change that has lasted (ii), B reports what happened in classrooms once recordings existed (iii), C is about short input and difficult assessment (i), and D is about platforms built for the teacher's workflow (iv). Headings v and vi are decoys: the passage mentions neither hardware costs nor parents.",
           "xp": 15
         }
@@ -899,13 +1540,42 @@
           "instruction": "Questions 1–5: which paragraph does each statement refer to? Write the correct letter, A to E, next to each number. The passage is given below.",
           "translation": "Làm việc ít hơn, làm việc tốt hơn",
           "items": [
-            { "id": "mi1", "matchKey": "1", "text": "The expression used for a long time without any data behind it." },
-            { "id": "mi2", "matchKey": "2", "text": "Employees report losing concentration rather than saving time." },
-            { "id": "mi3", "matchKey": "3", "text": "Studies of the same sector have produced opposite results." },
-            { "id": "mi4", "matchKey": "4", "text": "Workers at a disadvantage because they were not visible in person." },
-            { "id": "mi5", "matchKey": "5", "text": "Flexibility only helps when workers also get control." }
+            {
+              "id": "mi1",
+              "matchKey": "1",
+              "text": "The expression used for a long time without any data behind it."
+            },
+            {
+              "id": "mi2",
+              "matchKey": "2",
+              "text": "Employees report losing concentration rather than saving time."
+            },
+            {
+              "id": "mi3",
+              "matchKey": "3",
+              "text": "Studies of the same sector have produced opposite results."
+            },
+            {
+              "id": "mi4",
+              "matchKey": "4",
+              "text": "Workers at a disadvantage because they were not visible in person."
+            },
+            {
+              "id": "mi5",
+              "matchKey": "5",
+              "text": "Flexibility only helps when workers also get control."
+            }
           ],
-          "answer": { "type": "pairs", "values": { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "mi1": "A",
+              "mi2": "B",
+              "mi3": "C",
+              "mi4": "D",
+              "mi5": "E"
+            }
+          },
           "explanation": "Statement 1 is the history of the phrase in A; statement 2 is the interruption finding in B; statement 3 names the two conflicting call-centre studies in C; statement 4 is the visibility and promotion problem in D; statement 5 is the closing lesson of E. The paragraphs are written in order, but read the topic sentence of each before you rely on that.",
           "xp": 15
         },
@@ -917,7 +1587,12 @@
           "difficulty": "advanced",
           "prompt": "Summary completion — Working Less, Working Better\nThe way employers have treated remote work is criticised because it was introduced ____________ (paragraph C).",
           "instruction": "Questions 6–8: complete the summary below from the passage. Question 6 — write ONE word.",
-          "answer": { "type": "text", "values": ["hastily"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "hastily"
+            ]
+          },
           "explanation": "Paragraph C says most organisations introduced remote work in a single month, with no training. The summary needs one adverb for that rush; quickly, suddenly and immediately are also accepted. Do not write remotely, which repeats the noun already given.",
           "xp": 15
         },
@@ -929,7 +1604,12 @@
           "difficulty": "advanced",
           "prompt": "Summary completion — Working Less, Working Better\nFirms have begun setting aside ____________ in the morning so that staff can concentrate (paragraph B).",
           "instruction": "Questions 6–8: complete the summary below from the passage. Question 7 — write ONE word.",
-          "answer": { "type": "text", "values": ["blocks"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "blocks"
+            ]
+          },
           "explanation": "Several firms have responded by introducing protected blocks in the morning. Protected is a modifier in the passage and does not fit the gap, so the missing noun is blocks; time or hours is the natural-looking distractor, but the passage names blocks.",
           "xp": 15
         },
@@ -941,7 +1621,12 @@
           "difficulty": "intermediate",
           "prompt": "Summary completion — Working Less, Working Better\nEmployee turnover falls only in organisations where staff ____________ their own hours (paragraph E).",
           "instruction": "Questions 6–8: complete the summary below from the passage. Question 8 — write ONE word.",
-          "answer": { "type": "text", "values": ["choose"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "choose"
+            ]
+          },
           "explanation": "Paragraph E says where staff choose their own hours, turnover falls. The word before the gap is where staff, so the verb must follow the subject: choose. Chose would be wrong, since the sentence is describing a general habit, not a past event.",
           "xp": 15
         },
@@ -954,12 +1639,33 @@
           "prompt": "According to the passage, why did the two call-centre studies reach different conclusions?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "The tasks differed: routine calls need supervision, analysis does not", "isCorrect": true },
-            { "id": "b", "text": "One study measured a different period of time", "isCorrect": false },
-            { "id": "c", "text": "Only one of the firms kept accurate records", "isCorrect": false },
-            { "id": "d", "text": "The second study was carried out in another country", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "The tasks differed: routine calls need supervision, analysis does not",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "One study measured a different period of time",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Only one of the firms kept accurate records",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "The second study was carried out in another country",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The passage suggests the difference may lie in the task itself, since routine calls need supervision while analytical work does not. The hedge may means the author is not certain, so the option must keep that openness; options B, C and D are details the passage never supplies.",
           "xp": 15
         },
@@ -972,12 +1678,33 @@
           "prompt": "What does the passage say about women working from home?",
           "instruction": "Choose the correct letter, A, B, C or D.",
           "items": [
-            { "id": "a", "text": "Interruptions arrived in a form that could not be recorded as working time", "isCorrect": true },
-            { "id": "b", "text": "They were more productive than male colleagues", "isCorrect": false },
-            { "id": "c", "text": "They were promoted faster than men", "isCorrect": false },
-            { "id": "d", "text": "They were excluded from the two studies", "isCorrect": false }
+            {
+              "id": "a",
+              "text": "Interruptions arrived in a form that could not be recorded as working time",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "They were more productive than male colleagues",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "They were promoted faster than men",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "They were excluded from the two studies",
+              "isCorrect": false
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "Women reported that the boundary between home and office was harder to see because interruptions could not be logged as working time. The other options claim a comparison or an exclusion that the passage does not make, and the productivity comparison belongs to the call-centre paragraph, not to gender.",
           "xp": 15
         }

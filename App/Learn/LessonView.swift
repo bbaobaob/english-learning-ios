@@ -341,11 +341,13 @@ struct LessonView: View {
             ExamplesStepView(examples: examples.examples)
         case .audio(let audio):
             ScrollView {
-                // TODO(design-system-lane): swap for the shared App/Audio player
-                // view; its init signature is not in the contract yet.
                 VStack(alignment: .leading, spacing: Spacing.md) {
                     SectionHeader(title: audio.title ?? "Listen", subtitle: nil)
-                    AudioPlayerFallbackView(clip: audio.audio, title: audio.title)
+                    // TODO(design-system-lane): replace with the shared App/Audio
+                    // player view — replay, loop, shuffle, speed and slow. Its
+                    // init is not in the contract yet; this lane ships the
+                    // controls it can drive through `AppState.audio`.
+                    AudioStepPlayer(clip: audio.audio, title: audio.title)
                 }
                 .padding(Spacing.md)
             }
@@ -581,7 +583,113 @@ struct TheoryStepView: View {
             }
             .padding(Spacing.md)
         }
-        .onAppear { _ = app.speech }
+    }
+}
+
+/// The audio step's controls.
+///
+/// `speech` clips are `AVSpeechSynthesizer` audio, so play / replay / speed /
+/// slow are all a rate on the same utterance. `file` and `remote` clips go to
+/// the shared player service.
+/// TODO(design-system-lane): replace with the App/Audio player view once its
+/// init is in the contract; this drives the same clip through `AppState.audio`.
+struct AudioStepPlayer: View {
+
+    let clip: AudioClip
+    let title: String?
+
+    @Environment(AppState.self) private var app
+    @State private var speedIndex: Int = 1
+    @State private var isLooping: Bool = false
+    @State private var hasPlayed: Bool = false
+
+    private let speeds: [Float] = [0.5, 0.4, 0.3]
+
+    private var speedLabel: String {
+        switch speedIndex {
+        case 0: "Normal"
+        case 1: "Steady"
+        default: "Slow"
+        }
+    }
+
+    private var spokenText: String? {
+        clip.kind == .speech ? clip.text : nil
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.md) {
+            if let title {
+                Text(title)
+                    .font(.headline)
+            }
+
+            if let text = spokenText {
+                Text(text)
+                    .font(.body)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(Spacing.md)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color.brand.opacity(0.08), in: .rect(cornerRadius: Radius.card))
+            } else {
+                Text(clip.fileName ?? clip.url?.lastPathComponent ?? "Audio clip")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+
+            HStack(spacing: Spacing.md) {
+                Button {
+                    play(rate: speeds[speedIndex])
+                } label: {
+                    Label(hasPlayed ? "Replay" : "Play", systemImage: "play.fill")
+                        .font(.headline)
+                        .frame(maxWidth: 220)
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+
+                Button {
+                    speedIndex = (speedIndex + 1) % speeds.count
+                    Haptics.selection()
+                } label: {
+                    Label(speedLabel, systemImage: "gauge.with.dots.needle.33percent")
+                        .font(.headline)
+                }
+                .buttonStyle(.bordered)
+                .accessibilityLabel("Playback speed, \(speedLabel)")
+                .accessibilityHint("Changes how fast the audio is read aloud")
+            }
+
+            Toggle(isOn: $isLooping) {
+                Label("Loop this clip", systemImage: "repeat")
+                    .font(.subheadline)
+            }
+            .onChange(of: isLooping) { _, looping in
+                app.audio.setLooping(looping, for: clip)
+            }
+
+            if spokenText != nil {
+                Button {
+                    play(rate: SpeakGate.slowRate)
+                } label: {
+                    Label("Play slowly", systemImage: "tortoise")
+                        .font(.subheadline.weight(.semibold))
+                }
+                .buttonStyle(.bordered)
+                .accessibilityHint("Reads the clip at a slower pace")
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .cardStyle()
+    }
+
+    private func play(rate: Float) {
+        hasPlayed = true
+        if let text = spokenText {
+            SpeakGate.say(text, using: app, rate: rate)
+        } else {
+            app.audio.play(clip)
+        }
     }
 }
 
@@ -655,8 +763,8 @@ struct ExampleRow: View {
     }
 
     private func speak() {
+        SpeakGate.say(example.en, using: app)
         isSpeaking = true
-        app.audio.speak(example.en)
         Task {
             try? await Task.sleep(for: .seconds(1))
             isSpeaking = false

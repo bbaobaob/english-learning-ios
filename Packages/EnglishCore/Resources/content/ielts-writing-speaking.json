@@ -29,12 +29,37 @@
           "prompt": "Which of these is the best opening sentence for this Task 1 report?",
           "instruction": "Choose the one sentence that an examiner would credit as the introduction.",
           "items": [
-            { "id": "a", "text": "The line graph compares mobile phone ownership in four countries over the period 1990 to 2020.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "In this essay I will describe the line graph about phones in four different countries over thirty years.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "It is well known that mobile phones have become very important in our life nowadays, and this is because of technology.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "The graph below shows the number of people who have mobile phones in Australia, Japan, Brazil and Nigeria.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "The line graph compares mobile phone ownership in four countries over the period 1990 to 2020.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "In this essay I will describe the line graph about phones in four different countries over thirty years.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "It is well known that mobile phones have become very important in our life nowadays, and this is because of technology.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "The graph below shows the number of people who have mobile phones in Australia, Japan, Brazil and Nigeria.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A is a neutral paraphrase of the visual and its timeframe, which is exactly what the introduction has to do. B uses opinion-essay framing ('I will describe') and the vague 'about phones'. C is personal opinion and a cause, which Task 1 never credits. D copies the question's wording word for word, so it reports no data at all.",
           "xp": 15,
           "translation": "Câu nào là câu mở đầu tốt nhất cho bài báo cáo Task 1 này?"
@@ -48,12 +73,40 @@
           "prompt": "Match each job to the paragraph it belongs in. Paragraph 1 is the introduction, paragraph 2 is the overview, and paragraphs 3 and 4 are the body.",
           "instruction": "Use each paragraph number once.",
           "items": [
-            { "id": "a", "text": "State the overall direction, the highest and lowest points, and the most striking contrast.", "isCorrect": null, "matchKey": "1" },
-            { "id": "b", "text": "Group the lines into two or three features and support each one with figures and comparative language.", "isCorrect": null, "matchKey": "2" },
-            { "id": "c", "text": "Paraphrase what is being compared and name the period covered.", "isCorrect": null, "matchKey": "3" },
-            { "id": "d", "text": "Report the most important feature in full detail, with the exact figures it contains.", "isCorrect": null, "matchKey": "4" }
+            {
+              "id": "a",
+              "text": "State the overall direction, the highest and lowest points, and the most striking contrast.",
+              "isCorrect": null,
+              "matchKey": "1"
+            },
+            {
+              "id": "b",
+              "text": "Group the lines into two or three features and support each one with figures and comparative language.",
+              "isCorrect": null,
+              "matchKey": "2"
+            },
+            {
+              "id": "c",
+              "text": "Paraphrase what is being compared and name the period covered.",
+              "isCorrect": null,
+              "matchKey": "3"
+            },
+            {
+              "id": "d",
+              "text": "Report the most important feature in full detail, with the exact figures it contains.",
+              "isCorrect": null,
+              "matchKey": "4"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "1": "a", "2": "b", "3": "c", "4": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "1",
+              "b": "2",
+              "c": "3",
+              "d": "4"
+            }
+          },
           "explanation": "The order is fixed and the examiner expects it: paragraph 1 introduces, paragraph 2 gives the overview, and paragraphs 3 and 4 develop the body, most important feature first. Body figures that the overview never mentions read as a list of numbers rather than a summary, which caps Task Achievement and Coherence.",
           "xp": 15
         },
@@ -65,7 +118,12 @@
           "difficulty": "advanced",
           "prompt": "The line graph show the number of mobile phones per 100 people in four countries, and this data shows for example that the number of phones is increasing in Brazil and Nigeria during the period between 1990 to 2020.",
           "instruction": "Rewrite the sentence correctly. Use the simple past, the correct preposition, and the correct subject-verb agreement.",
-          "answer": { "type": "text", "values": ["The line graph shows the number of mobile phones per 100 people in four countries. For example, the figure for Brazil and Nigeria increased during the period from 1990 to 2020."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "The line graph shows the number of mobile phones per 100 people in four countries. For example, the figure for Brazil and Nigeria increased during the period from 1990 to 2020."
+            ]
+          },
           "explanation": "Three errors in one sentence is normal at band 5. 'The graph show' needs the third-person singular -s, Task 1 is reported in the simple past so 'is increasing' becomes 'increased', and the fixed pair is 'between 1990 and 2020' or 'from 1990 to 2020', never 'between ... to'. An examiner reading present tense in Task 1 records it as a grammatical Range and Accuracy error.",
           "xp": 15
         },
@@ -77,7 +135,12 @@
           "difficulty": "advanced",
           "prompt": "By 2020, mobile phone ownership had become ______ (ownership) in all four countries, with 45 to 95 phones per 100 people.",
           "instruction": "Write the adjective only.",
-          "answer": { "type": "text", "values": ["widespread"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "widespread"
+            ]
+          },
           "explanation": "'Widespread' replaces the vague 'very common' or 'very popular' and shows you can turn a plain noun into a precise adjective. In Task 1, linking words such as and, but and so are predictable; accurate adjectives and adverbs are where the Lexical Resource marks are won.",
           "xp": 15
         },
@@ -90,18 +153,82 @@
           "prompt": "Put the words in order to make one correct overview sentence about Nigeria's line.",
           "instruction": "Use every word once.",
           "items": [
-            { "id": "t1", "text": "remained", "isCorrect": null, "matchKey": null },
-            { "id": "t2", "text": "the", "isCorrect": null, "matchKey": null },
-            { "id": "t3", "text": "lowest", "isCorrect": null, "matchKey": null },
-            { "id": "t4", "text": "throughout", "isCorrect": null, "matchKey": null },
-            { "id": "t5", "text": "the", "isCorrect": null, "matchKey": null },
-            { "id": "t6", "text": "period", "isCorrect": null, "matchKey": null },
-            { "id": "t7", "text": "The", "isCorrect": null, "matchKey": null },
-            { "id": "t8", "text": "figure", "isCorrect": null, "matchKey": null },
-            { "id": "t9", "text": "for", "isCorrect": null, "matchKey": null },
-            { "id": "t10", "text": "Nigeria", "isCorrect": null, "matchKey": null }
+            {
+              "id": "t1",
+              "text": "remained",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t2",
+              "text": "the",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t3",
+              "text": "lowest",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t4",
+              "text": "throughout",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t5",
+              "text": "the",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t6",
+              "text": "period",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t7",
+              "text": "The",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t8",
+              "text": "figure",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t9",
+              "text": "for",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t10",
+              "text": "Nigeria",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "order", "values": ["t7", "t8", "t9", "t10", "t1", "t2", "t3", "t4", "t5", "t6"] },
+          "answer": {
+            "type": "order",
+            "values": [
+              "t7",
+              "t8",
+              "t9",
+              "t10",
+              "t1",
+              "t2",
+              "t3",
+              "t4",
+              "t5",
+              "t6"
+            ]
+          },
           "explanation": "'The' opens the sentence and the superlative 'lowest' takes the second 'the', which is why the same word appears twice. Overview sentences are usually single sentences; building them mentally in this way is the fastest way to stop the run-ons that cost Coherence marks.",
           "xp": 15
         },
@@ -113,7 +240,12 @@
           "difficulty": "intermediate",
           "prompt": "Japan's figure was lower than Australia's in 1990 and 2000, but higher in 2010 and 2020. In which year did Japan first overtake Australia?",
           "instruction": "Type the year only.",
-          "answer": { "type": "text", "values": ["2010"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "2010"
+            ]
+          },
           "explanation": "Comparing two lines means naming both figures and the year at which they cross: 35 against 45 in 2000, then 80 against 75 in 2010. 'Overtake' and 'surpass' are the band 7 verbs for a crossover; 'was bigger' is accurate but flat, and a comparison without figures scores lower under Task Achievement.",
           "xp": 15
         }
@@ -145,12 +277,37 @@
           "prompt": "Which of these sentences belongs in the overview of this report?",
           "instruction": "Choose the sentence that reports the pattern without detailed figures.",
           "items": [
-            { "id": "a", "text": "Cooking and commuting took up most of the week for the three working and retired groups, whereas students spent far more time exercising than on either of the other activities.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "It is obvious that younger people have much more free time, so they can spend it on sport whenever they want to.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "The chart compares cooking, exercise and commuting among full-time workers, part-time workers, students and retirees, in hours per week.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "Every single group spent exactly the same amount of time on all three activities, which is quite surprising.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "Cooking and commuting took up most of the week for the three working and retired groups, whereas students spent far more time exercising than on either of the other activities.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "It is obvious that younger people have much more free time, so they can spend it on sport whenever they want to.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "The chart compares cooking, exercise and commuting among full-time workers, part-time workers, students and retirees, in hours per week.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "Every single group spent exactly the same amount of time on all three activities, which is quite surprising.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A reports the general pattern and can be defended by the data. B is opinion plus speculation, which Task 1 never credits. C is a paraphrase of the chart, so it belongs in the introduction, not the overview. D is a claim the figures contradict, and inaccurate claims are recorded as Task Achievement errors.",
           "xp": 15,
           "translation": "Câu nào thuộc về phần tổng quát của bài báo cáo này?"
@@ -164,12 +321,40 @@
           "prompt": "Match each observation from a candidate answer to the group of people it actually describes.",
           "instruction": "Use each group once.",
           "items": [
-            { "id": "a", "text": "This group spent more time exercising than on cooking and commuting combined.", "isCorrect": null, "matchKey": "Students" },
-            { "id": "b", "text": "This group had the highest figure for commuting and the lowest for exercise.", "isCorrect": null, "matchKey": "Full-time workers" },
-            { "id": "c", "text": "This group recorded the same figure for exercise as for commuting.", "isCorrect": null, "matchKey": "Part-time workers" },
-            { "id": "d", "text": "This group had the highest figure for cooking and, at the same time, the lowest for commuting.", "isCorrect": null, "matchKey": "Retirees" }
+            {
+              "id": "a",
+              "text": "This group spent more time exercising than on cooking and commuting combined.",
+              "isCorrect": null,
+              "matchKey": "Students"
+            },
+            {
+              "id": "b",
+              "text": "This group had the highest figure for commuting and the lowest for exercise.",
+              "isCorrect": null,
+              "matchKey": "Full-time workers"
+            },
+            {
+              "id": "c",
+              "text": "This group recorded the same figure for exercise as for commuting.",
+              "isCorrect": null,
+              "matchKey": "Part-time workers"
+            },
+            {
+              "id": "d",
+              "text": "This group had the highest figure for cooking and, at the same time, the lowest for commuting.",
+              "isCorrect": null,
+              "matchKey": "Retirees"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "Students": "a", "Full-time workers": "b", "Part-time workers": "c", "Retirees": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "Students",
+              "b": "Full-time workers",
+              "c": "Part-time workers",
+              "d": "Retirees"
+            }
+          },
           "explanation": "Checking each sentence against the figures before you write it catches the mismatches that look fluent but are wrong: students exercise for 6 hours, which is more than cooking and commuting together (3 plus 2), part-time workers sit at 4 hours for both exercise and commuting, and retirees have the longest cooking time (8 hours) with the shortest commute (1 hour). Unverified comparison sentences are the most common source of Task Achievement penalties.",
           "xp": 15
         },
@@ -181,7 +366,12 @@
           "difficulty": "intermediate",
           "prompt": "The retirees spend more time for cooking than any other groups.",
           "instruction": "Rewrite the sentence so that the verb tense, the preposition and the noun all suit a Task 1 report.",
-          "answer": { "type": "text", "values": ["Retirees spent more time on cooking than any other group."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Retirees spent more time on cooking than any other group."
+            ]
+          },
           "explanation": "Three fixes at once: the report is in the simple past ('spent'), the collocation is 'spend time on something' and never 'spend time for', and a collective noun used as a single group takes the singular 'any other group'. This is exactly the kind of error an examiner marks twice under both Task Achievement and Grammatical Range.",
           "xp": 15
         },
@@ -193,7 +383,12 @@
           "difficulty": "intermediate",
           "prompt": "In the bar chart, the highest figure it is for retirees, at eight hours per week.",
           "instruction": "Rewrite the sentence correctly.",
-          "answer": { "type": "text", "values": ["In the bar chart, the highest figure is for retirees, at eight hours per week."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "In the bar chart, the highest figure is for retirees, at eight hours per week."
+            ]
+          },
           "explanation": "'It is' after 'the highest figure' is a use of the dummy it where the subject has already been named, so it must be cut. Keep the pattern 'the highest figure is for X, at Y hours' and you have a clean data sentence with no grammar risk at all.",
           "xp": 15
         },
@@ -205,7 +400,12 @@
           "difficulty": "intermediate",
           "prompt": "Full-time workers commute for 9 hours a week and retirees commute for 1 hour. How many more hours a week do full-time workers commute than retirees?",
           "instruction": "Type the number only.",
-          "answer": { "type": "text", "values": ["8"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "8"
+            ]
+          },
           "explanation": "Difference questions are the easiest Task Achievement points available: subtract the smaller figure from the larger and state the gap ('eight hours more'). Writing the two numbers and then the difference also gives you the comparative sentence you need for the body paragraph.",
           "xp": 15
         },
@@ -218,18 +418,82 @@
           "prompt": "Put the words in order to make a correct comparison sentence for the body paragraph.",
           "instruction": "Use every word once.",
           "items": [
-            { "id": "t1", "text": "as", "isCorrect": null, "matchKey": null },
-            { "id": "t2", "text": "long", "isCorrect": null, "matchKey": null },
-            { "id": "t3", "text": "twice", "isCorrect": null, "matchKey": null },
-            { "id": "t4", "text": "commuting", "isCorrect": null, "matchKey": null },
-            { "id": "t5", "text": "than", "isCorrect": null, "matchKey": null },
-            { "id": "t6", "text": "workers", "isCorrect": null, "matchKey": null },
-            { "id": "t7", "text": "spent", "isCorrect": null, "matchKey": null },
-            { "id": "t8", "text": "more", "isCorrect": null, "matchKey": null },
-            { "id": "t9", "text": "Full-time", "isCorrect": null, "matchKey": null },
-            { "id": "t10", "text": "students", "isCorrect": null, "matchKey": null }
+            {
+              "id": "t1",
+              "text": "as",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t2",
+              "text": "long",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t3",
+              "text": "twice",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t4",
+              "text": "commuting",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t5",
+              "text": "than",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t6",
+              "text": "workers",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t7",
+              "text": "spent",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t8",
+              "text": "more",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t9",
+              "text": "Full-time",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t10",
+              "text": "students",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "order", "values": ["t9", "t6", "t7", "t8", "t5", "t3", "t2", "t1", "t4", "t10"] },
+          "answer": {
+            "type": "order",
+            "values": [
+              "t9",
+              "t6",
+              "t7",
+              "t8",
+              "t5",
+              "t3",
+              "t2",
+              "t1",
+              "t4",
+              "t10"
+            ]
+          },
           "explanation": "The frame is 'twice as long as', so the words must sit in the order more than twice as long as, and the subject and its verb ('Full-time workers spent') come first. Comparative structures work as pre-learned chunks in a band 7 answer: memorise the frame, then drop the figures into it. Here 9 hours against 2 is indeed more than twice as long.",
           "xp": 15
         }
@@ -261,12 +525,37 @@
           "prompt": "Which sentence correctly reports the first stage of this process?",
           "instruction": "Choose the sentence that matches the diagram.",
           "items": [
-            { "id": "a", "text": "Empty bottles are collected from household waste and transported to a sorting plant.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "The bottles are being collected from the household waste in a sorting plant.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "The household waste collected the empty bottles before they were sorted.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "Empty bottles are collected from household waste after the cullet is heated.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "Empty bottles are collected from household waste and transported to a sorting plant.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "The bottles are being collected from the household waste in a sorting plant.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "The household waste collected the empty bottles before they were sorted.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "Empty bottles are collected from household waste after the cullet is heated.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A is a correct passive present report of stage 1. B uses the past continuous, which suits a moment in a narrative and not a process diagram. C makes the waste the agent, reversing who does what. D reports a stage that exists but puts it in the wrong place in the sequence, and sequence errors are penalised under Task Achievement.",
           "xp": 15,
           "translation": "Câu nào mô tả đúng giai đoạn đầu tiên của quy trình này?"
@@ -280,18 +569,82 @@
           "prompt": "Put the words in order to make a correct sentence reporting stage 7.",
           "instruction": "Use every word once.",
           "items": [
-            { "id": "t1", "text": "is", "isCorrect": null, "matchKey": null },
-            { "id": "t2", "text": "into", "isCorrect": null, "matchKey": null },
-            { "id": "t3", "text": "to", "isCorrect": null, "matchKey": null },
-            { "id": "t4", "text": "molten", "isCorrect": null, "matchKey": null },
-            { "id": "t5", "text": "glass", "isCorrect": null, "matchKey": null },
-            { "id": "t6", "text": "moulds", "isCorrect": null, "matchKey": null },
-            { "id": "t7", "text": "poured", "isCorrect": null, "matchKey": null },
-            { "id": "t8", "text": "produce", "isCorrect": null, "matchKey": null },
-            { "id": "t9", "text": "new", "isCorrect": null, "matchKey": null },
-            { "id": "t10", "text": "bottles", "isCorrect": null, "matchKey": null }
+            {
+              "id": "t1",
+              "text": "is",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t2",
+              "text": "into",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t3",
+              "text": "to",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t4",
+              "text": "molten",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t5",
+              "text": "glass",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t6",
+              "text": "moulds",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t7",
+              "text": "poured",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t8",
+              "text": "produce",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t9",
+              "text": "new",
+              "isCorrect": null,
+              "matchKey": null
+            },
+            {
+              "id": "t10",
+              "text": "bottles",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "order", "values": ["t4", "t5", "t1", "t7", "t2", "t6", "t3", "t8", "t9", "t10"] },
+          "answer": {
+            "type": "order",
+            "values": [
+              "t4",
+              "t5",
+              "t1",
+              "t7",
+              "t2",
+              "t6",
+              "t3",
+              "t8",
+              "t9",
+              "t10"
+            ]
+          },
           "explanation": "The passive needs the past participle ('poured') after 'is', and 'into moulds' is a fixed prepositional phrase rather than 'in the moulds'. The infinitive 'to produce new bottles' states the purpose of the stage. Process sentences follow the passive frame exactly, so building them in this order is the fastest route to accuracy.",
           "xp": 15
         },
@@ -304,12 +657,40 @@
           "prompt": "Match each description to the stage number it reports in the diagram.",
           "instruction": "Use each stage number once.",
           "items": [
-            { "id": "a", "text": "The material is turned into a hot liquid at a temperature of about 1,500 degrees.", "isCorrect": null, "matchKey": "6" },
-            { "id": "b", "text": "Labels, caps and any remaining liquid are taken off the glass.", "isCorrect": null, "matchKey": "3" },
-            { "id": "c", "text": "The finished items are checked and packed for shops and restaurants.", "isCorrect": null, "matchKey": "8" },
-            { "id": "d", "text": "Sand, soda ash and limestone are added to the crushed glass in fixed amounts.", "isCorrect": null, "matchKey": "5" }
+            {
+              "id": "a",
+              "text": "The material is turned into a hot liquid at a temperature of about 1,500 degrees.",
+              "isCorrect": null,
+              "matchKey": "6"
+            },
+            {
+              "id": "b",
+              "text": "Labels, caps and any remaining liquid are taken off the glass.",
+              "isCorrect": null,
+              "matchKey": "3"
+            },
+            {
+              "id": "c",
+              "text": "The finished items are checked and packed for shops and restaurants.",
+              "isCorrect": null,
+              "matchKey": "8"
+            },
+            {
+              "id": "d",
+              "text": "Sand, soda ash and limestone are added to the crushed glass in fixed amounts.",
+              "isCorrect": null,
+              "matchKey": "5"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "6": "a", "3": "b", "8": "c", "5": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "6",
+              "b": "3",
+              "c": "8",
+              "d": "5"
+            }
+          },
           "explanation": "Numbering the stages before you write stops the most common process error, which is reporting two stages in the wrong order. It also lets the body paragraphs share stages instead of duplicating them, which keeps the word count honest.",
           "xp": 15
         },
@@ -321,7 +702,12 @@
           "difficulty": "advanced",
           "prompt": "The bottles are collected and then they are sorted by colour, before the labels are removing by a machine.",
           "instruction": "Rewrite the sentence so that every verb is in the correct passive form and the sequence is clear.",
-          "answer": { "type": "text", "values": ["The bottles are collected and then they are sorted by colour, after which the labels are removed by machine."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "The bottles are collected and then they are sorted by colour, after which the labels are removed by machine."
+            ]
+          },
           "explanation": "'Are removing' is wrong: after 'are' the verb needs the past participle, 'removed'. 'Before' at the end of the sentence also needs the 'after which' frame here, because 'before the labels are removed' needs a main clause. Passive voice is a grammatical range marker, so getting the participles right in every stage is worth real marks.",
           "xp": 15
         },
@@ -333,7 +719,12 @@
           "difficulty": "intermediate",
           "prompt": "In stage 4, the clean bottles are crushed into small fragments, which the diagram names. Type the technical term for those crushed fragments.",
           "instruction": "Type one word only.",
-          "answer": { "type": "text", "values": ["cullet"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "cullet"
+            ]
+          },
           "explanation": "Subject-specific terms are the easiest Lexical Resource points in a process answer, and they are usually given to you in the diagram or its labels. Using 'cullet' and 'furnace' instead of 'small pieces of glass' and 'very hot oven' raises the register of the whole report.",
           "xp": 15
         },
@@ -345,7 +736,12 @@
           "difficulty": "intermediate",
           "prompt": "The cullet is mixed with three other materials and then it is heat in a furnace before the final stage begin.",
           "instruction": "Rewrite the sentence correctly.",
-          "answer": { "type": "text", "values": ["The cullet is mixed with three other materials and then it is heated in a furnace before the final stage begins."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "The cullet is mixed with three other materials and then it is heated in a furnace before the final stage begins."
+            ]
+          },
           "explanation": "In the passive the verb after 'is' must be a past participle, so 'heat' becomes 'heated'; and the singular subject 'stage' needs the third-person 'begins' in the present simple. Both are Range and Accuracy errors, and a cluster of them in one sentence pulls the grammar mark down faster than any other kind of mistake.",
           "xp": 15
         }
@@ -376,7 +772,12 @@
           "difficulty": "intermediate",
           "prompt": "Total UK household spending rose from 430 pounds per week in 2015 to 543 pounds in 2022. By how much did it rise, in pounds per week?",
           "instruction": "Type the number only.",
-          "answer": { "type": "text", "values": ["113"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "113"
+            ]
+          },
           "explanation": "Total figures in a table are the easiest Task Achievement points available, and an examiner expects the writer to use them. Subtracting first and then writing the sentence ('a rise of 113 pounds a week') also gives you the comparative clause you need for the overview, where the useful fact is that the total grew by roughly a quarter.",
           "xp": 15
         },
@@ -389,12 +790,37 @@
           "prompt": "Which of these sentences belongs in the overview of this report?",
           "instruction": "Choose the sentence that reports the overall pattern.",
           "items": [
-            { "id": "a", "text": "Overall spending rose by about a quarter, with housing taking an ever larger share of the budget while leisure was the only category to fall in both pounds and percentage terms.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "The table and the pie charts both show five categories of spending in the United Kingdom for two separate years, and the two visuals present the same information in different ways.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "Families today clearly understand better than previous generations that they should spend their money on the things they really need instead of luxury items.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "Spending on housing was 180 pounds in 2015, 245 pounds in 2022, food was 95 pounds and then 120 pounds, and transport was 60 pounds and then 72 pounds.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "Overall spending rose by about a quarter, with housing taking an ever larger share of the budget while leisure was the only category to fall in both pounds and percentage terms.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "The table and the pie charts both show five categories of spending in the United Kingdom for two separate years, and the two visuals present the same information in different ways.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "Families today clearly understand better than previous generations that they should spend their money on the things they really need instead of luxury items.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "Spending on housing was 180 pounds in 2015, 245 pounds in 2022, food was 95 pounds and then 120 pounds, and transport was 60 pounds and then 72 pounds.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A gives the overall change and the two features that dominate it, which is the job of the overview. B is a paraphrase, so it belongs in the introduction. C is an opinion, which Task 1 never credits. D is a run-on list of raw figures with no selection, which is exactly the writing that stays at band 5 because nothing is summarised.",
           "xp": 15,
           "translation": "Câu nào thuộc về phần tổng quát của bài báo cáo này?"
@@ -407,7 +833,12 @@
           "difficulty": "advanced",
           "prompt": "Complete the sentence with the adverb formed from the word in brackets: the housing share of the budget grew ______ (gradual) between 2015 and 2022, from 42 to 45 per cent.",
           "instruction": "Write the adverb only.",
-          "answer": { "type": "text", "values": ["gradually"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "gradually"
+            ]
+          },
           "explanation": "'Grew slow' is the kind of adverb an examiner reads as imprecise. Turning a plain adverb into '-ly' form, and choosing a calm word for a calm change, is a reliable Lexical Resource gain. Remember that 'gradual' takes '-ly' even though it already looks long: that is the sort of detail the spelling criterion rewards.",
           "xp": 15
         },
@@ -419,7 +850,12 @@
           "difficulty": "intermediate",
           "prompt": "Housing spending in 2022 was more higher than food spending and it was almost as three times as large as the figure for leisure.",
           "instruction": "Rewrite the sentence with correct comparatives.",
-          "answer": { "type": "text", "values": ["Housing spending in 2022 was higher than food spending, and the figure for housing was more than three times as large as that for transport."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Housing spending in 2022 was higher than food spending, and the figure for housing was more than three times as large as that for transport."
+            ]
+          },
           "explanation": "'More higher' mixes the two comparative forms; once you use 'higher' the 'more' must go. 'Almost as three times' needs the frame 'more than three times as large as', and the figures have to fit it: 245 pounds against 72 pounds is just over three times, so the word 'almost' would be wrong. Fixing comparative frames matters because band 6 and band 7 answers are often separated by nothing more than comparison accuracy.",
           "xp": 15
         },
@@ -432,12 +868,40 @@
           "prompt": "Match each statement from a candidate answer to the spending category it actually describes.",
           "instruction": "Use each category once.",
           "items": [
-            { "id": "a", "text": "This was the only category where the 2022 figure was lower than the 2015 figure.", "isCorrect": null, "matchKey": "Leisure" },
-            { "id": "b", "text": "This category accounted for the largest single share of the budget in both years.", "isCorrect": null, "matchKey": "Housing" },
-            { "id": "c", "text": "This category kept exactly the same share of the budget in 2015 and in 2022.", "isCorrect": null, "matchKey": "Food" },
-            { "id": "d", "text": "Spending on this category rose by 18 pounds a week, the smallest rise of the three.", "isCorrect": null, "matchKey": "Transport" }
+            {
+              "id": "a",
+              "text": "This was the only category where the 2022 figure was lower than the 2015 figure.",
+              "isCorrect": null,
+              "matchKey": "Leisure"
+            },
+            {
+              "id": "b",
+              "text": "This category accounted for the largest single share of the budget in both years.",
+              "isCorrect": null,
+              "matchKey": "Housing"
+            },
+            {
+              "id": "c",
+              "text": "This category kept exactly the same share of the budget in 2015 and in 2022.",
+              "isCorrect": null,
+              "matchKey": "Food"
+            },
+            {
+              "id": "d",
+              "text": "Spending on this category rose by 18 pounds a week, the smallest rise of the three.",
+              "isCorrect": null,
+              "matchKey": "Transport"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "Leisure": "a", "Housing": "b", "Food": "c", "Transport": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "Leisure",
+              "b": "Housing",
+              "c": "Food",
+              "d": "Transport"
+            }
+          },
           "explanation": "Verifying each comparison against the figures before writing catches the errors that sound fluent but are wrong: food held at 22 per cent, and transport rose by 12 pounds (60 to 72) while utilities rose by 18. Every inaccurate comparison is a Task Achievement penalty, however well written the sentence around it is.",
           "xp": 15
         },
@@ -449,7 +913,12 @@
           "difficulty": "advanced",
           "prompt": "Between 2015 and 2022 the number of pounds that families spent on housing was rose by 65 pounds a week, and this was the biggest change of the five categories.",
           "instruction": "Rewrite the sentence correctly.",
-          "answer": { "type": "text", "values": ["Between 2015 and 2022, the number of pounds that families spent on housing rose by 65 pounds a week, and this was the biggest change of the five categories."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Between 2015 and 2022, the number of pounds that families spent on housing rose by 65 pounds a week, and this was the biggest change of the five categories."
+            ]
+          },
           "explanation": "A passive ('was rose by') cannot take an active verb, because 'rise' has no passive form in this meaning; the subject 'the number' does the rising, so the active 'rose' is correct. 'Between 2015 and 2022' is the fixed pair, and no 'the' is needed before two parallel years.",
           "xp": 15
         }
@@ -481,12 +950,37 @@
           "prompt": "Which opening and sign-off are correct for a formal letter to the editor of a local newspaper?",
           "instruction": "Choose the correct pair.",
           "items": [
-            { "id": "a", "text": "Dear Editor, ... Yours faithfully", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "Hi Editor, ... Thanks for reading my letter", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "Dear Sir or Madam, ... Yours faithfully", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "Hello, I am writing to tell you about the library ... See you soon,", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "Dear Editor, ... Yours faithfully",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "Hi Editor, ... Thanks for reading my letter",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "Dear Sir or Madam, ... Yours faithfully",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "Hello, I am writing to tell you about the library ... See you soon,",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "'Dear Editor' with 'Yours faithfully' is the standard neutral form when you address a person you cannot name, and it is what a letter to a newspaper editor uses. B and D are the register of an email to a friend and would be penalised under Task Response for register, not just grammar. C is 'Dear Sir or Madam', which is only for an unknown individual in business, and it reads as slightly rude to an editor.",
           "xp": 15,
           "translation": "Cách mở đầu và kết thư nào đúng cho một bức thư trang trọng gửi tòa soạn báo?"
@@ -500,11 +994,33 @@
           "prompt": "Match each requirement from the task to the paragraph of the letter that satisfies it.",
           "instruction": "Use each paragraph number once.",
           "items": [
-            { "id": "a", "text": "State whether you support the council's plan and justify your view, using evidence from the table.", "isCorrect": null, "matchKey": "3" },
-            { "id": "b", "text": "Introduce yourself, say why you are writing, and put the proposal in your own words.", "isCorrect": null, "matchKey": "1" },
-            { "id": "c", "text": "Report the five facilities and their figures for both years, and name the most and least used.", "isCorrect": null, "matchKey": "2" }
+            {
+              "id": "a",
+              "text": "State whether you support the council's plan and justify your view, using evidence from the table.",
+              "isCorrect": null,
+              "matchKey": "3"
+            },
+            {
+              "id": "b",
+              "text": "Introduce yourself, say why you are writing, and put the proposal in your own words.",
+              "isCorrect": null,
+              "matchKey": "1"
+            },
+            {
+              "id": "c",
+              "text": "Report the five facilities and their figures for both years, and name the most and least used.",
+              "isCorrect": null,
+              "matchKey": "2"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "3": "a", "1": "b", "2": "c" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "3",
+              "b": "1",
+              "c": "2"
+            }
+          },
           "explanation": "A Task 1 letter is planned from the bullet points, in the order they are given, and that order is also the order that lets you write the fastest. Covering two bullets in one paragraph and leaving the third to the last minute is the single most common reason GT Task 1 answers lose Task Response marks.",
           "xp": 15
         },
@@ -516,7 +1032,12 @@
           "difficulty": "intermediate",
           "prompt": "The community hall had 500 visits a week in 2010 and 210 in 2025. Which facility had the lowest number of visits in 2025?",
           "instruction": "Type the name of the facility only.",
-          "answer": { "type": "text", "values": ["Community hall"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Community hall"
+            ]
+          },
           "explanation": "Task 2 in this letter asks for the extremes, and the extremes are always the cheapest Task Achievement points in the question. Note the trap: the public library fell further, from 1,200 to 380, but 380 is still more than 210, so the least used facility in 2025 is the community hall. A large fall is not the same as the lowest figure.",
           "xp": 15
         },
@@ -528,7 +1049,12 @@
           "difficulty": "advanced",
           "prompt": "I am writing to inform you that I very disagree with your proposal about the library, because the local people have no another place to read the books.",
           "instruction": "Rewrite the sentence in a more natural register for a formal letter, with correct word forms.",
-          "answer": { "type": "text", "values": ["I am writing to express my disagreement with the council's proposal, because local residents have nowhere else to borrow books."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "I am writing to express my disagreement with the council's proposal, because local residents have nowhere else to borrow books."
+            ]
+          },
           "explanation": "'Very disagree' is not English; 'strongly disagree' and 'express my disagreement' are both acceptable, and the second fits a formal register better. 'No another place' needs restructuring to 'nowhere else', and 'the local people' becomes 'local residents' at this level. A letter that shouts is still penalised on Task Response for register and tone.",
           "xp": 15
         },
@@ -540,7 +1066,12 @@
           "difficulty": "advanced",
           "prompt": "Complete the sentence with the correct form of the word in brackets: visitor numbers to the public library ______ (decrease) sharply between 2010 and 2025, while the sports centre attracted more and more people.",
           "instruction": "Write the verb only.",
-          "answer": { "type": "text", "values": ["declined"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "declined"
+            ]
+          },
           "explanation": "The verb form of a noun that begins with a de- prefix is an easy trap: 'decrease' is the noun but the verb is 'decline'. Writing the family of a word down once (decline, declined, declining) removes the error from every task in the exam, and Task 1 letters need that verb because the letter asks you to describe a fall.",
           "xp": 15
         },
@@ -552,7 +1083,12 @@
           "difficulty": "intermediate",
           "prompt": "In the last fifteen year, the number of visitors to the public library have fallen from 1,200 to 380 a week, and the same fall is not seen in any other category.",
           "instruction": "Rewrite the sentence correctly.",
-          "answer": { "type": "text", "values": ["In the last fifteen years, the number of visitors to the public library has fallen from 1,200 to 380 a week, and no other category has seen a fall of the same size."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "In the last fifteen years, the number of visitors to the public library has fallen from 1,200 to 380 a week, and no other category has seen a fall of the same size."
+            ]
+          },
           "explanation": "After a period of time ending in 'years' the plural 'years' is needed, and the subject 'the number' is singular, so 'has fallen' follows. The last clause is also factually wrong: the community hall also fell, from 500 to 210, so the writer must check the table before claiming a category is unique.",
           "xp": 15
         }
@@ -584,12 +1120,37 @@
           "prompt": "Which paragraph belongs in the introduction of an answer to this question?",
           "instruction": "Choose the paragraph that paraphrases the question and states a position.",
           "items": [
-            { "id": "a", "text": "Views differ on whether the standard week should be cut to four days at the same pay, or whether longer hours are needed to keep the economy growing. Although the economic argument is understandable, I largely agree that a shorter week would benefit most workers, mainly because output does not depend on hours at the office.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "In the past, people worked from sunrise until sunset without any weekend at all, and in those days nobody complained about it, which shows that the modern complaint about working hours is exaggerated.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "For example, a hospital nurse who works four days would still have to care for the same number of patients in those four days as she does now in five, so the quality of care would fall.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "In conclusion, the four-day week is a clever idea, and I hope that governments everywhere will decide to introduce it soon because it is clearly the best system for everyone in the world.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "Views differ on whether the standard week should be cut to four days at the same pay, or whether longer hours are needed to keep the economy growing. Although the economic argument is understandable, I largely agree that a shorter week would benefit most workers, mainly because output does not depend on hours at the office.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "In the past, people worked from sunrise until sunset without any weekend at all, and in those days nobody complained about it, which shows that the modern complaint about working hours is exaggerated.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "For example, a hospital nurse who works four days would still have to care for the same number of patients in those four days as she does now in five, so the quality of care would fall.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "In conclusion, the four-day week is a clever idea, and I hope that governments everywhere will decide to introduce it soon because it is clearly the best system for everyone in the world.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The introduction has two jobs: a paraphrase in your own words and a clear position. A does both and previews the main reason. B is a generalisation about the past that the question never raises and states no position, so Task Response suffers. C is a body paragraph giving an example. D is a conclusion with an unsupported absolute claim ('clearly the best system for everyone'), which weakens Task Response rather than ending it well.",
           "xp": 15,
           "translation": "Đoạn nào thuộc về phần mở bài của bài luận này?"
@@ -603,11 +1164,33 @@
           "prompt": "Match each requirement of an 'agree or disagree' question to the paragraph of the essay that satisfies it.",
           "instruction": "Use each paragraph label once.",
           "items": [
-            { "id": "a", "text": "Explain the reasoning behind the other side, in one or two sentences only, and explain why it does not change the writer's view.", "isCorrect": null, "matchKey": "Body" },
-            { "id": "b", "text": "Restate the position in new words and add a final thought about what follows from it.", "isCorrect": null, "matchKey": "Conclusion" },
-            { "id": "c", "text": "Paraphrase both sides of the issue and state which side the writer supports.", "isCorrect": null, "matchKey": "Introduction" }
+            {
+              "id": "a",
+              "text": "Explain the reasoning behind the other side, in one or two sentences only, and explain why it does not change the writer's view.",
+              "isCorrect": null,
+              "matchKey": "Body"
+            },
+            {
+              "id": "b",
+              "text": "Restate the position in new words and add a final thought about what follows from it.",
+              "isCorrect": null,
+              "matchKey": "Conclusion"
+            },
+            {
+              "id": "c",
+              "text": "Paraphrase both sides of the issue and state which side the writer supports.",
+              "isCorrect": null,
+              "matchKey": "Introduction"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "Body": "a", "Conclusion": "b", "Introduction": "c" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "Body",
+              "b": "Conclusion",
+              "c": "Introduction"
+            }
+          },
           "explanation": "The label 'agree or disagree' decides the plan. Because you are asked for your own view, the other side gets a short, clearly subordinate treatment in the body, not a full symmetric paragraph; giving both sides equal space and never choosing is the classic reason Task Response stalls at band 5.",
           "xp": 15
         },
@@ -619,7 +1202,12 @@
           "difficulty": "advanced",
           "prompt": "In a band 7 answer to 'to what extent do you agree or disagree?', the body paragraph that develops the view you disagree with must open with a two-word contrasting phrase. Type it.",
           "instruction": "Type the two words only.",
-          "answer": { "type": "text", "values": ["By contrast"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "By contrast"
+            ]
+          },
           "explanation": "'By contrast' signals to the examiner that you know this side is not your position, which keeps the argument clear. A band 7 essay also varies its linkers: 'by contrast' for the opposing view, 'the main reason', 'a further point is that', 'this has two consequences'. Repeating 'also' and 'but' signals a narrow range of Cohesion and Coherence.",
           "xp": 15
         },
@@ -631,7 +1219,12 @@
           "difficulty": "intermediate",
           "prompt": "In my opinion, I think that reducing the working week is not a good idea because the working hours are too much short for the modern economy.",
           "instruction": "Rewrite the sentence without repeating the opinion marker and with a correct comparative.",
-          "answer": { "type": "text", "values": ["In my opinion, reducing the working week is not a good idea because a shorter working week is not enough for the modern economy."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "In my opinion, reducing the working week is not a good idea because a shorter working week is not enough for the modern economy."
+            ]
+          },
           "explanation": "'In my opinion' and 'I think that' say the same thing twice, so one of them must go; the result is stronger, not weaker. 'Too much short' should be 'too short', because 'too' already carries the negative sense, and 'much' is only for quantities. Stacking opinion markers in one sentence is what pushes an essay towards a repetitive, low-range impression.",
           "xp": 15
         },
@@ -643,7 +1236,12 @@
           "difficulty": "advanced",
           "prompt": "The economy will be suffered if people work less hours, and this problem can be not avoided by a government.",
           "instruction": "Rewrite the sentence correctly.",
-          "answer": { "type": "text", "values": ["The economy will suffer if people work fewer hours, and this problem cannot be avoided by a government."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "The economy will suffer if people work fewer hours, and this problem cannot be avoided by a government."
+            ]
+          },
           "explanation": "'Suffer' is not a transitive verb in the passive here: the economy suffers, so the active is required. 'Less hours' must be 'fewer hours' because hours is countable. 'Cannot be avoided' is the passive that the original sentence needs, and the negative cannot sit before 'be avoided' without a form change.",
           "xp": 15
         },
@@ -655,7 +1253,12 @@
           "difficulty": "advanced",
           "prompt": "Translate this phrase into English and use it to open your opposing-view paragraph: 'Mặc dù có những lý lẽ đó, tôi vẫn cho là...'",
           "instruction": "Type the English phrase only.",
-          "answer": { "type": "text", "values": ["Although these arguments are understandable, I still believe that"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Although these arguments are understandable, I still believe that"
+            ]
+          },
           "explanation": "'Although ... , I still believe ...' concedes the other side and holds the position, which is exactly what 'to what extent' rewards. 'While' is shorter and works in speech. Phrases like this are worth learning as fixed chunks: a conditional clause plus an opinion clause is a structure most candidates cannot produce under time pressure.",
           "xp": 15,
           "translation": "Dịch cụm từ này sang tiếng Anh và dùng nó để mở đoạn nói về quan điểm mà bạn không đồng ý."
@@ -688,12 +1291,37 @@
           "prompt": "The examiner asks: 'What sort of place do you live in?' Which answer is the best response in Part 1?",
           "instruction": "Choose the answer that is fully developed and natural.",
           "items": [
-            { "id": "a", "text": "I live in a small flat on the third floor of an old building, about fifteen minutes from the city centre by bus. It's not very modern, but the rent is reasonable and the neighbours are quiet.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "Flat.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "I live in a very very nice and very big and very beautiful apartment in a very good location near everything you can imagine.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "This question is a classic IELTS Part 1 topic and it always appears in the first five minutes of the test, so candidates should always prepare for it.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "I live in a small flat on the third floor of an old building, about fifteen minutes from the city centre by bus. It's not very modern, but the rent is reasonable and the neighbours are quiet.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "Flat.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "I live in a very very nice and very big and very beautiful apartment in a very good location near everything you can imagine.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "This question is a classic IELTS Part 1 topic and it always appears in the first five minutes of the test, so candidates should always prepare for it.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A answers the question, adds a location detail and then a reason with a contrast, which is the answer-plus-reason-plus-detail shape examiners reward. B is one word, so it shows almost no grammatical range or lexical resource. C is accurate but padded with repetition, which damages pronunciation impression and sounds unnatural. D talks about the test instead of answering, and wastes the opportunity to produce language.",
           "xp": 15,
           "translation": "Giám khảo hỏi: 'Bạn sống ở một nơi như thế nào?' Câu trả lời nào là tốt nhất?"
@@ -707,9 +1335,19 @@
           "prompt": "In Part 1, candidates should prepare a list of full sentences to recite when the examiner asks about their hometown.",
           "instruction": "Decide whether this statement is true or false.",
           "items": [
-            { "id": "a", "text": "In Part 1, candidates should prepare a list of full sentences to recite when the examiner asks about their hometown.", "isCorrect": null, "matchKey": null }
+            {
+              "id": "a",
+              "text": "In Part 1, candidates should prepare a list of full sentences to recite when the examiner asks about their hometown.",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "boolean", "values": [false] },
+          "answer": {
+            "type": "boolean",
+            "values": [
+              false
+            ]
+          },
           "explanation": "False. A recited answer is recognised immediately, and the examiner will ask a follow-up to test whether you can actually speak. What helps is having the content ready, not the sentences: know that you moved there three years ago, that it is near a park, and that you know your neighbours, and you can build a fresh answer around that whenever it is asked.",
           "xp": 15
         },
@@ -721,7 +1359,12 @@
           "difficulty": "intermediate",
           "prompt": "Complete the phrase a candidate can use when they need a moment to think: \"That's a good question, but I haven't really ______ about it before.\"",
           "instruction": "Complete the sentence with one word.",
-          "answer": { "type": "text", "values": ["thought"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "thought"
+            ]
+          },
           "explanation": "Fillers like this keep the answer going, so the examiner does not hear a long pause, and they are honest: they signal thinking time instead of hiding it. Two or three of these, used at natural moments, are enough; using one before every sentence makes the delivery sound mechanical.",
           "xp": 15
         },
@@ -733,7 +1376,12 @@
           "difficulty": "advanced",
           "prompt": "I very like my neighbourhood because it is very quiet and there are many people which is friendly and I go to the market every Sunday with my neighbour.",
           "instruction": "Rewrite the sentence so that the modifiers attach to the right words and the sentence is not overloaded.",
-          "answer": { "type": "text", "values": ["I really like my neighbourhood because it is very quiet and the people are friendly, and I go to the market with my neighbour every Sunday."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "I really like my neighbourhood because it is very quiet and the people are friendly, and I go to the market with my neighbour every Sunday."
+            ]
+          },
           "explanation": "'Very' cannot be placed directly before a verb like 'like'; use 'really' or 'like ... very much'. The relative clause 'which is friendly' has no proper antecedent, so it must become 'the people are friendly'. The double 'and' chain and the 'very quiet' also make the sentence hard to follow, which affects the coherence mark; splitting the idea into a second clause is a safer structure under time pressure.",
           "xp": 15
         },
@@ -746,12 +1394,40 @@
           "prompt": "Match each question you have just seen to the part of the speaking test it belongs to.",
           "instruction": "Use each part of the test once.",
           "items": [
-            { "id": "a", "text": "Do you prefer spending your free time indoors or outdoors?", "isCorrect": null, "matchKey": "Part 1" },
-            { "id": "b", "text": "Describe a place you would like to visit, saying where it is and what you would do there.", "isCorrect": null, "matchKey": "Part 2" },
-            { "id": "c", "text": "Do you think people today are better at making friends than in the past?", "isCorrect": null, "matchKey": "Part 3" },
-            { "id": "d", "text": "Can you tell me your full name, and which city are you from?", "isCorrect": null, "matchKey": "Before the test" }
+            {
+              "id": "a",
+              "text": "Do you prefer spending your free time indoors or outdoors?",
+              "isCorrect": null,
+              "matchKey": "Part 1"
+            },
+            {
+              "id": "b",
+              "text": "Describe a place you would like to visit, saying where it is and what you would do there.",
+              "isCorrect": null,
+              "matchKey": "Part 2"
+            },
+            {
+              "id": "c",
+              "text": "Do you think people today are better at making friends than in the past?",
+              "isCorrect": null,
+              "matchKey": "Part 3"
+            },
+            {
+              "id": "d",
+              "text": "Can you tell me your full name, and which city are you from?",
+              "isCorrect": null,
+              "matchKey": "Before the test"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "Part 1": "a", "Part 2": "b", "Part 3": "c", "Before the test": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "Part 1",
+              "b": "Part 2",
+              "c": "Part 3",
+              "d": "Before the test"
+            }
+          },
           "explanation": "A short question about your own habits is Part 1. A cue card with bullet points is Part 2. C is abstract and general, which is the definition of Part 3; Part 3 always follows the Part 2 topic but lifts it to a societal level, and it is where most candidates lose marks by slipping back into personal anecdote. D is asked before the scored parts begin, and it is also the moment to check that the examiner has written your name down correctly.",
           "xp": 15
         },
@@ -763,14 +1439,42 @@
           "difficulty": "intermediate",
           "prompt": "The examiner asks: 'What do people in your area usually do at night?' Listen to a model answer and choose the summary closest to it.",
           "instruction": "Listen once and choose the best summary.",
-          "audio": { "kind": "speech", "text": "Most people in my area just stay in after work, I think, because the streets get very quiet by about nine o'clock. The one exception is the little restaurant near the station, which is always full and quite noisy." },
+          "audio": {
+            "kind": "speech",
+            "text": "Most people in my area just stay in after work, I think, because the streets get very quiet by about nine o'clock. The one exception is the little restaurant near the station, which is always full and quite noisy."
+          },
           "items": [
-            { "id": "a", "text": "People go out to noisy places in the evening and the streets stay busy all night.", "isCorrect": false, "matchKey": null },
-            { "id": "b", "text": "People stay at home in the evening because the area is quiet, apart from one busy restaurant.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "The speaker says that his neighbours work at night and the streets stay quiet until morning.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "The speaker does not know anything about what people do at night in his area.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "People go out to noisy places in the evening and the streets stay busy all night.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "People stay at home in the evening because the area is quiet, apart from one busy restaurant.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "The speaker says that his neighbours work at night and the streets stay quiet until morning.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "The speaker does not know anything about what people do at night in his area.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["b"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "b"
+            ]
+          },
           "explanation": "The model answer says most people stay in after work and the streets get very quiet, with one exception: a restaurant near the station that is always full. B captures the main pattern and the exception, which is the structure the speaker actually used. A inverts the pattern, C invents a detail about night work, and D misses the fact that the speaker did give an opinion.",
           "xp": 15,
           "translation": "Nghe một câu trả lời mẫu và chọn phần tóm tắt gần nhất với câu đó."
@@ -803,12 +1507,37 @@
           "prompt": "The examiner asks: 'What made you choose that subject?' Which answer is the best Part 1 response?",
           "instruction": "Choose the answer with the right length and development for Part 1.",
           "items": [
-            { "id": "a", "text": "I chose it because I had always been interested in how buildings are designed, and a friend of mine was already studying it, so it seemed like a safe choice. I may change my mind after this year, but at the moment I enjoy it.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "I chose it because I like it, and also because it is interesting and useful and my parents were happy about it and my teacher recommended it as well.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "The question of why I selected my field of university study is one which many candidates find quite difficult to answer concisely, although it is not uncommon for examiners to ask it during the initial interview section.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "I didn't choose it. I was assigned to it, so I had no say in the matter at all.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "I chose it because I had always been interested in how buildings are designed, and a friend of mine was already studying it, so it seemed like a safe choice. I may change my mind after this year, but at the moment I enjoy it.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "I chose it because I like it, and also because it is interesting and useful and my parents were happy about it and my teacher recommended it as well.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "The question of why I selected my field of university study is one which many candidates find quite difficult to answer concisely, although it is not uncommon for examiners to ask it during the initial interview section.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "I didn't choose it. I was assigned to it, so I had no say in the matter at all.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A gives the reason, the context and a forward-looking sentence, which is exactly the right size for Part 1 and shows tense range because it moves from past to future. B repeats 'because' and piles on reasons with no structure, which weakens both fluency and grammar range. C is a long, formal sentence about the exam, far too long and impersonal for a chatty Part 1 answer. D is honest but far too short and dead-ends the conversation.",
           "xp": 15,
           "translation": "Giám khảo hỏi: 'Điều gì khiến bạn chọn môn học đó?' Câu trả lời nào tốt nhất trong Phần 1?"
@@ -821,7 +1550,12 @@
           "difficulty": "intermediate",
           "prompt": "The examiner asks: 'How did you first get into photography?' A Part 1 answer should start with the verb 'got'. Complete the phrase: 'I ______ into photography when a friend of mine bought a second-hand camera.'",
           "instruction": "Type the verb only.",
-          "answer": { "type": "text", "values": ["got"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "got"
+            ]
+          },
           "explanation": "'Got into photography' is the natural usage for taking up a hobby, and it is the phrase a band 6 candidate should have ready for the 'how did you first get into that' question. 'I started to do photography' is understandable but flatter, and 'I discovered photography' suggests a sudden accident rather than a gradual start.",
           "translation": "Hoàn thành cụm từ: 'I ______ into photography when a friend of mine bought a second-hand camera.'",
           "xp": 15
@@ -834,7 +1568,12 @@
           "difficulty": "intermediate",
           "prompt": "Complete the phrase that shows you have not got personal experience of a topic, and then adds a sensible guess: \"I've never been to a driving school, but I imagine you ______ the theory before you get behind the wheel.\"",
           "instruction": "Complete the sentence with one word.",
-          "answer": { "type": "text", "values": ["learn"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "learn"
+            ]
+          },
           "explanation": "Saying what you imagine or expect lets you keep speaking about a topic you know nothing about, which protects the fluency mark and still shows conditional and modal grammar. 'I imagine you learn' is right; 'I imagine you are learning' would be less natural for a general process.",
           "xp": 15
         },
@@ -846,7 +1585,12 @@
           "difficulty": "intermediate",
           "prompt": "My hometown is a small village where is very quiet and most of the people knows each other since they are child.",
           "instruction": "Rewrite the sentence with correct word order and verb agreement.",
-          "answer": { "type": "text", "values": ["My hometown is a small village where it is very quiet and most of the people know each other, as they have since they were children."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "My hometown is a small village where it is very quiet and most of the people know each other, as they have since they were children."
+            ]
+          },
           "explanation": "The relative clause needs its own subject, so 'where is very quiet' becomes 'where it is very quiet'. 'People' is plural, so the verb is 'know', not 'knows'. 'Since they are child' mixes a present tense with a singular noun; the natural form is 'since they were children' or 'since childhood'.",
           "xp": 15
         },
@@ -858,8 +1602,16 @@
           "difficulty": "intermediate",
           "prompt": "Listen to a model Part 1 answer and type what you hear.",
           "instruction": "Type the sentence you hear. Punctuation and capital letters are checked automatically.",
-          "audio": { "kind": "speech", "text": "I usually play badminton with two friends from work, and we play twice a week if neither of us is too tired." },
-          "answer": { "type": "text", "values": ["I usually play badminton with two friends from work, and we play twice a week if neither of us is too tired."] },
+          "audio": {
+            "kind": "speech",
+            "text": "I usually play badminton with two friends from work, and we play twice a week if neither of us is too tired."
+          },
+          "answer": {
+            "type": "text",
+            "values": [
+              "I usually play badminton with two friends from work, and we play twice a week if neither of us is too tired."
+            ]
+          },
           "explanation": "This sentence shows the target Part 1 length and the three things a good answer does: it answers, it adds who and how often, and it adds a qualifying clause. Notice the 'if' clause, which is a natural way to sound like a real speaker rather than a list, and the substitution 'neither of us' after naming two friends.",
           "xp": 15,
           "translation": "Nghe một câu trả lời mẫu cho Phần 1 và gõ lại điều bạn nghe được."
@@ -873,9 +1625,19 @@
           "prompt": "In Part 1, the examiner may move from one topic block to another, so a candidate should be ready to talk about hometown, study or work, and hobbies on the same day.",
           "instruction": "Decide whether this statement is true or false.",
           "items": [
-            { "id": "a", "text": "In Part 1, the examiner may move from one topic block to another, so a candidate should be ready to talk about hometown, study or work, and hobbies on the same day.", "isCorrect": null, "matchKey": null }
+            {
+              "id": "a",
+              "text": "In Part 1, the examiner may move from one topic block to another, so a candidate should be ready to talk about hometown, study or work, and hobbies on the same day.",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "boolean", "values": [true] },
+          "answer": {
+            "type": "boolean",
+            "values": [
+              true
+            ]
+          },
           "explanation": "True. The blocks are chosen at random and the examiner signals each change with a phrase such as 'let's talk about your hobbies'. Preparing all three or four sets is the standard Part 1 strategy, and it is why candidates who memorise only one topic run out of things to say four minutes into the test.",
           "xp": 15
         }
@@ -907,12 +1669,37 @@
           "prompt": "Which of these is the strongest final bullet answer to 'explain how this person has influenced your own life'?",
           "instruction": "Choose the answer that develops the point with specific evidence.",
           "items": [
-            { "id": "a", "text": "What I have really taken from her is that you don't have to be talented to be good at something. When I first started running, I couldn't finish a kilometre, and instead of giving up I just kept going at my own pace. Now I do two long runs a week, and I tell my students to do the same thing rather than worrying about being fast.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "She has influenced me a lot in many different ways, and I have learned a great deal from her, and she is a very good person who has changed my life for the better in a big way.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "She is a maths teacher, and she works at a school, and she has been working there for about twenty years.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "In my opinion, people who influence others are usually quite confident and outgoing, and this is a general truth that applies to everyone in modern society.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "What I have really taken from her is that you don't have to be talented to be good at something. When I first started running, I couldn't finish a kilometre, and instead of giving up I just kept going at my own pace. Now I do two long runs a week, and I tell my students to do the same thing rather than worrying about being fast.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "She has influenced me a lot in many different ways, and I have learned a great deal from her, and she is a very good person who has changed my life for the better in a big way.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "She is a maths teacher, and she works at a school, and she has been working there for about twenty years.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "In my opinion, people who influence others are usually quite confident and outgoing, and this is a general truth that applies to everyone in modern society.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A states the influence, then supports it with a concrete past story and a present consequence, and it uses a range of structures: a modal, a comparison of past and present, and a direct reported idea. B is all repetition with no content, which is a low range impression. C restates the previous bullet about her job, so it wastes the last minute of the long turn. D is a generalisation that answers nothing.",
           "xp": 15,
           "translation": "Câu trả lời nào mạnh nhất cho yêu cầu cuối 'giải thích người đó đã ảnh hưởng thế nào đến cuộc sống của bạn'?"
@@ -925,7 +1712,12 @@
           "difficulty": "intermediate",
           "prompt": "The last cue card bullet is about the person's influence on you. Type the four-word phrase that introduces that bullet when you start it, after a short signpost such as 'As for how she has influenced me'.",
           "instruction": "Type the phrase only, in lower case.",
-          "answer": { "type": "text", "values": ["the biggest influence"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "the biggest influence"
+            ]
+          },
           "explanation": "Signposting tells the examiner which bullet you are on, and that is worth marks for coherence. In a long turn, phrases like 'the most important thing about her', 'the main difference I noticed' and 'what I found most interesting' do the same job. Using one per bullet is enough; over-signposting sounds like you are reading a list.",
           "xp": 15
         },
@@ -937,7 +1729,12 @@
           "difficulty": "advanced",
           "prompt": "Complete the phrase candidates use when they need to keep talking in a long turn: \"If I'm honest, the thing I remember most is ______\"",
           "instruction": "Complete the sentence with one word.",
-          "answer": { "type": "text", "values": ["that"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "that"
+            ]
+          },
           "explanation": "This is a clause opener, not a filler, and it buys real thinking time inside a long turn. 'If I'm honest, the thing I remember most is that she never once told anyone off in front of the class.' Reporting what someone said in indirect speech is exactly the kind of structure that raises the grammatical range mark in Part 2.",
           "xp": 15
         },
@@ -949,7 +1746,12 @@
           "difficulty": "advanced",
           "prompt": "My aunt have been teaching mathematics for twenty-two years, and she is the person who I admire most because she can make difficult things look simple for anybody who is listening.",
           "instruction": "Rewrite the sentence with correct subject-verb agreement, tense and word order.",
-          "answer": { "type": "text", "values": ["My aunt has been teaching mathematics for twenty-two years, and she is the person whom I admire most because she can make difficult things simple for anybody who is listening."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "My aunt has been teaching mathematics for twenty-two years, and she is the person whom I admire most because she can make difficult things simple for anybody who is listening."
+            ]
+          },
           "explanation": "The subject 'my aunt' is third person singular, so the present perfect is 'has been teaching'. In a defining relative clause after 'the person', the relative pronoun is 'whom' (or can be dropped), not 'who' in this object position, and the defining clause must not use 'that'. 'Look simple' becomes the cleaner 'make ... simple'.",
           "xp": 15
         },
@@ -962,9 +1764,19 @@
           "prompt": "In Part 2, candidates may look at the notes they made during the one-minute preparation, but they may not read a script they wrote out in full.",
           "instruction": "Decide whether this statement is true or false.",
           "items": [
-            { "id": "a", "text": "In Part 2, candidates may look at the notes they made during the one-minute preparation, but they may not read a script they wrote out in full.", "isCorrect": null, "matchKey": null }
+            {
+              "id": "a",
+              "text": "In Part 2, candidates may look at the notes they made during the one-minute preparation, but they may not read a script they wrote out in full.",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "boolean", "values": [true] },
+          "answer": {
+            "type": "boolean",
+            "values": [
+              true
+            ]
+          },
           "explanation": "True. Bullet-point notes are explicitly allowed and are the reason the one minute is given. Reading a memorised paragraph is not allowed, and it also fails in practice: recited text is flat, the examiner recognises it, and the accuracy of a memorised script says nothing about your actual speaking ability.",
           "xp": 15
         },
@@ -976,14 +1788,42 @@
           "difficulty": "advanced",
           "prompt": "Listen to a model long-turn answer and choose the description closest to it.",
           "instruction": "Listen once and choose the best description.",
-          "audio": { "kind": "speech", "text": "The person I would most like to talk about is a man called Sam who used to run the corner shop near my primary school. He ran it for about thirty years before it closed. What I admired about him was that he knew every single family in the street, and he would keep an open tab for anyone who needed it. My own family never paid for milk, and I only realised years later how much that must have cost him." },
+          "audio": {
+            "kind": "speech",
+            "text": "The person I would most like to talk about is a man called Sam who used to run the corner shop near my primary school. He ran it for about thirty years before it closed. What I admired about him was that he knew every single family in the street, and he would keep an open tab for anyone who needed it. My own family never paid for milk, and I only realised years later how much that must have cost him."
+          },
           "items": [
-            { "id": "a", "text": "A model answer that covers who the person is and what he does, gives a specific example of what the speaker admired, and ends with the effect on the speaker's own life.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "A model answer that describes a famous person and spends most of the time on general praise without any personal detail.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "A model answer that answers only the first two bullet points and stops well before the required time.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "A model answer that the speaker had prepared fully and is reciting word for word from notes.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "A model answer that covers who the person is and what he does, gives a specific example of what the speaker admired, and ends with the effect on the speaker's own life.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "A model answer that describes a famous person and spends most of the time on general praise without any personal detail.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "A model answer that answers only the first two bullet points and stops well before the required time.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "A model answer that the speaker had prepared fully and is reciting word for word from notes.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "The model answer moves through the bullets in order: who he is and what he did, a specific thing the speaker admired, and then the effect on the speaker's own family. That ordering is what the examiner is listening for, and the personal detail in the last two sentences is what produced the range. B and C describe the opposite of good performance, and D cannot be true of a model answer, since notes are never read aloud in full.",
           "xp": 15,
           "translation": "Nghe một câu trả lời mẫu cho phần nói dài và chọn mô tả gần nhất với nó."
@@ -1016,12 +1856,37 @@
           "prompt": "Which answer best satisfies the final bullet, 'explain how you felt about being in such a large crowd'?",
           "instruction": "Choose the answer that shows the feeling through specific detail.",
           "items": [
-            { "id": "a", "text": "At first I found it quite claustrophobic, because there were thousands of people and I could barely see the stage over the heads in front of me. We waited about twenty minutes before anything started, and I remember checking my phone twice to see how much longer it would be. By the end, though, I was sorry to leave, because the atmosphere was far better than I expected.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "I felt very excited and very happy and very interested and also a little bit tired, in other words I had a very good time there.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "I was in a large crowd, and the crowd was very large, and the size of the crowd was the most noticeable thing about being in it.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "I don't really remember, because there were too many people and everything was confusing.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "At first I found it quite claustrophobic, because there were thousands of people and I could barely see the stage over the heads in front of me. We waited about twenty minutes before anything started, and I remember checking my phone twice to see how much longer it would be. By the end, though, I was sorry to leave, because the atmosphere was far better than I expected.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "I felt very excited and very happy and very interested and also a little bit tired, in other words I had a very good time there.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "I was in a large crowd, and the crowd was very large, and the size of the crowd was the most noticeable thing about being in it.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "I don't really remember, because there were too many people and everything was confusing.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A describes a feeling and then proves it with things that happened: not being able to see, a twenty-minute wait, checking a phone, and a change of mind by the end. That movement from one feeling to another is also a coherent structure. B is a list of adjectives with no content. C repeats the same idea three times without describing anything. D gives up on the bullet, which is the point the examiner is scoring at the end of the long turn.",
           "xp": 15,
           "translation": "Câu trả lời nào đáp ứng tốt nhất yêu cầu cuối 'giải thích bạn cảm thấy thế nào khi ở giữa đám đông đông như vậy'?"
@@ -1034,7 +1899,12 @@
           "difficulty": "advanced",
           "prompt": "Complete the phrase that helps you start the 'where and when' bullet in a natural way: \"The whole thing took place ______\"",
           "instruction": "Complete the sentence with one word.",
-          "answer": { "type": "text", "values": ["in"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "in"
+            ]
+          },
           "explanation": "'Took place in' is a fixed prepositional phrase, and a strong band 6 answer uses it without hesitation. Follow it with the place and then the date: 'The whole thing took place in the main square of my hometown on the first Saturday of May.' Fixed phrases like this are the quickest way to sound fluent while you are still deciding what to say.",
           "xp": 15
         },
@@ -1046,7 +1916,12 @@
           "difficulty": "intermediate",
           "prompt": "You need to say you were doing something at the same time as a past event. Complete the frame: 'While we ______ for the gates to open, a man next to us started selling flags.'",
           "instruction": "Complete the sentence with one verb form.",
-          "answer": { "type": "text", "values": ["were waiting"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "were waiting"
+            ]
+          },
           "explanation": "The past continuous sets a longer background action against the past simple of the short event, and using that pair correctly is one of the clearest signs of grammatical range in Part 2. 'While we waited' is also correct and simpler, so have both ready and choose the one you can sustain while thinking.",
           "xp": 15
         },
@@ -1058,7 +1933,12 @@
           "difficulty": "advanced",
           "prompt": "The event was hold last summer in the city centre and I go there with two friends of mine, and we was standing for almost an hour before the music started.",
           "instruction": "Rewrite the sentence with the correct tense for every verb.",
-          "answer": { "type": "text", "values": ["The event was held last summer in the city centre, and I went there with two friends of mine, and we were standing for almost an hour before the music started."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "The event was held last summer in the city centre, and I went there with two friends of mine, and we were standing for almost an hour before the music started."
+            ]
+          },
           "explanation": "A past event that took place at a stated time needs the past passive, 'was held', not 'was hold'. The story is finished, so the second verb is 'went', not 'go'. 'We was' has to be 'we were'. Past-tense control is the most valuable grammar fix a Part 2 candidate can make, because the entire long turn depends on it.",
           "xp": 15
         },
@@ -1071,12 +1951,40 @@
           "prompt": "Match each part of the cue card to the question it should cover in your answer.",
           "instruction": "Use each part once.",
           "items": [
-            { "id": "a", "text": "who you went with", "isCorrect": null, "matchKey": "3" },
-            { "id": "b", "text": "where and when it took place", "isCorrect": null, "matchKey": "2" },
-            { "id": "c", "text": "what the event was", "isCorrect": null, "matchKey": "1" },
-            { "id": "d", "text": "how you felt about being in such a large crowd", "isCorrect": null, "matchKey": "4" }
+            {
+              "id": "a",
+              "text": "who you went with",
+              "isCorrect": null,
+              "matchKey": "3"
+            },
+            {
+              "id": "b",
+              "text": "where and when it took place",
+              "isCorrect": null,
+              "matchKey": "2"
+            },
+            {
+              "id": "c",
+              "text": "what the event was",
+              "isCorrect": null,
+              "matchKey": "1"
+            },
+            {
+              "id": "d",
+              "text": "how you felt about being in such a large crowd",
+              "isCorrect": null,
+              "matchKey": "4"
+            }
           ],
-          "answer": { "type": "pairs", "values": { "3": "a", "2": "b", "1": "c", "4": "d" } },
+          "answer": {
+            "type": "pairs",
+            "values": {
+              "a": "3",
+              "b": "2",
+              "c": "1",
+              "d": "4"
+            }
+          },
           "explanation": "Answering in the printed order is fastest and safest, because the examiner is following a checklist and will notice a missing bullet. Note the trap in the second bullet: 'where' and 'when' need two pieces of information in one short section, and candidates routinely spend their whole preparation on the place and run out of time for the feeling.",
           "xp": 15
         },
@@ -1088,8 +1996,16 @@
           "difficulty": "advanced",
           "prompt": "Listen to the examiner's follow-up question after a long turn and type what you hear.",
           "instruction": "Type the question you hear.",
-          "audio": { "kind": "speech", "text": "Right, that's very interesting. Would you go to a similar event again, and why?" },
-          "answer": { "type": "text", "values": ["Right, that's very interesting. Would you go to a similar event again, and why?"] },
+          "audio": {
+            "kind": "speech",
+            "text": "Right, that's very interesting. Would you go to a similar event again, and why?"
+          },
+          "answer": {
+            "type": "text",
+            "values": [
+              "Right, that's very interesting. Would you go to a similar event again, and why?"
+            ]
+          },
           "explanation": "The follow-up question uses a present tense, even though your long turn was in the past, and this switch is a common trap. The natural answer keeps the comparison in the present for the decision and returns to the past for the reason: 'I would, definitely, because last time I got to meet people from my course who I had only ever seen online.'",
           "xp": 15,
           "translation": "Nghe câu hỏi bổ sung của giám khảo sau phần nói dài và gõ lại điều bạn nghe được."
@@ -1122,12 +2038,37 @@
           "prompt": "Which answer is the best-developed response to the Part 3 question: 'Do people today have more freedom of choice than in the past, or less?'",
           "instruction": "Choose the answer that generalises, justifies and develops the idea.",
           "items": [
-            { "id": "a", "text": "On balance, I think people have more choice than they used to, mainly in terms of what they study and where they live. My cousin, for instance, changed her degree twice before she settled on design, and a generation ago that would have meant starting again from the beginning. The downside is that more choice means more pressure, because a decision that feels reversible is much harder to commit to.", "isCorrect": true, "matchKey": null },
-            { "id": "b", "text": "Yes, more choice, because now we can choose everything we want in the world today.", "isCorrect": false, "matchKey": null },
-            { "id": "c", "text": "In my opinion, the question of whether modern people have more freedom of choice than previous generations is a complex one which depends on many different factors, and different people will have different views about it.", "isCorrect": false, "matchKey": null },
-            { "id": "d", "text": "No, definitely less. In my family nobody has any choice at all about anything, ever.", "isCorrect": false, "matchKey": null }
+            {
+              "id": "a",
+              "text": "On balance, I think people have more choice than they used to, mainly in terms of what they study and where they live. My cousin, for instance, changed her degree twice before she settled on design, and a generation ago that would have meant starting again from the beginning. The downside is that more choice means more pressure, because a decision that feels reversible is much harder to commit to.",
+              "isCorrect": true,
+              "matchKey": null
+            },
+            {
+              "id": "b",
+              "text": "Yes, more choice, because now we can choose everything we want in the world today.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "c",
+              "text": "In my opinion, the question of whether modern people have more freedom of choice than previous generations is a complex one which depends on many different factors, and different people will have different views about it.",
+              "isCorrect": false,
+              "matchKey": null
+            },
+            {
+              "id": "d",
+              "text": "No, definitely less. In my family nobody has any choice at all about anything, ever.",
+              "isCorrect": false,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "choice", "values": ["a"] },
+          "answer": {
+            "type": "choice",
+            "values": [
+              "a"
+            ]
+          },
           "explanation": "A hedges with 'on balance', narrows the claim to specific areas, supports it with a personal example used at a social level, and then gives a consequence that complicates the answer. That is the shape of a Part 3 response and it produces conditional and passive structures. B is too short and over-general. C says nothing at all despite good grammar, which is a Task Response failure in the speaking test. D contradicts the example in the other option by generalising from one family, which sounds extreme to an examiner.",
           "xp": 15,
           "translation": "Câu trả lời nào hay nhất cho câu hỏi Phần 3: 'Ngày nay con người có nhiều quyền lựa chọn hơn trước đây không?'"
@@ -1140,7 +2081,12 @@
           "difficulty": "advanced",
           "prompt": "Complete the phrase a candidate uses to disagree politely with the examiner in Part 3: \"That's a fair point, but I would argue that ______\"",
           "instruction": "Complete the sentence with one word.",
-          "answer": { "type": "text", "values": ["the"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "the"
+            ]
+          },
           "explanation": "To disagree you name the thing you are disagreeing with, so the clause needs a determiner: 'but I would argue that the opposite is true in rural areas'. Giving the examiner something specific to answer is what keeps the discussion interactive, and interaction is part of the coherence and fluency mark in Part 3.",
           "xp": 15
         },
@@ -1152,7 +2098,12 @@
           "difficulty": "advanced",
           "prompt": "The examiner asks: 'Should governments limit the amount of money that professional athletes can earn?' A band 7 answer should not simply give a preference. Type the three-word phrase that signals a balanced view before you give it.",
           "instruction": "Type the three words only, in lower case.",
-          "answer": { "type": "text", "values": ["on the one hand"] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "on the one hand"
+            ]
+          },
           "explanation": "'On the one hand ... on the other hand' lets you show that a view is conditional, which is what 'should' and abstract policy questions invite. It also produces the complex sentence structure that the grammatical range criterion rewards. Candidates who only give one side of an abstract question tend to score lower in Part 3 than those who qualify their view, even when both are correct.",
           "xp": 15
         },
@@ -1164,7 +2115,12 @@
           "difficulty": "advanced",
           "prompt": "If governments would limit the salaries of athletes, it will reduce the amount of interest that young people have in doing sport, because the money is one of the main reason why they start.",
           "instruction": "Rewrite the sentence with the correct conditional form and a correct plural noun.",
-          "answer": { "type": "text", "values": ["If governments limited the salaries of athletes, it would reduce the interest that young people have in doing sport, because money is one of the main reasons why they start."] },
+          "answer": {
+            "type": "text",
+            "values": [
+              "If governments limited the salaries of athletes, it would reduce the interest that young people have in doing sport, because money is one of the main reasons why they start."
+            ]
+          },
           "explanation": "This is a second conditional about a hypothetical situation, so the pattern is 'if + past simple, would + infinitive', not 'would' after 'if' or 'will' in the main clause. 'The main reason' is singular, so it becomes 'the main reasons'. Hypothetical conditionals are the most natural way to answer 'should' questions in Part 3 and they are worth practising deliberately.",
           "xp": 15
         },
@@ -1177,9 +2133,19 @@
           "prompt": "In Part 3, a candidate who has never been to the country being discussed can still score well, provided the discussion stays at the level of general trends rather than personal anecdote.",
           "instruction": "Decide whether this statement is true or false.",
           "items": [
-            { "id": "a", "text": "In Part 3, a candidate who has never been to the country being discussed can still score well, provided the discussion stays at the level of general trends rather than personal anecdote.", "isCorrect": null, "matchKey": null }
+            {
+              "id": "a",
+              "text": "In Part 3, a candidate who has never been to the country being discussed can still score well, provided the discussion stays at the level of general trends rather than personal anecdote.",
+              "isCorrect": null,
+              "matchKey": null
+            }
           ],
-          "answer": { "type": "boolean", "values": [true] },
+          "answer": {
+            "type": "boolean",
+            "values": [
+              true
+            ]
+          },
           "explanation": "True. Part 3 asks for general reasoning, not local knowledge, and hedged generalisation ('in large cities, people tend to ...') is exactly what the examiner wants to hear. What does not work is a personal story repeated from Part 2, because it keeps the discussion at the level of one person's experience and earns no marks for interaction.",
           "xp": 15
         },
@@ -1191,8 +2157,16 @@
           "difficulty": "advanced",
           "prompt": "Listen to a model Part 3 answer and type what you hear.",
           "instruction": "Type the sentence you hear.",
-          "audio": { "kind": "speech", "text": "I would say income matters more early on, because most people need to build a financial cushion before they can afford to turn down overtime." },
-          "answer": { "type": "text", "values": ["I would say income matters more early on, because most people need to build a financial cushion before they can afford to turn down overtime."] },
+          "audio": {
+            "kind": "speech",
+            "text": "I would say income matters more early on, because most people need to build a financial cushion before they can afford to turn down overtime."
+          },
+          "answer": {
+            "type": "text",
+            "values": [
+              "I would say income matters more early on, because most people need to build a financial cushion before they can afford to turn down overtime."
+            ]
+          },
           "explanation": "This is a full Part 3 answer in one sentence: a hedged opinion, a reason, and a subordinate clause with 'before they can afford to', which is a natural structure rather than a memorized phrase. Note also the contrast with the more usual 'free time matters more' position; taking a side and qualifying it is what keeps a Part 3 discussion going for four minutes.",
           "xp": 15,
           "translation": "Nghe một câu trả lời mẫu cho Phần 3 và gõ lại điều bạn nghe được."

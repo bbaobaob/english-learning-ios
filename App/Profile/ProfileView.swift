@@ -15,7 +15,6 @@ struct ProfileView: View {
     @AppStorage("appearance") private var appearance = Appearance.system.rawValue
     @AppStorage("hapticsEnabled") private var hapticsEnabled = true
     @AppStorage("reduceMotionAcknowledged") private var reduceMotionAcknowledged = false
-    @AppStorage("dailyGoalXP") private var dailyGoalFallback = 50
 
     @State private var isEditingName = false
     @State private var nameDraft = ""
@@ -25,53 +24,64 @@ struct ProfileView: View {
     @State private var notificationError: String?
     @State private var prefs: [NotificationKind: NotificationPref] = [:]
     @State private var notifications = NotificationService()
+    @State private var goalFocus = false
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: Spacing.xl) {
-                header
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(spacing: Spacing.xl) {
+                    header
 
-                if let notificationError {
-                    ErrorBanner(message: notificationError) { notificationError = nil }
+                    if let notificationError {
+                        ErrorBanner(message: notificationError) { notificationError = nil }
+                    }
+
+                    streakSection
+                        .id(Self.goalAnchor)
+                    goalSection
+                    skillSection
+                    weakAreaSection
+                    achievementSection
+                    settingsSection
+                    notificationSection
+                    dataSection
                 }
-
-                streakSection
-                goalSection
-                skillSection
-                weakAreaSection
-                achievementSection
-                settingsSection
-                notificationSection
-                dataSection
+                .padding(.horizontal, Spacing.lg)
+                .padding(.top, Spacing.md)
+                .padding(.bottom, Spacing.xl)
             }
-            .padding(.horizontal, Spacing.lg)
-            .padding(.top, Spacing.md)
-            .padding(.bottom, Spacing.xl)
-        }
-        .background(background)
-        .navigationTitle("Profile")
-        .navigationBarTitleDisplayMode(.large)
-        .task { reload() }
-        .refreshable { reload() }
-        .onChange(of: appearance) { _, _ in applyAppearance() }
-        .alert("Reset all progress?", isPresented: $isConfirmingReset) {
-            Button("Reset", role: .destructive) {
-                model.reset(store: app.store, library: app.library)
-                dailyGoalFallback = model.dailyGoalXP
+            .background(background)
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.large)
+            .task { reload() }
+            .refreshable { reload() }
+            .onChange(of: goalFocus) { _, focused in
+                guard focused else { return }
+                withAnimation { proxy.scrollTo(Self.goalAnchor, anchor: .top) }
+                goalFocus = false
             }
-            Button("Cancel", role: .cancel) {}
-        } message: {
-            Text("Streaks, XP, achievements and every saved attempt are deleted. This cannot be undone.")
-        }
-        .sheet(isPresented: $isExporting) {
-            if let exportURL {
-                ShareSheet(items: [exportURL]) {
-                    self.exportURL = nil
-                    isExporting = false
+            .onChange(of: appearance) { _, _ in applyAppearance() }
+            .alert("Reset all progress?", isPresented: $isConfirmingReset) {
+                Button("Reset", role: .destructive) {
+                    model.reset(store: app.store, library: app.library)
+                }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Streaks, XP, achievements and every saved attempt are deleted. This cannot be undone.")
+            }
+            .sheet(isPresented: $isExporting) {
+                if let exportURL {
+                    ShareSheet(items: [exportURL]) {
+                        self.exportURL = nil
+                        isExporting = false
+                    }
                 }
             }
         }
     }
+
+    /// Scroll target for the "Goal N XP" shortcut in the header.
+    private static let goalAnchor = "daily-goal"
 
     // MARK: - Header
 
@@ -98,21 +108,15 @@ struct ProfileView: View {
             }
 
             HStack(spacing: Spacing.sm) {
-                Button {
+                SecondaryButton(title: "Edit name", symbol: "pencil") {
                     nameDraft = model.name
                     isEditingName = true
-                } label: {
-                    SecondaryButton(title: "Edit name", symbol: "pencil") {}
                 }
-                .buttonStyle(.plain)
                 .accessibilityHint("Opens a text field to change your display name")
 
-                Button {
-                    dailyGoalFallback = model.dailyGoalXP
-                } label: {
-                    SecondaryButton(title: "Goal \(model.dailyGoalXP) XP", symbol: "target") {}
+                SecondaryButton(title: "Goal \(model.dailyGoalXP) XP", symbol: "target") {
+                    goalFocus = true
                 }
-                .buttonStyle(.plain)
                 .accessibilityHint("Scrolls to the daily goal setting")
             }
         }
@@ -172,7 +176,6 @@ struct ProfileView: View {
                         get: { model.dailyGoalXP },
                         set: { newValue in
                             model.updateDailyGoal(newValue, store: app.store, library: app.library)
-                            dailyGoalFallback = newValue
                         }
                     ),
                     in: 10...500,

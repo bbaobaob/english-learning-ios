@@ -47,6 +47,16 @@ final class ExamTimer {
 
     var isUrgent: Bool { remaining <= 120 && remaining > 0 }
 
+    /// Seconds already spent. Used when a learner comes back to a saved draft:
+    /// the clock starts from where it was, never from zero.
+    var elapsed: Int { total - remaining }
+
+    /// Restores an elapsed position. Never resurrects a finished clock.
+    func adopt(elapsed seconds: Int) {
+        guard !isRunning, !didFinish, seconds > 0, seconds < total else { return }
+        remaining = total - seconds
+    }
+
     func start() {
         guard !isRunning, !didFinish else { return }
         isRunning = true

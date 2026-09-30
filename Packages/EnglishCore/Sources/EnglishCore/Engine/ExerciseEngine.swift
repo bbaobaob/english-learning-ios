@@ -31,6 +31,8 @@ public struct ExerciseResult: Sendable, Equatable {
     /// First index where a word-order answer diverges from the expected order (rearrangeWords only).
     public let firstDivergenceIndex: Int?
 
+    /// The first seven parameters are the frozen §2 signature, in that exact order; the rest are
+    /// additive and defaulted, so other modules can still call the seven-argument form.
     public init(
         exerciseID: String,
         isCorrect: Bool,
@@ -65,7 +67,7 @@ public struct WrongPair: Sendable, Equatable, Identifiable {
     public let user: String?
     public let expected: String
 
-    public init(key: String, user: String?, expected: String) {
+    public init(key: String, user: String? = nil, expected: String) {
         self.key = key
         self.user = user
         self.expected = expected
@@ -114,6 +116,8 @@ public struct ExerciseEngine: Sendable {
 
     // MARK: - Choice
 
+    /// Set comparison of selected ids against `Answer.choice`. Option count is irrelevant: three
+    /// options (IELTS) and four (grammar topics) grade identically, and exactly one id is expected.
     private func checkChoice(_ exercise: Exercise, response: UserResponse, allowPartial: Bool) -> ExerciseResult {
         let expected = Set(expectedChoice(exercise))
         let selected = Set(response.asChoice ?? [])
@@ -138,16 +142,35 @@ public struct ExerciseEngine: Sendable {
 
     // MARK: - True / false
 
+    /// `trueFalse` arrives with either answer shape, so branch on the answer, not the kind:
+    /// `Answer.boolean` (plain True/False) or `Answer.choice` with three option ids, which is how
+    /// the IELTS content spells True/False/Not Given and Yes/No/Not Given.
     private func checkBoolean(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
-        let expected: Bool
-        if case .boolean(let flag) = exercise.answer.values {
-            expected = flag
-        } else {
-            expected = exercise.items.contains { $0.isCorrect == true }
+        switch exercise.answer.values {
+        case .boolean(let expected):
+            // A learner may still answer a boolean-keyed exercise by tapping an option id.
+            guard let answered = Self.boolAnswer(response) else {
+                return booleanResult(exercise, isCorrect: false)
+            }
+            return booleanResult(exercise, isCorrect: answered == expected)
+        case .choice:
+            // ...and a choice-keyed exercise may be answered with two buttons. Map the flag back
+            // onto the id it stands for before grading as a choice.
+            if let flag = response.asBoolean, let id = Self.id(for: flag, among: expectedChoice(exercise)) {
+                return checkChoice(exercise, response: .choice([id]), allowPartial: false)
+            }
+            return checkChoice(exercise, response: response, allowPartial: false)
+        default:
+            let expected = exercise.items.contains { $0.isCorrect == true }
+            guard let answered = Self.boolAnswer(response) else {
+                return booleanResult(exercise, isCorrect: false)
+            }
+            return booleanResult(exercise, isCorrect: answered == expected)
         }
-        let answered = response.asBoolean ?? false
-        let isCorrect = answered == expected
-        return ExerciseResult(
+    }
+
+    private func booleanResult(_ exercise: Exercise, isCorrect: Bool) -> ExerciseResult {
+        ExerciseResult(
             exerciseID: exercise.id,
             isCorrect: isCorrect,
             accuracy: isCorrect ? 1 : 0,
@@ -158,8 +181,46 @@ public struct ExerciseEngine: Sendable {
         )
     }
 
+    /// Option ids that mean "true" / "false" in the content, so a three-option IELTS item and a
+    /// two-button answer are interchangeable.
+    private static let trueIDs: Set<String> = ["true", "yes", "correct", "t", "y"]
+    private static let falseIDs: Set<String> = ["false", "no", "incorrect", "f", "n"]
+
+    /// The learner's True/False answer, or `nil` when the response says neither (e.g. "Not Given"
+    /// against a boolean answer, which is simply wrong).
+    private static func boolAnswer(_ response: UserResponse) -> Bool? {
+        if let flag = response.asBoolean { return flag }
+        guard let id = response.asChoice?.first else { return nil }
+        return flag(for: id)
+    }
+
+    private static func flag(for id: String) -> Bool? {
+        let key = id.lowercased()
+        if trueIDs.contains(key) { return true }
+        if falseIDs.contains(key) { return false }
+        return nil
+    }
+
+    /// The id standing for `flag`, when the answer offers one.
+    private static func id(for flag: Bool, among ids: [String]) -> String? {
+        let wanted = flag ? trueIDs : falseIDs
+        return ids.first { wanted.contains($0.lowercased()) }
+    }
+
     // MARK: - Matching
 
+    /// `Answer.pairs` has two legal shapes (§"Matching answers") and both ship in content:
+    ///
+    /// 1. **Item-based** — `items` is non-empty and carries `matchKey`s; the answer maps
+    ///    `item.id → item.matchKey` (`adjective-l5-ex3`, `cl-nd-q4`).
+    /// 2. **Domain-keyed** — `items` is absent or empty; the keys are map positions, question
+    ///    numbers, paragraph letters.
+    ///
+    /// The learner's map uses the same orientation as the answer, so grading compares the
+    /// authored map key-for-key and needs no orientation at all — the "branch on matchKey" rule
+    /// lives in ``matchingKeys(for:)``, which the UI needs for its left-hand column.
+    /// Note that shipped content also keys some item-based answers by `matchKey` rather than by
+    /// `item.id` (`ielts-l-sec2-q1`, `ielts-r-p3-q1`), so nothing here may assume id keys.
     private func checkMatching(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
         let expected = exercise.answer.pairs
         let chosen = response.asPairs ?? [:]
@@ -188,6 +249,26 @@ public struct ExerciseEngine: Sendable {
             xpAwarded: isCorrect ? exercise.xp : 0,
             wrongPairs: wrong.sorted { $0.key < $1.key }
         )
+    }
+
+    /// Display label for every key a matching answer uses, so the UI can render its left column
+    /// without knowing which of the two shapes it is looking at.
+    ///
+    /// The branch is on `matchKey`, never on a guess about the answer's direction: an item's `id`
+    /// and its `matchKey` are both registered, because shipped content uses both as the key
+    /// vocabulary. Keys with no item (domain-keyed answers, or a key the author left unlabelled)
+    /// fall back to the key itself.
+    public static func matchingKeys(for exercise: Exercise) -> [String: String] {
+        var labels: [String: String] = [:]
+        for item in exercise.items {
+            let label = item.text ?? item.id
+            labels[item.id] = label
+            if let matchKey = item.matchKey { labels[matchKey] = label }
+        }
+        if case .pairs(let values) = exercise.answer.values {
+            for key in values.keys where labels[key] == nil { labels[key] = key }
+        }
+        return labels
     }
 
     // MARK: - Word order

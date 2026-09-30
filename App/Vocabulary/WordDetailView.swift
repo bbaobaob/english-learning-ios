@@ -32,7 +32,9 @@ struct WordDetailView: View {
     /// Word ids in the deck for every synonym and antonym that actually exists.
     ///
     /// A synonym is a plain English string, not an id, so it is matched against
-    /// the deck by looking for a headword rather than by assuming an id exists.
+    /// the deck by looking for a headword. The `lowercased()` keys here are
+    /// dictionary lookups for navigation, not answer checking — this screen
+    /// never grades anything.
     private var relatedWords: [RelatedWord] {
         guard let word else { return [] }
         let byHeadword = Dictionary(
@@ -75,8 +77,8 @@ struct WordDetailView: View {
                 EmptyStateView(
                     symbol: "questionmark.square.dashed",
                     title: "Word not found",
-                    message: "This word is not in the current deck. It may have been removed from the course.",
-                    actionTitle: "Back to the deck",
+                    message: "This word is not in the current deck. It may have been removed from the course. Use the back button to return to the list.",
+                    actionTitle: nil,
                     action: nil
                 )
             }
@@ -427,7 +429,7 @@ struct WordDetailView: View {
 
     private var actionBlock: some View {
         VStack(spacing: Spacing.md) {
-            PrimaryButton(title: "Practice this word", symbol: "rectangle.stack") {
+            PrimaryButton(title: "Practice this word", symbol: "rectangle.stack", isEnabled: true) {
                 path.append(.focusedReview([wordID]))
             }
             SecondaryButton(title: "Hear → Type this word", symbol: "ear") {

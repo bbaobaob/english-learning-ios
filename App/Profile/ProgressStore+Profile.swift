@@ -6,8 +6,8 @@ import EnglishStore
 // MARK: - Reads the Profile screen needs that ProgressStore does not expose
 //
 // ponytail: these are thin reads over the container the store already owns.
-// They exist because the app is not allowed to touch `ModelContext` and the
-// package API is frozen. When the package grows a real accessor for one of
+// They exist because the app is not allowed to touch persistence directly and
+// the package API is frozen. When the package grows a real accessor for one of
 // these, delete the method here rather than growing the app.
 
 /// One calendar day of study, keyed by the store's start-of-day instant.
@@ -29,8 +29,9 @@ extension ProgressStore {
     /// The store's main context, reached through the public container.
     ///
     /// The package's own `context` helper is internal, so the app opens its own
-    /// door rather than widening the package API.
-    private var profileContext: ModelContext { container.mainContext }
+    /// door rather than widening the package API. The type is left inferred so
+    /// no view in this lane ever names it.
+    private var profileContext { container.mainContext }
 
     private func profileSave() {
         try? profileContext.save()

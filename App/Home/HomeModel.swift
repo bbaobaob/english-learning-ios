@@ -30,7 +30,6 @@ final class HomeModel {
     var todayMinutes: Int = 0
     var exercisesDoneToday: Int = 0
     var todayAccuracy: Double?
-    var lifetimeAccuracy: Double = 0
 
     // Continue learning / recommendation
     var continueLesson: ContinueLesson?
@@ -124,7 +123,6 @@ final class HomeModel {
         let stats = store.learnerStats()
         let streakRecord = store.streak()
         let topics = store.topicProgress()
-        let lessonRows = store.lessonProgress()
 
         // Goal first: it owns xpToday, and the header shows that figure.
         loadGoal(streakRecord: streakRecord, store: store)
@@ -132,7 +130,7 @@ final class HomeModel {
         loadGlance(store: store)
         loadContinue(store: store, library: library)
         loadWeakTopics(topics: topics, library: library)
-        loadRecommendedPractice(store: store, library: library, stats: stats)
+        loadRecommendedPractice(store: store, library: library)
         loadIELTS(topics: topics, library: library, store: store)
     }
 
@@ -140,7 +138,6 @@ final class HomeModel {
 
     private func loadHeader(stats: LearnerStats) {
         streak = stats.streak
-        lifetimeAccuracy = stats.accuracy
 
         if stats.totalXP == 0 && stats.lessonsCompleted == 0 {
             greeting = "Ready to start?"
@@ -365,7 +362,7 @@ final class HomeModel {
     /// Priority: due words beat a weak topic, because a due word is already
     /// scheduled and decays if ignored; a weak topic with enough attempts beats
     /// a new lesson; with no data at all, the first lesson is the honest answer.
-    private func loadRecommendedPractice(store: ProgressStore, library: ContentLibrary, stats: LearnerStats) {
+    private func loadRecommendedPractice(store: ProgressStore, library: ContentLibrary) {
         dueWordCount = store.reviewQueue(on: Date()).lazy.filter { $0.source == .vocabulary }.count
 
         if dueWordCount > 0 {
@@ -441,13 +438,16 @@ final class HomeModel {
         ieltsModulesDone = modules.filter { touched.contains($0.id) }.count
 
         // Today's focus: the paper the learner has tried and is weakest in,
-        // otherwise the first module they have opened, otherwise the first
-        // module in the bundle.
-        let rows = topics
+        // otherwise the first paper with an unfinished lesson, otherwise the
+        // first module in the bundle.
+        //
+        // ponytail: TopicProgress is keyed by Topic id and the shipped IELTS
+        // modules are not Topics, so this matches on the module id alone. If
+        // content starts recording IELTS topics instead, extend the match.
         let byModule = modules.map { module -> (IELTSModule, Double, Int)? in
-            let rows = [module.id]
-            let matching = rows.compactMap { topics[$0] }.filter { $0.exercisesDone > 0 }
-            guard !matching.isEmpty else { return nil }
+            let matching = topics[module.id].map { [$0] } ?? []
+            let attempted = matching.filter { $0.exercisesDone > 0 }
+            guard !attempted.isEmpty else { return nil }
             let done = matching.reduce(0) { $0 + $1.exercisesDone }
             let correct = matching.reduce(0) { $0 + $1.correctCount }
             return (module, Double(correct) / Double(done), done)
@@ -459,11 +459,14 @@ final class HomeModel {
             return
         }
 
-        if let next = modules.first(where: { module in
-            module.lessons.contains { !store.lessonProgress()[$0.id]?.completed ?? true }
-        }), let lesson = next.lessons.first {
+        // No paper attempted yet: point at the first lesson nobody has finished.
+        let lessonRows = store.lessonProgress()
+        for module in modules {
+            guard let lesson = module.lessons.first(where: { lessonRows[$0.id]?.completed != true }) else {
+                continue
+            }
             ieltsBandFocus = lesson.band
-            ieltsFocusDetail = "\(next.title) · \(lesson.title)"
+            ieltsFocusDetail = "\(module.title) · \(lesson.title)"
             return
         }
 

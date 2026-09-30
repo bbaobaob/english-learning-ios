@@ -69,47 +69,42 @@ final class WritingDraftStore {
 
     // MARK: - Write
 
-    /// Called on a debounce by the editor; writes straight through when it lands.
+    /// Called on every keystroke by the editor; writes straight through.
     func save(text: String, secondsSpent: Int, for lessonID: String) {
         guard let container else { return }
-        let body = container.mainContext
         if text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            clear(lessonID, in: body)
+            clear(lessonID)
             return
         }
-        let draft = existing(lessonID, in: body) ?? Draft(lessonID: lessonID)
+        let draft = existing(lessonID) ?? Draft(lessonID: lessonID)
         draft.text = text
         draft.secondsSpent = secondsSpent
         draft.updatedAt = .now
         drafts[lessonID] = draft
-        if draft.modelContext == nil { body.insert(draft) }
-        commit(body)
+        if draft.modelContext == nil { container.mainContext.insert(draft) }
+        commit()
     }
 
     func clear(_ lessonID: String) {
         guard let container else { return }
-        clear(lessonID, in: container.mainContext)
-    }
-
-    private func clear(_ lessonID: String, in body: ModelContext) {
-        guard let draft = existing(lessonID, in: body) else {
-            drafts[lessonID] = nil
-            return
+        if let draft = existing(lessonID) {
+            container.mainContext.delete(draft)
         }
-        body.delete(draft)
         drafts[lessonID] = nil
-        commit(body)
+        commit()
     }
 
-    private func existing(_ lessonID: String, in body: ModelContext) -> Draft? {
+    private func existing(_ lessonID: String) -> Draft? {
+        guard let container else { return nil }
         var descriptor = FetchDescriptor<Draft>(predicate: #Predicate { $0.lessonID == lessonID })
         descriptor.fetchLimit = 1
-        return (try? body.fetch(descriptor))?.first
+        return (try? container.mainContext.fetch(descriptor))?.first
     }
 
-    private func commit(_ body: ModelContext) {
+    private func commit() {
+        guard let container else { return }
         do {
-            if body.hasChanges { try body.save() }
+            if container.mainContext.hasChanges { try container.mainContext.save() }
         } catch {
             isPersisting = false
         }

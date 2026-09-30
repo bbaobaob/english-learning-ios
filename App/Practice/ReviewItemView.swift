@@ -64,30 +64,34 @@ struct ReviewItemView: View {
         guard session == nil else { return }
         session = LearnSession(
             items: [SessionItem.exercise(exercise)],
-            onComplete: { [item] outcome in
-                // The engine already knows which side of the line this landed on.
-                let value: SpacedRepetition.Grade =
-                    outcome.wrongIDs.contains(item.refID) ? .again : .good
-                Haptics.success()
-                onGrade(value)
-            }
+            onComplete: { _ in Haptics.success() }
         )
     }
 
+    /// The grade the engine's outcome implies for a graded item. The engine already
+    /// decided which side of the line the answer landed on; this only maps that to the
+    /// scheduler's vocabulary.
+    private func engineGrade(for outcome: SessionOutcome) -> SpacedRepetition.Grade {
+        outcome.wrongIDs.contains(item.refID) ? .again : .good
+    }
+
     private func gradedResult(_ session: LearnSession) -> some View {
-        let result = session.outcome
+        let outcome = session.outcome
+        let grade = engineGrade(for: outcome)
+        let passed = grade != .again
+
         return ScrollView {
             VStack(alignment: .leading, spacing: Spacing.lg) {
                 HStack(spacing: Spacing.md) {
-                    Image(systemName: result.wrongIDs.isEmpty ? "checkmark.circle.fill" : "arrow.clockwise.circle.fill")
+                    Image(systemName: passed ? "checkmark.circle.fill" : "arrow.clockwise.circle.fill")
                         .font(.title)
-                        .foregroundStyle(result.wrongIDs.isEmpty ? Color.success : Color.warning)
+                        .foregroundStyle(passed ? Color.success : Color.warning)
                         .accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(result.wrongIDs.isEmpty ? "Scheduled further out" : "Back in the queue today")
+                        Text(passed ? "Scheduled further out" : "Back in the queue today")
                             .font(AppFont.display(22, .bold))
-                        Text(result.wrongIDs.isEmpty
-                            ? "One more successful review moves this item out by a day."
+                        Text(passed
+                            ? "A correct review moves this item one step along the interval ladder."
                             : "This item lapsed, so it returns today and the interval resets.")
                             .font(AppFont.display(14, .regular))
                             .foregroundStyle(.secondary)
@@ -96,7 +100,14 @@ struct ReviewItemView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-                schedulePreview(grade: result.wrongIDs.isEmpty ? .good : .again)
+                schedulePreview(grade: grade)
+
+                PrimaryButton(
+                    title: "Save and continue",
+                    symbol: "checkmark",
+                    isEnabled: true,
+                    action: { onGrade(grade) }
+                )
 
                 Spacer(minLength: 0)
             }
@@ -127,6 +138,16 @@ struct ReviewItemView: View {
                             if let level = word.level {
                                 LevelPill(text: level.displayName)
                             }
+                            Spacer(minLength: 0)
+                            SecondaryButton(
+                                title: "Hear it",
+                                symbol: "speaker.wave.2.fill",
+                                action: {
+                                    let text = word.audio?.text ?? word.word
+                                    appState.speech.speak(text, rate: word.audio?.speakingRate ?? 0.45) {}
+                                    Haptics.selection()
+                                }
+                            )
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -200,6 +221,15 @@ struct ReviewItemView: View {
                             .font(AppFont.display(15, .regular))
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
+
+                        SecondaryButton(
+                            title: "Hear the title",
+                            symbol: "speaker.wave.2.fill",
+                            action: {
+                                appState.speech.speak(lesson.title, rate: 0.45) {}
+                                Haptics.selection()
+                            }
+                        )
                     }
                     .padding(Spacing.lg)
                     .frame(maxWidth: .infinity, alignment: .leading)

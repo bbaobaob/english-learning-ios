@@ -261,7 +261,8 @@ struct FlashcardView: View {
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, Spacing.md)
-                .background(Color.brand, in: .rect(cornerRadius: Radius.pill))
+                .background(Color.brand, in: .capsule)
+                .vocabGlass(cornerRadius: Radius.pill)
         }
         .buttonStyle(.plain)
         .accessibilityHint("Turns the card over to show the meaning")
@@ -301,6 +302,10 @@ struct FlashcardView: View {
                         .padding(.vertical, Spacing.sm)
                         .background(option.tint.opacity(0.14), in: .rect(cornerRadius: Radius.chip))
                         .contentShape(.rect)
+                        // The rating row is the one control that floats over the
+                        // card, so it is the one that gets the glass treatment.
+                        // Applied last, after the layout that sizes it.
+                        .vocabGlass(cornerRadius: Radius.chip)
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("\(option.rating), \(option.title)")
@@ -415,7 +420,7 @@ private struct FlashcardSummaryView: View {
                     )
                 }
 
-                PrimaryButton(title: "Done", symbol: "checkmark", action: onDone)
+                PrimaryButton(title: "Done", symbol: "checkmark", isEnabled: true, action: onDone)
             }
             .padding(.horizontal, Spacing.md)
             .padding(.bottom, Spacing.xl)

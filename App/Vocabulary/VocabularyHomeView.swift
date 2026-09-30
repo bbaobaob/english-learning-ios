@@ -36,7 +36,6 @@ enum VocabSortOrder: String, CaseIterable, Identifiable {
 /// The Vocabulary tab.
 struct VocabularyHomeView: View {
     @Environment(AppState.self) private var appState
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @SceneStorage("vocab.search") private var searchText = ""
     @SceneStorage("vocab.level") private var levelRaw = ""
@@ -171,7 +170,9 @@ struct VocabularyHomeView: View {
                 title: "Today's review",
                 subtitle: dueToday.isEmpty
                     ? "Nothing is due. The scheduler has you covered until tomorrow."
-                    : "\(dueToday.count) words · about \(VocabPace.estimate(wordCount: dueToday.count))"
+                    : "\(dueToday.count) words · about \(VocabPace.estimate(wordCount: dueToday.count))",
+                actionTitle: nil,
+                action: nil
             )
 
             if dueToday.isEmpty {
@@ -184,7 +185,7 @@ struct VocabularyHomeView: View {
                         SecondaryButton(title: "Hear → Type", symbol: "ear") {
                             path.append(.freeHearType)
                         }
-                        PrimaryButton(title: "Practise 10", symbol: "rectangle.stack") {
+                        PrimaryButton(title: "Practise 10", symbol: "rectangle.stack", isEnabled: true) {
                             path.append(.review)
                         }
                     }
@@ -210,7 +211,7 @@ struct VocabularyHomeView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
-                    PrimaryButton(title: "Start review", symbol: "play.fill") {
+                    PrimaryButton(title: "Start review", symbol: "play.fill", isEnabled: true) {
                         path.append(.review)
                     }
                     .frame(maxWidth: .infinity)
@@ -311,6 +312,8 @@ struct VocabularyHomeView: View {
                 actionTitle: nil,
                 action: nil
             )
+            .accessibilityAddTraits(.isHeader)
+
             filterBar
             if visibleWords.isEmpty {
                 EmptyStateView(

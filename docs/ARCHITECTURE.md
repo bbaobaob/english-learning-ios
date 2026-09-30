@@ -198,27 +198,27 @@ description — must not use the word "IELTS".
 
 ### Matching answers (`Answer.pairs`)
 
-`Answer.pairs` has **two** legal shapes. Both are used by shipped content; the engine and the UI
-must handle both, and both require an exact key-set match.
+**Canonical form, and the only one the content bundle uses:** when `items` is non-empty and every item
+carries a `matchKey`, the answer maps **`item.id` → `item.matchKey`**, and each `matchKey` group is
+used once.
 
-1. **Item-based** — `items` is non-empty and every item carries a `matchKey`. The answer maps
-   **`item.id` → `item.matchKey`**, and every `matchKey` group is used exactly once.
-   ```jsonc
-   "items": [ { "id": "v1", "text": "verb", "matchKey": "g1" },
-              { "id": "n1", "text": "noun", "matchKey": "g2" } ],
-   "answer": { "type": "pairs", "values": { "v1": "g1", "n1": "g2" } }
-   ```
-   The learner's `UserResponse.pairs` uses the **same orientation**: `{ itemID: matchKey }`.
-2. **Domain-keyed** — `items` is absent or empty. The keys are domain labels (map positions `A`–`D`,
-   question numbers `1`–`4`, paragraph letters, option letters) and the values are the correct
-   labels. Compared literally, key for key.
-   ```jsonc
-   "answer": { "type": "pairs", "values": { "A": "1", "B": "2", "C": "3", "D": "4" } }
-   ```
+```jsonc
+"items": [ { "id": "v1", "text": "verb", "matchKey": "g1" },
+           { "id": "n1", "text": "noun", "matchKey": "g2" } ],
+"answer": { "type": "pairs", "values": { "v1": "g1", "n1": "g2" } }
+```
 
-Do not attempt to infer an orientation from the JSON — branch on whether `items` carries
-`matchKey` values. Grading is `isCorrect` only when the maps are equal (a partial match is wrong);
-the UI needs to know *which* pairs were wrong, so surface them rather than returning a bare false.
+The learner's `UserResponse.pairs` uses the **same orientation**: `{ itemID: matchKey }`. The answer's
+*values* are free-form — they may be a group label, a heading roman numeral, a category name, or a
+number — so never assume the value looks like an item id.
+
+`ExerciseEngine.matchingKeys(for:)` is the single place that resolves labels, and it registers both an
+item's `id` and its `matchKey` so that either orientation grades correctly. Never branch on a guessed
+direction: compare the learner's map against the authored map key-for-key.
+
+Grading is `isCorrect` only when the maps are equal — a missing key is a fail, not a partial pass.
+The UI needs to know *which* pairs were wrong, so `ExerciseResult.wrongPairs` carries each offending
+key with its `user` and `expected` value, sorted by key.
 
 ### DictationItem
 

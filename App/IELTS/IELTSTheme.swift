@@ -186,7 +186,7 @@ enum ExamCopy {
     static let disclaimerBody = """
         Every passage, recording script and cue card here was written for this app. \
         None of it comes from IELTS™ or its owners, and no result you get in this tab \
-        is a band score. The "target band" on each lesson is the level the material is \
+        is an IELTS grade. The "target band" on each lesson is the level the material is \
         pitched at, not a prediction about you.
         """
 

@@ -195,11 +195,11 @@
               "instruction": "Choose the correct sentence.",
               "items": [
                 { "id": "a", "text": "If you divide by zero, you get an error.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If you divide by zero, you will get an error.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "If you will divide by zero, you get an error.", "isCorrect": false, "matchKey": null },
                 { "id": "c", "text": "If you divide by zero, you would get an error.", "isCorrect": false, "matchKey": null }
               ],
-              "answer": { "type": "choice", "values": ["a", "b"] },
-              "explanation": "Both the zero and the first conditional are acceptable for a maths rule, so both are listed as correct. would get belongs to the second conditional and describes an imagined situation rather than a fact.",
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A zero conditional has the present simple in both clauses and no future auxiliary in the condition, so option a is correct. Option b puts will in the if-clause, which is never possible, and would get in option c describes an imagined situation rather than a maths fact.",
               "xp": 10
             },
             {
@@ -1592,10 +1592,270 @@
           "takeaways": [
             "wish about the present: past simple or could, plus would in the main clause.",
             "wish about the past: had plus past participle, plus would have in the main clause.",
-            "wish about the future: would plus base form; If only adds stronger regret.",
-            "would rather plus a bare infinitive compares preferences, with no to anywhere."
+            "wish about the future: would plus base form.",
+            "wish about the present also uses could: I wish I could drive."
           ],
           "nextLessonID": "cond-would-rather"
+        }
+      ]
+    },
+    {
+      "id": "cond-would-rather",
+      "title": "If Only, Hope and Would Rather",
+      "level": "advanced",
+      "summary": "Three structures that sit next to wish: regret, expectation and preference.",
+      "xp": 50,
+      "steps": [
+        {
+          "id": "cd-wr-theory",
+          "type": "theory",
+          "heading": "Regret, expectation and preference",
+          "body": "wish is not the only way to talk about a situation that is not what you want. If only expresses regret, hope brings a future situation into the present, and would rather chooses between two options.",
+          "rules": [
+            {
+              "title": "If only changes wish, not the tense",
+              "statement": "If only has the same tense patterns as wish: past simple for the present, had plus participle for the past, would for the future. It is followed by no subject and no main clause.",
+              "formula": "If only I were taller! / If only I had asked!",
+              "examples": [
+                { "id": "cd-wr-ex1", "en": "If only I were better at maths.", "vi": "Giá mà tôi giỏi toán hơn.", "note": "present regret, same tense as wish" },
+                { "id": "cd-wr-ex2", "en": "If only we had left ten minutes earlier.", "vi": "Giá mà chúng ta rời đi sớm mười phút.", "note": "past regret, had plus participle" }
+              ]
+            },
+            {
+              "title": "hope takes a that-clause or an object",
+              "statement": "I hope plus that plus subject and verb covers situations you think are possible. I hope plus noun or gerund is used for things, not for events with a subject and a verb.",
+              "formula": "I hope that you feel better. / I hope for a quiet weekend.",
+              "examples": [
+                { "id": "cd-wr-ex3", "en": "I hope that the weather stays dry.", "vi": "Tôi hy vọng thời tiết vẫn khô ráo.", "note": "that plus subject and verb" },
+                { "id": "cd-wr-ex4", "en": "I hope for an early answer.", "vi": "Tôi hy vọng nhận được câu trả lời sớm.", "note": "hope for plus a noun phrase" }
+              ]
+            },
+            {
+              "title": "would rather, prefer and rather than",
+              "statement": "would rather compares two actions and takes a bare infinitive. prefer takes a noun or a gerund, and rather than does the same comparison.",
+              "formula": "I would rather walk than drive. / I prefer walking to driving.",
+              "examples": [
+                { "id": "cd-wr-ex5", "en": "I would rather wait until Friday than send it today.", "vi": "Tôi thà đợi đến thứ Sáu còn hơn gửi hôm nay.", "note": "two bare infinitives" },
+                { "id": "cd-wr-ex6", "en": "I prefer reading to watching television.", "vi": "Tôi thích đọc hơn xem truyền hình.", "note": "prefer plus gerund, then a noun for the second option" }
+              ]
+            },
+            {
+              "title": "would rather not and would rather someone did",
+              "statement": "Negative goes after would rather: would rather not go. In the second option the subject and verb are needed because the subject changes.",
+              "formula": "I would rather not drive. / I would rather she drove.",
+              "examples": [
+                { "id": "cd-wr-ex7", "en": "I would rather not talk about it now.", "vi": "Tôi không muốn nói về chuyện đó lúc này.", "note": "not directly after would rather" },
+                { "id": "cd-wr-ex8", "en": "I would rather my brother drove us home.", "vi": "Tôi thà anh trai tôi lái xe chở tôi về hơn.", "note": "the second option needs a subject of its own" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cd-wr-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "cd-wre-1", "en": "If only the train had been on time.", "vi": "Giá mà tàu đến đúng giờ.", "note": "a regret about the past" },
+            { "id": "cd-wre-2", "en": "I hope that you are feeling better today.", "vi": "Tôi hy vọng hôm nay bạn thấy khoẻ hơn.", "note": "hope plus that-clause" },
+            { "id": "cd-wre-3", "en": "I would rather stay in tonight.", "vi": "Tối nay tôi thà ở lại nhà.", "note": "would rather plus a bare infinitive" },
+            { "id": "cd-wre-4", "en": "I would rather she handled the customers.", "vi": "Tôi thà cô ấy phụ trách khách hàng hơn.", "note": "the second option has its own subject" }
+          ]
+        },
+        {
+          "id": "cd-wr-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "cd-wr-tta1",
+              "kind": "typeTheAnswer",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "Type the complete verb phrase: I would rather ___ than take a taxi.",
+              "instruction": "Type the complete verb phrase.",
+              "answer": { "type": "text", "values": ["walk"] },
+              "explanation": "would rather is followed by the bare infinitive, so walk carries no to and no does. The comparison needs both options in the same form, which is why take also has no to.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-sc1",
+              "kind": "sentenceCompletion",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "Complete the sentence with the correct structure: I hope ___ the report is finished by Friday.",
+              "instruction": "Complete the sentence.",
+              "items": [
+                { "id": "a", "text": "that", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "for", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "to", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["that"] },
+              "explanation": "The following part has its own subject the report and verb is finished, so it must be a that-clause. hope for takes a noun such as I hope for an early reply, and hope to takes an infinitive such as I hope to finish soon.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-ec1",
+              "kind": "errorCorrection",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "If only I would have known the answer before the test.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["If only I had known the answer before the test."] },
+              "explanation": "If only takes the same tense as wish, so a regret about the past needs had known. If only I would have known mixes a present wish form with a past result and is not a possible construction.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-gc1",
+              "kind": "grammarCorrection",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "I would rather to stay at home than to go to the party.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["I would rather stay at home than go to the party."] },
+              "explanation": "Neither option in a would rather comparison takes the infinitive marker to. Both are bare infinitives, which is the one place in English where the marker is deliberately left out.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-mat1",
+              "kind": "matching",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "Match each structure with its meaning.",
+              "instruction": "Pair every structure with its correct meaning.",
+              "items": [
+                { "id": "a", "text": "If only I had spoken earlier.", "isCorrect": null, "matchKey": "regret about the past" },
+                { "id": "b", "text": "I hope that the plan works.", "isCorrect": null, "matchKey": "expectation about the future" },
+                { "id": "c", "text": "I would rather not drive tonight.", "isCorrect": null, "matchKey": "preference against an option" },
+                { "id": "d", "text": "I wish I were at home.", "isCorrect": null, "matchKey": "a present situation that is not true" }
+              ],
+              "answer": { "type": "pairs", "values": { "a": "regret about the past", "b": "expectation about the future", "c": "preference against an option", "d": "a present situation that is not true" } },
+              "explanation": "Regret and a wished-for present situation both use the past, expectation uses that plus a present form, and preference uses a bare infinitive. Naming the function first makes the form much easier to choose.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "cd-wr-dictation",
+          "type": "dictation",
+          "title": "Listen and type",
+          "items": [
+            {
+              "id": "cd-wr-d1",
+              "audio": { "kind": "speech", "text": "If only the train had been on time." },
+              "acceptedAnswers": ["If only the train had been on time."],
+              "hint": "regret with had been",
+              "translation": "Giá mà tàu đến đúng giờ.",
+              "xp": 15
+            },
+            {
+              "id": "cd-wr-d2",
+              "audio": { "kind": "speech", "text": "I hope that you are feeling better today." },
+              "acceptedAnswers": ["I hope that you are feeling better today."],
+              "hint": "hope plus a that-clause",
+              "translation": "Tôi hy vọng hôm nay bạn thấy khoẻ hơn.",
+              "xp": 15
+            },
+            {
+              "id": "cd-wr-d3",
+              "audio": { "kind": "speech", "text": "I would rather stay in tonight." },
+              "acceptedAnswers": ["I would rather stay in tonight."],
+              "hint": "would rather plus a bare infinitive",
+              "translation": "Tối nay tôi thà ở lại nhà.",
+              "xp": 15
+            },
+            {
+              "id": "cd-wr-d4",
+              "audio": { "kind": "speech", "text": "I would rather my brother drove us home." },
+              "acceptedAnswers": ["I would rather my brother drove us home."],
+              "hint": "the second option has its own subject",
+              "translation": "Tôi thà anh trai tôi lái xe chở tôi về hơn.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "cd-wr-quiz",
+          "type": "quiz",
+          "title": "Check your regret and preference forms",
+          "passPercent": 70,
+          "questions": [
+            {
+              "id": "cd-wr-q1",
+              "kind": "multipleChoice",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose the correct sentence.",
+              "items": [
+                { "id": "a", "text": "I would rather not pay the deposit now.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "I would rather not to pay the deposit now.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "I would rather don't pay the deposit now.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The negation goes directly after would rather and the verb stays a bare infinitive. would rather not to pay keeps the infinitive marker, and rather don't pay replaces the infinitive with a negative auxiliary.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-q2",
+              "kind": "errorCorrection",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "I hope the manager to reply to my email today.",
+              "instruction": "Rewrite the sentence correctly.",
+              "answer": { "type": "text", "values": ["I hope the manager will reply to my email today.", "I hope that the manager will reply to my email today."] },
+              "explanation": "hope takes either that plus a clause or an infinitive, never an object followed by an infinitive. Both the plain and the that-clause version are accepted, and the future needs will because the reply has not happened yet.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-q3",
+              "kind": "sentenceCompletion",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "Complete the sentence: If only I ___ the earlier train.",
+              "instruction": "Complete the sentence with the correct verb form.",
+              "items": [
+                { "id": "a", "text": "had taken", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "have taken", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "would take", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "take", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["had taken"] },
+              "explanation": "If only follows the wish pattern, so a regret about something that did not happen needs had plus the past participle. have taken is a present perfect and would take is impossible after If only.",
+              "xp": 10
+            },
+            {
+              "id": "cd-wr-q4",
+              "kind": "trueFalse",
+              "topicID": "types-of-condition",
+              "lessonID": "cond-would-rather",
+              "difficulty": "advanced",
+              "prompt": "would rather is followed by a bare infinitive, with no to.",
+              "instruction": "Decide if the statement is true or false.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "I would rather wait, never I would rather to wait. This is the same bare infinitive pattern as let somebody do and had better do.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "cd-wr-summary",
+          "type": "summary",
+          "takeaways": [
+            "If only uses the same tenses as wish and takes no main clause.",
+            "hope takes that plus a clause or a bare infinitive, never an object plus an infinitive.",
+            "would rather plus a bare infinitive compares two options, with not after would rather.",
+            "In the second option the subject and verb appear when the subject changes: I would rather she drove."
+          ],
+          "nextLessonID": "cond-advanced"
         }
       ]
     },
@@ -1687,15 +1947,15 @@
               "topicID": "types-of-condition",
               "lessonID": "cond-advanced",
               "difficulty": "advanced",
-              "prompt": "Choose the most natural sentence.",
+              "prompt": "Choose the sentence that makes the most sense in formal writing.",
               "instruction": "Choose the correct sentence.",
               "items": [
                 { "id": "a", "text": "When the meeting finishes, we will go for coffee.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "If the meeting finishes, we will go for coffee.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "Unless the meeting finishes, we will go for coffee.", "isCorrect": false, "matchKey": null }
+                { "id": "b", "text": "Unless the meeting finishes, we will go for coffee.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "When the meeting will finish, we will go for coffee.", "isCorrect": false, "matchKey": null }
               ],
-              "answer": { "type": "choice", "values": ["a", "b"] },
-              "explanation": "Both when and if are correct here, since the meeting finishing is either a certain time or a condition. unless reverses the meaning and would say we will go whether or not the meeting finishes.",
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "When the meeting finishes is natural because the finishing is a certain time. Unless would mean we go for coffee whether or not the meeting ends, which is not the intended meaning, and a time clause never takes will.",
               "xp": 10
             },
             {

@@ -24,7 +24,8 @@ public struct TokenDiff: Sendable, Equatable, Identifiable {
     /// The expected word, `nil` for `.extra`.
     public let expected: String?
 
-    public init(id: Int, kind: Kind, index: Int, user: String?, expected: String?) {
+    /// Public and label-ordered: other modules build these directly in tests and previews.
+    public init(id: Int, kind: Kind, index: Int = 0, user: String? = nil, expected: String? = nil) {
         self.id = id
         self.kind = kind
         self.index = index

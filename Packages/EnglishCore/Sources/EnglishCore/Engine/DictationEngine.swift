@@ -14,6 +14,25 @@ public struct DictationResult: Sendable, Equatable {
     public let expected: String
     /// Human-readable first mistake, e.g. `“play” → should be “is playing”`. `nil` when correct.
     public var firstErrorSummary: String?
+
+    /// Public because other modules (EnglishStore tests, previews) build these by hand; a
+    /// synthesised memberwise init on a public struct would be internal. Labels follow the
+    /// declaration order above and are part of the contract.
+    public init(
+        isCorrect: Bool,
+        accuracy: Double,
+        diffs: [TokenDiff],
+        firstErrorIndex: Int? = nil,
+        expected: String = "",
+        firstErrorSummary: String? = nil
+    ) {
+        self.isCorrect = isCorrect
+        self.accuracy = accuracy
+        self.diffs = diffs
+        self.firstErrorIndex = firstErrorIndex
+        self.expected = expected
+        self.firstErrorSummary = firstErrorSummary
+    }
 }
 
 /// Grades dictated sentences against a canonical sentence, per ARCHITECTURE.md §2 step 1–7.
