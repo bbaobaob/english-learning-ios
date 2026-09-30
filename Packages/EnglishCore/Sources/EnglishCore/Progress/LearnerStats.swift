@@ -42,6 +42,25 @@ public struct LearnerStats: Sendable, Codable, Equatable, Hashable {
     /// The zeroed stats of a learner who has just installed the app.
     public static let empty = LearnerStats()
 
+    /// Coding keys for the persisted stats payload.
+    ///
+    /// Declared explicitly because a hand-written `init(from:)` suppresses the
+    /// compiler's synthesised conformance, including its `CodingKeys` -- without
+    /// this enum neither direction of `Codable` resolves.
+    private enum CodingKeys: String, CodingKey {
+        case totalXP
+        case streak
+        case lessonsCompleted
+        case accuracy
+        case wordsMastered
+        case dictationsPassed
+        case reviewsDone
+        case studyMinutes
+        case ieltsCompleted
+        case perfectLessonRuns
+        case dailyGoalStreak
+    }
+
     /// Creates a set of learner stats, defaulting every field to zero.
     ///
     /// - Parameters:
