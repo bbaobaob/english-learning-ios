@@ -142,22 +142,36 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
+        // Read each record's scalars straight away. `StreakRecord` is a live
+        // @Model instance, and opening the next store releases the previous
+        // container, which destroys the model it handed back -- touching it
+        // afterwards traps in SwiftData rather than failing an assertion.
         let day1 = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
-        #expect(day1.current == 1)
-        #expect(day1.xpToday == 30)
+        let day1Current = day1.current
+        let day1XPToday = day1.xpToday
+        #expect(day1Current == 1)
+        #expect(day1XPToday == 30)
 
         let reopened = try Self.openStore(at: url).streak()
-        #expect(reopened.current == 1)
-        #expect(reopened.totalDays == 1)
-        #expect(reopened.xpToday == 30)
-        #expect(reopened.longest == 1)
+        let reopenedCurrent = reopened.current
+        let reopenedTotalDays = reopened.totalDays
+        let reopenedXPToday = reopened.xpToday
+        let reopenedLongest = reopened.longest
+        #expect(reopenedCurrent == 1)
+        #expect(reopenedTotalDays == 1)
+        #expect(reopenedXPToday == 30)
+        #expect(reopenedLongest == 1)
 
         let day2 = try Self.openStore(at: url, now: Self.nextDay)
             .registerStudy(minutes: 10, xp: 10, kind: .practice)
-        #expect(day2.current == 2)
-        #expect(day2.longest == 2)
-        #expect(day2.totalDays == 2)
-        #expect(day2.xpToday == 10)
+        let day2Current = day2.current
+        let day2Longest = day2.longest
+        let day2TotalDays = day2.totalDays
+        let day2XPToday = day2.xpToday
+        #expect(day2Current == 2)
+        #expect(day2Longest == 2)
+        #expect(day2TotalDays == 2)
+        #expect(day2XPToday == 10)
     }
 
     @Test("a second session on the same day does not extend the streak")

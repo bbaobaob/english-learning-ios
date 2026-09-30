@@ -395,7 +395,7 @@ struct ReviewQueueTests {
         let srs = scheduler()
         let queue = sampleQueue(srs: srs, at: referenceNow)
         #expect(queue.mastered.map(\.refID) == ["mastered"])
-        #expect(queue.mastered.allSatisfy(\.isMastered))
+        #expect(queue.mastered.allSatisfy { $0.isMastered })
     }
 
     @Test("the facets never file one item twice")

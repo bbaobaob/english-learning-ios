@@ -39,10 +39,11 @@ struct StreakTests {
     @Test("the first ever study day starts the streak at one")
     func noHistory() {
         let state = calculator().registeringStudy(on: referenceNow, state: .empty)
+        let expectedDay = utc.startOfDay(for: referenceNow)
         #expect(state.current == 1)
         #expect(state.longest == 1)
         #expect(state.totalDays == 1)
-        #require(state.lastStudyDay == utc.startOfDay(for: referenceNow))
+        #require(state.lastStudyDay == expectedDay)
     }
 
     @Test("studying twice in one day changes nothing")
