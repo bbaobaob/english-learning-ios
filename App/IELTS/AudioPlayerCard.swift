@@ -7,15 +7,23 @@ import SwiftUI
 /// Driving goes through `AppState.speech`, which is the `SpeechPlaying` protocol from
 /// EnglishCore — so this is not a second audio engine, it is a view of one.
 ///
-/// TODO(audio-lane): the shared player in `App/Audio` is the intended home for this.
-/// Its exact signature is not in the contract this lane was given, so this renders the
-/// three controls the screen needs and nothing more.
+/// This is *not* a duplicate of `App/Audio`'s player and is not scheduled to be
+/// deleted as one. `AudioPlayerView` and `QuickAudioControls` are themed for the
+/// rest of the app; a paper wants a didone/ink treatment and a speed menu, and
+/// folding that in would mean the generic player grows an `isExam: Bool`. The two
+/// share one engine (`AppState.speech`) and one rate vocabulary (`SpeechRate`), so
+/// there is still no second audio engine — only a second skin.
+///
+/// If the exam treatment is ever retired, this is the one to delete, and the
+/// call sites in Listening/Reading/Writing/Speaking are the four to change.
 struct AudioPlayerCard: View {
     let clip: AudioClip
 
     @Environment(AppState.self) private var appState
     @State private var isPlaying = false
-    @State private var rate: Float = AVSpeechUtteranceDefaultSpeechRate
+    /// Read through `SpeechRate` rather than the framework global, so the
+    /// default cannot drift from what the speed menu offers.
+    @State private var rate: Float = SpeechRate.normal
     @State private var showRates = false
 
     private var text: String { clip.text ?? clip.title ?? "" }

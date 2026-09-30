@@ -107,7 +107,6 @@ struct ReadingLessonView: View {
                 )
 
                 if let current = session.current?.exercise {
-                    // TODO(exercise-lane): confirm the exact ExerciseView signature.
                     ExerciseView(
                         exercise: current,
                         topicID: "ielts",

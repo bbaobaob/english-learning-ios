@@ -179,15 +179,14 @@ lane's write scope.
 
 | File | Question | Problem | Should be |
 |---|---|---|---|
-| `ielts-listening-reading.json` | `ielts-r-p2-q6` | instruction reads "Questions 6–9: match each paragraph, A to D, with the correct heading"; the lesson ships 6 questions, and this single question covers all four paragraphs | "Question 6", or renumber the lesson's 6 questions 1–6 |
-| `ielts-listening-reading.json` | `ielts-r-p2-q1`…`q5` | group instruction reads "Questions 1–5" while the lesson numbers them 1–6 | consistent with whatever `q6` becomes |
+| `ielts-listening-reading.json` | `ielts-r-p2-q6` | instruction reads "Questions 6–9: match each paragraph, A to D, with the correct heading". The lesson ships 6 questions and this one question *is* all four paragraphs | "Question 6", or renumber the lesson's six questions 1–6 |
+| `ielts-listening-reading.json` | `ielts-r-p3-q2`, `q3`, `q4` | instructions read "Questions 6–8", but the lesson ships 6 questions and these three are its 2nd–4th | "Questions 2–4" |
 
-| File | Question | Problem | Should be |
-|---|---|---|---|
-| `ielts-listening-reading.json` | `ielts-r-p3-q2`, `q3`, `q4` | instructions read "Questions 6–8" while the lesson ships 6 questions | "Questions 4–6" |
-
-Cosmetic and learner-visible (the instruction text is rendered above the
-question), but the numbering is simply wrong.
+Cosmetic and learner-visible (the instruction text is rendered above each
+question), but the numbering is simply wrong. The other 24 `ielts-range` hits the
+old rule produced were correct content — `ielts-l-sec2-q1`'s "Questions 1–4: match
+each place on the map" with questions 5–7 elsewhere in the same lesson is the
+paper's numbering, not an array index.
 
 ### 4.3 Twenty-three exercises tagged two levels from their lesson (14 warnings)
 

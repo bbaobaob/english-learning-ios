@@ -268,11 +268,11 @@ struct AlphabetListeningView: View {
                 .accessibilityHidden(true)
 
             Text("Type what you hear")
-                .font(.largeTitle.bold())
+                AppFont.display(.largeTitle)
                 .multilineTextAlignment(.center)
 
             Text("Each letter is read out. Type it, then check. Replay and slow audio as many times as you need — using them costs you nothing.")
-                .font(.body)
+                AppFont.body(.body)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
@@ -281,11 +281,11 @@ struct AlphabetListeningView: View {
             Toggle(isOn: $lettersOnly) {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text("Letters only")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                     Text(lettersOnly
                         ? "26 items, one per letter name."
                         : "52 items: the letter name, then a word it appears in.")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -361,22 +361,22 @@ struct AlphabetListeningView: View {
         HStack(alignment: .center, spacing: Spacing.md) {
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 Text(item.kind.prompt)
-                    .font(.headline)
+                    AppFont.body(.headline)
                     .fixedSize(horizontal: false, vertical: true)
                 HStack(spacing: Spacing.sm) {
                     Label(item.kind.title, systemImage: item.kind.symbol)
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                     if session.currentAttemptCount > 0 {
                         Text("try \(session.currentAttemptCount + 1)")
-                            .font(.caption.monospacedDigit())
+                            AppFont.mono(.caption)
                             .foregroundStyle(.tertiary)
                     }
                 }
             }
             Spacer(minLength: 0)
             Text("\(session.index + 1) / \(session.items.count)")
-                .font(.caption.monospacedDigit())
+                AppFont.mono(.caption)
                 .foregroundStyle(.secondary)
                 .accessibilityLabel("Item \(session.index + 1) of \(session.items.count)")
         }
@@ -410,9 +410,9 @@ struct AlphabetListeningView: View {
             } label: {
                 VStack(spacing: Spacing.xs) {
                     Image(systemName: "tortoise.fill")
-                        .font(.title)
+                        AppFont.body(.title)
                     Text("Slow")
-                        .font(.caption.weight(.semibold))
+                        AppFont.body(.caption, weight: .semibold)
                 }
                 .foregroundStyle(.brand)
                 .frame(minWidth: 72, minHeight: 76)
@@ -429,7 +429,7 @@ struct AlphabetListeningView: View {
             TextField(item.kind == .letter ? "One letter" : "One word", text: $input)
                 .textInputAutocapitalization(.characters)
                 .autocorrectionDisabled()
-                .font(.title3.weight(.semibold))
+                AppFont.body(.title3, weight: .semibold)
                 .padding(Spacing.md)
                 .background(inputBackground(session: session))
                 .overlay {
@@ -443,7 +443,7 @@ struct AlphabetListeningView: View {
 
             if session.isWrongNow {
                 Label("Not quite — the answer is below", systemImage: "xmark.circle.fill")
-                    .font(.caption.weight(.semibold))
+                    AppFont.body(.caption, weight: .semibold)
                     .foregroundStyle(.danger)
             }
         }
@@ -471,10 +471,10 @@ struct AlphabetListeningView: View {
                     .foregroundStyle(.brand)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(item.accepted.first ?? item.speechText)
-                        .font(.title3.weight(.semibold))
+                        AppFont.body(.title3, weight: .semibold)
                     if let reveal = item.reveal {
                         Text(reveal)
-                            .font(.subheadline)
+                            AppFont.body(.subheadline)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -489,13 +489,13 @@ struct AlphabetListeningView: View {
         } else if session.isWrongNow {
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 Text("The answer was")
-                    .font(.caption)
+                    AppFont.body(.caption)
                     .foregroundStyle(.secondary)
                 Text(item.accepted.first ?? item.speechText)
-                    .font(.title3.weight(.semibold))
+                    AppFont.body(.title3, weight: .semibold)
                 if let hint = item.hint {
                     Text(hint)
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -508,7 +508,7 @@ struct AlphabetListeningView: View {
 
         } else if session.isFreshNow, !session.hasPlayedCurrent {
             Text("Nothing played yet. Tap the speaker to hear it.")
-                .font(.footnote)
+                AppFont.body(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity)
@@ -541,7 +541,7 @@ struct AlphabetListeningView: View {
                     }
                 )
                 Text("Listen as often as you like before trying again.")
-                    .font(.caption)
+                    AppFont.body(.caption)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
             }
@@ -573,10 +573,10 @@ struct AlphabetListeningView: View {
                 .padding(.top, Spacing.md)
 
                 Text(session.passedCount == session.items.count ? "Every one" : "Session done")
-                    .font(.title2.bold())
+                    AppFont.display(.title2)
 
                 Text("\(session.passedCount) of \(session.items.count) correct, \(session.firstTryCount) of them first try.")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
 
@@ -602,7 +602,7 @@ struct AlphabetListeningView: View {
                         "\(session.totalReplays) replays used — free, and they cost you nothing.",
                         systemImage: "tortoise"
                     )
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, Spacing.lg)
@@ -622,7 +622,7 @@ struct AlphabetListeningView: View {
                         input = ""
                     } label: {
                         Text("Change the item set")
-                            .font(.subheadline.weight(.semibold))
+                            AppFont.body(.subheadline, weight: .semibold)
                     }
                     .buttonStyle(.plain)
                     .foregroundStyle(.brand)

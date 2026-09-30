@@ -53,7 +53,7 @@ private struct OptionRow: View {
         Button(action: action) {
             HStack(spacing: Spacing.md) {
                 Image(systemName: marker)
-                    .font(.subheadline.weight(.bold))
+                    AppFont.body(.subheadline, weight: .bold)
                     .foregroundStyle(isSelected ? Palette.surface : Palette.textTertiary)
                     .frame(width: 24)
                     .accessibilityHidden(true)
@@ -139,7 +139,7 @@ private struct BooleanOption: View {
         Button(action: action) {
             VStack(spacing: Spacing.sm) {
                 Image(systemName: symbol)
-                    .font(.title2)
+                    AppFont.body(.title2)
                     .accessibilityHidden(true)
                 Text(title)
                     .font(AppFont.display(.headline))

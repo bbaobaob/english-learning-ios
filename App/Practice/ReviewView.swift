@@ -72,7 +72,7 @@ struct ReviewView: View {
                 ForEach(ReviewBucket.allCases) { candidate in
                     Button {
                         Haptics.selection()
-                        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) { bucket = candidate }
+                        withAnimation(Motion.Curve.standard) { bucket = candidate }
                     } label: {
                         VStack(spacing: 3) {
                             Text("\(count(for: candidate))")
@@ -234,7 +234,7 @@ struct ReviewView: View {
         guard emptyActionTitle != nil else { return nil }
         return {
             Haptics.selection()
-            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) { bucket = .dueToday }
+            withAnimation(Motion.Curve.standard) { bucket = .dueToday }
         }
     }
 }

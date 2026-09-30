@@ -142,7 +142,7 @@ struct ResultPanel: View {
             if result.xpAwarded > 0 {
                 HStack(spacing: Spacing.xs) {
                     Image(systemName: "bolt.fill")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(Palette.xp)
                         .accessibilityHidden(true)
                     Text("+\(result.xpAwarded) XP")
@@ -177,18 +177,45 @@ struct ResultPanel: View {
         .onAppear {
             // The scale-in is the one moment in an exercise flow that earns a
             // deliberate animation: it marks the moment the answer landed.
-            // Under Reduce Motion it is skipped and the panel simply appears.
-            guard !reduceMotion else { return }
-            withAnimation(Motion.emphatic) { hasAppeared = true }
+            //
+            // The flag is set unconditionally. Gating it on `reduceMotion` left
+            // it `false` forever for a Reduce Motion user, which also stopped the
+            // checkmark from ever drawing — Reduce Motion must remove travel, not
+            // information. `Motion.accessible` drops the travel for that user, and
+            // `StrokeCheckmark` reads the same setting.
+            withAnimation(Motion.accessible(Motion.emphatic, reduceMotion: reduceMotion)) {
+                hasAppeared = true
+            }
         }
     }
 
     private var header: some View {
         HStack(spacing: Spacing.sm) {
-            Image(systemName: result.isCorrect ? "checkmark.circle.fill" : "xmark.circle.fill")
-                .font(.title2)
-                .foregroundStyle(result.isCorrect ? Palette.success : Palette.danger)
-                .accessibilityHidden(true)
+            // The drawn checkmark and the burst are the positive feedback, and
+            // they belong here rather than being re-implemented by each exercise
+            // view: this panel is the one place an answer's outcome is known.
+            // Under Reduce Motion `StrokeCheckmark` renders the finished mark at
+            // once, so the outcome is never lost — only the drawing is.
+            ZStack {
+                SuccessBurst(tint: Palette.success, isActive: result.isCorrect)
+                    .frame(width: 72, height: 72)
+
+                if result.isCorrect {
+                    StrokeCheckmark(
+                        progress: hasAppeared ? 1 : 0,
+                        tint: Palette.success,
+                        lineWidth: 3,
+                        settlesIntoGlyph: true
+                    )
+                    .frame(width: 26, height: 26)
+                } else {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(AppFont.body(.title2))
+                        .foregroundStyle(Palette.danger)
+                }
+            }
+            .frame(width: 30, height: 30)
+            .motionDecoration()
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(result.isCorrect ? "Correct" : "Not quite")
@@ -307,7 +334,7 @@ struct DiffMarkedText: View {
             ForEach(missingWords, id: \.self) { word in
                 HStack(spacing: Spacing.xs) {
                     Image(systemName: "plus.circle.fill")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(Palette.warning)
                         .accessibilityHidden(true)
                     Text(word)

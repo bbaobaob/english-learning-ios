@@ -119,11 +119,18 @@ extension View {
     /// Falls back to a material on iOS 17–25.
     ///
     /// Apply *after* layout modifiers — the glass reads the shape it is given.
+    ///
+    /// Deliberately not `GlassControl` from the design system, which is the right
+    /// default and is used everywhere else. That modifier pins the corner radius
+    /// to `Radius.card` and draws no border, and this one needs both the caller's
+    /// radius and the paper's hairline. Reusing it would mean adding a corner
+    /// radius parameter and a border colour to a shared modifier for one caller
+    /// in one tab — a general modifier made worse for the app to have one
+    /// wrapper fewer. It tracks the same iOS 26 API and the same fallback
+    /// reasoning, so the two cannot diverge on *when* they use real glass.
     @ViewBuilder
     func examFloatingGlass(cornerRadius: CGFloat = 22) -> some View {
         if #available(iOS 26, *) {
-            // TODO(design-system-lane): swap for the shared `GlassControl` wrapper once
-            // the design-system lane ships one; the API here matches iOS 26 SwiftUI.
             self.glassEffect(.regular.interactive(), in: .rect(cornerRadius: cornerRadius))
         } else {
             self.background(.ultraThinMaterial, in: .rect(cornerRadius: cornerRadius))

@@ -58,7 +58,7 @@ struct StudyHeatMap: View {
                                 .font(AppFont.mono(.caption2, weight: .medium))
                                 .foregroundStyle(level >= 3 ? Color.white : Color.primary.opacity(0.7))
                         }
-                        .animation(reduceMotion ? nil : .easeOut(duration: 0.25), value: level)
+                        .animation(Motion.Curve.decelerate, value: level)
                         .accessibilityElement()
                         .accessibilityLabel("\(day.day.formatted(date: .complete, time: .omitted)), \(day.minutes) minutes studied")
                 }
@@ -162,7 +162,7 @@ struct Last14DaysChart: View {
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
                             .fill(day.minutes == 0 ? Color.secondary.opacity(0.15) : Color.brand.gradient)
                             .frame(height: max(4, CGFloat(day.minutes) / CGFloat(peak) * 64))
-                            .animation(reduceMotion ? nil : .spring(response: 0.45, dampingFraction: 0.8), value: day.minutes)
+                            .animation(Motion.spring(response: 0.45, dampingFraction: 0.8), value: day.minutes)
 
                         Text(day.day.formatted(.dateTime.day()))
                             .font(AppFont.mono(.caption2, weight: .regular))
@@ -287,11 +287,21 @@ struct NotificationRow: View {
     let minute: Int
     let onChange: (Bool, Int, Int) -> Void
 
-    /// Seeded from the stored preference in `init`, not in `onAppear`: an
-    /// `onAppear` assignment would fire `onChange` and ask for notification
-    /// permission the moment the screen appeared, which the contract forbids.
-    @State private var enabled: Bool
-    @State private var time: Date
+    /// The editable copy of the preference, seeded from the stored value.
+    ///
+    /// Seeded once, and then left alone: re-seeding it in `onAppear` would fire
+    /// `onChange` and ask for notification permission the moment the screen
+    /// appeared, which the contract forbids. `isEnabled`/`hour`/`minute` change
+    /// only when this row's own `onChange` wrote them, so the copy is already
+    /// correct and needs no refresh.
+    @State private var enabled: Bool = false
+    @State private var time: Date = Date()
+
+    /// Whether the stored values have been copied into ``enabled``/``time``.
+    ///
+    /// The first `onAppear` seeds them without reporting a change, so the
+    /// permission prompt can only ever be a consequence of a tap.
+    @State private var didSeed = false
 
     init(
         kind: NotificationKind,
@@ -305,8 +315,6 @@ struct NotificationRow: View {
         self.hour = hour
         self.minute = minute
         self.onChange = onChange
-        _enabled = State(initialValue: isEnabled)
-        _time = State(initialValue: Self.date(hour: hour, minute: minute))
     }
 
     var body: some View {
@@ -329,6 +337,10 @@ struct NotificationRow: View {
                     .accessibilityLabel(Self.title(for: kind))
             }
             .onChange(of: enabled) { _, newValue in
+                // Guarded as well as seeded: `onChange` is not the only way a
+                // `@State` write can be observed, and the one thing that must
+                // never happen is a permission prompt nobody asked for.
+                guard didSeed else { return }
                 // Fires only from a tap, never on appear, so permission is
                 // requested in direct response to the learner.
                 let parts = Calendar.current.dateComponents([.hour, .minute], from: time)
@@ -345,6 +357,7 @@ struct NotificationRow: View {
                 .font(AppFont.display(.subheadline, weight: .medium))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .onChange(of: time) { _, newValue in
+                    guard didSeed else { return }
                     let parts = Calendar.current.dateComponents([.hour, .minute], from: newValue)
                     onChange(true, parts.hour ?? hour, parts.minute ?? minute)
                 }
@@ -352,6 +365,12 @@ struct NotificationRow: View {
         }
         .padding(.horizontal, Spacing.lg)
         .padding(.vertical, Spacing.md)
+        .onAppear {
+            guard !didSeed else { return }
+            enabled = isEnabled
+            time = Self.date(hour: hour, minute: minute)
+            didSeed = true
+        }
     }
 
     private static func date(hour: Int, minute: Int) -> Date {

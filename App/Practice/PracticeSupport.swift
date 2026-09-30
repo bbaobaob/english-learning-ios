@@ -236,7 +236,7 @@ struct PracticeMeter: View {
                 }
             }
             .frame(height: 8)
-            .animation(reduceMotion ? nil : .easeOut(duration: 0.35), value: value)
+            .animation(reduceMotion ? nil : Motion.Curve.decelerate, value: value)
 
             Text(caption)
                 .font(AppFont.display(13, .regular))
@@ -256,7 +256,7 @@ struct ReviewItemRow: View {
     var body: some View {
         HStack(spacing: Spacing.md) {
             Image(systemName: symbol)
-                .font(.title3)
+                AppFont.body(.title3)
                 .foregroundStyle(tint)
                 .frame(width: 28)
                 .accessibilityHidden(true)

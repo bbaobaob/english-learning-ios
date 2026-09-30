@@ -28,18 +28,23 @@ enum VocabRoute: Hashable {
 
 // MARK: - Reading the learner's schedule
 
-/// Read-only views over the two persistence seams the lane is allowed to use.
+/// Read-only views over the persistence seams the lane is allowed to use.
 ///
-/// ponytail: `ProgressStore` exposes the schedule through `reviewQueue(on:)`,
-/// which is documented to return the items *due* at a date, so asking it for a
-/// far-future date is how this lane reads an item that is not due yet (the word
-/// detail screen needs the current interval of a word scheduled three weeks
-/// out). A `reviewItem(forWordID:)` accessor on the store would be clearer and
-/// avoids the sentinel; ask the store lane for it when the tab grows.
+/// The far-future date in ``all(from:)`` is deliberate and now the only place it
+/// appears: this reads *every* vocabulary schedule at once, for grids and
+/// sorting, and `reviewQueue(on:)` is the only bulk accessor the store has. A
+/// single word uses `ProgressStore.reviewItem(forWordID:)` instead, which has no
+/// sentinel in it.
 @MainActor
 enum VocabSchedule {
 
     /// Every persisted vocabulary schedule, keyed by word id, due or not.
+    ///
+    /// - Note: The `distantFuture` date is not a bug and not a shortcut for a
+    ///   missing accessor. `reviewQueue(on:)` filters by due date, so a far-future
+    ///   instant is the way to ask it for "all of them, scheduled or not" in one
+    ///   fetch. `isDue` compares against this instant, so nothing is excluded for
+    ///   being scheduled far out.
     static func all(from store: ProgressStore) -> [String: ReviewItem] {
         var result: [String: ReviewItem] = [:]
         for item in store.reviewQueue(on: Date.distantFuture) where item.source == .vocabulary {
@@ -159,8 +164,9 @@ struct VocabSpeakButton: View {
 
     /// The text to speak.
     let text: String
-    /// `AVSpeechUtterance` rate; `0.3` is the slow replay the drill relies on.
-    var rate: Float = 0.5
+    /// `AVSpeechUtterance` rate. Defaults to the system's normal rate; every
+    /// drill passes a ``SpeechRate`` name so the value is never a bare literal.
+    var rate: Float = SpeechRate.normalSpeed
     /// Spoken by VoiceOver in place of the symbol name.
     var accessibilityLabel: String
     /// Diameter of the button.
@@ -249,7 +255,7 @@ struct VocabTagText: View {
 
     var body: some View {
         Text(text)
-            .font(.footnote.weight(.medium))
+            AppFont.body(.footnote, weight: .medium)
             .foregroundStyle(.secondary)
             .padding(.horizontal, Spacing.sm)
             .padding(.vertical, 3)
@@ -257,19 +263,13 @@ struct VocabTagText: View {
     }
 }
 
-/// A tappable related-word chip. The chip itself is a design-system `Chip`;
-/// this only carries the destination.
+/// A tappable related-word chip, showing the current word as selected.
 struct VocabRelatedChip: View {
     let text: String
     let isCurrent: Bool
     let action: () -> Void
 
     var body: some View {
-        Button(action: action) {
-            Chip(text: text, isSelected: isCurrent)
-        }
-        .buttonStyle(.plain)
-        // TODO(design-system-lane): a `Chip(text:isSelected:action:)` variant would remove the
-        // Button wrapper here and the same one on every filter row in VocabularyHomeView.
+        Chip(text: text, isSelected: isCurrent, action: action)
     }
 }

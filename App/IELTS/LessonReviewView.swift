@@ -105,13 +105,14 @@ struct LessonReviewScreen: View {
 
     private var filterRow: some View {
         HStack(spacing: Spacing.sm) {
-            Chip(text: wrongOnly ? "Showing mistakes" : "All questions", isSelected: wrongOnly)
-                .onTapGesture {
-                    withAnimation(ExamMotion.tick) { wrongOnly.toggle() }
-                    Haptics.selection()
-                }
-                .accessibilityAddTraits(.isButton)
-                .accessibilityHint("Toggles between every question and only the ones you got wrong")
+            Chip(
+                text: wrongOnly ? "Showing mistakes" : "All questions",
+                isSelected: wrongOnly
+            ) {
+                withAnimation(ExamMotion.tick) { wrongOnly.toggle() }
+                Haptics.selection()
+            }
+            .accessibilityHint("Toggles between every question and only the ones you got wrong")
             Spacer()
             Text("\(visibleQuestions.count) shown")
                 .font(.examBody(11))

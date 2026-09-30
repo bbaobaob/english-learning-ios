@@ -10,7 +10,7 @@ import EnglishStore
 /// sentence with a hint. Nothing here is invented, and nothing is transcribed: the
 /// learner records a take, plays it back, and compares it against the model, which is
 /// spoken on demand through the app's speech service.
-struct SpeakingPracticeView: View {
+struct SpeakingDrillView: View {
 
     let level: Level
 
@@ -161,7 +161,7 @@ struct SpeakingPracticeView: View {
                 }
             }
             .frame(height: 10)
-            .animation(reduceMotion ? nil : .linear(duration: 0.2), value: recorder.elapsed)
+            .animation(Motion.Curve.linear, value: recorder.elapsed)
 
             Text(recorder.elapsed >= targetSeconds
                  ? "Over the target — but a longer answer is a fuller answer."
@@ -237,6 +237,27 @@ struct SpeakingPracticeView: View {
 
     private var recordingControls: some View {
         VStack(spacing: Spacing.md) {
+            // The record button turns into its own liveness indicator. A learner
+            // holding the phone at arm's length has to know at a glance whether
+            // their voice is being captured, so the ring differs on four axes at
+            // once — colour, ring count, speed and centre — and the elapsed time
+            // beside it is the same fact in a form VoiceOver can read.
+            HStack(spacing: Spacing.md) {
+                BreathingRecorder(
+                    state: recorder.isRecording ? .recording : (recorder.hasTake ? .listening : .idle),
+                    diameter: 40
+                )
+                // The ring is a purely visual signal, so it is given a label
+                // rather than hidden. The elapsed time and the status line live
+                // in `timer` above; repeating either here would give VoiceOver
+                // the same fact twice.
+                .accessibilityLabel(
+                    recorder.isRecording ? "Recording" : (recorder.hasTake ? "Take ready" : "Not recording")
+                )
+
+                Spacer(minLength: 0)
+            }
+
             HStack(spacing: Spacing.md) {
                 if recorder.isRecording {
                     PrimaryButton(
@@ -287,7 +308,7 @@ struct SpeakingPracticeView: View {
                 title: "Model answer",
                 symbol: "speaker.wave.2.fill",
                 action: {
-                    appState.speech.speak(cards[cardIndex].prompt, rate: 0.45) {}
+                    appState.speech.speak(cards[cardIndex].prompt, rate: SpeechRate.example) {}
                     Haptics.selection()
                 }
             )

@@ -63,6 +63,23 @@ extension ProgressStore {
         profileSave()
     }
 
+    /// Stamps `onboardedAt`, once.
+    ///
+    /// The one piece of onboarding state with no store accessor, so it lived in
+    /// `AppState.markOnboarded()` — which made the app's central state object the
+    *only* writer of a profile field, against a lane that already owns the other
+    /// two. It belongs beside ``setProfileName(_:)`` and ``setDailyGoal(_:)``,
+    /// where one writer per field is a rule the Profile lane can see.
+    ///
+    /// Idempotent: a second call is a no-op, so "has onboarded" cannot be
+    /// re-answered by a re-tap on the last onboarding step.
+    func markOnboarded() {
+        let row = profile()
+        guard row.onboardedAt == nil else { return }
+        row.onboardedAt = profileNow()
+        profileSave()
+    }
+
     /// Saves the daily XP goal on both the profile and the streak row.
     ///
     /// The store reads `StreakRecord.xpGoal` for the ring and for

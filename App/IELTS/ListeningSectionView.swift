@@ -136,8 +136,6 @@ struct ListeningLessonView: View {
                 )
 
                 if let current = session.current?.exercise {
-                    // TODO(exercise-lane): confirm the exact ExerciseView signature.
-                    // Expected: an exercises array plus a completion action.
                     ExerciseView(
                         exercise: current,
                         topicID: "ielts",
@@ -161,7 +159,6 @@ struct ListeningLessonView: View {
     private func audioCard(_ audio: AudioClip) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "The recording", subtitle: "Play it once, as in the test")
-            // TODO(audio-lane): swap for the shared audio player when it lands.
             AudioPlayerCard(clip: audio)
                 .accessibilityLabel("Recording for \(lesson.title)")
         }

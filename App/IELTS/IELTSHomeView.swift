@@ -8,7 +8,8 @@ import SwiftUI
 struct IELTSHomeView: View {
     @Environment(AppState.self) private var appState
 
-    @State private var model = IELTSSectionModel()
+    /// `nil` until the library is loaded; ``refresh(library:)`` fills it in.
+    @State private var model = IELTSSectionModel(library: nil)
     @State private var selectedSkill: IELTSSkill = .listening
     @State private var hasAppeared = false
 
@@ -33,6 +34,14 @@ struct IELTSHomeView: View {
         }
         .readsReduceMotion()
         .onAppear { hasAppeared = true }
+        // Content can finish loading after the first render, so re-derive rather
+        // than reading the library once in the initialiser.
+        .onChange(of: appState.library?.allIELTSModules.count) { _, _ in
+            model.refresh(library: appState.library)
+        }
+        .task {
+            model.refresh(library: appState.library)
+        }
     }
 
     // MARK: - Header
@@ -428,7 +437,7 @@ enum LessonDestination {
         case .listening: ListeningLessonView(lesson: lesson)
         case .reading: ReadingLessonView(lesson: lesson)
         case .writing: WritingTaskView(lesson: lesson)
-        case .speaking: SpeakingPracticeView(lesson: lesson)
+        case .speaking: IELTSSpeakingLessonView(lesson: lesson)
         }
     }
 }

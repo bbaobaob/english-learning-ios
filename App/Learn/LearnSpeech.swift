@@ -4,9 +4,15 @@ import EnglishCore
 /// The one place this lane speaks text aloud.
 ///
 /// The contract fixes `SpeechPlaying` but not the exact surface of
-/// `AppState.audio`, so every play call funnels through here.
-// TODO(design-system-lane): if AppState exposes speak(text:) / speak(_:rate:)
-// directly, delete `SpeakGate` and call the service at the call sites.
+/// `AppState.audio`, so every play call funnels through here. `AppState` owns the
+/// single `SpeechService`; this is a thin seam over it, not a second engine —
+/// it exists so this lane has one place to change if the speech surface moves,
+/// and so no call site in here has to know a rate is a multiplier.
+///
+/// ponytail: kept as an enum of statics rather than promoted onto `AppState`,
+/// because `AppState` is the one type every lane shares and adding a lane's
+/// vocabulary there is how it grows ten ways to speak. If a *second* lane needs
+/// the same seam, promote it then.
 enum SpeakGate {
 
     /// Speaks `text` at the normal content rate.
@@ -38,10 +44,9 @@ enum SpeakGate {
 
     /// The slow rate used by every "play slowly" control in this lane.
     ///
-    /// Six-tenths of normal: slow enough to catch a word missed the first time,
-    /// fast enough that the whole sentence still sounds like speech. The
-    /// dictation flow's own "slow replay" goes further — see
-    /// ``AudioPlayerModel/slowReplay()``, which plays a *rendered file* and so
-    /// can go below the synthesizer's floor entirely.
-    static let slowRate: Float = SpeechRate.scaled(0.6)
+    /// Named once in ``SpeechRate/replay`` so this lane and the audio lane cannot
+    /// disagree about how slow "slowly" is. The dictation flow's own "slow
+    /// replay" goes further — see ``AudioPlayerModel/slowReplay()``, which plays a
+    /// *rendered file* and so can go below the synthesizer's floor entirely.
+    static let slowRate: Float = SpeechRate.replay
 }

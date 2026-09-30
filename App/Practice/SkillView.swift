@@ -73,7 +73,7 @@ struct SkillView: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack(spacing: Spacing.md) {
                 Image(systemName: topic.icon.isEmpty ? skill.fallbackSymbol : topic.icon)
-                    .font(.largeTitle)
+                    AppFont.body(.largeTitle)
                     .foregroundStyle(Color.brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
@@ -195,7 +195,7 @@ struct SkillView: View {
         } label: {
             HStack(spacing: Spacing.md) {
                 Image(systemName: state.symbol)
-                    .font(.title3)
+                    AppFont.body(.title3)
                     .foregroundStyle(state.tint)
                     .frame(width: 30)
                     .accessibilityHidden(true)
@@ -217,7 +217,7 @@ struct SkillView: View {
                 Spacer(minLength: Spacing.xs)
 
                 Image(systemName: "chevron.right")
-                    .font(.footnote.weight(.semibold))
+                    AppFont.body(.footnote, weight: .semibold)
                     .foregroundStyle(.tertiary)
                     .accessibilityHidden(true)
             }

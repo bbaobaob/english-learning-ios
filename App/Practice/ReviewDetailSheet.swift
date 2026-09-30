@@ -59,7 +59,7 @@ struct ReviewDetailSheet: View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(spacing: Spacing.md) {
                 Image(systemName: item.isMastered ? "rosette" : "calendar.badge.clock")
-                    .font(.title2)
+                    AppFont.body(.title2)
                     .foregroundStyle(item.isMastered ? Color.success : Color.brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
@@ -117,7 +117,7 @@ struct ReviewDetailSheet: View {
 
         return HStack(spacing: Spacing.md) {
             Image(systemName: preview.symbol)
-                .font(.title3)
+                AppFont.body(.title3)
                 .foregroundStyle(preview.tint)
                 .frame(width: 28)
                 .accessibilityHidden(true)

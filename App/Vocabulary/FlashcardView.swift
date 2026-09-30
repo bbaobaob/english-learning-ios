@@ -113,11 +113,11 @@ struct FlashcardView: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
                 Text(session.positionLabel)
-                    .font(.footnote.weight(.semibold))
+                    AppFont.body(.footnote, weight: .semibold)
                     .foregroundStyle(.secondary)
                 Spacer()
                 Text(Text(session.progress, format: .percent.precision(.fractionLength(0))))
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.tertiary)
                     .monospacedDigit()
             }
@@ -162,7 +162,7 @@ struct FlashcardView: View {
             }
 
             Text("Recall the meaning, then turn the card over.")
-                .font(.footnote)
+                AppFont.body(.footnote)
                 .foregroundStyle(.secondary)
                 .padding(.top, Spacing.xs)
         }
@@ -195,15 +195,15 @@ struct FlashcardView: View {
                 VStack(spacing: Spacing.xs) {
                     Button {
                         Haptics.selection()
-                        appState.speech.speak(example, rate: 0.45, completion: nil)
+                        appState.speech.speak(example, rate: SpeechRate.example, completion: nil)
                     } label: {
                         HStack(alignment: .top, spacing: Spacing.sm) {
                             Text(example)
-                                .font(.subheadline)
+                                AppFont.body(.subheadline)
                                 .foregroundStyle(.primary)
                                 .multilineTextAlignment(.leading)
                             Image(systemName: "speaker.wave.2")
-                                .font(.caption)
+                                AppFont.body(.caption)
                                 .foregroundStyle(Color.brand)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -214,7 +214,7 @@ struct FlashcardView: View {
 
                     if let vi = card.word.exampleVI {
                         Text(vi)
-                            .font(.footnote)
+                            AppFont.body(.footnote)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -233,7 +233,7 @@ struct FlashcardView: View {
             if !words.isEmpty {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(title)
-                        .font(.caption.weight(.semibold))
+                        AppFont.body(.caption, weight: .semibold)
                         .foregroundStyle(.tertiary)
                     LazyVGrid(
                         columns: [GridItem(.adaptive(minimum: 110), spacing: Spacing.xs)],
@@ -257,7 +257,7 @@ struct FlashcardView: View {
             reveal(session)
         } label: {
             Label("Show answer", systemImage: "eye.fill")
-                .font(.headline)
+                AppFont.body(.headline)
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, Spacing.md)
@@ -279,7 +279,7 @@ struct FlashcardView: View {
     private func ratingControls(_ session: FlashcardSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             Text("How well did you know it?")
-                .font(.footnote)
+                AppFont.body(.footnote)
                 .foregroundStyle(.secondary)
 
             HStack(spacing: Spacing.sm) {
@@ -289,11 +289,11 @@ struct FlashcardView: View {
                     } label: {
                         VStack(spacing: 2) {
                             Image(systemName: option.symbol)
-                                .font(.caption)
+                                AppFont.body(.caption)
                             Text("\(option.rating)")
                                 .font(AppFont.display(.title3, weight: .bold))
                             Text(option.title)
-                                .font(.caption2.weight(.semibold))
+                                AppFont.body(.caption2, weight: .semibold)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.75)
                         }
@@ -314,7 +314,7 @@ struct FlashcardView: View {
             }
 
             Text("Rating honestly is what makes the schedule work. Rating a forgotten word \"good\" only hides it.")
-                .font(.caption2)
+                AppFont.body(.caption2)
                 .foregroundStyle(.tertiary)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -372,7 +372,7 @@ private struct FlashcardSummaryView: View {
                     Text("Session complete")
                         .font(AppFont.display(.largeTitle, weight: .bold))
                     Text(summaryLine)
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
@@ -444,13 +444,13 @@ private struct FlashcardSummaryView: View {
                 ForEach(outcomes) { outcome in
                     HStack(spacing: Spacing.md) {
                         Image(systemName: symbol)
-                            .font(.caption)
+                            AppFont.body(.caption)
                             .foregroundStyle(tint)
                         Text(outcome.card.word.word)
                             .font(AppFont.display(.body, weight: .semibold))
                         Spacer(minLength: Spacing.sm)
                         Text(outcome.rescheduled.dueDate.formatted(date: .abbreviated, time: .omitted))
-                            .font(.footnote)
+                            AppFont.body(.footnote)
                             .foregroundStyle(.secondary)
                     }
                     .padding(.vertical, Spacing.xs)

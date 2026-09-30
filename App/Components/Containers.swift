@@ -37,7 +37,7 @@ struct SectionHeader: View {
                         Text(actionTitle)
                             .font(AppFont.body(.subheadline, weight: .semibold))
                         Image(systemName: "chevron.right")
-                            .font(.caption2.weight(.bold))
+                            AppFont.body(.caption2, weight: .bold)
                     }
                     .foregroundStyle(Palette.brand)
                     .frame(minHeight: Metric.tapTarget)
@@ -78,7 +78,7 @@ struct TopicCard: View {
                         RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
                             .fill(isCompleted ? Palette.success.opacity(0.16) : Palette.brandSoft)
                         Image(systemName: isCompleted ? "checkmark" : symbol)
-                            .font(.title3.weight(.semibold))
+                            AppFont.body(.title3, weight: .semibold)
                             .foregroundStyle(isCompleted ? Palette.success : Palette.brand)
                     }
                     .frame(width: 44, height: 44)
@@ -204,7 +204,7 @@ struct ErrorBanner: View {
     var body: some View {
         HStack(alignment: .top, spacing: Spacing.md) {
             Image(systemName: "exclamationmark.triangle.fill")
-                .font(.subheadline)
+                AppFont.body(.subheadline)
                 .foregroundStyle(Palette.danger)
                 .accessibilityHidden(true)
 

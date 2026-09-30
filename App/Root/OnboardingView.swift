@@ -47,7 +47,18 @@ struct OnboardingView: View {
 
             footer
         }
-        .background(Palette.background)
+        // The `.onboarding` backdrop: one slow wash from the top-left, leaving the
+        // lower two-thirds almost entirely clear for the copy. Each page carries a
+        // paragraph of text, so a backdrop that competed with it would be worse
+        // than no backdrop — this one is built not to. Under Reduce Motion it is a
+        // static gradient with the same composition.
+        .background {
+            ZStack {
+                Palette.background
+                AmbientBackdrop(style: .onboarding)
+            }
+            .ignoresSafeArea()
+        }
     }
 
     // MARK: - Chrome
@@ -62,7 +73,7 @@ struct OnboardingView: View {
                     }
                 } label: {
                     Image(systemName: "chevron.left")
-                        .font(.body.weight(.semibold))
+                        AppFont.body(.body, weight: .semibold)
                         .foregroundStyle(Palette.brand)
                         .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                         .contentShape(Rectangle())
@@ -367,7 +378,7 @@ private struct ExplainerRow: View {
     var body: some View {
         HStack(alignment: .top, spacing: Spacing.md) {
             Image(systemName: symbol)
-                .font(.title3)
+                AppFont.body(.title3)
                 .foregroundStyle(tint)
                 .frame(width: 32)
                 .accessibilityHidden(true)

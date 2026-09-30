@@ -71,6 +71,27 @@ extension ProgressStore {
             .sorted { $0.dueDate < $1.dueDate }
     }
 
+    /// Reads one word's persisted schedule, whether or not it is due.
+    ///
+    /// ``reviewQueue(on:)`` answers "what is due at this instant", which cannot
+    /// answer "what is this word's current interval" for a word scheduled
+    /// weeks out — and asking it for a far-future date to get one non-due item
+    /// is a sentinel that reads as a bug at every call site. The word detail
+    /// screen needs exactly that: a word's interval and ease *while* it is still
+    /// days away from being asked.
+    ///
+    /// - Parameter wordID: The `VocabWord.id` to look up.
+    /// - Returns: The item, or `nil` when the word has never been scheduled.
+    /// - Complexity: O(n) in the number of review rows.
+    public func reviewItem(forWordID wordID: String) -> ReviewItem? {
+        let row = allRows(ReviewState.self).first {
+            $0.source == ReviewItem.Source.vocabulary.rawValue && $0.refID == wordID
+        }
+        // `createdAt` is not a column; `reviewItem(on:)` infers the rest and uses
+        // this only for the created date, which no caller of this method reads.
+        return row?.reviewItem(on: row.dueDate)
+    }
+
     /// Inserts or updates the persisted schedule of one review item.
     ///
     /// A vocabulary item also refreshes its `VocabState` row, which is what

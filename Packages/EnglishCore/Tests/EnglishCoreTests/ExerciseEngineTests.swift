@@ -244,7 +244,7 @@ func errorCorrection() {
         prompt: "She go to school.", answer: .text(["She goes to school."]), xp: 10
     )
     #expect(engine.check(exercise, response: .text("she goes to school")).isCorrect)
-    let wrong = engine.check(exercise, response: .text("She go to school.")
+    let wrong = engine.check(exercise, response: .text("She go to school."))
     #expect(!wrong.isCorrect)
     #expect(wrong.diffs.contains { $0.expected == "goes" })
 }

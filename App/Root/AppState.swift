@@ -82,16 +82,11 @@ final class AppState {
 
     /// Whether onboarding still needs to run, and the write that ends it.
     ///
-    /// These go through the `ProgressStore` extension the Profile lane added
-    /// (`profile()`, `setProfileName`, `setDailyGoal`) rather than a second
-    /// door onto the same row — two writers for one `UserProfile` is how the
-    /// display name and the goal drift apart.
-    ///
-    /// The one thing that store has no method for is stamping `onboardedAt`,
-    /// because the frozen API has no profile write at all. That is the single
-    /// reason this type exists.
-    // TODO(store): `markOnboarded()` belongs in `EnglishStore` beside
-    // `setNotificationPref`. It is the only reason this type exists.
+    /// Every one of these goes through the `ProgressStore` extension the Profile
+    /// lane added (`profile()`, `setProfileName`, `setDailyGoal`,
+    /// `markOnboarded`) rather than through a second door onto the same row —
+    /// two writers for one `UserProfile` is how the display name and the goal
+    /// drift apart. This type asks the store; it never writes the row itself.
 
     // MARK: - Onboarding
 
@@ -189,9 +184,9 @@ final class AppState {
 
     /// Writes the learner's onboarding answers and stops showing the flow.
     ///
-    /// The name and the goal go through the store's own setters, so there is
-    /// one writer per field. `onboardedAt` is stamped here because the frozen
-    /// store API has no way to write it — see the TODO above.
+    /// All three fields go through the store's own setters, so the Profile lane
+    /// stays the only thing that writes a `UserProfile` — `AppState` asks, it
+    /// does not reach in.
     ///
     /// - Parameters:
     ///   - name: The display name. Ignored when blank, so the Profile screen
@@ -201,7 +196,7 @@ final class AppState {
     func completeOnboarding(name: String, level: Level, dailyMinutes: Int) {
         store.setProfileName(name)
         store.setDailyGoal(AppState.dailyGoalXP(forMinutes: dailyMinutes, level: level))
-        markOnboarded()
+        store.markOnboarded()
         needsOnboarding = false
     }
 
@@ -223,22 +218,6 @@ final class AppState {
         }
         // `setDailyGoal` clamps to 10...500, so no clamp is needed here.
         return max(10, minutes * perMinute)
-    }
-
-    /// Stamps `onboardedAt` on the profile row.
-    ///
-    /// The only persistence this type does itself, and the only reason it
-    /// exists. `ProgressStore` owns the container, so this goes through the
-    /// store's public surface rather than opening a second `ModelContext`.
-    // TODO(store): fold into `ProgressStore` as `markOnboarded()` and delete
-    // this method. The frozen API lists `UserProfile` in the schema but no
-    // accessor for it; the Profile lane's extension is where it belongs.
-    private func markOnboarded() {
-        let row = store.profile()
-        if row.onboardedAt == nil {
-            row.onboardedAt = Date()
-            try? store.container.mainContext.save()
-        }
     }
 }
 

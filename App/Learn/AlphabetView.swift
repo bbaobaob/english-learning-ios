@@ -85,9 +85,9 @@ struct AlphabetView: View {
                 )
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(topic?.title ?? "The English Alphabet")
-                        .font(.title2.bold())
+                        AppFont.display(.title2)
                     Text(topic?.summary ?? "One lesson per letter: the shapes, the sound, and the word it lives in.")
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -105,17 +105,17 @@ struct AlphabetView: View {
         NavigationLink(value: LearnRoute.alphabetListening) {
             HStack(spacing: Spacing.md) {
                 Image(systemName: "ear.badge.waveform")
-                    .font(.title2)
+                    AppFont.body(.title2)
                     .foregroundStyle(.white)
                     .frame(width: 48, height: 48)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.chip))
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text("Listening Mode")
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .foregroundStyle(.primary)
                     Text("Hear it, type it, check it. Replay as often as you like.")
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
@@ -144,10 +144,10 @@ struct AlphabetView: View {
             VStack(spacing: Spacing.xs) {
                 HStack(alignment: .firstTextBaseline) {
                     Text(letter.uppercased())
-                        .font(.largeTitle.weight(.bold))
+                        AppFont.body(.largeTitle, weight: .bold)
                         .foregroundStyle(.brand)
                     Text(letter.lowercased())
-                        .font(.title2.weight(.medium))
+                        AppFont.body(.title2, weight: .medium)
                         .foregroundStyle(.brand.opacity(0.75))
                     Spacer(minLength: 0)
                     if isComplete {
@@ -158,14 +158,14 @@ struct AlphabetView: View {
                 }
 
                 Text(word ?? "Letter \(letter.uppercased())")
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
 
                 if !isComplete {
                     Text(lesson.summary)
-                        .font(.caption2)
+                        AppFont.body(.caption2)
                         .foregroundStyle(.tertiary)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)

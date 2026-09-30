@@ -48,11 +48,11 @@ INIT_RE = re.compile(
 IMPORT_RE = re.compile(r"^\s*(?:@testable\s+)?import\s+(?:struct|class|enum|func|var|let|protocol|typealias|\s)*([A-Za-z_][A-Za-z0-9_.]*)")
 EXPORT_RE = re.compile(r"^\s*@_exported\s+import\s+([A-Za-z_][A-Za-z0-9_.]*)")
 
-# Static/final members of an enum or struct are frequently used in type-ish
-# positions by mistake; record them so we can tell them apart from real types.
+# Members of a local namespace. Split by arity of the token they produce so we
+# can tell a static token bucket (Radius.card) from an instance member.
 MEMBER_RE = re.compile(
-    r"^\s*(?:(?:public|internal|private|fileprivate|static|final|@objc)\s+)*"
-    r"(?:static\s+)?(?:let|var|func|typealias)\s+([A-Z][A-Za-z0-9_]*)"
+    r"^\s*(?:(?:public|internal|private|fileprivate|final|@objc|@\w+)\s+)*"
+    r"(static\s+)?(?:let|var|func|subscript|typealias|case)\s+([A-Za-z_][A-Za-z0-9_]*)"
 )
 
 # Identifiers we must not report: Swift stdlib + the frameworks this app uses.
@@ -124,7 +124,10 @@ CGFloat CGPoint CGSize CGRect CGVector CGLineCap CGPath CGAffineTransform CGGrad
 CGColor CGColorSpace CGContext CGBlendMode CGMutablePath CAGradientLayer CADisplayLink
 CIFilter CIFilterContext NSRange NSAttributedString NSMutableAttributedString NSLayoutAnchor
 NSLayoutDimension NSLayoutConstraint NSDirectionalEdgeInsets NSUserActivity
-LocalizedError CustomNSError SwiftError StringEncoding Unicode
+LocalizedError CustomNSError SwiftError StringEncoding Unicode ColorScheme Gesture
+SIMD1 SIMD2 SIMD3 SIMD4 SIMD SIMD16
+NSObjectProtocol NotificationCenter SIMD StrokeStyle SIMD2 SIMD4 UIActivityViewController
+NSAttributedString UIUserInterfaceSizeClass UITextContentType
 URLSession URLSessionTask URLSessionDataTask URLRequest URLResponse HTTPURLResponse URLCache
 RunLoop Timer Operation OperationQueue DispatchQueue DispatchTime DispatchSemaphore
 ProcessInfo Bundle FileManager JSONSerialization JSONDecoder JSONEncoder JSONSerialization.ReadingOptions
@@ -290,8 +293,10 @@ def main() -> int:
     files = swift_files()
     decls: dict[str, list[tuple[str, str, int, str, bool]]] = defaultdict(list)
     top: dict[str, tuple[str, str, int, str]] = {}
+    KIND_OF: dict[str, str] = {}
     inits: dict[str, list[tuple[str, str, int, str]]] = defaultdict(list)
     members: dict[str, set[str]] = defaultdict(set)
+    static_members: dict[str, set[str]] = defaultdict(set)
     imports: dict[str, set[str]] = defaultdict(set)
     file_lines: dict[str, list[str]] = {}
     file_module: dict[str, str] = {}
@@ -319,6 +324,13 @@ def main() -> int:
                 decls[qualified].append((module, rel, idx, kind, top_level))
                 if kind != "extension":
                     top[qualified] = (module, rel, idx, kind)
+                KIND_OF[qualified] = kind
+                if scope:
+                    # `enum Curve` nested inside `extension Motion` makes
+                    # `Motion.Curve` a valid reference; record it so the
+                    # namespace-member check does not flag it.
+                    members[scope[-1]].add(name)
+                    static_members[scope[-1]].add(name)
                 # An extension continues its own scope; it does not nest.
                 if kind == "extension":
                     if scope:
@@ -338,7 +350,9 @@ def main() -> int:
                     inits[scope[-1]].append((rel, im.group(0).strip(), idx, ""))
                 mm = MEMBER_RE.match(line)
                 if mm:
-                    members[scope[-1]].add(mm.group(1))
+                    members[scope[-1]].add(mm.group(2))
+                    if mm.group(1):
+                        static_members[scope[-1]].add(mm.group(2))
 
             im = EXPORT_RE.match(line) or IMPORT_RE.match(line)
             if im:
@@ -448,14 +462,49 @@ def main() -> int:
         print("  (none)")
     print()
 
-    # 4. member access on a known-type member vs a bare capitalised ident
+    # 4. member access on our OWN namespaces (Radius.sm, Motion.reveal, ...)
+    #    This is where most cross-lane drift lives: a lane assumed a design
+    #    system member that the design-system lane never declared.
     print("-" * 78)
-    print("4. CAPITALISED MEMBERS (may mask a typo'd type as an enum case)")
+    print("4. MEMBER ACCESS ON LOCAL NAMESPACES (Radius./Spacing./Palette./Motion./...)")
     print("-" * 78)
-    for tname in sorted(members):
-        caps = sorted(members[tname])
-        if caps:
-            print(f"  {tname}: {', '.join(caps)}")
+    # A namespace is a type whose members are ALL static — Spacing, Radius,
+    # Palette, Motion, Metric, Format. Types with instance members are not
+    # token buckets and get skipped, otherwise every view would flag.
+    member_of: dict[str, set[str]] = {}
+    for tname in static_members:
+        if "." in tname:
+            continue
+        st = static_members[tname]
+        if len(st) < 2:
+            continue
+        if st >= members[tname]:
+            member_of[tname] = st
+    bad_member: dict[str, list[tuple[str, int, str]]] = defaultdict(list)
+    for rel, lines in file_lines.items():
+        for raw in lines:
+            for m in re.finditer(r"\b([A-Z][A-Za-z0-9_]*)\.([a-zA-Z_][A-Za-z0-9_]*)", raw):
+                owner, mem = m.group(1), m.group(2)
+                if owner not in member_of or owner in KNOWN:
+                    # `KNOWN` owners are stdlib types we merely extend, so their
+                    # other members are not ours to resolve.
+                    continue
+                if mem == "self" or mem in member_of[owner]:
+                    continue
+                if not re.fullmatch(r"[a-z][A-Za-z0-9_]*", mem):
+                    continue
+                bad_member[f"{owner}.{mem}"].append((rel, 0, ""))
+    for key in sorted(bad_member):
+        rows = sorted(set(bad_member[key]))
+        # If some site of the member does resolve, it may be an extension in a
+        # file we cannot see the body of; still worth reporting once.
+        print(f"  !! {key}  — not a declared member of {key.split('.')[0]}")
+        for rel, _, _ in rows[:5]:
+            print(f"       {rel}")
+        if len(rows) > 5:
+            print(f"       ... +{len(rows) - 5} more site(s)")
+    if not bad_member:
+        print("  (none)")
     print()
 
     # 5. initialisers per type
@@ -474,7 +523,7 @@ def main() -> int:
         print("6. ALL DECLARATIONS")
         print("-" * 78)
         for name in sorted(decls):
-            for module, rel, idx, kind in decls[name]:
+            for module, rel, idx, kind, tl in decls[name]:
                 print(f"  {kind:10} {name:32} {module:13} {rel}:{idx}")
 
     print("=" * 78)

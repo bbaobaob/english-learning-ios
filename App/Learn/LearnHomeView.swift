@@ -76,17 +76,17 @@ struct LearnHomeView: View {
                         NavigationLink(value: LearnRoute.methods) {
                             HStack(spacing: Spacing.md) {
                                 Image(systemName: methods.first?.icon ?? "lightbulb")
-                                    .font(.title2)
+                                    AppFont.body(.title2)
                                     .foregroundStyle(.white)
                                     .frame(width: 48, height: 48)
                                     .background(Color.brand, in: .rect(cornerRadius: Radius.chip))
                                     .accessibilityHidden(true)
                                 VStack(alignment: .leading, spacing: Spacing.xs) {
                                     Text("Methods")
-                                        .font(.headline)
+                                        AppFont.body(.headline)
                                         .foregroundStyle(.primary)
                                     Text("Ten ways to study English that actually stick.")
-                                        .font(.subheadline)
+                                        AppFont.body(.subheadline)
                                         .foregroundStyle(.secondary)
                                         .multilineTextAlignment(.leading)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -175,9 +175,9 @@ struct LearnHomeView: View {
                 )
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text("Grammar")
-                        .font(.title2.bold())
+                        AppFont.display(.title2)
                     Text("\(completedGrammarLessons) of \(grammarTopics.flatMap(\.lessons).count) lessons finished")
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                 }
                 Spacer(minLength: 0)
@@ -192,14 +192,14 @@ struct LearnHomeView: View {
             HStack(spacing: Spacing.sm) {
                 NavigationLink(value: LearnRoute.alphabet) {
                     Label("Alphabet", systemImage: "textformat")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                 }
                 .buttonStyle(.bordered)
 
                 if let resume = resumeRoute {
                     NavigationLink(value: resume) {
                         Label("Resume", systemImage: "play.fill")
-                            .font(.subheadline.weight(.semibold))
+                            AppFont.body(.subheadline, weight: .semibold)
                     }
                     .buttonStyle(.borderedProminent)
                 }
@@ -311,14 +311,10 @@ struct LevelFilterBar: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: Spacing.sm) {
                 ForEach(LevelFilter.allCases) { option in
-                    Button {
+                    Chip(text: option.title, isSelected: filter == option) {
                         Haptics.selection()
                         filter = option
-                    } label: {
-                        Chip(text: option.title, isSelected: filter == option)
                     }
-                    .buttonStyle(.plain)
-                    .accessibilityAddTraits(filter == option ? [.isSelected, .isButton] : .isButton)
                 }
             }
             .padding(.vertical, Spacing.xs)

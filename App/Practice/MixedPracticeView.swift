@@ -64,8 +64,6 @@ struct MixedPracticeView: View {
             .padding(.vertical, Spacing.sm)
             .accessibilityElement(children: .combine)
 
-            // TODO(exercise-lane): `ExerciseView(session:)` — the same assumed
-            // initialiser as DictationView and ReviewItemView.
             ExerciseView(session: session)
                 .id(session.index)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

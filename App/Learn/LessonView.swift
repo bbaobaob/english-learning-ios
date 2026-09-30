@@ -83,7 +83,7 @@ struct LessonView: View {
                         // learner has asked for reduced motion.
                         .id(step.id)
                         .transition(reduceMotion ? .identity : .opacity)
-                        .animation(reduceMotion ? nil : .easeOut(duration: 0.18), value: step.id)
+                        .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: step.id)
 
                     if case .summary = step {
                         summaryFooter(lesson: lesson)
@@ -181,7 +181,7 @@ struct LessonView: View {
                     go(to: index - 1, markingVisited: false)
                 } label: {
                     Label("Back", systemImage: "chevron.left")
-                        .font(.headline)
+                        AppFont.body(.headline)
                 }
                 .buttonStyle(.bordered)
             }
@@ -199,7 +199,7 @@ struct LessonView: View {
                         Image(systemName: "chevron.right")
                     }
                 }
-                .font(.headline)
+                AppFont.body(.headline)
                 .frame(maxWidth: 260)
             }
             .buttonStyle(.borderedProminent)
@@ -221,7 +221,7 @@ struct LessonView: View {
                     go(to: index - 1, markingVisited: false)
                 } label: {
                     Label("Back", systemImage: "chevron.left")
-                        .font(.headline)
+                        AppFont.body(.headline)
                 }
                 .buttonStyle(.bordered)
             }
@@ -234,14 +234,14 @@ struct LessonView: View {
                         Text("Continue")
                         Image(systemName: "chevron.right")
                     }
-                    .font(.headline)
+                    AppFont.body(.headline)
                     .frame(maxWidth: 260)
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
             } else {
                 Text("Finish the set to move on.")
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: 260)
             }
@@ -257,11 +257,11 @@ struct LessonView: View {
         VStack(spacing: Spacing.sm) {
             if didComplete {
                 Label("Lesson complete — \(lessonXP) XP banked", systemImage: "checkmark.seal.fill")
-                    .font(.subheadline.weight(.semibold))
+                    AppFont.body(.subheadline, weight: .semibold)
                     .foregroundStyle(.success)
                 if let note = completionNote {
                     Text(note)
-                        .font(.footnote)
+                        AppFont.body(.footnote)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
@@ -272,7 +272,7 @@ struct LessonView: View {
                     finishLesson()
                 } label: {
                     Text(hasVisitedEarlierSteps ? "Finish lesson" : "Visit every step first")
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .frame(maxWidth: 280)
                 }
                 .buttonStyle(.borderedProminent)
@@ -286,7 +286,7 @@ struct LessonView: View {
 
                 if !hasVisitedEarlierSteps {
                     Text("Step \(reached + 1) of \(steps.count) reached.")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -305,14 +305,14 @@ struct LessonView: View {
                 go(to: 0, markingVisited: false)
             } label: {
                 Label("Review from the start", systemImage: "arrow.counterclockwise")
-                    .font(.headline)
+                    AppFont.body(.headline)
             }
             .buttonStyle(.bordered)
 
             if let nextLessonID {
                 NavigationLink(value: LearnRoute.lesson(topicID: topicID, lessonID: nextLessonID)) {
                     Label("Next lesson", systemImage: "arrow.right")
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .frame(maxWidth: 220)
                 }
                 .buttonStyle(.borderedProminent)
@@ -410,8 +410,6 @@ struct LessonView: View {
                 action: nil
             )
         } else {
-            // TODO(design-system-lane): confirm ExerciseView's init labels; the
-            // contract names the view but not its signature.
             ExerciseView(
                 items: items,
                 topicID: topicID,
@@ -454,7 +452,6 @@ struct LessonView: View {
                 onContinue: { go(to: index + 1) }
             )
         } else {
-            // TODO(design-system-lane): confirm ExerciseView's init labels.
             ExerciseView(
                 items: questions,
                 topicID: topicID,
@@ -508,10 +505,10 @@ struct StepRail: View {
                         .accessibilityHidden(true)
                 }
                 Text(label)
-                    .font(.footnote.weight(.semibold))
+                    AppFont.body(.footnote, weight: .semibold)
                 Spacer(minLength: 0)
                 Text("\(visitedCount)/\(steps.count)")
-                    .font(.footnote.monospacedDigit())
+                    AppFont.mono(.footnote)
                     .foregroundStyle(.secondary)
                     .accessibilityLabel("\(visitedCount) of \(steps.count) steps visited")
             }
@@ -562,7 +559,7 @@ struct TheoryStepView: View {
             VStack(alignment: .leading, spacing: Spacing.lg) {
                 if !step.heading.isEmpty {
                     Text(step.heading)
-                        .font(.title2.bold())
+                        AppFont.display(.title2)
                 }
 
                 if !step.body.isEmpty {
@@ -571,7 +568,7 @@ struct TheoryStepView: View {
                         let text = paragraph.trimmingCharacters(in: .whitespacesAndNewlines)
                         if !text.isEmpty {
                             Text(text)
-                                .font(.body)
+                                AppFont.body(.body)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
@@ -580,9 +577,9 @@ struct TheoryStepView: View {
                 ForEach(step.rules) { rule in
                     VStack(alignment: .leading, spacing: Spacing.sm) {
                         Text(rule.title)
-                            .font(.headline)
+                            AppFont.body(.headline)
                         Text(rule.statement)
-                            .font(.subheadline)
+                            AppFont.body(.subheadline)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
 
@@ -646,19 +643,19 @@ struct AudioStepPlayer: View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             if let title {
                 Text(title)
-                    .font(.headline)
+                    AppFont.body(.headline)
             }
 
             if let text = spokenText {
                 Text(text)
-                    .font(.body)
+                    AppFont.body(.body)
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(Spacing.md)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.brand.opacity(0.08), in: .rect(cornerRadius: Radius.card))
             } else {
                 Text(clip.fileName ?? clip.url?.lastPathComponent ?? "Audio clip")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
             }
 
@@ -667,7 +664,7 @@ struct AudioStepPlayer: View {
                     play(absoluteRate: SpeechRate.scaled(speeds[speedIndex]))
                 } label: {
                     Label(hasPlayed ? "Replay" : "Play", systemImage: "play.fill")
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .frame(maxWidth: 220)
                 }
                 .buttonStyle(.borderedProminent)
@@ -678,7 +675,7 @@ struct AudioStepPlayer: View {
                     Haptics.selection()
                 } label: {
                     Label(speedLabel, systemImage: "gauge.with.dots.needle.33percent")
-                        .font(.headline)
+                        AppFont.body(.headline)
                 }
                 .buttonStyle(.bordered)
                 .accessibilityLabel("Playback speed, \(speedLabel)")
@@ -687,7 +684,7 @@ struct AudioStepPlayer: View {
 
             Toggle(isOn: $isLooping) {
                 Label("Loop this clip", systemImage: "repeat")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
             }
             .onChange(of: isLooping) { _, looping in
                 app.audio.setLooping(looping, for: clip)
@@ -698,7 +695,7 @@ struct AudioStepPlayer: View {
                     play(absoluteRate: SpeakGate.slowRate)
                 } label: {
                     Label("Play slowly", systemImage: "tortoise")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                 }
                 .buttonStyle(.bordered)
                 .accessibilityHint("Reads the clip at a slower pace")
@@ -726,7 +723,7 @@ struct FormulaBlock: View {
 
     var body: some View {
         Text(formula)
-            .font(.system(.body, design: .monospaced).weight(.medium))
+            AppFont.mono(.body, weight: .medium)
             .foregroundStyle(.brand)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(Spacing.md)
@@ -780,24 +777,24 @@ struct ExampleRow: View {
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {
                     Text(example.en)
-                        .font(.body.weight(.medium))
+                        AppFont.body(.body, weight: .medium)
                         .foregroundStyle(.primary)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 0)
                     Image(systemName: isSpeaking ? "speaker.wave.3.fill" : "speaker.wave.2")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.brand)
                         .accessibilityHidden(true)
                 }
                 Text(example.vi)
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.tertiary)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
                 if let note = example.note, !note.isEmpty {
                     Text(note)
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
@@ -839,7 +836,7 @@ struct SummaryStepView: View {
                                 .foregroundStyle(.brand)
                                 .accessibilityHidden(true)
                             Text(takeaway)
-                                .font(.body)
+                                AppFont.body(.body)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
@@ -850,7 +847,7 @@ struct SummaryStepView: View {
                 HStack {
                     XPBadge(xp: xp)
                     Text("Banked when you finish.")
-                        .font(.footnote)
+                        AppFont.body(.footnote)
                         .foregroundStyle(.secondary)
                     Spacer(minLength: 0)
                 }
@@ -888,11 +885,11 @@ struct QuizScoreView: View {
                 .padding(.top, Spacing.md)
 
                 Text(isPass ? "Passed" : "Not yet")
-                    .font(.title2.bold())
+                    AppFont.display(.title2)
                     .foregroundStyle(isPass ? .success : .danger)
 
                 Text("Pass mark \(Int(passPercent)) percent. \(result.correctCount) of \(questions.count) correct.")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, Spacing.md)
@@ -903,11 +900,11 @@ struct QuizScoreView: View {
                         ForEach(result.wrongIDs, id: \.self) { id in
                             VStack(alignment: .leading, spacing: Spacing.xs) {
                                 Text(prompt(for: id))
-                                    .font(.subheadline.weight(.semibold))
+                                    AppFont.body(.subheadline, weight: .semibold)
                                     .fixedSize(horizontal: false, vertical: true)
                                 if let explanation = explanations[id], !explanation.isEmpty {
                                     Text(explanation)
-                                        .font(.caption)
+                                        AppFont.body(.caption)
                                         .foregroundStyle(.secondary)
                                         .fixedSize(horizontal: false, vertical: true)
                                 }

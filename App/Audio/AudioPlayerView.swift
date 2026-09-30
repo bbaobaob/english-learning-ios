@@ -115,7 +115,7 @@ struct AudioPlayerView: View {
             } label: {
                 VStack(spacing: 2) {
                     Image(systemName: "tortoise.fill")
-                        .font(.headline)
+                        AppFont.body(.headline)
                     Text("Slow")
                         .font(AppFont.body(.caption2, weight: .semibold))
                 }
@@ -169,7 +169,7 @@ struct AudioPlayerView: View {
             player.togglePlayback()
         } label: {
             Image(systemName: player.isPlaying ? "pause.fill" : "play.fill")
-                .font(.title2.weight(.bold))
+                AppFont.body(.title2, weight: .bold)
                 .foregroundStyle(Palette.surface)
                 .frame(width: 56, height: 56)
                 .background(Circle().fill(Palette.brand))
@@ -364,7 +364,7 @@ struct QuickAudioControls: View {
                 player.replay()
             } label: {
                 Image(systemName: "arrow.counterclockwise")
-                    .font(.headline)
+                    AppFont.body(.headline)
                     .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                     .contentShape(Rectangle())
             }
@@ -378,7 +378,7 @@ struct QuickAudioControls: View {
                 player.togglePlayback()
             } label: {
                 Image(systemName: player.isPlaying ? "pause.fill" : "play.fill")
-                    .font(.title3.weight(.bold))
+                    AppFont.body(.title3, weight: .bold)
                     .foregroundStyle(Palette.surface)
                     .frame(width: 56, height: 56)
                     .background(Circle().fill(Palette.brand))
@@ -392,7 +392,7 @@ struct QuickAudioControls: View {
                 player.slowReplay()
             } label: {
                 Image(systemName: "tortoise.fill")
-                    .font(.headline)
+                    AppFont.body(.headline)
                     .foregroundStyle(Palette.brand)
                     .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                     .contentShape(Rectangle())
@@ -401,6 +401,27 @@ struct QuickAudioControls: View {
             .accessibilityLabel(Text(verbatim: "Play slowly"))
             .accessibilityHint(Text(verbatim: "Repeats the audio at a much lower speed."))
             .accessibilityAddTraits(.isButton)
+
+            // The level meter, once, on the control set used in the tightest spaces.
+            //
+            // No `AudioLevelProviding` is passed, so this takes the
+            // effect's *unmeasured* path: `AVPlayer` publishes no metering, and
+            // a bar that claimed to know the level would be inventing it. What it
+            // shows instead is a very slow travelling breath while audio is
+            // actually playing, which says "something is happening" without
+            // claiming to know how loud. The play button already carries the
+            // state, so this is decorative and hidden.
+            LiveWaveform(
+                levels: nil,
+                isActive: player.isSpeaking,
+                barCount: 16,
+                barWidth: 2,
+                barSpacing: 2,
+                tint: Palette.brand,
+                height: 28
+            )
+            .frame(width: 72)
+            .motionDecoration()
         }
         .onAppear { player.play(clip, autoplay: false) }
     }

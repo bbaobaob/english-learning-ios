@@ -7,7 +7,7 @@ import UIKit
 /// Recording is real: `AVAudioRecorder` in, `AVAudioPlayer` out, the take deleted when
 /// the screen goes away. Permission is asked for on the first record tap and nowhere
 /// else, and a refusal gets an explanation and a link to Settings rather than a dead button.
-struct SpeakingPracticeView: View {
+struct IELTSSpeakingLessonView: View {
     let lesson: IELTSPaperLesson
 
     @Environment(AppState.self) private var appState
@@ -207,7 +207,6 @@ struct SpeakingPracticeView: View {
                     ForEach(lesson.modelAnswers) { sample in
                         VStack(alignment: .leading, spacing: 6) {
                             if let clip = sample.audio {
-                                // TODO(audio-lane): swap for the shared audio player when it lands.
                                 AudioPlayerCard(clip: clip)
                                     .accessibilityLabel("Model answer")
                             }
@@ -288,10 +287,10 @@ struct RecordingBar: View {
                 .disabled(recorder.state == .requestingPermission)
 
                 if recorder.state == .recording {
-                    Text(timeString(recorder.elapsed))
+                    Text(timeString(recorder.elapsedSeconds))
                         .font(.examMono(15, weight: .semibold))
                         .foregroundStyle(Color.examWrong)
-                        .accessibilityLabel("\(recorder.elapsed) seconds elapsed")
+                        .accessibilityLabel("\(recorder.elapsedSeconds) seconds elapsed")
                 } else if recorder.state == .recorded {
                     Text("Take ready")
                         .font(.examMono(13))
@@ -324,10 +323,21 @@ struct RecordingBar: View {
                 }
             }
 
-            WaveformView(levels: recorder.waveform)
-                .frame(height: 26)
-                .opacity(recorder.state == .recording || recorder.state == .playing ? 1 : 0.25)
-                .animation(ExamMotion.tick, value: recorder.waveform.count)
+            // Driven by the recorder's own output meter through
+            // `AudioLevelProviding`, so every bar is genuinely measured rather
+            // than a history array this lane kept itself. The exam palette is
+            // kept by passing the marker red as the tint, which is the one thing
+            // `LiveWaveform` would otherwise take from `Palette`.
+            LiveWaveform(
+                levels: recorder,
+                isActive: recorder.state == .recording || recorder.state == .playing,
+                barCount: 24,
+                barWidth: 2,
+                barSpacing: 1.5,
+                tint: Color.examRed.opacity(0.75),
+                height: 26
+            )
+            .opacity(recorder.state == .recording || recorder.state == .playing ? 1 : 0.25)
 
             if recorder.state == .denied {
                 PermissionDeniedRow(settingsURL: recorder.settingsURL)
@@ -339,7 +349,7 @@ struct RecordingBar: View {
         // A take is over the instant the learner stops, so that is when the seconds
         // are worth banking.
         .onChange(of: recorder.state) { _, state in
-            if state == .recorded { onFinish(recorder.elapsed) }
+            if state == .recorded { onFinish(recorder.elapsedSeconds) }
         }
     }
 
@@ -388,27 +398,6 @@ private struct PermissionDeniedRow: View {
             }
         }
         .padding(.top, 2)
-    }
-}
-
-/// Recent loudness as a small bar row. Decorative for the ear, informative for the eye.
-private struct WaveformView: View {
-    let levels: [Double]
-
-    var body: some View {
-        GeometryReader { proxy in
-            let width = proxy.size.width / CGFloat(max(bars, 1))
-            HStack(alignment: .center, spacing: 1.5) {
-                ForEach(0..<max(levels.count, 8), id: \.self) { index in
-                    let level = index < levels.count ? levels[index] : 0
-                    RoundedRectangle(cornerRadius: 1)
-                        .fill(Color.examRed.opacity(0.75))
-                        .frame(width: max(width - 1.5, 1), height: max(3, proxy.size.height * level))
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-        }
-        .accessibilityHidden(true)
     }
 }
 
@@ -618,7 +607,7 @@ private struct LongTurnControls: View {
             prepareTimer.pause()
             speakTimer.pause()
             recorder.stopRecording()
-            onFinish(speakTimer.total - speakTimer.remaining)
+            onFinish(Int((speakTimer.total - speakTimer.remaining).rounded(.down)))
         }
     }
 }
@@ -776,7 +765,6 @@ private struct SpeakingRubricSheet: View {
                     DisclosureGroup(isExpanded: $showDrills) {
                         VStack(alignment: .leading, spacing: Spacing.md) {
                             ForEach(lesson.items) { item in
-                                // TODO(exercise-lane): confirm the ExerciseView signature for drills.
                                 ExerciseView(exercise: item, topicID: "ielts", onComplete: { _ in })
                             }
                         }

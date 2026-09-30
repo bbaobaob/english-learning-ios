@@ -100,7 +100,7 @@ struct TopicDetailView: View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .top, spacing: Spacing.md) {
                 Image(systemName: topic.icon)
-                    .font(.title)
+                    AppFont.body(.title)
                     .foregroundStyle(.white)
                     .frame(width: 56, height: 56)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.card))
@@ -108,15 +108,15 @@ struct TopicDetailView: View {
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(topic.title)
-                        .font(.title2.bold())
+                        AppFont.display(.title2)
                     Text(topic.summary)
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                     HStack(spacing: Spacing.sm) {
                         LevelPill(text: topic.level.shortTitle)
                         Label("\(topic.estimatedMinutes) min", systemImage: "clock")
-                            .font(.caption)
+                            AppFont.body(.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -182,16 +182,16 @@ struct TopicDetailView: View {
             )
             HStack(spacing: Spacing.md) {
                 Image(systemName: isWeak ? "exclamationmark.triangle.fill" : "arrow.triangle.2.circlepath")
-                    .font(.title2)
+                    AppFont.body(.title2)
                     .foregroundStyle(isWeak ? .warning : .brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(isWeak
                         ? "Accuracy here is \(Int((weak.accuracy * 100).rounded())) percent."
                         : "You are getting these right most of the time.")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                     Text("Drill the questions you missed. Nothing is counted twice — you only gain the XP once.")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -226,7 +226,7 @@ struct TopicDetailView: View {
             VStack(alignment: .leading, spacing: Spacing.sm) {
                 HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {
                     Text(lesson.title)
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .foregroundStyle(.primary)
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 0)
@@ -239,7 +239,7 @@ struct TopicDetailView: View {
                 }
 
                 Text(lesson.summary)
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
 
@@ -251,7 +251,7 @@ struct TopicDetailView: View {
                     HStack(spacing: Spacing.xs) {
                         ForEach(stepTypeOrder(lesson), id: \.self) { type in
                             Image(systemName: StepMeta.icon(type))
-                                .font(.caption)
+                                AppFont.body(.caption)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -262,11 +262,11 @@ struct TopicDetailView: View {
 
                     if state.isStarted {
                         Label("Resume \(state.stepIndex + 1)/\(state.stepCount)", systemImage: "book")
-                            .font(.caption.weight(.semibold))
+                            AppFont.body(.caption, weight: .semibold)
                             .foregroundStyle(.brand)
                     } else if !state.isComplete {
                         Text("\(state.stepCount) steps")
-                            .font(.caption)
+                            AppFont.body(.caption)
                             .foregroundStyle(.tertiary)
                     }
                 }

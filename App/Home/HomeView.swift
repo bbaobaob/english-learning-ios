@@ -60,14 +60,17 @@ struct HomeView: View {
             .padding(.top, Spacing.sm)
             .padding(.bottom, Spacing.xl)
         }
-        .background(
-            LinearGradient(
-                colors: [Color.brandSoft.opacity(0.55), Color.clear],
-                startPoint: .top,
-                endPoint: .center
-            )
-            .ignoresSafeArea()
-        )
+        // The drifting wash this screen used to draw as a static `LinearGradient`.
+        // `AmbientBackdrop` is built for exactly this surface — a very large,
+        // very low-frequency one that must be unnoticeable while present and
+        // that sits behind the content with no hit testing. Under Reduce Motion
+        // it renders as a static gradient, so the screen looks the same, just
+        // still. Under Reduce Transparency it drops the translucency rather than
+        // faking it with a more opaque blob.
+        .background {
+            AmbientBackdrop(style: .hero, intensity: 0.7)
+                .ignoresSafeArea()
+        }
         .navigationTitle("Today")
         .navigationBarTitleDisplayMode(.inline)
         .task { reload() }

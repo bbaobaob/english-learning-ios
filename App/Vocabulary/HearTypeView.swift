@@ -123,12 +123,12 @@ struct HearTypeView: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
                 Text(session.positionLabel)
-                    .font(.footnote.weight(.semibold))
+                    AppFont.body(.footnote, weight: .semibold)
                     .foregroundStyle(.secondary)
                 Spacer()
                 if session.replays > 0 {
                     Label("\(session.replays) listen\(session.replays == 1 ? "" : "s")", systemImage: "ear")
-                        .font(.caption)
+                        AppFont.body(.caption)
                         .foregroundStyle(.tertiary)
                 }
             }
@@ -163,7 +163,7 @@ struct HearTypeView: View {
                     play(session)
                 } label: {
                     Label("Play", systemImage: "speaker.wave.2.fill")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.sm)
                 }
@@ -174,7 +174,7 @@ struct HearTypeView: View {
                     playSlow(session)
                 } label: {
                     Label("Slow", systemImage: "tortoise.fill")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.sm)
                 }
@@ -192,7 +192,7 @@ struct HearTypeView: View {
                     session.usesExample ? "Playing the example sentence" : "Playing the word",
                     systemImage: "text.bubble"
                 )
-                .font(.footnote)
+                AppFont.body(.footnote)
             }
             .buttonStyle(.plain)
             .foregroundStyle(Color.brand)
@@ -235,7 +235,7 @@ private struct TypingPanel: View {
             Text(session.usesExample
                 ? "Type the sentence you just heard."
                 : "Capital letters and trailing full stops are ignored.")
-                .font(.caption2)
+                AppFont.body(.caption2)
                 .foregroundStyle(.tertiary)
                 .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -269,13 +269,13 @@ private struct TypingPanel: View {
                 .accessibilityLabel(card.word.word)
 
             Text(card.word.meaning)
-                .font(.subheadline)
+                AppFont.body(.subheadline)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
 
             if let example = card.word.example {
                 Text(example)
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -306,14 +306,14 @@ private struct TypingPanel: View {
                     .font(AppFont.display(.title3, weight: .bold))
                 Spacer()
                 Text(Text(result.accuracy, format: .percent.precision(.fractionLength(0))))
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                     .monospacedDigit()
             }
 
             if let summary = result.firstErrorSummary {
                 Text(summary)
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -324,7 +324,7 @@ private struct TypingPanel: View {
 
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 Text(session.usesExample ? "Correct sentence" : "Correct spelling")
-                    .font(.caption.weight(.semibold))
+                    AppFont.body(.caption, weight: .semibold)
                     .foregroundStyle(.tertiary)
                 HStack(alignment: .top, spacing: Spacing.sm) {
                     Text(result.expected)
@@ -332,7 +332,7 @@ private struct TypingPanel: View {
                         .textSelection(.enabled)
                     VocabSpeakButton(
                         text: result.expected,
-                        rate: 0.4,
+                        rate: SpeechRate.drill,
                         accessibilityLabel: "Hear the correct answer",
                         size: 32
                     )
@@ -342,7 +342,7 @@ private struct TypingPanel: View {
             // In example mode the correct sentence is already shown above.
             if let example = card.word.example, !session.usesExample {
                 Text(example)
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -362,7 +362,7 @@ private struct TypingPanel: View {
                     Haptics.warning()
                 } label: {
                     Label("Try again", systemImage: "arrow.counterclockwise")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.sm)
                 }
@@ -374,7 +374,7 @@ private struct TypingPanel: View {
                     speakCurrent(session)
                 } label: {
                     Label("Skip", systemImage: "forward.end.fill")
-                        .font(.subheadline.weight(.semibold))
+                        AppFont.body(.subheadline, weight: .semibold)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.sm)
                 }
@@ -397,12 +397,12 @@ private struct TypingPanel: View {
 
         VStack(alignment: .leading, spacing: Spacing.xs) {
             Text("Your answer")
-                .font(.caption.weight(.semibold))
+                AppFont.body(.caption, weight: .semibold)
                 .foregroundStyle(.tertiary)
             diffRow(written, result: result)
 
             Text("Correct")
-                .font(.caption.weight(.semibold))
+                AppFont.body(.caption, weight: .semibold)
                 .foregroundStyle(.tertiary)
             expectedRow(expected, result: result)
         }
@@ -468,7 +468,7 @@ private struct TypingPanel: View {
                     Text("Drill complete")
                         .font(AppFont.display(.largeTitle, weight: .bold))
                     Text("\(session.firstTryCount) of \(session.total) words spelled correctly first try.")
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
@@ -492,10 +492,10 @@ private struct TypingPanel: View {
                             .font(AppFont.display(.title, weight: .bold))
                             .monospacedDigit()
                         Text("\(session.shaky.count) to keep practising")
-                            .font(.subheadline)
+                            AppFont.body(.subheadline)
                             .foregroundStyle(.secondary)
                         Text("Listening costs nothing here — replay as many times as you need.")
-                            .font(.caption)
+                            AppFont.body(.caption)
                             .foregroundStyle(.tertiary)
                             .fixedSize(horizontal: false, vertical: true)
                     }
@@ -522,13 +522,13 @@ private struct TypingPanel: View {
                                                     .font(AppFont.display(.body, weight: .semibold))
                                                     .foregroundStyle(.primary)
                                                 Text(word.meaning)
-                                                    .font(.caption)
+                                                    AppFont.body(.caption)
                                                     .foregroundStyle(.secondary)
                                                     .lineLimit(1)
                                             }
                                             Spacer(minLength: Spacing.sm)
                                             Image(systemName: "chevron.right")
-                                                .font(.caption)
+                                                AppFont.body(.caption)
                                                 .foregroundStyle(.tertiary)
                                         }
                                         .contentShape(.rect)
@@ -574,7 +574,7 @@ private struct TypingPanel: View {
         guard let card = session.current else { return }
         let text = session.spokenText ?? card.word.word
         Haptics.selection()
-        appState.speech.speak(text, rate: 0.3, completion: nil)
+        appState.speech.speak(text, rate: SpeechRate.drill, completion: nil)
     }
 
     /// Speaks whatever the session is currently set to: the word, or the example

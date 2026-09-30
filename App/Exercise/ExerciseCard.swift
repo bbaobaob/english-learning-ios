@@ -70,13 +70,20 @@ struct ExerciseCard: View {
                 }
                 submitButton
             } else if let result {
-                ResultPanel(
-                    result: result,
-                    exercise: exercise,
-                    userText: isTextual ? text : nil,
-                    onContinue: onContinue
-                )
-                .transition(.opacity.combined(with: .move(edge: .bottom)))
+                // The shake is wrapped here rather than inside `ResultPanel`
+                // because its own docs say to treat the answer control, and the
+                // panel is what replaces that control when a result lands. Both
+                // of this lane's `ResultPanel` call sites get it this way, so
+                // every exercise kind shakes the same way.
+                ErrorShake(isWrong: !result.isCorrect) {
+                    ResultPanel(
+                        result: result,
+                        exercise: exercise,
+                        userText: isTextual ? text : nil,
+                        onContinue: onContinue
+                    )
+                    .transition(.opacity.combined(with: .move(edge: .bottom)))
+                }
             }
         }
         .cardStyle()

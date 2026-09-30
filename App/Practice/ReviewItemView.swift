@@ -42,8 +42,6 @@ struct ReviewItemView: View {
             VStack(spacing: 0) {
                 headerStrip
 
-                // TODO(exercise-lane): `ExerciseView(session:)` — same assumed
-                // initialiser as DictationView.
                 if let session {
                     if session.isFinished {
                         gradedResult(session)
@@ -84,7 +82,7 @@ struct ReviewItemView: View {
             VStack(alignment: .leading, spacing: Spacing.lg) {
                 HStack(spacing: Spacing.md) {
                     Image(systemName: passed ? "checkmark.circle.fill" : "arrow.clockwise.circle.fill")
-                        .font(.title)
+                        AppFont.body(.title)
                         .foregroundStyle(passed ? Color.success : Color.warning)
                         .accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 2) {
@@ -226,7 +224,7 @@ struct ReviewItemView: View {
                             title: "Hear the title",
                             symbol: "speaker.wave.2.fill",
                             action: {
-                                appState.speech.speak(lesson.title, rate: 0.45) {}
+                                appState.speech.speak(lesson.title, rate: SpeechRate.example) {}
                                 Haptics.selection()
                             }
                         )

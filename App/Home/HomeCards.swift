@@ -35,7 +35,7 @@ struct HomeSectionHeader: View {
         .liquidGlass(cornerRadius: Radius.pill)
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(.isHeader)
-        .animation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85), value: title)
+        .animation(Motion.spring(response: 0.4, dampingFraction: 0.85), value: title)
     }
 }
 
@@ -98,7 +98,7 @@ struct ContinueLearningCard: View {
                 appeared = true
                 return
             }
-            withAnimation(.spring(response: 0.55, dampingFraction: 0.82)) { appeared = true }
+            withAnimation(Motion.emphatic) { appeared = true }
         }
     }
 
@@ -195,7 +195,12 @@ struct DailyGoalCard: View {
 
     var body: some View {
         HStack(spacing: Spacing.lg) {
-            ProgressRing(
+            // `RingSweep` rather than `ProgressRing`: this ring is watched while
+            // the learner reads the card beside it, and a sweep from the
+            // previous value makes a 12%→48% change read as movement instead of
+            // as a redraw. Under Reduce Motion it draws the final arc at once —
+            // still a percentage, still labelled.
+            RingSweep(
                 progress: progress,
                 lineWidth: 10,
                 tint: model.goalMet ? Color.success : Color.brand,
@@ -240,8 +245,9 @@ struct DailyGoalCard: View {
             Spacer(minLength: 0)
         }
         .padding(Spacing.lg)
+        .padding(.bottom, Spacing.sm)
         .cardStyle()
-        .animation(reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.8), value: progress)
+        .safeAreaInset(edge: .bottom, spacing: 0) { goalBar }
     }
 
     /// No estimate when there is no rate to estimate from. Saying "5 min left"
@@ -253,6 +259,26 @@ struct DailyGoalCard: View {
                 : "Rate unknown for today."
         }
         return minutes == 1 ? "About a minute at today's pace." : "About \(minutes) min at today's pace."
+    }
+
+    /// The bar, placed across the foot of the card.
+    ///
+    /// The ring says *how far*; the bar says *where the edge is* without reading
+    /// a label, which is the thing a learner actually glances at. Its spring has
+    /// `dampingFraction: 1.0` and so cannot overshoot past 100% — a progress bar
+    /// that overshoots is lying about a total.
+    private var goalBar: some View {
+        XPProgressBar(
+            progress: progress,
+            tint: model.goalMet ? Color.success : Palette.xp,
+            height: 6,
+            isGoalMet: model.goalMet
+        )
+        .padding(.horizontal, Spacing.lg)
+        .padding(.bottom, Spacing.sm)
+        // The ring already carries this as its label and value; a second
+        // announcement of the same two numbers is noise.
+        .accessibilityHidden(true)
     }
 }
 

@@ -393,8 +393,6 @@ struct WritingTaskView: View {
                         .padding(.bottom, 2)
 
                     ForEach(lesson.helperExercises) { exercise in
-                        // TODO(exercise-lane): confirm the ExerciseView signature for
-                        // a non-session drill; it must not touch the learner's essay.
                         ExerciseView(
                             exercise: exercise,
                             topicID: "ielts",
@@ -491,7 +489,6 @@ struct WritingTaskView: View {
                         .font(.examBody(14, weight: .medium))
                         .foregroundStyle(Color.examInk)
                         .fixedSize(horizontal: false, vertical: true)
-                    // TODO(audio-lane): swap for the shared audio player when it lands.
                     if let clip = sample.audio {
                         AudioPlayerCard(clip: clip)
                             .accessibilityLabel("Sample answer audio")

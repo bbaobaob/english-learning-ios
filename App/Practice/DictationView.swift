@@ -202,7 +202,6 @@ struct DictationView: View {
             // The whole per-item loop — play, replay, slow replay, type, check, reveal,
             // wrong-word highlight — belongs to App/Exercise. This screen only supplies
             // the session and the summary around it.
-            // TODO(exercise-lane): `ExerciseView(session:)` is the assumed initialiser.
             // If the exercise lane takes the session plus a topic id, pass `topicID` too.
             ExerciseView(session: session)
                 .id(session.index)
@@ -467,7 +466,7 @@ struct DiffChips: View {
             ForEach(diffs) { diff in
                 HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {
                     Image(systemName: symbol(for: diff))
-                        .font(.caption.weight(.bold))
+                        AppFont.body(.caption, weight: .bold)
                         .foregroundStyle(color(for: diff))
                         .frame(width: 16)
                         .accessibilityHidden(true)
@@ -478,7 +477,7 @@ struct DiffChips: View {
                         .foregroundStyle(diff.user == nil ? Color.secondary : Color.primary)
 
                     Image(systemName: "arrow.right")
-                        .font(.caption2.weight(.bold))
+                        AppFont.body(.caption2, weight: .bold)
                         .foregroundStyle(.tertiary)
                         .accessibilityHidden(true)
 

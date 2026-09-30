@@ -100,7 +100,9 @@ func glassSurface<Content: View>(
     @ViewBuilder content: () -> Content
 ) -> some View {
     if #available(iOS 26, *) {
-        GlassEffectContainer(spacing: Radius.sm) {
+        // `spacing:` is the gap *between* the container's glass elements, not a
+        // corner radius — so it comes from the spacing scale.
+        GlassEffectContainer(spacing: Spacing.sm) {
             content()
                 .glassEffect(.regular, in: .rect(cornerRadius: Radius.card))
         }

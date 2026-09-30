@@ -87,7 +87,7 @@ struct MethodsView: View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .top, spacing: Spacing.md) {
                 Image(systemName: topic?.icon ?? "lightbulb")
-                    .font(.title)
+                    AppFont.body(.title)
                     .foregroundStyle(.white)
                     .frame(width: 56, height: 56)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.card))
@@ -95,9 +95,9 @@ struct MethodsView: View {
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(topic?.title ?? "English Study Methods")
-                        .font(.title2.bold())
+                        AppFont.display(.title2)
                     Text(topic?.summary ?? "Ten ways to study that actually stick.")
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -135,22 +135,22 @@ struct MethodsView: View {
         return NavigationLink(value: LearnRoute.lesson(topicID: "methods", lessonID: lesson.id)) {
             HStack(alignment: .top, spacing: Spacing.md) {
                 Image(systemName: isComplete ? "checkmark.circle.fill" : StepMeta.icon(lesson.steps.first?.type ?? .theory))
-                    .font(.title3)
+                    AppFont.body(.title3)
                     .foregroundStyle(isComplete ? .success : .brand)
                     .frame(width: 28)
                     .accessibilityHidden(true)
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(lesson.title)
-                        .font(.headline)
+                        AppFont.body(.headline)
                         .foregroundStyle(.primary)
                     Text(lesson.summary)
-                        .font(.subheadline)
+                        AppFont.body(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                     if isStarted {
                         Label("Resume", systemImage: "book")
-                            .font(.caption.weight(.semibold))
+                            AppFont.body(.caption, weight: .semibold)
                             .foregroundStyle(.brand)
                     }
                 }

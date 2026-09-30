@@ -25,8 +25,12 @@ struct WordDetailView: View {
     private var state: VocabState? { appState.store.vocabularyStates()[wordID] }
 
     /// The persisted schedule, due or not.
+    ///
+    /// One row, read directly. This used to load the whole vocabulary schedule
+    /// and index into it, which also meant asking for a *far-future* date to get
+    /// a word that is weeks from being due — see ``VocabSchedule/all(from:)``.
     private var scheduleItem: ReviewItem? {
-        VocabSchedule.all(from: appState.store)[wordID]
+        appState.store.reviewItem(forWordID: wordID)
     }
 
     /// Word ids in the deck for every synonym and antonym that actually exists.
@@ -158,12 +162,12 @@ struct WordDetailView: View {
             HStack(spacing: Spacing.sm) {
                 VocabSpeakButton(
                     text: word.word,
-                    rate: 0.3,
+                    rate: SpeechRate.example,
                     accessibilityLabel: "Hear \(word.word) slowly",
                     size: 34
                 )
                 Text("Slow")
-                    .font(.footnote)
+                    AppFont.body(.footnote)
                     .foregroundStyle(.secondary)
                 Spacer()
                 VocabMasteryBar(mastery: state?.mastery ?? 0)
@@ -198,7 +202,7 @@ struct WordDetailView: View {
                 // for the same action.
                 Button {
                     Haptics.selection()
-                    appState.speech.speak(example, rate: 0.45, completion: nil)
+                    appState.speech.speak(example, rate: SpeechRate.example, completion: nil)
                 } label: {
                     HStack(alignment: .top, spacing: Spacing.md) {
                         VStack(alignment: .leading, spacing: Spacing.xs) {
@@ -208,7 +212,7 @@ struct WordDetailView: View {
                                 .multilineTextAlignment(.leading)
                             if let vi = word.exampleVI {
                                 Text(vi)
-                                    .font(.subheadline)
+                                    AppFont.body(.subheadline)
                                     .foregroundStyle(.secondary)
                                     .multilineTextAlignment(.leading)
                             }
@@ -227,24 +231,24 @@ struct WordDetailView: View {
                 HStack(spacing: Spacing.sm) {
                     VocabSpeakButton(
                         text: example,
-                        rate: 0.3,
+                        rate: SpeechRate.example,
                         accessibilityLabel: "Hear the example slowly",
                         size: 34
                     )
                     Text("Slow")
-                        .font(.footnote)
+                        AppFont.body(.footnote)
                         .foregroundStyle(.secondary)
                     Spacer()
                     VocabSpeakButton(
                         text: word.word,
-                        rate: 0.5,
+                        rate: SpeechRate.normalSpeed,
                         accessibilityLabel: "Hear the word again",
                         size: 34
                     )
                 }
             } else {
                 Text("This word has no example sentence in the deck yet.")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
             }
         }
@@ -275,14 +279,14 @@ struct WordDetailView: View {
             SectionHeader(title: "Collocations", subtitle: "How the word is actually used", actionTitle: nil, action: nil)
             if word.collocations.isEmpty {
                 Text("No collocations recorded for this word.")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
             } else {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: Spacing.sm)], alignment: .leading, spacing: Spacing.sm) {
                     ForEach(word.collocations, id: \.self) { phrase in
                         VocabRelatedChip(text: phrase, isCurrent: false) {
                             Haptics.selection()
-                            appState.speech.speak(phrase, rate: 0.45, completion: nil)
+                            appState.speech.speak(phrase, rate: SpeechRate.example, completion: nil)
                         }
                         .accessibilityHint("Speaks the phrase")
                     }
@@ -316,7 +320,7 @@ struct WordDetailView: View {
                         Spacer(minLength: Spacing.xs)
                         VocabSpeakButton(
                             text: row.form,
-                            rate: 0.45,
+                            rate: SpeechRate.example,
                             accessibilityLabel: "Hear the \(row.part) \(row.form)",
                             size: 32
                         )
@@ -347,7 +351,7 @@ struct WordDetailView: View {
         } label: {
             Image(systemName: isAdded ? "checkmark.circle.fill" : "plus.circle")
                 .foregroundStyle(isAdded ? Color.success : Color.brand)
-                .font(.title3)
+                AppFont.body(.title3)
                 .frame(width: 44, height: 44)
                 .contentShape(.rect)
         }
@@ -393,7 +397,7 @@ struct WordDetailView: View {
                 }
             } else {
                 Text("You have not studied this word yet. Rate it once and it joins your spaced-repetition schedule.")
-                    .font(.subheadline)
+                    AppFont.body(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -411,14 +415,14 @@ struct WordDetailView: View {
         HStack(spacing: Spacing.md) {
             Image(systemName: symbol)
                 .foregroundStyle(tint)
-                .font(.subheadline)
+                AppFont.body(.subheadline)
                 .frame(width: 24)
             Text(label)
-                .font(.subheadline)
+                AppFont.body(.subheadline)
                 .foregroundStyle(.secondary)
             Spacer(minLength: Spacing.sm)
             Text(value)
-                .font(.subheadline.weight(.semibold))
+                AppFont.body(.subheadline, weight: .semibold)
                 .foregroundStyle(.primary)
                 .multilineTextAlignment(.trailing)
         }
@@ -464,7 +468,7 @@ struct WordDetailView: View {
                 isFavourite ? "Remove from favourites" : "Add to favourites",
                 systemImage: isFavourite ? "star.fill" : "star"
             )
-            .font(.subheadline.weight(.semibold))
+            AppFont.body(.subheadline, weight: .semibold)
             .foregroundStyle(isFavourite ? Color.xp : .secondary)
             .frame(maxWidth: .infinity)
             .padding(.vertical, Spacing.sm)

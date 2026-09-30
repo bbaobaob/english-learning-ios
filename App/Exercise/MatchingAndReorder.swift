@@ -308,7 +308,7 @@ struct ReorderWordsView: View {
             move(index: index, to: target)
         } label: {
             Image(systemName: symbol)
-                .font(.caption.weight(.bold))
+                AppFont.body(.caption, weight: .bold)
                 .foregroundStyle(isEnabled ? Palette.brand : Palette.textTertiary.opacity(0.4))
                 .frame(width: 32, height: 32)
                 .contentShape(Rectangle())

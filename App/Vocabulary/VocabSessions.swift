@@ -108,10 +108,47 @@ final class FlashcardSession {
     var scheduledLater: [FlashcardOutcome] { outcomes.filter(\.leavesToday) }
 
     /// Records the finished session against the streak and XP totals.
+    ///
+    /// The XP comes from ``XPEngine``, the same engine every graded exercise
+    /// session goes through. This used to award `total * 5` — a flat rate that
+    /// ignored *how* the cards were graded, so a session the learner found hard
+    /// paid the same as one they found easy, and the app had a second XP source
+    /// the engine knew nothing about. Rating a card `again` pays nothing, which
+    /// is the point: the learner is being asked to review the words they missed.
     func recordSession() {
         let minutes = max(1, Int((Double(total) * Double(VocabPace.secondsPerWord) / 60).rounded(.up)))
-        store.registerStudy(minutes: minutes, xp: total * 5, kind: .review)
+
+        let graded = outcomes.count
+        guard graded > 0 else {
+            // Nothing was rated, so nothing is owed. Registering the time still
+            // keeps the streak honest: the learner was here.
+            store.registerStudy(minutes: minutes, xp: 0, kind: .review)
+            return
+        }
+
+        let engine = XPEngine()
+        let streakDays = store.streak().current
+        // `leavesToday` is the scheduler's own verdict: a card rated `again`
+        // comes back today and is not a success.
+        let correct = outcomes.filter(\.leavesToday).count
+        let accuracy = Double(correct) / Double(graded)
+        let xp = outcomes.reduce(0) { sum, outcome in
+            sum + engine.award(
+                base: outcome.leavesToday ? Self.xpPerCard : 0,
+                streakDays: streakDays,
+                accuracy: accuracy
+            )
+        }
+
+        store.registerStudy(minutes: minutes, xp: xp, kind: .review)
     }
+
+    /// XP for one correctly rated card.
+    ///
+    /// Matches the per-exercise award in the content model, so a vocabulary
+    /// card and a graded exercise are worth the same thing and a learner's
+    /// daily total means one number.
+    private static let xpPerCard = 10
 }
 
 // MARK: - Hear → Type

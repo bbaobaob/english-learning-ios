@@ -237,7 +237,7 @@ struct PracticeHomeView: View {
             .buttonStyle(.plain)
 
             NavigationLink {
-                SpeakingPracticeView(level: .beginner)
+                SpeakingDrillView(level: .beginner)
             } label: {
                 utilityRow(
                     symbol: "mic",
@@ -267,7 +267,7 @@ struct PracticeHomeView: View {
                     VStack(alignment: .leading, spacing: Spacing.md) {
                         HStack(spacing: Spacing.md) {
                             Image(systemName: recommendation.skill.fallbackSymbol)
-                                .font(.title2)
+                                AppFont.body(.title2)
                                 .foregroundStyle(.danger)
                                 .frame(width: 34)
                                 .accessibilityHidden(true)
@@ -315,7 +315,7 @@ struct PracticeHomeView: View {
     ) -> some View {
         HStack(spacing: Spacing.md) {
             Image(systemName: symbol)
-                .font(.title3)
+                AppFont.body(.title3)
                 .foregroundStyle(tint)
                 .frame(width: 30)
                 .accessibilityHidden(true)

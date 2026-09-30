@@ -16,7 +16,7 @@ struct StatCard: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack(spacing: Spacing.sm) {
                 Image(systemName: symbol)
-                    .font(.footnote.weight(.bold))
+                    AppFont.body(.footnote, weight: .bold)
                     .foregroundStyle(tint)
                     .accessibilityHidden(true)
                 Text(title)
@@ -111,14 +111,11 @@ struct StreakFlame: View {
 
     var body: some View {
         HStack(spacing: Spacing.xs) {
-            Image(systemName: "flame.fill")
-                .font(.subheadline.weight(.bold))
-                .foregroundStyle(isActive ? Palette.streak : Palette.textTertiary)
-                .symbolEffect(
-                    .bounce,
-                    options: .nonRepeating,
-                    value: isActive ? days : -1
-                )
+            // The flame's behaviour *is* the streak's information: `StreakEmber`
+            // is barely alive below three days and settles above it, so a
+            // one-day streak stops looking like a thirty-day one. It is
+            // decorative, so it is hidden — the label below carries the meaning.
+            StreakEmber(days: isActive ? days : 0, isActive: isActive, size: 20)
                 .accessibilityHidden(true)
             Text("\(days)")
                 .font(AppFont.mono(.subheadline, weight: .bold))
@@ -143,11 +140,19 @@ struct XPBadge: View {
     var body: some View {
         HStack(spacing: Spacing.xs) {
             Image(systemName: "bolt.fill")
-                .font(.caption.weight(.bold))
+                AppFont.body(.caption, weight: .bold)
                 .foregroundStyle(Palette.xp)
                 .accessibilityHidden(true)
-            Text(Format.count(xp))
-                .font(AppFont.mono(.caption, weight: .bold))
+            // Rolls to the new total instead of swapping it. A badge that jumps from
+            // 1,200 to 1,250 reads as an edit; one that rolls reads as progress,
+            // which is the whole reason the learner looks at it.
+            CountUpNumber(
+                value: xp,
+                textStyle: .caption,
+                weight: .bold,
+                usesGrouping: true,
+                accessibilityLabel: "\(Format.count(xp)) experience points"
+            )
                 .foregroundStyle(Palette.textPrimary)
         }
         .padding(.horizontal, Spacing.sm)
@@ -179,28 +184,85 @@ struct LevelPill: View {
 }
 
 /// A selectable filter chip.
+///
+/// Two ways to use it:
+///
+/// * `Chip(text:isSelected:action:)` — tappable. The chip owns the button, so it
+///   gets the tap highlight, the accessibility traits, and the minimum tap
+///   target without the caller wrapping it.
+/// * `Chip(text:isSelected:)` — presentational, for a chip that sits inside a
+///   row that is *already* one button. Wrapping a non-action chip in a `Button`
+///   nests a button in a button, which VoiceOver reads as two stops for one row.
 struct Chip: View {
     let text: String
     let isSelected: Bool
+    /// Optional leading symbol name, set only by the action-carrying initialiser.
+    private let symbol: String?
+    /// `nil` when the chip is presentational rather than tappable.
+    private let action: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
+    /// A chip the learner can tap.
+    init(text: String, isSelected: Bool, action: @escaping () -> Void) {
+        self.text = text
+        self.isSelected = isSelected
+        self.symbol = nil
+        self.action = action
+    }
+
+    /// A chip the learner can tap, with a leading symbol.
+    ///
+    /// The symbol is `accessibilityHidden`, so the chip is still announced as
+    /// just its text — a filter chip that says "All topics" must not be read
+    /// out as "line-through-three-dots-lines, All topics".
+    init(text: String, symbol: String?, isSelected: Bool, action: @escaping () -> Void) {
+        self.text = text
+        self.isSelected = isSelected
+        self.symbol = symbol
+        self.action = action
+    }
+
+    /// A chip that only *looks* interactive. Use inside an existing button.
+    init(text: String, isSelected: Bool) {
+        self.text = text
+        self.isSelected = isSelected
+        self.symbol = nil
+        self.action = nil
+    }
+
     var body: some View {
-        Text(text)
-            .font(AppFont.body(.subheadline, weight: isSelected ? .semibold : .regular))
-            .foregroundStyle(isSelected ? Palette.surface : Palette.textSecondary)
-            .padding(.horizontal, Spacing.md)
-            .frame(minHeight: Metric.controlHeight)
-            .background(
-                Capsule().fill(isSelected ? Palette.brand : Palette.field)
+        if let action {
+            Button(action: action) { label }
+                .buttonStyle(.plain)
+        } else {
+            label
+        }
+    }
+
+    private var label: some View {
+        HStack(spacing: 4) {
+            if let symbol {
+                Image(systemName: symbol)
+                    AppFont.body(.caption2)
+                    .accessibilityHidden(true)
+            }
+            Text(text)
+        }
+        .font(AppFont.body(.subheadline, weight: isSelected ? .semibold : .regular))
+        .foregroundStyle(isSelected ? Palette.surface : Palette.textSecondary)
+        .padding(.horizontal, Spacing.md)
+        .frame(minHeight: Metric.controlHeight)
+        .background(
+            Capsule().fill(isSelected ? Palette.brand : Palette.field)
+        )
+        .overlay(
+            Capsule().strokeBorder(
+                isSelected ? Color.clear : Palette.separator,
+                lineWidth: 1
             )
-            .overlay(
-                Capsule().strokeBorder(
-                    isSelected ? Color.clear : Palette.separator,
-                    lineWidth: 1
-                )
-            )
-            .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: isSelected)
-            .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+        )
+        .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: isSelected)
+        .accessibilityAddTraits(isSelected ? [.isSelected] : [])
     }
 }

@@ -10,6 +10,16 @@ import EnglishCore
 struct RootView: View {
     @Environment(AppState.self) private var app
 
+    /// The learner's appearance choice, read here rather than applied only on the
+    /// Profile screen.
+    ///
+    /// `ProfileView` wrote this key; Root reads the same one, so the override
+    /// covers onboarding and every tab instead of only the screen that sets it.
+    /// `@AppStorage` is the right tool for both ends because it is one key in one
+    /// `UserDefaults` — Root does not need to observe the Profile view to see a
+    /// change, and a second copy of the preference could not drift from the first.
+    @AppStorage("appearance") private var appearance = Appearance.system.rawValue
+
     var body: some View {
         @Bindable var app = app
 
@@ -20,9 +30,26 @@ struct RootView: View {
                 }
                 .environment(app)
             }
+            .preferredColorScheme(preferredScheme)
+            // Every effect in `App/Motion` reads `\.motionSettings`, so without
+            // this the whole folder renders its default variant and nothing in it
+            // reacts to Reduce Motion. Installed here, above every screen and
+            // above the onboarding cover, because the accessibility flags it
+            // carries are app-wide facts and must not be re-read per view.
+            .environment(\.motionSettings, MotionSettings.shared)
             .task {
                 app.bootstrap()
             }
+    }
+
+    /// `nil` means "follow the system", which is what a `preferredColorScheme`
+    /// of `nil` means too — so the picker needs no special case.
+    private var preferredScheme: ColorScheme? {
+        switch Appearance(rawValue: appearance) {
+        case .light: .light
+        case .dark: .dark
+        default: nil
+        }
     }
 
     /// Onboarding's visibility, derived rather than stored.

@@ -4,6 +4,10 @@ import Observation
 
 /// Which lessons exist and how they are grouped. Reads content only — progress
 /// comes from `ProgressStore` inside the views that display it.
+///
+/// Built from the loaded `ContentLibrary`, so the learner sees exactly what the
+/// rest of the app sees and an empty tab means the content really is missing
+/// rather than that this lane's private decoder failed to find it.
 @MainActor
 @Observable
 final class IELTSSectionModel {
@@ -11,11 +15,23 @@ final class IELTSSectionModel {
     /// A one-line note when the bundled IELTS content could not be read at all.
     private(set) var loadWarning: String?
 
-    init() {
-        papers = IELTSCatalog.all
-        if papers.isEmpty {
-            loadWarning = "The bundled IELTS content could not be read. Check the content resources."
-        }
+    /// - Parameter library: The loaded course. Pass `appState.library`; the
+    ///   papers are empty until it is non-`nil`, so call ``refresh(library:)``
+    ///   if the content loads after this model is constructed.
+    init(library: ContentLibrary?) {
+        refresh(library: library)
+    }
+
+    /// Rebuilds from a (re)loaded library.
+    ///
+    /// Called again by the view when the library appears, because content can
+    /// finish loading after the first render — a retry after a failed load, or a
+    /// slow disk on first launch.
+    func refresh(library: ContentLibrary?) {
+        papers = library.map { IELTSCatalog.papers(from: $0.allIELTSModules) } ?? []
+        loadWarning = papers.isEmpty
+            ? "No IELTS lessons are in this build's content bundle."
+            : nil
     }
 
     func paper(for skill: IELTSSkill) -> IELTSPaper? {

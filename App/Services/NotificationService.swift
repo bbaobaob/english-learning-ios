@@ -109,6 +109,21 @@ final class NotificationService {
         }
     }
 
+    /// Removes one kind's pending request, and nothing else.
+    ///
+    /// This is what a switch's off-handler calls. `reschedule(_:)` cannot stand
+    /// in for it: it needs the whole preference table, and rebuilding every
+    /// kind's schedule to turn one off means an unrelated kind's timer is torn
+    /// down and re-added on every toggle — which, for a repeating daily
+    /// trigger, silently resets its time.
+    ///
+    /// - Parameter kind: The family to stop.
+    func cancel(_ kind: NotificationKind) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(
+            withIdentifiers: [Self.identifier(for: kind)]
+        )
+    }
+
     /// Removes every notification this service owns, and nothing else.
     func cancelAll() {
         UNUserNotificationCenter.current().removePendingNotificationRequests(

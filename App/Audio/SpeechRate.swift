@@ -71,6 +71,41 @@ enum SpeechRate {
         "\(multiple.formatted(.number.precision(.fractionLength(0...2))))×"
     }
 
+    // MARK: - Named rates
+    //
+    // Every call site that asked for a slightly-too-slow voice used to write its
+    // own literal, and each one guessed differently: `0.45`, `0.4`, `0.3`. They
+    // were all aiming at "slow enough to pick out the words in an example
+    // sentence". These are those intents, named once.
+
+    /// Normal speed, for reading a prompt aloud.
+    ///
+    /// The default for ``SpeechService/speak(_:voiceID:completion:)``; spelled
+    /// out here so a call site that wants "normal, but say it explicitly"
+    /// does not have to reach past the convenience overload.
+    static var normalSpeed: Float { normal }
+
+    /// A deliberately slow read for a model example or dictation target.
+    ///
+    /// Slower than the `0.75` speed-menu notch on purpose: the learner is
+    /// transcribing this, not skimming it, and the whole point is that each
+    /// word is separable.
+    static var example: Float { scaled(0.45) }
+
+    /// The slowest the synthesizer will reliably produce.
+    ///
+    /// For the one case that needs every phoneme: the Hear → Type drill, where
+    /// the learner has to reproduce the spelling from sound alone.
+    static var drill: Float { scaled(0.3) }
+
+    /// Slow enough to catch a word missed the first time, fast enough that a whole
+    /// sentence still sounds like speech.
+    ///
+    /// The "play slowly" control on a lesson or a topic. Sits between ``example``
+    /// and ``normalSpeed``: the learner is listening for comprehension, not
+    /// transcribing, so it is quicker than the transcription read.
+    static var replay: Float { scaled(0.6) }
+
     /// The rate slow replay plays a rendered file at, as a fraction of normal.
     ///
     /// This is a **player** rate, not a synthesizer rate, so it is not clamped

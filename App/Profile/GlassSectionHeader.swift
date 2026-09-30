@@ -30,7 +30,7 @@ struct GlassSectionHeader: View {
         .padding(.vertical, Spacing.sm)
         .liquidGlass(cornerRadius: Radius.pill)
         .accessibilityElement(children: .combine)
-        .animation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85), value: title)
+        .animation(Motion.spring(response: 0.4, dampingFraction: 0.85), value: title)
     }
 }
 

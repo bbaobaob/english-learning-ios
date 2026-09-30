@@ -3,18 +3,12 @@ import EnglishCore
 
 // MARK: - View model
 //
-// `IELTSLesson` in EnglishCore cannot decode the shipped JSON: the files use
-// `ExerciseKind` raw values (`typeTheAnswer`, `trueFalse`, `listening`, …) while
-// `IELTSQuestion.Kind` only knows the thirteen paper formats, and the lessons carry
-// `prompt` / `translation` fields that `IELTSLesson` does not declare. So the whole
-// module currently fails to decode and `library.allIELTSModules` comes back empty.
-//
-// TODO(content-lane): add `prompt`/`translation` to `IELTSLesson` and let `IELTSQuestion.Kind`
-// accept the `ExerciseKind` values the content actually uses. These types then disappear
-// and `IELTSCatalog.load()` reads from `library.allIELTSModules` instead.
-//
-// Until then we decode the same bundled files ourselves. Nothing is duplicated in
-// content — only in shape.
+// These types are *not* a second copy of the content model. `EnglishCore` owns
+// what the content says; these own how a paper is *presented* — printed question
+// numbers, the `Questions 1–4` banner each question sits under, a passage split
+// into paragraphs. `IELTSCatalog.papers(from:)` derives them from the real
+// `IELTSModule` values, so there is one reader of the content and no hand-written
+// decoder that can fall out of step with the model.
 
 /// One question, numbered the way the paper numbers it.
 struct IELTSPaperQuestion: Identifiable, Hashable {
@@ -204,96 +198,103 @@ extension IELTSPaperLesson {
 
 // MARK: - Loading
 
+/// Builds the IELTS view model from the real content library.
+///
+/// **This used to decode the bundled JSON by hand.** It was a workaround for a
+/// model that could not read the shipped files: `IELTSQuestion` was a dedicated
+/// enum whose `Kind` did not match the `ExerciseKind` values the content
+/// actually used, and `IELTSLesson` had no `prompt`/`translation`/`skill`. Both
+/// are fixed in `EnglishCore` — `IELTSQuestion` is now `typealias Exercise` and
+/// the lesson carries the three missing fields — so `library.allIELTSModules`
+/// decodes the real content and every hand-written `Codable` mirror below is
+/// gone. One reader of the content, one place it can disagree with the model.
+///
+/// What survives is the *view model*, not the parsing: the paper shapes carry
+/// things `IELTSModule` does not model — printed question numbers, the
+/// `Questions 1–4` banners a paper groups them under, a passage split into
+/// paragraphs. Those are presentation concerns derived from the content, and
+/// deriving them here keeps `EnglishCore` free of exam furniture.
 enum IELTSCatalog {
-    /// Every paper, grouped by skill, in the order the files ship.
-    static func load() -> [IELTSPaper] {
-        var papers: [IELTSPaper] = []
-        for url in contentURLs() {
-            guard let data = try? Data(contentsOf: url),
-                  let file = try? JSONDecoder().decode(ModuleFile.self, from: data) else { continue }
-            papers.append(IELTSPaper(
-                id: file.id,
-                skill: file.skill ?? .listening,
-                title: file.title,
-                lessons: file.lessons.map(makeLesson)
-            ))
-        }
-        return papers.sorted { lhs, rhs in
-            IELTSPaper.skillOrder(lhs.skill) < IELTSPaper.skillOrder(rhs.skill)
-        }
-    }
 
-    /// Loads once and caches. The content does not change at runtime.
-    private static let papers: [IELTSPaper] = load()
+    /// Maps the library's modules into papers, ordered listening → speaking.
+    ///
+    /// - Parameter modules: Usually `library.allIELTSModules`.
+    static func papers(from modules: [IELTSModule]) -> [IELTSPaper] {
+        // One module can carry more than one paper — listening and reading ship
+        // together — so a module is split by each lesson's own `skill` and the
+        // result regrouped. Grouping by lesson (not by module) is what makes
+        // "which lessons are in the Reading paper?" answerable.
+        var bySkill: [IELTSSkill: [IELTSPaperLesson]] = [:]
+        var moduleTitles: [IELTSSkill: String] = [:]
 
-    static var all: [IELTSPaper] { papers }
-
-    /// The shipped IELTS content files, wherever the resource bundle landed.
-    private static func contentURLs() -> [URL] {
-        var bundles: [Bundle] = [Bundle.main]
-        // EnglishCore ships its resources as `EnglishCore_EnglishCore.bundle`.
-        if let url = Bundle.main.url(forResource: "EnglishCore_EnglishCore", withExtension: "bundle"),
-           let bundle = Bundle(url: url) {
-            bundles.append(bundle)
-        }
-        var found: [URL] = []
-        for bundle in bundles {
-            guard let directory = bundle.url(forResource: "content", withExtension: nil),
-                  let names = try? FileManager.default.contentsOfDirectory(atPath: directory.path)
-            else { continue }
-            for name in names.sorted() where name.hasPrefix("ielts-") && name.hasSuffix(".json") {
-                let url = directory.appendingPathComponent(name)
-                if !found.contains(url) { found.append(url) }
+        for module in modules {
+            for lesson in module.lessons {
+                // A lesson with no skill of its own belongs to the paper the
+                // module leads with.
+                guard let skill = lesson.skill ?? module.skill else { continue }
+                bySkill[skill, default: []].append(makeLesson(lesson, module: module))
+                moduleTitles[skill] = module.title
             }
         }
-        return found
+
+        return IELTSSkill.allCases
+            .sorted { skillOrder($0) < skillOrder($1) }
+            .compactMap { skill in
+                guard let lessons = bySkill[skill], !lessons.isEmpty else { return nil }
+                return IELTSPaper(
+                    id: "ielts-\(skill.rawValue)",
+                    skill: skill,
+                    title: moduleTitles[skill] ?? skillName(skill),
+                    lessons: lessons
+                )
+            }
     }
 
-    // MARK: Mapping
+    private static func skillOrder(_ skill: IELTSSkill) -> Int {
+        switch skill {
+        case .listening: return 0
+        case .reading: return 1
+        case .writing: return 2
+        case .speaking: return 3
+        }
+    }
 
-    private static func makeLesson(_ file: LessonFile) -> IELTSPaperLesson {
-        let skill = skill(forLessonID: file.id)
-        let paragraphs = (file.items.first?.prompt ?? "")
+    private static func skillName(_ skill: IELTSSkill) -> String {
+        switch skill {
+        case .listening: "Listening"
+        case .reading: "Reading"
+        case .writing: "Writing"
+        case .speaking: "Speaking"
+        }
+    }
+
+    // MARK: - Mapping
+
+    private static func makeLesson(_ lesson: IELTSLesson, module: IELTSModule) -> IELTSPaperLesson {
+        // A reading passage is the one prompt that is several real paragraphs
+        // long; every other first prompt is a form heading or a single statement.
+        // The threshold is 3 because a passage paragraph that got merged into 2
+        // is a one-line passage, not a real one.
+        let paragraphs = (lesson.items.first?.prompt ?? "")
             .split(separator: "\n\n", omittingEmptySubsequences: true)
             .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-        // A reading passage is the one prompt that is several real paragraphs long;
-        // every other first prompt is a form heading or a single statement.
         let passage = paragraphs.count >= 3 ? paragraphs : []
 
-        let questions = numberQuestions(file.makeItems())
-
         return IELTSPaperLesson(
-            id: file.id,
-            skill: skill,
-            title: file.title,
-            band: file.band,
-            minutes: file.minutes,
-            prompt: file.prompt ?? "",
-            translation: file.translation,
-            transcript: file.transcript ?? [],
-            audio: file.audio.map { clip in
-                AudioClip(id: "\(file.id)-audio", kind: clip.kind, text: clip.text,
-                          rate: clip.rate, title: file.title)
-            },
-            items: file.makeItems(),
-            review: file.review ?? [],
+            id: lesson.id,
+            skill: lesson.skill ?? module.skill ?? .listening,
+            title: lesson.title,
+            band: lesson.band,
+            minutes: lesson.minutes,
+            prompt: lesson.prompt ?? "",
+            translation: lesson.translation,
+            transcript: lesson.transcript,
+            audio: lesson.audio,
+            items: lesson.items,
+            review: lesson.review,
             passage: passage,
-            questions: questions
+            questions: numberQuestions(lesson.items)
         )
-    }
-
-    /// `ielts-l-…`, `ielts-r-…`, `ielts-w-…`, `ielts-s-…`.
-    ///
-    /// The shipped files put listening *and* reading in one module and writing *and*
-    /// speaking in another, so `IELTSModule.skill` only describes the first half. The
-    /// id prefix is the only field that actually distinguishes the four papers.
-    private static func skill(forLessonID id: String) -> IELTSSkill {
-        switch id.split(separator: "-").dropFirst().first.map(String.init) {
-        case "r": return .reading
-        case "w": return .writing
-        case "s": return .speaking
-        default: return .listening
-        }
     }
 
     /// Numbers the questions in file order and buckets each one under the
@@ -347,129 +348,10 @@ extension IELTSPaperLesson {
     /// Display name for a skill, used in headings and accessibility labels.
     static func skillName(_ skill: IELTSSkill) -> String {
         switch skill {
-        case .listening: return "Listening"
-        case .reading: return "Reading"
-        case .writing: return "Writing"
-        case .speaking: return "Speaking"
+        case .listening: "Listening"
+        case .reading: "Reading"
+        case .writing: "Writing"
+        case .speaking: "Speaking"
         }
-    }
-}
-
-// MARK: - Wire shapes
-
-/// Decoded with `decodeIfPresent` throughout: the shipped files omit `items`,
-/// `audio`, `translation` and `explanation` on plenty of questions, and a
-/// synthesised decoder would throw `keyNotFound` on every one of them.
-private struct ModuleFile: Decodable {
-    let id: String
-    let title: String
-    let skill: IELTSSkill?
-    let lessons: [LessonFile]
-}
-
-private struct LessonFile: Decodable {
-    let id: String
-    let title: String
-    let band: String?
-    let minutes: Int?
-    let prompt: String?
-    let translation: String?
-    let transcript: [String]?
-    let audio: AudioFile?
-    let items: [QuestionFile]
-    let review: [String]?
-
-    enum CodingKeys: String, CodingKey {
-        case id, title, band, minutes, prompt, translation, transcript, audio, items, review
-    }
-
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(String.self, forKey: .id)
-        title = try container.decode(String.self, forKey: .title)
-        band = try container.decodeIfPresent(String.self, forKey: .band)
-        minutes = try container.decodeIfPresent(Int.self, forKey: .minutes)
-        prompt = try container.decodeIfPresent(String.self, forKey: .prompt)
-        translation = try container.decodeIfPresent(String.self, forKey: .translation)
-        transcript = try container.decodeIfPresent([String].self, forKey: .transcript)
-        audio = try container.decodeIfPresent(AudioFile.self, forKey: .audio)
-        items = try container.decodeIfPresent([QuestionFile].self, forKey: .items) ?? []
-        review = try container.decodeIfPresent([String].self, forKey: .review)
-    }
-
-    /// Builds the `Exercise` the session engine grades, from the file's wire shape.
-    fileprivate func makeItems() -> [Exercise] {
-        items.map { $0.exercise(lessonID: id) }
-    }
-}
-
-private struct AudioFile: Decodable {
-    let kind: AudioClipKind
-    let text: String?
-    let rate: Double?
-
-    enum CodingKeys: String, CodingKey {
-        case kind, text, rate
-    }
-
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        kind = try container.decodeIfPresent(AudioClipKind.self, forKey: .kind) ?? .speech
-        text = try container.decodeIfPresent(String.self, forKey: .text)
-        rate = try container.decodeIfPresent(Double.self, forKey: .rate)
-    }
-}
-
-private struct QuestionFile: Decodable {
-    let id: String
-    let kind: ExerciseKind
-    let topicID: String
-    let difficulty: Level
-    let prompt: String
-    let instruction: String?
-    let audio: AudioFile?
-    let items: [ExerciseItem]
-    let answer: Answer
-    let explanation: String
-    let xp: Int
-    let translation: String?
-
-    enum CodingKeys: String, CodingKey {
-        case id, kind, topicID, difficulty, prompt, instruction, audio, items, answer
-        case explanation, xp, translation
-    }
-
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(String.self, forKey: .id)
-        kind = try container.decode(ExerciseKind.self, forKey: .kind)
-        topicID = try container.decodeIfPresent(String.self, forKey: .topicID) ?? "ielts"
-        difficulty = try container.decodeIfPresent(Level.self, forKey: .difficulty) ?? .intermediate
-        prompt = try container.decode(String.self, forKey: .prompt)
-        instruction = try container.decodeIfPresent(String.self, forKey: .instruction)
-        audio = try container.decodeIfPresent(AudioFile.self, forKey: .audio)
-        items = try container.decodeIfPresent([ExerciseItem].self, forKey: .items) ?? []
-        answer = try container.decodeIfPresent(Answer.self, forKey: .answer) ?? .none
-        explanation = try container.decodeIfPresent(String.self, forKey: .explanation) ?? ""
-        xp = try container.decodeIfPresent(Int.self, forKey: .xp) ?? 10
-        translation = try container.decodeIfPresent(String.self, forKey: .translation)
-    }
-
-    fileprivate func exercise(lessonID: String) -> Exercise {
-        Exercise(
-            id: id,
-            kind: kind,
-            topicID: topicID,
-            lessonID: lessonID,
-            difficulty: difficulty,
-            prompt: prompt,
-            instruction: instruction,
-            audio: audio.map { AudioClip(id: "\(id)-audio", kind: $0.kind, text: $0.text, rate: $0.rate) },
-            items: items,
-            answer: answer,
-            explanation: explanation,
-            xp: xp,
-            translation: translation
-        )
     }
 }

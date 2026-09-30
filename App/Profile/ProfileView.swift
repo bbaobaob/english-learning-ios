@@ -61,7 +61,9 @@ struct ProfileView: View {
                 goalFocus = false
             }
             .onChange(of: model.weakSort) { _, _ in model.resortWeakAreas() }
-            .preferredColorScheme(preferredScheme)
+            // The appearance override is applied once, at the root. Setting it here as
+            // well meant changing it in Profile re-rendered only Profile, and
+            // onboarding ignored it entirely.
             .alert("Reset all progress?", isPresented: $isConfirmingReset) {
                 Button("Reset", role: .destructive) {
                     model.reset(store: app.store, library: app.library)
@@ -451,12 +453,10 @@ struct ProfileView: View {
         reloadPrefs()
 
         guard enabled else {
-            // Only `cancelAll()` is in the frozen contract, so dropping the last
-            // enabled kind is the only safe call: with others still on, the
-            // schedule is left alone and the next reschedule of those kinds
-            // keeps them alive.
-            let stillEnabled = prefs.values.contains { $0.enabled }
-            if !stillEnabled { notifications.cancelAll() }
+            // Cancel *this* kind only. Tearing the whole schedule down would
+            // reset every other kind's daily time to whenever they were next
+            // rebuilt, so switching one switch off silently moved the others.
+            notifications.cancel(kind)
             return
         }
 
@@ -467,9 +467,11 @@ struct ProfileView: View {
                     notificationError = "Notifications are turned off for this app in iOS Settings."
                     return
                 }
-                // TODO(design-system-lane): `reschedule(_:)` is assumed to take the kind and
-                // re-read the preference from the store, making it idempotent.
-                notifications.reschedule(kind)
+                // `reschedule(_:)` takes the whole preference table and rebuilds
+                // from it, so one call here and no per-kind bookkeeping: the
+                // identifiers are derived from the kind, so a kind that is off
+                // is simply never re-added.
+                notifications.reschedule(prefs)
                 notificationError = nil
             } catch {
                 notificationError = error.localizedDescription
@@ -531,20 +533,6 @@ struct ProfileView: View {
             endPoint: .center
         )
         .ignoresSafeArea()
-    }
-
-    /// The colour scheme this screen renders in.
-    ///
-    /// `nil` means "follow the system", which is what a `preferredColorScheme`
-    /// of `nil` means too — so the picker needs no special case.
-    // TODO(design-system-lane): the Root lane should apply this to the whole
-    // window; until it does, this override is scoped to the Profile screen.
-    private var preferredScheme: ColorScheme? {
-        switch Appearance(rawValue: appearance) {
-        case .light: .light
-        case .dark: .dark
-        default: nil
-        }
     }
 
     private func reload() {

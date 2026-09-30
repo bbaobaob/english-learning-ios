@@ -176,13 +176,25 @@ enum Motion {
     static let standard = Animation.spring(response: 0.36, dampingFraction: 0.82)
     /// Deliberate, attention-drawing motion: a correct answer landing.
     static let emphatic = Animation.spring(response: 0.5, dampingFraction: 0.7)
+
+    /// `nil` under Reduce Motion, so a caller can write
+    /// `.animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion))`
+    /// and get the right behaviour without an `if` at the call site.
+    ///
+    /// This is a gate, not a substitution: under Reduce Motion the *value* is
+    /// discarded but the view still updates, so nothing that was previously
+    /// shown on screen becomes invisible. Effects that remove travel or repeat
+    /// are handled inside their own modifiers instead.
+    static func accessible(_ animation: Animation, reduceMotion: Bool) -> Animation? {
+        reduceMotion ? nil : animation
+    }
 }
 
 extension Animation {
-    /// `nil` under Reduce Motion, so a caller can write
-    /// `withAnimation(reduceMotion ? nil : .standard)` at one call site.
+    /// The same gate as ``Motion/accessible(_:reduceMotion:)``, for a call site
+    /// that already has a bare `Animation` in hand.
     static func accessible(_ animation: Animation, reduceMotion: Bool) -> Animation? {
-        reduceMotion ? nil : animation
+        Motion.accessible(animation, reduceMotion: reduceMotion)
     }
 }
 
