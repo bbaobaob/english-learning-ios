@@ -218,16 +218,16 @@
           "answer": {
             "type": "order",
             "values": [
-              "t7",
-              "t8",
-              "t9",
-              "t10",
-              "t1",
-              "t2",
-              "t3",
-              "t4",
-              "t5",
-              "t6"
+              "The",
+              "figure",
+              "for",
+              "Nigeria",
+              "remained",
+              "the",
+              "lowest",
+              "throughout",
+              "the",
+              "period"
             ]
           },
           "explanation": "'The' opens the sentence and the superlative 'lowest' takes the second 'the', which is why the same word appears twice. Overview sentences are usually single sentences; building them mentally in this way is the fastest way to stop the run-ons that cost Coherence marks.",
@@ -484,16 +484,16 @@
           "answer": {
             "type": "order",
             "values": [
-              "t9",
-              "t6",
-              "t7",
-              "t8",
-              "t5",
-              "t3",
-              "t2",
-              "t1",
-              "t4",
-              "t10"
+              "Full-time",
+              "workers",
+              "spent",
+              "more",
+              "than",
+              "twice",
+              "long",
+              "as",
+              "commuting",
+              "students"
             ]
           },
           "explanation": "The frame is 'twice as long as', so the words must sit in the order more than twice as long as, and the subject and its verb ('Full-time workers spent') come first. Comparative structures work as pre-learned chunks in a band 7 answer: memorise the frame, then drop the figures into it. Here 9 hours against 2 is indeed more than twice as long.",
@@ -636,16 +636,16 @@
           "answer": {
             "type": "order",
             "values": [
-              "t4",
-              "t5",
-              "t1",
-              "t7",
-              "t2",
-              "t6",
-              "t3",
-              "t8",
-              "t9",
-              "t10"
+              "molten",
+              "glass",
+              "is",
+              "poured",
+              "into",
+              "moulds",
+              "to",
+              "produce",
+              "new",
+              "bottles"
             ]
           },
           "explanation": "The passive needs the past participle ('poured') after 'is', and 'into moulds' is a fixed prepositional phrase rather than 'in the moulds'. The infinitive 'to produce new bottles' states the purpose of the stage. Process sentences follow the passive frame exactly, so building them in this order is the fastest route to accuracy.",

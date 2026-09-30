@@ -226,6 +226,9 @@ public final class AudioPlayerModel {
         isLoading = false
         elapsed = 0
         duration = 0
+        // Bumped on every stop so a render that was in flight when the learner
+        // moved on cannot install its player over the new clip.
+        renderToken &+= 1
         clearTicker()
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
@@ -235,19 +238,18 @@ public final class AudioPlayerModel {
         guard let clip else { return }
         switch clip.kind {
         case .speech:
-            if speech.isSpeaking {
-                // Already speaking: restart the sentence rather than ignoring
-                // the tap, which is what a learner pressing play twice means.
-                speech.speak(clip.text ?? "", rate: scaledSpeechRate, completion: nil)
-                isPlaying = true
-                return
+            // The clip is played from a rendered file, not from the live
+            // synthesizer — see `loadSpeech`. If it is not ready yet, the render
+            // completion starts it; calling `resume` again in the meantime is a
+            // no-op rather than a second render.
+            guard let player else { return }
+            if player.currentTime >= player.duration, !player.isPlaying {
+                player.currentTime = 0
             }
+            player.enableRate = true
+            player.play()
             isPlaying = true
-            speech.speak(
-                clip.text ?? "",
-                rate: scaledSpeechRate,
-                completion: { [weak self] in self?.clipDidFinishPlaying() }
-            )
+            startTicker()
         case .file, .remote:
             guard let player else { return }
             player.enableRate = true
