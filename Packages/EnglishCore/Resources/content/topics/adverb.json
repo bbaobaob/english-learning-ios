@@ -966,15 +966,13 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "The",
-                    "children",
-                    "played",
-                    "happily",
-                    "in the garden",
-                    "all",
-                    "afternoon"
-                  ]
+                  "The",
+                  "children",
+                  "played",
+                  "happily",
+                  "in the garden",
+                  "all",
+                  "afternoon"
                 ]
               },
               "explanation": "Manner adverbs can come directly after the verb, and place then time follow at the end. English also accepts the place before the manner here, so in the garden happily all afternoon is possible, but the order given is the most common in speech.",
@@ -1238,13 +1236,11 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "We",
-                    "often",
-                    "have",
-                    "lunch",
-                    "outside"
-                  ]
+                  "We",
+                  "often",
+                  "have",
+                  "lunch",
+                  "outside"
                 ]
               },
               "explanation": "The frequency adverb often goes between the subject We and the auxiliary have, and the place adverb outside goes at the end where the object has been mentioned already.",
@@ -2396,16 +2392,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "The",
-                    "shop",
-                    "was",
-                    "closed",
-                    "therefore",
-                    "we",
-                    "went",
-                    "home"
-                  ]
+                  "The",
+                  "shop",
+                  "was",
+                  "closed",
+                  "therefore",
+                  "we",
+                  "went",
+                  "home"
                 ]
               },
               "explanation": "The result adverb therefore comes after the cause, so The shop was closed therefore we went home follows the logical order. In writing you would add a semicolon before therefore and a comma after it.",

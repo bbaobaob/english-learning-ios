@@ -362,11 +362,9 @@ struct LessonView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: Spacing.md) {
                     SectionHeader(title: audio.title ?? "Listen", subtitle: nil, actionTitle: nil, action: nil)
-                    // TODO(design-system-lane): replace with the shared App/Audio
-                    // player view — replay, loop, shuffle, speed and slow. Its
-                    // init is not in the contract yet; this lane ships the
-                    // controls it can drive through `AppState.audio`.
-                    AudioStepPlayer(clip: audio.audio, title: audio.title)
+                    // The shared player: play/pause, replay, loop, speed, the
+                    // scrubber where there is a timeline, and slow replay.
+                    AudioPlayerView(clip: audio.audio)
                 }
                 .padding(Spacing.md)
             }

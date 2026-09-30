@@ -1085,14 +1085,12 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "had",
-                    "been",
-                    "studying",
-                    "for",
-                    "three",
-                    "hours"
-                  ]
+                  "had",
+                  "been",
+                  "studying",
+                  "for",
+                  "three",
+                  "hours"
                 ]
               },
               "explanation": "The present perfect continuous has been studying backs into the past perfect continuous had been studying. The duration phrase for three hours is a measure of time, not a point in time, so it is not changed.",
@@ -1578,16 +1576,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "had",
-                    "bought",
-                    "that",
-                    "book",
-                    "there",
-                    "the",
-                    "day",
-                    "before"
-                  ]
+                  "had",
+                  "bought",
+                  "that",
+                  "book",
+                  "there",
+                  "the",
+                  "day",
+                  "before"
                 ]
               },
               "explanation": "Three shifts at once: this becomes that because the book is no longer the speaker's point of reference, here becomes there because the reporter is elsewhere, and yesterday becomes the day before because it is measured from the report.",
@@ -2052,13 +2048,11 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "what",
-                    "time",
-                    "the",
-                    "meeting",
-                    "started"
-                  ]
+                  "what",
+                  "time",
+                  "the",
+                  "meeting",
+                  "started"
                 ]
               },
               "explanation": "The question word and its noun stay together as a phrase, then the clause follows normal statement order: what time the meeting started. There is no does and no inversion, because the reported clause is a statement about a question.",
@@ -2544,15 +2538,13 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "not",
-                    "to",
-                    "forget",
-                    "to",
-                    "lock",
-                    "the",
-                    "door"
-                  ]
+                  "not",
+                  "to",
+                  "forget",
+                  "to",
+                  "lock",
+                  "the",
+                  "door"
                 ]
               },
               "explanation": "Two to-infinitives in a row look confusing but are both correct: the first belongs to the reported command, not to forget, and the second belongs to the original imperative, to lock the door.",

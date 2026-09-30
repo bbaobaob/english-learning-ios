@@ -179,16 +179,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "Never",
-                    "have",
-                    "I",
-                    "seen",
-                    "a",
-                    "more",
-                    "beautiful",
-                    "sunset"
-                  ]
+                  "Never",
+                  "have",
+                  "I",
+                  "seen",
+                  "a",
+                  "more",
+                  "beautiful",
+                  "sunset"
                 ]
               },
               "explanation": "The fronted negative never comes first, then the auxiliary have, then the subject I. The rest of the sentence is unchanged, so the only movement is the swap of have and I.",
@@ -681,18 +679,16 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "So",
-                    "tired",
-                    "was",
-                    "she",
-                    "that",
-                    "she",
-                    "fell",
-                    "asleep",
-                    "at",
-                    "once"
-                  ]
+                  "So",
+                  "tired",
+                  "was",
+                  "she",
+                  "that",
+                  "she",
+                  "fell",
+                  "asleep",
+                  "at",
+                  "once"
                 ]
               },
               "explanation": "The fronted phrase is So tired, then the verb was comes before the subject she. The result clause after that is untouched, which is the usual shape of a so-inversion: emphasis, then consequence.",
@@ -946,11 +942,11 @@
             },
             {
               "id": "iv-l2-q4",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "inversion",
               "lessonID": "iv-l2",
               "difficulty": "advanced",
-              "prompt": "Which sentence is correct?",
+              "prompt": "Which of these sentences are correct?",
               "instruction": "Pick the correct option.",
               "items": [
                 {
@@ -1181,18 +1177,16 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "No",
-                    "sooner",
-                    "had",
-                    "we",
-                    "sat",
-                    "down",
-                    "than",
-                    "the",
-                    "doorbell",
-                    "rang"
-                  ]
+                  "No",
+                  "sooner",
+                  "had",
+                  "we",
+                  "sat",
+                  "down",
+                  "than",
+                  "the",
+                  "doorbell",
+                  "rang"
                 ]
               },
               "explanation": "No sooner comes first, then the past perfect in the inverted order had we sat down, then than, and only after that the ordinary past simple the doorbell rang.",
@@ -1654,16 +1648,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "Do",
-                    "you",
-                    "know",
-                    "what",
-                    "time",
-                    "the",
-                    "bank",
-                    "closes"
-                  ]
+                  "Do",
+                  "you",
+                  "know",
+                  "what",
+                  "time",
+                  "the",
+                  "bank",
+                  "closes"
                 ]
               },
               "explanation": "The outer question is Do you know, and the embedded question is what time the bank closes, which keeps statement order. Inverting inside the embedded clause is the single most common error here.",
@@ -2169,18 +2161,16 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "Only",
-                    "if",
-                    "you",
-                    "pay",
-                    "now",
-                    "will",
-                    "you",
-                    "get",
-                    "a",
-                    "refund"
-                  ]
+                  "Only",
+                  "if",
+                  "you",
+                  "pay",
+                  "now",
+                  "will",
+                  "you",
+                  "get",
+                  "a",
+                  "refund"
                 ]
               },
               "explanation": "Only if restricts the condition, so the main clause is inverted: will you get. The if-clause itself keeps the normal order you pay now.",
@@ -2663,16 +2653,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "On",
-                    "the",
-                    "table",
-                    "stood",
-                    "a",
-                    "strange",
-                    "bronze",
-                    "object"
-                  ]
+                  "On",
+                  "the",
+                  "table",
+                  "stood",
+                  "a",
+                  "strange",
+                  "bronze",
+                  "object"
                 ]
               },
               "explanation": "The prepositional phrase is already fronted in the given sentence, so the required order places the verb stood before the subject a strange bronze object. This is the verb subject pattern that headlines and narrative prose use.",
@@ -2852,15 +2840,14 @@
                 {
                   "id": "d",
                   "text": "Beyond the ridge laid a narrow valley.",
-                  "isCorrect": true,
+                  "isCorrect": false,
                   "matchKey": null
                 }
               ],
               "answer": {
                 "type": "choice",
                 "values": [
-                  "a",
-                  "d"
+                  "a"
                 ]
               },
               "explanation": "Both a and d are correct: the fronted prepositional phrase is followed by the verb and then the subject, either present tense with lay or past tense with laid. Option c wrongly adds an auxiliary to a simple past verb.",

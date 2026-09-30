@@ -762,11 +762,11 @@
           "questions": [
             {
               "id": "sva-l2-q1",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "subject-verb-agreement",
               "lessonID": "sva-l2",
               "difficulty": "beginner",
-              "prompt": "Choose the correct sentence.",
+              "prompt": "Which of these sentences are correct?",
               "instruction": "Pick the correct option.",
               "items": [
                 {
@@ -1472,11 +1472,11 @@
             },
             {
               "id": "sva-l4-e3",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "subject-verb-agreement",
               "lessonID": "sva-l4",
               "difficulty": "intermediate",
-              "prompt": "Choose the correct sentence.",
+              "prompt": "Which of these sentences are correct?",
               "instruction": "Pick the correct option.",
               "items": [
                 {
@@ -1628,17 +1628,15 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "The",
-                    "printer",
-                    "and",
-                    "the",
-                    "scanner",
-                    "are",
-                    "in",
-                    "the",
-                    "office"
-                  ]
+                  "The",
+                  "printer",
+                  "and",
+                  "the",
+                  "scanner",
+                  "are",
+                  "in",
+                  "the",
+                  "office"
                 ]
               },
               "explanation": "Two singular nouns joined by and make a plural subject, so the verb is are. The prepositional phrase in the office comes last and does not affect agreement at all.",

@@ -121,7 +121,7 @@ struct SparkleBurst: View {
                         seed: seed,
                         at: ParticlePoint.at(
                             seed: seed, t: elapsed, duration: duration * 0.72,
-                            size: edge, travel: 0.34
+                            size: edge, travel: travel * 0.74
                         ),
                         centre: centre,
                         tint: tint
@@ -136,7 +136,7 @@ struct SparkleBurst: View {
                         seed: seed,
                         at: ParticlePoint.at(
                             seed: seed, t: elapsed * 0.72, duration: duration * 0.95,
-                            size: edge, travel: 0.46
+                            size: edge, travel: travel
                         ),
                         centre: centre,
                         tint: tint

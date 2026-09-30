@@ -53,16 +53,23 @@ struct RootTabView: View {
 
         TabView(selection: $app.selectedTab) {
             ForEach(AppTab.allCases) { tab in
-                // The path is `[AnyHashable]` so each tab's stack can carry its
-                // own lane's route enum: `LearnRoute.lesson` takes two
-                // arguments and `.alphabet` has no equivalent in any other tab,
-                // so a single shared route enum would either be wrong for five
-                // tabs or need cases only one of them uses. Each lane's root
-                // view registers its own `navigationDestination(for:)`, and
-                // SwiftUI resolves the most specific registered type — so two
-                // lanes can both have a `case topic(String)` without colliding.
-                NavigationStack(path: app.path(for: tab)) {
-                    TabRootScreen(tab: tab)
+                Group {
+                    if tab.laneSuppliesItsOwnStack {
+                        // The lane brought a stack; do not add a second one.
+                        TabRootScreen(tab: tab)
+                    } else {
+                        // The path is `[AnyHashable]` so each tab's stack can
+                        // carry its own lane's route enum: `LearnRoute.lesson`
+                        // takes two arguments and `.alphabet` has no equivalent
+                        // in any other tab, so one shared route enum would be
+                        // wrong for five tabs. Each lane's root view registers
+                        // its own `navigationDestination(for:)`, and SwiftUI
+                        // resolves the most specific registered type — so two
+                        // lanes can both have a `case topic(String)`.
+                        NavigationStack(path: app.path(for: tab)) {
+                            TabRootScreen(tab: tab)
+                        }
+                    }
                 }
                 .tabItem {
                     Label(tab.title, systemImage: tab.symbol)
@@ -100,27 +107,26 @@ private struct TabBarGlass: ViewModifier {
 /// `AudioPlayerModel`, and `SpeechService` from the environment, so this file
 /// never has to be edited again when a lane adds a screen.
 ///
-/// **Two lanes bring their own `NavigationStack`.** `LearnHomeView` and
-/// `IELTSHomeView` each wrap themselves in one bound to
-/// `app.navigationPath`, because they were written against that API before this
-/// shell existed. Nesting a `NavigationStack` inside another produces a
-/// back-swipe that pops the inner stack while the tab bar stays put — a
-/// genuinely confusing gesture, not a cosmetic one. Rather than edit two lanes'
-/// files, the tab bar's own stack is dropped for exactly those two tabs, so
-/// each stack is the single one the lane expects and `app.navigationPath` drives
-/// it either way.
+/// **Three lanes bring their own `NavigationStack`.** `LearnHomeView` and
+/// `IELTSHomeView` wrap themselves in one bound to `app.navigationPath`;
+/// `VocabularyHomeView` wraps one bound to its own `@State` path. All three were
+/// written before this shell existed. Nesting a `NavigationStack` inside another
+/// produces a back-swipe that pops the inner stack while the tab bar stays put —
+/// a genuinely confusing gesture, not a cosmetic one. Rather than edit three
+/// lanes' files, the tab bar's own stack is dropped for exactly those tabs, so
+/// each tab has one stack and the learner's position is preserved by whichever
+/// one owns it.
 ///
-/// // TODO(learn, ielts): delete the `NavigationStack` wrapper from
-/// `LearnHomeView` and `IELTSHomeView` once both are bound to
-/// `app.path(for: .learn)` / `app.path(for: .ielts)`, then delete the
-/// `laneSuppliesItsOwnStack` switch below.
+/// // TODO(learn, ielts, vocabulary): move all three onto
+/// `app.path(for: .learn)` / `.ielts` / `.vocabulary`, then delete
+/// `AppTab.laneSuppliesItsOwnStack` and the branch in `RootTabView`.
 struct TabRootScreen: View {
     let tab: AppTab
     @Environment(AppState.self) private var app
 
     /// Whether the lane's root view brings its own `NavigationStack`.
     private var laneSuppliesItsOwnStack: Bool {
-        tab == .learn || tab == .ielts
+        tab.laneSuppliesItsOwnStack
     }
 
     var body: some View {

@@ -306,14 +306,12 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "the",
-                    "room",
-                    "is",
-                    "cleaned",
-                    "every",
-                    "day"
-                  ]
+                  "the",
+                  "room",
+                  "is",
+                  "cleaned",
+                  "every",
+                  "day"
                 ]
               },
               "explanation": "A passive sentence opens with its subject, then the be-verb, then the participle: the room is cleaned. The time phrase every day closes the sentence. 'The room cleans every day' would be wrong, because a room cannot clean itself.",
@@ -2086,28 +2084,24 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "the",
-                    "film",
-                    "was",
-                    "banned",
-                    "by",
-                    "the",
-                    "council",
-                    "last",
-                    "year"
-                  ],
-                  [
-                    "the",
-                    "film",
-                    "was",
-                    "banned",
-                    "last",
-                    "year",
-                    "by",
-                    "the",
-                    "council"
-                  ]
+                  "the",
+                  "film",
+                  "was",
+                  "banned",
+                  "by",
+                  "the",
+                  "council",
+                  "last",
+                  "year",
+                  "the",
+                  "film",
+                  "was",
+                  "banned",
+                  "last",
+                  "year",
+                  "by",
+                  "the",
+                  "council"
                 ]
               },
               "explanation": "The film becomes the subject, was + banned is the passive verb, and the council follows by. The time adverbial last year may sit either right after the verb phrase or after the by-phrase; both orders are grammatical, which is why two answers are accepted.",

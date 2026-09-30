@@ -133,9 +133,23 @@ struct AudioPlayerView: View {
                 isActive: player.isLooping,
                 action: {
                     Haptics.selection()
-                    player.isLooping.toggle()
+                    player.setLooping(!player.isLooping)
                 }
             )
+
+            // Only offered when a sequence is loaded. Shuffling one clip is a
+            // no-op, and a toggle that does nothing is worse than no toggle.
+            if player.hasShuffleableQueue {
+                IconButton(
+                    symbol: "shuffle",
+                    label: player.isShuffled ? "Shuffled" : "In order",
+                    isActive: player.isShuffled,
+                    action: {
+                        Haptics.selection()
+                        player.isShuffled.toggle()
+                    }
+                )
+            }
         }
         .frame(maxWidth: .infinity)
     }

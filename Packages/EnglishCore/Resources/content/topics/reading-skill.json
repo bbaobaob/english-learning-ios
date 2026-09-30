@@ -2,6 +2,7 @@
   "id": "reading-skill",
   "title": "Reading Skill",
   "kind": "reading",
+  "level": "beginner",
   "icon": "text.book.closed",
   "summary": "Read with a purpose: skim for gist, scan to locate a fact by paraphrase, and read closely when the writer's stance and the unstated assumption are the actual exam content.",
   "estimatedMinutes": 45,

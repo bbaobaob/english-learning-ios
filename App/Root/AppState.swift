@@ -274,4 +274,19 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable {
         case .profile: "person.crop.circle.fill"
         }
     }
+
+    /// Whether this tab's lane brings its own `NavigationStack`.
+    ///
+    /// `LearnHomeView` and `IELTSHomeView` wrap themselves in one bound to
+    /// `app.navigationPath`; `VocabularyHomeView` wraps one bound to its own
+    /// `@State` path, which also means its scroll position is per-view and
+    /// would be lost on a tab switch if the tab bar owned the stack. Adding a
+    /// second stack around any of them produces a back-swipe that pops the
+    /// inner one while the tab bar stays put. See ``TabRootScreen``.
+    var laneSuppliesItsOwnStack: Bool {
+        switch self {
+        case .learn, .ielts, .vocabulary: true
+        case .home, .practice, .profile: false
+        }
+    }
 }

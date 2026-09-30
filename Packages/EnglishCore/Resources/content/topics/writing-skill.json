@@ -2,6 +2,7 @@
   "id": "writing-skill",
   "title": "Writing Skill",
   "kind": "writing",
+  "level": "beginner",
   "icon": "square.and.pencil",
   "summary": "Control the sentence first, then the paragraph: fix the errors that mark you as a learner, use cohesion deliberately, and edit your own work against a checklist you can actually apply.",
   "estimatedMinutes": 50,

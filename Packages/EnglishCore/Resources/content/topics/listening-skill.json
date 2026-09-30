@@ -2,6 +2,7 @@
   "id": "listening-skill",
   "title": "Listening Skill",
   "kind": "listening",
+  "level": "beginner",
   "icon": "ear",
   "summary": "Train the ear deliberately: shadow single speakers, then decode fast connected speech, then hold your own attention through native-speed lectures. Every step is built around real speech you can replay slowly.",
   "estimatedMinutes": 45,
@@ -151,7 +152,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "'Would you like...' is an offer, and an offer can only be accepted or declined. Before you look at the options, name the speech act in your head: this speaker is offering, not asking for information. That single step removes both distractors: 'I am fine' answers a question about your state, and 'on the table' answers a question about location — neither fits an offer. The accepted reply also carries a reaction ('That would be lovely'), which is what natural acceptances sound like.",
               "xp": 10
@@ -192,7 +195,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "The sentence is built as three chunks: the train / the time / the platform. A common trap is to catch 'platform three' first because three repeats, and then to guess three for the time. Instead, predict the slot: after 'leaves at' you are contractually listening for a time only, and 'platform' in the last chunk tells you the second number is not a time. Fifteen is stress-initial in 'seven fifteen', so it arrives loud and early in the phrase.",
               "xp": 10
@@ -213,7 +218,9 @@
               },
               "answer": {
                 "type": "text",
-                "values": ["I usually get up at six and go for a run."]
+                "values": [
+                  "I usually get up at six and go for a run."
+                ]
               },
               "explanation": "Type the chunks in the order you heard them instead of word by word: I usually / get up / at six / and go for a run. The only place beginners lose marks here is the small word 'and' between two infinitives — it is unstressed, so it sounds like a half-syllable and is easy to drop. If you wrote 'at six go for a run', you lost the connector, and the sentence now means something different. Capital letters and the full stop are ignored when your text is checked; missing content words are not.",
               "xp": 10
@@ -272,7 +279,14 @@
               ],
               "answer": {
                 "type": "order",
-                "values": ["Sorry", "I", "did", "not", "catch", "that"]
+                "values": [
+                  "Sorry",
+                  "I",
+                  "did",
+                  "not",
+                  "catch",
+                  "that"
+                ]
               },
               "explanation": "English puts the negation in the middle: subject + did + not + verb. Learners who build the sentence word by word often produce 'I not did catch that', which never occurs. The repair phrase is a fixed three-chunk formula — Sorry / I did not / catch that — so rehearse it as a unit until it is automatic. Keep 'did not' together; splitting it puts two stressed sounds where the sentence has only one.",
               "xp": 10
@@ -513,7 +527,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "Two separate hedges do the work: 'I think so' marks it as the speaker's belief rather than a fact, and the unless-clause adds a condition that could still change things. A listener who tracks only the main clause hears 'still on for Friday' and chooses the settled plan. The habit to build is to write down hedges as you hear them, separately from the content words, and then check whether any of them weakens the answer.",
               "xp": 10
@@ -554,7 +570,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "Expand the reductions first: 'gonna' is going to and 'gotta' is have to. The first clause only states the problem; the second gives the reason, and it is 'get to' plus 'airport' that answers the question. The trap here is option (a), which feels like a natural explanation for lateness but appears nowhere in the audio. A useful drill is to write the full form silently before you choose, because it forces you to hear one continuous stream of grammar instead of two separate fragments.",
               "xp": 10
@@ -575,7 +593,9 @@
               },
               "answer": {
                 "type": "text",
-                "values": ["We were going to leave, but we had to wait for the car."]
+                "values": [
+                  "We were going to leave, but we had to wait for the car."
+                ]
               },
               "explanation": "The first clause is a past continuous — 'were going to', uncontracted, which is why it is longer and easier to catch. The second clause contracts 'had to' to 'gotta' and hits you while you are still writing the first. Split the sentence at the comma, finish one half before starting the other, and write 'had to' in full: dictation is checked against the written form of the sentence, so a phonetic spelling such as 'gotta' is marked as a substitution even though you heard it perfectly.",
               "xp": 10
@@ -643,7 +663,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "The audio is one sentence but two events: a request 'before lunch' and a recommendation to check the figures 'first'. The 'so' clause is the consequence, and 'first' tells you the order. Option (a) reverses the timing and option (c) invents a completed action. The general method for this kind of item: after the 'so', imagine a new clock is being set, then read the time words out loud to yourself in order — before lunch, then first.",
               "xp": 10
@@ -883,7 +905,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "The final clause — 'the effect is probably real, but the evidence is much thinner than the textbooks suggest' — is the claim, and it contains a contrast plus a comparison with a shared assumption. Option (a) is a detail of the survey, not the thesis, and it overstates the case. Option (c) is a true statement about study four that the speaker never puts forward as a conclusion. A reliable method: after listening, try to say the claim in your own words before you look at the options. If your version is longer and more qualified than an option, the option is a summary, not a claim.",
               "xp": 10
@@ -924,7 +948,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["a"]
+                "values": [
+                  "a"
+                ]
               },
               "explanation": "The speaker concedes first ('It isn't, quite') and then justifies ('the alternative is worse'), which is the shape of a defence, not a recommendation. Option (c) contradicts 'the alternative is worse', and option (b) overreads the closing clause about memory — the speaker says questions are memorable, not that they matter more. When a speaker uses 'but' after a concession, the clause after 'but' is the real point; that single rule resolves most of these items.",
               "xp": 10
@@ -1015,7 +1041,9 @@
               ],
               "answer": {
                 "type": "choice",
-                "values": ["b"]
+                "values": [
+                  "b"
+                ]
               },
               "explanation": "'That's very reasonable of you' sounds like agreement and is not, and 'although' introduces the real message. The count word 'twice' is the give-away: it records how often the speaker had to raise this, which is what makes the tone resentful rather than merely cautious. The general method is to ask what the speaker would be annoyed about if the conversation ended here. Answering from attitude rather than topic is the difference between an intermediate and an advanced score on this kind of item.",
               "xp": 10

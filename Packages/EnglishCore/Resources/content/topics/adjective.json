@@ -955,13 +955,11 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "a",
-                    "small",
-                    "French",
-                    "wooden",
-                    "table"
-                  ]
+                  "a",
+                  "small",
+                  "French",
+                  "wooden",
+                  "table"
                 ]
               },
               "explanation": "Small is size, French is origin and wooden is material, and that is the order the sequence requires: size before origin before material. Wooden table would be understood, but small French wooden table is the full sequence.",
@@ -1010,13 +1008,11 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "a",
-                    "lovely",
-                    "red",
-                    "Japanese",
-                    "car"
-                  ]
+                  "a",
+                  "lovely",
+                  "red",
+                  "Japanese",
+                  "car"
                 ]
               },
               "explanation": "Lovely is opinion, red is colour and Japanese is origin, so the order is opinion before colour before origin. A red Japanese lovely car is grammatical in the sense that nothing is ungrammatical, but it sounds wrong to a native speaker.",
@@ -1139,15 +1135,13 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "a",
-                    "tall",
-                    "thin",
-                    "and",
-                    "rather",
-                    "old",
-                    "man"
-                  ]
+                  "a",
+                  "tall",
+                  "thin",
+                  "and",
+                  "rather",
+                  "old",
+                  "man"
                 ]
               },
               "explanation": "The adjectives come before the noun, and rather is a degree modifier that sits immediately in front of the adjective it modifies, so rather old is one unit. With three adjectives the last one is joined by and.",
@@ -1302,12 +1296,10 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "a",
-                    "blue",
-                    "cotton",
-                    "shirt"
-                  ]
+                  "a",
+                  "blue",
+                  "cotton",
+                  "shirt"
                 ]
               },
               "explanation": "Blue is colour and cotton is material, and colour always comes before material. A cotton blue shirt reverses the sequence and sounds wrong.",
@@ -2405,15 +2397,13 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "The",
-                    "room",
-                    "was",
-                    "dark",
-                    "dusty",
-                    "and",
-                    "lifeless"
-                  ]
+                  "The",
+                  "room",
+                  "was",
+                  "dark",
+                  "dusty",
+                  "and",
+                  "lifeless"
                 ]
               },
               "explanation": "The adjectives follow the linking verb was as a cumulative list, each adding a new piece of information, and the list is closed with and before the final item. No commas are used with a simple list of this kind unless the items are long.",

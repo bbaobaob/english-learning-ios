@@ -1423,16 +1423,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "Please",
-                    "turn",
-                    "off",
-                    "the",
-                    "lights",
-                    "when",
-                    "you",
-                    "leave"
-                  ]
+                  "Please",
+                  "turn",
+                  "off",
+                  "the",
+                  "lights",
+                  "when",
+                  "you",
+                  "leave"
                 ]
               },
               "explanation": "The phrasal verb turn off comes first as a unit, then its noun object the lights, then the time clause when you leave. English puts the time clause at the end unless it refers to a time that has already passed.",
@@ -1666,15 +1664,13 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "You",
-                    "should",
-                    "take",
-                    "off",
-                    "your",
-                    "coat",
-                    "now"
-                  ]
+                  "You",
+                  "should",
+                  "take",
+                  "off",
+                  "your",
+                  "coat",
+                  "now"
                 ]
               },
               "explanation": "A modal is followed by the bare infinitive take, then the phrasal verb take off, then the noun object your coat. The place adverb now goes at the end, where adverbs of time and place normally sit.",
@@ -2398,16 +2394,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "They",
-                    "succeeded",
-                    "in",
-                    "finishing",
-                    "the",
-                    "project",
-                    "on",
-                    "time"
-                  ]
+                  "They",
+                  "succeeded",
+                  "in",
+                  "finishing",
+                  "the",
+                  "project",
+                  "on",
+                  "time"
                 ]
               },
               "explanation": "succeed takes the preposition in plus a gerund, so succeeded in finishing is the unit. The gerund then takes its own object, the project, and the time phrase on time closes the sentence.",

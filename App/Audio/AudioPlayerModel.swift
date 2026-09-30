@@ -57,16 +57,42 @@ public final class AudioPlayerModel {
     /// Whether the clip restarts when it ends.
     var isLooping: Bool = false
 
-    /// Whether replays draw from a shuffled order. Meaningful for a set of
-    /// clips; for a single clip it changes nothing, which is why the UI only
-    /// offers it where there is a set.
-    var isShuffled: Bool = false
+    /// Whether the queue plays in a shuffled order.
+    ///
+    /// Only meaningful with a queue of more than one clip — which is exactly
+    /// what an `examples` step is, and what a bare single-clip lesson is not.
+    /// The UI therefore only offers the toggle when the queue has more than one
+    /// entry, so it never appears as a control that does nothing.
+    ///
+    /// ponytail: a seeded `shuffle()` on the current queue rather than a
+    /// Fisher-Yates over a stored seed. A stored seed would make a shuffle
+    /// reproducible across a re-render, which matters only if the learner needs
+    /// to revisit the same order; add one if the examples list ever grows
+    /// longer than a dozen items.
+    var isShuffled: Bool = false {
+        didSet {
+            guard isShuffled != oldValue else { return }
+            applyQueueOrder()
+        }
+    }
+
+    /// The clips queued behind the current one, in play order.
+    @ObservationIgnored
+    private var queue: [AudioClip] = []
+
+    /// Whether a queue is loaded. The shuffle toggle is only offered when this
+    /// is `true` *and* the queue holds more than one clip.
+    var hasShuffleableQueue: Bool { queue.count > 1 }
 
     /// How many times to play the clip before stopping. `1` means play once.
     /// Clamped to `1...20` — past that it is a loop, not a counter.
     var repeatCount: Int = 1 {
         didSet {
-            repeatCount = min(max(repeatCount, 1), 20)
+            // Clamped by assignment rather than by `min`/`max` at the use site,
+            // so every reader sees a legal value and the setter cannot recurse:
+            // `didSet` does not fire for the write it makes to itself.
+            let clamped = min(max(repeatCount, 1), 20)
+            if clamped != repeatCount { repeatCount = clamped }
         }
     }
 
@@ -143,6 +169,32 @@ public final class AudioPlayerModel {
             return
         }
         stop()
+        // A one-clip play clears any queue: the caller is not asking for a
+        // sequence, so a queue left over from a previous list must not resume.
+        queue = []
+        load(clip, autoplay: autoplay)
+    }
+
+    /// Loads a *sequence* of clips, starting at `clip`.
+    ///
+    /// The shuffle toggle is only meaningful here — with one clip there is
+    /// nothing to reorder — so this is the initialiser that makes
+    /// ``isShuffled`` a real control rather than a decorative one.
+    ///
+    /// - Parameters:
+    ///   - clip: The clip to start with.
+    ///   - following: The clips to play after it, in order.
+    ///   - autoplay: Start playing as soon as the first clip is ready.
+    func play(_ clip: AudioClip, following: [AudioClip], autoplay: Bool) {
+        stop()
+        queue = following
+        if isShuffled { applyQueueOrder() }
+        load(clip, autoplay: autoplay)
+    }
+
+    /// The shared body of both `play` overloads: pick up `clip` as the loaded
+    /// one, honouring the per-clip loop setting.
+    private func load(_ clip: AudioClip, autoplay: Bool) {
         self.clip = clip
         completedPlays = 0
         errorMessage = nil
@@ -636,12 +688,24 @@ public final class AudioPlayerModel {
         completedPlays += 1
         if isLooping || completedPlays < repeatCount {
             replay()
+        } else if let next = queue.first {
+            // A sequence is loaded, so roll on rather than stopping. Popping
+            // before loading matters: `load` does not clear the queue, so a
+            // leftover head would replay the same clip.
+            queue.removeFirst()
+            load(next, autoplay: true)
         } else {
             isPlaying = false
             elapsed = duration
             clearTicker()
             updateNowPlaying()
         }
+    }
+
+    /// Shuffles the queue in place when ``isShuffled`` is on.
+    private func applyQueueOrder() {
+        guard isShuffled else { return }
+        queue.shuffle()
     }
 
     private func applyRate() {

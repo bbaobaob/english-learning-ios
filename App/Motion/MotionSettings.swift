@@ -22,6 +22,12 @@ import SwiftUI
 
 /// The live accessibility state that every effect in `App/Motion` reacts to.
 ///
+/// Deliberately **not** `@MainActor`: the type holds two `Bool`s and nothing
+/// else, and `EnvironmentKey.defaultValue` is a static SwiftUI may read from a
+/// non-main context. Annotating it would force an `assumeIsolated` hop inside the
+/// environment's own machinery — a crash waiting for the right call site.
+/// Notification callbacks are delivered on `.main`; see ``observeSystemSettings()``.
+///
 /// Inject it with `.environment(\.motionSettings, MotionSettings(reduceMotion: true))`
 /// to force the reduced variants in a preview or a test.
 final class MotionSettings: ObservableObject {
@@ -41,10 +47,6 @@ final class MotionSettings: ObservableObject {
     @Published private(set) var reduceTransparency: Bool
 
     /// The app-wide instance. Observes the UIKit change notifications.
-    ///
-    /// @MainActor because it is read during view body evaluation and because
-    /// `@Published` updates are delivered on the main actor here.
-    @MainActor
     static let shared = MotionSettings(observeSystem: true)
 
     /// The live flags, read straight from UIKit.
@@ -121,7 +123,7 @@ final class MotionSettings: ObservableObject {
 private struct MotionSettingsKey: EnvironmentKey {
     /// The app-wide live settings, so a view that is never handed an explicit
     /// value still tracks the system setting.
-    static var defaultValue: MotionSettings { MainActor.assumeIsolated { .shared } }
+    static var defaultValue: MotionSettings { .shared }
 }
 
 extension EnvironmentValues {

@@ -2,6 +2,7 @@
   "id": "speaking-skill",
   "title": "Speaking Skill",
   "kind": "speaking",
+  "level": "beginner",
   "icon": "waveform",
   "summary": "Build a voice that is easy to follow: clear sounds, right word stress, natural sentence stress, and the hesitation repair that keeps a conversation alive when you lose your place.",
   "estimatedMinutes": 45,

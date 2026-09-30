@@ -718,11 +718,11 @@
           "questions": [
             {
               "id": "sj-l2-q1",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "subjunctive",
               "lessonID": "sj-l2",
               "difficulty": "intermediate",
-              "prompt": "Choose the correct sentence.",
+              "prompt": "Which of these sentences are correct?",
               "instruction": "Pick the correct option.",
               "items": [
                 {
@@ -1012,16 +1012,14 @@
               "answer": {
                 "type": "order",
                 "values": [
-                  [
-                    "Were",
-                    "I",
-                    "you",
-                    "I",
-                    "would",
-                    "take",
-                    "the",
-                    "offer"
-                  ]
+                  "Were",
+                  "I",
+                  "you",
+                  "I",
+                  "would",
+                  "take",
+                  "the",
+                  "offer"
                 ]
               },
               "explanation": "The word if disappears and were moves in front of the subject. The main clause is untouched, and the two I's mean different things: the first is the speaker, the second is the person being addressed.",
@@ -2102,11 +2100,11 @@
             },
             {
               "id": "sj-l5-q4",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "subjunctive",
               "lessonID": "sj-l5",
               "difficulty": "advanced",
-              "prompt": "In 'It is high time that the government ______', which form is standard?",
+              "prompt": "In 'It is high time that the government ______', which forms are standard?",
               "instruction": "Pick the standard form.",
               "items": [
                 {

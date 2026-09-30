@@ -828,11 +828,11 @@
           "questions": [
             {
               "id": "cl-rl-q1",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "clauses",
               "lessonID": "clauses-relative",
               "difficulty": "intermediate",
-              "prompt": "Choose the correct sentence.",
+              "prompt": "Which of these sentences are correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
                 {

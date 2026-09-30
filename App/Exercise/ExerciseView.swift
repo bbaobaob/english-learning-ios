@@ -9,16 +9,20 @@ import EnglishCore
 /// that designers must not re-implement grading or flow, and the only way to
 /// guarantee that is to make there be nowhere else to do it from.
 ///
-/// The two initialisers exist because two different callers own the session:
+/// The three initialisers exist because three different callers want different
+/// things:
 ///
 /// * ``init(session:)`` — the caller already has a `LearnSession` (Practice's
 ///   dictation, review queue, and mixed sets all drive their own so they can
-///   read `outcome` and call `registerStudy` when it ends).
+///   read `outcome` and call `registerStudy` when it ends). This view borrows it.
 /// * ``init(items:topicID:lessonID:stepID:onFinish:)`` — the caller wants this
 ///   view to own the session, which is what a lesson step and a quiz want.
+/// * ``init(exercise:topicID:onComplete:)`` — one standalone exercise inside a
+///   flow the lane drives itself (IELTS's inline drills).
 ///
-/// Neither is a convenience wrapper over the other: the first borrows, the
-/// second creates.
+/// None is a convenience wrapper over another: the first borrows a session, the
+/// second creates one, and the third creates a one-item session and reports the
+/// single result back instead of the totals.
 struct ExerciseView: View {
     /// The session being run. Borrowed or owned; see the initialisers.
     private let session: LearnSession
@@ -33,9 +37,13 @@ struct ExerciseView: View {
     @Environment(AppState.self) private var app
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
-    /// The step id the caller keyed this session by, when it supplied one. Kept
-    /// for the record rather than discarded: it is what identifies this run in
-    /// a lesson's progress, and a future per-step report will need it.
+    /// The step id the caller keyed this session by.
+    ///
+    /// Carried, not acted on: the item list is already scoped to the step, so
+    /// nothing here needs to disambiguate. It is exposed through
+    /// ``stepIdentifier`` because a lesson's progress report needs to attribute
+    /// a completed step to its id, and the alternative is threading it back out
+    /// through `onFinish`.
     private let stepID: String?
 
     /// The result for the item on screen, or `nil` before it is answered.

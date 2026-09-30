@@ -123,7 +123,9 @@ struct StreakEmber: View {
         static let inactive = EmberProfile(intensity: 0.08, flicker: 0, emberCount: 0)
     }
 
-    private var profile: EmberProfile {
+    /// Internal rather than private: the drawing in `StreakEmber+Canvas.swift`
+    /// reads it.
+    var profile: EmberProfile {
         isActive ? EmberProfile.forDays(days) : .inactive
     }
 

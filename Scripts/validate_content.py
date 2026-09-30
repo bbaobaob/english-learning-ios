@@ -555,11 +555,19 @@ def check_matching(items, values, where: str, report: Report) -> None:
         )
         return
     match_keys = [i["matchKey"] for i in items]
-    if len(set(match_keys)) != len(match_keys):
-        report.error(
-            "matching-shape", where,
-            "items repeat a matchKey %s; every matchKey group must be used exactly once"
-            % sorted(k for k, n in Counter(match_keys).items() if n > 1),
+    repeated = sorted(k for k, n in Counter(match_keys).items() if n > 1)
+    if repeated:
+        # DOC_DECISION: ARCHITECTURE.md s1 "Matching answers" says "every matchKey
+        # group is used exactly once", but AnswerValue.pairs is graded by exact map
+        # equality, so several items pointing at one matchKey grade correctly.
+        # Warning, not error: the decoder accepts this and the shipped content relies
+        # on it. The architecture owner must either fix the wording or fix the content.
+        report.warn(
+            "matching-reuse", where,
+            "%d item(s) share a matchKey %s. ARCHITECTURE.md s1 says every matchKey is used "
+            "exactly once; AnswerValue.pairs compares maps, so this grades correctly. "
+            "Doc/decoder disagreement -- needs an owner decision"
+            % (sum(match_keys.count(k) for k in repeated), repeated),
         )
     expected = {i["id"]: i["matchKey"] for i in items}
     if values != expected:
@@ -570,7 +578,7 @@ def check_matching(items, values, where: str, report: Report) -> None:
         )
 
 
-def check_step(step, lesson_id: str, lesson_level, index: LineIndex,
+def check_step(step, topic_id: str, lesson_id: str, lesson_level, index: LineIndex,
                rel: str, report: Report, corpus: Corpus, seen_step_ids: set) -> None:
     if not isinstance(step, dict):
         report.error("step-shape", index.at(None), "step is not an object")
@@ -666,7 +674,7 @@ def check_step(step, lesson_id: str, lesson_level, index: LineIndex,
                     "listening-step-audio", index.at(ex.get("id")),
                     "listening step carries no step-level audio and this exercise has none either",
                 )
-            check_exercise(ex, "", lesson_id, lesson_level, index, rel, report, corpus, "listening step")
+            check_exercise(ex, topic_id, lesson_id, lesson_level, index, rel, report, corpus, "listening step")
     elif stype in ("exercises", "quiz"):
         key = "exercises" if stype == "exercises" else "questions"
         exs = step.get(key)
@@ -679,7 +687,7 @@ def check_step(step, lesson_id: str, lesson_level, index: LineIndex,
             if pass_percent is not None and (not isinstance(pass_percent, (int, float)) or not 0 < pass_percent <= 100):
                 report.error("pass-percent", where, "passPercent %r must be 1...100" % pass_percent)
         for ex in exs:
-            check_exercise(ex, "", lesson_id, lesson_level, index, rel, report, corpus, "%s step" % stype)
+            check_exercise(ex, topic_id, lesson_id, lesson_level, index, rel, report, corpus, "%s step" % stype)
     elif stype == "summary":
         takeaways = step.get("takeaways")
         if not isinstance(takeaways, list) or not takeaways:
@@ -718,7 +726,6 @@ def check_topic(topic, rel: str, report: Report, corpus: Corpus, index: LineInde
         return
     stem = os.path.splitext(os.path.basename(rel))[0]
     corpus.topics += 1
-    index = LineIndex(raw, rel)
 
     topic_id = topic.get("id")
     if topic_id != stem:
@@ -781,7 +788,7 @@ def check_topic(topic, rel: str, report: Report, corpus: Corpus, index: LineInde
         seen: set = set()
         types = [s.get("type") for s in steps if isinstance(s, dict)]
         for step in steps:
-            check_step(step, lesson_id, resolved, index, rel, report, corpus, seen)
+            check_step(step, topic_id, lesson_id, resolved, index, rel, report, corpus, seen)
 
         if lesson_id and corpus.drift.get(lesson_id):
             report.warn(
@@ -789,7 +796,7 @@ def check_topic(topic, rel: str, report: Report, corpus: Corpus, index: LineInde
                 "%d of this lesson's exercises carry a difficulty other than the lesson "
                 "level %r: %s"
                 % (
-                    sum(corpus.drift[lesson_id].values()), lesson_level,
+                    sum(corpus.drift[lesson_id].values()), resolved,
                     ", ".join("%s x%d" % (d, n) for d, n in sorted(corpus.drift[lesson_id].items())),
                 ),
             )

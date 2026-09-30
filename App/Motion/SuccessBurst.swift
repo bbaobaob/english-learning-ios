@@ -38,7 +38,8 @@ struct SuccessBurst: View {
 
     /// `true` while the burst is running. The caller drives this from their own
     /// result state; the burst does not guess when an answer was submitted.
-    var isActive: Bool
+    /// Defaults to `false` so the burst is inert until something starts it.
+    var isActive: Bool = false
 
     @State private var startDate: Date = Date()
     @State private var isVisible = false
@@ -67,37 +68,51 @@ struct SuccessBurst: View {
         .onChange(of: isActive) { _, _ in begin() }
         .onChange(of: settings.reduceMotion) { _, _ in begin() }
         .onDisappear { isVisible = false }
+        // One task per burst, cancelled by SwiftUI on disappear.
+        .task(id: isActive) {
+            guard isActive else { return }
+            await dismissAfterDelay()
+        }
     }
 
     @ViewBuilder
     private var canvas: some View {
+        // Past the end the burst simply draws nothing; the view-level `.task`
+        // below is what unmounts this timeline, so a hidden timeline never
+        // keeps ticking.
         TimelineView(.animation) { context in
             let elapsed = context.date.timeIntervalSince(startDate)
             if elapsed >= duration {
-                // Past the end of the burst: draw nothing and, on the next
-                // pass, let the parent unmount this. A timeline left running
-                // behind an empty canvas is the classic invisible battery leak.
                 Color.clear
-                    .task(id: "done") { finish() }
             } else {
                 particleLayer(elapsed: elapsed)
             }
         }
     }
 
-    /// The Reduce Motion variant: one ring, fading, at the centre.
+    /// The Reduce Motion variant: one ring, fading, at the centre. It expands in
+    /// place — a scale on a ring centred on itself moves no edge far enough to
+    /// read as travel, but it is a fade, which is the part Reduce Motion permits.
     private var reducedVariant: some View {
         TimelineView(.animation) { context in
             let elapsed = context.date.timeIntervalSince(startDate)
             let progress = duration > 0 ? min(max(elapsed / duration, 0), 1) : 1
             Circle()
                 .stroke(tint, lineWidth: 2)
-                .scaleEffect(0.4 + 0.6 * progress)
-                .opacity(progress >= 1 ? 0 : (1 - progress) * 2)
-                .task(id: progress >= 1) {
-                    if progress >= 1 { finish() }
-                }
+                .scaleEffect(0.92 + 0.08 * progress)
+                .opacity((1 - progress) * 2)
         }
+    }
+
+    /// Ends the burst after `duration`.
+    ///
+    /// Attached with `.task(id: isActive)` on the view, never inside the
+    /// `TimelineView` closure: a task inside a per-frame closure is torn down and
+    /// respawned every frame, which is a spawn-a-task-per-frame bug.
+    private func dismissAfterDelay() async {
+        try? await Task.sleep(for: .seconds(duration))
+        guard !Task.isCancelled else { return }
+        finish()
     }
 
     // MARK: Drawing

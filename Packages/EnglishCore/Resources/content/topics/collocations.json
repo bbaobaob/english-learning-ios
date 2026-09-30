@@ -25,8 +25,18 @@
               "statement": "These four high-frequency verbs each take a particular set of nouns. The verb is never interchangeable with do or make.",
               "formula": "make a decision, take a decision; make a mistake, make progress",
               "examples": [
-                { "id": "col-vn-ex1", "en": "The committee will make a final decision next week.", "vi": "Ủy ban sẽ đưa ra quyết định cuối cùng vào tuần sau.", "note": "make a decision, never do a decision" },
-                { "id": "col-vn-ex2", "en": "He made a serious mistake in the first round.", "vi": "Anh ấy đã mắc một sai lầm nghiêm trọng ở vòng đầu.", "note": "make a mistake, not do a mistake" }
+                {
+                  "id": "col-vn-ex1",
+                  "en": "The committee will make a final decision next week.",
+                  "vi": "Ủy ban sẽ đưa ra quyết định cuối cùng vào tuần sau.",
+                  "note": "make a decision, never do a decision"
+                },
+                {
+                  "id": "col-vn-ex2",
+                  "en": "He made a serious mistake in the first round.",
+                  "vi": "Anh ấy đã mắc một sai lầm nghiêm trọng ở vòng đầu.",
+                  "note": "make a mistake, not do a mistake"
+                }
               ]
             },
             {
@@ -34,8 +44,18 @@
               "statement": "do takes tasks and research, take takes events and medicines, pay takes bills, place takes orders and bets.",
               "formula": "do research, take a bath, pay a bill, place an order",
               "examples": [
-                { "id": "col-vn-ex3", "en": "She is doing research on rice exports.", "vi": "Cô ấy đang nghiên cứu về xuất khẩu gạo.", "note": "do research, not make research" },
-                { "id": "col-vn-ex4", "en": "Please place an order before eleven o'clock.", "vi": "Vui lòng đặt hàng trước mười một giờ.", "note": "place an order, not do an order" }
+                {
+                  "id": "col-vn-ex3",
+                  "en": "She is doing research on rice exports.",
+                  "vi": "Cô ấy đang nghiên cứu về xuất khẩu gạo.",
+                  "note": "do research, not make research"
+                },
+                {
+                  "id": "col-vn-ex4",
+                  "en": "Please place an order before eleven o'clock.",
+                  "vi": "Vui lòng đặt hàng trước mười một giờ.",
+                  "note": "place an order, not do an order"
+                }
               ]
             },
             {
@@ -43,8 +63,18 @@
               "statement": "When two verbs look similar, compare the nouns they accept. give accepts an abstract noun, do accepts an activity noun, make accepts a product noun.",
               "formula": "give an explanation, do the shopping, make a cake",
               "examples": [
-                { "id": "col-vn-ex5", "en": "He gave a clear explanation of the delay.", "vi": "Anh ấy đã đưa ra một lời giải thích rõ ràng về sự chậm trễ.", "note": "give an explanation, not make one" },
-                { "id": "col-vn-ex6", "en": "We did some shopping before the storm.", "vi": "Chúng tôi đi mua sắm trước cơn bão.", "note": "do the shopping; the activity, not the goods" }
+                {
+                  "id": "col-vn-ex5",
+                  "en": "He gave a clear explanation of the delay.",
+                  "vi": "Anh ấy đã đưa ra một lời giải thích rõ ràng về sự chậm trễ.",
+                  "note": "give an explanation, not make one"
+                },
+                {
+                  "id": "col-vn-ex6",
+                  "en": "We did some shopping before the storm.",
+                  "vi": "Chúng tôi đi mua sắm trước cơn bão.",
+                  "note": "do the shopping; the activity, not the goods"
+                }
               ]
             },
             {
@@ -52,8 +82,18 @@
               "statement": "Tasks, surveys, research and experiments use carry out. It is one of the most frequent fixed partnerships in academic English.",
               "formula": "carry out a survey / a study / research",
               "examples": [
-                { "id": "col-vn-ex7", "en": "The team carried out a survey of two hundred students.", "vi": "Nhóm đã tiến hành khảo sát với hai trăm sinh viên.", "note": "carry out a survey" },
-                { "id": "col-vn-ex8", "en": "We carried out the test twice.", "vi": "Chúng tôi đã thực hiện bài kiểm tra hai lần.", "note": "carry out, never do the test in this sense" }
+                {
+                  "id": "col-vn-ex7",
+                  "en": "The team carried out a survey of two hundred students.",
+                  "vi": "Nhóm đã tiến hành khảo sát với hai trăm sinh viên.",
+                  "note": "carry out a survey"
+                },
+                {
+                  "id": "col-vn-ex8",
+                  "en": "We carried out the test twice.",
+                  "vi": "Chúng tôi đã thực hiện bài kiểm tra hai lần.",
+                  "note": "carry out, never do the test in this sense"
+                }
               ]
             }
           ]
@@ -62,10 +102,30 @@
           "id": "col-vn-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-vne-1", "en": "The company made a profit of ten million dollars.", "vi": "Công ty đã lãi mười triệu đô la.", "note": "make a profit, not earn a profit in this pattern" },
-            { "id": "col-vne-2", "en": "She took a painkiller and went back to work.", "vi": "Cô ấy uống thuốc giảm đau rồi quay lại làm việc.", "note": "take medicine, not eat or do medicine" },
-            { "id": "col-vne-3", "en": "We need to pay attention to small details.", "vi": "Chúng ta cần chú ý đến những chi tiết nhỏ.", "note": "pay attention" },
-            { "id": "col-vne-4", "en": "He paid a large bill for the repair.", "vi": "Anh ấy đã trả một khoản hóa đơn lớn cho việc sửa chữa.", "note": "pay a bill" }
+            {
+              "id": "col-vne-1",
+              "en": "The company made a profit of ten million dollars.",
+              "vi": "Công ty đã lãi mười triệu đô la.",
+              "note": "make a profit, not earn a profit in this pattern"
+            },
+            {
+              "id": "col-vne-2",
+              "en": "She took a painkiller and went back to work.",
+              "vi": "Cô ấy uống thuốc giảm đau rồi quay lại làm việc.",
+              "note": "take medicine, not eat or do medicine"
+            },
+            {
+              "id": "col-vne-3",
+              "en": "We need to pay attention to small details.",
+              "vi": "Chúng ta cần chú ý đến những chi tiết nhỏ.",
+              "note": "pay attention"
+            },
+            {
+              "id": "col-vne-4",
+              "en": "He paid a large bill for the repair.",
+              "vi": "Anh ấy đã trả một khoản hóa đơn lớn cho việc sửa chữa.",
+              "note": "pay a bill"
+            }
           ]
         },
         {
@@ -80,7 +140,13 @@
               "difficulty": "beginner",
               "prompt": "The manager will ___ a difficult decision about the budget.",
               "instruction": "Write the correct verb.",
-              "answer": { "type": "text", "values": ["make", "take"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "make",
+                  "take"
+                ]
+              },
               "explanation": "Both make a decision and take a decision are fully standard, so both are accepted. do a decision and give a decision are both wrong: they are literal copies of the Vietnamese quyet dinh and English has a fixed verb for this noun.",
               "xp": 10
             },
@@ -93,12 +159,37 @@
               "prompt": "Which verb goes with research in this sentence? Scientists ___ research on air quality.",
               "instruction": "Choose the correct verb.",
               "items": [
-                { "id": "a", "text": "do", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "make", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "pay", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "place", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "do",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "make",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "pay",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "place",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "do research is standard in British English and do medical research in American English. make research is never used for an activity; it only appears in compounds such as market research, where it is part of a fixed noun phrase.",
               "xp": 10
             },
@@ -110,7 +201,12 @@
               "difficulty": "intermediate",
               "prompt": "Please do an order before the shop closes.",
               "instruction": "Rewrite the sentence with the correct verb.",
-              "answer": { "type": "text", "values": ["Please place an order before the shop closes."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Please place an order before the shop closes."
+                ]
+              },
               "explanation": "place an order is the partnership. do an order is a literal translation of the Vietnamese dat hang, and native speakers hear it immediately as non-native, even though every word in it is correct English.",
               "xp": 10
             },
@@ -122,7 +218,12 @@
               "difficulty": "intermediate",
               "prompt": "Type the full partnership verb: The two universities ___ out a joint study.",
               "instruction": "Type the complete verb.",
-              "answer": { "type": "text", "values": ["carry"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "carry"
+                ]
+              },
               "explanation": "The phrase is carry out, so with out already in the sentence the missing word is carry. Learners often write do out or make out; make out does exist but means to manage to see or to flirt.",
               "xp": 10
             },
@@ -135,12 +236,38 @@
               "prompt": "Which partnerships are standard in English?",
               "instruction": "Select every correct partnership.",
               "items": [
-                { "id": "a", "text": "make a mistake", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "take a decision", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "do a mistake", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "give progress", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "make a mistake",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "take a decision",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "do a mistake",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "give progress",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b"
+                ]
+              },
               "explanation": "make a mistake and take a decision are both fully standard. do a mistake and give progress are literal translations; English uses make progress or make headway, and mistakes are always made, not done.",
               "xp": 10
             }
@@ -153,24 +280,39 @@
           "items": [
             {
               "id": "col-vn-d1",
-              "audio": { "kind": "speech", "text": "The committee will make a final decision next Monday." },
-              "acceptedAnswers": ["The committee will make a final decision next Monday."],
+              "audio": {
+                "kind": "speech",
+                "text": "The committee will make a final decision next Monday."
+              },
+              "acceptedAnswers": [
+                "The committee will make a final decision next Monday."
+              ],
               "hint": "make plus decision",
               "translation": "Ủy ban sẽ đưa ra quyết định cuối cùng vào thứ Hai tuần sau.",
               "xp": 15
             },
             {
               "id": "col-vn-d2",
-              "audio": { "kind": "speech", "text": "The team carried out a survey of five hundred people." },
-              "acceptedAnswers": ["The team carried out a survey of five hundred people."],
+              "audio": {
+                "kind": "speech",
+                "text": "The team carried out a survey of five hundred people."
+              },
+              "acceptedAnswers": [
+                "The team carried out a survey of five hundred people."
+              ],
               "hint": "carry out plus survey",
               "translation": "Nhóm đã tiến hành khảo sát với năm trăm người.",
               "xp": 15
             },
             {
               "id": "col-vn-d3",
-              "audio": { "kind": "speech", "text": "Please pay the bill before the end of the month." },
-              "acceptedAnswers": ["Please pay the bill before the end of the month."],
+              "audio": {
+                "kind": "speech",
+                "text": "Please pay the bill before the end of the month."
+              },
+              "acceptedAnswers": [
+                "Please pay the bill before the end of the month."
+              ],
               "hint": "pay plus bill",
               "translation": "Vui lòng trả hóa đơn trước khi hết tháng.",
               "xp": 15
@@ -192,11 +334,31 @@
               "prompt": "Which sentence is natural?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "She made progress on her English this term.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "She did progress on her English this term.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "She gave a progress on her English this term.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She made progress on her English this term.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She did progress on her English this term.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She gave a progress on her English this term.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "make progress is the fixed phrase for improving. do progress and give progress both come from translating word for word, and neither sounds like English to a native speaker.",
               "xp": 10
             },
@@ -208,7 +370,12 @@
               "difficulty": "intermediate",
               "prompt": "You should ___ a doctor if the pain continues.",
               "instruction": "Write the correct verb.",
-              "answer": { "type": "text", "values": ["see"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "see"
+                ]
+              },
               "explanation": "see a doctor is the standard partnership for consulting someone medically. Visit a doctor exists but is more used of a professional visit, and get a doctor is not idiomatic at all.",
               "xp": 10
             },
@@ -220,7 +387,12 @@
               "difficulty": "advanced",
               "prompt": "The government should make a solution to the housing problem.",
               "instruction": "Rewrite the sentence with the correct partnership.",
-              "answer": { "type": "text", "values": ["The government should find a solution to the housing problem."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The government should find a solution to the housing problem."
+                ]
+              },
               "explanation": "Solutions are found or reached, never made. make is used with concrete products and abstractions like a decision or progress, while a solution is the result of thinking and therefore takes find.",
               "xp": 10
             },
@@ -233,14 +405,54 @@
               "prompt": "Match each noun with the verb that normally goes with it.",
               "instruction": "Pair every noun with its correct verb.",
               "items": [
-                { "id": "a", "text": "a decision", "isCorrect": null, "matchKey": "make" },
-                { "id": "b", "text": "an order", "isCorrect": null, "matchKey": "place" },
-                { "id": "c", "text": "a bill", "isCorrect": null, "matchKey": "pay" },
-                { "id": "d", "text": "research", "isCorrect": null, "matchKey": "do" },
-                { "id": "e", "text": "a risk", "isCorrect": null, "matchKey": "take" },
-                { "id": "f", "text": "a suggestion", "isCorrect": null, "matchKey": "make" }
+                {
+                  "id": "a",
+                  "text": "a decision",
+                  "isCorrect": null,
+                  "matchKey": "make"
+                },
+                {
+                  "id": "b",
+                  "text": "an order",
+                  "isCorrect": null,
+                  "matchKey": "place"
+                },
+                {
+                  "id": "c",
+                  "text": "a bill",
+                  "isCorrect": null,
+                  "matchKey": "pay"
+                },
+                {
+                  "id": "d",
+                  "text": "research",
+                  "isCorrect": null,
+                  "matchKey": "do"
+                },
+                {
+                  "id": "e",
+                  "text": "a risk",
+                  "isCorrect": null,
+                  "matchKey": "take"
+                },
+                {
+                  "id": "f",
+                  "text": "a suggestion",
+                  "isCorrect": null,
+                  "matchKey": "make"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "make", "b": "place", "c": "pay", "d": "do", "e": "take", "f": "make" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "make",
+                  "b": "place",
+                  "c": "pay",
+                  "d": "do",
+                  "e": "take",
+                  "f": "make"
+                }
+              },
               "explanation": "make takes decisions and suggestions, place takes orders, pay takes bills, do takes research and take takes risks. The list is worth memorising in whole phrases, because the individual verbs mean almost nothing on their own.",
               "xp": 10
             }
@@ -277,8 +489,18 @@
               "statement": "English uses strong adjectives for weather: heavy rain, strong wind, thick fog, hard frost. The adjectives describe intensity or thickness, not quality.",
               "formula": "heavy rain, strong wind, thick fog",
               "examples": [
-                { "id": "col-an-ex1", "en": "Heavy rain closed the mountain road for two days.", "vi": "Mưa lớn đã chặn con đường núi hai ngày.", "note": "heavy rain, not strong rain" },
-                { "id": "col-an-ex2", "en": "Thick fog delayed all the flights.", "vi": "Sương mù dày đã làm chậm mọi chuyến bay.", "note": "thick fog, because fog has thickness" }
+                {
+                  "id": "col-an-ex1",
+                  "en": "Heavy rain closed the mountain road for two days.",
+                  "vi": "Mưa lớn đã chặn con đường núi hai ngày.",
+                  "note": "heavy rain, not strong rain"
+                },
+                {
+                  "id": "col-an-ex2",
+                  "en": "Thick fog delayed all the flights.",
+                  "vi": "Sương mù dày đã làm chậm mọi chuyến bay.",
+                  "note": "thick fog, because fog has thickness"
+                }
               ]
             },
             {
@@ -286,8 +508,18 @@
               "statement": "Strong flavours take strong adjectives: strong coffee, hot tea, cold beer, fresh bread. Weak flavours take light ones: light coffee, mild cheese.",
               "formula": "strong coffee, mild cheese",
               "examples": [
-                { "id": "col-an-ex3", "en": "He drinks strong coffee with every meal.", "vi": "Anh ấy uống cà phê đậm với mọi bữa ăn.", "note": "strong, because the taste is intense" },
-                { "id": "col-an-ex4", "en": "The cheese is mild and easy to eat.", "vi": "Phô mai này nhạt và dễ ăn.", "note": "mild, not light, for a flavour" }
+                {
+                  "id": "col-an-ex3",
+                  "en": "He drinks strong coffee with every meal.",
+                  "vi": "Anh ấy uống cà phê đậm với mọi bữa ăn.",
+                  "note": "strong, because the taste is intense"
+                },
+                {
+                  "id": "col-an-ex4",
+                  "en": "The cheese is mild and easy to eat.",
+                  "vi": "Phô mai này nhạt và dễ ăn.",
+                  "note": "mild, not light, for a flavour"
+                }
               ]
             },
             {
@@ -295,8 +527,18 @@
               "statement": "Some abstract nouns use everyday strong adjectives: deep sleep, heavy rain, hard work, strong objection. These are fixed and carry a figurative intensity.",
               "formula": "deep sleep, hard work, strong objection",
               "examples": [
-                { "id": "col-an-ex5", "en": "She fell into a deep sleep after the long flight.", "vi": "Cô ấy chìm vào giấc ngủ sâu sau chuyến bay dài.", "note": "deep sleep, never heavy sleep" },
-                { "id": "col-an-ex6", "en": "There was a strong objection to the proposal.", "vi": "Có sự phản đối mạnh mẽ đối với đề xuất đó.", "note": "strong objection" }
+                {
+                  "id": "col-an-ex5",
+                  "en": "She fell into a deep sleep after the long flight.",
+                  "vi": "Cô ấy chìm vào giấc ngủ sâu sau chuyến bay dài.",
+                  "note": "deep sleep, never heavy sleep"
+                },
+                {
+                  "id": "col-an-ex6",
+                  "en": "There was a strong objection to the proposal.",
+                  "vi": "Có sự phản đối mạnh mẽ đối với đề xuất đó.",
+                  "note": "strong objection"
+                }
               ]
             },
             {
@@ -304,8 +546,18 @@
               "statement": "English often measures intensity instead of physical size: a big mistake, a small problem, a long journey. Big does not mean physically large and small does not mean tiny.",
               "formula": "a big mistake, a small child",
               "examples": [
-                { "id": "col-an-ex7", "en": "Losing the file was a big mistake.", "vi": "Mất tệp là một sai lầm lớn.", "note": "big means serious, not large" },
-                { "id": "col-an-ex8", "en": "It is only a small problem, we can fix it.", "vi": "Đó chỉ là một vấn đề nhỏ, chúng ta sửa được.", "note": "small means minor" }
+                {
+                  "id": "col-an-ex7",
+                  "en": "Losing the file was a big mistake.",
+                  "vi": "Mất tệp là một sai lầm lớn.",
+                  "note": "big means serious, not large"
+                },
+                {
+                  "id": "col-an-ex8",
+                  "en": "It is only a small problem, we can fix it.",
+                  "vi": "Đó chỉ là một vấn đề nhỏ, chúng ta sửa được.",
+                  "note": "small means minor"
+                }
               ]
             }
           ]
@@ -314,10 +566,30 @@
           "id": "col-an-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-ane-1", "en": "A cold wind came down from the mountains.", "vi": "Một cơn gió lạnh thổi từ núi xuống.", "note": "cold wind" },
-            { "id": "col-ane-2", "en": "The team made a strong bid for the contract.", "vi": "Nhóm đã ra một lời đề nghị mạnh mẽ cho hợp đồng.", "note": "strong bid" },
-            { "id": "col-ane-3", "en": "There has been a sharp rise in food prices.", "vi": "Giá thực phẩm đã tăng vọt.", "note": "sharp rise, the standard phrase in news English" },
-            { "id": "col-ane-4", "en": "It was a difficult decision for everyone involved.", "vi": "Đó là một quyết định khó khăn với tất cả mọi người liên quan.", "note": "difficult decision" }
+            {
+              "id": "col-ane-1",
+              "en": "A cold wind came down from the mountains.",
+              "vi": "Một cơn gió lạnh thổi từ núi xuống.",
+              "note": "cold wind"
+            },
+            {
+              "id": "col-ane-2",
+              "en": "The team made a strong bid for the contract.",
+              "vi": "Nhóm đã ra một lời đề nghị mạnh mẽ cho hợp đồng.",
+              "note": "strong bid"
+            },
+            {
+              "id": "col-ane-3",
+              "en": "There has been a sharp rise in food prices.",
+              "vi": "Giá thực phẩm đã tăng vọt.",
+              "note": "sharp rise, the standard phrase in news English"
+            },
+            {
+              "id": "col-ane-4",
+              "en": "It was a difficult decision for everyone involved.",
+              "vi": "Đó là một quyết định khó khăn với tất cả mọi người liên quan.",
+              "note": "difficult decision"
+            }
           ]
         },
         {
@@ -332,7 +604,13 @@
               "difficulty": "beginner",
               "prompt": "The storm was so bad that we could not see the ___ road ahead.",
               "instruction": "Write the adjective that completes the standard partnership with road.",
-              "answer": { "type": "text", "values": ["coastal", "main"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "coastal",
+                  "main"
+                ]
+              },
               "explanation": "In this sentence the adjective describes the type of road rather than its condition, so coastal road or main road are both natural partnerships. What does not work is an intensity adjective such as heavy or strong: you say a heavy vehicle or strong winds, but never a heavy road.",
               "xp": 10
             },
@@ -344,7 +622,12 @@
               "difficulty": "intermediate",
               "prompt": "We had a heavy sleep after working all night.",
               "instruction": "Rewrite the sentence with the correct adjective.",
-              "answer": { "type": "text", "values": ["We had a deep sleep after working all night."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We had a deep sleep after working all night."
+                ]
+              },
               "explanation": "heavy is a literal translation of nong, but sleep has depth rather than weight, so English uses deep sleep. This is the classic example of why collocations must be learnt as units rather than assembled from a dictionary.",
               "xp": 10
             },
@@ -357,12 +640,37 @@
               "prompt": "Choose the correct phrase: The coffee was very ___ and I could not sleep.",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "strong", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "heavy", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "deep", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "mild", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "strong",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "heavy",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "deep",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "mild",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "strong coffee means coffee with an intense taste. heavy applies to vehicles and rain, deep to sleep, and mild is the opposite of what this sentence describes.",
               "xp": 10
             },
@@ -375,7 +683,13 @@
               "prompt": "Giá thực phẩm tăng mạnh trong tháng vừa qua.",
               "instruction": "Translate the sentence into English using the standard partnership.",
               "translation": "Giá thực phẩm tăng mạnh trong tháng vừa qua.",
-              "answer": { "type": "text", "values": ["Food prices rose sharply last month.", "Food prices have risen sharply in the past month."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Food prices rose sharply last month.",
+                  "Food prices have risen sharply in the past month."
+                ]
+              },
               "explanation": "The Vietnamese tang moc literally means increase strongly, but news English uses a sharp rise. If you prefer the verb, rise and sharply form the same partnership, so both translations are accepted here.",
               "xp": 10
             }
@@ -388,24 +702,39 @@
           "items": [
             {
               "id": "col-an-d1",
-              "audio": { "kind": "speech", "text": "Heavy rain flooded the streets for two hours." },
-              "acceptedAnswers": ["Heavy rain flooded the streets for two hours."],
+              "audio": {
+                "kind": "speech",
+                "text": "Heavy rain flooded the streets for two hours."
+              },
+              "acceptedAnswers": [
+                "Heavy rain flooded the streets for two hours."
+              ],
               "hint": "heavy plus rain",
               "translation": "Mưa lớn đã làm ngập các con đường trong hai giờ.",
               "xp": 15
             },
             {
               "id": "col-an-d2",
-              "audio": { "kind": "speech", "text": "She was in a deep sleep after the long journey." },
-              "acceptedAnswers": ["She was in a deep sleep after the long journey."],
+              "audio": {
+                "kind": "speech",
+                "text": "She was in a deep sleep after the long journey."
+              },
+              "acceptedAnswers": [
+                "She was in a deep sleep after the long journey."
+              ],
               "hint": "deep plus sleep",
               "translation": "Cô ấy đang trong giấc ngủ sâu sau chuyến đi dài.",
               "xp": 15
             },
             {
               "id": "col-an-d3",
-              "audio": { "kind": "speech", "text": "There was a sharp rise in the price of rice." },
-              "acceptedAnswers": ["There was a sharp rise in the price of rice."],
+              "audio": {
+                "kind": "speech",
+                "text": "There was a sharp rise in the price of rice."
+              },
+              "acceptedAnswers": [
+                "There was a sharp rise in the price of rice."
+              ],
               "hint": "sharp plus rise",
               "translation": "Giá gạo đã tăng vọt.",
               "xp": 15
@@ -427,11 +756,31 @@
               "prompt": "Which sentence is natural?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "Thick fog made the morning dangerous for drivers.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "Heavy water made the morning dangerous for drivers.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "Strong fog made the morning dangerous for drivers.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "Thick fog made the morning dangerous for drivers.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "Heavy water made the morning dangerous for drivers.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "Strong fog made the morning dangerous for drivers.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "fog has thickness, so thick fog is the fixed phrase and the obvious choice. heavy fog is also used in American English, which is why heavy water was used as the wrong option here instead of heavy fog; strong fog is never correct in any variety.",
               "xp": 10
             },
@@ -443,7 +792,12 @@
               "difficulty": "intermediate",
               "prompt": "The company made a big progress this year.",
               "instruction": "Rewrite the sentence with the correct partnership.",
-              "answer": { "type": "text", "values": ["The company made great progress this year."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The company made great progress this year."
+                ]
+              },
               "explanation": "progress is uncountable and cannot be counted with a, and the fixed phrase is make progress with no adjective at all. Adding great before an uncountable noun is the acceptable alternative.",
               "xp": 10
             },
@@ -456,14 +810,54 @@
               "prompt": "Match each noun with the adjective it normally takes.",
               "instruction": "Pair every noun with its adjective.",
               "items": [
-                { "id": "a", "text": "coffee", "isCorrect": null, "matchKey": "strong" },
-                { "id": "b", "text": "sleep", "isCorrect": null, "matchKey": "deep" },
-                { "id": "c", "text": "objection", "isCorrect": null, "matchKey": "strong" },
-                { "id": "d", "text": "weather", "isCorrect": null, "matchKey": "mild" },
-                { "id": "e", "text": "wind", "isCorrect": null, "matchKey": "strong" },
-                { "id": "f", "text": "mistake", "isCorrect": null, "matchKey": "big" }
+                {
+                  "id": "a",
+                  "text": "coffee",
+                  "isCorrect": null,
+                  "matchKey": "strong"
+                },
+                {
+                  "id": "b",
+                  "text": "sleep",
+                  "isCorrect": null,
+                  "matchKey": "deep"
+                },
+                {
+                  "id": "c",
+                  "text": "objection",
+                  "isCorrect": null,
+                  "matchKey": "strong"
+                },
+                {
+                  "id": "d",
+                  "text": "weather",
+                  "isCorrect": null,
+                  "matchKey": "mild"
+                },
+                {
+                  "id": "e",
+                  "text": "wind",
+                  "isCorrect": null,
+                  "matchKey": "strong"
+                },
+                {
+                  "id": "f",
+                  "text": "mistake",
+                  "isCorrect": null,
+                  "matchKey": "big"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "strong", "b": "deep", "c": "strong", "d": "mild", "e": "strong", "f": "big" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "strong",
+                  "b": "deep",
+                  "c": "strong",
+                  "d": "mild",
+                  "e": "strong",
+                  "f": "big"
+                }
+              },
               "explanation": "strong modifies coffee, objections and wind; sleep takes deep because sleep has depth; mild weather means pleasant and not severe; a big mistake measures seriousness rather than size.",
               "xp": 10
             },
@@ -476,11 +870,31 @@
               "prompt": "Complete the sentence with the standard partnership: The police are investigating the ___ attack on the shop.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "brutal", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "heavy", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "big", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "brutal",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "heavy",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "big",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["brutal"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "brutal"
+                ]
+              },
               "explanation": "brutal attack is the news and legal partnership for a violent one. big attack is understandable but too vague, and heavy is reserved for physical weight or for rain.",
               "xp": 10
             }
@@ -517,8 +931,18 @@
               "statement": "These intensifiers go with absolute qualities: essential, necessary, wrong, different, right. They do not go with words that already contain a limit such as unique or perfect.",
               "formula": "absolutely essential, completely wrong",
               "examples": [
-                { "id": "col-aa-ex1", "en": "A first aid course is absolutely essential for this job.", "vi": "Khóa sơ cứu là điều tuyệt đối cần thiết cho công việc này.", "note": "absolutely + essential" },
-                { "id": "col-aa-ex2", "en": "His answer was completely wrong.", "vi": "Câu trả lời của anh ấy hoàn toàn sai.", "note": "completely + wrong" }
+                {
+                  "id": "col-aa-ex1",
+                  "en": "A first aid course is absolutely essential for this job.",
+                  "vi": "Khóa sơ cứu là điều tuyệt đối cần thiết cho công việc này.",
+                  "note": "absolutely + essential"
+                },
+                {
+                  "id": "col-aa-ex2",
+                  "en": "His answer was completely wrong.",
+                  "vi": "Câu trả lời của anh ấy hoàn toàn sai.",
+                  "note": "completely + wrong"
+                }
               ]
             },
             {
@@ -526,8 +950,18 @@
               "statement": "Use very before an adjective, too after it, and really before either. Very does not work with absolute words, because absolutely essential is already complete.",
               "formula": "very tired, tired too, really very tired",
               "examples": [
-                { "id": "col-aa-ex3", "en": "The children were very tired after the trip.", "vi": "Lũ trẻ rất mệt sau chuyến đi.", "note": "very before the adjective" },
-                { "id": "col-aa-ex4", "en": "The children were tired too.", "vi": "Lũ trẻ cũng mệt.", "note": "too after the adjective" }
+                {
+                  "id": "col-aa-ex3",
+                  "en": "The children were very tired after the trip.",
+                  "vi": "Lũ trẻ rất mệt sau chuyến đi.",
+                  "note": "very before the adjective"
+                },
+                {
+                  "id": "col-aa-ex4",
+                  "en": "The children were tired too.",
+                  "vi": "Lũ trẻ cũng mệt.",
+                  "note": "too after the adjective"
+                }
               ]
             },
             {
@@ -535,8 +969,18 @@
               "statement": "Adverbs of near-negation go with negatives and with hard adjectives: hardly possible, barely noticeable, nearly finished.",
               "formula": "hardly possible, barely visible",
               "examples": [
-                { "id": "col-aa-ex5", "en": "The task is hardly possible in one week.", "vi": "Nhiệm vụ gần như không thể hoàn thành trong một tuần.", "note": "hardly, not almost possible" },
-                { "id": "col-aa-ex6", "en": "The mark on his face was barely visible.", "vi": "Vết bầm trên mặt anh ấy gần như không thấy được.", "note": "barely + visible" }
+                {
+                  "id": "col-aa-ex5",
+                  "en": "The task is hardly possible in one week.",
+                  "vi": "Nhiệm vụ gần như không thể hoàn thành trong một tuần.",
+                  "note": "hardly, not almost possible"
+                },
+                {
+                  "id": "col-aa-ex6",
+                  "en": "The mark on his face was barely visible.",
+                  "vi": "Vết bầm trên mặt anh ấy gần như không thấy được.",
+                  "note": "barely + visible"
+                }
               ]
             },
             {
@@ -544,8 +988,18 @@
               "statement": "highly, deeply, widely and badly go with specific adjectives: high standards, deeply worried, widely known, badly designed.",
               "formula": "high standards, widely known",
               "examples": [
-                { "id": "col-aa-ex7", "en": "The company has high standards of safety.", "vi": "Công ty có tiêu chuẩn an toàn cao.", "note": "high standards, not very good standards in formal English" },
-                { "id": "col-aa-ex8", "en": "That bridge is widely known to be badly designed.", "vi": "Cây cầu đó nổi tiếng là thiết kế kém.", "note": "widely + known, badly + designed" }
+                {
+                  "id": "col-aa-ex7",
+                  "en": "The company has high standards of safety.",
+                  "vi": "Công ty có tiêu chuẩn an toàn cao.",
+                  "note": "high standards, not very good standards in formal English"
+                },
+                {
+                  "id": "col-aa-ex8",
+                  "en": "That bridge is widely known to be badly designed.",
+                  "vi": "Cây cầu đó nổi tiếng là thiết kế kém.",
+                  "note": "widely + known, badly + designed"
+                }
               ]
             }
           ]
@@ -554,10 +1008,30 @@
           "id": "col-aa-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-aae-1", "en": "The instructions were perfectly clear.", "vi": "Hướng dẫn rất rõ ràng.", "note": "perfectly + clear" },
-            { "id": "col-aae-2", "en": "He is deeply grateful to his teacher.", "vi": "Anh ấy vô cùng biết ơn thầy của mình.", "note": "deeply + grateful" },
-            { "id": "col-aae-3", "en": "The results were highly surprising.", "vi": "Kết quả rất đáng ngạc nhiên.", "note": "highly + surprising, more formal than very" },
-            { "id": "col-aae-4", "en": "The exam was far too easy for this group.", "vi": "Bài thi quá dễ đối với nhóm này.", "note": "far too + easy" }
+            {
+              "id": "col-aae-1",
+              "en": "The instructions were perfectly clear.",
+              "vi": "Hướng dẫn rất rõ ràng.",
+              "note": "perfectly + clear"
+            },
+            {
+              "id": "col-aae-2",
+              "en": "He is deeply grateful to his teacher.",
+              "vi": "Anh ấy vô cùng biết ơn thầy của mình.",
+              "note": "deeply + grateful"
+            },
+            {
+              "id": "col-aae-3",
+              "en": "The results were highly surprising.",
+              "vi": "Kết quả rất đáng ngạc nhiên.",
+              "note": "highly + surprising, more formal than very"
+            },
+            {
+              "id": "col-aae-4",
+              "en": "The exam was far too easy for this group.",
+              "vi": "Bài thi quá dễ đối với nhóm này.",
+              "note": "far too + easy"
+            }
           ]
         },
         {
@@ -572,7 +1046,13 @@
               "difficulty": "intermediate",
               "prompt": "The noise in the hall was ___ audible from the street.",
               "instruction": "Write the adverb that fits naturally.",
-              "answer": { "type": "text", "values": ["barely", "hardly"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "barely",
+                  "hardly"
+                ]
+              },
               "explanation": "barely audible and hardly audible are both standard and mean just about not audible at all. almost audible would mean the opposite, that it was mostly audible, which contradicts the sentence.",
               "xp": 10
             },
@@ -585,12 +1065,39 @@
               "prompt": "Which adverb plus adjective partnerships are standard?",
               "instruction": "Select every correct partnership.",
               "items": [
-                { "id": "a", "text": "highly qualified", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "widely spread", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "completely unique", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "deeply disappointed", "isCorrect": true, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "highly qualified",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "widely spread",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "completely unique",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "deeply disappointed",
+                  "isCorrect": true,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "b", "d"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b",
+                  "d"
+                ]
+              },
               "explanation": "highly qualified and deeply disappointed are both natural. completely unique is contradictory because unique already means one of a kind, so you would say absolutely unique, not completely unique.",
               "xp": 10
             },
@@ -602,7 +1109,12 @@
               "difficulty": "advanced",
               "prompt": "The project was very perfect and the deadline was almost achievable.",
               "instruction": "Rewrite the sentence with better adverb choices.",
-              "answer": { "type": "text", "values": ["The project was absolutely perfect and the deadline was barely achievable."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The project was absolutely perfect and the deadline was barely achievable."
+                ]
+              },
               "explanation": "very does not collocate with absolute adjectives such as perfect, so absolutely replaces it. And almost achievable would mean it was mostly achievable, whereas the sentence implies it was nearly impossible, so barely is the correct near-negation adverb.",
               "xp": 10
             },
@@ -614,7 +1126,12 @@
               "difficulty": "intermediate",
               "prompt": "Type the standard adverb: This design is ___ known across Asia. (adverb of general recognition)",
               "instruction": "Type the complete adverb.",
-              "answer": { "type": "text", "values": ["widely"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "widely"
+                ]
+              },
               "explanation": "widely known is the fixed phrase for something known by many people. very known is wrong, and famous known mixes two ideas; say simply famous or well known instead.",
               "xp": 10
             }
@@ -627,24 +1144,39 @@
           "items": [
             {
               "id": "col-aa-d1",
-              "audio": { "kind": "speech", "text": "Safety equipment is absolutely essential in this workshop." },
-              "acceptedAnswers": ["Safety equipment is absolutely essential in this workshop."],
+              "audio": {
+                "kind": "speech",
+                "text": "Safety equipment is absolutely essential in this workshop."
+              },
+              "acceptedAnswers": [
+                "Safety equipment is absolutely essential in this workshop."
+              ],
               "hint": "absolutely plus essential",
               "translation": "Thiết bị an toàn là điều tuyệt đối cần thiết trong xưởng này.",
               "xp": 15
             },
             {
               "id": "col-aa-d2",
-              "audio": { "kind": "speech", "text": "The old bridge is widely known to be dangerous." },
-              "acceptedAnswers": ["The old bridge is widely known to be dangerous."],
+              "audio": {
+                "kind": "speech",
+                "text": "The old bridge is widely known to be dangerous."
+              },
+              "acceptedAnswers": [
+                "The old bridge is widely known to be dangerous."
+              ],
               "hint": "widely plus known",
               "translation": "Cây cầu cũ nổi tiếng là nguy hiểm.",
               "xp": 15
             },
             {
               "id": "col-aa-d3",
-              "audio": { "kind": "speech", "text": "His voice was barely audible above the traffic." },
-              "acceptedAnswers": ["His voice was barely audible above the traffic."],
+              "audio": {
+                "kind": "speech",
+                "text": "His voice was barely audible above the traffic."
+              },
+              "acceptedAnswers": [
+                "His voice was barely audible above the traffic."
+              ],
               "hint": "barely plus audible",
               "translation": "Giọng nói của anh ấy gần như không nghe rõ giữa tiếng xe cộ.",
               "xp": 15
@@ -666,11 +1198,31 @@
               "prompt": "Which sentence is correct?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "The two designs are completely different.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "The two designs are absolutely different.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The two designs are very total different.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "The two designs are completely different.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "The two designs are absolutely different.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The two designs are very total different.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "completely different is standard; absolutely different is not an accepted partnership. very total is a double intensifier and total cannot be graded this way.",
               "xp": 10
             },
@@ -682,7 +1234,12 @@
               "difficulty": "advanced",
               "prompt": "He is very deeply interested in history.",
               "instruction": "Rewrite the sentence without the double intensifier.",
-              "answer": { "type": "text", "values": ["He is deeply interested in history."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He is deeply interested in history."
+                ]
+              },
               "explanation": "Stack very on deeply and the sentence becomes inflated without adding meaning. Keep one strong degree adverb, which is why deeply interested is the normal way to say it.",
               "xp": 10
             },
@@ -695,12 +1252,40 @@
               "prompt": "Match each adjective with the adverb that collocates with it.",
               "instruction": "Pair every adjective with its correct adverb.",
               "items": [
-                { "id": "a", "text": "essential", "isCorrect": null, "matchKey": "absolutely" },
-                { "id": "b", "text": "grateful", "isCorrect": null, "matchKey": "deeply" },
-                { "id": "c", "text": "audible", "isCorrect": null, "matchKey": "barely" },
-                { "id": "d", "text": "known", "isCorrect": null, "matchKey": "widely" }
+                {
+                  "id": "a",
+                  "text": "essential",
+                  "isCorrect": null,
+                  "matchKey": "absolutely"
+                },
+                {
+                  "id": "b",
+                  "text": "grateful",
+                  "isCorrect": null,
+                  "matchKey": "deeply"
+                },
+                {
+                  "id": "c",
+                  "text": "audible",
+                  "isCorrect": null,
+                  "matchKey": "barely"
+                },
+                {
+                  "id": "d",
+                  "text": "known",
+                  "isCorrect": null,
+                  "matchKey": "widely"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "absolutely", "b": "deeply", "c": "barely", "d": "widely" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "absolutely",
+                  "b": "deeply",
+                  "c": "barely",
+                  "d": "widely"
+                }
+              },
               "explanation": "absolutely marks a complete requirement, deeply marks depth of feeling, barely marks near-absence, and widely marks general recognition. These four cover most of the fixed adverb plus adjective partnerships in exam and academic writing.",
               "xp": 10
             },
@@ -713,11 +1298,31 @@
               "prompt": "Complete the sentence: The new law has been ___ criticised by small businesses.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "heavily", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "largely", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "greatly", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "heavily",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "largely",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "greatly",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["heavily"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "heavily"
+                ]
+              },
               "explanation": "heavily criticised is the standard news phrase for criticism that is strong and frequent. largely means mainly, which changes the meaning, and greatly is used more with verbs such as contribute and improve.",
               "xp": 10
             }
@@ -754,8 +1359,18 @@
               "statement": "depend on, insist on, rely on; consist of, accuse of; believe in, succeed in.",
               "formula": "consist of, depend on, succeed in",
               "examples": [
-                { "id": "col-pp-ex1", "en": "The team consists of five engineers and two designers.", "vi": "Nhóm gồm năm kỹ sư và hai nhà thiết kế.", "note": "consist of, never consist in except in one idiom" },
-                { "id": "col-pp-ex2", "en": "The result depends on the weather and the funding.", "vi": "Kết quả phụ thuộc vào thời tiết và nguồn tài trợ.", "note": "depend on" }
+                {
+                  "id": "col-pp-ex1",
+                  "en": "The team consists of five engineers and two designers.",
+                  "vi": "Nhóm gồm năm kỹ sư và hai nhà thiết kế.",
+                  "note": "consist of, never consist in except in one idiom"
+                },
+                {
+                  "id": "col-pp-ex2",
+                  "en": "The result depends on the weather and the funding.",
+                  "vi": "Kết quả phụ thuộc vào thời tiết và nguồn tài trợ.",
+                  "note": "depend on"
+                }
               ]
             },
             {
@@ -763,8 +1378,18 @@
               "statement": "Many adjectives end in a fixed preposition: responsible for, different from, famous for, good at, worried about.",
               "formula": "responsible for, good at",
               "examples": [
-                { "id": "col-pp-ex3", "en": "She is responsible for the whole training programme.", "vi": "Cô ấy phụ trách toàn bộ chương trình đào tạo.", "note": "responsible for, not responsible of" },
-                { "id": "col-pp-ex4", "en": "He is very good at explaining difficult ideas.", "vi": "Anh ấy rất giỏi giải thích những ý khó.", "note": "good at, never good in for a skill" }
+                {
+                  "id": "col-pp-ex3",
+                  "en": "She is responsible for the whole training programme.",
+                  "vi": "Cô ấy phụ trách toàn bộ chương trình đào tạo.",
+                  "note": "responsible for, not responsible of"
+                },
+                {
+                  "id": "col-pp-ex4",
+                  "en": "He is very good at explaining difficult ideas.",
+                  "vi": "Anh ấy rất giỏi giải thích những ý khó.",
+                  "note": "good at, never good in for a skill"
+                }
               ]
             },
             {
@@ -772,8 +1397,18 @@
               "statement": "Verbs that take an object and a complement need two different prepositions: blame somebody for something, warn somebody about something, remind somebody of something.",
               "formula": "blame X for Y, warn X about Y, remind X of Y",
               "examples": [
-                { "id": "col-pp-ex5", "en": "Do not blame me for the weather.", "vi": "Đừng trách tôi về thời tiết.", "note": "blame X for Y" },
-                { "id": "col-pp-ex6", "en": "Remind me of the appointment on Friday.", "vi": "Nhắc tôi về cuộc hẹn vào thứ Sáu.", "note": "remind X of Y" }
+                {
+                  "id": "col-pp-ex5",
+                  "en": "Do not blame me for the weather.",
+                  "vi": "Đừng trách tôi về thời tiết.",
+                  "note": "blame X for Y"
+                },
+                {
+                  "id": "col-pp-ex6",
+                  "en": "Remind me of the appointment on Friday.",
+                  "vi": "Nhắc tôi về cuộc hẹn vào thứ Sáu.",
+                  "note": "remind X of Y"
+                }
               ]
             },
             {
@@ -781,8 +1416,18 @@
               "statement": "at for a point, on for a day or a date, in for a month, a year, a season. This one is memorised as one block.",
               "formula": "at six o'clock, on Monday, in March",
               "examples": [
-                { "id": "col-pp-ex7", "en": "The meeting starts at nine on Friday in March.", "vi": "Cuộc họp bắt đầu lúc chín giờ thứ Sáu trong tháng Ba.", "note": "at for the hour, on for the day, in for the month" },
-                { "id": "col-pp-ex8", "en": "We will arrive in about two weeks.", "vi": "Chúng tôi sẽ đến sau khoảng hai tuần.", "note": "in plus a future period" }
+                {
+                  "id": "col-pp-ex7",
+                  "en": "The meeting starts at nine on Friday in March.",
+                  "vi": "Cuộc họp bắt đầu lúc chín giờ thứ Sáu trong tháng Ba.",
+                  "note": "at for the hour, on for the day, in for the month"
+                },
+                {
+                  "id": "col-pp-ex8",
+                  "en": "We will arrive in about two weeks.",
+                  "vi": "Chúng tôi sẽ đến sau khoảng hai tuần.",
+                  "note": "in plus a future period"
+                }
               ]
             }
           ]
@@ -791,10 +1436,30 @@
           "id": "col-pp-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-ppe-1", "en": "The museum is famous for its bronze collection.", "vi": "Bảo tàng nổi tiếng vì bộ sưu tập đồng của mình.", "note": "famous for" },
-            { "id": "col-ppe-2", "en": "Nobody is afraid of making mistakes.", "vi": "Không ai sợ mắc sai lầm.", "note": "afraid of" },
-            { "id": "col-ppe-3", "en": "She warned us about the change in the timetable.", "vi": "Cô ấy đã cảnh báo chúng tôi về thay đổi lịch trình.", "note": "warn about" },
-            { "id": "col-ppe-4", "en": "The project is still in progress.", "vi": "Dự án vẫn đang được thực hiện.", "note": "in progress" }
+            {
+              "id": "col-ppe-1",
+              "en": "The museum is famous for its bronze collection.",
+              "vi": "Bảo tàng nổi tiếng vì bộ sưu tập đồng của mình.",
+              "note": "famous for"
+            },
+            {
+              "id": "col-ppe-2",
+              "en": "Nobody is afraid of making mistakes.",
+              "vi": "Không ai sợ mắc sai lầm.",
+              "note": "afraid of"
+            },
+            {
+              "id": "col-ppe-3",
+              "en": "She warned us about the change in the timetable.",
+              "vi": "Cô ấy đã cảnh báo chúng tôi về thay đổi lịch trình.",
+              "note": "warn about"
+            },
+            {
+              "id": "col-ppe-4",
+              "en": "The project is still in progress.",
+              "vi": "Dự án vẫn đang được thực hiện.",
+              "note": "in progress"
+            }
           ]
         },
         {
@@ -809,7 +1474,12 @@
               "difficulty": "intermediate",
               "prompt": "The new system consists ___ three separate modules.",
               "instruction": "Write the correct preposition.",
-              "answer": { "type": "text", "values": ["of"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "of"
+                ]
+              },
               "explanation": "consist of is the fixed phrase for saying what something is made up of. The trap is translating the Vietnamese gom, which would suggest from or about; English uses of.",
               "xp": 10
             },
@@ -821,7 +1491,12 @@
               "difficulty": "intermediate",
               "prompt": "She is responsible of the training of new staff.",
               "instruction": "Rewrite the sentence with the correct preposition.",
-              "answer": { "type": "text", "values": ["She is responsible for the training of new staff."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "She is responsible for the training of new staff."
+                ]
+              },
               "explanation": "responsible takes for, not of. responsible of is a direct translation of the Vietnamese phu trách, and it is one of the most frequent preposition errors in Vietnamese English.",
               "xp": 10
             },
@@ -834,11 +1509,31 @@
               "prompt": "Complete the sentence with the correct preposition: Do not blame her ___ the delay.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "for", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "to", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "about", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "for",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "to",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "about",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["for"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "for"
+                ]
+              },
               "explanation": "blame somebody for something is the pattern. blame somebody to something confuses blame with talk to, and blame about is not English at all, although warn about is.",
               "xp": 10
             },
@@ -851,7 +1546,12 @@
               "prompt": "Chúng tôi phụ trách tổ chức sự kiện.",
               "instruction": "Translate the sentence into English using the standard preposition.",
               "translation": "Chúng tôi phụ trách tổ chức sự kiện.",
-              "answer": { "type": "text", "values": ["We are responsible for the organisation of the event."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We are responsible for the organisation of the event."
+                ]
+              },
               "explanation": "phu trách maps to be responsible for, never responsible of. Organising is another acceptable rendering, so are in charge of and accountable for, but the preposition must still be for, in or to and not of.",
               "xp": 10
             }
@@ -864,24 +1564,39 @@
           "items": [
             {
               "id": "col-pp-d1",
-              "audio": { "kind": "speech", "text": "The final result depends on the weather and the funding." },
-              "acceptedAnswers": ["The final result depends on the weather and the funding."],
+              "audio": {
+                "kind": "speech",
+                "text": "The final result depends on the weather and the funding."
+              },
+              "acceptedAnswers": [
+                "The final result depends on the weather and the funding."
+              ],
               "hint": "depend plus on",
               "translation": "Kết quả cuối cùng phụ thuộc vào thời tiết và nguồn tài trợ.",
               "xp": 15
             },
             {
               "id": "col-pp-d2",
-              "audio": { "kind": "speech", "text": "She is responsible for training all the new staff." },
-              "acceptedAnswers": ["She is responsible for training all the new staff."],
+              "audio": {
+                "kind": "speech",
+                "text": "She is responsible for training all the new staff."
+              },
+              "acceptedAnswers": [
+                "She is responsible for training all the new staff."
+              ],
               "hint": "responsible plus for",
               "translation": "Cô ấy phụ trách đào tạo tất cả nhân viên mới.",
               "xp": 15
             },
             {
               "id": "col-pp-d3",
-              "audio": { "kind": "speech", "text": "The meeting starts at nine on Friday in March." },
-              "acceptedAnswers": ["The meeting starts at nine on Friday in March."],
+              "audio": {
+                "kind": "speech",
+                "text": "The meeting starts at nine on Friday in March."
+              },
+              "acceptedAnswers": [
+                "The meeting starts at nine on Friday in March."
+              ],
               "hint": "three time prepositions",
               "translation": "Cuộc họp bắt đầu lúc chín giờ thứ Sáu trong tháng Ba.",
               "xp": 15
@@ -903,12 +1618,37 @@
               "prompt": "Choose the correct preposition: She succeeded ___ passing the exam on the first try.",
               "instruction": "Choose the correct word.",
               "items": [
-                { "id": "a", "text": "in", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "to", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "on", "isCorrect": false, "matchKey": null },
-                { "id": "d", "text": "for", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "in",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "to",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "on",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "for",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "succeed in plus a gerund is the fixed pattern. succeed to is a common confusion with want to and try to, and succeed on is not used at all.",
               "xp": 10
             },
@@ -920,7 +1660,12 @@
               "difficulty": "advanced",
               "prompt": "The children are very interesting in science.",
               "instruction": "Rewrite the sentence with the correct preposition.",
-              "answer": { "type": "text", "values": ["The children are very interested in science."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The children are very interested in science."
+                ]
+              },
               "explanation": "interested takes in, and the trap is confusing the adjective with the interesting, which describes something that holds attention. If you want to keep interesting, the sentence needs a different structure such as Science is very interesting to the children.",
               "xp": 10
             },
@@ -933,14 +1678,54 @@
               "prompt": "Match each phrase with the correct preposition.",
               "instruction": "Pair every phrase with its preposition.",
               "items": [
-                { "id": "a", "text": "depend ___ the result", "isCorrect": null, "matchKey": "on" },
-                { "id": "b", "text": "good ___ mathematics", "isCorrect": null, "matchKey": "at" },
-                { "id": "c", "text": "different ___ the original", "isCorrect": null, "matchKey": "from" },
-                { "id": "d", "text": "remind me ___ the meeting", "isCorrect": null, "matchKey": "of" },
-                { "id": "e", "text": "apologise ___ the delay", "isCorrect": null, "matchKey": "for" },
-                { "id": "f", "text": "be familiar ___ the subject", "isCorrect": null, "matchKey": "with" }
+                {
+                  "id": "a",
+                  "text": "depend ___ the result",
+                  "isCorrect": null,
+                  "matchKey": "on"
+                },
+                {
+                  "id": "b",
+                  "text": "good ___ mathematics",
+                  "isCorrect": null,
+                  "matchKey": "at"
+                },
+                {
+                  "id": "c",
+                  "text": "different ___ the original",
+                  "isCorrect": null,
+                  "matchKey": "from"
+                },
+                {
+                  "id": "d",
+                  "text": "remind me ___ the meeting",
+                  "isCorrect": null,
+                  "matchKey": "of"
+                },
+                {
+                  "id": "e",
+                  "text": "apologise ___ the delay",
+                  "isCorrect": null,
+                  "matchKey": "for"
+                },
+                {
+                  "id": "f",
+                  "text": "be familiar ___ the subject",
+                  "isCorrect": null,
+                  "matchKey": "with"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "on", "b": "at", "c": "from", "d": "of", "e": "for", "f": "with" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "on",
+                  "b": "at",
+                  "c": "from",
+                  "d": "of",
+                  "e": "for",
+                  "f": "with"
+                }
+              },
               "explanation": "These six partnerships cover most of the fixed prepositions you meet in academic English. Memorise them as phrases: depend on, good at, different from, remind of, apologise for, familiar with.",
               "xp": 10
             },
@@ -953,11 +1738,31 @@
               "prompt": "Complete the sentence: We have been working on this project ___ March.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "since", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "for", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "from", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "since",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "for",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "from",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["since"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "since"
+                ]
+              },
               "explanation": "since marks a starting point and for marks a length of time. Since March means from March up to now; for three months would be the alternative if the sentence gave a duration.",
               "xp": 10
             }
@@ -994,8 +1799,18 @@
               "statement": "If the particle still means its normal preposition sense, it is an adverb particle. If the pair has an idiomatic meaning that does not include the particle sense, it is a phrasal verb.",
               "formula": "turn off the light (particle) vs turn off your colleague (phrasal)",
               "examples": [
-                { "id": "col-pt-ex1", "en": "Please turn off the lights when you leave.", "vi": "Vui lòng tắt đèn khi bạn rời đi.", "note": "the object is a thing, the particle means off" },
-                { "id": "col-pt-ex2", "en": "He turned off every offer that came in.", "vi": "Anh ấy từ chối mọi đề nghị đưa đến.", "note": "turn off here means reject, so the object is a person in the metaphorical sense" }
+                {
+                  "id": "col-pt-ex1",
+                  "en": "Please turn off the lights when you leave.",
+                  "vi": "Vui lòng tắt đèn khi bạn rời đi.",
+                  "note": "the object is a thing, the particle means off"
+                },
+                {
+                  "id": "col-pt-ex2",
+                  "en": "He turned off every offer that came in.",
+                  "vi": "Anh ấy từ chối mọi đề nghị đưa đến.",
+                  "note": "turn off here means reject, so the object is a person in the metaphorical sense"
+                }
               ]
             },
             {
@@ -1003,8 +1818,18 @@
               "statement": "A pronominal object of a particle phrasal verb always goes between the verb and the particle: turn it off. With an ordinary object it may go after: turn off the light.",
               "formula": "turn it off, never turn off it",
               "examples": [
-                { "id": "col-pt-ex3", "en": "She turned the radio off and then turned the light on again.", "vi": "Cô ấy tắt radio rồi bật đèn lại.", "note": "the pronoun it is not used here, so the noun stays at the end" },
-                { "id": "col-pt-ex4", "en": "Look after the baby and take care of her.", "vi": "Trông nom em bé và chăm sóc cô ấy.", "note": "her must sit between take and care" }
+                {
+                  "id": "col-pt-ex3",
+                  "en": "She turned the radio off and then turned the light on again.",
+                  "vi": "Cô ấy tắt radio rồi bật đèn lại.",
+                  "note": "the pronoun it is not used here, so the noun stays at the end"
+                },
+                {
+                  "id": "col-pt-ex4",
+                  "en": "Look after the baby and take care of her.",
+                  "vi": "Trông nom em bé và chăm sóc cô ấy.",
+                  "note": "her must sit between take and care"
+                }
               ]
             },
             {
@@ -1012,8 +1837,18 @@
               "statement": "Separable phrasal verbs take an object between the parts (pick it up); inseparable ones never do (look after her, agree with him). Getting this wrong makes the sentence ungrammatical.",
               "formula": "pick the book up, but never look after the baby",
               "examples": [
-                { "id": "col-pt-ex5", "en": "She picked the ticket up at the counter.", "vi": "Cô ấy nhặt vé tại quầy.", "note": "separable: pick it up" },
-                { "id": "col-pt-ex6", "en": "You must agree with the conditions of the sale.", "vi": "Bạn phải đồng ý với các điều kiện của giao dịch bán.", "note": "inseparable: agree with them" }
+                {
+                  "id": "col-pt-ex5",
+                  "en": "She picked the ticket up at the counter.",
+                  "vi": "Cô ấy nhặt vé tại quầy.",
+                  "note": "separable: pick it up"
+                },
+                {
+                  "id": "col-pt-ex6",
+                  "en": "You must agree with the conditions of the sale.",
+                  "vi": "Bạn phải đồng ý với các điều kiện của giao dịch bán.",
+                  "note": "inseparable: agree with them"
+                }
               ]
             },
             {
@@ -1021,8 +1856,18 @@
               "statement": "Some particle phrasal verbs are opposites: look up a word in a dictionary versus look up to someone, and put off a meeting versus put someone off.",
               "formula": "look up the word vs look up to her",
               "examples": [
-                { "id": "col-pt-ex7", "en": "Look up the word in a dictionary before you use it.", "vi": "Tra từ này trong từ điển trước khi dùng.", "note": "search for information" },
-                { "id": "col-pt-ex8", "en": "All the new staff look up to her.", "vi": "Tất cả nhân viên mới đều ngưỡng mộ cô ấy.", "note": "respect, and the preposition is inseparable here" }
+                {
+                  "id": "col-pt-ex7",
+                  "en": "Look up the word in a dictionary before you use it.",
+                  "vi": "Tra từ này trong từ điển trước khi dùng.",
+                  "note": "search for information"
+                },
+                {
+                  "id": "col-pt-ex8",
+                  "en": "All the new staff look up to her.",
+                  "vi": "Tất cả nhân viên mới đều ngưỡng mộ cô ấy.",
+                  "note": "respect, and the preposition is inseparable here"
+                }
               ]
             }
           ]
@@ -1031,10 +1876,30 @@
           "id": "col-pt-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-pte-1", "en": "The meeting was put off until next week.", "vi": "Cuộc họp đã được hoãn đến tuần sau.", "note": "postpone" },
-            { "id": "col-pte-2", "en": "Put the boxes down over there, please.", "vi": "Đặt những chiếc hộp xuống bên kia đi.", "note": "here down is an adverb of place, not a phrasal verb" },
-            { "id": "col-pte-3", "en": "He looked into the problem for two weeks.", "vi": "Anh ấy đã nghiên cứu vấn đề trong hai tuần.", "note": "look into means investigate" },
-            { "id": "col-pte-4", "en": "She filled in the form and handed it back.", "vi": "Cô ấy điền vào biểu mẫu rồi trả lại.", "note": "fill in is separable: fill it in" }
+            {
+              "id": "col-pte-1",
+              "en": "The meeting was put off until next week.",
+              "vi": "Cuộc họp đã được hoãn đến tuần sau.",
+              "note": "postpone"
+            },
+            {
+              "id": "col-pte-2",
+              "en": "Put the boxes down over there, please.",
+              "vi": "Đặt những chiếc hộp xuống bên kia đi.",
+              "note": "here down is an adverb of place, not a phrasal verb"
+            },
+            {
+              "id": "col-pte-3",
+              "en": "He looked into the problem for two weeks.",
+              "vi": "Anh ấy đã nghiên cứu vấn đề trong hai tuần.",
+              "note": "look into means investigate"
+            },
+            {
+              "id": "col-pte-4",
+              "en": "She filled in the form and handed it back.",
+              "vi": "Cô ấy điền vào biểu mẫu rồi trả lại.",
+              "note": "fill in is separable: fill it in"
+            }
           ]
         },
         {
@@ -1049,7 +1914,12 @@
               "difficulty": "advanced",
               "prompt": "Be careful: the meeting has been put ___ until Friday.",
               "instruction": "Write the correct particle.",
-              "answer": { "type": "text", "values": ["off"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "off"
+                ]
+              },
               "explanation": "put off means postpone, so put off the meeting is the idiom. Putting the particle after the meeting, as in put the meeting off, would also be correct, but dropping the particle entirely leaves put the meeting, which means something completely different.",
               "xp": 10
             },
@@ -1061,7 +1931,12 @@
               "difficulty": "advanced",
               "prompt": "Please look after the little girl when I am out.",
               "instruction": "Rewrite the sentence with the correct word order.",
-              "answer": { "type": "text", "values": ["Please look the little girl after when I am out."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Please look the little girl after when I am out."
+                ]
+              },
               "explanation": "look after is an inseparable phrasal verb, so the object never goes in the middle. This exercise is a trap: the only correct original form is look after the little girl, and any attempt to separate the parts makes the sentence ungrammatical.",
               "xp": 10
             },
@@ -1074,11 +1949,31 @@
               "prompt": "Which sentence is grammatical?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "She agreed with the proposal immediately.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "She agreed the proposal with immediately.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "She agreed the proposal.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She agreed with the proposal immediately.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She agreed the proposal with immediately.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She agreed the proposal.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "agree with is inseparable: the object cannot move between the verb and the particle. Option c drops the particle entirely, and agree is normally used with a person or a proposal in this sense, so the phrase is incomplete.",
               "xp": 10
             },
@@ -1090,7 +1985,12 @@
               "difficulty": "advanced",
               "prompt": "Type the complete separable phrasal verb for the meaning to pick something up from the floor: Please ___ the keys .",
               "instruction": "Type the verb and particle in the correct order.",
-              "answer": { "type": "text", "values": ["pick up"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "pick up"
+                ]
+              },
               "explanation": "The sentence already contains the object the keys, so the answer is the verb plus particle in that order: pick up. Written with a pronoun instead, the same phrasal verb must separate them: pick them up.",
               "xp": 10
             }
@@ -1103,24 +2003,39 @@
           "items": [
             {
               "id": "col-pt-d1",
-              "audio": { "kind": "speech", "text": "Please turn off the lights before you leave the room." },
-              "acceptedAnswers": ["Please turn off the lights before you leave the room."],
+              "audio": {
+                "kind": "speech",
+                "text": "Please turn off the lights before you leave the room."
+              },
+              "acceptedAnswers": [
+                "Please turn off the lights before you leave the room."
+              ],
               "hint": "particle with its literal meaning",
               "translation": "Vui lòng tắt đèn trước khi bạn rời khỏi phòng.",
               "xp": 15
             },
             {
               "id": "col-pt-d2",
-              "audio": { "kind": "speech", "text": "He looked up the number and called the hotel." },
-              "acceptedAnswers": ["He looked up the number and called the hotel."],
+              "audio": {
+                "kind": "speech",
+                "text": "He looked up the number and called the hotel."
+              },
+              "acceptedAnswers": [
+                "He looked up the number and called the hotel."
+              ],
               "hint": "look up plus a noun",
               "translation": "Anh ấy tra số điện thoại rồi gọi khách sạn.",
               "xp": 15
             },
             {
               "id": "col-pt-d3",
-              "audio": { "kind": "speech", "text": "The launch was put off because of the heavy rain." },
-              "acceptedAnswers": ["The launch was put off because of the heavy rain."],
+              "audio": {
+                "kind": "speech",
+                "text": "The launch was put off because of the heavy rain."
+              },
+              "acceptedAnswers": [
+                "The launch was put off because of the heavy rain."
+              ],
               "hint": "put off means postpone",
               "translation": "Sự ra mắt đã bị hoãn vì mưa lớn.",
               "xp": 15
@@ -1142,11 +2057,31 @@
               "prompt": "Which sentence uses a separable phrasal verb correctly?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "She filled in the application form.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "She filled the application in.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "She filled the application form in.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "She filled in the application form.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "She filled the application in.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "She filled the application form in.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a"
+                ]
+              },
               "explanation": "A noun object can stay at the end after the particle, so filled in the form is correct and even more natural than filled the form in. Option b puts the object between the parts, which is only allowed when the object is a pronoun.",
               "xp": 10
             },
@@ -1158,7 +2093,12 @@
               "difficulty": "advanced",
               "prompt": "He asked me look after his cat for a week.",
               "instruction": "Rewrite the sentence with the correct structure.",
-              "answer": { "type": "text", "values": ["He asked me to look after his cat for a week."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "He asked me to look after his cat for a week."
+                ]
+              },
               "explanation": "ask somebody to do something needs the infinitive to after ask. Without it the sentence has no link between the request and the action, which is exactly the error Vietnamese speakers make with ask, tell and advise.",
               "xp": 10
             },
@@ -1171,14 +2111,54 @@
               "prompt": "Match each phrasal verb with its meaning.",
               "instruction": "Pair every phrasal verb with its correct meaning.",
               "items": [
-                { "id": "a", "text": "put off", "isCorrect": null, "matchKey": "to postpone" },
-                { "id": "b", "text": "look into", "isCorrect": null, "matchKey": "to investigate" },
-                { "id": "c", "text": "take over", "isCorrect": null, "matchKey": "to take control of" },
-                { "id": "d", "text": "give up", "isCorrect": null, "matchKey": "to stop trying" },
-                { "id": "e", "text": "look up to", "isCorrect": null, "matchKey": "to respect" },
-                { "id": "f", "text": "look after", "isCorrect": null, "matchKey": "to take care of" }
+                {
+                  "id": "a",
+                  "text": "put off",
+                  "isCorrect": null,
+                  "matchKey": "to postpone"
+                },
+                {
+                  "id": "b",
+                  "text": "look into",
+                  "isCorrect": null,
+                  "matchKey": "to investigate"
+                },
+                {
+                  "id": "c",
+                  "text": "take over",
+                  "isCorrect": null,
+                  "matchKey": "to take control of"
+                },
+                {
+                  "id": "d",
+                  "text": "give up",
+                  "isCorrect": null,
+                  "matchKey": "to stop trying"
+                },
+                {
+                  "id": "e",
+                  "text": "look up to",
+                  "isCorrect": null,
+                  "matchKey": "to respect"
+                },
+                {
+                  "id": "f",
+                  "text": "look after",
+                  "isCorrect": null,
+                  "matchKey": "to take care of"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "to postpone", "b": "to investigate", "c": "to take control of", "d": "to stop trying", "e": "to respect", "f": "to take care of" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "to postpone",
+                  "b": "to investigate",
+                  "c": "to take control of",
+                  "d": "to stop trying",
+                  "e": "to respect",
+                  "f": "to take care of"
+                }
+              },
               "explanation": "Phrasal verbs are idioms: look into has nothing to do with looking, and look up to means respect rather than searching. Learning them as single units, with the meaning attached, is the only reliable method.",
               "xp": 10
             },
@@ -1191,11 +2171,31 @@
               "prompt": "Complete the sentence with the correct particle: The plane took off and the airport was soon far ___ .",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "away", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "off", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "down", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "away",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "off",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "down",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["away"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "away"
+                ]
+              },
               "explanation": "far away is an adjective phrase describing distance, not a phrasal verb. The trap is that take off has just been used in the same sentence with off, which tempts you to repeat it.",
               "xp": 10
             }
@@ -1232,8 +2232,18 @@
               "statement": "The noun in a collocation is often a good translation of the Vietnamese, but the verb that goes with it is chosen by the English pattern. Start from the verb and ask what nouns it accepts.",
               "formula": "ng, thi hanh a test = carry out a test, not do a test",
               "examples": [
-                { "id": "col-tt-ex1", "en": "We will carry out a test of the new system.", "vi": "Chúng tôi sẽ kiểm tra hệ thống mới.", "note": "carry out a test" },
-                { "id": "col-tt-ex2", "en": "The school introduced a new test for all students.", "vi": "Trường giới thiệu bài kiểm tra mới cho tất cả sinh viên.", "note": "introduce is fine with a test; the mistake is do a test in the sense of administer" }
+                {
+                  "id": "col-tt-ex1",
+                  "en": "We will carry out a test of the new system.",
+                  "vi": "Chúng tôi sẽ kiểm tra hệ thống mới.",
+                  "note": "carry out a test"
+                },
+                {
+                  "id": "col-tt-ex2",
+                  "en": "The school introduced a new test for all students.",
+                  "vi": "Trường giới thiệu bài kiểm tra mới cho tất cả sinh viên.",
+                  "note": "introduce is fine with a test; the mistake is do a test in the sense of administer"
+                }
               ]
             },
             {
@@ -1241,8 +2251,18 @@
               "statement": "Nouns such as decision, mistake, progress, research, suggestion and information are abstract, and the verbs that accept them are equally abstract: make, take, do, give.",
               "formula": "make a decision, take a risk, give an explanation",
               "examples": [
-                { "id": "col-tt-ex3", "en": "The director gave a full explanation of the delay.", "vi": "Giám đốc đã giải thích đầy đủ về sự chậm trễ.", "note": "give an explanation, not make one" },
-                { "id": "col-tt-ex4", "en": "They made a suggestion about the new timetable.", "vi": "Họ đã đưa ra một gợi ý về lịch trình mới.", "note": "make a suggestion" }
+                {
+                  "id": "col-tt-ex3",
+                  "en": "The director gave a full explanation of the delay.",
+                  "vi": "Giám đốc đã giải thích đầy đủ về sự chậm trễ.",
+                  "note": "give an explanation, not make one"
+                },
+                {
+                  "id": "col-tt-ex4",
+                  "en": "They made a suggestion about the new timetable.",
+                  "vi": "Họ đã đưa ra một gợi ý về lịch trình mới.",
+                  "note": "make a suggestion"
+                }
               ]
             },
             {
@@ -1250,8 +2270,18 @@
               "statement": "Vietnamese uses very many classifier phrases. English counts with few of them, and often uses an uncountable noun instead: mot chuyen (a story) becomes some news or a report.",
               "formula": "mot chuyen = a story, some news, an incident",
               "examples": [
-                { "id": "col-tt-ex5", "en": "The incident caused serious damage to the building.", "vi": "Sự cố đã gây thiệt hại nghiêm trọng cho tòa nhà.", "note": "incident, damage; damage is uncountable" },
-                { "id": "col-tt-ex6", "en": "Two incidents were reported last night.", "vi": "Hai sự cố đã được báo cáo đêm qua.", "note": "countable, so two is fine" }
+                {
+                  "id": "col-tt-ex5",
+                  "en": "The incident caused serious damage to the building.",
+                  "vi": "Sự cố đã gây thiệt hại nghiêm trọng cho tòa nhà.",
+                  "note": "incident, damage; damage is uncountable"
+                },
+                {
+                  "id": "col-tt-ex6",
+                  "en": "Two incidents were reported last night.",
+                  "vi": "Hai sự cố đã được báo cáo đêm qua.",
+                  "note": "countable, so two is fine"
+                }
               ]
             },
             {
@@ -1259,8 +2289,18 @@
               "statement": "The fix is to store whole phrases with an example. Ten stored phrases are worth more than a hundred stored words, because you can only use English in phrases.",
               "formula": "make progress, carry out research, take responsibility",
               "examples": [
-                { "id": "col-tt-ex7", "en": "She took responsibility for the whole project.", "vi": "Cô ấy đã nhận trách nhiệm cho toàn bộ dự án.", "note": "take responsibility, not make it" },
-                { "id": "col-tt-ex8", "en": "He made rapid progress in three months.", "vi": "Anh ấy đã tiến bộ nhanh chóng trong ba tháng.", "note": "make progress, with an adjective if you want degree" }
+                {
+                  "id": "col-tt-ex7",
+                  "en": "She took responsibility for the whole project.",
+                  "vi": "Cô ấy đã nhận trách nhiệm cho toàn bộ dự án.",
+                  "note": "take responsibility, not make it"
+                },
+                {
+                  "id": "col-tt-ex8",
+                  "en": "He made rapid progress in three months.",
+                  "vi": "Anh ấy đã tiến bộ nhanh chóng trong ba tháng.",
+                  "note": "make progress, with an adjective if you want degree"
+                }
               ]
             }
           ]
@@ -1269,10 +2309,30 @@
           "id": "col-tt-examples",
           "type": "examples",
           "examples": [
-            { "id": "col-tte-1", "en": "Please make yourself at home.", "vi": "Xin cứ tự nhiên nhé.", "note": "a fixed phrase that cannot be translated word for word" },
-            { "id": "col-tte-2", "en": "We have to take the weather into account.", "vi": "Chúng ta phải tính đến thời tiết.", "note": "take into account, not think the weather" },
-            { "id": "col-tte-3", "en": "There was a shortage of skilled workers.", "vi": "Có sự thiếu hụt lao động có tay nghề.", "note": "shortage of, standard in news English" },
-            { "id": "col-tte-4", "en": "His hard work paid off in the end.", "vi": "Nỗ lực của anh ấy đã được đền đáp cuối cùng.", "note": "pay off, a phrasal verb meaning succeed" }
+            {
+              "id": "col-tte-1",
+              "en": "Please make yourself at home.",
+              "vi": "Xin cứ tự nhiên nhé.",
+              "note": "a fixed phrase that cannot be translated word for word"
+            },
+            {
+              "id": "col-tte-2",
+              "en": "We have to take the weather into account.",
+              "vi": "Chúng ta phải tính đến thời tiết.",
+              "note": "take into account, not think the weather"
+            },
+            {
+              "id": "col-tte-3",
+              "en": "There was a shortage of skilled workers.",
+              "vi": "Có sự thiếu hụt lao động có tay nghề.",
+              "note": "shortage of, standard in news English"
+            },
+            {
+              "id": "col-tte-4",
+              "en": "His hard work paid off in the end.",
+              "vi": "Nỗ lực của anh ấy đã được đền đáp cuối cùng.",
+              "note": "pay off, a phrasal verb meaning succeed"
+            }
           ]
         },
         {
@@ -1288,7 +2348,14 @@
               "prompt": "Chúng tôi đã thực hiện nghiên cứu về thị hiệu.",
               "instruction": "Translate into English using the standard collocation.",
               "translation": "Chúng tôi đã thực hiện nghiên cứu về thị hiệu.",
-              "answer": { "type": "text", "values": ["We carried out research into the market.", "We did research into the market.", "We conducted research into the market."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "We carried out research into the market.",
+                  "We did research into the market.",
+                  "We conducted research into the market."
+                ]
+              },
               "explanation": "thuc hien maps to carry out, do or conduct, never to make research. All three listed verbs accept research, but make does not, which is exactly the point of this exercise.",
               "xp": 10
             },
@@ -1300,7 +2367,12 @@
               "difficulty": "advanced",
               "prompt": "The company did a big mistake and had to pay a lot of money.",
               "instruction": "Rewrite the sentence with correct collocations.",
-              "answer": { "type": "text", "values": ["The company made a big mistake and had to pay a lot of money."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "The company made a big mistake and had to pay a lot of money."
+                ]
+              },
               "explanation": "Two collocation errors in one sentence: you make a mistake, not do one, and the scale of a serious error is expressed with big, not with a large, which is reserved for physical size.",
               "xp": 10
             },
@@ -1313,12 +2385,38 @@
               "prompt": "Which sentences avoid the literal translation trap?",
               "instruction": "Select every correct sentence.",
               "items": [
-                { "id": "a", "text": "You should take these tablets twice a day.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "You should eat these tablets twice a day.", "isCorrect": false, "matchKey": null },
-                { "id": "c", "text": "The government took action on housing.", "isCorrect": true, "matchKey": null },
-                { "id": "d", "text": "The government made action on housing.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "You should take these tablets twice a day.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "You should eat these tablets twice a day.",
+                  "isCorrect": false,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "The government took action on housing.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "d",
+                  "text": "The government made action on housing.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "c"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "c"
+                ]
+              },
               "explanation": "take tablets and take action are both standard. eat tablets copies the Vietnamese uong from the shape of the word, and make action copies hanh dong, but English has fixed verbs for both and neither of those pairings exists.",
               "xp": 10
             },
@@ -1331,12 +2429,40 @@
               "prompt": "Match each Vietnamese-style literal version with the natural English collocation.",
               "instruction": "Pair each literal version with its natural English form.",
               "items": [
-                { "id": "a", "text": "make responsibility", "isCorrect": null, "matchKey": "take responsibility" },
-                { "id": "b", "text": "do an exam", "isCorrect": null, "matchKey": "take an exam" },
-                { "id": "c", "text": "do a decision", "isCorrect": null, "matchKey": "make a decision" },
-                { "id": "d", "text": "eat medicine", "isCorrect": null, "matchKey": "take medicine" }
+                {
+                  "id": "a",
+                  "text": "make responsibility",
+                  "isCorrect": null,
+                  "matchKey": "take responsibility"
+                },
+                {
+                  "id": "b",
+                  "text": "do an exam",
+                  "isCorrect": null,
+                  "matchKey": "take an exam"
+                },
+                {
+                  "id": "c",
+                  "text": "do a decision",
+                  "isCorrect": null,
+                  "matchKey": "make a decision"
+                },
+                {
+                  "id": "d",
+                  "text": "eat medicine",
+                  "isCorrect": null,
+                  "matchKey": "take medicine"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "take responsibility", "b": "take an exam", "c": "make a decision", "d": "take medicine" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "take responsibility",
+                  "b": "take an exam",
+                  "c": "make a decision",
+                  "d": "take medicine"
+                }
+              },
               "explanation": "Responsibility is taken, exams and medicine are taken, decisions are made. Four cases where the noun in the Vietnamese is correct and only the verb partner has to change.",
               "xp": 10
             },
@@ -1348,7 +2474,12 @@
               "difficulty": "advanced",
               "prompt": "In my opinion, this policy will do a good effect on small businesses.",
               "instruction": "Rewrite the sentence using the natural English collocation.",
-              "answer": { "type": "text", "values": ["In my opinion, this policy will have a good effect on small businesses."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "In my opinion, this policy will have a good effect on small businesses."
+                ]
+              },
               "explanation": "English uses have an effect on or make an impact on. do a good effect copies the Vietnamese tao anh huong, and no English verb combines with do in this phrase; the noun effect itself is correct.",
               "xp": 10
             }
@@ -1361,24 +2492,39 @@
           "items": [
             {
               "id": "col-tt-d1",
-              "audio": { "kind": "speech", "text": "The school will carry out a test of the new system in June." },
-              "acceptedAnswers": ["The school will carry out a test of the new system in June."],
+              "audio": {
+                "kind": "speech",
+                "text": "The school will carry out a test of the new system in June."
+              },
+              "acceptedAnswers": [
+                "The school will carry out a test of the new system in June."
+              ],
               "hint": "carry out plus test",
               "translation": "Trường sẽ kiểm tra hệ thống mới vào tháng Sáu.",
               "xp": 15
             },
             {
               "id": "col-tt-d2",
-              "audio": { "kind": "speech", "text": "The new law will have a strong effect on small shops." },
-              "acceptedAnswers": ["The new law will have a strong effect on small shops."],
+              "audio": {
+                "kind": "speech",
+                "text": "The new law will have a strong effect on small shops."
+              },
+              "acceptedAnswers": [
+                "The new law will have a strong effect on small shops."
+              ],
               "hint": "have an effect on",
               "translation": "Luật mới sẽ có ảnh hưởng mạnh đến các cửa hàng nhỏ.",
               "xp": 15
             },
             {
               "id": "col-tt-d3",
-              "audio": { "kind": "speech", "text": "We must take the weather into account when we plan the trip." },
-              "acceptedAnswers": ["We must take the weather into account when we plan the trip."],
+              "audio": {
+                "kind": "speech",
+                "text": "We must take the weather into account when we plan the trip."
+              },
+              "acceptedAnswers": [
+                "We must take the weather into account when we plan the trip."
+              ],
               "hint": "take into account",
               "translation": "Chúng ta phải tính đến thời tiết khi lên kế hoạch chuyến đi.",
               "xp": 15
@@ -1393,18 +2539,39 @@
           "questions": [
             {
               "id": "col-tt-q1",
-              "kind": "multipleChoice",
+              "kind": "multiSelect",
               "topicID": "collocations",
               "lessonID": "collocations-translation-traps",
               "difficulty": "advanced",
-              "prompt": "Which sentence is natural English?",
+              "prompt": "Which of these sentences are natural English?",
               "instruction": "Choose the correct sentence.",
               "items": [
-                { "id": "a", "text": "You must take a serious decision before Friday.", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "You must make a serious decision before Friday.", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "You must do a serious decision before Friday.", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "You must take a serious decision before Friday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "You must make a serious decision before Friday.",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "You must do a serious decision before Friday.",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "choice", "values": ["a", "b"] },
+              "answer": {
+                "type": "choice",
+                "values": [
+                  "a",
+                  "b"
+                ]
+              },
               "explanation": "Both make a decision and take a decision are accepted, so both are listed as correct. do a decision is a Vietnamese pattern and is never English, whichever noun follows it.",
               "xp": 10
             },
@@ -1416,7 +2583,12 @@
               "difficulty": "advanced",
               "prompt": "Students must give an exam at the end of June.",
               "instruction": "Rewrite the sentence with the correct collocation.",
-              "answer": { "type": "text", "values": ["Students must take an exam at the end of June."] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "Students must take an exam at the end of June."
+                ]
+              },
               "explanation": "You sit or take an exam, you do an exam only in the sense of doing the paperwork afterwards. give an exam is a direct copy of the Vietnamese thi and is not English.",
               "xp": 10
             },
@@ -1429,14 +2601,54 @@
               "prompt": "Match each literal phrase with its natural English version.",
               "instruction": "Pair every literal phrase with the natural form.",
               "items": [
-                { "id": "a", "text": "do an effort", "isCorrect": null, "matchKey": "make an effort" },
-                { "id": "b", "text": "do a problem", "isCorrect": null, "matchKey": "solve a problem" },
-                { "id": "c", "text": "eat a medicine", "isCorrect": null, "matchKey": "take medicine" },
-                { "id": "d", "text": "make an appointment", "isCorrect": null, "matchKey": "make an appointment" },
-                { "id": "e", "text": "give news", "isCorrect": null, "matchKey": "break news" },
-                { "id": "f", "text": "have a rest", "isCorrect": null, "matchKey": "have a rest" }
+                {
+                  "id": "a",
+                  "text": "do an effort",
+                  "isCorrect": null,
+                  "matchKey": "make an effort"
+                },
+                {
+                  "id": "b",
+                  "text": "do a problem",
+                  "isCorrect": null,
+                  "matchKey": "solve a problem"
+                },
+                {
+                  "id": "c",
+                  "text": "eat a medicine",
+                  "isCorrect": null,
+                  "matchKey": "take medicine"
+                },
+                {
+                  "id": "d",
+                  "text": "make an appointment",
+                  "isCorrect": null,
+                  "matchKey": "make an appointment"
+                },
+                {
+                  "id": "e",
+                  "text": "give news",
+                  "isCorrect": null,
+                  "matchKey": "break news"
+                },
+                {
+                  "id": "f",
+                  "text": "have a rest",
+                  "isCorrect": null,
+                  "matchKey": "have a rest"
+                }
               ],
-              "answer": { "type": "pairs", "values": { "a": "make an effort", "b": "solve a problem", "c": "take medicine", "d": "make an appointment", "e": "break news", "f": "have a rest" } },
+              "answer": {
+                "type": "pairs",
+                "values": {
+                  "a": "make an effort",
+                  "b": "solve a problem",
+                  "c": "take medicine",
+                  "d": "make an appointment",
+                  "e": "break news",
+                  "f": "have a rest"
+                }
+              },
               "explanation": "Efforts are made, problems are solved, medicines are taken and news is broken. The last two items are already correct English and are included so you can see which literal translations happen to work.",
               "xp": 10
             },
@@ -1449,11 +2661,32 @@
               "prompt": "Complete the sentence with the natural collocation: The factory was closed because of a serious ___ of water.",
               "instruction": "Complete the sentence.",
               "items": [
-                { "id": "a", "text": "shortage", "isCorrect": true, "matchKey": null },
-                { "id": "b", "text": "lack", "isCorrect": true, "matchKey": null },
-                { "id": "c", "text": "missing", "isCorrect": false, "matchKey": null }
+                {
+                  "id": "a",
+                  "text": "shortage",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "b",
+                  "text": "lack",
+                  "isCorrect": true,
+                  "matchKey": null
+                },
+                {
+                  "id": "c",
+                  "text": "missing",
+                  "isCorrect": false,
+                  "matchKey": null
+                }
               ],
-              "answer": { "type": "text", "values": ["shortage", "lack"] },
+              "answer": {
+                "type": "text",
+                "values": [
+                  "shortage",
+                  "lack"
+                ]
+              },
               "explanation": "shortage of and lack of are both correct here, so both are accepted. missing is not a noun in this pattern, and mixing two accepted collocations in one phrase, as in a shortage of lack, would be wrong.",
               "xp": 10
             }
