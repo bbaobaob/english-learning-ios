@@ -91,20 +91,20 @@ public struct ExerciseEngine: Sendable {
         let result: ExerciseResult
         switch exercise.kind {
         case .multipleChoice, .reading, .listening, .listeningComprehension:
-            result = checkChoice(exercise, response, allowPartial: false)
+            result = checkChoice(exercise, response: response, allowPartial: false)
         case .multiSelect:
-            result = checkChoice(exercise, response, allowPartial: true)
+            result = checkChoice(exercise, response: response, allowPartial: true)
         case .trueFalse:
-            result = checkBoolean(exercise, response)
+            result = checkBoolean(exercise, response: response)
         case .matching:
-            result = checkMatching(exercise, response)
+            result = checkMatching(exercise, response: response)
         case .rearrangeWords:
-            result = checkOrder(exercise, response)
+            result = checkOrder(exercise, response: response)
         case .dictation:
-            result = checkText(exercise, response)
+            result = checkText(exercise, response: response)
         case .fillInTheBlank, .typeTheAnswer, .sentenceCompletion, .errorCorrection,
              .wordFormation, .translation, .grammarCorrection:
-            result = checkText(exercise, response)
+            result = checkText(exercise, response: response)
         }
         return result
     }
@@ -222,7 +222,13 @@ public struct ExerciseEngine: Sendable {
     /// Note that shipped content also keys some item-based answers by `matchKey` rather than by
     /// `item.id` (`ielts-l-sec2-q1`, `ielts-r-p3-q1`), so nothing here may assume id keys.
     private func checkMatching(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
-        let expected = exercise.answer.pairs
+        // `Answer.pairs(_:)` is a factory, not a property: read the decoded payload.
+        let expected: [String: String]
+        if case .pairs(let map) = exercise.answer.values {
+            expected = map
+        } else {
+            expected = [:]
+        }
         let chosen = response.asPairs ?? [:]
         var wrong: [WrongPair] = []
         for key in expected.keys.sorted() {

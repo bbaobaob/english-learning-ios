@@ -134,15 +134,3 @@ schemes:
       config: Release
 
   # The engine is tested in its own scheme so `xcodebuild -scheme EnglishCore
-  # test` runs the portable package on its own, without the app target.
-  EnglishCore:
-    build:
-      targets:
-        EnglishCore: all
-    test:
-      config: Debug
-      gatherCoverageData: true
-      targets:
-        - EnglishCoreTests
-    run:
-      config: Debug

@@ -108,7 +108,7 @@ public enum VideoSource: Sendable, Hashable {
     }
 
     public func encode(to encoder: any Encoder) throws {
-        let container = encoder.container(keyedBy: CodingKeys.self)
+        var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(kind, forKey: .type)
         switch self {
         case .remote(let url): try container.encode(url, forKey: .url)

@@ -94,7 +94,7 @@ public enum LessonStep: Sendable, Hashable, Identifiable {
     }
 
     public func encode(to encoder: any Encoder) throws {
-        let container = encoder.container(keyedBy: CodingKeys.self)
+        var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(type, forKey: .type)
         switch self {
         case .theory(let step): try step.encode(to: encoder)

@@ -171,7 +171,7 @@ public struct Answer: Codable, Sendable, Hashable, Identifiable {
     }
 
     public func encode(to encoder: any Encoder) throws {
-        let container = encoder.container(keyedBy: CodingKeys.self)
+        var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(type, forKey: .type)
         switch values {
         case .text(let list): try container.encode(list, forKey: .values)
