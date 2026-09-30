@@ -11,26 +11,24 @@ struct PracticeHomeView: View {
 
     @Environment(AppState.self) private var appState
 
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: Spacing.xl) {
-                    header
-                    todaySummary
-                    skillsSection
-                    drillsSection
-                    weakestSection
-                    Color.clear.frame(height: Spacing.xl)
-                }
-                .padding(.horizontal, Spacing.lg)
-                .padding(.top, Spacing.sm)
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: Spacing.xl) {
+                header
+                todaySummary
+                skillsSection
+                drillsSection
+                weakestSection
+                Color.clear.frame(height: Spacing.xl)
             }
-            .background(PracticeBackdrop())
-            .navigationTitle("Practice")
-            .navigationBarTitleDisplayMode(.large)
+            .padding(.horizontal, Spacing.lg)
+            .padding(.top, Spacing.sm)
         }
+        .background(PracticeBackdrop())
+        .navigationTitle("Practice")
+        .navigationBarTitleDisplayMode(.large)
+        // TODO(root-lane): the Practice tab relies on App/Root's NavigationStack (the one
+        // bound to `AppState.navigationPath`). Do not wrap this view in a second stack.
     }
 
     // MARK: - Header
@@ -66,24 +64,28 @@ struct PracticeHomeView: View {
                 action: nil
             )
 
-            HStack(spacing: Spacing.md) {
-                StatCard(
-                    title: "XP today",
-                    value: streak.xpToday.formatted(.number),
-                    caption: "goal \(streak.xpGoal.formatted(.number))",
-                    symbol: "bolt.fill",
-                    tint: .xp
-                )
-                StatCard(
-                    title: "Streak",
-                    value: PracticeFormat.phrase(streak.current, "day", "days"),
-                    caption: streak.longest > streak.current
-                        ? "best \(streak.longest)"
-                        : "keep it alive",
-                    symbol: "flame.fill",
-                    tint: .streak
-                )
+            // XP and streak are the two numbers worth reading at a glance, so they get
+            // the shared badges rather than two more stat cards.
+            HStack(spacing: Spacing.lg) {
+                XPBadge(xp: streak.xpToday)
+                StreakFlame(days: streak.current, isActive: streak.current > 0)
+
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("\(streak.xpToday.formatted(.number)) of \(streak.xpGoal.formatted(.number)) XP today")
+                        .font(AppFont.display(14, .semibold))
+                    Text(streak.longest > streak.current
+                         ? "Best run: \(PracticeFormat.phrase(streak.longest, "day", "days"))."
+                         : "This is your best run so far.")
+                        .font(AppFont.display(12, .regular))
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer(minLength: 0)
             }
+            .padding(Spacing.lg)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .practiceFloatingGlass()
+            .accessibilityElement(children: .combine)
 
             HStack(spacing: Spacing.md) {
                 StatCard(

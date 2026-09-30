@@ -1162,11 +1162,13 @@
               "topicID": "adverb",
               "lessonID": "adverb-degree-focus",
               "difficulty": "intermediate",
-              "prompt": "He is ready only after he has finished the report.",
-              "instruction": "Rewrite the sentence so the emphasis is on the report.",
-              "items": [],
+              "prompt": "He is ready just after he has finished the report.",
+              "instruction": "Rewrite the sentence so the emphasis falls on the report, not on the timing.",
+              "items": [
+                { "id": "w1", "text": "just after", "isCorrect": false, "matchKey": null }
+              ],
               "answer": { "type": "text", "values": ["He is ready only after he has finished the report."] },
-              "explanation": "The sentence already emphasises the report, because only attaches to the clause about finishing it. Moving only to the front, only he is ready, would suggest that nobody else is ready, which is a different claim.",
+              "explanation": "Just after says the timing is very close, which says nothing about which part of the sentence matters. Only after restricts the condition to finishing the report, so only is the focusing adverb the sentence needs.",
               "xp": 10
             },
             {
@@ -1237,7 +1239,7 @@
           "id": "adverb-l6-examples",
           "type": "examples",
           "examples": [
-            { "id": "adverb-l6-ex1", "en": "He did not study hard; however, he passed the exam easily.", "vi": "Anh ấy không học chăm chỉ; tuy nhiên, anh ấy đã dễ dàngng vượt qua kỳ thi.", "note": "however after a semicolon for a strong contrast" },
+            { "id": "adverb-l6-ex1", "en": "He did not study hard; however, he passed the exam easily.", "vi": "Anh ấy không học chăm chỉ; tuy nhiên, anh ấy đã dễ dàng vượt qua kỳ thi.", "note": "however after a semicolon for a strong contrast" },
             { "id": "adverb-l6-ex2", "en": "The train was late; therefore, we missed the first part of the film.", "vi": "Tàu đến muộn; vì vậy, chúng tôi đã bỏ lỡ phần đầu của bộ phim.", "note": "therefore after a semicolon for a result" },
             { "id": "adverb-l6-ex3", "en": "She looked tired. In fact, she had worked for twelve hours.", "vi": "Cô ấy trông có vẻ mệt. Thực tế, cô ấy đã làm việc mười hai tiếng.", "note": "in fact corrects what the listener might assume" },
             { "id": "adverb-l6-ex4", "en": "The room is small, in other words it has about ten square metres.", "vi": "Căn phòng nhỏ, nói cách khác là khoảng mười mét vuông.", "note": "in other words rephrases the first clause" },

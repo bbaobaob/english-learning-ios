@@ -1,0 +1,1461 @@
+{
+  "id": "comparison",
+  "title": "Comparison",
+  "kind": "grammar",
+  "level": "beginner",
+  "summary": "Compare two and three things: comparatives, superlatives and expressions of equality, including the irregular forms and the double comparative error.",
+  "icon": "arrow.up.arrow.down",
+  "estimatedMinutes": 40,
+  "lessons": [
+    {
+      "id": "comparison-comparing-basics",
+      "title": "The Basic Idea of Comparison",
+      "summary": "than, the two-part pattern and what you are comparing.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l1-theory",
+          "type": "theory",
+          "heading": "The Basic Idea of Comparison",
+          "body": "English has three ways of comparing. The comparative compares two things and needs than, as in taller than. The superlative compares three or more things and needs the definite article the, as in the tallest of them all. Equality states that two things are the same, as in as tall as. The structure of a comparison has three parts: the first item with its adjective, the word than, and the second item. The second item is normally a noun or a pronoun, and it is the standard that the first item is measured against: My room is smaller than yours, not My room is smaller than your room size. Notice that the second item is not repeated in full, and that a repeated noun is a common error. There is another pattern where the first item comes last, and it is used when the difference is long: This is the best film I have ever seen, where the film is the first item but comes after the standard. In spoken English, than is frequently replaced by the comparative alone, and this is completely normal: My room is smaller than yours, and also My room is smaller. You are cheaper, and also You are cheaper than him. Both are correct, and the shorter version is more common in casual speech. The opposite is a common error with a reversed pattern, as in My room is smaller than your, and nobody understands it. When you compare with a negative clause, the negative goes with the standard, not with the compared item: He is not taller than his brother, not He is taller than not his brother.",
+          "rules": [
+            {
+              "title": "Comparative and superlative",
+              "statement": "The comparative compares two things and takes than. The superlative compares three or more and takes the.",
+              "formula": "taller than / the tallest of the three",
+              "examples": [
+                { "id": "comparison-l1-r1-e1", "en": "This exercise is more difficult than the first one.", "vi": "Bài tập này khó hơn bài đầu tiên.", "note": "a comparative with a two-syllable adjective and more" },
+                { "id": "comparison-l1-r1-e2", "en": "She is the most patient teacher in our school.", "vi": "Cô ấy là giáo viên kiên nhẫn nhất trường chúng tôi.", "note": "the with the superlative, because the group is known" }
+              ]
+            },
+            {
+              "title": "The standard comes last in the short pattern",
+              "statement": "In the short pattern the compared item comes first and the standard after than, and the second item is never repeated in full.",
+              "formula": "My room is smaller than yours. / This is the best film I have ever seen.",
+              "examples": [
+                { "id": "comparison-l1-r1-e3", "en": "Hanoi is smaller than Ho Chi Minh City.", "vi": "Hà Nội nhỏ hơn Thành phố Hồ Chí Minh.", "note": "place names with a comparative" },
+                { "id": "comparison-l1-r1-e4", "en": "It was the worst storm we have ever experienced.", "vi": "Đó là cơn bão tệ nhất chúng tôi từng trải qua.", "note": "the long pattern, with the standard in a relative clause" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l1-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l1-ex1", "en": "My bag is heavier than yours, so I will carry it.", "vi": "Túi của tôi nặng hơn túi của bạn, nên tôi sẽ xách.", "note": "than with a possessive pronoun" },
+            { "id": "comparison-l1-ex2", "en": "This is the cheapest hotel in the whole city.", "vi": "Đây là khách sạn rẻ nhất trong cả thành phố.", "note": "superlative with an -est adjective" },
+            { "id": "comparison-l1-ex3", "en": "Working at night is more tiring than working in the morning.", "vi": "Làm việc ban đêm mệt hơn làm việc buổi sáng.", "note": "gerunds compared directly" },
+            { "id": "comparison-l1-ex4", "en": "The first exam was easier than the second one.", "vi": "Bài kiểm tra đầu tiên dễ hơn bài thứ hai.", "note": "a straightforward two-item comparison" },
+            { "id": "comparison-l1-ex5", "en": "He is not as tall as his father, but he is taller than his mother.", "vi": "Anh ấy không cao bằng bố, nhưng cao hơn mẹ.", "note": "one negative and one positive comparison in a single sentence" }
+          ]
+        },
+        {
+          "id": "comparison-l1-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l1-ex1",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "This street is narrower than that.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "This street is more narrow than that.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "This street is most narrow than that.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "This street is the narrower than that.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A short adjective ending in -er already carries the comparative, so adding more is wrong: more narrow is not English, and most narrow would be a superlative. The definite article belongs with the superlative, not the comparative.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-ex2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "My house is smaller than your house size.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "your house size", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["My house is smaller than yours."] },
+              "explanation": "After than you use a pronoun, a noun or a noun phrase, not a noun with a size word attached. Your house size would also be a clumsy phrase, because a house is measured in square metres, not in sizes.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "This is ___ (the / most) expensive restaurant in town.",
+              "instruction": "Write the correct words in the blank.",
+              "items": [
+                { "id": "h1", "text": "article needed?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["the most"] },
+              "explanation": "The superlative needs the definite article the because the group being compared is known: the most expensive restaurant in town. Without the, the sentence sounds unfinished.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-ex4",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "intermediate",
+              "prompt": "In careful written English, a comparison is normally arranged with the shorter item first and the standard after than.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. Standard English puts the compared item first and the standard second: She is taller than her sister. The reversed order, taller than she is, is possible but sounds marked in careful writing.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l1-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l1-d1",
+              "audio": { "kind": "speech", "text": "This restaurant is cheaper than the one near the station." },
+              "hint": "comparative with than",
+              "translation": "Nhà hàng này rẻ hơn nhà hàng gần nhà ga.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l1-d2",
+              "audio": { "kind": "speech", "text": "She is the most careful driver in our office." },
+              "hint": "the with a superlative",
+              "translation": "Cô ấy là người lái xe cẩn thận nhất trong văn phòng chúng tôi.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l1-d3",
+              "audio": { "kind": "speech", "text": "The second floor is quieter than the one we had last year." },
+              "hint": "a long comparison with a relative clause",
+              "translation": "Tầng hai yên tĩnh hơn tầng chúng ta có năm ngoái.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l1-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l1-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "The blue bag is more big than the red one.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "more big", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The blue bag is bigger than the red one."] },
+              "explanation": "Big is a one-syllable adjective and takes -er, so more big is wrong. Short adjectives never combine with more: bigger, taller, cheaper.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-q2",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "Which sentence uses the superlative correctly?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "She is the tallest girl in the class.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "She is tallest girl in the class.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "She is the taller girl in the class.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "She is more tall the girl in the class.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A superlative needs both the -est ending and the definite article the. Tallest alone lacks the article, the taller is a comparative, and more tall is not a possible form.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "beginner",
+              "prompt": "The new library is ___ (open) than the old one.",
+              "instruction": "Write the correct adjective in the blank.",
+              "items": [
+                { "id": "h1", "text": "comparative", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["more open"] },
+              "explanation": "Open has two syllables and ends in a single vowel and consonant, so it takes more rather than -er. Remember the doubling rule for a final consonant: bigger, hotter, wider.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l1-q4",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparing-basics",
+              "difficulty": "intermediate",
+              "prompt": "Nobody was more happier about the news than the children.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "more happier", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["Nobody was happier about the news than the children."] },
+              "explanation": "Happy is a short adjective that takes -er, so more is not allowed. Nobody was also already a superlative idea, so the result is a double superlative, and both halves have to be cleaned up.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l1-summary",
+          "type": "summary",
+          "takeaways": [
+            "The comparative compares two things and needs than; the superlative compares three or more and needs the.",
+            "The standard goes after than: smaller than yours, not smaller than your size.",
+            "Short adjectives take -er, longer ones take more, and never the two together.",
+            "In speech, than can be dropped, but the reversed pattern is not English: taller than he is."
+          ],
+          "nextLessonID": "comparison-comparative-forms"
+        }
+      ]
+    },
+    {
+      "id": "comparison-comparative-forms",
+      "title": "Forming Comparatives",
+      "summary": "Regular comparatives, the spelling changes and the irregular verbs.",
+      "level": "beginner",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l2-theory",
+          "type": "theory",
+          "heading": "Forming Comparatives",
+          "body": "Regular comparatives follow three routes. One-syllable adjectives usually add -er: tall becomes taller, cheap becomes cheaper, hard becomes harder. A final consonant doubles when the word ends in a single vowel plus a single consonant, as in big, hot, thin, wet and sad. One-syllable adjectives ending in -y change the y to i, so happy becomes happier. Adjectives of two or more syllables normally use more: more difficult, more expensive, more comfortable. The one common exception is an adjective ending in -y, which always takes -ier: happier, easier, funnier, earlier. Some two-syllable adjectives ending in a silent -e take -er as well, such as wider, nicer, safer and quieter. A very small group of longer adjectives also takes -er: cleverer, wiser and simpler. Eight important adjectives are completely irregular and must be learned. good, well and badly form a three-part set with a shared meaning, so good becomes better, the best and well becomes better and the best, while badly becomes worse and the worst. bad, badly and ill all lead to worse and the worst. many and much become more and the most. little becomes less and the least. far becomes further or farther, and the superlative is the furthest or the farthest. late becomes later and the latest, with a separate meaning of the deceased for the latest.",
+          "rules": [
+            {
+              "title": "The three regular routes",
+              "statement": "Add -er to one-syllable adjectives, use more with longer ones, and make the spelling changes that keep the word readable.",
+              "formula": "tall -> taller, big -> bigger, happy -> happier, careful -> more careful",
+              "examples": [
+                { "id": "comparison-l2-r1-e1", "en": "The road was narrower and much more dangerous than before.", "vi": "Con đường hẹp hơn và nguy hiểm hơn nhiều so với trước.", "note": "narrower doubles the r, dangerous takes more" },
+                { "id": "comparison-l2-r1-e2", "en": "This exercise is easier and the next one is more difficult.", "vi": "Bài tập này dễ hơn và bài sau khó hơn.", "note": "easiest uses -y to i, more difficult uses more" }
+              ]
+            },
+            {
+              "title": "Irregular comparatives",
+              "statement": "Eight groups are irregular and must be learned as whole units, because no pattern will give you the form.",
+              "formula": "good -> better, bad -> worse, much -> more, little -> less, far -> further",
+              "examples": [
+                { "id": "comparison-l2-r1-e3", "en": "This method is better than that one, and this is the best solution.", "vi": "Phương pháp này tốt hơn phương pháp kia, và đây là giải pháp tốt nhất.", "note": "good, better and the best" },
+                { "id": "comparison-l2-r1-e4", "en": "The second test was worse than the first, and it was the worst of all.", "vi": "Bài kiểm tra thứ hai tệ hơn bài đầu, và đó là bài tệ nhất.", "note": "bad, worse and the worst" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l2-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l2-ex1", "en": "The soup is hotter and the tea is colder than usual.", "vi": "Món súp nóng hơn và trà nguội hơn bình thường.", "note": "final consonants double with a short vowel" },
+            { "id": "comparison-l2-ex2", "en": "Your explanation was clearer and more detailed than mine.", "vi": "Cách giải thích của bạn rõ ràng hơn và chi tiết hơn của tôi.", "note": "clearer doubles the r, more detailed uses more" },
+            { "id": "comparison-l2-ex3", "en": "We had less time and fewer people than expected.", "vi": "Chúng tôi có ít thời gian và ít người hơn dự kiến.", "note": "less for uncountable, fewer for countable" },
+            { "id": "comparison-l2-ex4", "en": "The second room was smaller, but the price was higher.", "vi": "Căn phòng thứ hai nhỏ hơn, nhưng giá cao hơn.", "note": "two comparatives in one sentence" },
+            { "id": "comparison-l2-ex5", "en": "This restaurant is far more expensive than that one.", "vi": "Nhà hàng này đắt hơn nhiều so với nhà hàng kia.", "note": "far strengthens a comparative" }
+          ]
+        },
+        {
+          "id": "comparison-l2-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l2-ex1",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "beginner",
+              "prompt": "The day was ___ (hot) than yesterday, so we stayed inside.",
+              "instruction": "Write the correct comparative.",
+              "items": [
+                { "id": "h1", "text": "hotter / more hot", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["hotter"] },
+              "explanation": "Hot is one syllable with a short vowel and a single final consonant, so the t doubles: hotter. Adding more is a separate error, since short adjectives never take more.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-ex2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "beginner",
+              "prompt": "My results are gooder than his, so I am very happy.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "gooder", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["My results are better than his, so I am very happy."] },
+              "explanation": "good is irregular and takes better, not gooder. There is no -er form for good at all, which is one of the first irregular comparatives worth memorising.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-ex3",
+              "kind": "matching",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "intermediate",
+              "prompt": "Match each adjective to its comparative form.",
+              "instruction": "Drag each adjective onto the correct comparative.",
+              "items": [
+                { "id": "m1", "text": "good", "isCorrect": true, "matchKey": "better" },
+                { "id": "m2", "text": "bad", "isCorrect": true, "matchKey": "worse" },
+                { "id": "m3", "text": "little", "isCorrect": true, "matchKey": "less" },
+                { "id": "m4", "text": "big", "isCorrect": true, "matchKey": "bigger" },
+                { "id": "m5", "text": "careful", "isCorrect": true, "matchKey": "more careful" },
+                { "id": "m6", "text": "difficult", "isCorrect": true, "matchKey": "more difficult" }
+              ],
+              "answer": { "type": "pairs", "values": { "m1": "better", "m2": "worse", "m3": "less", "m4": "bigger", "m5": "more careful", "m6": "more difficult" } },
+              "explanation": "good, bad and little are irregular and become better, worse and less. Big doubles its final consonant, and the two-syllable adjectives careful and difficult take more instead of -er.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-ex4",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "intermediate",
+              "prompt": "We had less visitors and less money than the other team.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "less visitors", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["We had fewer visitors and less money than the other team."] },
+              "explanation": "Visitors are countable, so fewer is correct; less is for uncountable nouns such as money, time and water. Using less with a countable plural is one of the most persistent errors in learner English.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-ex5",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "She is more taller than her sister.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "She is taller than her sister.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "She is most taller than her sister.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "She is the taller than her sister.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Tall is one syllable and takes -er on its own. More is for longer adjectives, most is a superlative and the belongs with superlatives, so only taller is possible here.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l2-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l2-d1",
+              "audio": { "kind": "speech", "text": "The second room is smaller, but the price is much higher." },
+              "hint": "two comparatives, one doubled",
+              "translation": "Căn phòng thứ hai nhỏ hơn, nhưng giá cao hơn nhiều.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l2-d2",
+              "audio": { "kind": "speech", "text": "His English is better than mine, and his writing is more careful." },
+              "hint": "irregular comparative plus more",
+              "translation": "Tiếng Anh của anh ấy tốt hơn của tôi, và bài viết của anh ấy cẩn thận hơn.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l2-d3",
+              "audio": { "kind": "speech", "text": "We had fewer customers and less traffic than last year." },
+              "hint": "fewer and less",
+              "translation": "Chúng tôi có ít khách hàng và ít giao thông hơn năm ngoái.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l2-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l2-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "intermediate",
+              "prompt": "The film was more boring than we expected, and the seats were comfortableer.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "comfortabler", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The film was more boring than we expected, and the seats were more comfortable."] },
+              "explanation": "Comfortable already ends in a silent -e and has three syllables, so it takes more: more comfortable. Comfortabler is not a word, and the pattern of a two-syllable -er ending is limited to words like wider and nicer.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-q2",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "beginner",
+              "prompt": "Which comparative is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "badder", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "worse", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "more bad", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "the worse", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "bad is irregular and takes worse. There is no -er form and no more form, and the definite article belongs with the superlative the worst.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "beginner",
+              "prompt": "This box is ___ (thin) than that one.",
+              "instruction": "Write the correct comparative.",
+              "items": [
+                { "id": "h1", "text": "thinner / thinner", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["thinner"] },
+              "explanation": "Thin ends in a short vowel plus a single consonant, so the n doubles: thinner. The same rule gives bigger, hotter, fatter and sadder.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l2-q4",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-comparative-forms",
+              "difficulty": "intermediate",
+              "prompt": "Less is used with uncountable nouns and fewer is used with countable nouns.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. Less time, less water, less money, but fewer people, fewer books, fewer opportunities. The irregular less also means not as much, as in less expensive.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l2-summary",
+          "type": "summary",
+          "takeaways": [
+            "One-syllable adjectives take -er, with doubling and y to i where needed.",
+            "Longer adjectives take more, and the two never combine: not more taller.",
+            "The irregulars are good to better, bad to worse, much to more, little to less, far to further.",
+            "Less goes with uncountable nouns and fewer with countable ones."
+          ],
+          "nextLessonID": "comparison-superlative-forms"
+        }
+      ]
+    },
+    {
+      "id": "comparison-superlative-forms",
+      "title": "Forming Superlatives",
+      "summary": "The -est ending, the most, and the irregular set.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l3-theory",
+          "type": "theory",
+          "heading": "Forming Superlatives",
+          "body": "The superlative describes the most extreme item in a group, and it is built in the same three ways as the comparative. One-syllable adjectives add -est: tall becomes the tallest, cheap becomes the cheapest, hard becomes the hardest. The same spelling rules apply, so a final consonant doubles, giving the biggest, the hottest and the widest, and y becomes i, giving the easiest and the happiest. Two or more syllable adjectives use the most: the most expensive, the most comfortable, the most difficult. A small group takes -est directly: the best, the worst, the most, the least, the furthest and the oldest in phrases such as the oldest child. The definite article the is part of the form in almost every case, and it is omitted only when a comparative is also present, which in turn happens with the second pattern I mentioned. When two things are compared and both are superlatives of their own groups, English uses the comparative after than, not the superlative, and the definite article is dropped: She is the taller of the two sisters, not the tallest of the two sisters. The superlative needs a group to be meaningful, and the group is named in one of three ways: an of-phrase, as in the best film of the year; a prepositional phrase, as in the tallest building in the world; or a relative clause, as in the most expensive car I have ever seen. Superlatives can also be modified by a degree adverb. Much and far strengthen a superlative, and slightly and almost weaken it: the much taller of the two, the almost perfect result.",
+          "rules": [
+            {
+              "title": "Regular superlatives",
+              "statement": "Add -est to one-syllable adjectives and use the most for longer ones, with the same spelling changes as the comparative.",
+              "formula": "the tallest, the widest, the happiest, the most expensive",
+              "examples": [
+                { "id": "comparison-l3-r1-e1", "en": "That is the most difficult exam I have ever taken.", "vi": "Đó là bài kiểm tra khó nhất tôi từng làm.", "note": "the most with a relative clause naming the group" },
+                { "id": "comparison-l3-r1-e2", "en": "The widest road in town is closed for repairs.", "vi": "Con đường rộng nhất trong thị trấn đang đóng để sửa chữa.", "note": "the widest with the consonant doubling rule" }
+              ]
+            },
+            {
+              "title": "The definite article and the group",
+              "statement": "A superlative normally takes the, and the group must be named with an of-phrase, a prepositional phrase or a relative clause.",
+              "formula": "the best of the class / the best in the world / the best I have seen",
+              "examples": [
+                { "id": "comparison-l3-r1-e3", "en": "She is one of the tallest players in the team.", "vi": "Cô ấy là một trong những người chơi cao nhất trong đội.", "note": "one of the plus a plural noun after the superlative" },
+                { "id": "comparison-l3-r1-e4", "en": "It was the cheapest of the three offers we received.", "vi": "Đó là mức rẻ nhất trong ba đề nghị chúng tôi nhận được.", "note": "an of-phrase with a definite group" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l3-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l3-ex1", "en": "The highest mountain in the world is Mount Everest.", "vi": "Ngọn núi cao nhất thế giới là đỉnh Everest.", "note": "the highest plus a prepositional phrase naming the group" },
+            { "id": "comparison-l3-ex2", "en": "This is the best restaurant in the whole city.", "vi": "Đây là nhà hàng ngon nhất trong cả thành phố.", "note": "the best, the irregular superlative of good" },
+            { "id": "comparison-l3-ex3", "en": "He is the most reliable person in our team.", "vi": "Anh ấy là người đáng tin cậy nhất trong nhóm chúng tôi.", "note": "the most with a long adjective" },
+            { "id": "comparison-l3-ex4", "en": "Monday was the busiest day of the week for me.", "vi": "Thứ Hai là ngày bận nhất trong tuần đối với tôi.", "note": "the busiest with the doubling rule and an of-phrase" },
+            { "id": "comparison-l3-ex5", "en": "Of the two answers, hers was the clearest.", "vi": "Trong hai câu trả lời, câu của cô ấy rõ nhất.", "note": "a superlative with a group of two" }
+          ]
+        },
+        {
+          "id": "comparison-l3-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l3-ex1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "beginner",
+              "prompt": "This is the most tallest building in the district.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most tallest", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["This is the tallest building in the district."] },
+              "explanation": "Tall is one syllable and takes -est, so most is not allowed. This is the same double marking as more taller, and only one form of the comparison can be used at a time.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-ex2",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "beginner",
+              "prompt": "The ___ (small) room is next to the kitchen.",
+              "instruction": "Write the correct superlative.",
+              "items": [
+                { "id": "h1", "text": "smallest / most small", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["smallest"] },
+              "explanation": "Small is one syllable, so the superlative is the smallest with the l doubled. Most small is not a possible form.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-ex3",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "intermediate",
+              "prompt": "She is the taller of the two sisters, and she is taller.",
+              "instruction": "Rewrite the sentence so the comparison of two things is correct.",
+              "items": [
+                { "id": "w1", "text": "the taller of the two", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is the taller of the two sisters, and she is taller than her younger sister."] },
+              "explanation": "With a group of two, English uses the comparative after than, not the superlative: she is taller of the two. The superlative the tallest of the two is the classic error here.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-ex4",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "This is the most interesting book of the shelf.", "isCorrect": false, "matchKey": null },
+                { "id": "b", "text": "This is the most interesting book on the shelf.", "isCorrect": true, "matchKey": null },
+                { "id": "c", "text": "This is the most interesting book in the shelf.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "This is the most interesting the book on the shelf.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["b"] },
+              "explanation": "Shelf is a surface, so the preposition is on: the most interesting book on the shelf. In is for containers and enclosed spaces, and of the shelf would need a group of books rather than a place.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-ex5",
+              "kind": "sentenceCompletion",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "advanced",
+              "prompt": "Complete with a suitable superlative: She is ___ (good) cook in the family.",
+              "instruction": "Write the correct words.",
+              "items": [
+                { "id": "h1", "text": "article needed?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["the best"] },
+              "explanation": "Good takes the irregular superlative best, and the definite article the is needed because the group, the family, is known. She is the best cook in the family is the complete phrase.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l3-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l3-d1",
+              "audio": { "kind": "speech", "text": "The most expensive car in the world is not always the fastest." },
+              "hint": "the most plus an of-free prepositional phrase",
+              "translation": "Chiếc xe đắt nhất thế giới không phải lúc nào cũng nhanh nhất.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l3-d2",
+              "audio": { "kind": "speech", "text": "She is the best student of the group this year." },
+              "hint": "the best with an of-phrase",
+              "translation": "Cô ấy là học sinh giỏi nhất của nhóm năm nay.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l3-d3",
+              "audio": { "kind": "speech", "text": "The narrowest street in the old town is easy to miss." },
+              "hint": "the narrowest with a doubled consonant",
+              "translation": "Con đường hẹp nhất ở phố cổ rất dễ bị bỏ qua.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l3-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l3-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "beginner",
+              "prompt": "He is the most tallest man in his family.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most tallest", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["He is the tallest man in his family."] },
+              "explanation": "Tall takes -est on its own, so the most is removed. The definite article the is already there and is correct, because the group is his family.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-q2",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence is correct?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "Of the two plans, this one is the better.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "Of the two plans, this one is the best.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "Of the two plans, this one is more good.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "Of the two plans, this one is the most good.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "With a group of exactly two, English uses the comparative the better of the two. The superlative the best is reserved for a group of three or more, and more good is not a possible form.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "intermediate",
+              "prompt": "That was the ___ (bad) storm we have ever seen.",
+              "instruction": "Write the correct superlative.",
+              "items": [
+                { "id": "h1", "text": "worst / most bad", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["worst"] },
+              "explanation": "Bad is irregular and takes the superlative the worst, not most bad. The article the is already in the sentence, so only the adjective is missing.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l3-q4",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-superlative-forms",
+              "difficulty": "intermediate",
+              "prompt": "A superlative always names its group, with an of-phrase, a prepositional phrase or a relative clause.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. The best of the class, the best in the world and the best I have ever seen each tell the listener what set is being compared. Without the group, the superlative has nothing to be extreme within.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l3-summary",
+          "type": "summary",
+          "takeaways": [
+            "Add -est to one-syllable adjectives and use the most for longer ones.",
+            "The superlative normally takes the, and it always names its group.",
+            "With a group of two, use the comparative: the better of the two, not the best of the two.",
+            "Superlatives can be strengthened or weakened: much taller, almost perfect."
+          ],
+          "nextLessonID": "comparison-equality"
+        }
+      ]
+    },
+    {
+      "id": "comparison-equality",
+      "title": "Expressions of Equality",
+      "summary": "as...as, the same as, not as...as and equally.",
+      "level": "intermediate",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l4-theory",
+          "type": "theory",
+          "heading": "Expressions of Equality",
+          "body": "Equality is expressed in several patterns, and the main one is as plus the adjective plus as. The word as appears on both sides of the adjective and there is no change to the adjective itself: as tall as, as expensive as, as careful as. Because the adjective is unchanged, there is no comparative form here, and adding more or -er is a mistake. Notice that there are two separate as words and they are both needed: He is as tall as his brother, not as tall his brother. To make it negative, put not in front of the first as: He is not as tall as his brother. Putting not between the words is not English. For nouns, the same pattern uses a different set of words. As much as and as many as compare quantities: as much money as, as many books as. For the noun itself, the usual pattern is the same as: He has the same car as his sister, and They have the same idea as we do. A useful alternative is equally plus the adjective, which puts the equality in one word: equally tall, equally expensive, equally likely. Two other patterns express sameness without as. The comparative of the adjective plus as, such as taller as, appears mainly in formal and literary English and is not natural in speech. Like and the same as are extremely common in speech: She runs like her mother, and Our results are the same as yours. The difference between equality and a comparison is worth noticing: as tall as means the two are equal, while taller than means one is greater. In the negative, not as tall as means less than or equal to, and the strict form not taller than means strictly less. Finally, with numbers, exactly, almost and nearly modify as...as to control the precision: exactly twice as many, almost as expensive, nearly as old.",
+          "rules": [
+            {
+              "title": "as plus adjective plus as",
+              "statement": "The adjective stays unchanged and as appears on both sides. The negative puts not in front of the first as.",
+              "formula": "as tall as / not as tall as",
+              "examples": [
+                { "id": "comparison-l4-r1-e1", "en": "My sister is as tall as my brother now.", "vi": "Bạn chị tôi giờ cao bằng anh trai tôi.", "note": "tall is unchanged, with two as words" },
+                { "id": "comparison-l4-r1-e2", "en": "The second exam was not as difficult as the first.", "vi": "Bài kiểm tra thứ hai không khó bằng bài đầu.", "note": "not in front of the first as" }
+              ]
+            },
+            {
+              "title": "The same as and equally",
+              "statement": "For nouns use the same as, and an alternative for any adjective is equally plus the adjective.",
+              "formula": "the same car as / equally likely",
+              "examples": [
+                { "id": "comparison-l4-r1-e3", "en": "Their results were exactly the same as ours.", "vi": "Kết quả của họ hoàn toàn giống kết quả của chúng tôi.", "note": "the same plus as" },
+                { "id": "comparison-l4-r1-e4", "en": "Both plans are equally likely to succeed.", "vi": "Cả hai kế hoạch đều có khả năng thành công như nhau.", "note": "equally puts the equality in one word" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l4-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l4-ex1", "en": "This restaurant is as expensive as the one downtown.", "vi": "Nhà hàng này đắt bằng nhà hàng ở trung tâm.", "note": "two as words, no change to expensive" },
+            { "id": "comparison-l4-ex2", "en": "We spent as much money as we had planned.", "vi": "Chúng tôi đã chi tiêu nhiều tiền bằng số tiền đã dự tính.", "note": "as much plus a gerund after spend" },
+            { "id": "comparison-l4-ex3", "en": "He has the same experience as his older brother.", "vi": "Anh ấy có kinh nghiệm giống anh trai.", "note": "the same experience as" },
+            { "id": "comparison-l4-ex4", "en": "The two answers are not equally good, although both are acceptable.", "vi": "Hai câu trả lời không tốt như nhau, dù cả hai đều chấp nhận được.", "note": "equally before a short adjective" },
+            { "id": "comparison-l4-ex5", "en": "We bought twice as many tickets as last year.", "vi": "Chúng tôi đã mua gấp đôi số vé so với năm ngoái.", "note": "twice as many plus a plural noun" }
+          ]
+        },
+        {
+          "id": "comparison-l4-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l4-ex1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "beginner",
+              "prompt": "His bag is as heavy than mine.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "as heavy than", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["His bag is as heavy as mine."] },
+              "explanation": "The as...as pattern has no than in it, and the adjective is not changed. Heavy stays heavy, and the second as replaces than entirely.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-ex2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "The film is not as interesting as I expected I would be.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "not as interesting as", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The film is not as interesting as I expected it to be."] },
+              "explanation": "The comparison of the film with my expectation is a clause, so it needs a subject and a verb: as I expected it to be. The original left a pronoun and a verb outside any clause, which is not a sentence.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "beginner",
+              "prompt": "The two rooms are ___ (the same / size) and both face the street.",
+              "instruction": "Write the correct words in the blank.",
+              "items": [
+                { "id": "h1", "text": "equality pattern", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["the same size"] },
+              "explanation": "When two nouns are the same, the pattern is the same plus the noun: the same size, the same price, the same age. As size as is not English, because as...as needs an adjective, not a noun.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-ex4",
+              "kind": "translation",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "Cô ấy không giỏi tiếng Anh bằng chị tôi.",
+              "translation": "She is not as good at English as my sister.",
+              "instruction": "Translate the sentence into English using an equality pattern.",
+              "items": [],
+              "answer": { "type": "text", "values": ["She is not as good at English as my sister.", "She's not as good at English as my sister."] },
+              "explanation": "The Vietnamese structure bằng corresponds to as...as, and giỏi takes the fixed preposition at, so good at English. The negative not goes in front of the first as, and my sister is the standard at the end.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-ex5",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "He runs as fast as his brother does.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "He runs as fast as his brother.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "He runs as faster as his brother.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "He runs as fast than his brother.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The second subject needs its own verb, so his brother does is required when the subjects are different people. Both clauses must be complete for the comparison to be grammatically sound.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l4-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l4-d1",
+              "audio": { "kind": "speech", "text": "The second test was not as difficult as the first one." },
+              "hint": "negative equality pattern",
+              "translation": "Bài kiểm tra thứ hai không khó bằng bài đầu tiên.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l4-d2",
+              "audio": { "kind": "speech", "text": "Our results are exactly the same as yours." },
+              "hint": "the same as with a pronoun",
+              "translation": "Kết quả của chúng tôi hoàn toàn giống của bạn.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l4-d3",
+              "audio": { "kind": "speech", "text": "We bought twice as many tickets as last year." },
+              "hint": "twice as many plus a plural",
+              "translation": "Chúng tôi đã mua gấp đôi số vé so với năm ngoái.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l4-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l4-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "beginner",
+              "prompt": "The blue one is not as cheap the red one.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "as cheap the red one", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The blue one is not as cheap as the red one."] },
+              "explanation": "The equality pattern needs a second as: as cheap as. Without it, the sentence has an adjective with no standard attached and is not complete.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-q2",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "They have as many books as we do.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "They have as much books as we do.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "They have as more books as we do.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "They have as many book as we do.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "Books is countable and plural, so it takes many, and the noun stays plural. Much is for uncountable nouns such as water, and more is not allowed in the as...as pattern.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "Complete the sentence: The two options are ___ likely to succeed.",
+              "instruction": "Write one word in the blank.",
+              "items": [
+                { "id": "h1", "text": "equally or equal?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["equally"] },
+              "explanation": "Equally is the adverb, and it is the one that modifies the adjective likely. Equal is the adjective, and are equal likely would be wrong because the two words cannot both stand in front of the adjective.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l4-q4",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-equality",
+              "difficulty": "intermediate",
+              "prompt": "In not as tall as, the negative not comes before the first as.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. He is not as tall as his brother is the standard pattern. Putting not in the middle, as in not as tall than, is not English, and it also confuses equality with comparison.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l4-summary",
+          "type": "summary",
+          "takeaways": [
+            "Equality uses as plus the unchanged adjective plus as, with no than.",
+            "The negative goes in front of the first as: not as tall as.",
+            "For nouns, use the same plus the noun: the same size as, the same car as.",
+            "Equally is a one-word alternative: equally tall, equally likely."
+          ],
+          "nextLessonID": "comparison-far-further-and-late"
+        }
+      ]
+    },
+    {
+      "id": "comparison-far-further-and-late",
+      "title": "far, further and late",
+      "summary": "The three-syllable irregulars and the meanings that depend on distance or time.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l5-theory",
+          "type": "theory",
+          "heading": "far, further and late",
+          "body": "Six words cause more confusion than any others in comparison, because they have two and sometimes three forms with different meanings. Far has three levels of distance. Far with no comparative means a long physical distance, as in the house is far from here. Farther and further are both acceptable as the physical comparative, though farther is more common for physical distance in American English, and they share the superlative farthest or furthest. The distinction that matters in careful English is that further is also used in the sense of additional or more, as in please ask further questions and we will study further. With that meaning, further and furthest are the only correct forms: furthermore, to push it further. So the safest approach is to use farther for physical distance and further for everything else. Late has the same problem. Late with no comparative means not early, as in the bus is late. Later is the comparative of that meaning and the latest is the superlative, and it also has a completely separate meaning of dead, as in the latest of her parents. Late also has a second pair of meanings that concern time close to the present, and here the -ly form appears: lately means recently, which is never the comparative of late. Finally, many and much form a four-part set: much is the neutral form, more is the comparative and the most is the superlative, and many is the countable version. Use many with countable plurals and much with uncountable nouns, both on their own and after more. There is one more irregular worth knowing: old has the regular form older and oldest, but a good deal for the superlative, as in the good old days.",
+          "rules": [
+            {
+              "title": "far, farther and further",
+              "statement": "Physical distance takes farther and farthest. Additional or more takes further and furthest, and the -th form is the only correct one there.",
+              "formula": "farther away / further details / the furthest point",
+              "examples": [
+                { "id": "comparison-l5-r1-e1", "en": "The station is farther away than I thought.", "vi": "Nhà ga xa hơn tôi nghĩ.", "note": "farther for physical distance" },
+                { "id": "comparison-l5-r1-e2", "en": "We will discuss this further after lunch.", "vi": "Chúng ta sẽ thảo luận thêm về điều này sau bữa trưa.", "note": "further meaning additional, where farthest is not possible" }
+              ]
+            },
+            {
+              "title": "late, later, latest and lately",
+              "statement": "Later and the latest compare how late something is. Lately means recently and is never a comparative of late.",
+              "formula": "the train is late / later than I thought / lately I have been tired",
+              "examples": [
+                { "id": "comparison-l5-r1-e3", "en": "The second meeting was later than the first one.", "vi": "Cuộc họp thứ hai muộn hơn cuộc họp đầu tiên.", "note": "later is the comparative of late" },
+                { "id": "comparison-l5-r1-e4", "en": "Lately I have been sleeping badly.", "vi": "Gần đây tôi ngủ không ngon.", "note": "lately means recently and is not a comparative" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l5-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l5-ex1", "en": "We walked farther than we planned and took longer than expected.", "vi": "Chúng tôi đi xa hơn dự tính và mất nhiều thời gian hơn dự kiến.", "note": "farther and longer, both physical" },
+            { "id": "comparison-l5-ex2", "en": "To be honest, I am not further interested in that idea.", "vi": "Nói thật, tôi không còn quan tâm hơn đến ý tưởng đó nữa.", "note": "no further means not any more" },
+            { "id": "comparison-l5-ex3", "en": "The library is the furthest building from our office.", "vi": "Thư viện là tòa nhà xa nhất so với văn phòng của chúng tôi.", "note": "the furthest for physical distance" },
+            { "id": "comparison-l5-ex4", "en": "Lately she has been working later than usual.", "vi": "Gần đây cô ấy làm việc muộn hơn bình thường.", "note": "lately and later, two different words in one sentence" },
+            { "id": "comparison-l5-ex5", "en": "We need more time and more people, not less of either.", "vi": "Chúng ta cần nhiều thời gian và nhiều người hơn, chứ không phải ít hơn.", "note": "more and less in one sentence" }
+          ]
+        },
+        {
+          "id": "comparison-l5-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l5-ex1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "advanced",
+              "prompt": "Please send me the farer details of the course before Friday.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "farer details", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["Please send me the further details of the course before Friday."] },
+              "explanation": "Details here means additional information, so the -th form further is required, and farther is used for physical distance. Farer is not a word in either sense.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-ex2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "intermediate",
+              "prompt": "The bus arrived lately, so we missed the first half of the film.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "arrived lately", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The bus arrived late, so we missed the first half of the film."] },
+              "explanation": "Lately means recently and cannot describe a single arrival that failed to be on time. The correct word is late, and the consequence in the second clause confirms that meaning is the one meant.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-ex3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "intermediate",
+              "prompt": "The village is ___ (far) from the city than we expected.",
+              "instruction": "Write the correct comparative.",
+              "items": [
+                { "id": "h1", "text": "farther / further", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["farther", "further"] },
+              "explanation": "For a physical distance both farther and further are accepted, with farther being the more common choice in American English. If the blank were followed by a noun meaning additional information, only further would be correct.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-ex4",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "advanced",
+              "prompt": "Choose the correct sentence.",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "We will travel farther and study further.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "We will travel further and study farther.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "We will travel more far and study more far.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "We will travel farer and study furtherer.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "The sentence uses the distinction in full: farther for physical distance and further for additional study. Reversing them, which is the commonest mistake here, is not careful English.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-ex5",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "advanced",
+              "prompt": "She was very strict in the past, but now she is more strict with the children.",
+              "instruction": "Rewrite the sentence with the correct comparative.",
+              "items": [
+                { "id": "w1", "text": "more strict", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She was very strict in the past, but now she is stricter with the children."] },
+              "explanation": "Strict is one syllable and takes -er, so stricter is correct. Notice also that the sentence claims the opposite of what it probably means, because the first half says she used to be strict, which normally means she has become less strict.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l5-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l5-d1",
+              "audio": { "kind": "speech", "text": "The nearest hospital is farther than we thought." },
+              "hint": "farther for physical distance",
+              "translation": "Bệnh viện gần nhất xa hơn chúng tôi nghĩ.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l5-d2",
+              "audio": { "kind": "speech", "text": "We will need further information before we decide." },
+              "hint": "further meaning additional",
+              "translation": "Chúng ta sẽ cần thêm thông tin trước khi quyết định.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l5-d3",
+              "audio": { "kind": "speech", "text": "The meeting finished later than we had planned." },
+              "hint": "later as the comparative of late",
+              "translation": "Cuộc họp kết thúc muộn hơn chúng tôi dự tính.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l5-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l5-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "advanced",
+              "prompt": "She is not farer interested in the project than before.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "farer interested", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is not further interested in the project than before."] },
+              "explanation": "Interested here is about degree, not distance, so further is the correct form. Farther would talk about physical space, which has nothing to do with interest in a project.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-q2",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "intermediate",
+              "prompt": "Lately means recently and is not the comparative of late.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": true, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": true },
+              "explanation": "True. Later is the comparative of late, as in later than usual, while lately belongs to a different set of words meaning recently. Using lately for late changes the meaning of the sentence.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-q3",
+              "kind": "fillInTheBlank",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "intermediate",
+              "prompt": "We spent ___ (much) money on the trip than we planned.",
+              "instruction": "Write the correct comparative.",
+              "items": [
+                { "id": "h1", "text": "more or mucher?", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["more"] },
+              "explanation": "Much is irregular and takes more as its comparative, never mucher. The noun after it, money, is uncountable, so more money is the right combination.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l5-q4",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-far-further-and-late",
+              "difficulty": "advanced",
+              "prompt": "This is the further point from the centre, and the small island is furtherer.",
+              "instruction": "Rewrite the sentence using the right forms for physical distance.",
+              "items": [],
+              "answer": { "type": "text", "values": ["This is the farthest point from the centre, and the small island is farther away."] },
+              "explanation": "Furthest is a superlative and needs the definite article, while farther away is the comparative, and furtherer is not a word. Physical distance takes the forms with a plain -er or -est and no th.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l5-summary",
+          "type": "summary",
+          "takeaways": [
+            "Use farther and farthest for physical distance.",
+            "Use further and furthest for additional meaning: further details, furthermore.",
+            "Later and the latest compare how late something is; lately means recently.",
+            "Much takes more as its comparative, and many takes more with countable plurals."
+          ],
+          "nextLessonID": "comparison-double-forms"
+        }
+      ]
+    },
+    {
+      "id": "comparison-double-forms",
+      "title": "Avoiding Double Comparatives",
+      "summary": "more better, most fastest and the grammatically correct way to say more.",
+      "level": "advanced",
+      "xp": 40,
+      "steps": [
+        {
+          "id": "comparison-l6-theory",
+          "type": "theory",
+          "heading": "Avoiding Double Comparatives",
+          "body": "The most persistent error in comparison is the double form, where two markers of comparison are used at once. More better, most tallest, more easiest and betterer are all wrong, because an English adjective has exactly one comparative and one superlative. When learners need to strengthen a comparison, they add a second word and create the error. There are three correct ways to make a comparison stronger, and it helps to know all three. The first is a degree adverb before the comparative: much better, far taller, considerably more expensive, slightly worse. This is the most common and the safest solution. The second is the comparative of the adverb itself, as with badly and well, which are already comparative in form: He speaks better and She cooks worse. The third is a rather structure, as in better than, or two better than, or the rather form. Rather is an interesting word here, because it does two jobs. In he is rather tall, it softens the statement and means a little. In two rather more tickets, it strengthens the comparison, and it works with count and uncount nouns alike: two rather more tickets, rather more time. One form is never possible. Much and many cannot be the base of a comparative, so mucher and manyer do not exist. In careful English, more expensive is correct and is the only correct form, while cheaper is also correct for short adjectives. As for the other irregulars, fewer and less are both correct, with the choice depending on countability: fewer books, less water. One final point is the relation between comparison and tense. A comparative describes a relationship between two states, and that relationship is usually true now, so a present tense is normally the right choice even when the information is about the past. She is taller than her sister is correct even if the sister stopped growing years ago. The standard should also come after than, not before, in careful writing.",
+          "rules": [
+            {
+              "title": "One marker only",
+              "statement": "An adjective has one comparative and one superlative. Never combine more or most with -er or -est, and never use an invented form like betterer.",
+              "formula": "not more better, not most tallest, not betterer",
+              "examples": [
+                { "id": "comparison-l6-r1-e1", "en": "This solution is better than the one we tried first.", "vi": "Giải pháp này tốt hơn giải pháp chúng tôi đã thử trước.", "note": "one comparative marker only" },
+                { "id": "comparison-l6-r1-e2", "en": "The busiest day of the year is always the last one in December.", "vi": "Ngày bận nhất trong năm luôn là ngày cuối cùng trong tháng Mười hai.", "note": "the busiest, not the most busiest" }
+              ]
+            },
+            {
+              "title": "Three ways to strengthen a comparison",
+              "statement": "Use a degree adverb before the comparative, the irregular comparative of an adverb such as badly or well, or the structure with rather plus more.",
+              "formula": "much better, cooks worse, two rather more tickets",
+              "examples": [
+                { "id": "comparison-l6-r1-e3", "en": "The second plan is far more expensive than the first one.", "vi": "Kế hoạch thứ hai đắt hơn nhiều so với kế hoạch đầu tiên.", "note": "far strengthens the comparative" },
+                { "id": "comparison-l6-r1-e4", "en": "Could we have two rather more tickets for Saturday?", "vi": "Chúng ta có thể có thêm một chút vé cho thứ Bảy không?", "note": "rather more strengthens a comparison of quantity" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-l6-examples",
+          "type": "examples",
+          "examples": [
+            { "id": "comparison-l6-ex1", "en": "This method is considerably more efficient than the old one.", "vi": "Phương pháp này hiệu quả hơn đáng kể so với phương pháp cũ.", "note": "considerably plus more efficient" },
+            { "id": "comparison-l6-ex2", "en": "She speaks much better than she did two years ago.", "vi": "Cô ấy nói tốt hơn nhiều so với hai năm trước.", "note": "much plus the irregular comparative better" },
+            { "id": "comparison-l6-ex3", "en": "We need rather more time to finish the work properly.", "vi": "Chúng ta cần thêm một chút thời gian để hoàn thành công việc cho đúng.", "note": "rather more is the strengthening structure" },
+            { "id": "comparison-l6-ex4", "en": "The new price is slightly higher than the old one.", "vi": "Mức giá mới cao hơn một chút so với mức cũ.", "note": "slightly softens a comparative" },
+            { "id": "comparison-l6-ex5", "en": "Fewer people came this year, and the queues were longer.", "vi": "Năm nay ít người đến hơn, và các hàng dài hơn.", "note": "fewer for a countable plural, longer for a longer queue" }
+          ]
+        },
+        {
+          "id": "comparison-l6-exercises",
+          "type": "exercises",
+          "exercises": [
+            {
+              "id": "comparison-l6-ex1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "beginner",
+              "prompt": "She is more better at maths than her brother.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "more better", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is better at maths than her brother."] },
+              "explanation": "Good is irregular and already takes better as its comparative, so more is not allowed. If the comparison needs to be stronger, put a degree adverb in front: She is much better at maths than her brother.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-ex2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "beginner",
+              "prompt": "This is the most easiest question in the whole test.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most easiest", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["This is the easiest question in the whole test."] },
+              "explanation": "Easy takes the superlative easiest, so most is not allowed in front of it. The definite article the is already correct, and the of-free prepositional phrase names the group.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-ex3",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "intermediate",
+              "prompt": "We need mucher time to complete the project properly.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "mucher", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["We need more time to complete the project properly."] },
+              "explanation": "Much is irregular and has no -er form at all, so mucher is not a word. Its comparative is more: more time, with no doubling and no extra syllable.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-ex4",
+              "kind": "multipleChoice",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "intermediate",
+              "prompt": "Which sentence strengthens the comparison correctly?",
+              "instruction": "Choose one option.",
+              "items": [
+                { "id": "a", "text": "The train was much more expensive than the bus.", "isCorrect": true, "matchKey": null },
+                { "id": "b", "text": "The train was more more expensive than the bus.", "isCorrect": false, "matchKey": null },
+                { "id": "c", "text": "The train was most expensive than the bus.", "isCorrect": false, "matchKey": null },
+                { "id": "d", "text": "The train was expensiver than the bus.", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "choice", "values": ["a"] },
+              "explanation": "A degree adverb such as much is placed before the comparative and adds strength without creating a second marker. The other three options all stack or invent comparison endings.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-ex5",
+              "kind": "typeTheAnswer",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "advanced",
+              "prompt": "Type the comparative form of the adverb well: He speaks ___ than his sister.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "h1", "text": "one word", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["better"] },
+              "explanation": "Well is already the adverb of good, and it shares the comparative better, so no second adverb is needed. He speaks better than his sister is complete, and adding very as well would be wrong rather than right.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-ex6",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "advanced",
+              "prompt": "This is the most best restaurant that we have visited in the city.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most best", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["This is the best restaurant that we have visited in the city."] },
+              "explanation": "The best is already a superlative, so most must be removed. This sentence has three comparison markers in it, which is exactly the pattern the exercise is designed to break.",
+              "xp": 10
+            }
+          ]
+        },
+        {
+          "id": "comparison-l6-dictation",
+          "type": "dictation",
+          "title": "Listen and write",
+          "items": [
+            {
+              "id": "comparison-l6-d1",
+              "audio": { "kind": "speech", "text": "The new system is far more reliable than the old one." },
+              "hint": "degree adverb plus more",
+              "translation": "Hệ thống mới đáng tin cậy hơn nhiều so với hệ thống cũ.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l6-d2",
+              "audio": { "kind": "speech", "text": "We need a little rather more time to finish the work." },
+              "hint": "rather more strengthens a comparison of quantity",
+              "translation": "Chúng ta cần thêm một chút thời gian để hoàn thành công việc.",
+              "xp": 15
+            },
+            {
+              "id": "comparison-l6-d3",
+              "audio": { "kind": "speech", "text": "Fewer students took the exam this year, but the results were much better." },
+              "hint": "fewer and much plus a comparative",
+              "translation": "Năm nay ít học sinh thi hơn, nhưng kết quả tốt hơn nhiều.",
+              "xp": 15
+            }
+          ]
+        },
+        {
+          "id": "comparison-l6-quiz",
+          "type": "quiz",
+          "title": "Check your understanding",
+          "questions": [
+            {
+              "id": "comparison-l6-q1",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "beginner",
+              "prompt": "The weather is more worse than yesterday.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "more worse", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["The weather is worse than yesterday."] },
+              "explanation": "Bad takes the comparative worse, so more is not allowed. If the writer meant to emphasise the difference, the sentence should be The weather is much worse than yesterday.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-q2",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "intermediate",
+              "prompt": "She is the most tallest student in our English class.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most tallest", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["She is the tallest student in our English class."] },
+              "explanation": "Tall takes -est by itself, so most is removed. The article the and the prepositional phrase in our English class are both already correct and stay as they are.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-q3",
+              "kind": "typeTheAnswer",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "advanced",
+              "prompt": "Type the strongest correct form to complete the sentence: The bill was ___ than I expected.",
+              "instruction": "Write one word.",
+              "items": [
+                { "id": "h1", "text": "degree adverb plus a comparative", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["much higher", "far higher", "considerably higher", "significantly higher"] },
+              "explanation": "The speaker wants to stress the difference, so a degree adverb goes in front of the comparative. Writing more higher or most higher would be a double form, which is the error this lesson exists to prevent.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-q4",
+              "kind": "trueFalse",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "intermediate",
+              "prompt": "The forms mucher and manyer exist in standard English.",
+              "instruction": "Decide if the statement is true.",
+              "items": [
+                { "id": "a", "text": "True", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "boolean", "value": false },
+              "explanation": "False. Much and many are irregular and their comparative is more, so mucher and manyer do not exist. The same applies to littler, which does exist but is very rare, while less is the normal form.",
+              "xp": 10
+            },
+            {
+              "id": "comparison-l6-q5",
+              "kind": "errorCorrection",
+              "topicID": "comparison",
+              "lessonID": "comparison-double-forms",
+              "difficulty": "advanced",
+              "prompt": "My sister is taller than me, and she is also the most taller person in the family.",
+              "instruction": "Rewrite the sentence correctly.",
+              "items": [
+                { "id": "w1", "text": "most taller", "isCorrect": false, "matchKey": null }
+              ],
+              "answer": { "type": "text", "values": ["My sister is taller than me, and she is also the tallest person in the family."] },
+              "explanation": "The first comparison with than is already fine. The second has two superlative markers, so most is removed and the tallest person in the family remains, with the prepositional phrase naming the group.",
+              "xp": 10
+            }
+          ],
+          "passPercent": 70
+        },
+        {
+          "id": "comparison-l6-summary",
+          "type": "summary",
+          "takeaways": [
+            "Never combine more or most with -er or -est: not more better, not most tallest.",
+            "Strengthen a comparison with a degree adverb: much better, far taller, rather more time.",
+            "Much and many have no -er form; their comparative is more.",
+            "A comparison describes a state that is true now, so a present tense is normally correct."
+          ]
+        }
+      ]
+    }
+  ]
+}

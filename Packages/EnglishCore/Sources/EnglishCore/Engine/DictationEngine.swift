@@ -41,7 +41,7 @@ public struct DictationEngine: Sendable {
         // Steps 3–4.
         let ops = align(expected: expectedTokens, user: userTokens)
         let diffs = diffs(from: ops, expected: expectedTokens, user: userTokens)
-        let matched = ops.count { if case .match = $0 { return true } else { return false } }
+        let matched = ops.filter { if case .match = $0 { return true } else { return false } }.count
         // Step 5. Both sides empty means the author wrote nothing gradeable; treat as no error.
         let denominator = max(expectedTokens.count, userTokens.count)
         let accuracy = denominator == 0 ? 1.0 : Double(matched) / Double(denominator)
@@ -56,6 +56,22 @@ public struct DictationEngine: Sendable {
         // The summary is trimmed on the common prefix/suffix so it reads as one phrase-level
         // mistake rather than a per-word debug line.
         let (prefix, userMiddle, expectedMiddle) = trimmed(expected: expectedTokens, user: userTokens)
+        // With a word wrong on both sides, one word of shared leading context makes the sentence
+        // read like feedback: “is play” → should be “is playing”, not “play” → “playing”.
+        if !userMiddle.isEmpty && !expectedMiddle.isEmpty, prefix > 0 {
+            let start = prefix - 1
+            return DictationResult(
+                isCorrect: false,
+                accuracy: accuracy,
+                diffs: diffs,
+                firstErrorIndex: diffs.first?.index ?? prefix,
+                expected: expected,
+                firstErrorSummary: summary(
+                    userMiddle: Array(userTokens[start ..< prefix + userMiddle.count]),
+                    expectedMiddle: Array(expectedTokens[start ..< prefix + expectedMiddle.count])
+                )
+            )
+        }
         return DictationResult(
             isCorrect: false,
             accuracy: accuracy,
@@ -134,7 +150,7 @@ public struct DictationEngine: Sendable {
                 userBlock = []
             }
             guard !expectedBlock.isEmpty || !userBlock.isEmpty else { return }
-            for diff in pair(expectedBlock, userBlock, expected: expected, user: user) {
+            for diff in pair(expectedBlock, userBlock) {
                 out.append(TokenDiff(id: out.count, kind: diff.kind, index: diff.index,
                                      user: diff.user, expected: diff.expected))
             }
@@ -153,9 +169,7 @@ public struct DictationEngine: Sendable {
 
     private func pair(
         _ expected: [(index: Int, token: String)],
-        _ user: [(index: Int, token: String)],
-        expected expectedTokens: [String],
-        user userTokens: [String]
+        _ user: [(index: Int, token: String)]
     ) -> [TokenDiff] {
         guard !expected.isEmpty else {
             return user.map { TokenDiff(id: 0, kind: .extra, index: $0.index, user: $0.token, expected: nil) }

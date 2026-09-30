@@ -43,13 +43,13 @@ public enum SessionItem: Sendable, Identifiable {
     }
 
     /// The graded exercise, when this item is one.
-    public var exercise: Exercise? {
+    public var asExercise: Exercise? {
         if case .exercise(let exercise) = self { return exercise }
         return nil
     }
 
     /// The dictation item, when this item is one.
-    public var dictationItem: DictationItem? {
+    public var asDictationItem: DictationItem? {
         if case .dictation(let item) = self { return item }
         return nil
     }
@@ -110,18 +110,19 @@ public final class LearnSession {
         guard let item = current else {
             return ungraded(exerciseID: "", explanation: "The session is finished.")
         }
-        let result: ExerciseResult
         switch item {
         case .exercise(let exercise):
-            result = engine.check(exercise, response: response)
-            record(result, exerciseID: exercise.id)
-        case .dictation(let dictationItem):
-            result = checkDictationItem(dictationItem, response: response)
+            let result = engine.check(exercise, response: response)
+            record(result)
+            finishIfOnLastItem()
+            return result
+        case .dictation(let dictation):
+            let result = checkDictationItem(dictation, response: response)
+            finishIfOnLastItem()
+            return result
         default:
             return ungraded(exerciseID: item.id, explanation: "This step is not graded.")
         }
-        finishIfOnLastItem()
-        return result
     }
 
     /// Grades typed dictation on the current item.
@@ -155,7 +156,9 @@ public final class LearnSession {
 
     /// Totals across everything graded so far.
     public var outcome: SessionOutcome {
-        let accuracy = results.isEmpty ? 0 : results.reduce(0) { $0 + $1.accuracy } / Double(results.count)
+        let accuracy: Double = results.isEmpty
+            ? 0
+            : results.reduce(0.0) { $0 + $1.accuracy } / Double(results.count)
         return SessionOutcome(
             accuracy: accuracy,
             xpEarned: results.reduce(0) { $0 + $1.xpAwarded },
@@ -182,11 +185,11 @@ public final class LearnSession {
             diffs: verdict.diffs,
             xpAwarded: verdict.isCorrect ? item.xp : 0
         )
-        record(result, exerciseID: item.id)
+        record(result)
         return result
     }
 
-    private func record(_ result: ExerciseResult, exerciseID: String) {
+    private func record(_ result: ExerciseResult) {
         // Re-answering replaces the current item's entry rather than stacking duplicates.
         if let last = resultIndices.last, last == index {
             results[results.count - 1] = result
@@ -208,8 +211,7 @@ public final class LearnSession {
         )
     }
 
-    /// A graded item ends as soon as it is answered, so finishing the last graded item completes
-    /// the session even when trailing read-only steps follow it.
+    /// Answering the very last item completes the session, read-only step or not.
     private func finishIfOnLastItem() {
         guard index == items.count - 1 else { return }
         isFinished = true

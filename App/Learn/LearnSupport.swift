@@ -8,6 +8,7 @@ import EnglishCore
 enum LearnRoute: Hashable {
     case topic(String)
     case lesson(topicID: String, lessonID: String)
+    case alphabet
     case alphabetListening
 }
 
@@ -104,21 +105,12 @@ extension View {
 }
 
 extension Level {
-    /// Short label used on pills and chips.
+    /// Label used on pills, chips and section headers in this lane.
     var shortTitle: String {
         switch self {
         case .beginner: "Beginner"
         case .intermediate: "Intermediate"
         case .advanced: "Advanced"
-        }
-    }
-
-    /// Tint used for level accents; beginner reads as safe, advanced as intense.
-    var tint: Color {
-        switch self {
-        case .beginner: .success
-        case .intermediate: .brand
-        case .advanced: .warning
         }
     }
 }

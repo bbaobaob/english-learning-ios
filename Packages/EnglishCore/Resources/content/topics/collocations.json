@@ -335,7 +335,6 @@
               "answer": { "type": "text", "values": ["coastal", "main"] },
               "explanation": "In this sentence the adjective describes the type of road rather than its condition, so coastal road or main road are both natural partnerships. What does not work is an intensity adjective such as heavy or strong: you say a heavy vehicle or strong winds, but never a heavy road.",
               "xp": 10
-              "xp": 10
             },
             {
               "id": "col-an-ec1",

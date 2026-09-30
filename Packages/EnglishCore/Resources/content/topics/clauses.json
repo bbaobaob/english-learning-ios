@@ -1611,19 +1611,22 @@
               "topicID": "clauses",
               "lessonID": "clauses-combining",
               "difficulty": "advanced",
-              "prompt": "Build the sentence: walking / to / school / , / my / bag / was / stolen",
+              "prompt": "Build the corrected sentence: I / was / walking / to / school / when / my / bag / was / stolen",
               "instruction": "Arrange the words in order.",
               "items": [
-                { "id": "w1", "text": "Walking", "isCorrect": null, "matchKey": null },
-                { "id": "w2", "text": "to", "isCorrect": null, "matchKey": null },
-                { "id": "w3", "text": "school", "isCorrect": null, "matchKey": null },
-                { "id": "w4", "text": "my", "isCorrect": null, "matchKey": null },
-                { "id": "w5", "text": "bag", "isCorrect": null, "matchKey": null },
-                { "id": "w6", "text": "was", "isCorrect": null, "matchKey": null },
-                { "id": "w7", "text": "stolen", "isCorrect": null, "matchKey": null }
+                { "id": "w1", "text": "I", "isCorrect": null, "matchKey": null },
+                { "id": "w2", "text": "was", "isCorrect": null, "matchKey": null },
+                { "id": "w3", "text": "walking", "isCorrect": null, "matchKey": null },
+                { "id": "w4", "text": "to", "isCorrect": null, "matchKey": null },
+                { "id": "w5", "text": "school", "isCorrect": null, "matchKey": null },
+                { "id": "w6", "text": "when", "isCorrect": null, "matchKey": null },
+                { "id": "w7", "text": "my", "isCorrect": null, "matchKey": null },
+                { "id": "w8", "text": "bag", "isCorrect": null, "matchKey": null },
+                { "id": "w9", "text": "was", "isCorrect": null, "matchKey": null },
+                { "id": "w10", "text": "stolen", "isCorrect": null, "matchKey": null }
               ],
-              "answer": { "type": "order", "values": ["Walking", "to", "school", "my", "bag", "was", "stolen"] },
-              "explanation": "This exercise presents a sentence with a dangling modifier on purpose. It is grammatical in structure but illogical, because my bag cannot be the thing walking to school, and a good writer would rewrite it with a subject clause such as while I was walking to school.",
+              "answer": { "type": "order", "values": ["I", "was", "walking", "to", "school", "when", "my", "bag", "was", "stolen"] },
+              "explanation": "The subject I has to be in the clause that carries walking, and when introduces the main clause about the bag. Leaving the subject out, as in walking to school my bag was stolen, produces the dangling modifier this lesson warns about.",
               "xp": 10
             },
             {

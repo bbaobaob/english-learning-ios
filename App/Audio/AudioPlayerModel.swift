@@ -152,7 +152,6 @@ public final class AudioPlayerModel {
     /// Stops everything and releases the loaded clip.
     func stop() {
         speech.stop()
-        speechCompletion = nil
         player?.stop()
         player = nil
         isPlaying = false
@@ -168,7 +167,7 @@ public final class AudioPlayerModel {
         guard let clip else { return }
         switch clip.kind {
         case .speech:
-            if synthesizer.isSpeaking {
+            if speech.isSpeaking {
                 // Already speaking: restart the sentence rather than ignoring
                 // the tap, which is what a learner pressing play twice means.
                 speech.speak(clip.text ?? "", rate: scaledSpeechRate, completion: nil)

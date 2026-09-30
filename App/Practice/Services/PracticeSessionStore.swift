@@ -23,18 +23,9 @@ final class PracticeSessionStore {
     /// A session that is still running, keyed by slot id.
     private var live: [String: LearnSession] = [:]
 
-    /// The result of the most recent finished session per slot, so a score screen
-    /// can still read `SessionOutcome` after the session object was retired.
-    private var finished: [String: SessionOutcome] = [:]
-
     /// A session the learner has not finished yet, or `nil`.
     func active(_ slot: String) -> LearnSession? {
         live[slot].flatMap { $0.isFinished ? nil : $0 }
-    }
-
-    /// The outcome of the last finished run in `slot`, if any.
-    func outcome(_ slot: String) -> SessionOutcome? {
-        finished[slot]
     }
 
     /// Returns the running session for `slot`, building one only when there is
@@ -50,19 +41,17 @@ final class PracticeSessionStore {
         return created
     }
 
-    /// Retires the session in `slot` and remembers its outcome.
+    /// Retires the session in `slot`.
     ///
-    /// Called when a session finishes so the next tap starts a clean drill instead
-    /// of reopening a spent session.
+    /// Called from a `LearnSession.onComplete` closure. The screen that started the
+    /// session keeps its own reference and reads `session.outcome` from it, so
+    /// retiring here only means the next tap on the drill starts a clean one.
     func finish(_ slot: String) {
-        guard let session = live[slot] else { return }
-        finished[slot] = session.outcome
         live.removeValue(forKey: slot)
     }
 
-    /// Drops any stored state for `slot`, including the remembered outcome.
+    /// Drops any stored state for `slot`.
     func reset(_ slot: String) {
         live.removeValue(forKey: slot)
-        finished.removeValue(forKey: slot)
     }
 }

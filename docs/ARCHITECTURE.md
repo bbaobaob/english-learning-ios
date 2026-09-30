@@ -128,6 +128,27 @@ recorded or licensed audio can be dropped in later **without touching UI**.
 the rest of the lesson still works. **No dead or invented URLs may be committed** — a broken link is
 worse than `none`.
 
+**Status: ship every `VideoClip` as `source.type == "none"`.** A research pass verified that no
+archive.org item is simultaneously (a) genuinely public-domain or CC-BY, (b) small enough to bundle,
+and (c) actually a specific grammar lesson. The `Ramping Up Your English` series is CC-BY-**NC**; the
+`Crossroads Café` telecourse asserts a *Fair Use Notice*; Prelinger originals are 45–190 MB masters of
+vocabulary-building or phonetics films, not grammar lessons. Hotlinking archive.org is unverified
+(the ToU page is client-rendered and machine-unreadable), and YouTube embedding under App Store
+guideline 5.2.2 requires demonstrating authorisation, forbids offline caching of its content, and
+risks 4.2.2 if lessons become mostly an embedded web view.
+
+To add real video later, without touching UI: confirm the item is a Prelinger original with
+`licenseurl` = public domain (or CC0 / CC-BY), download the file into the repo rather than hotlinking,
+re-encode the teaching moment to H.264/AAC 720p ≈ 1 Mbps (30 s ≈ 4 MB, 60 s ≈ 8 MB), and ship an
+`attribution` string plus a Credits screen. Reject any item whose licence contains `by-nc`, `by-nd`,
+`by-sa`, or whose `rights` field points at a Fair Use Notice. Only label a clip with a grammar point
+if the source's own description says so.
+
+**IELTS is a registered trade mark and the official material is non-commercial only.** The app
+therefore ships **self-authored** passages, questions and TTS audio, and must say so in the UI
+(an orientation card, not fine print). The app's marketing metadata — display name, subtitle,
+description — must not use the word "IELTS".
+
 ### Exercise
 
 ```jsonc
@@ -459,6 +480,27 @@ public protocol MediaResolving: Sendable {
 }
 public struct AudioClipKind: String, Sendable { case speech, file, remote }
 ```
+
+#### Audio implementation notes (verified against Apple docs)
+
+- `AVSpeechSynthesizer` is on-device and works fully offline, which is why `speech` is the default
+  clip kind and the app ships with zero audio assets.
+- **`AVSpeechUtterance.rate` must be set before `speak(_:)` is called.** Setting it afterwards has
+  no effect — this is the classic silent-slow-replay bug. Set `rate`, `voice`, and
+  `preUtteranceDelay` on the utterance, then enqueue it.
+- **Do not hardcode `0.5` or `0.0...1.0`.** Apple's pages do not print those numbers; read
+  `AVSpeechUtteranceDefaultSpeechRate`, `AVSpeechUtteranceMinimumSpeechRate`, and
+  `AVSpeechUtteranceMaximumSpeechRate` at runtime and express slow/speed presets as multiples of the
+  default, clamped to the observed bounds.
+- **`AVSpeechUtterance` cannot be paused, scrubbed, or reliably kept alive in the background.** The
+  background/lock-screen requirement is therefore not met by the TTS path alone. Where a clip needs
+  scrubbing, slow-slow rates, or background continuation, render the utterance to a file with
+  `AVSpeechSynthesizer.write(_:toBufferCallback:)` into an `AVAudioFile` cached on disk, then play
+  that through the same `AVAudioPlayer` path as a `file` clip. This is a one-time cache per
+  `(text, rate, voice)` and it is what makes speed control and `MPRemoteCommandCenter` work.
+- Gate any voice picker on what the device actually has via `AVSpeechSynthesisVoice(language:)` and
+  `AVSpeechSynthesisVoiceQuality`; the simulator's voice set differs from a real device.
+- Audio session: category `.playback`, mode `.spokenAudio`, `UIBackgroundModes: [audio]`.
 
 ### EnglishStore — persistence
 

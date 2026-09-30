@@ -116,7 +116,7 @@ public struct ExerciseEngine: Sendable {
 
     private func checkChoice(_ exercise: Exercise, response: UserResponse, allowPartial: Bool) -> ExerciseResult {
         let expected = Set(expectedChoice(exercise))
-        let selected = Set(response.choice ?? [])
+        let selected = Set(response.asChoice ?? [])
         let missed = expected.subtracting(selected).sorted()
         let extra = selected.subtracting(expected).sorted()
         let isCorrect = !expected.isEmpty && expected == selected
@@ -145,7 +145,7 @@ public struct ExerciseEngine: Sendable {
         } else {
             expected = exercise.items.contains { $0.isCorrect == true }
         }
-        let answered = response.boolean ?? false
+        let answered = response.asBoolean ?? false
         let isCorrect = answered == expected
         return ExerciseResult(
             exerciseID: exercise.id,
@@ -162,7 +162,7 @@ public struct ExerciseEngine: Sendable {
 
     private func checkMatching(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
         let expected = exercise.answer.pairs
-        let chosen = response.pairs ?? [:]
+        let chosen = response.asPairs ?? [:]
         var wrong: [WrongPair] = []
         for key in expected.keys.sorted() {
             let want = expected[key] ?? ""
@@ -193,7 +193,7 @@ public struct ExerciseEngine: Sendable {
     // MARK: - Word order
 
     private func checkOrder(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
-        let written = response.order ?? []
+        let written = response.asOrder ?? []
         let accepted = acceptedOrders(exercise)
         let normalizedWritten = written.map { normalizer.normalize($0) }
 
@@ -245,7 +245,7 @@ public struct ExerciseEngine: Sendable {
     // MARK: - Free text
 
     private func checkText(_ exercise: Exercise, response: UserResponse) -> ExerciseResult {
-        let written = response.text ?? ""
+        let written = response.asText ?? ""
         let (canonical, accepted) = acceptedTexts(exercise)
         let verdict = dictation.evaluate(userInput: written, expected: canonical, accepted: accepted)
         return ExerciseResult(
@@ -273,8 +273,8 @@ public struct ExerciseEngine: Sendable {
         return (exercise.prompt, [])
     }
 
-    /// `Answer.order` holds one ordering; a second accepted ordering, if the content lane ever
-    /// wants one, arrives as an `.order` inside a `.text` answer. Both are read here.
+    /// `Answer.order` holds one ordering. If the content lane ever needs a second accepted
+    /// ordering, it can put a space-joined sentence in a `.text` answer; both are read here.
     private func acceptedOrders(_ exercise: Exercise) -> [[String]] {
         var orders: [[String]] = []
         if case .order(let list) = exercise.answer.values, !list.isEmpty { orders.append(list) }
@@ -289,27 +289,27 @@ public struct ExerciseEngine: Sendable {
 }
 
 private extension UserResponse {
-    var text: String? {
+    var asText: String? {
         if case .text(let value) = self { return value }
         return nil
     }
 
-    var choice: [String]? {
+    var asChoice: [String]? {
         if case .choice(let value) = self { return value }
         return nil
     }
 
-    var order: [String]? {
+    var asOrder: [String]? {
         if case .order(let value) = self { return value }
         return nil
     }
 
-    var pairs: [String: String]? {
+    var asPairs: [String: String]? {
         if case .pairs(let value) = self { return value }
         return nil
     }
 
-    var boolean: Bool? {
+    var asBoolean: Bool? {
         if case .boolean(let value) = self { return value }
         return nil
     }

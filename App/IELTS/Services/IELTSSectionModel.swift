@@ -1,0 +1,44 @@
+import Foundation
+import Observation
+
+/// Which lessons exist and how they are grouped. Reads content only — progress
+/// comes from `ProgressStore` inside the views that display it.
+@MainActor
+@Observable
+final class IELTSSectionModel {
+    private(set) var papers: [IELTSPaper] = []
+    /// A one-line note when the bundled IELTS content could not be read at all.
+    private(set) var loadWarning: String?
+
+    init() {
+        papers = IELTSCatalog.all
+        if papers.isEmpty {
+            loadWarning = "The bundled IELTS content could not be read. Check the content resources."
+        }
+    }
+
+    func paper(for skill: IELTSSkill) -> IELTSPaper? {
+        papers.first { $0.skill == skill }
+    }
+
+    func lessons(for skill: IELTSSkill) -> [IELTSPaperLesson] {
+        paper(for: skill)?.lessons ?? []
+    }
+
+    var skillOrder: [IELTSSkill] {
+        IELTSSkill.allCases.sorted { IELTSPaper.skillOrder($0) < IELTSPaper.skillOrder($1) }
+    }
+
+    var totalLessons: Int { papers.reduce(0) { $0 + $1.lessons.count } }
+
+    func totalMinutes(for skill: IELTSSkill) -> Int {
+        lessons(for: skill).reduce(0) { $0 + $1.targetMinutes }
+    }
+
+    /// The skill the learner has spent least time on, ties broken in paper order.
+    /// Used for the "next up" line on the home screen.
+    func leastPractised(using totals: [IELTSSkill: Int]) -> IELTSSkill? {
+        guard !lessons(for: skillOrder.first ?? .listening).isEmpty else { return nil }
+        return skillOrder.min { (totals[$0] ?? 0) < (totals[$1] ?? 0) }
+    }
+}

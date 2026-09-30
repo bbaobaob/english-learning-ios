@@ -262,8 +262,8 @@
               "statement": "An -ed adjective describes the subject as the one affected, and it is followed by by, at, with or another preposition.",
               "formula": "She is bored by the film. / He was surprised at the news.",
               "examples": [
-                { "id": "adjective-l2-r1-e2", "en": "The children were bored by the long film.", "vi": "Lũ trẻ chán vì bộ phim dài lê thê.", "note": "the children are the ones affected" },
-                { "id": "adjective-l2-r1-e3", "en": "I was surprised at how quickly she answered.", "vi": "Tôi rất ngạc nhiên về tốc độ cô ấy trả lời.", "note": "surprised at, because something surprising happened to the speaker" }
+                { "id": "adjective-l2-r2-e1", "en": "The children were bored by the long film.", "vi": "Lũ trẻ chán vì bộ phim dài lê thê.", "note": "the children are the ones affected" },
+                { "id": "adjective-l2-r2-e2", "en": "I was surprised at how quickly she answered.", "vi": "Tôi rất ngạc nhiên về tốc độ cô ấy trả lời.", "note": "surprised at, because something surprising happened to the speaker" }
               ]
             }
           ]
