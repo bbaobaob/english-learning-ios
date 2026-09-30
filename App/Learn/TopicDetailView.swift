@@ -100,24 +100,20 @@ struct TopicDetailView: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .top, spacing: Spacing.md) {
-                Image(systemName: topic.icon)
-                    AppFont.body(.title)
+                Image(systemName: topic.icon).font(AppFont.body(.title))
                     .foregroundStyle(.white)
                     .frame(width: 56, height: 56)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.card))
                     .accessibilityHidden(true)
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(topic.title)
-                        AppFont.display(.title2)
-                    Text(topic.summary)
-                        AppFont.body(.subheadline)
+                    Text(topic.title).font(AppFont.display(.title2))
+                    Text(topic.summary).font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                     HStack(spacing: Spacing.sm) {
                         LevelPill(text: topic.level.shortTitle)
-                        Label("\(topic.estimatedMinutes) min", systemImage: "clock")
-                            AppFont.body(.caption)
+                        Label("\(topic.estimatedMinutes) min", systemImage: "clock").font(AppFont.body(.caption))
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -182,17 +178,14 @@ struct TopicDetailView: View {
                 action: nil
             )
             HStack(spacing: Spacing.md) {
-                Image(systemName: isWeak ? "exclamationmark.triangle.fill" : "arrow.triangle.2.circlepath")
-                    AppFont.body(.title2)
+                Image(systemName: isWeak ? "exclamationmark.triangle.fill" : "arrow.triangle.2.circlepath").font(AppFont.body(.title2))
                     .foregroundStyle(isWeak ? .warning : .brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(isWeak
                         ? "Accuracy here is \(Int((weak.accuracy * 100).rounded())) percent."
-                        : "You are getting these right most of the time.")
-                        AppFont.body(.subheadline, weight: .semibold)
-                    Text("Drill the questions you missed. Nothing is counted twice — you only gain the XP once.")
-                        AppFont.body(.caption)
+                        : "You are getting these right most of the time.").font(AppFont.body(.subheadline, weight: .semibold))
+                    Text("Drill the questions you missed. Nothing is counted twice — you only gain the XP once.").font(AppFont.body(.caption))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -226,8 +219,7 @@ struct TopicDetailView: View {
         return NavigationLink(value: LearnRoute.lesson(topicID: topic.id, lessonID: lesson.id)) {
             VStack(alignment: .leading, spacing: Spacing.sm) {
                 HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {
-                    Text(lesson.title)
-                        AppFont.body(.headline)
+                    Text(lesson.title).font(AppFont.body(.headline))
                         .foregroundStyle(.primary)
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 0)
@@ -239,8 +231,7 @@ struct TopicDetailView: View {
                     XPBadge(xp: lesson.xp)
                 }
 
-                Text(lesson.summary)
-                    AppFont.body(.subheadline)
+                Text(lesson.summary).font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
 
@@ -251,8 +242,7 @@ struct TopicDetailView: View {
                     // shows what kind of work the lesson asks for.
                     HStack(spacing: Spacing.xs) {
                         ForEach(stepTypeOrder(lesson), id: \.self) { type in
-                            Image(systemName: StepMeta.icon(type))
-                                AppFont.body(.caption)
+                            Image(systemName: StepMeta.icon(type)).font(AppFont.body(.caption))
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -262,12 +252,10 @@ struct TopicDetailView: View {
                     Spacer(minLength: 0)
 
                     if state.isStarted {
-                        Label("Resume \(state.stepIndex + 1)/\(state.stepCount)", systemImage: "book")
-                            AppFont.body(.caption, weight: .semibold)
+                        Label("Resume \(state.stepIndex + 1)/\(state.stepCount)", systemImage: "book").font(AppFont.body(.caption, weight: .semibold))
                             .foregroundStyle(.brand)
                     } else if !state.isComplete {
-                        Text("\(state.stepCount) steps")
-                            AppFont.body(.caption)
+                        Text("\(state.stepCount) steps").font(AppFont.body(.caption))
                             .foregroundStyle(.tertiary)
                     }
                 }

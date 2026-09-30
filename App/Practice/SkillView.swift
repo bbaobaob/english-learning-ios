@@ -72,8 +72,7 @@ struct SkillView: View {
     private func promiseCard(_ topic: Topic) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack(spacing: Spacing.md) {
-                Image(systemName: topic.icon.isEmpty ? skill.fallbackSymbol : topic.icon)
-                    AppFont.body(.largeTitle)
+                Image(systemName: topic.icon.isEmpty ? skill.fallbackSymbol : topic.icon).font(AppFont.body(.largeTitle))
                     .foregroundStyle(Color.brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
@@ -194,8 +193,7 @@ struct SkillView: View {
             LessonView(topicID: topic.id, lessonID: lesson.id)
         } label: {
             HStack(spacing: Spacing.md) {
-                Image(systemName: state.symbol)
-                    AppFont.body(.title3)
+                Image(systemName: state.symbol).font(AppFont.body(.title3))
                     .foregroundStyle(state.tint)
                     .frame(width: 30)
                     .accessibilityHidden(true)
@@ -216,8 +214,7 @@ struct SkillView: View {
 
                 Spacer(minLength: Spacing.xs)
 
-                Image(systemName: "chevron.right")
-                    AppFont.body(.footnote, weight: .semibold)
+                Image(systemName: "chevron.right").font(AppFont.body(.footnote, weight: .semibold))
                     .foregroundStyle(.tertiary)
                     .accessibilityHidden(true)
             }

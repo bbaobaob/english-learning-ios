@@ -256,8 +256,7 @@ struct ReviewItemRow: View {
 
     var body: some View {
         HStack(spacing: Spacing.md) {
-            Image(systemName: symbol)
-                AppFont.body(.title3)
+            Image(systemName: symbol).font(AppFont.body(.title3))
                 .foregroundStyle(tint)
                 .frame(width: 28)
                 .accessibilityHidden(true)

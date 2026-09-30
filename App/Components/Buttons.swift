@@ -104,8 +104,7 @@ struct IconButton: View {
 
     var body: some View {
         Button(action: action) {
-            Image(systemName: symbol)
-                AppFont.body(.body, weight: .semibold)
+            Image(systemName: symbol).font(AppFont.body(.body, weight: .semibold))
                 .foregroundStyle(isActive ? Palette.brand : Palette.textSecondary)
                 .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                 .background(

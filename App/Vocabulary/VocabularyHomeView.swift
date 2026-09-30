@@ -116,8 +116,7 @@ struct VocabularyHomeView: View {
             Text("Your word bank")
                 .font(AppFont.display(.largeTitle, weight: .bold))
                 .foregroundStyle(.primary)
-            Text("\(words.count) words across \(availableTopics.count) topics, spaced so you meet each one again just before you forget it.")
-                AppFont.body(.subheadline)
+            Text("\(words.count) words across \(availableTopics.count) topics, spaced so you meet each one again just before you forget it.").font(AppFont.body(.subheadline))
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -177,8 +176,7 @@ struct VocabularyHomeView: View {
 
             if dueToday.isEmpty {
                 VStack(alignment: .leading, spacing: Spacing.md) {
-                    Text("You are caught up. Practice something anyway — extra reps on known words keep them strong.")
-                        AppFont.body(.subheadline)
+                    Text("You are caught up. Practice something anyway — extra reps on known words keep them strong.").font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                     HStack(spacing: Spacing.md) {
@@ -205,8 +203,7 @@ struct VocabularyHomeView: View {
                                 .font(AppFont.display(.title3, weight: .semibold))
                             Text(dueToday.count > 12
                                 ? "A long one. Two sittings is fine — the schedule picks up where you left off."
-                                : "Short and sharp. Rate each card honestly and the next one lands tomorrow.")
-                                AppFont.body(.footnote)
+                                : "Short and sharp. Rate each card honestly and the next one lands tomorrow.").font(AppFont.body(.footnote))
                                 .foregroundStyle(.secondary)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
@@ -272,10 +269,8 @@ struct VocabularyHomeView: View {
             VStack(alignment: .leading, spacing: Spacing.xs) {
                 HStack(spacing: Spacing.xs) {
                     Image(systemName: item.lapses > 0 ? "arrow.uturn.backward.circle.fill" : "exclamationmark.circle.fill")
-                        .foregroundStyle(item.lapses > 0 ? .warning : .danger)
-                        AppFont.body(.caption)
-                    Text(item.lapses > 0 ? "\(item.lapses) lapse\(item.lapses == 1 ? "" : "s")" : "Got wrong")
-                        AppFont.body(.caption2, weight: .semibold)
+                        .foregroundStyle(item.lapses > 0 ? .warning : .danger).font(AppFont.body(.caption))
+                    Text(item.lapses > 0 ? "\(item.lapses) lapse\(item.lapses == 1 ? "" : "s")" : "Got wrong").font(AppFont.body(.caption2, weight: .semibold))
                         .foregroundStyle(.secondary)
                 }
                 Text(word.word)
@@ -287,8 +282,7 @@ struct VocabularyHomeView: View {
                     VocabIPAText(ipa: ipa, size: 12)
                         .lineLimit(1)
                 }
-                Text(word.meaning)
-                    AppFont.body(.caption)
+                Text(word.meaning).font(AppFont.body(.caption))
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
@@ -372,8 +366,7 @@ struct VocabularyHomeView: View {
                     Button {
                         clearFilters()
                     } label: {
-                        Label("Clear", systemImage: "xmark.circle.fill")
-                            AppFont.body(.footnote, weight: .semibold)
+                        Label("Clear", systemImage: "xmark.circle.fill").font(AppFont.body(.footnote, weight: .semibold))
                             .foregroundStyle(Color.brand)
                     }
                     .buttonStyle(.plain)
@@ -494,8 +487,7 @@ private struct WordRowView: View {
                     VocabIPAText(ipa: ipa, size: 13)
                         .lineLimit(1)
                 }
-                Text(word.meaning)
-                    AppFont.body(.subheadline)
+                Text(word.meaning).font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
@@ -506,8 +498,7 @@ private struct WordRowView: View {
             VStack(alignment: .trailing, spacing: Spacing.xs) {
                 Button(action: isFavouriteToggle) {
                     Image(systemName: isFavourite ? "star.fill" : "star")
-                        .foregroundStyle(isFavourite ? Color.xp : Color.secondary)
-                        AppFont.body(.title3)
+                        .foregroundStyle(isFavourite ? Color.xp : Color.secondary).font(AppFont.body(.title3))
                         .frame(width: 44, height: 44)
                         .contentShape(.rect)
                 }
@@ -515,13 +506,11 @@ private struct WordRowView: View {
                 .accessibilityLabel(isFavourite ? "Remove \(word.word) from favourites" : "Add \(word.word) to favourites")
                 if let scheduleItem {
                     VocabMasteryBar(mastery: mastery)
-                    Text(statusText(for: scheduleItem))
-                        AppFont.body(.caption2)
+                    Text(statusText(for: scheduleItem)).font(AppFont.body(.caption2))
                         .foregroundStyle(.secondary)
                 } else {
                     VocabMasteryBar(mastery: 0)
-                    Text("New")
-                        AppFont.body(.caption2)
+                    Text("New").font(AppFont.body(.caption2))
                         .foregroundStyle(.secondary)
                 }
             }

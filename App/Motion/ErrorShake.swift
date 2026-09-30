@@ -192,8 +192,7 @@ struct ErrorShake<Content: View>: View {
     @ViewBuilder
     private var reducedBadge: some View {
         if settings.reduceMotion, isWrong, !hasFinished {
-            Image(systemName: "xmark")
-                AppFont.body(.caption2, weight: .black)
+            Image(systemName: "xmark").font(AppFont.body(.caption2, weight: .black))
                 .foregroundStyle(Palette.surface)
                 .padding(3)
                 .background(Circle().fill(tint))

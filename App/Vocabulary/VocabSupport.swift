@@ -254,8 +254,7 @@ struct VocabTagText: View {
     let text: String
 
     var body: some View {
-        Text(text)
-            AppFont.body(.footnote, weight: .medium)
+        Text(text).font(AppFont.body(.footnote, weight: .medium))
             .foregroundStyle(.secondary)
             .padding(.horizontal, Spacing.sm)
             .padding(.vertical, 3)

@@ -148,8 +148,7 @@ struct VideoLessonView: View {
                     Haptics.selection()
                     model.togglePlayback()
                 } label: {
-                    Image(systemName: model.isPlaying ? "pause.fill" : "play.fill")
-                        AppFont.body(.title2, weight: .bold)
+                    Image(systemName: model.isPlaying ? "pause.fill" : "play.fill").font(AppFont.body(.title2, weight: .bold))
                         .foregroundStyle(Palette.surface)
                         .frame(width: 56, height: 56)
                         .background(Circle().fill(Palette.brand))

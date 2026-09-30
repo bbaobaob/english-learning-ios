@@ -58,8 +58,7 @@ struct ReviewDetailSheet: View {
     private var current: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(spacing: Spacing.md) {
-                Image(systemName: item.isMastered ? "rosette" : "calendar.badge.clock")
-                    AppFont.body(.title2)
+                Image(systemName: item.isMastered ? "rosette" : "calendar.badge.clock").font(AppFont.body(.title2))
                     .foregroundStyle(item.isMastered ? Color.success : Color.brand)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
@@ -116,8 +115,7 @@ struct ReviewDetailSheet: View {
         let next = repetition.schedule(item, grade: preview.grade)
 
         return HStack(spacing: Spacing.md) {
-            Image(systemName: preview.symbol)
-                AppFont.body(.title3)
+            Image(systemName: preview.symbol).font(AppFont.body(.title3))
                 .foregroundStyle(preview.tint)
                 .frame(width: 28)
                 .accessibilityHidden(true)

@@ -266,8 +266,7 @@ struct PracticeHomeView: View {
                 } label: {
                     VStack(alignment: .leading, spacing: Spacing.md) {
                         HStack(spacing: Spacing.md) {
-                            Image(systemName: recommendation.skill.fallbackSymbol)
-                                AppFont.body(.title2)
+                            Image(systemName: recommendation.skill.fallbackSymbol).font(AppFont.body(.title2))
                                 .foregroundStyle(.danger)
                                 .frame(width: 34)
                                 .accessibilityHidden(true)
@@ -314,8 +313,7 @@ struct PracticeHomeView: View {
         trailing: String
     ) -> some View {
         HStack(spacing: Spacing.md) {
-            Image(systemName: symbol)
-                AppFont.body(.title3)
+            Image(systemName: symbol).font(AppFont.body(.title3))
                 .foregroundStyle(tint)
                 .frame(width: 30)
                 .accessibilityHidden(true)

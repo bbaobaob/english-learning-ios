@@ -86,18 +86,15 @@ struct MethodsView: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .top, spacing: Spacing.md) {
-                Image(systemName: topic?.icon ?? "lightbulb")
-                    AppFont.body(.title)
+                Image(systemName: topic?.icon ?? "lightbulb").font(AppFont.body(.title))
                     .foregroundStyle(.white)
                     .frame(width: 56, height: 56)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.card))
                     .accessibilityHidden(true)
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(topic?.title ?? "English Study Methods")
-                        AppFont.display(.title2)
-                    Text(topic?.summary ?? "Ten ways to study that actually stick.")
-                        AppFont.body(.subheadline)
+                    Text(topic?.title ?? "English Study Methods").font(AppFont.display(.title2))
+                    Text(topic?.summary ?? "Ten ways to study that actually stick.").font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -134,23 +131,19 @@ struct MethodsView: View {
 
         return NavigationLink(value: LearnRoute.lesson(topicID: "methods", lessonID: lesson.id)) {
             HStack(alignment: .top, spacing: Spacing.md) {
-                Image(systemName: isComplete ? "checkmark.circle.fill" : StepMeta.icon(lesson.steps.first?.type ?? .theory))
-                    AppFont.body(.title3)
+                Image(systemName: isComplete ? "checkmark.circle.fill" : StepMeta.icon(lesson.steps.first?.type ?? .theory)).font(AppFont.body(.title3))
                     .foregroundStyle(isComplete ? .success : .brand)
                     .frame(width: 28)
                     .accessibilityHidden(true)
 
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(lesson.title)
-                        AppFont.body(.headline)
+                    Text(lesson.title).font(AppFont.body(.headline))
                         .foregroundStyle(.primary)
-                    Text(lesson.summary)
-                        AppFont.body(.subheadline)
+                    Text(lesson.summary).font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                     if isStarted {
-                        Label("Resume", systemImage: "book")
-                            AppFont.body(.caption, weight: .semibold)
+                        Label("Resume", systemImage: "book").font(AppFont.body(.caption, weight: .semibold))
                             .foregroundStyle(.brand)
                     }
                 }

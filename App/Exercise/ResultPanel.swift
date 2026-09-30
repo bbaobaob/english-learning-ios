@@ -141,8 +141,7 @@ struct ResultPanel: View {
 
             if result.xpAwarded > 0 {
                 HStack(spacing: Spacing.xs) {
-                    Image(systemName: "bolt.fill")
-                        AppFont.body(.caption)
+                    Image(systemName: "bolt.fill").font(AppFont.body(.caption))
                         .foregroundStyle(Palette.xp)
                         .accessibilityHidden(true)
                     Text("+\(result.xpAwarded) XP")
@@ -333,8 +332,7 @@ struct DiffMarkedText: View {
 
             ForEach(missingWords, id: \.self) { word in
                 HStack(spacing: Spacing.xs) {
-                    Image(systemName: "plus.circle.fill")
-                        AppFont.body(.caption)
+                    Image(systemName: "plus.circle.fill").font(AppFont.body(.caption))
                         .foregroundStyle(Palette.warning)
                         .accessibilityHidden(true)
                     Text(word)

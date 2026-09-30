@@ -15,8 +15,7 @@ struct StatCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack(spacing: Spacing.sm) {
-                Image(systemName: symbol)
-                    AppFont.body(.footnote, weight: .bold)
+                Image(systemName: symbol).font(AppFont.body(.footnote, weight: .bold))
                     .foregroundStyle(tint)
                     .accessibilityHidden(true)
                 Text(title)
@@ -139,8 +138,7 @@ struct XPBadge: View {
 
     var body: some View {
         HStack(spacing: Spacing.xs) {
-            Image(systemName: "bolt.fill")
-                AppFont.body(.caption, weight: .bold)
+            Image(systemName: "bolt.fill").font(AppFont.body(.caption, weight: .bold))
                 .foregroundStyle(Palette.xp)
                 .accessibilityHidden(true)
             // Rolls to the new total instead of swapping it. A badge that jumps from
@@ -243,8 +241,7 @@ struct Chip: View {
     private var label: some View {
         HStack(spacing: 4) {
             if let symbol {
-                Image(systemName: symbol)
-                    AppFont.body(.caption2)
+                Image(systemName: symbol).font(AppFont.body(.caption2))
                     .accessibilityHidden(true)
             }
             Text(text)

@@ -166,8 +166,7 @@ struct WordDetailView: View {
                     accessibilityLabel: "Hear \(word.word) slowly",
                     size: 34
                 )
-                Text("Slow")
-                    AppFont.body(.footnote)
+                Text("Slow").font(AppFont.body(.footnote))
                     .foregroundStyle(.secondary)
                 Spacer()
                 VocabMasteryBar(mastery: state?.mastery ?? 0)
@@ -211,8 +210,7 @@ struct WordDetailView: View {
                                 .foregroundStyle(.primary)
                                 .multilineTextAlignment(.leading)
                             if let vi = word.exampleVI {
-                                Text(vi)
-                                    AppFont.body(.subheadline)
+                                Text(vi).font(AppFont.body(.subheadline))
                                     .foregroundStyle(.secondary)
                                     .multilineTextAlignment(.leading)
                             }
@@ -235,8 +233,7 @@ struct WordDetailView: View {
                         accessibilityLabel: "Hear the example slowly",
                         size: 34
                     )
-                    Text("Slow")
-                        AppFont.body(.footnote)
+                    Text("Slow").font(AppFont.body(.footnote))
                         .foregroundStyle(.secondary)
                     Spacer()
                     VocabSpeakButton(
@@ -247,8 +244,7 @@ struct WordDetailView: View {
                     )
                 }
             } else {
-                Text("This word has no example sentence in the deck yet.")
-                    AppFont.body(.subheadline)
+                Text("This word has no example sentence in the deck yet.").font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)
             }
         }
@@ -278,8 +274,7 @@ struct WordDetailView: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "Collocations", subtitle: "How the word is actually used", actionTitle: nil, action: nil)
             if word.collocations.isEmpty {
-                Text("No collocations recorded for this word.")
-                    AppFont.body(.subheadline)
+                Text("No collocations recorded for this word.").font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)
             } else {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: Spacing.sm)], alignment: .leading, spacing: Spacing.sm) {
@@ -350,8 +345,7 @@ struct WordDetailView: View {
             addedForms.insert(row.form)
         } label: {
             Image(systemName: isAdded ? "checkmark.circle.fill" : "plus.circle")
-                .foregroundStyle(isAdded ? Color.success : Color.brand)
-                AppFont.body(.title3)
+                .foregroundStyle(isAdded ? Color.success : Color.brand).font(AppFont.body(.title3))
                 .frame(width: 44, height: 44)
                 .contentShape(.rect)
         }
@@ -396,8 +390,7 @@ struct WordDetailView: View {
                     )
                 }
             } else {
-                Text("You have not studied this word yet. Rate it once and it joins your spaced-repetition schedule.")
-                    AppFont.body(.subheadline)
+                Text("You have not studied this word yet. Rate it once and it joins your spaced-repetition schedule.").font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -414,15 +407,12 @@ struct WordDetailView: View {
     private func historyRow(label: String, value: String, symbol: String, tint: Color = .brand) -> some View {
         HStack(spacing: Spacing.md) {
             Image(systemName: symbol)
-                .foregroundStyle(tint)
-                AppFont.body(.subheadline)
+                .foregroundStyle(tint).font(AppFont.body(.subheadline))
                 .frame(width: 24)
-            Text(label)
-                AppFont.body(.subheadline)
+            Text(label).font(AppFont.body(.subheadline))
                 .foregroundStyle(.secondary)
             Spacer(minLength: Spacing.sm)
-            Text(value)
-                AppFont.body(.subheadline, weight: .semibold)
+            Text(value).font(AppFont.body(.subheadline, weight: .semibold))
                 .foregroundStyle(.primary)
                 .multilineTextAlignment(.trailing)
         }
@@ -467,8 +457,7 @@ struct WordDetailView: View {
             Label(
                 isFavourite ? "Remove from favourites" : "Add to favourites",
                 systemImage: isFavourite ? "star.fill" : "star"
-            )
-            AppFont.body(.subheadline, weight: .semibold)
+            ).font(AppFont.body(.subheadline, weight: .semibold))
             .foregroundStyle(isFavourite ? Color.xp : .secondary)
             .frame(maxWidth: .infinity)
             .padding(.vertical, Spacing.sm)

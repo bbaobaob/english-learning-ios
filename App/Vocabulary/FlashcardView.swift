@@ -112,12 +112,10 @@ struct FlashcardView: View {
     private func progressHeader(_ session: FlashcardSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
-                Text(session.positionLabel)
-                    AppFont.body(.footnote, weight: .semibold)
+                Text(session.positionLabel).font(AppFont.body(.footnote, weight: .semibold))
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text(Text(session.progress, format: .percent.precision(.fractionLength(0))))
-                    AppFont.body(.footnote)
+                Text(Text(session.progress, format: .percent.precision(.fractionLength(0)))).font(AppFont.body(.footnote))
                     .foregroundStyle(.tertiary)
                     .monospacedDigit()
             }
@@ -161,8 +159,7 @@ struct FlashcardView: View {
                 VocabIPAText(ipa: ipa)
             }
 
-            Text("Recall the meaning, then turn the card over.")
-                AppFont.body(.footnote)
+            Text("Recall the meaning, then turn the card over.").font(AppFont.body(.footnote))
                 .foregroundStyle(.secondary)
                 .padding(.top, Spacing.xs)
         }
@@ -198,12 +195,10 @@ struct FlashcardView: View {
                         appState.speech.speak(example, rate: SpeechRate.example, completion: nil)
                     } label: {
                         HStack(alignment: .top, spacing: Spacing.sm) {
-                            Text(example)
-                                AppFont.body(.subheadline)
+                            Text(example).font(AppFont.body(.subheadline))
                                 .foregroundStyle(.primary)
                                 .multilineTextAlignment(.leading)
-                            Image(systemName: "speaker.wave.2")
-                                AppFont.body(.caption)
+                            Image(systemName: "speaker.wave.2").font(AppFont.body(.caption))
                                 .foregroundStyle(Color.brand)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -213,8 +208,7 @@ struct FlashcardView: View {
                     .accessibilityLabel("Hear the example: \(example)")
 
                     if let vi = card.word.exampleVI {
-                        Text(vi)
-                            AppFont.body(.footnote)
+                        Text(vi).font(AppFont.body(.footnote))
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -232,8 +226,7 @@ struct FlashcardView: View {
         Group {
             if !words.isEmpty {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(title)
-                        AppFont.body(.caption, weight: .semibold)
+                    Text(title).font(AppFont.body(.caption, weight: .semibold))
                         .foregroundStyle(.tertiary)
                     LazyVGrid(
                         columns: [GridItem(.adaptive(minimum: 110), spacing: Spacing.xs)],
@@ -256,8 +249,7 @@ struct FlashcardView: View {
         Button {
             reveal(session)
         } label: {
-            Label("Show answer", systemImage: "eye.fill")
-                AppFont.body(.headline)
+            Label("Show answer", systemImage: "eye.fill").font(AppFont.body(.headline))
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, Spacing.md)
@@ -278,8 +270,7 @@ struct FlashcardView: View {
     /// button, always labelled in words as well as numbers.
     private func ratingControls(_ session: FlashcardSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
-            Text("How well did you know it?")
-                AppFont.body(.footnote)
+            Text("How well did you know it?").font(AppFont.body(.footnote))
                 .foregroundStyle(.secondary)
 
             HStack(spacing: Spacing.sm) {
@@ -288,12 +279,10 @@ struct FlashcardView: View {
                         rate(session, option)
                     } label: {
                         VStack(spacing: 2) {
-                            Image(systemName: option.symbol)
-                                AppFont.body(.caption)
+                            Image(systemName: option.symbol).font(AppFont.body(.caption))
                             Text("\(option.rating)")
                                 .font(AppFont.display(.title3, weight: .bold))
-                            Text(option.title)
-                                AppFont.body(.caption2, weight: .semibold)
+                            Text(option.title).font(AppFont.body(.caption2, weight: .semibold))
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.75)
                         }
@@ -313,8 +302,7 @@ struct FlashcardView: View {
                 }
             }
 
-            Text("Rating honestly is what makes the schedule work. Rating a forgotten word \"good\" only hides it.")
-                AppFont.body(.caption2)
+            Text("Rating honestly is what makes the schedule work. Rating a forgotten word \"good\" only hides it.").font(AppFont.body(.caption2))
                 .foregroundStyle(.tertiary)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -371,8 +359,7 @@ private struct FlashcardSummaryView: View {
                         .foregroundStyle(Color.success)
                     Text("Session complete")
                         .font(AppFont.display(.largeTitle, weight: .bold))
-                    Text(summaryLine)
-                        AppFont.body(.subheadline)
+                    Text(summaryLine).font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
@@ -443,14 +430,12 @@ private struct FlashcardSummaryView: View {
             VStack(spacing: Spacing.xs) {
                 ForEach(outcomes) { outcome in
                     HStack(spacing: Spacing.md) {
-                        Image(systemName: symbol)
-                            AppFont.body(.caption)
+                        Image(systemName: symbol).font(AppFont.body(.caption))
                             .foregroundStyle(tint)
                         Text(outcome.card.word.word)
                             .font(AppFont.display(.body, weight: .semibold))
                         Spacer(minLength: Spacing.sm)
-                        Text(outcome.rescheduled.dueDate.formatted(date: .abbreviated, time: .omitted))
-                            AppFont.body(.footnote)
+                        Text(outcome.rescheduled.dueDate.formatted(date: .abbreviated, time: .omitted)).font(AppFont.body(.footnote))
                             .foregroundStyle(.secondary)
                     }
                     .padding(.vertical, Spacing.xs)

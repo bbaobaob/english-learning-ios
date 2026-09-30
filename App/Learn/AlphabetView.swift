@@ -84,10 +84,8 @@ struct AlphabetView: View {
                     label: "\(Int((completion * 100).rounded())) percent"
                 )
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(topic?.title ?? "The English Alphabet")
-                        AppFont.display(.title2)
-                    Text(topic?.summary ?? "One lesson per letter: the shapes, the sound, and the word it lives in.")
-                        AppFont.body(.subheadline)
+                    Text(topic?.title ?? "The English Alphabet").font(AppFont.display(.title2))
+                    Text(topic?.summary ?? "One lesson per letter: the shapes, the sound, and the word it lives in.").font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -104,18 +102,15 @@ struct AlphabetView: View {
     private var listeningEntry: some View {
         NavigationLink(value: LearnRoute.alphabetListening) {
             HStack(spacing: Spacing.md) {
-                Image(systemName: "ear.badge.waveform")
-                    AppFont.body(.title2)
+                Image(systemName: "ear.badge.waveform").font(AppFont.body(.title2))
                     .foregroundStyle(.white)
                     .frame(width: 48, height: 48)
                     .background(Color.brand, in: .rect(cornerRadius: Radius.chip))
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text("Listening Mode")
-                        AppFont.body(.headline)
+                    Text("Listening Mode").font(AppFont.body(.headline))
                         .foregroundStyle(.primary)
-                    Text("Hear it, type it, check it. Replay as often as you like.")
-                        AppFont.body(.subheadline)
+                    Text("Hear it, type it, check it. Replay as often as you like.").font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
@@ -143,11 +138,9 @@ struct AlphabetView: View {
         return NavigationLink(value: LearnRoute.lesson(topicID: "alphabet", lessonID: lesson.id)) {
             VStack(spacing: Spacing.xs) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text(letter.uppercased())
-                        AppFont.body(.largeTitle, weight: .bold)
+                    Text(letter.uppercased()).font(AppFont.body(.largeTitle, weight: .bold))
                         .foregroundStyle(.brand)
-                    Text(letter.lowercased())
-                        AppFont.body(.title2, weight: .medium)
+                    Text(letter.lowercased()).font(AppFont.body(.title2, weight: .medium))
                         .foregroundStyle(.brand.opacity(0.75))
                     Spacer(minLength: 0)
                     if isComplete {
@@ -157,15 +150,13 @@ struct AlphabetView: View {
                     }
                 }
 
-                Text(word ?? "Letter \(letter.uppercased())")
-                    AppFont.body(.footnote)
+                Text(word ?? "Letter \(letter.uppercased())").font(AppFont.body(.footnote))
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
 
                 if !isComplete {
-                    Text(lesson.summary)
-                        AppFont.body(.caption2)
+                    Text(lesson.summary).font(AppFont.body(.caption2))
                         .foregroundStyle(.tertiary)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)

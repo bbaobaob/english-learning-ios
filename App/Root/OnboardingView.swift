@@ -72,8 +72,7 @@ struct OnboardingView: View {
                         page -= 1
                     }
                 } label: {
-                    Image(systemName: "chevron.left")
-                        AppFont.body(.body, weight: .semibold)
+                    Image(systemName: "chevron.left").font(AppFont.body(.body, weight: .semibold))
                         .foregroundStyle(Palette.brand)
                         .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                         .contentShape(Rectangle())
@@ -377,8 +376,7 @@ private struct ExplainerRow: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: Spacing.md) {
-            Image(systemName: symbol)
-                AppFont.body(.title3)
+            Image(systemName: symbol).font(AppFont.body(.title3))
                 .foregroundStyle(tint)
                 .frame(width: 32)
                 .accessibilityHidden(true)

@@ -115,8 +115,7 @@ struct AudioPlayerView: View {
                 player.slowReplay()
             } label: {
                 VStack(spacing: 2) {
-                    Image(systemName: "tortoise.fill")
-                        AppFont.body(.headline)
+                    Image(systemName: "tortoise.fill").font(AppFont.body(.headline))
                     Text("Slow")
                         .font(AppFont.body(.caption2, weight: .semibold))
                 }
@@ -169,8 +168,7 @@ struct AudioPlayerView: View {
             Haptics.selection()
             player.togglePlayback()
         } label: {
-            Image(systemName: player.isPlaying ? "pause.fill" : "play.fill")
-                AppFont.body(.title2, weight: .bold)
+            Image(systemName: player.isPlaying ? "pause.fill" : "play.fill").font(AppFont.body(.title2, weight: .bold))
                 .foregroundStyle(Palette.surface)
                 .frame(width: 56, height: 56)
                 .background(Circle().fill(Palette.brand))
@@ -364,8 +362,7 @@ struct QuickAudioControls: View {
                 Haptics.selection()
                 player.replay()
             } label: {
-                Image(systemName: "arrow.counterclockwise")
-                    AppFont.body(.headline)
+                Image(systemName: "arrow.counterclockwise").font(AppFont.body(.headline))
                     .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                     .contentShape(Rectangle())
             }
@@ -378,8 +375,7 @@ struct QuickAudioControls: View {
                 Haptics.selection()
                 player.togglePlayback()
             } label: {
-                Image(systemName: player.isPlaying ? "pause.fill" : "play.fill")
-                    AppFont.body(.title3, weight: .bold)
+                Image(systemName: player.isPlaying ? "pause.fill" : "play.fill").font(AppFont.body(.title3, weight: .bold))
                     .foregroundStyle(Palette.surface)
                     .frame(width: 56, height: 56)
                     .background(Circle().fill(Palette.brand))
@@ -392,8 +388,7 @@ struct QuickAudioControls: View {
                 Haptics.selection()
                 player.slowReplay()
             } label: {
-                Image(systemName: "tortoise.fill")
-                    AppFont.body(.headline)
+                Image(systemName: "tortoise.fill").font(AppFont.body(.headline))
                     .foregroundStyle(Palette.brand)
                     .frame(width: Metric.tapTarget, height: Metric.tapTarget)
                     .contentShape(Rectangle())

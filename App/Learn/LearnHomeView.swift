@@ -75,18 +75,15 @@ struct LearnHomeView: View {
                     if !methods.isEmpty {
                         NavigationLink(value: LearnRoute.methods) {
                             HStack(spacing: Spacing.md) {
-                                Image(systemName: methods.first?.icon ?? "lightbulb")
-                                    AppFont.body(.title2)
+                                Image(systemName: methods.first?.icon ?? "lightbulb").font(AppFont.body(.title2))
                                     .foregroundStyle(.white)
                                     .frame(width: 48, height: 48)
                                     .background(Color.brand, in: .rect(cornerRadius: Radius.chip))
                                     .accessibilityHidden(true)
                                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                                    Text("Methods")
-                                        AppFont.body(.headline)
+                                    Text("Methods").font(AppFont.body(.headline))
                                         .foregroundStyle(.primary)
-                                    Text("Ten ways to study English that actually stick.")
-                                        AppFont.body(.subheadline)
+                                    Text("Ten ways to study English that actually stick.").font(AppFont.body(.subheadline))
                                         .foregroundStyle(.secondary)
                                         .multilineTextAlignment(.leading)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -174,10 +171,8 @@ struct LearnHomeView: View {
                     label: "\(Int((overallProgress * 100).rounded())) percent"
                 )
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text("Grammar")
-                        AppFont.display(.title2)
-                    Text("\(completedGrammarLessons) of \(grammarTopics.flatMap(\.lessons).count) lessons finished")
-                        AppFont.body(.subheadline)
+                    Text("Grammar").font(AppFont.display(.title2))
+                    Text("\(completedGrammarLessons) of \(grammarTopics.flatMap(\.lessons).count) lessons finished").font(AppFont.body(.subheadline))
                         .foregroundStyle(.secondary)
                 }
                 Spacer(minLength: 0)
@@ -191,15 +186,13 @@ struct LearnHomeView: View {
 
             HStack(spacing: Spacing.sm) {
                 NavigationLink(value: LearnRoute.alphabet) {
-                    Label("Alphabet", systemImage: "textformat")
-                        AppFont.body(.subheadline, weight: .semibold)
+                    Label("Alphabet", systemImage: "textformat").font(AppFont.body(.subheadline, weight: .semibold))
                 }
                 .buttonStyle(.bordered)
 
                 if let resume = resumeRoute {
                     NavigationLink(value: resume) {
-                        Label("Resume", systemImage: "play.fill")
-                            AppFont.body(.subheadline, weight: .semibold)
+                        Label("Resume", systemImage: "play.fill").font(AppFont.body(.subheadline, weight: .semibold))
                     }
                     .buttonStyle(.borderedProminent)
                 }

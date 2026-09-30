@@ -465,8 +465,7 @@ struct DiffChips: View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             ForEach(diffs) { diff in
                 HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {
-                    Image(systemName: symbol(for: diff))
-                        AppFont.body(.caption, weight: .bold)
+                    Image(systemName: symbol(for: diff)).font(AppFont.body(.caption, weight: .bold))
                         .foregroundStyle(color(for: diff))
                         .frame(width: 16)
                         .accessibilityHidden(true)
@@ -476,8 +475,7 @@ struct DiffChips: View {
                         .strikethrough(diff.user == nil, color: Color.danger)
                         .foregroundStyle(diff.user == nil ? Color.secondary : Color.primary)
 
-                    Image(systemName: "arrow.right")
-                        AppFont.body(.caption2, weight: .bold)
+                    Image(systemName: "arrow.right").font(AppFont.body(.caption2, weight: .bold))
                         .foregroundStyle(.tertiary)
                         .accessibilityHidden(true)
 

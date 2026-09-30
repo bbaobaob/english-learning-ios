@@ -81,8 +81,7 @@ struct ReviewItemView: View {
         return ScrollView {
             VStack(alignment: .leading, spacing: Spacing.lg) {
                 HStack(spacing: Spacing.md) {
-                    Image(systemName: passed ? "checkmark.circle.fill" : "arrow.clockwise.circle.fill")
-                        AppFont.body(.title)
+                    Image(systemName: passed ? "checkmark.circle.fill" : "arrow.clockwise.circle.fill").font(AppFont.body(.title))
                         .foregroundStyle(passed ? Color.success : Color.warning)
                         .accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 2) {
