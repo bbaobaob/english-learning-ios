@@ -15,7 +15,7 @@ import EnglishCore
 struct OnboardingView: View {
     /// Called with the learner's answers. The caller writes them; this view
     /// holds no persistence.
-    let onFinish: (name: String, level: Level, dailyMinutes: Int) -> Void
+    let onFinish: (_ name: String, _ level: Level, _ dailyMinutes: Int) -> Void
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var page: Int = 0

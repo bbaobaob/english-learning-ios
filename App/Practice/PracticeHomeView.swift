@@ -251,7 +251,7 @@ struct PracticeHomeView: View {
         }
     }
 
-    private func weakestSection: some View {
+    private var weakestSection: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             SectionHeader(
                 title: "Weakest skill",

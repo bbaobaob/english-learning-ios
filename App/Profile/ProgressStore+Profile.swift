@@ -30,7 +30,7 @@ extension ProgressStore {
     /// The package's own `context` helper is internal, so the app opens its own
     /// door rather than widening the package API. The type is left inferred so
     /// no view in this lane ever names it.
-    private var profileContext { container.mainContext }
+    private var profileContext: ModelContext { container.mainContext }
 
     private func profileSave() {
         try? profileContext.save()
@@ -67,7 +67,7 @@ extension ProgressStore {
     ///
     /// The one piece of onboarding state with no store accessor, so it lived in
     /// `AppState.markOnboarded()` — which made the app's central state object the
-    *only* writer of a profile field, against a lane that already owns the other
+    /// *only* writer of a profile field, against a lane that already owns the other
     /// two. It belongs beside ``setProfileName(_:)`` and ``setDailyGoal(_:)``,
     /// where one writer per field is a rule the Profile lane can see.
     ///
