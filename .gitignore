@@ -80,3 +80,6 @@ fastlane/test_output
 tmp/
 __pycache__/
 *.py[cod]
+
+# scratch dirs from tooling runs
+.tmp-*/
