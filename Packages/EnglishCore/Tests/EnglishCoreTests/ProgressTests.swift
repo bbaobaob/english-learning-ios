@@ -37,13 +37,14 @@ private func utcDate(_ year: Int, _ month: Int, _ day: Int, hour: Int = 12) -> D
 struct StreakTests {
 
     @Test("the first ever study day starts the streak at one")
-    func noHistory() {
+    func noHistory() throws {
         let state = calculator().registeringStudy(on: referenceNow, state: .empty)
         let expectedDay = utc.startOfDay(for: referenceNow)
         #expect(state.current == 1)
         #expect(state.longest == 1)
         #expect(state.totalDays == 1)
-        #require(state.lastStudyDay == expectedDay)
+        let lastDay = try #require(state.lastStudyDay)
+        #expect(lastDay == expectedDay)
     }
 
     @Test("studying twice in one day changes nothing")

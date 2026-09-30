@@ -211,10 +211,15 @@ struct EnglishStoreTests {
 
         _ = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
         for _ in 0..<3 {
+            // Snapshot the scalars: the next loop iteration opens a new store,
+            // which destroys the live StreakRecord this one handed back.
             let untouched = try Self.openStore(at: url).streak()
-            #expect(untouched.current == 1)
-            #expect(untouched.totalDays == 1)
-            #expect(untouched.longest == 1)
+            let current = untouched.current
+            let totalDays = untouched.totalDays
+            let longest = untouched.longest
+            #expect(current == 1)
+            #expect(totalDays == 1)
+            #expect(longest == 1)
         }
     }
 
@@ -240,8 +245,11 @@ struct EnglishStoreTests {
         )
 
         let resumed = try Self.openStore(at: url, now: Self.nextDay).resumePoint()
-        #expect(resumed?.lessonID == "tenses-past")
-        #expect(resumed?.stepIndex == 5)
+        // Snapshot the primitives so nothing below depends on a live model.
+        let lessonID = resumed?.lessonID
+        let stepIndex = resumed?.stepIndex
+        #expect(lessonID == "tenses-past")
+        #expect(stepIndex == 5)
     }
 
     @Test("there is no resume point when nothing is in progress")
@@ -323,14 +331,22 @@ struct EnglishStoreTests {
         try Self.openStore(at: url).setNotificationPref(.ieltsPractice, enabled: true, hour: 7, minute: 5)
 
         let prefs: [NotificationKind: NotificationPref] = try Self.openStore(at: url).notificationPrefs()
+        // Snapshot the scalars: NotificationPref is a live @Model, so read it
+        // while its container is still the current one.
+        let dailyEnabled = prefs[NotificationKind.dailyReminder]?.enabled
+        let dailyHour = prefs[NotificationKind.dailyReminder]?.hour
+        let dailyMinute = prefs[NotificationKind.dailyReminder]?.minute
+        let ieltsMinute = prefs[NotificationKind.ieltsPractice]?.minute
+        let streakEnabled = prefs[NotificationKind.streakReminder]?.enabled
+        let streakHour = prefs[NotificationKind.streakReminder]?.hour
         #expect(prefs.count == 5)
-        #expect(prefs[NotificationKind.dailyReminder]?.enabled == true)
-        #expect(prefs[NotificationKind.dailyReminder]?.hour == 20)
-        #expect(prefs[NotificationKind.dailyReminder]?.minute == 15)
-        #expect(prefs[NotificationKind.ieltsPractice]?.minute == 5)
+        #expect(dailyEnabled == true)
+        #expect(dailyHour == 20)
+        #expect(dailyMinute == 15)
+        #expect(ieltsMinute == 5)
         // Untouched kinds still come back with defaults, not missing.
-        #expect(prefs[NotificationKind.streakReminder]?.enabled == false)
-        #expect(prefs[NotificationKind.streakReminder]?.hour == 9)
+        #expect(streakEnabled == false)
+        #expect(streakHour == 9)
     }
 
     @Test("out-of-range notification times are clamped")
@@ -353,9 +369,15 @@ struct EnglishStoreTests {
         try Self.openStore(at: url).setFavorite("w-fail", false)
 
         let states = try Self.openStore(at: url).vocabularyStates()
-        #expect(states.count == 2)
-        #expect(states["w-achieve"]?.favorite == true)
-        #expect(states["w-fail"]?.favorite == false)
+        // Snapshot the scalars straight away: the setFavorite reopen below
+        // destroys these live VocabState models, so nothing after it may
+        // touch them.
+        let statesCount = states.count
+        let achieveFavorite = states["w-achieve"]?.favorite
+        let failFavorite = states["w-fail"]?.favorite
+        #expect(statesCount == 2)
+        #expect(achieveFavorite == true)
+        #expect(failFavorite == false)
 
         try Self.openStore(at: url).setFavorite("w-achieve", false)
         #expect(try Self.openStore(at: url).vocabularyStates()["w-achieve"]?.favorite == false)
