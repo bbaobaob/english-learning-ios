@@ -286,9 +286,10 @@ struct ReviewQueueTests {
         var lapsed = srs.schedule(item("lapsed"), grade: .good)
         lapsed = srs.schedule(lapsed, grade: .again)
 
-        // Mastered: four good answers, interval above 21.
+        // Mastered: five good answers. The ladder runs 1, 3, 8, 20, 50, so the
+        // fifth is the first to clear the learned threshold of interval >= 21.
         var mastered = item("mastered")
-        for _ in 0..<4 { mastered = srs.schedule(mastered, grade: .good) }
+        for _ in 0..<5 { mastered = srs.schedule(mastered, grade: .good) }
 
         return ReviewQueue([fresh, wrong, lapsed, mastered])
     }
@@ -341,9 +342,9 @@ struct ReviewQueueTests {
         // "fresh" and "lapsed" are due at once; "wrong" was relearned to three days.
         #expect(queue.dueToday(on: day(1)).map(\.refID) == ["fresh", "lapsed"])
         #expect(queue.dueToday(on: day(3)).count == 3)
-        // "mastered" has four good answers behind it and waits 20 days.
-        #expect(queue.dueToday(on: day(19)).count == 3)
-        #expect(queue.dueToday(on: day(20)).count == 4)
+        // "mastered" has five good answers behind it and waits 50 days.
+        #expect(queue.dueToday(on: day(49)).count == 3)
+        #expect(queue.dueToday(on: day(50)).count == 4)
     }
 
     @Test("difficult collects only lapsed items")

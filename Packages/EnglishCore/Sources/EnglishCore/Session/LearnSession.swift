@@ -138,6 +138,10 @@ public final class LearnSession {
         guard let last = resultIndices.last, last == index else { return }
         resultIndices.removeLast()
         results.removeLast()
+        // Answering the last item finishes the session, which makes `current`
+        // nil; without reopening here the re-answer would be graded against
+        // nothing and silently dropped instead of recorded.
+        isFinished = false
     }
 
     /// Advances to the next item. Returns `false` once the session is over, which is also the

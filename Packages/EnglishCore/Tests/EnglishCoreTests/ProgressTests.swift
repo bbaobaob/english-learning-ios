@@ -61,9 +61,12 @@ struct StreakTests {
     @Test("registering study is idempotent however often it repeats in a day")
     func idempotentWithinADay() {
         let srs = calculator()
+        // Anchor at midnight: day() is noon-based, and noon + 18h crosses into
+        // the next calendar day, which is a genuine new study day.
+        let midnight = utc.startOfDay(for: referenceNow)
         var state = StreakState.empty
         for hour in [0, 3, 9, 18, 23] {
-            state = srs.registeringStudy(on: day(0).addingTimeInterval(Double(hour) * 3_600), state: state)
+            state = srs.registeringStudy(on: midnight.addingTimeInterval(Double(hour) * 3_600), state: state)
         }
         #expect(state.current == 1)
         #expect(state.longest == 1)
@@ -168,14 +171,16 @@ struct StreakTests {
     @Test("the calendar's zone decides where a day starts")
     func dayBoundariesFollowTheCalendar() {
         let srs = calculator()
-        let first = srs.registeringStudy(on: day(0), state: .empty) // 00:00 UTC
+        // midnight, not noon: day() is noon-based, and noon + 23h is tomorrow.
+        let midnight = utc.startOfDay(for: referenceNow)
+        let first = srs.registeringStudy(on: midnight, state: .empty) // 00:00 UTC
         // 23:00 on the same calendar day is still the same study day.
-        let second = srs.registeringStudy(on: day(0).addingTimeInterval(23 * 3_600), state: first)
+        let second = srs.registeringStudy(on: midnight.addingTimeInterval(23 * 3_600), state: first)
         #expect(second.totalDays == 1)
         #expect(second.current == 1)
 
         // One hour past midnight UTC is the next study day.
-        let third = srs.registeringStudy(on: day(1).addingTimeInterval(3_600), state: second)
+        let third = srs.registeringStudy(on: midnight.addingTimeInterval(25 * 3_600), state: second)
         #expect(third.totalDays == 2)
         #expect(third.current == 2)
     }

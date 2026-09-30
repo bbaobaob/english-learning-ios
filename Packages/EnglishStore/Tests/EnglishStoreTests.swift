@@ -146,28 +146,32 @@ struct EnglishStoreTests {
         // @Model instance, and opening the next store releases the previous
         // container, which destroys the model it handed back -- touching it
         // afterwards traps in SwiftData rather than failing an assertion.
-        let day1 = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
-        let day1Current = day1.current
-        let day1XPToday = day1.xpToday
+        // One live store at a time. A @Model read after its container is gone
+        // traps inside SwiftData, so every scalar is read while its store is
+        // the current one and only values cross a reopen.
+        var store = try Self.openStore(at: url)
+        let (day1Current, day1XPToday) = try {
+            let day1 = try store.registerStudy(minutes: 10, xp: 30, kind: .lesson)
+            return (day1.current, day1.xpToday)
+        }()
         #expect(day1Current == 1)
         #expect(day1XPToday == 30)
 
-        let reopened = try Self.openStore(at: url).streak()
-        let reopenedCurrent = reopened.current
-        let reopenedTotalDays = reopened.totalDays
-        let reopenedXPToday = reopened.xpToday
-        let reopenedLongest = reopened.longest
+        store = try Self.openStore(at: url)
+        let (reopenedCurrent, reopenedTotalDays, reopenedXPToday, reopenedLongest) = {
+            let reopened = try store.streak()
+            return (reopened.current, reopened.totalDays, reopened.xpToday, reopened.longest)
+        }()
         #expect(reopenedCurrent == 1)
         #expect(reopenedTotalDays == 1)
         #expect(reopenedXPToday == 30)
         #expect(reopenedLongest == 1)
 
-        let day2 = try Self.openStore(at: url, now: Self.nextDay)
-            .registerStudy(minutes: 10, xp: 10, kind: .practice)
-        let day2Current = day2.current
-        let day2Longest = day2.longest
-        let day2TotalDays = day2.totalDays
-        let day2XPToday = day2.xpToday
+        store = try Self.openStore(at: url, now: Self.nextDay)
+        let (day2Current, day2Longest, day2TotalDays, day2XPToday) = try {
+            let day2 = try store.registerStudy(minutes: 10, xp: 10, kind: .practice)
+            return (day2.current, day2.longest, day2.totalDays, day2.xpToday)
+        }()
         #expect(day2Current == 2)
         #expect(day2Longest == 2)
         #expect(day2TotalDays == 2)
@@ -191,17 +195,20 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        _ = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        _ = try Self.openStore(at: url, now: Self.nextDay)
-            .registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        #expect(try Self.openStore(at: url, now: Self.nextDay).streak().current == 2)
+        var store = try Self.openStore(at: url)
+        _ = try store.registerStudy(minutes: 10, xp: 10, kind: .lesson)
+        store = try Self.openStore(at: url, now: Self.nextDay)
+        _ = try store.registerStudy(minutes: 10, xp: 10, kind: .lesson)
+        #expect(try store.streak().current == 2)
 
         let fiveDaysOn = Self.calendar.date(byAdding: .day, value: 5, to: Self.epoch) ?? Self.epoch
-        let afterGap = try Self.openStore(at: url, now: fiveDaysOn)
-            .registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        #expect(afterGap.current == 1)
-        #expect(afterGap.longest == 2)
-        #expect(afterGap.totalDays == 3)
+        store = try Self.openStore(at: url, now: fiveDaysOn)
+        let afterGap = try store.registerStudy(minutes: 10, xp: 10, kind: .lesson)
+        let (afterCurrent, afterLongest, afterTotalDays) =
+            (afterGap.current, afterGap.longest, afterGap.totalDays)
+        #expect(afterCurrent == 1)
+        #expect(afterLongest == 2)
+        #expect(afterTotalDays == 3)
     }
 
     @Test("a plain reopen with no study does not reset the streak")
@@ -209,14 +216,16 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        _ = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 30, kind: .lesson)
+        // One live store at a time: reading a @Model after its container is
+        // gone traps inside SwiftData, so the store is reassigned (releasing
+        // the old container) only after its scalars are already values.
+        var store = try Self.openStore(at: url)
+        _ = try store.registerStudy(minutes: 10, xp: 30, kind: .lesson)
         for _ in 0..<3 {
-            // Snapshot the scalars: the next loop iteration opens a new store,
-            // which destroys the live StreakRecord this one handed back.
-            let untouched = try Self.openStore(at: url).streak()
-            let current = untouched.current
-            let totalDays = untouched.totalDays
-            let longest = untouched.longest
+            store = try Self.openStore(at: url)
+            let untouched = try store.streak()
+            let (current, totalDays, longest) =
+                (untouched.current, untouched.totalDays, untouched.longest)
             #expect(current == 1)
             #expect(totalDays == 1)
             #expect(longest == 1)
@@ -327,12 +336,15 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try Self.openStore(at: url).setNotificationPref(.dailyReminder, enabled: true, hour: 20, minute: 15)
-        try Self.openStore(at: url).setNotificationPref(.ieltsPractice, enabled: true, hour: 7, minute: 5)
+        // One live store at a time: NotificationPref is a live @Model, and
+        // reading one after its container is gone traps inside SwiftData.
+        var store = try Self.openStore(at: url)
+        try store.setNotificationPref(.dailyReminder, enabled: true, hour: 20, minute: 15)
+        store = try Self.openStore(at: url)
+        try store.setNotificationPref(.ieltsPractice, enabled: true, hour: 7, minute: 5)
 
-        let prefs: [NotificationKind: NotificationPref] = try Self.openStore(at: url).notificationPrefs()
-        // Snapshot the scalars: NotificationPref is a live @Model, so read it
-        // while its container is still the current one.
+        store = try Self.openStore(at: url)
+        let prefs: [NotificationKind: NotificationPref] = try store.notificationPrefs()
         let dailyEnabled = prefs[NotificationKind.dailyReminder]?.enabled
         let dailyHour = prefs[NotificationKind.dailyReminder]?.hour
         let dailyMinute = prefs[NotificationKind.dailyReminder]?.minute
@@ -365,13 +377,16 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        try Self.openStore(at: url).setFavorite("w-achieve", true)
-        try Self.openStore(at: url).setFavorite("w-fail", false)
+        // One live store at a time: VocabState is a live @Model, and even the
+        // snapshot reads below trap if their container is already gone, because
+        // a temporary store is released at the end of its own statement.
+        var store = try Self.openStore(at: url)
+        try store.setFavorite("w-achieve", true)
+        store = try Self.openStore(at: url)
+        try store.setFavorite("w-fail", false)
 
-        let states = try Self.openStore(at: url).vocabularyStates()
-        // Snapshot the scalars straight away: the setFavorite reopen below
-        // destroys these live VocabState models, so nothing after it may
-        // touch them.
+        store = try Self.openStore(at: url)
+        let states = try store.vocabularyStates()
         let statesCount = states.count
         let achieveFavorite = states["w-achieve"]?.favorite
         let failFavorite = states["w-fail"]?.favorite
@@ -379,8 +394,10 @@ struct EnglishStoreTests {
         #expect(achieveFavorite == true)
         #expect(failFavorite == false)
 
-        try Self.openStore(at: url).setFavorite("w-achieve", false)
-        #expect(try Self.openStore(at: url).vocabularyStates()["w-achieve"]?.favorite == false)
+        store = try Self.openStore(at: url)
+        try store.setFavorite("w-achieve", false)
+        store = try Self.openStore(at: url)
+        #expect(try store.vocabularyStates()["w-achieve"]?.favorite == false)
     }
 
     // MARK: - Review scheduling
@@ -486,12 +503,13 @@ struct EnglishStoreTests {
         let url = Self.makeStoreURL()
         defer { try? FileManager.default.removeItem(at: url) }
 
-        let first = try Self.openStore(at: url).registerStudy(minutes: 10, xp: 60, kind: .lesson)
-        #expect(first.xpToday == 60)
+        var store = try Self.openStore(at: url)
+        let firstXPToday = try store.registerStudy(minutes: 10, xp: 60, kind: .lesson).xpToday
+        #expect(firstXPToday == 60)
 
-        let second = try Self.openStore(at: url, now: Self.nextDay)
-            .registerStudy(minutes: 10, xp: 10, kind: .lesson)
-        #expect(second.xpToday == 10)
+        store = try Self.openStore(at: url, now: Self.nextDay)
+        let secondXPToday = try store.registerStudy(minutes: 10, xp: 10, kind: .lesson).xpToday
+        #expect(secondXPToday == 10)
     }
 
     @Test("completing a lesson banks its XP and marks the lesson done")

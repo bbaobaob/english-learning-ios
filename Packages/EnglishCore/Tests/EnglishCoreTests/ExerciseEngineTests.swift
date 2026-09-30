@@ -8,12 +8,15 @@ private let engine = ExerciseEngine()
 // MARK: - Fixtures
 
 private func choiceExercise(kind: ExerciseKind, answer: [String], isCorrectFlags: [Bool]) -> Exercise {
+    // `answer` is the option-id list the items are built from; the expected
+    // answer is the flagged subset, which is what the engine grades against.
+    let correct = answer.enumerated().filter { isCorrectFlags[$0.offset] }.map(\.element)
     var exercise = Exercise(
         id: "ex-\(kind.rawValue)",
         kind: kind,
         topicID: "tenses",
         prompt: "Pick the right answer.",
-        answer: .choice(answer),
+        answer: .choice(correct),
         explanation: "Because.",
         xp: 10
     )

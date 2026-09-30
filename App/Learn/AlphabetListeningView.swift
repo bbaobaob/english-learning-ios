@@ -126,7 +126,7 @@ final class ListeningSession {
     let normalizer = AnswerNormalizer()
 
     private(set) var index: Int = 0
-    private(set) var phase: ListenPhase = .fresh
+    fileprivate private(set) var phase: ListenPhase = .fresh
     /// Whether the current item's audio has been played at least once.
     private(set) var hasPlayedCurrent: Bool = false
     /// Attempts per item id. Slow audio never counts as an attempt.
