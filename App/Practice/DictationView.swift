@@ -64,7 +64,7 @@ struct DictationLandingView: View {
                 if set.dueCount > 0 {
                     Text("Due")
                         .font(AppFont.mono(11, .bold))
-                        .foregroundStyle(.warning)
+                        .foregroundStyle(Color.warning)
                         .padding(.horizontal, Spacing.sm)
                         .padding(.vertical, 2)
                         .background(Color.warning.opacity(0.16), in: Capsule())
@@ -316,7 +316,7 @@ struct DictationView: View {
                         action: {
                             Haptics.selection()
                             PracticeSessionStore.shared.reset(slot)
-                            session = nil
+                            self.session = nil
                         }
                     )
                     SecondaryButton(
@@ -385,12 +385,12 @@ struct DictationView: View {
                 SecondaryButton(
                     title: "Listen again",
                     symbol: "speaker.wave.2.fill",
-                    action: { speak(itemAt: index, slow: false) }
+                    action: { speak(itemAt(index), slow: false) }
                 )
                 SecondaryButton(
                     title: "Slow",
                     symbol: "tortoise.fill",
-                    action: { speak(itemAt: index, slow: true) }
+                    action: { speak(itemAt(index), slow: true) }
                 )
             }
         }

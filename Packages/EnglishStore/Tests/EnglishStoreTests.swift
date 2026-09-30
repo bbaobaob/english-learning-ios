@@ -158,7 +158,7 @@ struct EnglishStoreTests {
         #expect(day1XPToday == 30)
 
         store = try Self.openStore(at: url)
-        let (reopenedCurrent, reopenedTotalDays, reopenedXPToday, reopenedLongest) = {
+        let (reopenedCurrent, reopenedTotalDays, reopenedXPToday, reopenedLongest) = try {
             let reopened = try store.streak()
             return (reopened.current, reopened.totalDays, reopened.xpToday, reopened.longest)
         }()

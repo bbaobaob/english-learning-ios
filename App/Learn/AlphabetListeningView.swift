@@ -265,7 +265,7 @@ struct AlphabetListeningView: View {
 
             Image(systemName: "ear.badge.waveform")
                 .font(.system(size: 56))
-                .foregroundStyle(.brand)
+                .foregroundStyle(Color.brand)
                 .accessibilityHidden(true)
 
             Text("Type what you hear").font(AppFont.display(.largeTitle))
@@ -388,7 +388,7 @@ struct AlphabetListeningView: View {
                 Image(systemName: session.hasPlayedCurrent ? "speaker.wave.2.circle.fill" : "speaker.wave.2.circle")
                     .font(.system(size: 64))
                     .symbolRenderingMode(.hierarchical)
-                    .foregroundStyle(.brand)
+                    .foregroundStyle(Color.brand)
                     .frame(maxWidth: .infinity, minHeight: 76)
                     .background(Color.brand.opacity(0.08), in: .circle)
             }
@@ -405,7 +405,7 @@ struct AlphabetListeningView: View {
                     Image(systemName: "tortoise.fill").font(AppFont.body(.title))
                     Text("Slow").font(AppFont.body(.caption, weight: .semibold))
                 }
-                .foregroundStyle(.brand)
+                .foregroundStyle(Color.brand)
                 .frame(minWidth: 72, minHeight: 76)
                 .background(Color.brand.opacity(0.08), in: .rect(cornerRadius: Radius.card))
             }
@@ -433,7 +433,7 @@ struct AlphabetListeningView: View {
 
             if session.isWrongNow {
                 Label("Not quite — the answer is below", systemImage: "xmark.circle.fill").font(AppFont.body(.caption, weight: .semibold))
-                    .foregroundStyle(.danger)
+                    .foregroundStyle(Color.danger)
             }
         }
     }
@@ -457,7 +457,7 @@ struct AlphabetListeningView: View {
             HStack(spacing: Spacing.md) {
                 Text(item.letter.uppercased())
                     .font(.system(size: 44, weight: .bold))
-                    .foregroundStyle(.brand)
+                    .foregroundStyle(Color.brand)
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     Text(item.accepted.first ?? item.speechText).font(AppFont.body(.title3, weight: .semibold))
                     if let reveal = item.reveal {
@@ -592,7 +592,7 @@ struct AlphabetListeningView: View {
                         title: "Run it again",
                         symbol: "arrow.counterclockwise",
                         action: {
-                            session = ListeningSession(items: items)
+                            self.session = ListeningSession(items: items)
                             input = ""
                         }
                     )
@@ -603,7 +603,7 @@ struct AlphabetListeningView: View {
                         Text("Change the item set").font(AppFont.body(.subheadline, weight: .semibold))
                     }
                     .buttonStyle(.plain)
-                    .foregroundStyle(.brand)
+                    .foregroundStyle(Color.brand)
                 }
                 .padding(.bottom, Spacing.lg)
             }

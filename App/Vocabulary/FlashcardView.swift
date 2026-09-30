@@ -68,7 +68,9 @@ struct FlashcardView: View {
     /// Builds the session once, from whatever the store knows right now.
     private func buildSession() {
         guard session == nil else { return }
-        let library = appState.library
+        // Content loads asynchronously; without it there is nothing to build,
+        // and the empty state below explains that.
+        guard let library = appState.library else { return }
         let store = appState.store
 
         let words: [VocabWord]
@@ -115,7 +117,7 @@ struct FlashcardView: View {
                 Text(session.positionLabel).font(AppFont.body(.footnote, weight: .semibold))
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text(Text(session.progress, format: .percent.precision(.fractionLength(0)))).font(AppFont.body(.footnote))
+                Text(session.progress, format: .percent.precision(.fractionLength(0))).font(AppFont.body(.footnote))
                     .foregroundStyle(.tertiary)
                     .monospacedDigit()
             }

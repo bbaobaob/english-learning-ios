@@ -139,7 +139,7 @@ struct AlphabetView: View {
             VStack(spacing: Spacing.xs) {
                 HStack(alignment: .firstTextBaseline) {
                     Text(letter.uppercased()).font(AppFont.body(.largeTitle, weight: .bold))
-                        .foregroundStyle(.brand)
+                        .foregroundStyle(Color.brand)
                     Text(letter.lowercased()).font(AppFont.body(.title2, weight: .medium))
                         .foregroundStyle(.brand.opacity(0.75))
                     Spacer(minLength: 0)
