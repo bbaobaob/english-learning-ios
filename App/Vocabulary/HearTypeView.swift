@@ -521,8 +521,9 @@ struct HearTypeView: View {
         guard let session, let text = session.spokenText else { return }
         appState.speech.speak(text, rate: session.usesExample ? 0.45 : 0.5, completion: nil)
     }
+}
 
-}, split out so it can hold a `@Bindable` reference to
+/// The typed-answer panel, split out so it can hold a `@Bindable` reference to
 /// the session: the text field needs a two-way binding, the rest does not.
 private struct TypingPanel: View {
     @Bindable var session: HearTypeSession
