@@ -8,7 +8,9 @@ import EnglishCore
 struct LearnHomeView: View {
 
     @Environment(AppState.self) private var app
-    @Bindable var appBinding = app
+    /// Deferred to use time: a @Bindable cannot initialize from another
+    /// property. Same pattern IELTSHomeView uses.
+    private var appBinding: Bindable<AppState> { Bindable(app) }
     @State private var filter: LevelFilter = .all
     @State private var query: String = ""
 
