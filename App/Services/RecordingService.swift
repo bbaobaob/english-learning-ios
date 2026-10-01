@@ -131,11 +131,9 @@ final class RecordingService {
 
     init() {}
 
-    deinit {
-        if let takeURL {
-            try? FileManager.default.removeItem(at: takeURL)
-        }
-    }
+    // No deinit cleanup: takeURL is MainActor-isolated and unreachable from a
+    // nonisolated deinit. discard() already removes the file before re-record
+    // and when leaving the screen, which covers every path that creates one.
 
 
     // MARK: - Recording
