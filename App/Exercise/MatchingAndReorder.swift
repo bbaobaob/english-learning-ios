@@ -298,15 +298,9 @@ struct ReorderWordsView: View {
         // own reordering is a list-level behaviour and these rows live in a
         // `VStack`.
         .draggable(token) {
-            Text(token)
-                .font(AppFont.body(.body))
-                .padding(Spacing.sm)
-                .background(
-                    RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
-                        .fill(Palette.surfaceRaised)
-                )
+            dragPreview(token: token)
         }
-        .dropDestination(for: String.self) { dropped, _ in
+        .dropDestination(for: String.self) { (dropped: [String], _: CGPoint) in
             move(index: index, to: indexOf(dropped))
             return true
         }
@@ -315,6 +309,17 @@ struct ReorderWordsView: View {
         .accessibilityAction(named: "Move earlier") { move(index: index, to: index - 1) }
         .accessibilityAction(named: "Move later") { move(index: index, to: index + 1) }
         .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: tokens)
+    }
+
+    /// What follows the finger while dragging: the token on a raised card.
+    private func dragPreview(token: String) -> some View {
+        Text(token)
+            .font(AppFont.body(.body))
+            .padding(Spacing.sm)
+            .background(
+                RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
+                    .fill(Palette.surfaceRaised)
+            )
     }
 
     @ViewBuilder
