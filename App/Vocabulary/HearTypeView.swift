@@ -375,7 +375,7 @@ struct HearTypeView: View {
     }
 
     @ViewBuilder
-    private func tokenRow(_ tokens: [String], style: (Int) -> (String, Color)) -> some View {
+    private func tokenRow(_ tokens: [String], style: @escaping (Int) -> (String, Color)) -> some View {
         // ponytail: a wrapping `HStack` would need a layout pass to reflow;
         // `Text` concatenation wraps for free and the per-token colouring is
         // what actually needs the pieces.

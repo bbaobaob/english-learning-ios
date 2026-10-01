@@ -473,7 +473,7 @@ final class HomeModel {
     /// A human label for the step the learner stopped on.
     static func stepLabel(for step: LessonStep?) -> String {
         guard let step else { return "Start" }
-        switch step.type {
+        return switch step.type {
         case .theory: "Theory"
         case .video: "Video"
         case .audio: "Listening"
