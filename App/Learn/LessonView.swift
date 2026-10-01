@@ -364,8 +364,8 @@ struct LessonView: View {
         case .video(let video):
             VideoLessonView(
                 video: video.video,
-                bookmark: app.store.bookmark(video.video.id),
-                position: 0
+                bookmark: { app.store.saveBookmark(video.video.id, position: $0) },
+                position: app.store.bookmark(video.video.id)
             )
             .padding(.horizontal, Spacing.md)
         case .exercises(let step):

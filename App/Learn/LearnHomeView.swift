@@ -69,7 +69,7 @@ struct LearnHomeView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $appBinding.navigationPath) {
+        NavigationStack(path: appBinding.navigationPath) {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: Spacing.xl) {
                     summaryHeader

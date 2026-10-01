@@ -251,7 +251,7 @@ struct HearTypeView: View {
                 Text("Not quite")
                     .font(AppFont.display(.title3, weight: .bold))
                 Spacer()
-                Text(Text(result.accuracy, format: .percent.precision(.fractionLength(0)))).font(AppFont.body(.footnote))
+                Text(result.accuracy, format: .percent.precision(.fractionLength(0))).font(AppFont.body(.footnote))
                     .foregroundStyle(.secondary)
                     .monospacedDigit()
             }
@@ -430,7 +430,7 @@ struct HearTypeView: View {
                     .accessibilityValue(Text(session.accuracy, format: .percent.precision(.fractionLength(0))))
 
                     VStack(alignment: .leading, spacing: Spacing.xs) {
-                        Text(Text(session.accuracy, format: .percent.precision(.fractionLength(0))))
+                        Text(session.accuracy, format: .percent.precision(.fractionLength(0)))
                             .font(AppFont.display(.title, weight: .bold))
                             .monospacedDigit()
                         Text("\(session.shaky.count) to keep practising").font(AppFont.body(.subheadline))

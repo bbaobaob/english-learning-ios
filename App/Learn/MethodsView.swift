@@ -145,7 +145,7 @@ struct MethodsView: View {
                         .fixedSize(horizontal: false, vertical: true)
                     if isStarted {
                         Label("Resume", systemImage: "book").font(AppFont.body(.caption, weight: .semibold))
-                            .foregroundStyle(.brand)
+                            .foregroundStyle(Color.brand)
                     }
                 }
                 Spacer(minLength: 0)

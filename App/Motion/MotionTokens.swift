@@ -108,7 +108,7 @@ extension Motion {
     /// Reduce Motion means "do not move things", not "do not update things",
     /// so this preserves the end state rather than cancelling the transition.
     static func reduced(_ animation: Animation) -> Animation {
-        isReduceMotionEnabled ? .linear(Duration.instant) : animation
+        isReduceMotionEnabled ? .linear(duration: Duration.instant) : animation
     }
 }
 
@@ -173,7 +173,7 @@ private struct MotionAwareModifier<V: Equatable>: ViewModifier {
         // already like that", slow enough that SwiftUI still performs the
         // value update rather than dropping it.
         content.animation(
-            (ignoresReduceMotion || !settings.reduceMotion) ? animation : .linear(Motion.Duration.instant),
+            (ignoresReduceMotion || !settings.reduceMotion) ? animation : .linear(duration: Motion.Duration.instant),
             value: value
         )
     }

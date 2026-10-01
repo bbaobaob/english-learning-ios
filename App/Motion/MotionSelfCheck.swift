@@ -20,7 +20,7 @@ enum MotionSelfCheck {
     static func run() {
         CountUpNumber.check()
         XPProgressBar.check()
-        ErrorShake.check()
+        ErrorShake<EmptyView>.check()
         CheckmarkShape.check()
         StreakEmber.check()
         LiveWaveform.check()
