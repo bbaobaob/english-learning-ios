@@ -197,61 +197,6 @@ struct HearTypeView: View {
             .accessibilityHint("Switches between the single word and its example sentence")
         }
         .frame(maxWidth: .infinity)
-        .padding(Spacing.lg)
-        .cardStyle()
-    }
-
-}
-
-/// The typed-answer panel, split out so it can hold a `@Bindable` reference to
-/// the session: the text field needs a two-way binding, the rest does not.
-private struct TypingPanel: View {
-    @Bindable var session: HearTypeSession
-    @FocusState private var isFocused: Bool
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.md) {
-            TextField("Type what you hear", text: $session.input)
-                .textInputAutocapitalization(.never)
-                .autocorrectionDisabled()
-                .submitLabel(.done)
-                .font(AppFont.mono(20, weight: .medium))
-                .padding(Spacing.md)
-                .background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: Radius.chip))
-                .focused($isFocused)
-                .accessibilityLabel("Your answer")
-                .onSubmit { check() }
-
-            PrimaryButton(
-                title: "Check",
-                symbol: "checkmark",
-                isEnabled: !session.input.isEmpty,
-                action: check
-            )
-            .frame(maxWidth: .infinity)
-
-            Text(session.usesExample
-                ? "Type the sentence you just heard."
-                : "Capital letters and trailing full stops are ignored.").font(AppFont.body(.caption2))
-                .foregroundStyle(.tertiary)
-                .frame(maxWidth: .infinity, alignment: .center)
-        }
-        .padding(Spacing.md)
-        .cardStyle()
-        .onAppear { isFocused = true }
-    }
-
-    /// Grades through the engine and gives the learner a distinct feel per verdict.
-    private func check() {
-        let answer = session.check()
-        switch answer {
-        case .correct: Haptics.success()
-        case .wrong: Haptics.warning()
-        case .typing: break
-        }
-    }
-}
-
     /// The right answer, plainly, with the example for context.
     @ViewBuilder
     private func correctPanel(_ session: HearTypeSession, _ card: HearTypeCard) -> some View {
@@ -573,3 +518,58 @@ private struct TypingPanel: View {
         guard let session, let text = session.spokenText else { return }
         appState.speech.speak(text, rate: session.usesExample ? 0.45 : 0.5, completion: nil)
     }
+        .padding(Spacing.lg)
+        .cardStyle()
+    }
+
+}
+
+/// The typed-answer panel, split out so it can hold a `@Bindable` reference to
+/// the session: the text field needs a two-way binding, the rest does not.
+private struct TypingPanel: View {
+    @Bindable var session: HearTypeSession
+    @FocusState private var isFocused: Bool
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.md) {
+            TextField("Type what you hear", text: $session.input)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .submitLabel(.done)
+                .font(AppFont.mono(20, weight: .medium))
+                .padding(Spacing.md)
+                .background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: Radius.chip))
+                .focused($isFocused)
+                .accessibilityLabel("Your answer")
+                .onSubmit { check() }
+
+            PrimaryButton(
+                title: "Check",
+                symbol: "checkmark",
+                isEnabled: !session.input.isEmpty,
+                action: check
+            )
+            .frame(maxWidth: .infinity)
+
+            Text(session.usesExample
+                ? "Type the sentence you just heard."
+                : "Capital letters and trailing full stops are ignored.").font(AppFont.body(.caption2))
+                .foregroundStyle(.tertiary)
+                .frame(maxWidth: .infinity, alignment: .center)
+        }
+        .padding(Spacing.md)
+        .cardStyle()
+        .onAppear { isFocused = true }
+    }
+
+    /// Grades through the engine and gives the learner a distinct feel per verdict.
+    private func check() {
+        let answer = session.check()
+        switch answer {
+        case .correct: Haptics.success()
+        case .wrong: Haptics.warning()
+        case .typing: break
+        }
+    }
+}
+
