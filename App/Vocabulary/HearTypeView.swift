@@ -197,6 +197,9 @@ struct HearTypeView: View {
             .accessibilityHint("Switches between the single word and its example sentence")
         }
         .frame(maxWidth: .infinity)
+        .padding(Spacing.lg)
+        .cardStyle()
+    }
     /// The right answer, plainly, with the example for context.
     @ViewBuilder
     private func correctPanel(_ session: HearTypeSession, _ card: HearTypeCard) -> some View {
@@ -518,13 +521,8 @@ struct HearTypeView: View {
         guard let session, let text = session.spokenText else { return }
         appState.speech.speak(text, rate: session.usesExample ? 0.45 : 0.5, completion: nil)
     }
-        .padding(Spacing.lg)
-        .cardStyle()
-    }
 
-}
-
-/// The typed-answer panel, split out so it can hold a `@Bindable` reference to
+}, split out so it can hold a `@Bindable` reference to
 /// the session: the text field needs a two-way binding, the rest does not.
 private struct TypingPanel: View {
     @Bindable var session: HearTypeSession
