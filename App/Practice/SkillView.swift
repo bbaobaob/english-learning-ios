@@ -26,9 +26,6 @@ struct SkillView: View {
     /// This skill's topic, when the library has loaded it.
     private var topic: Topic? { appState.library?.topic(topicID) }
 
-    /// This skill's topic, when the library has loaded it.
-    private var topic: Topic? { appState.library?.topic(topicID) }
-
     var body: some View {
         Group {
             if let topic {
