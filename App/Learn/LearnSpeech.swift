@@ -28,7 +28,7 @@ enum SpeakGate {
     ///   rather than clamped for you.
     @MainActor
     static func say(_ text: String, using app: AppState, rate: Double = 1.0) {
-        app.audio.speak(text, rate: SpeechRate.scaled(rate)), completion: nil
+        app.audio.speak(text, rate: SpeechRate.scaled(rate), completion: nil)
     }
 
     /// Speaks `text` at an already-resolved absolute rate.
@@ -39,7 +39,7 @@ enum SpeakGate {
     /// ``SpeechRate/scaled(_:)`` and is therefore already clamped.
     @MainActor
     static func say(_ text: String, using app: AppState, absoluteRate: Float) {
-        app.audio.speak(text, rate: absoluteRate), completion: nil
+        app.audio.speak(text, rate: absoluteRate, completion: nil)
     }
 
     /// The slow rate used by every "play slowly" control in this lane.
