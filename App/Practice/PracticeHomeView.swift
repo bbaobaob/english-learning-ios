@@ -268,7 +268,7 @@ struct PracticeHomeView: View {
                     VStack(alignment: .leading, spacing: Spacing.md) {
                         HStack(spacing: Spacing.md) {
                             Image(systemName: recommendation.skill.fallbackSymbol).font(AppFont.body(.title2))
-                                .foregroundStyle(.danger)
+                                .foregroundStyle(Color.danger)
                                 .frame(width: 34)
                                 .accessibilityHidden(true)
                             VStack(alignment: .leading, spacing: 2) {

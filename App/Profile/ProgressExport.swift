@@ -39,7 +39,7 @@ enum ProgressExporter {
     /// - Parameters:
     ///   - store: The progress store.
     ///   - library: The content library, used only for topic titles.
-    static func snapshot(store: ProgressStore, library: ContentLibrary) -> ProgressExport {
+    @MainActor static func snapshot(store: ProgressStore, library: ContentLibrary) -> ProgressExport {
         let profile = store.profile()
         let stats = store.learnerStats()
 
@@ -79,7 +79,7 @@ enum ProgressExporter {
     }
 
     /// Pretty-printed JSON for the share sheet.
-    static func json(store: ProgressStore, library: ContentLibrary) throws -> Data {
+    @MainActor static func json(store: ProgressStore, library: ContentLibrary) throws -> Data {
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         encoder.dateEncodingStrategy = .iso8601

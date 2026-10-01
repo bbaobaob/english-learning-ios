@@ -108,9 +108,9 @@ extension Topic {
     /// Every dictation item in the topic, across all levels, in study order.
     var dictationItems: [DictationItem] {
         lessons.flatMap { lesson in
-            lesson.steps.compactMap { step in
+            lesson.steps.flatMap { step in
                 if case .dictation(let dictation) = step { return dictation.items }
-                return nil
+                return []
             }
         }
     }

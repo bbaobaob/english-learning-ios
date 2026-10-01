@@ -160,7 +160,7 @@ struct Last14DaysChart: View {
                 ForEach(days) { day in
                     VStack(spacing: 4) {
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
-                            .fill(day.minutes == 0 ? Color.secondary.opacity(0.15) : Color.brand.gradient)
+                            .fill((day.minutes == 0 ? Color.secondary.opacity(0.15) : Color.brand).gradient)
                             .frame(height: max(4, CGFloat(day.minutes) / CGFloat(peak) * 64))
                             .animation(Motion.spring(response: 0.45, dampingFraction: 0.8), value: day.minutes)
 

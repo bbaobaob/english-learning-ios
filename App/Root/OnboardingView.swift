@@ -136,7 +136,7 @@ struct OnboardingView: View {
     }
 
     private func finish() {
-        onFinish(name: name, level: level, dailyMinutes: dailyMinutes)
+        onFinish(name, level, dailyMinutes)
     }
 
     // MARK: - Pages

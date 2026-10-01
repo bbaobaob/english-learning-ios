@@ -32,8 +32,8 @@ struct ProfileView: View {
                 VStack(spacing: Spacing.xl) {
                     header
 
-                    if let notificationError {
-                        ErrorBanner(message: notificationError) { notificationError = nil }
+                    if let errorMessage = notificationError {
+                        ErrorBanner(message: errorMessage) { notificationError = nil }
                     }
 
                     streakSection
