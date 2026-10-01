@@ -272,21 +272,8 @@ struct ReorderWordsView: View {
         // checker choosing between overloads for the whole row at once.
         let rowAnimation: Animation? = Motion.accessible(Motion.quick, reduceMotion: reduceMotion)
         HStack(spacing: Spacing.md) {
-            Text("\(index + 1)")
-                .font(AppFont.mono(.caption, weight: .bold))
-                .foregroundStyle(Palette.textTertiary)
-                .frame(width: 24, alignment: .trailing)
-                .accessibilityHidden(true)
-
-            Text(token)
-                .font(AppFont.body(.body))
-                .foregroundStyle(Palette.textPrimary)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .fixedSize(horizontal: false, vertical: true)
-
-            // The accessible reorder path. Two 44pt targets per row, which is
-            // a lot of chrome, so they are tinted down to a hairline circle
-            // and only take the tint's colour when enabled.
+            rowNumber(index: index)
+            rowToken(token)
             moveButton(symbol: "chevron.up", index: index, delta: -1)
             moveButton(symbol: "chevron.down", index: index, delta: 1)
         }
@@ -304,7 +291,9 @@ struct ReorderWordsView: View {
             dragPreview(token: token)
         }
         .dropDestination(for: String.self) { (dropped: [String], _: CGPoint) in
-            move(index: index, to: indexOf(dropped))
+            if let token = dropped.first {
+                move(index: index, to: indexOf(token))
+            }
             return true
         }
         .accessibilityElement(children: .contain)
@@ -323,6 +312,22 @@ struct ReorderWordsView: View {
                 RoundedRectangle(cornerRadius: Radius.chip, style: .continuous)
                     .fill(Palette.surfaceRaised)
             )
+    }
+
+    private func rowNumber(index: Int) -> some View {
+        Text("\(index + 1)")
+            .font(AppFont.mono(.caption, weight: .bold))
+            .foregroundStyle(Palette.textTertiary)
+            .frame(width: 24, alignment: .trailing)
+            .accessibilityHidden(true)
+    }
+
+    private func rowToken(_ token: String) -> some View {
+        Text(token)
+            .font(AppFont.body(.body))
+            .foregroundStyle(Palette.textPrimary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .fixedSize(horizontal: false, vertical: true)
     }
 
     @ViewBuilder
