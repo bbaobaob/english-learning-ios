@@ -252,15 +252,16 @@ struct ReorderWordsView: View {
     /// Split out on its own: folded into the footer above, the Label chain
     /// makes the whole row too complex for the type-checker to finish.
     private var resetButton: some View {
-        Button {
+        // Button(title:systemImage:) rather than a Label in the label closure:
+        // the nested Label generics plus the style chain made this expression
+        // too complex for the type-checker to finish.
+        Button("Reset", systemImage: "arrow.counterclockwise") {
             Haptics.selection()
             tokens.removeAll()
-        } label: {
-            Label("Reset", systemImage: "arrow.counterclockwise")
-                .font(AppFont.body(.caption, weight: .semibold))
-                .foregroundStyle(Palette.brand)
-                .frame(minHeight: Metric.tapTarget)
         }
+        .font(AppFont.body(.caption, weight: .semibold))
+        .foregroundStyle(Palette.brand)
+        .frame(minHeight: Metric.tapTarget)
         .buttonStyle(.plain)
         .accessibilityLabel("Reset the word order")
     }
