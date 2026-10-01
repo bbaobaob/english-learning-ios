@@ -111,6 +111,7 @@ struct ReviewDetailSheet: View {
         }
     }
 
+    @ViewBuilder
     private func previewRow(_ preview: Preview) -> some View {
         let next = repetition.schedule(item, grade: preview.grade)
 

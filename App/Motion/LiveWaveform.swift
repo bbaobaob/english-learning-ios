@@ -154,9 +154,8 @@ struct LiveWaveform: View {
         // A cancellable task rather than a `Timer`: it is torn down with the
         // view and cannot survive the screen.
         poller?.cancel()
-        poller = Task { @MainActor [weak self] in
+        poller = Task { @MainActor in
             while !Task.isCancelled {
-                guard let self else { return }
                 self.ingest(levels.currentLevel)
                 try? await Task.sleep(for: .seconds(self.pollInterval))
             }

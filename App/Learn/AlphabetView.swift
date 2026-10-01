@@ -130,6 +130,7 @@ struct AlphabetView: View {
 
     // MARK: - Card
 
+    @ViewBuilder
     private func letterCard(for lesson: Lesson) -> some View {
         let isComplete = app.store.lessonProgress()[lesson.id]?.completed == true
         let letter = AlphabetCard.letter(in: lesson)

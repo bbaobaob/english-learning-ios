@@ -90,6 +90,7 @@ struct FlashcardView: View {
 
     // MARK: - Card
 
+    @ViewBuilder
     private func cardBody(_ session: FlashcardSession, _ card: VocabCard) -> some View {
         ScrollView {
             VStack(spacing: Spacing.lg) {
@@ -111,6 +112,7 @@ struct FlashcardView: View {
         .gesture(swipe(session))
     }
 
+    @ViewBuilder
     private func progressHeader(_ session: FlashcardSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
@@ -130,6 +132,7 @@ struct FlashcardView: View {
         .padding(.top, Spacing.sm)
     }
 
+    @ViewBuilder
     private func flashcard(_ session: FlashcardSession, _ card: VocabCard) -> some View {
         VStack(spacing: Spacing.lg) {
             if session.isRevealed {
@@ -145,6 +148,7 @@ struct FlashcardView: View {
         .accessibilityLabel(session.isRevealed ? "\(card.word.word), answer showing" : "\(card.word.word), question")
     }
 
+    @ViewBuilder
     private func front(_ session: FlashcardSession, _ card: VocabCard) -> some View {
         VStack(spacing: Spacing.md) {
             VocabSpeakButton(
@@ -173,6 +177,7 @@ struct FlashcardView: View {
         .accessibilityAction(named: "Show answer") { reveal(session) }
     }
 
+    @ViewBuilder
     private func back(_ session: FlashcardSession, _ card: VocabCard) -> some View {
         VStack(spacing: Spacing.md) {
             VocabWordText(text: card.word.word)
@@ -224,6 +229,7 @@ struct FlashcardView: View {
         .frame(maxWidth: .infinity)
     }
 
+    @ViewBuilder
     private func wordCloud(title: String, words: [String]) -> some View {
         Group {
             if !words.isEmpty {
@@ -247,6 +253,7 @@ struct FlashcardView: View {
 
     // MARK: - Controls
 
+    @ViewBuilder
     private func showAnswerButton(_ session: FlashcardSession) -> some View {
         Button {
             reveal(session)
@@ -270,6 +277,7 @@ struct FlashcardView: View {
 
     /// The 1–4 rating row. Always visible once the answer is up, always a real
     /// button, always labelled in words as well as numbers.
+    @ViewBuilder
     private func ratingControls(_ session: FlashcardSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             Text("How well did you know it?").font(AppFont.body(.footnote))

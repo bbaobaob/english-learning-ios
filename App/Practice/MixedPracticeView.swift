@@ -42,6 +42,7 @@ struct MixedPracticeView: View {
 
     // MARK: - Running
 
+    @ViewBuilder
     private func runningScreen(_ session: LearnSession) -> some View {
         VStack(spacing: 0) {
             HStack(spacing: Spacing.md) {
@@ -72,6 +73,7 @@ struct MixedPracticeView: View {
 
     // MARK: - Score
 
+    @ViewBuilder
     private func scoreScreen(_ session: LearnSession) -> some View {
         let outcome = session.outcome
 
@@ -136,7 +138,7 @@ struct MixedPracticeView: View {
                         action: {
                             Haptics.selection()
                             PracticeSessionStore.shared.reset(slot)
-                            session = nil
+                            self.session = nil
                         }
                     )
                     SecondaryButton(

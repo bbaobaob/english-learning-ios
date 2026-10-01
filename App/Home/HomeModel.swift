@@ -208,7 +208,7 @@ final class HomeModel {
 
         if let point = store.resumePoint(),
            let lesson = library.lesson(point.lessonID),
-           let topic = library.topic(lessonTopicID(lesson, in: library)) {
+           let topic = library.topic(Self.lessonTopicID(lesson, in: library)) {
             let siblings = library.lessons(in: topic.id)
             let number = (siblings.firstIndex { $0.id == lesson.id } ?? 0) + 1
             let stepIndex = min(max(0, point.stepIndex), max(0, lesson.steps.count - 1))
@@ -438,7 +438,7 @@ final class HomeModel {
         // ponytail: TopicProgress is keyed by Topic id and the shipped IELTS
         // modules are not Topics, so this matches on the module id alone. If
         // content starts recording IELTS topics instead, extend the match.
-        let byModule = modules.map { module -> (IELTSModule, Double, Int)? in
+        let byModule = modules.compactMap { module -> (IELTSModule, Double, Int)? in
             let matching = topics[module.id].map { [$0] } ?? []
             let attempted = matching.filter { $0.exercisesDone > 0 }
             guard !attempted.isEmpty else { return nil }

@@ -58,6 +58,7 @@ private struct EdgeDefinition: ViewModifier {
 
 extension View {
     /// The default surface for a discrete block of content.
+    @ViewBuilder
     func cardStyle(isRaised: Bool = false, fill: Color = Palette.surface) -> some View {
         modifier(CardStyle(isRaised: isRaised, fill: fill))
     }
@@ -166,12 +167,14 @@ extension View {
     ///
     /// Applied *after* the view's own layout and appearance modifiers — the
     /// glass samples what is already there.
+    @ViewBuilder
     func glassCard(isInteractive: Bool = false) -> some View {
         modifier(GlassControl(isInteractive: isInteractive))
     }
 
     /// A glass surface whose content is filled edge to edge and padded, for
     /// the common "floating bar" case.
+    @ViewBuilder
     func glassBar(padding: CGFloat = Spacing.md) -> some View {
         self
             .padding(padding)

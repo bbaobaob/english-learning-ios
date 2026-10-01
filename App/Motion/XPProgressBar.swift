@@ -128,6 +128,7 @@ struct XPProgressBar: View {
     ///
     /// Only drawn while the fill is at least partly on screen, so a bar at 0%
     /// does not run an invisible animation forever.
+    @ViewBuilder
     private func sheen(width: CGFloat, phase: Double) -> some View {
         Capsule()
             .fill(

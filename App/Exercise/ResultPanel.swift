@@ -238,6 +238,7 @@ struct ResultPanel: View {
     }
 
     /// The learner's own text with the wrong words marked in place.
+    @ViewBuilder
     private func diffView(_ userText: String) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             Text("What you wrote")

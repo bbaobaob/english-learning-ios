@@ -26,6 +26,9 @@ struct SkillView: View {
     /// This skill's topic, when the library has loaded it.
     private var topic: Topic? { appState.library?.topic(topicID) }
 
+    /// This skill's topic, when the library has loaded it.
+    private var topic: Topic? { appState.library?.topic(topicID) }
+
     var body: some View {
         Group {
             if let topic {
@@ -49,6 +52,7 @@ struct SkillView: View {
 
     // MARK: - Content
 
+    @ViewBuilder
     private func content(_ topic: Topic) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.xl) {
@@ -72,6 +76,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func promiseCard(_ topic: Topic) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack(spacing: Spacing.md) {
@@ -101,6 +106,7 @@ struct SkillView: View {
         .cardStyle()
     }
 
+    @ViewBuilder
     private func levelPicker(_ topic: Topic) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             SectionHeader(
@@ -128,6 +134,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func practiceAction(_ topic: Topic) -> some View {
         let count = topic.exercises(at: level).count
 
@@ -164,6 +171,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func lessonsSection(_ topic: Topic) -> some View {
         let lessonRows = appState.store.lessonProgress()
         let levels = Level.studyOrder.filter { !topic.lessons(at: $0).isEmpty }
@@ -188,6 +196,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func lessonRow(_ lesson: Lesson, rows: [String: LessonProgress], topic: Topic) -> some View {
         let row = rows[lesson.id]
         let state = LessonState(row: row, lesson: lesson)
@@ -232,6 +241,7 @@ struct SkillView: View {
         .accessibilityHint("Opens the lesson")
     }
 
+    @ViewBuilder
     private func progressSection(_ topic: Topic) -> some View {
         let rollup = appState.store.topicProgress()[topic.id]
         let completion = topic.lessonCompletion(appState.store.lessonProgress())
@@ -298,6 +308,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func mistakesSection(_ topic: Topic) -> some View {
         let mistakes = appState.store.reviewQueue(on: Date()).filter { $0.topicID == topic.id }
 
@@ -346,6 +357,7 @@ struct SkillView: View {
         }
     }
 
+    @ViewBuilder
     private func reviewAction(_ topic: Topic) -> some View {
         let due = appState.store.reviewQueue(on: Date()).filter { $0.topicID == topic.id }.count
 

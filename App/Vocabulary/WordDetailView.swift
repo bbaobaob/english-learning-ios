@@ -113,6 +113,7 @@ struct WordDetailView: View {
         }
     }
 
+    @ViewBuilder
     private func content(for word: VocabWord) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.xl) {
@@ -134,6 +135,7 @@ struct WordDetailView: View {
 
     // MARK: - Headword
 
+    @ViewBuilder
     private func headword(_ word: VocabWord) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .center, spacing: Spacing.md) {
@@ -178,6 +180,7 @@ struct WordDetailView: View {
 
     // MARK: - Meaning
 
+    @ViewBuilder
     private func meaningBlock(_ word: VocabWord) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "Meaning", subtitle: nil, actionTitle: nil, action: nil)
@@ -192,6 +195,7 @@ struct WordDetailView: View {
 
     // MARK: - Example
 
+    @ViewBuilder
     private func exampleBlock(_ word: VocabWord) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "In a sentence", subtitle: nil, actionTitle: nil, action: nil)
@@ -270,6 +274,7 @@ struct WordDetailView: View {
         .cardStyle()
     }
 
+    @ViewBuilder
     private func collocationsBlock(_ word: VocabWord) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "Collocations", subtitle: "How the word is actually used", actionTitle: nil, action: nil)
@@ -335,6 +340,7 @@ struct WordDetailView: View {
     /// any other: due immediately, and it will come back after the learner
     /// rates it. The id is namespaced by form so two different words' families
     /// never collide.
+    @ViewBuilder
     private func addFormButton(_ row: FormRow) -> some View {
         let isAdded = addedForms.contains(row.form)
         return Button {
@@ -404,6 +410,7 @@ struct WordDetailView: View {
         return item.lastResultCorrect ? "Remembered" : "Forgotten"
     }
 
+    @ViewBuilder
     private func historyRow(label: String, value: String, symbol: String, tint: Color = .brand) -> some View {
         HStack(spacing: Spacing.md) {
             Image(systemName: symbol)

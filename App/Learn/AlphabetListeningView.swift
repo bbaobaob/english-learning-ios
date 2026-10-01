@@ -326,6 +326,7 @@ struct AlphabetListeningView: View {
         }
     }
 
+    @ViewBuilder
     private func prompt(item: ListeningItem, session: ListeningSession) -> some View {
         VStack(spacing: Spacing.lg) {
             header(item: item, session: session)
@@ -354,6 +355,7 @@ struct AlphabetListeningView: View {
 
     // MARK: - Pieces
 
+    @ViewBuilder
     private func header(item: ListeningItem, session: ListeningSession) -> some View {
         HStack(alignment: .center, spacing: Spacing.md) {
             VStack(alignment: .leading, spacing: Spacing.xs) {
@@ -378,6 +380,7 @@ struct AlphabetListeningView: View {
     }
 
     /// The audio controls. Slow is a first-class button, not a hidden option.
+    @ViewBuilder
     private func playControls(item: ListeningItem, session: ListeningSession) -> some View {
         HStack(spacing: Spacing.lg) {
             Button {
@@ -415,6 +418,7 @@ struct AlphabetListeningView: View {
         }
     }
 
+    @ViewBuilder
     private func inputArea(item: ListeningItem, session: ListeningSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.xs) {
             TextField(item.kind == .letter ? "One letter" : "One word", text: $input)
@@ -438,6 +442,7 @@ struct AlphabetListeningView: View {
         }
     }
 
+    @ViewBuilder
     private func inputBackground(session: ListeningSession) -> some View {
         RoundedRectangle(cornerRadius: Radius.chip)
             .fill(session.isWrongNow ? Color.danger.opacity(0.12) : Color(.secondarySystemBackground))
@@ -543,6 +548,7 @@ struct AlphabetListeningView: View {
 
     // MARK: - Recap
 
+    @ViewBuilder
     private func recap(session: ListeningSession) -> some View {
         ScrollView {
             VStack(spacing: Spacing.lg) {

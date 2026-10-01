@@ -136,7 +136,7 @@ extension View {
         _ animation: Animation = Motion.Curve.standard,
         value: V
     ) -> some View {
-        modifier(MotionAwareModifier(animation: animation, value: value))
+        modifier(MotionAwareModifier(animation: animation, value: value, ignoresReduceMotion: false))
     }
 
     /// Animates this view with `animation` even under Reduce Motion.
@@ -202,6 +202,7 @@ extension View {
     /// accessibility element by default and a burst of particles announces as
     /// gibberish, so decorative effects call this rather than leaving each
     /// caller to remember it.
+    @ViewBuilder
     func motionDecoration() -> some View {
         accessibilityHidden(true)
     }

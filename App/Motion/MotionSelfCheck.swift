@@ -21,7 +21,7 @@ enum MotionSelfCheck {
         CountUpNumber.check()
         XPProgressBar.check()
         ErrorShake.check()
-        StrokeCheckmark.check()
+        CheckmarkShape.check()
         StreakEmber.check()
         LiveWaveform.check()
         RingSweep.check()

@@ -73,6 +73,7 @@ struct ReviewItemView: View {
         outcome.wrongIDs.contains(item.refID) ? .again : .good
     }
 
+    @ViewBuilder
     private func gradedResult(_ session: LearnSession) -> some View {
         let outcome = session.outcome
         let grade = engineGrade(for: outcome)
@@ -358,6 +359,7 @@ struct ReviewItemView: View {
 
     /// Shows what the scheduler will do *before* the learner commits, so the system is
     /// visible rather than mysterious. The numbers come from `SpacedRepetition` itself.
+    @ViewBuilder
     private func schedulePreview(grade: SpacedRepetition.Grade) -> some View {
         let next = SpacedRepetition().schedule(item, grade: grade)
         return VStack(alignment: .leading, spacing: Spacing.md) {

@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 // MARK: - Palette
 
@@ -80,6 +81,7 @@ enum ExamMetrics {
 
 extension View {
     /// The exam page: paper surface, a hairline edge, and a soft shadow.
+    @ViewBuilder
     func examPage(padding: CGFloat = 20) -> some View {
         self
             .padding(padding)
@@ -91,6 +93,7 @@ extension View {
     }
 
     /// A caption above a value, the way a form labels a field.
+    @ViewBuilder
     func examFieldLabel() -> some View {
         self
             .font(.examBody(11, weight: .semibold))
@@ -100,6 +103,7 @@ extension View {
     }
 
     /// Faint horizontal rules behind an editor, like a lined exam booklet.
+    @ViewBuilder
     func ruledPaper(interval: CGFloat = 28) -> some View {
         self.background {
             Canvas { context, size in
@@ -155,7 +159,7 @@ enum ExamMotion {
 extension View {
     @ViewBuilder
     func examReveal(_ isVisible: Bool, delay: Double = 0) -> some View {
-        if reduceMotion {
+        if UIAccessibility.isReduceMotionEnabled {
             self.opacity(isVisible ? 1 : 0)
         } else {
             self.opacity(isVisible ? 1 : 0)
@@ -180,8 +184,9 @@ extension EnvironmentValues {
 extension View {
     /// Reads Reduce Motion from the environment and publishes it under our own key
     /// so `examReveal` can use it anywhere in the subtree.
+    @ViewBuilder
     func readsReduceMotion() -> some View {
-        self.environment(\.reduceMotion, self.accessibilityReduceMotion)
+        self.environment(\.reduceMotion, UIAccessibility.isReduceMotionEnabled)
     }
 }
 

@@ -49,6 +49,7 @@ struct PrimaryButton: View {
 private struct PrimaryButtonStyle: ButtonStyle {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
+    @ViewBuilder
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .scaleEffect(configuration.isPressed ? 0.975 : 1)

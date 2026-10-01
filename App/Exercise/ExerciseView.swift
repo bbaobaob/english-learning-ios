@@ -227,6 +227,7 @@ struct ExerciseView: View {
         .accessibilityElement(children: .contain)
     }
 
+    @ViewBuilder
     private func outcomeStat(title: String, value: String) -> some View {
         VStack(spacing: Spacing.xs) {
             Text(value)

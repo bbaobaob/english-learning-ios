@@ -81,6 +81,7 @@ struct RingSweep: View {
         }
     }
 
+    @ViewBuilder
     private func canvas(showsHead: Bool) -> some View {
         Canvas { context, size in
             let line = size.width
@@ -101,14 +102,28 @@ struct RingSweep: View {
 
             guard sweep > 0 else { return }
 
-            // Arc. `-90°` puts the start at twelve o'clock, matching
-            // `ProgressRing`, so the two are visually interchangeable.
-            var arc = Path()
-            arc.addArc(center: centre,
-                       radius: radius,
-                       startAngle: .degrees(-90),
-                       endAngle: .degrees(-90 + 360 * sweep),
-                       clockwise: false)
+            // Arc. A full ellipse trimmed to the swept fraction, starting at
+            // twelve o'clock: an ellipse path starts at three o'clock and runs
+            // clockwise, so twelve o'clock is fraction 0.75 — the same start
+            // `ProgressRing` gets from its -90° rotation, keeping the two
+            // visually interchangeable. (Built from trim rather than addArc,
+            // which has no matching overload in this SDK.)
+            let disc = Path(ellipseIn: CGRect(
+                x: centre.x - radius,
+                y: centre.y - radius,
+                width: radius * 2,
+                height: radius * 2
+            ))
+            let clampedSweep = min(max(sweep, 0), 1)
+            let arc: Path
+            if 0.75 + clampedSweep <= 1 {
+                arc = disc.trimmedPath(from: 0.75, to: 0.75 + CGFloat(clampedSweep))
+            } else {
+                var wrapped = Path()
+                wrapped.addPath(disc.trimmedPath(from: 0.75, to: 1))
+                wrapped.addPath(disc.trimmedPath(from: 0, to: CGFloat(0.75 + clampedSweep - 1)))
+                arc = wrapped
+            }
             context.stroke(
                 arc,
                 with: .color(tint),

@@ -18,6 +18,12 @@ struct AudioPlayerView: View {
     /// The clip being played.
     let clip: AudioClip
 
+    /// Explicit because the `@Environment` members below suppress the
+    /// memberwise initialiser, leaving no `init(clip:)` at all.
+    init(clip: AudioClip) {
+        self.clip = clip
+    }
+
     @Environment(AudioPlayerModel.self) private var player
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 

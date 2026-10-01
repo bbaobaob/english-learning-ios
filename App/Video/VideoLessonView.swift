@@ -94,6 +94,7 @@ struct VideoLessonView: View {
         .accessibilityLabel(Text(verbatim: video.title.isEmpty ? "Lesson video" : video.title))
     }
 
+    @ViewBuilder
     private func subtitleOverlay(_ text: String) -> some View {
         VStack {
             Spacer(minLength: 0)
@@ -181,6 +182,7 @@ struct VideoLessonView: View {
         }
     }
 
+    @ViewBuilder
     private func speedMenu(_ model: VideoPlaybackModel) -> some View {
         Menu {
             ForEach(speeds, id: \.self) { speed in

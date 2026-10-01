@@ -198,6 +198,7 @@ struct PracticeFloatingGlass: ViewModifier {
 
 extension View {
     /// Floating control surface, glass where available.
+    @ViewBuilder
     func practiceFloatingGlass(cornerRadius: CGFloat = Radius.card) -> some View {
         modifier(PracticeFloatingGlass(cornerRadius: cornerRadius))
     }

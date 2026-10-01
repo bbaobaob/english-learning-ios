@@ -124,6 +124,7 @@ struct MethodsView: View {
         .padding(.top, Spacing.sm)
     }
 
+    @ViewBuilder
     private func methodRow(_ lesson: Lesson) -> some View {
         let row = app.store.lessonProgress()[lesson.id]
         let isComplete = row?.completed == true
@@ -132,7 +133,7 @@ struct MethodsView: View {
         return NavigationLink(value: LearnRoute.lesson(topicID: "methods", lessonID: lesson.id)) {
             HStack(alignment: .top, spacing: Spacing.md) {
                 Image(systemName: isComplete ? "checkmark.circle.fill" : StepMeta.icon(lesson.steps.first?.type ?? .theory)).font(AppFont.body(.title3))
-                    .foregroundStyle(isComplete ? .success : .brand)
+                    .foregroundStyle(isComplete ? Color.success : Color.brand)
                     .frame(width: 28)
                     .accessibilityHidden(true)
 

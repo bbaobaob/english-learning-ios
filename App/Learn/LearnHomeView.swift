@@ -8,6 +8,7 @@ import EnglishCore
 struct LearnHomeView: View {
 
     @Environment(AppState.self) private var app
+    @Bindable var appBinding = app
     @State private var filter: LevelFilter = .all
     @State private var query: String = ""
 
@@ -66,7 +67,7 @@ struct LearnHomeView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $app.navigationPath) {
+        NavigationStack(path: $appBinding.navigationPath) {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: Spacing.xl) {
                     summaryHeader
@@ -258,13 +259,14 @@ struct LearnHomeView: View {
         }
     }
 
+    @ViewBuilder
     private func card(for topic: Topic, subtitleOverride: String?) -> some View {
         TopicCard(
             title: topic.title,
             subtitle: subtitleOverride ?? topic.summary,
             symbol: topic.icon,
             progress: topicProgress(for: topic),
-            level: topic.level,
+            level: topic.level.rawValue,
             isCompleted: isTopicComplete(topic),
             action: { app.navigationPath.append(LearnRoute.topic(topic.id)) }
         )

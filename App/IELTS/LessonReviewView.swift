@@ -241,6 +241,7 @@ private struct ReviewRow: View {
         .padding(.top, 2)
     }
 
+    @ViewBuilder
     private func answerRow(title: String, value: String, tint: Color) -> some View {
         VStack(alignment: .leading, spacing: 3) {
             Text(title).examFieldLabel()
@@ -255,6 +256,7 @@ private struct ReviewRow: View {
 
     /// Dictation: the wrong words, in place, underlined rather than merely coloured —
     /// colour alone does not survive a screenshot or a colour-blind reader.
+    @ViewBuilder
     private func wordDiffView(_ result: ExerciseResult) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Word by word").examFieldLabel()

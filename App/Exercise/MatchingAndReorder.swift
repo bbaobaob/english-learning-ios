@@ -73,6 +73,7 @@ struct MatchingGridView: View {
         }
     }
 
+    @ViewBuilder
     private func leftCell(_ item: ExerciseItem) -> some View {
         let isFocused = focusedID == item.id
         let isPaired = pairs[item.id] != nil
@@ -93,6 +94,7 @@ struct MatchingGridView: View {
         .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: isPaired)
     }
 
+    @ViewBuilder
     private func rightCell(for key: String) -> some View {
         // The item this key is currently paired to, if any. Read back from
         // `pairs` rather than from the item's own `matchKey`, because the
@@ -230,27 +232,34 @@ struct ReorderWordsView: View {
             }
 
             if tokens.count > 1 {
-                HStack {
-                    Text("Tap the arrows to move a word.")
-                        .font(AppFont.body(.caption))
-                        .foregroundStyle(Palette.textTertiary)
-                    Spacer()
-                    Button {
-                        Haptics.selection()
-                        tokens.removeAll()
-                    } label: {
-                        Label("Reset", systemImage: "arrow.counterclockwise")
-                            .font(AppFont.body(.caption, weight: .semibold))
-                            .foregroundStyle(Palette.brand)
-                            .frame(minHeight: Metric.tapTarget)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel(Text(verbatim: "Reset the word order"))
-                }
+                reorderFooter
             }
         }
     }
 
+    /// The hint row plus reset, factored out so the main body type-checks in
+    /// pieces rather than as one expression the compiler gives up on.
+    private var reorderFooter: some View {
+        HStack {
+            Text("Tap the arrows to move a word.")
+                .font(AppFont.body(.caption))
+                .foregroundStyle(Palette.textTertiary)
+            Spacer()
+            Button {
+                Haptics.selection()
+                tokens.removeAll()
+            } label: {
+                Label("Reset", systemImage: "arrow.counterclockwise")
+                    .font(AppFont.body(.caption, weight: .semibold))
+                    .foregroundStyle(Palette.brand)
+                    .frame(minHeight: Metric.tapTarget)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(Text(verbatim: "Reset the word order"))
+        }
+    }
+
+    @ViewBuilder
     private func row(index: Int, token: String) -> some View {
         HStack(spacing: Spacing.md) {
             Text("\(index + 1)")
@@ -301,6 +310,7 @@ struct ReorderWordsView: View {
         .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: tokens)
     }
 
+    @ViewBuilder
     private func moveButton(symbol: String, index: Int, delta: Int) -> some View {
         let target = index + delta
         let isEnabled = tokens.indices.contains(target)

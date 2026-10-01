@@ -378,6 +378,7 @@ struct WeakTopicsCard: View {
         }
     }
 
+    @ViewBuilder
     private func row(for topic: HomeModel.WeakTopic) -> some View {
         HStack(spacing: Spacing.md) {
             ProgressRing(

@@ -96,9 +96,10 @@ extension View {
     /// The floating treatment for the step rail and the primary action only.
     ///
     /// Applied after layout modifiers so the material hugs the laid-out frame.
+    @ViewBuilder
     func floatingGlass() -> some View {
         if #available(iOS 26, *) {
-            self.glassEffect()
+            self.glassEffect(.regular, in: .rect(cornerRadius: Radius.card))
         } else {
             self.background(.ultraThinMaterial)
         }

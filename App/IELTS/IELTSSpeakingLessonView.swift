@@ -607,7 +607,7 @@ private struct LongTurnControls: View {
             prepareTimer.pause()
             speakTimer.pause()
             recorder.stopRecording()
-            onFinish(Int((speakTimer.total - speakTimer.remaining).rounded(.down)))
+            onFinish(speakTimer.total - speakTimer.remaining)
         }
     }
 }
@@ -661,6 +661,7 @@ struct SharedTimerBar: View {
         }
     }
 
+    @ViewBuilder
     private func content(for timer: ExamTimer) -> some View {
         HStack(spacing: Spacing.sm) {
             if speaks {

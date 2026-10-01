@@ -166,6 +166,7 @@ struct PracticeHomeView: View {
         }
     }
 
+    @ViewBuilder
     private func skillCard(_ skill: CoreSkill, _ topic: Topic) -> some View {
         let progress = appState.store.topicProgress()
         let rollup = progress[topic.id]

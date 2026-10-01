@@ -135,7 +135,7 @@ struct ListeningLessonView: View {
                     onJump: { number in jump(to: number, in: session) }
                 )
 
-                if let current = session.current?.exercise {
+                if let current = session.current?.asExercise {
                     ExerciseView(
                         exercise: current,
                         topicID: "ielts",
@@ -156,6 +156,7 @@ struct ListeningLessonView: View {
         .animation(ExamMotion.reveal, value: transcriptBroken)
     }
 
+    @ViewBuilder
     private func audioCard(_ audio: AudioClip) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeader(title: "The recording", subtitle: "Play it once, as in the test")
@@ -209,7 +210,7 @@ struct ListeningLessonView: View {
     }
 
     private func currentQuestionNumber(in session: LearnSession) -> Int? {
-        guard let id = session.current?.exercise?.id else { return nil }
+        guard let id = session.current?.asExercise?.id else { return nil }
         return lesson.questions.first { $0.exercise.id == id }?.number
     }
 
@@ -220,7 +221,7 @@ struct ListeningLessonView: View {
 
     private func jump(to number: Int, in session: LearnSession) {
         guard let target = lesson.questions.first(where: { $0.number == number }),
-              let index = session.items.firstIndex(where: { $0.exercise?.id == target.exercise.id })
+              let index = session.items.firstIndex(where: { $0.asExercise?.id == target.exercise.id })
         else { return }
         if index < session.index {
             // Jumping backwards rewinds the run; earlier results stay in the outcome.

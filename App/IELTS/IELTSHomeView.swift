@@ -297,6 +297,7 @@ struct LessonRow: View {
         }
     }
 
+    @ViewBuilder
     private func metaPill(_ text: String, symbol: String) -> some View {
         Label(text, systemImage: symbol)
             .font(.examBody(11))
@@ -414,7 +415,7 @@ private struct SkillProgressLine: View {
 /// "least-practised" recommendation conservative: it can only be wrong by
 /// under-counting somebody who practised a paper without finishing a lesson.
 enum SkillTime {
-    static func totals(store: ProgressStore, model: IELTSSectionModel) -> [IELTSSkill: Int] {
+    @MainActor static func totals(store: ProgressStore, model: IELTSSectionModel) -> [IELTSSkill: Int] {
         let rows = store.lessonProgress()
         var totals: [IELTSSkill: Int] = [:]
         for paper in model.papers {

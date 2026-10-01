@@ -9,6 +9,7 @@ import SwiftUI
 extension StreakEmber {
 
     /// The flame. `date` is `nil` for the frozen static render.
+    @ViewBuilder
     func flame(at date: Date?) -> some View {
         Canvas { context, size in
             let live = date.map(time(for:)) ?? 0

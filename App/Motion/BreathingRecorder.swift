@@ -121,6 +121,7 @@ struct BreathingRecorder: View {
         }
     }
 
+    @ViewBuilder
     private func ring(scale: Double, opacity: Double) -> some View {
         Circle()
             .strokeBorder(tintColor.opacity(max(opacity, 0)), lineWidth: 2)

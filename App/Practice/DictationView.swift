@@ -55,6 +55,7 @@ struct DictationLandingView: View {
         }
     }
 
+    @ViewBuilder
     private func dictationSetCard(_ set: DictationSet) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .firstTextBaseline) {
@@ -196,6 +197,7 @@ struct DictationView: View {
 
     // MARK: Live drill
 
+    @ViewBuilder
     private func drillScreen(_ session: LearnSession) -> some View {
         VStack(spacing: 0) {
             headerStrip(session)
@@ -212,6 +214,7 @@ struct DictationView: View {
         }
     }
 
+    @ViewBuilder
     private func headerStrip(_ session: LearnSession) -> some View {
         HStack(spacing: Spacing.md) {
             Text("Item \(min(session.index + 1, session.items.count)) of \(session.items.count)")
@@ -237,6 +240,7 @@ struct DictationView: View {
     }
 
     /// Floating transport: listen again, and listen again slowly.
+    @ViewBuilder
     private func transportBar(_ session: LearnSession) -> some View {
         let item = currentItem(in: session)
 
@@ -264,6 +268,7 @@ struct DictationView: View {
 
     // MARK: Score
 
+    @ViewBuilder
     private func scoreScreen(_ session: LearnSession) -> some View {
         let outcome = session.outcome
 
@@ -335,6 +340,7 @@ struct DictationView: View {
         }
     }
 
+    @ViewBuilder
     private func resultCard(_ result: ExerciseResult, index: Int) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(alignment: .firstTextBaseline, spacing: Spacing.sm) {

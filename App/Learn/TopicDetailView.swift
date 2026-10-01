@@ -168,6 +168,7 @@ struct TopicDetailView: View {
         let accuracy: Double
     }
 
+    @ViewBuilder
     private func drillCallout(_ weak: WeakTopic) -> some View {
         let isWeak = weak.accuracy < 0.7
         return VStack(alignment: .leading, spacing: Spacing.sm) {
@@ -206,6 +207,7 @@ struct TopicDetailView: View {
 
     // MARK: - Lesson row
 
+    @ViewBuilder
     private func lessonRow(_ lesson: Lesson) -> some View {
         let row = progress[lesson.id]
         let level = lesson.resolvedLevel(fallback: topic.level)

@@ -72,7 +72,7 @@ struct LessonView: View {
                         steps: steps,
                         currentIndex: index,
                         reached: reached,
-                        onSelect: go(to:markingVisited:)
+                        onSelect: { go(to: $0) }
                     )
                     .padding(.horizontal, Spacing.md)
                     .padding(.bottom, Spacing.sm)
@@ -175,6 +175,7 @@ struct LessonView: View {
 
     /// The single Continue action for a read step. This is what marks the step
     /// visited — the rail advances only from here.
+    @ViewBuilder
     private func stepFooter(step: LessonStep) -> some View {
         HStack(spacing: Spacing.md) {
             if index > 0 {
@@ -213,6 +214,7 @@ struct LessonView: View {
 
     /// Exercise steps keep their Continue hidden until the session is finished,
     /// so a step cannot be counted as visited without doing the work.
+    @ViewBuilder
     private func sessionFooter(step: LessonStep) -> some View {
         HStack(spacing: Spacing.md) {
             if index > 0 {
@@ -249,11 +251,12 @@ struct LessonView: View {
         .floatingGlass()
     }
 
+    @ViewBuilder
     private func summaryFooter(lesson: Lesson) -> some View {
         VStack(spacing: Spacing.sm) {
             if didComplete {
                 Label("Lesson complete — \(lessonXP) XP banked", systemImage: "checkmark.seal.fill").font(AppFont.body(.subheadline, weight: .semibold))
-                    .foregroundStyle(.success)
+                    .foregroundStyle(Color.success)
                 if let note = completionNote {
                     Text(note).font(AppFont.body(.footnote))
                         .foregroundStyle(.secondary)
@@ -491,7 +494,7 @@ struct StepRail: View {
             HStack(alignment: .center, spacing: Spacing.sm) {
                 if let currentType {
                     Image(systemName: StepMeta.icon(currentType))
-                        .foregroundStyle(.brand)
+                        .foregroundStyle(Color.brand)
                         .accessibilityHidden(true)
                 }
                 Text(label).font(AppFont.body(.footnote, weight: .semibold))
@@ -700,7 +703,7 @@ struct FormulaBlock: View {
 
     var body: some View {
         Text(formula).font(AppFont.mono(.body, weight: .medium))
-            .foregroundStyle(.brand)
+            .foregroundStyle(Color.brand)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(Spacing.md)
             .background(Color.brand.opacity(0.10), in: .rect(cornerRadius: Radius.chip))
@@ -758,7 +761,7 @@ struct ExampleRow: View {
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 0)
                     Image(systemName: isSpeaking ? "speaker.wave.3.fill" : "speaker.wave.2").font(AppFont.body(.caption))
-                        .foregroundStyle(.brand)
+                        .foregroundStyle(Color.brand)
                         .accessibilityHidden(true)
                 }
                 Text(example.vi).font(AppFont.body(.subheadline))
@@ -805,7 +808,7 @@ struct SummaryStepView: View {
                     ForEach(Array(step.takeaways.enumerated()), id: \.offset) { _, takeaway in
                         HStack(alignment: .top, spacing: Spacing.sm) {
                             Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(.brand)
+                                .foregroundStyle(Color.brand)
                                 .accessibilityHidden(true)
                             Text(takeaway).font(AppFont.body(.body))
                                 .fixedSize(horizontal: false, vertical: true)
@@ -855,7 +858,7 @@ struct QuizScoreView: View {
                 .padding(.top, Spacing.md)
 
                 Text(isPass ? "Passed" : "Not yet").font(AppFont.display(.title2))
-                    .foregroundStyle(isPass ? .success : .danger)
+                    .foregroundStyle(isPass ? Color.success : Color.danger)
 
                 Text("Pass mark \(Int(passPercent)) percent. \(result.correctCount) of \(questions.count) correct.").font(AppFont.body(.subheadline))
                     .foregroundStyle(.secondary)

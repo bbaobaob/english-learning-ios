@@ -140,6 +140,7 @@ extension View {
     }
 
     /// The soft aurora wash behind the tab header.
+    @ViewBuilder
     func vocabAurora() -> some View {
         self.background(
             RadialGradient(

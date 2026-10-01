@@ -139,6 +139,7 @@ struct TopicCard: View {
 private struct TopicCardButtonStyle: ButtonStyle {
     let reduceMotion: Bool
 
+    @ViewBuilder
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .scaleEffect(configuration.isPressed ? 0.98 : 1)

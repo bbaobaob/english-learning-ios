@@ -98,7 +98,7 @@ extension IELTSPaperLesson {
     var minimumWords: Int {
         let pattern = "at least\\s+(\\d+)\\s+words"
         if let match = prompt.range(of: pattern, options: .regularExpression),
-           let digits = match, let value = Int(prompt[digits]) {
+           let value = Int(prompt[match].split(separator: " ")[2]) {
             return value
         }
         return isTask1 ? 150 : 250

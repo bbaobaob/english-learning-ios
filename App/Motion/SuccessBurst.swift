@@ -117,6 +117,7 @@ struct SuccessBurst: View {
 
     // MARK: Drawing
 
+    @ViewBuilder
     private func particleLayer(elapsed: Double) -> some View {
         Canvas { context, size in
             let edge = min(size.width, size.height)

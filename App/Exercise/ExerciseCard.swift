@@ -120,6 +120,7 @@ struct ExerciseCard: View {
         }
     }
 
+    @ViewBuilder
     private func translationBlock(_ translation: String) -> some View {
         Text(translation)
             .font(AppFont.body(.subheadline))

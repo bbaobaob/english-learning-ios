@@ -73,6 +73,7 @@ struct HearTypeView: View {
 
     // MARK: - Drill
 
+    @ViewBuilder
     private func drill(_ session: HearTypeSession, _ card: HearTypeCard) -> some View {
         ScrollView {
             VStack(spacing: Spacing.lg) {
@@ -119,6 +120,7 @@ struct HearTypeView: View {
         }
     }
 
+    @ViewBuilder
     private func progressHeader(_ session: HearTypeSession) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
@@ -141,6 +143,7 @@ struct HearTypeView: View {
 
     /// The listening panel: the prompt is deliberately invisible, so the only
     /// way to get the word is to listen.
+    @ViewBuilder
     private func listeningCard(_ session: HearTypeSession, _ card: HearTypeCard) -> some View {
         VStack(spacing: Spacing.md) {
             Image(systemName: "waveform")
@@ -249,6 +252,7 @@ private struct TypingPanel: View {
     }
 
     /// The right answer, plainly, with the example for context.
+    @ViewBuilder
     private func correctPanel(_ session: HearTypeSession, _ card: HearTypeCard) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(spacing: Spacing.sm) {
@@ -289,6 +293,7 @@ private struct TypingPanel: View {
 
     /// The wrong-answer panel: the engine's summary, the correct spelling, the
     /// difference between the two, and the three ways forward.
+    @ViewBuilder
     private func wrongPanel(_ result: DictationResult, session: HearTypeSession, card: HearTypeCard) -> some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
             HStack(spacing: Spacing.sm) {
@@ -376,6 +381,7 @@ private struct TypingPanel: View {
 
     /// The engine's diffs, rendered word by word. Tokens come from the engine's
     /// own normalisation, so `Play` and `playing` show as one substitution.
+    @ViewBuilder
     private func differenceView(_ result: DictationResult, written raw: String) -> some View {
         let normalizer = AnswerNormalizer()
         let written = normalizer.tokens(raw)
@@ -399,6 +405,7 @@ private struct TypingPanel: View {
     /// `.substituted` and `.missing` index into the expected list — so extras are
     /// the only ones safely coloured here. Everything else stays neutral rather
     /// than being pointed at by a number that means something else.
+    @ViewBuilder
     private func diffRow(_ written: [String], result: DictationResult) -> some View {
         let extras = Set(result.diffs.compactMap { diff -> Int? in
             diff.kind == .extra ? diff.index : nil
@@ -408,6 +415,7 @@ private struct TypingPanel: View {
         }
     }
 
+    @ViewBuilder
     private func expectedRow(_ expected: [String], result: DictationResult) -> some View {
         let flagged = Set(result.diffs.compactMap { diff -> Int? in
             diff.kind == .substituted || diff.kind == .missing ? diff.index : nil
@@ -417,6 +425,7 @@ private struct TypingPanel: View {
         }
     }
 
+    @ViewBuilder
     private func tokenRow(_ tokens: [String], style: (Int) -> (String, Color)) -> some View {
         // ponytail: a wrapping `HStack` would need a layout pass to reflow;
         // `Text` concatenation wraps for free and the per-token colouring is
@@ -442,6 +451,7 @@ private struct TypingPanel: View {
 
     // MARK: - Summary
 
+    @ViewBuilder
     private func summary(_ session: HearTypeSession) -> some View {
         ScrollView {
             VStack(spacing: Spacing.xl) {

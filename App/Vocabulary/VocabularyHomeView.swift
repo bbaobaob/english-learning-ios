@@ -264,6 +264,7 @@ struct VocabularyHomeView: View {
         }
     }
 
+    @ViewBuilder
     private func weakCard(_ item: ReviewItem, _ word: VocabWord) -> some View {
         NavigationLink(value: VocabRoute.detail(word.id)) {
             VStack(alignment: .leading, spacing: Spacing.xs) {
@@ -378,6 +379,7 @@ struct VocabularyHomeView: View {
         .scrollClipDisabled()
     }
 
+    @ViewBuilder
     private func chip(_ text: String, isOn: Bool, symbol: String? = nil, action: @escaping () -> Void) -> some View {
         Chip(text: text, symbol: symbol, isSelected: isOn, action: action)
     }
