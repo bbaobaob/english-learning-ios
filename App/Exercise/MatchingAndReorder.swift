@@ -268,6 +268,9 @@ struct ReorderWordsView: View {
 
     @ViewBuilder
     private func row(index: Int, token: String) -> some View {
+        // Typed up front: resolving the optional animation inline leaves the
+        // checker choosing between overloads for the whole row at once.
+        let rowAnimation: Animation? = Motion.accessible(Motion.quick, reduceMotion: reduceMotion)
         HStack(spacing: Spacing.md) {
             Text("\(index + 1)")
                 .font(AppFont.mono(.caption, weight: .bold))
@@ -308,7 +311,7 @@ struct ReorderWordsView: View {
         .accessibilityLabel(Text(verbatim: "Word \(index + 1) of \(tokens.count): \(token)"))
         .accessibilityAction(named: "Move earlier") { move(index: index, to: index - 1) }
         .accessibilityAction(named: "Move later") { move(index: index, to: index + 1) }
-        .animation(Motion.accessible(Motion.quick, reduceMotion: reduceMotion), value: tokens)
+        .animation(rowAnimation, value: tokens)
     }
 
     /// What follows the finger while dragging: the token on a raised card.
