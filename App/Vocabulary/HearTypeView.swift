@@ -250,6 +250,7 @@ private struct TypingPanel: View {
         case .typing: break
         }
     }
+}
 
     /// The right answer, plainly, with the example for context.
     @ViewBuilder
@@ -572,4 +573,3 @@ private struct TypingPanel: View {
         guard let session, let text = session.spokenText else { return }
         appState.speech.speak(text, rate: session.usesExample ? 0.45 : 0.5, completion: nil)
     }
-}
