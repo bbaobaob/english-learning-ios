@@ -225,8 +225,8 @@ struct ReorderWordsView: View {
                     .foregroundStyle(Palette.textTertiary)
             } else {
                 VStack(spacing: Spacing.sm) {
-                    ForEach(Array(tokens.enumerated()), id: \.offset) { index, token in
-                        row(index: index, token: token)
+                    ForEach(tokens.indices, id: \.self) { index in
+                        row(index: index, token: tokens[index])
                     }
                 }
             }
